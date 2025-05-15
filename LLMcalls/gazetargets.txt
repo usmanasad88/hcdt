@@ -1,0 +1,6 @@
+0.0	main: /home/mani/Repos/llama.cpp/models/gemma-3-12b-it-q4_0.gguf
+```json
+[
+  {"point": [380, 450], "label": "chair"}
+]
+```
