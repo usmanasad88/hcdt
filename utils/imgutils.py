@@ -16,9 +16,13 @@ def draw_point_on_image(image_path, y, x, save_path=None, point_color='red', poi
         PIL.Image.Image: The image with the point drawn (if save_path is None).
     """
     img = Image.open(image_path).convert("RGB")
+    width, height = img.size
+    # Convert normalized coordinates to pixel locations
+    x_px = int((x / 1000.0) * width)
+    y_px = int((y / 1000.0) * height)
     draw = ImageDraw.Draw(img)
-    left_up = (x - point_radius, y - point_radius)
-    right_down = (x + point_radius, y + point_radius)
+    left_up = (x_px - point_radius, y_px - point_radius)
+    right_down = (x_px + point_radius, y_px + point_radius)
     draw.ellipse([left_up, right_down], fill=point_color, outline=point_color)
     if save_path:
         img.save(save_path)
