@@ -52,162 +52,163 @@ def resize_image_to_model_size(image_path, w_model, h_model, save_path=None):
 
 # resize_image_to_model_size("/home/mani/Central/Cooking1/Stack/output_frames/cam1-frame-1.4.jpg", 896, 896, "/home/mani/Downloads/me_resized.jpg")
 
-base_system_prompt_content = """<start_of_turn>user
-Your Role: You are an AI assistant specialized in real-time human action analysis and state tracking from video frames.
-Your Task: You will be provided with a sequence of video frames. For each frame in the sequence, you must:
-Analyze the frame in the context of the overall task and recent frames (if available).
-Determine the current state of the task.
-Identify the key objects visible in the frame.
-Anticipate the human's immediate next micro-action or transition.
-Conditionally, if you can confidently predict the human's more substantial action and target location over the next approximate 1-2 seconds, provide that prediction.
-Use the provided Task Context Description below as your knowledge base regarding the overall goal, valid states, possible actions, key objects, and environmental layout.
-Input
-Video Data: A sequence of individual video frames, provided sequentially. You should process each frame as it arrives, potentially using information from previously processed frames in the sequence to inform your current analysis.
-Required Output Format (For EACH Frame)
-Provide your analysis for the current frame in a structured format.
-Task State: An update of the task state based on your interpretation of the current frame, including toolbox_placed_on_table, num_chairs_stacked, operator_holding, gaze target, current target object, current phase.
-Identified Key Objects: List the key objects (defined in context) clearly visible in the current frame and their immediate status or location relative to the operator or environment.
-Example: "Operator near Initial Object Area; Toolbox visible on floor; Red Chair 1 visible nearby; Folding Table visible in foreground."
+def run_base_system_prompt():
+    base_system_prompt_content = """<start_of_turn>user
+    Your Role: You are an AI assistant specialized in real-time human action analysis and state tracking from video frames.
+    Your Task: You will be provided with a sequence of video frames. For each frame in the sequence, you must:
+    Analyze the frame in the context of the overall task and recent frames (if available).
+    Determine the current state of the task.
+    Identify the key objects visible in the frame.
+    Anticipate the human's immediate next micro-action or transition.
+    Conditionally, if you can confidently predict the human's more substantial action and target location over the next approximate 1-2 seconds, provide that prediction.
+    Use the provided Task Context Description below as your knowledge base regarding the overall goal, valid states, possible actions, key objects, and environmental layout.
+    Input
+    Video Data: A sequence of individual video frames, provided sequentially. You should process each frame as it arrives, potentially using information from previously processed frames in the sequence to inform your current analysis.
+    Required Output Format (For EACH Frame)
+    Provide your analysis for the current frame in a structured format.
+    Task State: An update of the task state based on your interpretation of the current frame, including toolbox_placed_on_table, num_chairs_stacked, operator_holding, gaze target, current target object, current phase.
+    Identified Key Objects: List the key objects (defined in context) clearly visible in the current frame and their immediate status or location relative to the operator or environment.
+    Example: "Operator near Initial Object Area; Toolbox visible on floor; Red Chair 1 visible nearby; Folding Table visible in foreground."
 
-Expected Immediate Next Action: Describe the most likely very short-term action transition expected to occur immediately following the current frame, based on the current posture, movement dynamics, and task state. Use terms from the Action Decomposition where applicable, but focus on the transition.
-Example: "continue walking towards toolbox"
-Example: "initiate reach for chair handle"
-Example: "complete placing object"
-Example: "stabilize after placing chair"
-Example: "turn body towards table"
+    Expected Immediate Next Action: Describe the most likely very short-term action transition expected to occur immediately following the current frame, based on the current posture, movement dynamics, and task state. Use terms from the Action Decomposition where applicable, but focus on the transition.
+    Example: "continue walking towards toolbox"
+    Example: "initiate reach for chair handle"
+    Example: "complete placing object"
+    Example: "stabilize after placing chair"
+    Example: "turn body towards table"
 
-Use the Output structure defined in the context below.
-Example:
-{
-  "time": ,
-  "toolbox_placed_on_table": ,
-  "num_chairs_stacked": ,
-  "operator_holding": 
-  "gaze_target": ,
-  "current_target_object": ,
-  "current_phase": ,
-  "Identified Key Objects": ,
-  "Expected Immediate Next Action": 
-}
- —
-## Task Context Description ##
-### 1. Overall Goal:
-The operator's overall goal is to organize the room by stacking several plastic chairs in a designated location against the wall and placing a toolbox onto a small folding table.
-### 2. Task State Representation:
-A simple state representation can track the status of the key objects:
+    Use the Output structure defined in the context below.
+    Example:
+    {
+    "time": ,
+    "toolbox_placed_on_table": ,
+    "num_chairs_stacked": ,
+    "operator_holding": 
+    "gaze_target": ,
+    "current_target_object": ,
+    "current_phase": ,
+    "Identified Key Objects": ,
+    "Expected Immediate Next Action": 
+    }
+    —
+    ## Task Context Description ##
+    ### 1. Overall Goal:
+    The operator's overall goal is to organize the room by stacking several plastic chairs in a designated location against the wall and placing a toolbox onto a small folding table.
+    ### 2. Task State Representation:
+    A simple state representation can track the status of the key objects:
 
-### 3. Action Decomposition:
-The task can be broken down into the following observable, discrete actions:
-Stand idle
-Walk to location (e.g., walk towards toolbox, walk towards chair, walk towards table, walk towards stacking area)
-Reach for object (targeting either the toolbox or a chair)
-Pick up object (lifting the toolbox or a chair)
-Transport object (carrying the held object to a destination)
-Place object (setting the toolbox on the table, placing a chair on the floor/stack)
-Turn towards location/object (Orienting body before walking or interacting)
-
-
-### 4. Action Dependencies:
-General Sequence: Actions often follow a Walk -> Reach -> Pick up -> Transport -> Place pattern for each object being moved.
-Prerequisites:
-Reach for object requires the operator to be near the target object (often preceded by Walk to location or Turn towards object).
-Pick up object requires a preceding Reach for object.
-Transport object requires a preceding Pick up object.
-Place object requires a preceding Transport object.
+    ### 3. Action Decomposition:
+    The task can be broken down into the following observable, discrete actions:
+    Stand idle
+    Walk to location (e.g., walk towards toolbox, walk towards chair, walk towards table, walk towards stacking area)
+    Reach for object (targeting either the toolbox or a chair)
+    Pick up object (lifting the toolbox or a chair)
+    Transport object (carrying the held object to a destination)
+    Place object (setting the toolbox on the table, placing a chair on the floor/stack)
+    Turn towards location/object (Orienting body before walking or interacting)
 
 
-Task Order: The operator first moves the toolbox to the table before starting to move the chairs.
-Stacking Logic: Chairs are placed sequentially at the Stacking Location. The first chair is placed on the floor, subsequent chairs are placed on top of the previously placed one.
-Transitions: After Place object, the operator will typically either Stand idle briefly or initiate a Walk to location to retrieve the next object.
-### 5. Key Objects and Locations (Optional but Recommended):
-Key Objects:
-Operator: The single human performing the task.
-Toolbox: An orange and black case, initially near the chairs.
-Turquoise Chair: One plastic chair of this color.
-Red Chair: Three plastic chairs of this color.
-Folding Table: A small, wooden-topped table in the foreground.
+    ### 4. Action Dependencies:
+    General Sequence: Actions often follow a Walk -> Reach -> Pick up -> Transport -> Place pattern for each object being moved.
+    Prerequisites:
+    Reach for object requires the operator to be near the target object (often preceded by Walk to location or Turn towards object).
+    Pick up object requires a preceding Reach for object.
+    Transport object requires a preceding Pick up object.
+    Place object requires a preceding Transport object.
 
 
-Key Locations (Conceptual):
-Initial Object Area: The general space where the chairs and toolbox are located at the start (mid-ground, right side).
-Table Location: The position of the folding table (foreground, left-center).
-Stacking Location: The designated area against the far wall, near the refrigerator, where chairs are stacked.
+    Task Order: The operator first moves the toolbox to the table before starting to move the chairs.
+    Stacking Logic: Chairs are placed sequentially at the Stacking Location. The first chair is placed on the floor, subsequent chairs are placed on top of the previously placed one.
+    Transitions: After Place object, the operator will typically either Stand idle briefly or initiate a Walk to location to retrieve the next object.
+    ### 5. Key Objects and Locations (Optional but Recommended):
+    Key Objects:
+    Operator: The single human performing the task.
+    Toolbox: An orange and black case, initially near the chairs.
+    Turquoise Chair: One plastic chair of this color.
+    Red Chair: Three plastic chairs of this color.
+    Folding Table: A small, wooden-topped table in the foreground.
 
 
-### 6. Other Relevant Context:
-Environment: Indoor room with tiled floor, multiple doorways, a refrigerator against the far wall. Space is generally open enough for easy movement.
-Object Properties: Chairs appear lightweight and are standard stackable plastic chairs. The toolbox is carried with two hands.
-Repetition: The core task involves repetitive cycles of picking up, transporting, and placing chairs.
-Implicit Goal: The actions suggest a goal of tidying or organizing the space.
-No Tools: No external tools are used; the task relies solely on the operator's manual actions."""
+    Key Locations (Conceptual):
+    Initial Object Area: The general space where the chairs and toolbox are located at the start (mid-ground, right side).
+    Table Location: The position of the folding table (foreground, left-center).
+    Stacking Location: The designated area against the far wall, near the refrigerator, where chairs are stacked.
 
-MAX_HISTORY_FOR_PROMPT = 3  # Number of past model responses to include in the prompt
 
-all_responses_log_filepath = "LLMcalls/responsehistory.txt"
-evolving_prompt_filepath = "LLMcalls/prompt.txt"
+    ### 6. Other Relevant Context:
+    Environment: Indoor room with tiled floor, multiple doorways, a refrigerator against the far wall. Space is generally open enough for easy movement.
+    Object Properties: Chairs appear lightweight and are standard stackable plastic chairs. The toolbox is carried with two hands.
+    Repetition: The core task involves repetitive cycles of picking up, transporting, and placing chairs.
+    Implicit Goal: The actions suggest a goal of tidying or organizing the space.
+    No Tools: No external tools are used; the task relies solely on the operator's manual actions."""
 
-# In-memory list to store the last MAX_HISTORY_FOR_PROMPT formatted model responses
-model_responses_for_prompt_construction = []
+    MAX_HISTORY_FOR_PROMPT = 3  # Number of past model responses to include in the prompt
 
-# Clear the response log file at the beginning of a full run
-with open(all_responses_log_filepath, "w") as f_log:
-    f_log.write("--- Log Start ---\n\n")
-    
-for timestamp in range(0, 42): # Loop for 42 images (0 to 41)
-    image_path = f"/home/mani/Central/Cooking1/Stack/output_frames/second/cam2_cr-frame-{timestamp}.0.jpg"
-    # 1. Construct the prompt to send to the LLM for the current image
-    prompt_parts_for_llm = [base_system_prompt_content]
-    prompt_parts_for_llm.extend(model_responses_for_prompt_construction) # Add history of model responses
+    all_responses_log_filepath = "LLMcalls/responsehistory.txt"
+    evolving_prompt_filepath = "LLMcalls/prompt.txt"
 
-    # Add the user turn for the *current* image
-    if timestamp == 0:
-        current_user_turn = f"<start_of_turn>user\nHere is the initial image (frame {timestamp}):\n<end_of_turn>"
-    else:
-        current_user_turn = f"<start_of_turn>user\nThe next image is frame {timestamp}:\n<end_of_turn>"
-    prompt_parts_for_llm.append(current_user_turn)
-    
-    prompt_to_send_to_llm = "\n".join(prompt_parts_for_llm)
+    # In-memory list to store the last MAX_HISTORY_FOR_PROMPT formatted model responses
+    model_responses_for_prompt_construction = []
 
-    # 2. Call the LLM
-    response = run_llama_mtmd(
-        prompt=prompt_to_send_to_llm,
-        image_path=image_path
-    )
+    # Clear the response log file at the beginning of a full run
+    with open(all_responses_log_filepath, "w") as f_log:
+        f_log.write("--- Log Start ---\n\n")
+        
+    for timestamp in range(0, 42): # Loop for 42 images (0 to 41)
+        image_path = f"/home/mani/Central/Cooking1/Stack/output_frames/second/cam2_cr-frame-{timestamp}.0.jpg"
+        # 1. Construct the prompt to send to the LLM for the current image
+        prompt_parts_for_llm = [base_system_prompt_content]
+        prompt_parts_for_llm.extend(model_responses_for_prompt_construction) # Add history of model responses
 
-    # 3. Log the attempt and response (if any) to responsehistory.txt
-    with open(all_responses_log_filepath, "a") as f_log:
-        f_log.write(f"--- Image: {os.path.basename(image_path)} (Timestamp: {timestamp}) ---\n")
-        f_log.write(f"Prompt sent to LLM:\n{prompt_to_send_to_llm}\n---\n")
-        if response:
-            f_log.write(f"Model Response:\n{response}\n\n")
+        # Add the user turn for the *current* image
+        if timestamp == 0:
+            current_user_turn = f"<start_of_turn>user\nHere is the initial image (frame {timestamp}):\n<end_of_turn>"
         else:
-            f_log.write("No response from model.\n\n")
+            current_user_turn = f"<start_of_turn>user\nThe next image is frame {timestamp}:\n<end_of_turn>"
+        prompt_parts_for_llm.append(current_user_turn)
+        
+        prompt_to_send_to_llm = "\n".join(prompt_parts_for_llm)
 
-    if response:
-        # 4. Add the successful response to our in-memory history for future prompts
-        formatted_model_response = f"<start_of_turn>model\n{response}<end_of_turn>"
-        model_responses_for_prompt_construction.append(formatted_model_response)
+        # 2. Call the LLM
+        response = run_llama_mtmd(
+            prompt=prompt_to_send_to_llm,
+            image_path=image_path
+        )
 
-        # 5. Trim history to keep only the last MAX_HISTORY_FOR_PROMPT responses
-        if len(model_responses_for_prompt_construction) > MAX_HISTORY_FOR_PROMPT:
-            model_responses_for_prompt_construction = model_responses_for_prompt_construction[-MAX_HISTORY_FOR_PROMPT:]
-    # If there was no response, model_responses_for_prompt_construction is not updated with this failure,
-    # so the next prompt will use the history from before the failure.
+        # 3. Log the attempt and response (if any) to responsehistory.txt
+        with open(all_responses_log_filepath, "a") as f_log:
+            f_log.write(f"--- Image: {os.path.basename(image_path)} (Timestamp: {timestamp}) ---\n")
+            f_log.write(f"Prompt sent to LLM:\n{prompt_to_send_to_llm}\n---\n")
+            if response:
+                f_log.write(f"Model Response:\n{response}\n\n")
+            else:
+                f_log.write("No response from model.\n\n")
 
-    # 6. Construct and save the content for `prompt.txt`
-    # This file will contain: base_system_prompt + current_model_history + user_turn_for_NEXT_image
-    prompt_parts_for_file = [base_system_prompt_content]
-    prompt_parts_for_file.extend(model_responses_for_prompt_construction) # Uses (potentially updated) history
+        if response:
+            # 4. Add the successful response to our in-memory history for future prompts
+            formatted_model_response = f"<start_of_turn>model\n{response}<end_of_turn>"
+            model_responses_for_prompt_construction.append(formatted_model_response)
 
-    if timestamp < 41: # If there is a next image in the loop (0-40, so next is 1-41)
-        next_user_turn = f"<start_of_turn>user\nThe next image is frame {timestamp+1}:\n<end_of_turn>"
-        prompt_parts_for_file.append(next_user_turn)
-    # If it's the last image (timestamp 41), no "next user turn" is added to the file.
-    
-    content_for_evolving_prompt_file = "\n".join(prompt_parts_for_file)
-    
-    with open(evolving_prompt_filepath, "w") as f_prompt_file: # Overwrite prompt.txt
-        f_prompt_file.write(content_for_evolving_prompt_file)
+            # 5. Trim history to keep only the last MAX_HISTORY_FOR_PROMPT responses
+            if len(model_responses_for_prompt_construction) > MAX_HISTORY_FOR_PROMPT:
+                model_responses_for_prompt_construction = model_responses_for_prompt_construction[-MAX_HISTORY_FOR_PROMPT:]
+        # If there was no response, model_responses_for_prompt_construction is not updated with this failure,
+        # so the next prompt will use the history from before the failure.
+
+        # 6. Construct and save the content for `prompt.txt`
+        # This file will contain: base_system_prompt + current_model_history + user_turn_for_NEXT_image
+        prompt_parts_for_file = [base_system_prompt_content]
+        prompt_parts_for_file.extend(model_responses_for_prompt_construction) # Uses (potentially updated) history
+
+        if timestamp < 41: # If there is a next image in the loop (0-40, so next is 1-41)
+            next_user_turn = f"<start_of_turn>user\nThe next image is frame {timestamp+1}:\n<end_of_turn>"
+            prompt_parts_for_file.append(next_user_turn)
+        # If it's the last image (timestamp 41), no "next user turn" is added to the file.
+        
+        content_for_evolving_prompt_file = "\n".join(prompt_parts_for_file)
+        
+        with open(evolving_prompt_filepath, "w") as f_prompt_file: # Overwrite prompt.txt
+            f_prompt_file.write(content_for_evolving_prompt_file)
 
 
 # with open("/home/mani/CLoSD/closd/IntentNet/prompt.txt", "r") as f:
