@@ -1,42 +1,1726 @@
-0.8	Table
-1.8	Table
-2.8	Table
-3.8	Chair
-4.8	Ch
-5.8	Chair
-6.8	Table
-7.8	Package
-8.8	Box
-9.8	Chair
-10.8	Chair
-11.8	Project
-12.8	Project
-13.8	Project
-14.8	Project
-15.8	Project
-16.8	Project
-17.8	Project
-18.8	Chair
-19.8	Chair
-20.8	Door
-21.8	Door
-22.8	Project
-23.8	Project
-24.8	Project
-25.8	Project
-26.8	Project
-27.8	Door
-28.8	Door
-29.8	Project
-30.8	Project
-31.8	Suit
-32.8	Chair
-33.8	Chair
-34.8	Chair
-35.8	Chair
-36.8	Case
-37.8	Ch
-38.8	Ch
-39.8	Project
-40.8	Project
-41.8	Project
+0.0	{"time": 0.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Chairs in Initial Object Area", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator standing idle in front of Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.", "Expected Immediate Next Action": "Turn towards toolbox"}
+0.2	{
+  "time": 0.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing idle facing towards the Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Turn towards toolbox"
+}
+0.4	{
+  "time": 0.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator slightly turned towards the Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Begin walking towards toolbox"
+}
+0.6	{"time": 0.6, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator has slightly turned body towards the right, facing the general direction of the Initial Object Area where the toolbox is located; Toolbox (partially obscured by a turquoise chair) in the Initial Object Area; Red Chairs (3) and other Turquoise Chair visible; Folding Table in the foreground right.", "Expected Immediate Next Action": "Initiate walking towards toolbox"}
+0.8	{
+  "time": 0.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator beginning to turn body towards the Initial Object Area where the toolbox is located; Toolbox (partially obscured by the turquoise chair) within the Initial Object Area (mid-ground, right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "continue turning towards toolbox"
+}
+1.0	{
+  "time": 1.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing idle in front of Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Turn towards toolbox"
+}
+1.2	{
+  "time": 1.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing, body slightly turned towards the Initial Object Area; Toolbox (partially obscured by a turquoise chair) in the Initial Object Area; Multiple Red Chairs and Turquoise Chairs visible; Folding Table in foreground right.",
+  "Expected Immediate Next Action": "Walk towards toolbox"
+}
+1.4	{
+  "time": 1.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing idle in front of Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Initiate walking towards toolbox"
+}
+1.6	{"time": 1.6, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox on turquoise chair", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator standing, oriented towards the Initial Object Area where the toolbox rests on a turquoise chair; Toolbox (orange and black) visible on the turquoise chair; Folding Table in the foreground to the right; other Red and Turquoise chairs arranged near the toolbox.", "Expected Immediate Next Action": "Initiate walking towards the toolbox."}
+1.8	{
+  "time": 1.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing idle, facing towards the chairs in the Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Initiate walking towards the toolbox"
+}
+2.0	{"time": 2.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Chairs in Initial Object Area", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator standing idle in front of Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.", "Expected Immediate Next Action": "Slight body adjustment or maintain current stance"}
+2.2	{
+  "time": 2.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing idle facing the Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and one other Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Potentially shift stance or prepare to walk towards the toolbox."
+}
+2.4	{
+  "time": 2.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing idle in front of Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Maintain standing idle"
+}
+2.6	{"time": 2.6, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator standing, facing slightly right towards the Initial Object Area; Toolbox (partially visible) on a turquoise chair within the Initial Object Area; Multiple Red Chairs and a turquoise chair visible in the Initial Object Area; Folding Table visible in foreground right.", "Expected Immediate Next Action": "Initiate walking towards toolbox"}
+2.8	{"time": 2.8, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator standing, facing slightly right, towards the Initial Object Area; Toolbox (not clearly visible but assumed to be on the turquoise chair) in the Initial Object Area; Multiple chairs (Red and Turquoise) in the Initial Object Area; Folding Table in the foreground right.", "Expected Immediate Next Action": "Walk towards toolbox"}
+3.0	{"time": 3.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator standing, facing the Initial Object Area; Toolbox (partially visible) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs and Turquoise Chairs visible in Initial Object Area; Folding Table visible in foreground right.", "Expected Immediate Next Action": "Initiate walking towards toolbox"}
+3.2	{
+  "time": 3.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator facing towards the Initial Object Area, starting to walk towards the toolbox; Toolbox (partially obscured by a turquoise chair) within the Initial Object Area; Multiple Red Chairs and a visible turquoise chair in the Initial Object Area; Folding Table in the foreground.",
+  "Expected Immediate Next Action": "continue walking towards toolbox"
+}
+3.4	{
+  "time": 3.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing, slightly turned towards the toolbox; Toolbox (orange and black) sitting on a turquoise chair in the Initial Object Area; Red Chairs (3) and remaining Turquoise Chair (1) nearby; Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Walk towards the turquoise chair with the toolbox"
+}
+3.6	{
+  "time": 3.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the toolbox in the Initial Object Area; Toolbox (orange and black) resting on a turquoise chair; Red Chairs and other Turquoise chair visible nearby; Folding Table in the foreground.",
+  "Expected Immediate Next Action": "continue walking towards toolbox"
+}
+3.8	{
+  "time": 3.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator turning towards the Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground); Multiple Red Chairs (3) and Turquoise Chair (1) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Continue turning towards toolbox"
+}
+4.0	{
+  "time": 4.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator turning towards the toolbox located on a turquoise chair in the Initial Object Area (mid-ground, right); Toolbox (partially obscured) on a turquoise chair; Red Chairs and other Turquoise Chair visible in Initial Object Area; Folding Table in foreground right.",
+  "Expected Immediate Next Action": "Walk towards toolbox"
+}
+
+4.2	{
+  "time": 4.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator has turned towards the Initial Object Area and is positioned near the chairs and the toolbox (partially obscured behind a red chair). Toolbox (orange and black) is visible on a turquoise chair within the Initial Object Area. Multiple Red Chairs (3) and another Turquoise Chair are visible in the Initial Object Area. Folding Table is visible in the foreground right.",
+  "Expected Immediate Next Action": "Walk towards toolbox"
+}
+
+4.4	{
+  "time": 4.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area where the toolbox is; Toolbox (orange and black) is placed on a turquoise chair in the Initial Object Area (mid-ground); Multiple Red Chairs (3) and one other Turquoise Chair visible in Initial Object Area; Folding Table in the foreground right remains unoccupied.",
+  "Expected Immediate Next Action": "Continue walking towards the turquoise chair with the toolbox."
+}
+4.6	{
+  "time": 4.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Toolbox in the Initial Object Area; Toolbox visible on a turquoise chair; Red chairs and another turquoise chair are also nearby; Folding table is in the foreground to the right.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+
+4.8	Output:
+{
+  "time": 4.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox or Turquoise Chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing, facing the Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground); Multiple Red Chairs (3) and one other Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Walk towards toolbox"
+}
+{}
+5.0	{"time": 5.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox on turquoise chair", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator walking towards the toolbox on the turquoise chair in the Initial Object Area; Toolbox (partially obscured by operator) on a turquoise chair; Multiple Red Chairs (3) and another Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.", "Expected Immediate Next Action": "Continue walking towards toolbox"}
+5.2	{
+  "time": 5.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area; Toolbox (partially obscured) on a turquoise chair within the Initial Object Area (mid-ground); Red Chairs and other Turquoise Chair visible; Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+5.4	{"time": 5.4, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator walking towards the Toolbox in the Initial Object Area; Toolbox (orange and black) on a turquoise chair; Multiple Red Chairs (3) and one other Turquoise Chair visible; Folding Table in the foreground right.", "Expected Immediate Next Action": "Continue walking towards toolbox"}
+5.6	{
+  "time": 5.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area (mid-ground, right); Toolbox (partially obscured by operator) on a turquoise chair within the Initial Object Area; Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+5.8	{
+  "time": 5.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards toolbox in the Initial Object Area; Toolbox (partially obscured by operator) on a turquoise chair within the Initial Object Area; Multiple Red Chairs (3) and Turquoise Chairs (1 visible) in Initial Object Area; Folding Table visible in foreground right; Refrigerator against far wall (potential Stacking Location).",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+6.0	{"time": 6.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator bending towards the Toolbox located on a turquoise chair in the Initial Object Area; Toolbox (partially visible); Multiple Red Chairs and one other Turquoise Chair visible nearby; Folding Table visible in the foreground.", "Expected Immediate Next Action": "Reach for toolbox"}
+6.2	 усилит Your Role: You are an AI assistant specialized in real-time human action analysis and state tracking from video frames.
+    Your Task: You will be provided with a sequence of video frames. For each frame in the sequence, you must:
+    Analyze the frame in the context of the overall task and recent frames (if available).
+    Determine the current state of the task.
+    Identify the key objects visible in the frame.
+    Anticipate the human's immediate next micro-action or transition.
+    Conditionally, if you can confidently predict the human's more substantial action and target location over the next approximate 1-2 seconds, provide that prediction.
+    Use the provided Task Context Description below as your knowledge base regarding the overall goal, valid states, possible actions, key objects, and environmental layout.
+    Input
+    Video Data: A sequence of individual video frames, provided sequentially after every 0.2 seconds. You should process each frame as it arrives, potentially using information from previously processed frames in the sequence to inform your current analysis.
+    Required Output Format (For EACH Frame)
+    Provide your analysis for the current frame in a structured format.
+    Task State: An update of the task state based on your interpretation of the current frame, including toolbox_placed_on_table, num_chairs_stacked, operator_holding, gaze target, current target object, current phase.
+    Identified Key Objects: List the key objects (defined in context) clearly visible in the current frame and their immediate status or location relative to the operator or environment.
+    Example: "Operator near Initial Object Area; Toolbox visible on floor; Red Chair 1 visible nearby; Folding Table visible in foreground."
+
+    Expected Immediate Next Action: Describe the most likely very short-term action transition expected to occur immediately following the current frame, based on the current posture, movement dynamics, and task state. Use terms from the Action Decomposition where applicable, but focus on the transition.
+    Example: "continue walking towards toolbox"
+    Example: "initiate reach for chair handle"
+    Example: "complete placing object"
+    Example: "stabilize after placing chair"
+    Example: "turn body towards table"
+
+    Use the Output structure defined in the context below.
+    Example:
+    {
+    "time": ,
+    "toolbox_placed_on_table": ,
+    "num_chairs_stacked": ,
+    "operator_holding": 
+    "gaze_target": ,
+    "current_target_object": ,
+    "current_phase": ,
+    "Identified Key Objects": ,
+    "Expected Immediate Next Action": 
+    }
+    ---
+    ## Task Context Description ##
+    ### 1. Overall Goal:
+    The operator's overall goal is to organize the room by stacking several plastic chairs in a designated location against the wall and placing a toolbox onto a small folding table.
+    ### 2. Task State Representation:
+    A simple state representation can track the status of the key objects:
+
+    ### 3. Action Decomposition:
+    The task can be broken down into the following observable, discrete actions:
+    Stand idle
+    Walk to location (e.g., walk towards toolbox, walk towards chair, walk towards table, walk towards stacking area)
+    Reach for object (targeting either the toolbox or a chair)
+    Pick up object (lifting the toolbox or a chair)
+    Transport object (carrying the held object to a destination)
+    Place object (setting the toolbox on the table, placing a chair on the floor/stack)
+    Turn towards location/object (Orienting body before walking or interacting)
+
+
+    ### 4. Action Dependencies:
+    General Sequence: Actions often follow a Walk -> Reach -> Pick up -> Transport -> Place pattern for each object being moved.
+    Prerequisites:
+    Reach for object requires the operator to be near the target object (often preceded by Walk to location or Turn towards object).
+    Pick up object requires a preceding Reach for object.
+    Transport object requires a preceding Pick up object.
+    Place object requires a preceding Transport object.
+
+
+    Task Order: The operator first moves the toolbox to the table before starting to move the chairs.
+    Stacking Logic: Chairs are placed sequentially at the Stacking Location. The first chair is placed on the floor, subsequent chairs are placed on top of the previously placed one.
+    Transitions: After Place object, the operator will typically either Stand idle briefly or initiate a Walk to location to retrieve the next object.
+    ### 5. Key Objects and Locations (Optional but Recommended):
+    Key Objects:
+    Operator: The single human performing the task.
+    Toolbox: An orange and black case, initially near the chairs.
+    Turquoise Chair: One plastic chair of this color.
+    Red Chair: Three plastic chairs of this color.
+    Folding Table: A small, wooden-topped table in the foreground.
+
+
+    Key Locations (Conceptual):
+    Initial Object Area: The general space where the chairs and toolbox are located at the start (mid-ground, right side).
+    Table Location: The position of the folding table (foreground, left-center).
+    Stacking Location: The designated area against the far wall, near the refrigerator, where chairs are stacked.
+
+
+    ### 6. Other Relevant Context:
+    Environment: Indoor room with tiled floor, multiple doorways, a refrigerator against the far wall. Space is generally open enough for easy movement.
+    Object Properties: Chairs appear lightweight and are standard stackable plastic chairs. The toolbox is carried with two hands.
+    Repetition: The core task involves repetitive cycles of picking up, transporting, and placing chairs.
+    Implicit Goal: The actions suggest a goal of tidying or organizing the space.
+    No Tools: No external tools are used; the task relies solely on the operator's manual actions.
+
+6.4	{"time": 6.4, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator bending down towards the Initial Object Area; Toolbox (mostly obscured) likely within reach of the operator; Multiple Red Chairs and Turquoise Chairs nearby; Folding Table in the foreground right.", "Expected Immediate Next Action": "Reach for toolbox"}
+6.6	Output:
+{
+"time": 6.6,
+"toolbox_placed_on_table": false,
+"num_chairs_stacked": 0,
+"operator_holding": "None",
+"gaze_target": "Toolbox",
+"current_target_object": "Toolbox",
+"current_phase": "Toolbox Phase",
+"Identified Key Objects": "Operator bending towards the Toolbox located on a turquoise chair in the Initial Object Area; Toolbox (partially obscured) on turquoise chair; Red chairs and the other turquoise chair are nearby; Folding Table is in the foreground right.",
+"Expected Immediate Next Action": "Reach for toolbox"
+}
+6.8	{
+  "time": 6.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, bending down; Toolbox (orange and black) is on the floor near a turquoise chair; Multiple Red Chairs (3) and one Turquoise Chair visible in the Initial Object Area; Folding Table visible in the foreground.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+7.0	{
+  "time": 7.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator bending over, picking up the Toolbox from the turquoise chair in the Initial Object Area; Toolbox (now being held); Multiple Red Chairs (3) and one Turquoise Chair remaining in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Stand up while holding the toolbox"
+}
+7.2	{
+  "time": 7.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, bending towards a turquoise chair where the Toolbox is likely placed (partially obscured view); Toolbox (not clearly visible but assumed to be the target); Red Chairs and other Turquoise Chair remain in the Initial Object Area; Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+7.4	{
+  "time": 7.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area, now closer to the Turquoise Chair with the Toolbox; Toolbox (orange and black) on the Turquoise Chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and another Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+
+7.6	{"time": 7.6, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "Toolbox", "gaze_target": "Folding Table", "current_target_object": "Toolbox", "current_phase": "Transporting Toolbox", "Identified Key Objects": "Operator walking towards the Folding Table, holding the Toolbox with both hands; Turquoise Chair (now empty) in the Initial Object Area; Red Chairs (3) in the Initial Object Area; Remaining Turquoise Chair in the Initial Object Area; Folding Table in the foreground.", "Expected Immediate Next Action": "Continue walking towards the folding table"}
+7.8	{
+  "time": 7.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table Location",
+  "current_target_object": "Toolbox",
+  "current_phase": "Transporting Toolbox",
+  "Identified Key Objects": "Operator walking towards the Folding Table, holding the Toolbox with both hands; Folding Table positioned in the foreground; Initial Object Area with remaining chairs (Red and Turquoise) in the mid-ground.",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+8.0	{
+  "time": 8.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Transporting Toolbox",
+  "Identified Key Objects": "Operator carrying Toolbox with both hands, moving towards the Folding Table; Initial Object Area (mid-ground left) with remaining chairs visible; Folding Table positioned in the foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+8.2	{"time": 8.2, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "Toolbox", "gaze_target": "Folding Table", "current_target_object": "Folding Table", "current_phase": "Transporting Toolbox", "Identified Key Objects": "Operator holding the Toolbox (orange and black) with both hands, moving towards the Folding Table; Multiple Chairs (Red and Turquoise) in the Initial Object Area; Folding Table in the foreground.", "Expected Immediate Next Action": "Continue walking towards the folding table."}
+8.4	{"time": 8.4, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "Toolbox", "gaze_target": "Folding Table", "current_target_object": "Folding Table", "current_phase": "Transporting Toolbox", "Identified Key Objects": "Operator holding Toolbox with both hands, moving towards the Folding Table; Folding Table positioned in the foreground right; Initial Object Area with chairs visible in the mid-ground left.", "Expected Immediate Next Action": "Continue walking towards folding table"}
+8.6	{
+  "time": 8.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Folding Table",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator holding Toolbox with both hands, transporting it towards the Folding Table (foreground right); Folding Table positioned in foreground right; Initial Object Area with remaining chairs visible in mid-ground left.",
+  "Expected Immediate Next Action": "Continue walking towards the folding table"
+}
+8.8	{
+  "time": 8.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Transporting Toolbox",
+  "Identified Key Objects": "Operator holding Toolbox with both hands, moving towards the Folding Table; Folding Table positioned in the foreground; Initial Object Area with chairs visible in the mid-ground.",
+  "Expected Immediate Next Action": "Continue walking towards the table"
+}
+9.0	{
+  "time": 9.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area (Chairs)",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator standing near the Folding Table (foreground right), having just placed the toolbox; Toolbox (orange and black) placed on the Folding Table; Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in the Initial Object Area (mid-ground).",
+  "Expected Immediate Next Action": "Turn body towards Initial Object Area"
+}
+9.2	{"time": 9.2, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Initial Object Area", "current_target_object": "Chair", "current_phase": "Chair Moving Phase", "Identified Key Objects": "Operator standing near the Folding Table; Toolbox (orange and black) placed on the Folding Table; Multiple Chairs (2 Turquoise, 3 Red) in the Initial Object Area; Folding Table in foreground right.", "Expected Immediate Next Action": "Walk towards Initial Object Area"}
+9.4	{
+  "time": 9.4,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "None",
+  "current_target_object": null,
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator standing near the Folding Table; Toolbox (orange and black) placed on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) remain in the Initial Object Area (mid-ground left); Folding Table now has the toolbox on it and is in the foreground right.",
+  "Expected Immediate Next Action": "Turn towards the chairs in the Initial Object Area"
+}
+9.6	{
+  "time": 9.6,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area",
+  "current_target_object": "A chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator standing near the Folding Table; Toolbox (orange and black) placed on the Folding Table; Multiple Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area (mid-ground, left of refrigerator).",
+  "Expected Immediate Next Action": "Walk towards Initial Object Area"
+}
+9.8	{
+  "time": 9.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area (Chairs)",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator standing near the Folding Table (foreground right), having just placed the Toolbox; Toolbox (orange and black) placed on the Folding Table; Red Chairs (3) and Turquoise Chairs (2) remain in the Initial Object Area (mid-ground, left of the refrigerator); Folding Table is now holding the toolbox.",
+  "Expected Immediate Next Action": "Turn towards the Initial Object Area"
+}
+10.0	{
+  "time": 10.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area (chairs)",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator standing near the Folding Table, facing the Initial Object Area; Toolbox (orange and black) placed on the Folding Table; Multiple Red Chairs (3) and Turquoise Chairs (2 total) remaining in the Initial Object Area (mid-ground); Folding Table in foreground right.",
+  "Expected Immediate Next Action": "Walk towards a chair in the Initial Object Area"
+}
+10.2	{
+  "time": 10.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area (chairs)",
+  "current_target_object": "Turquoise Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator near the Folding Table (now holding the Toolbox); Toolbox placed on the Folding Table (foreground right); Turquoise Chair and Red Chairs in the Initial Object Area (mid-ground left).",
+  "Expected Immediate Next Action": "Turn to walk towards the Initial Object Area"
+}
+
+10.4	{
+  "time": 10.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area; Multiple Red Chairs (3) and a Turquoise Chair (1) remaining visible in Initial Object Area; Folding Table in foreground right, unoccupied.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+10.6	{
+  "time": 10.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area; Toolbox (orange and black) sitting on a turquoise chair within the Initial Object Area (mid-ground); Multiple Red Chairs (3) and one other Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right, unoccupied.",
+  "Expected Immediate Next Action": "Continue walking towards the toolbox"
+}
+
+10.8	{
+  "time": 10.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area",
+  "current_target_object": "Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area where chairs are located; Toolbox (orange and black) placed on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) remaining in the Initial Object Area (mid-ground).",
+  "Expected Immediate Next Action": "Walk towards a chair"
+}
+11.0	{
+  "time": 11.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) resting on a Red Chair near the Initial Object Area; Multiple Red Chairs (3 total) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+11.2	{
+  "time": 11.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on Turquoise Chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing near the Initial Object Area, facing the toolbox; Toolbox (orange and black) placed on a turquoise chair within the Initial Object Area; Red Chairs (3) and remaining Turquoise Chair (1) nearby; Folding Table positioned in the foreground right, unoccupied.",
+  "Expected Immediate Next Action": "Walk towards toolbox"
+}
+
+11.4	{"time": 11.4, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox on Turquoise Chair", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator walking towards the Initial Object Area; Toolbox (orange and black) visible on a turquoise chair within the Initial Object Area (mid-ground, right); Multiple Red Chairs (3) and one other Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.", "Expected Immediate Next Action": "continue walking towards toolbox"}
+11.6	{
+  "time": 11.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Toolbox (orange and black) which is on a turquoise chair in the Initial Object Area; Multiple Red Chairs and another Turquoise Chair remain in the Initial Object Area; Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+11.8	{
+  "time": 11.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, bending towards the toolbox; Toolbox (orange and black) visible on the turquoise chair; Red Chairs (3) and remaining Turquoise Chair (1) in the Initial Object Area; Folding Table in the foreground.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+12.0	{
+  "time": 12.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator bending towards a turquoise chair where the Toolbox (partially visible) is placed in the Initial Object Area (mid-ground, right); Multiple Red Chairs (3) and another Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+12.2	{
+  "time": 12.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Toolbox; Toolbox (orange and black) on a turquoise chair in the Initial Object Area; Multiple Red Chairs (3) and one Turquoise Chair are visible near the Initial Object Area; Folding Table in the foreground.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+12.4	{'time': 12.4, 'toolbox_placed_on_table': False, 'num_chairs_stacked': 0, 'operator_holding': 'None', 'gaze_target': 'Toolbox', 'current_target_object': 'Toolbox', 'current_phase': 'Toolbox Phase', 'Identified Key Objects': 'Operator walking towards the Toolbox in the Initial Object Area; Toolbox (orange and black) on a turquoise chair; Multiple Red Chairs and one other Turquoise Chair visible; Folding Table in the foreground.', 'Expected Immediate Next Action': 'Continue walking towards toolbox'}
+12.6	{"time": 12.6, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator walking towards the toolbox; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's left); Multiple Red Chairs (3) and remaining Turquoise Chair (1) visible in Initial Object Area; Folding Table visible in foreground right.", "Expected Immediate Next Action": "Continue walking towards toolbox"}
+12.8	{"time": 12.8, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "Toolbox", "gaze_target": "Folding Table", "current_target_object": "Folding Table", "current_phase": "Transporting Toolbox", "Identified Key Objects": "Operator carrying the Toolbox with both hands, moving towards the Folding Table (foreground right); Turquoise Chair and three Red Chairs in the Initial Object Area (mid-ground left); Folding Table partially visible in the foreground right.", "Expected Immediate Next Action": "Continue walking towards the folding table"}
+13.0	{
+  "time": 13.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the toolbox on the turquoise chair in the Initial Object Area; Toolbox (orange and black) on the turquoise chair; Multiple Red Chairs (3) and one remaining Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+13.2	{
+  "time": 13.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area (chairs)",
+  "current_target_object": "Turquoise Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area; Toolbox placed on the Folding Table; Turquoise Chair near the refrigerator against the wall; Other chairs (red and turquoise) in the Initial Object Area; Folding Table with toolbox in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards the turquoise chair"
+}
+13.4	{
+  "time": 13.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator turned towards the Initial Object Area, slightly behind the turquoise chair with the Toolbox; Toolbox (orange and black) on the turquoise chair; Remaining chairs (2 turquoise, 3 red) in the Initial Object Area; Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Walk towards the turquoise chair with the toolbox"
+}
+
+13.6	{
+  "time": 13.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing near the turquoise chair where the toolbox was last seen; Toolbox (orange and black) now visible on the folding table; Multiple Red Chairs (3) and Turquoise Chairs (1 remaining in the initial area) visible in the Initial Object Area; Folding Table now holding the toolbox.",
+  "Expected Immediate Next Action": "Turn body towards the remaining chairs"
+}
+13.8	{
+  "time": 13.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Transporting Toolbox",
+  "Identified Key Objects": "Operator walking towards the Folding Table while holding the Toolbox (orange and black) with both hands; Several chairs (Red and Turquoise) remain in the Initial Object Area; Folding Table is in the foreground.",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+14.0	{
+  "time": 14.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Turquoise Chair",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table, holding the Toolbox (orange and black) on top of a Turquoise Chair; Remaining chairs (1 Turquoise, 3 Red) in the Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+14.2	{"time": 14.2, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "Turquoise Chair", "gaze_target": "Folding Table", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator transporting a Turquoise Chair towards the Folding Table; Toolbox placed on the seat of a Red Chair near the Folding Table; Remaining chairs (1 Turquoise, 3 Red) in the Initial Object Area.", "Expected Immediate Next Action": "Continue walking towards folding table with chair"}
+14.4	{
+  "time": 14.4,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Turquoise Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Turquoise Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator holding a Turquoise Chair, moving towards the Stacking Location (near the far wall, out of frame); Toolbox (orange and black) placed on the Folding Table; One Turquoise Chair and three Red Chairs remaining in the Initial Object Area; Folding Table with toolbox in the foreground.",
+  "Expected Immediate Next Action": "Continue transporting the chair towards the stacking location."
+}
+14.6	{
+  "time": 14.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Transporting Toolbox",
+  "Identified Key Objects": "Operator holding Toolbox (orange and black) with both hands, walking towards the Folding Table (foreground right); Several Red and Turquoise Chairs remain in the Initial Object Area (mid-ground).",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+14.8	{
+  "time": 14.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 2,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator carrying a Red Chair towards the Stacking Location (near the refrigerator); Two Turquoise Chairs stacked at the Stacking Location; Remaining Red Chairs (2) in the Initial Object Area; Folding Table with Toolbox placed on it (foreground right).",
+  "Expected Immediate Next Action": "Continue walking towards Stacking Location"
+}
+15.0	{"time": 15.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Folding Table", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) being carried in both hands; Initial Object Area with remaining chairs visible in the background; Folding Table positioned in the foreground.", "Expected Immediate Next Action": "Continue walking towards table"}
+15.2	{
+  "time": 15.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) held in operator's left hand; Two Turquoise Chairs remain in the Initial Object Area; Three Red Chairs remain in the Initial Object Area; Folding Table positioned in the foreground.",
+  "Expected Immediate Next Action": "Continue walking towards the folding table"
+}
+15.4	{"time": 15.4, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox on turquoise chair", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator turned towards the Initial Object Area; Toolbox (orange and black) visible on a turquoise chair within the Initial Object Area; Multiple Red Chairs and one other Turquoise Chair visible; Folding Table with no objects on it in the foreground right.", "Expected Immediate Next Action": "Walk towards the toolbox"}
+15.6	{
+  "time": 15.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, turning towards the turquoise chair with the Toolbox on it; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground); Multiple Red Chairs and one other Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Walk towards the turquoise chair holding the toolbox"
+}
+15.8	{"time": 15.8, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator near Initial Object Area; Toolbox (orange and black) being placed on the folding table; Multiple Red Chairs and Turquoise Chairs in the Initial Object Area; Folding Table in the foreground, with the toolbox being placed on it.", "Expected Immediate Next Action": "Complete placing toolbox on table"}
+16.0	{"time": 16.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator walking towards the toolbox; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground); Folding Table visible in the foreground right.", "Expected Immediate Next Action": "Continue walking towards toolbox"}
+16.2	{
+  "time": 16.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards toolbox and turquoise chair; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and one Turquoise Chair remaining visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+16.4	{"time": 16.4, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox on turquoise chair", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator standing near Initial Object Area, looking towards toolbox; Toolbox (orange and black) placed on a turquoise chair within the Initial Object Area (mid-ground); Multiple Red Chairs (3) and one remaining Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.", "Expected Immediate Next Action": "Walk towards toolbox"}
+16.6	{
+  "time": 16.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the toolbox on the turquoise chair; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (3) and one remaining Turquoise Chair visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+16.8	{
+  "time": 16.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator has turned and is walking towards the Initial Object Area; Toolbox (orange and black) is on a turquoise chair within the Initial Object Area (mid-ground, right); Multiple Red Chairs and the other Turquoise Chair are also present; Folding Table is in the foreground right, empty.",
+  "Expected Immediate Next Action": "Continue walking towards the toolbox"
+}
+
+17.0	{"time": 17.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator near the Initial Object Area, bending towards the toolbox which is on a turquoise chair; Toolbox (orange and black) on the turquoise chair; Multiple Red Chairs (3) and one remaining Turquoise Chair visible in Initial Object Area; Folding Table in the foreground right.", "Expected Immediate Next Action": "Reach for toolbox"}
+17.2	{
+  "time": 17.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator has turned towards the toolbox and is positioned near it; Toolbox (orange and black) is on a turquoise chair; Multiple Red Chairs (3) and one remaining Turquoise Chair are nearby; Folding Table is in the foreground.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+17.4	{
+  "time": 17.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Folding Table",
+  "current_phase": "Walking towards Table",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox visible on a chair in the Initial Object Area; Red Chairs and Turquoise Chairs in Initial Object Area; Folding Table in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+17.6	{
+  "time": 17.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) being carried in operator's right hand; Folding Table visible in foreground right; Initial Object Area with remaining chairs visible in mid-ground left.",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+17.8	{
+  "time": 17.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area (chairs)",
+  "current_target_object": "Turquoise Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area (where chairs are); Toolbox (orange and black) placed on the Folding Table in foreground right; Multiple Red Chairs (3) and Turquoise Chairs (2 total) remain in the Initial Object Area (mid-ground); Folding Table in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards the turquoise chairs"
+}
+18.0	{
+  "time": 18.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) on a red chair near the Folding Table; Multiple Red Chairs (2) and Turquoise Chairs (2) in the Initial Object Area; Folding Table in the foreground.",
+  "Expected Immediate Next Action": "Continue walking towards the toolbox"
+}
+18.2	{
+  "time": 18.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) on the Folding Table; Multiple Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area (mid-ground); Folding Table in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards the folding table"
+}
+18.4	{"time": 18.4, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Folding Table", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator walking towards the folding table; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, left of the operator); Multiple Red Chairs (3) and Turquoise Chairs (1 remaining) visible in Initial Object Area; Folding Table visible in foreground right, closer to the operator.", "Expected Immediate Next Action": "Continue walking towards folding table"}
+18.6	{
+  "time": 18.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the folding table; Toolbox (orange and black) placed on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area (mid-ground left).",
+  "Expected Immediate Next Action": "Continue walking towards the folding table"
+}
+18.8	{
+  "time": 18.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) on the Folding Table; Multiple Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area; Folding Table in foreground center.",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+19.0	{
+  "time": 19.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table (foreground right); Toolbox (orange and black) on the Folding Table; Multiple Chairs (Red and Turquoise) in the Initial Object Area (mid-ground left).",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+19.2	{"time": 19.2, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Folding Table", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area (mid-ground left).", "Expected Immediate Next Action": "Continue walking towards the folding table"}
+19.4	{
+  "time": 19.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the toolbox located on a turquoise chair in the Initial Object Area; Toolbox (orange and black) is visible; Several chairs (red and turquoise) are in the background; Folding Table is in the foreground.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+19.6	{
+  "time": 19.6,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area (Chairs)",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area (mid-ground right); Toolbox (orange and black) placed on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in Initial Object Area (mid-ground left); Folding Table with toolbox on top in foreground right; Stacking Location (against the far wall, near the refrigerator) is empty.",
+  "Expected Immediate Next Action": "Continue walking towards the nearest chair"
+}
+19.8	{
+  "time": 19.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Toolbox in the Initial Object Area; Toolbox (orange and black) on a turquoise chair; Multiple Red Chairs and another Turquoise Chair visible nearby; Folding Table in the foreground.",
+  "Expected Immediate Next Action": "continue walking towards toolbox"
+}
+скипать
+20.0	{"time": 20.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "Toolbox", "gaze_target": "Folding Table", "current_target_object": "Folding Table", "current_phase": "Transporting Toolbox", "Identified Key Objects": "Operator holding Toolbox (orange and black) with both hands, moving towards Folding Table; Folding Table positioned in the foreground; Several chairs (turquoise and red) remain in the Initial Object Area in the mid-ground.", "Expected Immediate Next Action": "Continue walking towards folding table"}
+20.2	{
+  "time": 20.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Folding Table",
+  "current_phase": "Transporting Toolbox",
+  "Identified Key Objects": "Operator holding Toolbox with both hands, moving towards the Folding Table; Folding Table positioned in the foreground, towards the right; Initial Object Area with remaining chairs visible in the mid-ground left.",
+  "Expected Immediate Next Action": "Continue walking towards the folding table"
+}
+20.4	{
+  "time": 20.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, facing towards the toolbox; Toolbox (orange and black) on a red chair within the Initial Object Area (mid-ground, operator's right); Multiple Red Chairs (2) and Turquoise Chairs (2 total) visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+20.6	{
+  "time": 20.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Folding Table",
+  "current_phase": "Transporting Toolbox",
+  "Identified Key Objects": "Operator holding Toolbox (orange and black), moving towards the Folding Table; Folding Table located in the foreground right; Initial Object Area (mid-ground left) with remaining chairs visible.",
+  "Expected Immediate Next Action": "Continue walking towards the folding table"
+}
+20.8	{"time": 20.8, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "Toolbox", "gaze_target": "Folding Table", "current_target_object": "Toolbox", "current_phase": "Transporting Toolbox", "Identified Key Objects": "Operator carrying the Toolbox towards the Folding Table (foreground right); Folding Table is in the foreground right; Initial Object Area with remaining chairs (Red and Turquoise) visible in the mid-ground left.", "Expected Immediate Next Action": "Continue walking towards the folding table"}
+21.0	{
+  "time": 21.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area (chairs)",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator standing near the Folding Table; Toolbox (orange and black) placed on the Folding Table (foreground right); Turquoise Chair 1 and Three Red Chairs located in the Initial Object Area (mid-ground left); Turquoise Chair 2 placed near the Red Chairs.",
+  "Expected Immediate Next Action": "Walk towards a chair in the Initial Object Area"
+}
+21.2	{
+  "time": 21.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "First Chair for Stacking",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator holding a Red Chair near the Folding Table; Toolbox (orange and black) placed on the Folding Table; Turquoise Chair and other Red Chairs in the Initial Object Area; Stacking Location near the refrigerator is visible (far wall, left).",
+  "Expected Immediate Next Action": "Walk towards stacking location"
+}
+21.4	{"time": 21.4, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "None", "current_target_object": "None", "current_phase": "Transitioning to Chairs Phase", "Identified Key Objects": "Operator standing near the Folding Table (foreground, right) where the Toolbox (orange and black) is placed; Multiple Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area (mid-ground, left); Stacking Location (against the far wall near the refrigerator) is visible but empty.", "Expected Immediate Next Action": "Turn towards the chairs"}
+21.6	Prompt Enhancement: The image shows the operator having turned and reached for the toolbox. The operator is now bending down, preparing to pick up the orange and black toolbox which is sitting on a turquoise chair amongst other chairs.
+
+
+21.8	{"time": 21.8, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator transporting a Red Chair towards the Stacking Location (near the wall); Toolbox placed on the Folding Table (foreground right); Two Turquoise Chairs and two Red Chairs remaining in the Initial Object Area; Folding Table in foreground right.", "Expected Immediate Next Action": "Continue walking towards Stacking Location"}
+22.0	{
+  "time": 22.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "First Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator carrying a Red Chair towards the Stacking Location (far wall); Toolbox placed on the Folding Table (foreground right); Two Turquoise Chairs and two Red Chairs remaining in the Initial Object Area (mid-left); Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards the Stacking Location"
+}
+22.2	{
+  "time": 22.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chairs Phase",
+  "Identified Key Objects": "Operator holding a Red Chair, transporting it towards the Stacking Location (near the far wall, not fully visible); Toolbox (orange and black) placed on the Folding Table (foreground right); Remaining chairs (2 Red, 2 Turquoise) in the Initial Object Area (mid-ground left).",
+  "Expected Immediate Next Action": "continue walking towards stacking location"
+}
+22.4	{"time": 22.4, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator carrying a Red Chair towards the Stacking Location (near the far wall); Toolbox placed on the Folding Table; Remaining chairs (2 Red, 2 Turquoise) in the Initial Object Area; Folding Table in the foreground.", "Expected Immediate Next Action": "Continue walking towards Stacking Location"}
+22.6	{"time": 22.6, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chairs Phase", "Identified Key Objects": "Operator holding a Red Chair, transporting it towards the Stacking Location; Toolbox placed on the Folding Table (foreground right); One Turquoise Chair and two Red Chairs remain in the Initial Object Area; Folding Table in foreground right.", "Expected Immediate Next Action": "Continue walking towards the Stacking Location"}
+22.8	{
+  "time": 22.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator transporting a Red Chair towards the Stacking Location (against the far wall, near the left doorway); Toolbox (orange and black) placed on the Folding Table in the foreground right; One Turquoise Chair and two Red Chairs remain in the Initial Object Area.",
+  "Expected Immediate Next Action": "Continue walking towards Stacking Location"
+}
+23.0	{
+  "time": 23.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Red Chair",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator walking towards Initial Object Area; Toolbox (orange and black) placed on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chair (1 remaining) visible in Initial Object Area; One Red Chair has been moved slightly away from the group.",
+  "Expected Immediate Next Action": "Reach for a Red Chair"
+}
+23.2	{
+  "time": 23.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator transporting a Red Chair towards the Stacking Location (near the wall with the refrigerator); Folding Table with Toolbox placed on it (foreground right); One Turquoise Chair and two Red Chairs remaining in the Initial Object Area.",
+  "Expected Immediate Next Action": "Continue walking towards Stacking Location"
+}
+23.4	{"time": 23.4, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Chairs in Initial Object Area", "current_target_object": "Red Chair 2", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator walking towards the Initial Object Area (mid-ground); Toolbox (orange and black) placed on the Folding Table (foreground right); One Red Chair carried by the operator is being placed on the floor at the Stacking Location (far wall, near refrigerator); One Turquoise Chair and two Red Chairs remaining in the Initial Object Area; One Turquoise Chair near the Stacking Location.", "Expected Immediate Next Action": "Release the red chair onto the floor at the stacking location"}
+23.6	{
+  "time": 23.6,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator holding a Red Chair (1) near the Stacking Location (against the wall near the refrigerator); Toolbox (orange and black) placed on the Folding Table (foreground right); Remaining chairs (2 Red, 2 Turquoise) in the Initial Object Area.",
+  "Expected Immediate Next Action": "Walk towards Stacking Location"
+}
+23.8	{
+  "time": 23.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Red Chair",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator near Initial Object Area; Toolbox (orange and black) placed on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area (mid-ground); Folding Table with Toolbox; Stacking Location (against the far wall near the refrigerator).",
+  "Expected Immediate Next Action": "Reach for a red chair"
+}
+24.0	{
+  "time": 24.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "Red Chair 1",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator near Initial Object Area; Toolbox (orange and black) placed on the Folding Table (foreground right); Stack of two turquoise chairs and one red chair being interacted with by the operator; Two other red chairs visible in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Reach for the top red chair on the stack."
+}
+24.2	{"time": 24.2, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator near Initial Object Area, turning towards the Folding Table; Toolbox (orange and black) now placed on the Folding Table (foreground right); Remaining chairs (2 Red, 1 Turquoise) still in the Initial Object Area (mid-ground left).", "Expected Immediate Next Action": "Begin walking towards the Folding Table"}
+24.4	 усиление промпта: The operator has turned and is reaching down towards the turquoise chair with the toolbox on it in the initial object area. I will generate an image showing this action.
+
+24.6	{
+  "time": 24.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "A chair in the Initial Object Area",
+  "current_target_object": "A chair",
+  "current_phase": "Chair Moving Phase (Potentially out of order)",
+  "Identified Key Objects": "Operator bent over near the Initial Object Area; Toolbox (orange and black) visible on a turquoise chair; Multiple Red Chairs and another Turquoise Chair nearby; Folding Table in the background.",
+  "Expected Immediate Next Action": "Initiate reach for a chair"
+}
+[thought
+The operator in the current frame (time 24.6) is bent over near the chairs, in contrast to the initial expectation of interacting with the toolbox first. The 'current_phase' has been updated to reflect this apparent change in the sequence of operations. The 'Expected Immediate Next Action' now anticipates the operator interacting with a chair.{
+  "time": 24.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Potentially the Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Moving Phase (Potentially out of order)",
+  "Identified Key Objects": "Operator standing up, holding a Red Chair; Toolbox (orange and black) visible on a turquoise chair in the Initial Object Area; Remaining Red Chairs and another Turquoise Chair nearby; Folding Table in the background.",
+  "Expected Immediate Next Action": "Turn towards the stacking area"
+}
+[thought
+The operator is now standing and holding a red chair, confirming the action of picking up a chair. The 'operator_holding' state is updated. The 'Expected Immediate Next Action' is now to turn towards a likely destination for the chair, which, based on the overall goal, would be the stacking location. The gaze target is inferred to be towards this direction.{
+  "time": 25.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location (near the refrigerator)",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Transport Phase",
+  "Identified Key Objects": "Operator turning towards the far wall, holding a Red Chair; Toolbox (orange and black) visible on a turquoise chair in the Initial Object Area; Remaining chairs in the mid-ground; Folding Table in the foreground; Refrigerator visible against the far wall (potential Stacking Location).",
+  "Expected Immediate Next Action": "Start walking towards the stacking location"
+}
+[thought
+The operator has turned their body, still holding the red chair, orienting towards the far wall where the refrigerator (likely near the stacking location) is situated. The 'current_phase' is now 'Chair Transport Phase', and the 'Expected Immediate Next Action' is to begin walking towards the inferred stacking location. The gaze target is now more confidently directed at the stacking area.
+24.8	{
+  "time": 24.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Red Chair in Initial Object Area",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator standing near the Initial Object Area, facing the chairs; Toolbox (orange and black) placed on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area (mid-ground); Folding Table with toolbox in foreground right.",
+  "Expected Immediate Next Action": "Reach for a red chair"
+}
+25.0	{
+  "time": 25.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Turquoise Chair 1",
+  "current_phase": "Chair Phase",
+  "Identified Key Objects": "Operator standing near the Initial Object Area, facing the Folding Table; Toolbox (orange and black) placed on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) visible in the Initial Object Area (mid-ground left).",
+  "Expected Immediate Next Action": "Walk towards folding table"
+}
+ পারছেন
+25.2	{"time": 25.2, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox on folding table", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator walking towards folding table; Toolbox (orange and black) placed on the Folding Table (foreground right); Initial Object Area with remaining chairs visible in the mid-ground left; Folding Table in the foreground right.", "Expected Immediate Next Action": "Continue walking towards the folding table."}
+25.4	{
+  "time": 25.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) placed on the Folding Table (foreground right); Multiple Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area (mid-ground left).",
+  "Expected Immediate Next Action": "Continue walking towards the folding table"
+}
+25.6	{
+  "time": 25.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) placed on the Folding Table (foreground right); Stack of Red Chairs and Turquoise Chairs near the far wall; Folding Table now in the foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards the folding table."
+}
+25.8	{
+  "time": 25.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Object Area (Chairs)",
+  "current_target_object": "Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area where chairs are located (mid-ground); Toolbox (orange and black) placed on the Folding Table (foreground right); Stack of three Red Chairs and one Turquoise Chair visible in Initial Object Area; One Turquoise Chair is separated slightly.",
+  "Expected Immediate Next Action": "Continue walking towards the separated turquoise chair."
+}
+26.0	{
+  "time": 26.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) placed on a turquoise chair within the Initial Object Area (near the refrigerator); Multiple Red Chairs (3) and one Turquoise Chair remaining in Initial Object Area; Folding Table in the foreground.",
+  "Expected Immediate Next Action": "Continue walking towards table"
+}
+26.2	Prompt Enhancement: The operator has turned and is now walking towards the folding table in the foreground. The toolbox is now visible on the folding table. The chairs remain in the initial object area. The operator is expected to reach the folding table.
+
+
+26.4	enhanced_prompt: A person in a striped shirt and dark pants is walking towards a small folding table in a brightly lit indoor room. The table is positioned in the foreground on the right side of the frame and has an orange and black toolbox placed on its surface. Several red and turquoise plastic chairs are clustered together near the middle of the frame, against a wall that transitions from beige at the top to light grey at the bottom. A stainless steel refrigerator stands against the same wall to the right of the chairs. The person appears to be moving from the area of the chairs towards the table.
+
+
+26.6	{
+  "time": 26.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on folding table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the folding table; Toolbox (orange and black) visible on the folding table in the foreground right; Stack of Turquoise and Red Chairs in the mid-ground left.",
+  "Expected Immediate Next Action": "Continue walking towards the folding table."
+}
+26.8	{
+  "time": 26.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Transporting Toolbox",
+  "Identified Key Objects": "Operator holding Toolbox with both hands, moving towards the Folding Table; Folding Table (wooden top, black frame) positioned in the foreground; Initial Object Area with chairs (Red and Turquoise) visible in the mid-ground to the operator's left; Refrigerator visible against the far wall.",
+  "Expected Immediate Next Action": "continue walking towards table"
+}
+27.0	{
+  "time": 27.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Red Chair",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator standing near the Initial Object Area; Stack of two Turquoise Chairs and one Red Chair against the wall; Two Red Chairs remaining in the Initial Object Area; Toolbox placed on the Folding Table in the foreground.",
+  "Expected Immediate Next Action": "Reach for a Red Chair"
+}
+27.2	{
+  "time": 27.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, bending down towards the Toolbox (now placed on the floor); Toolbox (orange and black) on the floor; Stack of Turquoise Chairs and Red Chairs in the Initial Object Area; Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+27.4	{
+  "time": 27.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, bending down towards the Toolbox (partially obscured by chairs); Toolbox (orange and black) near the turquoise and red chairs; Red Chairs (3) and Turquoise Chairs (2 total) in the Initial Object Area; Folding Table visible in the background right.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+27.6	{"time": 27.6, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator near the Initial Object Area, bending towards the toolbox which is on a turquoise chair; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Red Chairs and remaining Turquoise chair also in Initial Object Area; Folding Table in the foreground right.", "Expected Immediate Next Action": "Reach for toolbox"}
+27.8	{
+  "time": 27.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator bending towards a turquoise chair where the Toolbox is placed; Toolbox (orange and black) on the turquoise chair; Stack of Red and Turquoise chairs to the operator's left; Folding Table in the background to the operator's right.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+28.0	{
+  "time": 28.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on turquoise chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator turned towards Initial Object Area; Toolbox (orange and black) visible on a turquoise chair within the Initial Object Area (right); Several chairs (red and turquoise) nearby; Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Walk towards toolbox"
+}
+28.2	{"time": 28.2, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Red Chairs", "current_target_object": "Red Chair", "current_phase": "Chair Moving Phase", "Identified Key Objects": "Operator near Initial Object Area, having just placed the toolbox on the folding table (visible in foreground right with toolbox); Stack of Turquoise Chairs and Red Chairs in Initial Object Area; One Red Chair being moved by the operator.", "Expected Immediate Next Action": "Reach for a red chair"}
+28.4	{"time": 28.4, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "A Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator holding a Red Chair, moving towards the Stacking Location (near the far wall with the refrigerator); Stack of Turquoise and Red Chairs in the Initial Object Area; Toolbox placed on the Folding Table in the foreground right.", "Expected Immediate Next Action": "Continue transporting the red chair towards the stacking location."}
+28.6	{
+  "time": 28.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator holding a Red Chair, walking towards the Folding Table (foreground right); Toolbox (orange and black) placed on the Folding Table; Remaining chairs (2 Red, 2 Turquoise) in the Initial Object Area (mid-ground left).",
+  "Expected Immediate Next Action": "Continue walking towards the folding table while holding the red chair."
+}
+28.8	{"time": 28.8, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator transporting a Red Chair towards the Stacking Location; Toolbox (orange and black) placed on the Folding Table; Remaining chairs (2 Red, 2 Turquoise) in the Initial Object Area; Folding Table with toolbox in foreground right.", "Expected Immediate Next Action": "Continue walking towards the Stacking Location"}
+29.0	{"time": 29.0, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator transporting a Red Chair towards the Stacking Location (near the far wall); Stack of Turquoise and Red Chairs in the Initial Object Area; Toolbox placed on the Folding Table in the foreground.", "Expected Immediate Next Action": "Continue walking towards the Stacking Location"}
+29.2	{
+  "time": 29.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator transporting a Red Chair towards the Stacking Location; Toolbox placed on the Folding Table (foreground right); Stack of Turquoise Chairs and two Red Chairs remaining in the Initial Object Area; Folding Table in foreground right.",
+  "Expected Immediate Next Action": "Walk towards stacking location"
+}
+29.4	{
+  "time": 29.4,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator transporting a Red Chair towards the Stacking Location (far wall); Stack of remaining chairs (Red and Turquoise) in the Initial Object Area; Toolbox (orange and black) placed on the Folding Table; Folding Table in foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards Stacking Location"
+}
+29.6	{"time": 29.6, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Moving Phase", "Identified Key Objects": "Operator transporting a Red Chair towards the Stacking Location (near the far wall); Stack of Turquoise Chairs and remaining Red Chairs in the Initial Object Area; Toolbox placed on the Folding Table in the foreground.", "Expected Immediate Next Action": "Continue walking towards Stacking Location"}
+29.8	{
+  "time": 29.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator holding the Toolbox (orange and black) with both hands; Turquoise Chair now empty; Multiple Red Chairs (3) visible nearby; Folding Table visible in foreground.",
+  "Expected Immediate Next Action": "Walk towards table"
+}
+
+30.0	{"time": 30.0, "toolbox_placed_on_table": true, "num_chairs_stacked": 3, "operator_holding": "None", "gaze_target": "Initial Object Area", "current_target_object": "A chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator near the stacked chairs and the remaining chairs in the Initial Object Area; Stack of 3 chairs against the wall (near refrigerator); Remaining Red Chair (1) and Turquoise Chair (1) in Initial Object Area; Toolbox (orange and black) placed on the Folding Table.", "Expected Immediate Next Action": "Walk towards the remaining chairs"}
+30.2	{
+  "time": 30.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Red Chair on top of stack",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, reaching for a Red Chair on top of a stack of chairs; Stack of Red Chairs (2 visible) and Turquoise Chairs (2 visible) in the Initial Object Area; Toolbox (orange and black) visible on a turquoise chair in the background; Folding Table visible in the background right.",
+  "Expected Immediate Next Action": "Pick up object (Red Chair)"
+}
+ حاضراً
+30.4	{
+  "time": 30.4,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator walking towards the Stacking Location while holding a Red Chair; Stack of three Turquoise chairs and one Red Chair in the Initial Object Area; Toolbox placed on the Folding Table; Folding Table in the foreground right; Refrigerator visible near the Stacking Location (far wall).",
+  "Expected Immediate Next Action": "Continue walking towards the stacking location."
+}
+30.6	
+{
+  "time": 30.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing near the Initial Object Area, closer to the toolbox; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's left); Multiple Red Chairs and remaining Turquoise Chair visible nearby; Folding Table visible in the foreground right.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+ взгляд
+30.8	{
+  "time": 30.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on Turquoise Chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area; Toolbox (orange and black) visible on a turquoise chair within the Initial Object Area (mid-ground); Stack of chairs (3 red, 1 turquoise) in the Initial Object Area; Folding Table with a partially visible surface in the foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+31.0	{
+  "time": 31.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near Initial Object Area, having just placed a stack of chairs against the wall; Toolbox (orange and black) now visible on the Folding Table (foreground right); Stack of multiple chairs (Red and Turquoise) against the far wall (Stacking Location).",
+  "Expected Immediate Next Action": "Turn body towards the folding table"
+}
+31.2	{"time": 31.2, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "Toolbox", "gaze_target": "Folding Table", "current_target_object": "Folding Table", "current_phase": "Transporting Toolbox", "Identified Key Objects": "Operator holding Toolbox with both hands, near the Initial Object Area; Initial Object Area now empty of the toolbox; Folding Table in the foreground, towards which the operator is moving.", "Expected Immediate Next Action": "Continue walking towards the folding table"}
+31.4	{
+  "time": 31.4,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Red Chair",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area; Toolbox (orange and black) placed on the Folding Table (foreground right); Stack of Turquoise Chairs and one Red Chair remaining in Initial Object Area; Folding Table in foreground right; Refrigerator against the far wall (Stacking Location).",
+  "Expected Immediate Next Action": "Reach for a Red Chair"
+}
+
+31.6	{
+  "time": 31.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Toolbox",
+  "gaze_target": "Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Transporting Toolbox",
+  "Identified Key Objects": "Operator holding the Toolbox (orange and black); Initial Object Area with remaining chairs (2 turquoise, 2 red) in the mid-ground left; Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Continue walking towards the folding table"
+}
+31.8	{
+  "time": 31.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 4,
+  "operator_holding": "None",
+  "gaze_target": "Stack of chairs",
+  "current_target_object": "None",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator standing near the Stack of Chairs (4 chairs stacked against the far wall, near the refrigerator); Folding Table with Toolbox (orange and black) placed on it is visible in the foreground right; One Red Chair remains near the Initial Object Area.",
+  "Expected Immediate Next Action": "Turn towards the remaining Red Chair"
+}
+32.0	{
+  "time": 32.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Red Chair",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator near Initial Object Area and Stacking Location; Toolbox (orange and black) placed on the Folding Table in the foreground right; Stack of Turquoise and Red Chairs in Initial Object Area (leaning against the wall); One Red Chair slightly separated from the stack; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Reach for the separated Red Chair"
+}
+32.2	Okay, I will analyze this frame and predict the next action.
+
+Task State: `toolbox_placed_on_table` is now true; `num_chairs_stacked` is 1; `operator_holding` is likely a chair that was just placed; `gaze_target` is likely towards the stack of chairs; `current_target_object` is likely the next chair to be moved; `current_phase` is "Chair Stacking Phase".
+
+Identified Key Objects: Operator standing near the Stacking Location (against the far wall, near the refrigerator); Toolbox (orange and black) now placed on the Folding Table (foreground right); Stack of Chairs (2 turquoise, 1 red partially visible) at the Stacking Location; Remaining Chairs (2 red) in the Initial Object Area.
+
+Expected Immediate Next Action: Stabilize after placing chair / Turn towards remaining chairs.
+32.4	{
+  "time": 32.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on Folding Table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Walking to Toolbox",
+  "Identified Key Objects": "Operator walking towards the Folding Table; Toolbox (orange and black) placed on the Folding Table (foreground right); Stack of Red Chairs and Turquoise Chairs in the Initial Object Area (mid-ground left); Folding Table positioned near the far wall.",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+32.6	{
+  "time": 32.6,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Red Chairs in Initial Object Area",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator near Initial Object Area and stack of Red and Turquoise chairs; Toolbox (orange and black) placed on the Folding Table in the foreground right; Stack of Red Chairs (3) and Turquoise Chairs (2) in the Initial Object Area; Folding Table in the foreground right.",
+  "Expected Immediate Next Action": "Reach for a chair"
+}
+
+32.8	{
+  "time": 32.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Turquoise Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area; Toolbox (orange and black) placed on the Folding Table (foreground right); Stack of three Red Chairs and one Turquoise Chair in Initial Object Area (mid-ground left); Another Turquoise Chair slightly separated; Folding Table at Table Location; Refrigerator visible near Stacking Location (far wall).",
+  "Expected Immediate Next Action": "Continue walking towards the turquoise chair."
+}
+33.0	{"time": 33.0, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator near Initial Object Area; Stack of one Red Chair and one Turquoise Chair (picked up together); One Turquoise Chair and two Red Chairs remaining in Initial Object Area; Toolbox on Folding Table in foreground.", "Expected Immediate Next Action": "Walk towards Stacking Location"}
+33.2	{
+  "time": 33.2,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on Turquoise Chair",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator has turned towards the Initial Object Area, now facing the toolbox; Toolbox (orange and black) is visible on top of a turquoise chair within the Initial Object Area (mid-ground); Remaining chairs (Red and Turquoise) are clustered together; Folding Table is positioned in the foreground.",
+  "Expected Immediate Next Action": "Walk towards the turquoise chair with the toolbox"
+}
+33.4	{"time": 33.4,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator standing near the Initial Object Area; Toolbox (orange and black) on a turquoise chair within the Initial Object Area (mid-ground, operator's right); Stack of Red Chairs and Turquoise Chair in Initial Object Area; Folding Table visible in foreground right.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+33.6	{
+  "time": 33.6,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, starting to move towards the Toolbox; Toolbox (orange and black) visible on the floor in the Initial Object Area; Red Chairs and Turquoise Chairs in a disorganized state within the Initial Object Area; Folding Table located in the foreground.",
+  "Expected Immediate Next Action": "Continue walking towards toolbox"
+}
+33.8	{
+  "time": 33.8,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, slightly behind the chairs; Toolbox (orange and black) visible on the turquoise chair within the Initial Object Area; Red Chairs (3) and Turquoise Chair (1) remaining in the Initial Object Area; Folding Table in the foreground, no toolbox on it.",
+  "Expected Immediate Next Action": "Reach for toolbox"
+}
+34.0	{
+  "time": 34.0,
+  "toolbox_placed_on_table": false,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Toolbox on folding table",
+  "current_target_object": "Toolbox",
+  "current_phase": "Toolbox Phase",
+  "Identified Key Objects": "Operator approaching the Initial Object Area; Toolbox (orange and black) now visible on the Folding Table (foreground right); Stack of Turquoise and Red Chairs in the Initial Object Area (mid-ground left); One Red Chair slightly separated from the stack.",
+  "Expected Immediate Next Action": "Walk towards the folding table"
+}
+34.2	{"time": 34.2, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Red Chair", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator near Initial Object Area, reaching for a Red Chair; Stack of Turquoise Chairs and one Red Chair against the wall (stacking location); One Red Chair free next to the stack; Folding Table with Toolbox placed on it is visible in the background.", "Expected Immediate Next Action": "Reach for Red Chair"}
+34.4	Okay, I will analyze this frame and provide the requested information.
+
+{
+  "time": 34.4,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "A Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, bending towards a Red Chair; Toolbox (orange and black) is now visible placed on the Folding Table (foreground right); Multiple Red Chairs and Turquoise Chairs are in the Initial Object Area; Folding Table is in the foreground right.",
+  "Expected Immediate Next Action": "Initiate reach for a chair"
+}
+34.6	{"time": 34.6, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Red Chair", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator near the stack of chairs in the Initial Object Area; Stack of Turquoise Chairs (2) and Red Chairs (1) now formed; Toolbox (orange and black) placed on the Folding Table (foreground right).", "Expected Immediate Next Action": "Reach for a Red Chair"}
+34.8	{"time": 34.8, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator walking towards the Stacking Location; Stack of Turquoise Chairs and one Red Chair at the Stacking Location (near far wall and refrigerator); Toolbox placed on Folding Table in foreground right; One Red Chair held by the operator in transit.", "Expected Immediate Next Action": "Continue walking towards the Stacking Location"}
+35.0	{"time": 35.0, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Initial Object Area", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator walking towards Initial Object Area; Stack of Turquoise Chairs (2) and one Red Chair in the Initial Object Area (mid-ground, left); Two Red Chairs slightly separated from the stack; Toolbox (orange and black) placed on the Folding Table (foreground, right).", "Expected Immediate Next Action": "Reach for a Red Chair"}
+35.2	{
+  "time": 35.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 2,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator transporting a Red Chair towards the Stacking Location (against the far wall, not fully visible); Stack of one Turquoise Chair and one Red Chair at the Stacking Location; One Red Chair remaining in the Initial Object Area; Folding Table with Toolbox (likely) on it visible in the background right.",
+  "Expected Immediate Next Action": "Continue walking towards stacking location"
+}
+
+35.4	{"time": 35.4, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator holding a Red Chair (lifting it); Stack of three Red Chairs and one Turquoise Chair at the Initial Object Area; Toolbox placed on the Folding Table (foreground right); Stacking Location (against the far wall) visible.", "Expected Immediate Next Action": "Walk towards stacking location"}
+
+
+35.8	{"time": 35.8, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Transporting Chair", "Identified Key Objects": "Operator holding a Red Chair with both hands, transporting it towards the Stacking Location (near the wall); Stack of three Turquoise Chairs and two Red Chairs in the Initial Object Area; Folding Table with Toolbox on it located in the foreground; Stacking Location against the far wall is visible.", "Expected Immediate Next Action": "Continue walking towards stacking location"}
+36.0	{
+  "time": 36.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 4,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Chair Stack",
+  "current_target_object": "Red Chair",
+  "current_phase": "Stacking Chairs",
+  "Identified Key Objects": "Operator holding a Red Chair, positioned near a stack of 4 chairs (3 Red, 1 Turquoise) against the far wall (Stacking Location); Folding Table with Toolbox (orange and black) placed on it is visible in the background right.",
+  "Expected Immediate Next Action": "Move to place chair on stack"
+}
+36.2	{"time": 36.2, "toolbox_placed_on_table": true, "num_chairs_stacked": 2, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Stacking Chairs", "Identified Key Objects": "Operator holding a Red Chair near the Stacking Location (against the far wall); Two Red Chairs already stacked; Toolbox placed on the Folding Table (foreground right).", "Expected Immediate Next Action": "Continue walking towards the stacking location"}
+36.4	{"time": 36.4, "toolbox_placed_on_table": true, "num_chairs_stacked": 2, "operator_holding": "Red Chair", "gaze_target": "Chair Stack", "current_target_object": "Red Chair", "current_phase": "Stacking Chairs", "Identified Key Objects": "Operator carrying a Red Chair towards the chair stack (far wall); Two chairs (one Red at the bottom, one Turquoise in the middle) already stacked against the wall; Remaining chairs (two Red, one Turquoise) near the initial location; Toolbox (orange and black) placed on the Folding Table in the foreground.", "Expected Immediate Next Action": "Continue walking towards the chair stack"}
+36.6	{"time": 36.6, "toolbox_placed_on_table": true, "num_chairs_stacked": 3, "operator_holding": "None", "gaze_target": "Stack of chairs", "current_target_object": "None", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator walking away from the stack of three red and one turquoise chair against the wall (Stacking Location); Toolbox (orange and black) placed on the Folding Table; One turquoise chair remaining in the Initial Object Area; One red chair being held by the operator; Two red chairs and one turquoise chair stacked.", "Expected Immediate Next Action": "Walk towards the remaining turquoise chair"}
+36.8	{
+  "time": 36.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Two Red Chairs",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Two Red Chairs",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator transporting two red chairs towards the Stacking Location (near the refrigerator); Toolbox placed on the Folding Table; One red chair and two turquoise chairs remaining in the Initial Object Area; Folding Table in foreground.",
+  "Expected Immediate Next Action": "Continue walking towards stacking location"
+}
+37.0	{
+  "time": 37.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 3,
+  "operator_holding": "None",
+  "gaze_target": "None",
+  "current_target_object": "None",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator near Stacking Location; Stack of three Red Chairs against the far wall (Stacking Location); One Turquoise Chair on the floor near the stack; One Turquoise Chair near the initial chair area; Folding Table with Toolbox (orange and black) placed on top in the foreground.",
+  "Expected Immediate Next Action": "Walk towards the remaining turquoise chair near the initial chair area"
+}
+37.2	{"time": 37.2, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator standing near the Stacking Location; Stack of one Red Chair and one Turquoise Chair at the Stacking Location against the far wall; Toolbox (orange and black) placed on the Folding Table in the foreground right.", "Expected Immediate Next Action": "Turn towards the Initial Object Area to retrieve another chair"}
+37.4	{"time": 37.4, "toolbox_placed_on_table": true, "num_chairs_stacked": 0, "operator_holding": "Red Chair", "gaze_target": "Stacking Location", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator holding a Red Chair near the Initial Object Area (now partially empty); Toolbox (orange and black) placed on the Folding Table in the foreground right; Two Red Chairs and Two Turquoise Chairs remaining in the Initial Object Area; Folding Table with toolbox on it.", "Expected Immediate Next Action": "Turn and walk towards the Stacking Location"}
+37.6	{"time": 37.6, "toolbox_placed_on_table": true, "num_chairs_stacked": 2, "operator_holding": "None", "gaze_target": "Stacked Chairs", "current_target_object": "None", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator standing near the Stacking Location; Stack of two Red Chairs against the far wall; Remaining chairs (1 Red, 1 Turquoise) in the Initial Object Area; Toolbox placed on the Folding Table in the foreground.", "Expected Immediate Next Action": "Turn towards Initial Object Area"}
+37.8	{
+  "time": 37.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 3,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Chair Stack",
+  "current_target_object": "Chair Stack",
+  "current_phase": "Stacking Chairs",
+  "Identified Key Objects": "Operator near the Stacking Location, holding a Red Chair; Stack of three chairs (Turquoise on bottom, then two Red) against the far wall; Toolbox (orange and black) placed on the Folding Table (foreground right).",
+  "Expected Immediate Next Action": "Place chair onto the stack"
+}
+38.0	{"time": 38.0, "toolbox_placed_on_table": true, "num_chairs_stacked": 2, "operator_holding": "None", "gaze_target": "None", "current_target_object": "Red Chair", "current_phase": "Chair Stacking Phase", "Identified Key Objects": "Operator near Stacking Location; Stack of two red chairs against the wall; One red chair being placed on the stack; Remaining chairs (one red, two turquoise) in the Initial Object Area; Toolbox on the Folding Table.", "Expected Immediate Next Action": "Stabilize after placing chair"}
+38.2	{
+  "time": 38.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Two Red Chairs",
+  "gaze_target": "Stacking Location (near wall)",
+  "current_target_object": "Red Chairs",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator holding two red chairs, walking towards the Stacking Location (near the far wall and refrigerator); Toolbox (orange and black) placed on the Folding Table (foreground right); One Red Chair and Two Turquoise Chairs remaining in the Initial Object Area (mid-left); Folding Table with toolbox is near the right wall.",
+  "Expected Immediate Next Action": "Continue walking towards stacking location"
+}
+38.4	{
+  "time": 38.4,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "Red Chair",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "One Red Chair",
+  "current_phase": "Chairs Phase",
+  "Identified Key Objects": "Operator holding one Red Chair (partially obscured) near the Stacking Location (against the far wall); Stack of Turquoise and Red Chairs in Initial Object Area (mid-ground); Toolbox (orange and black) placed on the Folding Table (foreground right); Folding Table positioned away from the wall.",
+  "Expected Immediate Next Action": "Walk towards Stacking Location"
+}
+38.6	{
+  "time": 38.6,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator near the Initial Object Area, having just placed a red chair on the floor at the Stacking Location (near the refrigerator); Stack of remaining chairs (2 red, 1 turquoise) in the Initial Object Area; Toolbox on the Folding Table; Folding Table at the Table Location.",
+  "Expected Immediate Next Action": "Turn towards the stack of remaining chairs"
+}
+38.8	{
+  "time": 38.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "None",
+  "current_phase": "Transitioning to Chairs Phase",
+  "Identified Key Objects": "Operator walking away from the Initial Object Area towards the Folding Table; Stack of Turquoise Chairs and one Red Chair remaining in Initial Object Area; Toolbox (orange and black) placed on the Folding Table (foreground right).",
+  "Expected Immediate Next Action": "Continue walking towards folding table"
+}
+39.0	{
+  "time": 39.0,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs near stacking location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator near the Stacking Location (against the wall); Stack of Red Chairs (2 visible) and Turquoise Chairs (2 visible) standing near the wall; Folding Table with Toolbox on top positioned in the foreground; One Red Chair being moved towards the stack.",
+  "Expected Immediate Next Action": "Continue walking towards the stack of chairs"
+}
+39.2	{
+  "time": 39.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator standing near the Initial Object Area, having just placed a set of chairs down; Toolbox (orange and black) placed on the Folding Table (foreground right); Several Red Chairs and Turquoise Chairs clustered in the Initial Object Area (mid-ground left); Folding Table now has Toolbox on it.",
+  "Expected Immediate Next Action": "Turn towards the clustered chairs"
+}
+39.4	{"time": 39.4, "toolbox_placed_on_table": true, "num_chairs_stacked": 2, "operator_holding": "None", "gaze_target": "Stack of chairs", "current_target_object": "None", "current_phase": "Chairs Stacking Phase", "Identified Key Objects": "Operator standing near the Stacking Location; Stack of two chairs (one turquoise, one red) against the far wall (Stacking Location); Remaining chairs (two red, one turquoise) in a small stack near the operator; Toolbox (orange and black) placed on the Folding Table in the foreground.", "Expected Immediate Next Action": "Reach for the top chair of the remaining stack"}
+39.6	{
+  "time": 39.6,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator standing near a stack of chairs (mostly Red, some Turquoise) at the Initial Object Area, facing towards the Stacking Location; Toolbox (orange and black) placed on the Folding Table in the foreground right; Refrigerator visible near the Stacking Location against the far wall.",
+  "Expected Immediate Next Action": "Reach for the top chair of the stack"
+}
+
+39.8	{
+  "time": 39.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 4,
+  "operator_holding": "None",
+  "gaze_target": "Folding Table",
+  "current_target_object": "None",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator standing near the stacked chairs (4 total, against the far wall near the refrigerator); Toolbox (orange and black) placed on the Folding Table (foreground right); Remaining Turquoise Chair (1) in the Initial Object Area; Empty space in the Initial Object Area where other chairs were previously located.",
+  "Expected Immediate Next Action": "Turn towards the folding table"
+}
+40.0	{"time": 40.0, "toolbox_placed_on_table": false, "num_chairs_stacked": 0, "operator_holding": "None", "gaze_target": "Toolbox on folding table", "current_target_object": "Toolbox", "current_phase": "Toolbox Phase", "Identified Key Objects": "Operator standing near the Initial Object Area, facing away from it; Stack of Red Chairs and Turquoise Chairs in the Initial Object Area; Folding Table with Toolbox (orange lid visible) placed on it in the foreground right; Refrigerator visible near the far wall.", "Expected Immediate Next Action": "Turn towards folding table"}
+40.2	{
+  "time": 40.2,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "Turquoise Chair",
+  "current_phase": "Chair Moving Phase",
+  "Identified Key Objects": "Operator standing near the Initial Object Area; Toolbox (orange and black) placed on the Folding Table (foreground right); Stack of Turquoise and Red Chairs in the Initial Object Area (mid-ground, left); Folding Table near the refrigerator (far wall, right).",
+  "Expected Immediate Next Action": "Walk towards the stack of chairs"
+}
+40.4	{
+  "time": 40.4,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Initial Chair Area",
+  "current_target_object": "Turquoise Chair 1",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator standing near the Initial Chair Area; Stack of Red Chairs (3) and one Turquoise Chair remaining in the Initial Chair Area (mid-ground, left); Toolbox (orange and black) placed on the Folding Table (foreground, right).",
+  "Expected Immediate Next Action": "Walk towards the remaining chairs"
+}
+40.6	{
+  "time": 40.6,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Chairs in Initial Object Area",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator walking towards Initial Object Area; Toolbox (orange and black) placed on Folding Table (foreground right); Stack of Red and Turquoise Chairs (5 total) in the Initial Object Area (mid-ground left); Folding Table (foreground right).",
+  "Expected Immediate Next Action": "Continue walking towards the stack of chairs"
+}
+
+40.8	{
+  "time": 40.8,
+  "toolbox_placed_on_table": true,
+  "num_chairs_stacked": 0,
+  "operator_holding": "None",
+  "gaze_target": "Stacking Location",
+  "current_target_object": "Red Chair",
+  "current_phase": "Chair Stacking Phase",
+  "Identified Key Objects": "Operator walking towards the Initial Object Area (mid-ground left); Toolbox (orange and black) placed on the Folding Table (foreground right); Stack of Red Chairs (3) and a Turquoise Chair (1) in the Initial Object Area (mid-ground left); One Turquoise Chair slightly separated from the stack.",
+  "Expected Immediate Next Action": "Continue walking towards the chairs"
+}
