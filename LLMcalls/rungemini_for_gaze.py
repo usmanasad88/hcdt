@@ -112,5 +112,3 @@ if __name__ == "__main__":
     #             print(f"{timestamp}\t{response}\n")
     #             # Store the raw responses
     #         f_out.write(f"{timestamp}\t{response}\n")
-
-
