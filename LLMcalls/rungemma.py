@@ -63,7 +63,7 @@ def run_base_system_prompt():
     Conditionally, if you can confidently predict the human's more substantial action and target location over the next approximate 1-2 seconds, provide that prediction.
     Use the provided Task Context Description below as your knowledge base regarding the overall goal, valid states, possible actions, key objects, and environmental layout.
     Input
-    Video Data: A sequence of individual video frames, provided sequentially. You should process each frame as it arrives, potentially using information from previously processed frames in the sequence to inform your current analysis.
+    Video Data: A sequence of individual video frames, provided sequentially after every 0.2 seconds. You should process each frame as it arrives, potentially using information from previously processed frames in the sequence to inform your current analysis.
     Required Output Format (For EACH Frame)
     Provide your analysis for the current frame in a structured format.
     Task State: An update of the task state based on your interpretation of the current frame, including toolbox_placed_on_table, num_chairs_stacked, operator_holding, gaze target, current target object, current phase.
