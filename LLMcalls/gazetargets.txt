@@ -1,12 +1,42 @@
-0.0	main: /home/mani/Repos/llama.cpp/models/gemma-3-12b-it-q4_0.gguf
-```json
-[
-  {"point": [380, 420], "label": "head"}
-]
-```
-0.2	main: /home/mani/Repos/llama.cpp/models/gemma-3-12b-it-q4_0.gguf
-```json
-[
-  {"point": [380, 420], "label": "head"}
-]
-```
+0.8	Table
+1.8	Table
+2.8	Table
+3.8	Chair
+4.8	Ch
+5.8	Chair
+6.8	Table
+7.8	Package
+8.8	Box
+9.8	Chair
+10.8	Chair
+11.8	Project
+12.8	Project
+13.8	Project
+14.8	Project
+15.8	Project
+16.8	Project
+17.8	Project
+18.8	Chair
+19.8	Chair
+20.8	Door
+21.8	Door
+22.8	Project
+23.8	Project
+24.8	Project
+25.8	Project
+26.8	Project
+27.8	Door
+28.8	Door
+29.8	Project
+30.8	Project
+31.8	Suit
+32.8	Chair
+33.8	Chair
+34.8	Chair
+35.8	Chair
+36.8	Case
+37.8	Ch
+38.8	Ch
+39.8	Project
+40.8	Project
+41.8	Project
