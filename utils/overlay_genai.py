@@ -1,11 +1,22 @@
 import cv2
 import json
 import re
+from tqdm import tqdm
 
 def extract_json_sections(md_path):
+    # If file is .json, load as JSON array
+    if md_path.endswith('.json'):
+        with open(md_path, "r") as f:
+            data = json.load(f)
+        frame_info = {}
+        for idx, entry in enumerate(data):
+            # Use "time" if available, else use index
+            frame_idx = int(float(entry.get("time", idx)))
+            frame_info[frame_idx] = entry
+        return frame_info
+    # Otherwise, treat as markdown with code blocks
     with open(md_path, "r") as f:
         content = f.read()
-    # Find all JSON code blocks
     matches = re.findall(r"```json\n(.*?)\n```", content, re.DOTALL)
     frame_info = {}
     for block in matches:
@@ -49,13 +60,7 @@ def overlay_genai_video(
     """
     if fields is None:
         fields = [
-            "toolbox_placed_on_table",
-            "num_chairs_stacked",
-            "operator_holding",
-            "gaze_target",
-            "current_target_object",
-            "current_phase",
-            "Identified Key Objects",
+            "time",
             "Expected Immediate Next Action"
         ]
 
@@ -71,7 +76,7 @@ def overlay_genai_video(
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     max_json_idx = max(frame_info.keys()) if frame_info else 0
 
-    for current_frame in range(total_frames):
+    for current_frame in tqdm(range(total_frames), desc="Processing frames"):
         ret, frame = cap.read()
         if not ret:
             break
@@ -82,8 +87,15 @@ def overlay_genai_video(
         if info:
             lines = []
             for field in fields:
+                # Try top-level
                 if field in info:
                     lines.append(f"{field}: {info[field]}")
+                # Try inside llm_parsed_output
+                elif "llm_parsed_output" in info and field in info["llm_parsed_output"]:
+                    lines.append(f"{field}: {info['llm_parsed_output'][field]}")
+                # Try inside current_full_state (optional)
+                elif "current_full_state" in info and field in info["current_full_state"]:
+                    lines.append(f"{field}: {info['current_full_state'][field]}")
             frame = overlay_text(frame, lines, pos=pos, font_scale=font_scale, color=color, thickness=thickness)
 
         out.write(frame)
@@ -91,14 +103,6 @@ def overlay_genai_video(
     cap.release()
     out.release()
     print(f"Overlay video saved to {output_path}")
-
-# Example usage:
-# overlay_genai_video(
-#     "/path/to/video.mp4",
-#     "/path/to/history.md",
-#     "/path/to/output_overlay.mp4",
-#     fields=["gaze_target", "operator_holding"]
-# )
 
 
 def main():
@@ -158,4 +162,17 @@ def main():
     print(f"Overlay video saved to {output_path}")
 
 if __name__ == "__main__":
-    main()
+    # main()
+
+    # overlay_genai_video(
+    #     "/home/mani/Central/Stack/cam2_cr.mp4",
+    #     "data/gemini-flash-image-gen-3-memv1.json",
+    #     "data/overlay-gemini-flash-image-gen-3-memv1.mp4",
+    #     fields=["time", "Expected Immediate Next Action"]
+    # )
+    overlay_genai_video(
+        "/home/mani/Central/Cooking1/aria01_214-1.mp4",
+        "data/gemini-flash-image-gen-cooking-dag.fixed.json",
+        "data/overlay-gemini-flash-image-gen-cooking-dag.mp4",
+        fields=["timestamp", "last_observed_action","expected_immediate_next_action"]
+    )
