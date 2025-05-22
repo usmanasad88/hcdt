@@ -2,6 +2,9 @@ import cv2
 import json
 import re
 from tqdm import tqdm
+from motionutils import get_end_effector_velocities 
+import os
+
 
 def extract_json_sections(md_path):
     # If file is .json, load as JSON array
@@ -104,6 +107,91 @@ def overlay_genai_video(
     out.release()
     print(f"Overlay video saved to {output_path}")
 
+def overlay_velocities_video(
+    video_path,
+    output_path,
+    font_scale=0.5,
+    color=(0, 255, 0), # Green for velocities
+    thickness=1,
+    pos=(10, 30)
+):
+    """
+    Overlays motion velocities from HumanML3D data onto a video.
+    The motion data file is assumed to be in ../data/humanml3d/ 
+    and named identically to the video file (excluding extension), with a .pt extension.
+    """
+    cap = cv2.VideoCapture(video_path)
+    if not cap.isOpened():
+        print(f"Error: Could not open video {video_path}")
+        return
+
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+
+    total_video_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    
+    video_file_name_without_ext = os.path.splitext(os.path.basename(video_path))[0]
+    motion_data_available = False
+    total_motion_frames = 0
+
+    try:
+        # Check availability and get total motion frames
+        _, _, _, _, _, _, _, total_motion_frames = get_end_effector_velocities(video_file_name_without_ext, 0)
+        motion_data_available = True
+        print(f"Motion data found for {video_file_name_without_ext}.pt with {total_motion_frames} frames.")
+    except FileNotFoundError:
+        print(f"Motion file {video_file_name_without_ext}.pt not found. Cannot overlay velocities.")
+        cap.release() # Release video capture if motion data is essential and not found
+        return
+    except ValueError as e:
+        print(f"Error reading initial motion data from {video_file_name_without_ext}.pt: {e}. Cannot overlay velocities.")
+        cap.release()
+        return
+    except Exception as e:
+        print(f"Unexpected error initializing motion data for {video_file_name_without_ext}.pt: {e}. Cannot overlay velocities.")
+        cap.release()
+        return
+
+    for current_frame_idx in tqdm(range(total_video_frames), desc="Processing velocity overlay"):
+        ret, frame = cap.read()
+        if not ret:
+            break
+
+        lines = []
+        if motion_data_available and current_frame_idx < total_motion_frames:
+            try:
+                (
+                    root_ang_vel_y, root_lin_vel_x, root_lin_vel_z,
+                    lf_v, rf_v, lh_v, rh_v, _ 
+                ) = get_end_effector_velocities(video_file_name_without_ext, current_frame_idx)
+
+                lines.append(f"Frame: {current_frame_idx}")
+                lines.append(f"RootAngVelY: {root_ang_vel_y:.2f}")
+                lines.append(f"RootLinVelX: {root_lin_vel_x:.2f}")
+                lines.append(f"RootLinVelZ: {root_lin_vel_z:.2f}")
+                lines.append(f"LFootVel: {lf_v:.2f}")
+                lines.append(f"RFootVel: {rf_v:.2f}")
+                lines.append(f"LHandVel: {lh_v:.2f}")
+                lines.append(f"RHandVel: {rh_v:.2f}")
+            except ValueError as e: # If a specific frame fails within motion data
+                if current_frame_idx % 100 == 0: # Log occasionally
+                     print(f"Value error for motion data at frame {current_frame_idx}: {e}")
+            except Exception as e: # Catch any other unexpected error during per-frame fetch
+                if current_frame_idx % 100 == 0: # Log occasionally
+                    print(f"Unexpected error fetching motion data for frame {current_frame_idx}: {e}")
+        
+        if lines:
+            frame = overlay_text(frame, lines, pos=pos, font_scale=font_scale, color=color, thickness=thickness)
+        
+        out.write(frame)
+
+    cap.release()
+    out.release()
+    print(f"Velocity overlay video saved to {output_path}")
+
 
 def main():
     video_path = "/home/mani/Central/Cooking1/Stack/cam2_cr.mp4"
@@ -170,9 +258,17 @@ if __name__ == "__main__":
     #     "data/overlay-gemini-flash-image-gen-3-memv1.mp4",
     #     fields=["time", "Expected Immediate Next Action"]
     # )
-    overlay_genai_video(
-        "/home/mani/Central/Cooking1/aria01_214-1.mp4",
-        "data/gemini-flash-image-gen-cooking-dag.fixed.json",
-        "data/overlay-gemini-flash-image-gen-cooking-dag.mp4",
-        fields=["timestamp", "last_observed_action","expected_immediate_next_action"]
-    )
+
+    # overlay_genai_video(
+    #     "/home/mani/Central/Cooking1/aria01_214-1.mp4",
+    #     "data/gemini-flash-image-gen-cooking-dag.fixed.json",
+    #     "data/overlay-gemini-flash-image-gen-cooking-dag.mp4",
+    #     fields=["timestamp", "last_observed_action","expected_immediate_next_action"]    
+    # )
+    video_path_velocities="/home/mani/Central/HaVid/S01A02I01S1.mp4"
+    output_path_velocities = "/home/mani/Central/HaVid/S01A02I01S1_velocities_overlay.mp4"
+    overlay_velocities_video(video_path_velocities, output_path_velocities)
+
+
+
+

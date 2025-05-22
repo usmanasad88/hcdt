@@ -1,0 +1,1 @@
+ffmpeg -i /home/mani/Central/HaVid/S07A02I01M0.mp4 -vf fps=1 /home/mani/Central/HaVid/S07A02I01M0/frame_%04d.png
