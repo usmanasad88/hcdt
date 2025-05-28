@@ -120,6 +120,7 @@ def overlay_velocities_video(
     The motion data file is assumed to be in ../data/humanml3d/ 
     and named identically to the video file (excluding extension), with a .pt extension.
     """
+    velocity_scale = 100.0 # Scale for velocities
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
         print(f"Error: Could not open video {video_path}")
@@ -169,13 +170,13 @@ def overlay_velocities_video(
                 ) = get_end_effector_velocities(video_file_name_without_ext, current_frame_idx)
 
                 lines.append(f"Frame: {current_frame_idx}")
-                lines.append(f"RootAngVelY: {root_ang_vel_y:.2f}")
-                lines.append(f"RootLinVelX: {root_lin_vel_x:.2f}")
-                lines.append(f"RootLinVelZ: {root_lin_vel_z:.2f}")
-                lines.append(f"LFootVel: {lf_v:.2f}")
-                lines.append(f"RFootVel: {rf_v:.2f}")
-                lines.append(f"LHandVel: {lh_v:.2f}")
-                lines.append(f"RHandVel: {rh_v:.2f}")
+                lines.append(f"RootAngVelY: {velocity_scale * root_ang_vel_y:.2f}")
+                lines.append(f"RootLinVelX: {velocity_scale * root_lin_vel_x:.2f}")
+                lines.append(f"RootLinVelZ: {velocity_scale * root_lin_vel_z:.2f}")
+                lines.append(f"LFootVel: {velocity_scale * lf_v:.2f}")
+                lines.append(f"RFootVel: {velocity_scale * rf_v:.2f}")
+                lines.append(f"LHandVel: {velocity_scale * lh_v:.2f}")
+                lines.append(f"RHandVel: {velocity_scale * rh_v:.2f}")
             except ValueError as e: # If a specific frame fails within motion data
                 if current_frame_idx % 100 == 0: # Log occasionally
                      print(f"Value error for motion data at frame {current_frame_idx}: {e}")
@@ -267,7 +268,7 @@ if __name__ == "__main__":
     # )
     video_path_velocities="/home/mani/Central/HaVid/S01A02I01S1.mp4"
     output_path_velocities = "/home/mani/Central/HaVid/S01A02I01S1_velocities_overlay.mp4"
-    overlay_velocities_video(video_path_velocities, output_path_velocities)
+    overlay_velocities_video(video_path_velocities, output_path_velocities,font_scale=2)
 
 
 

@@ -120,6 +120,8 @@ def draw_point_on_image(image_path, y, x, save_path=None, point_color='red', poi
     else:
         return img
     
+
+    
 if __name__ == "__main__":
     input_folders = [
         "/home/mani/Central/Cooking1/aria_frames",
