@@ -4,18 +4,26 @@ import matplotlib.pyplot as plt
 import json
 import re
 
+from typing import Optional
 
 import os
 import subprocess
 
-def run_llama_mtmd(prompt: str, image_path: str) -> str:
-    cmd = [
-        "/home/mani/Repos/llama.cpp/build/bin/llama-mtmd-cli",
-        "-m", "/home/mani/Repos/llama.cpp/models/gemma-3-12b-it-q4_0.gguf",
-        "--mmproj", "/home/mani/Repos/llama.cpp/models/mmproj-model-f16-12B.gguf",
-        "-p", prompt,
-        "--image", image_path
-    ]
+def run_llama_mtmd(prompt: str, image_path: Optional[str] = None) -> str:
+    if image_path:
+        cmd = [
+            "/home/mani/Repos/llama.cpp/build/bin/llama-mtmd-cli",
+            "-m", "/home/mani/Repos/llama.cpp/models/gemma-3-12b-it-q4_0.gguf",
+            "--mmproj", "/home/mani/Repos/llama.cpp/models/mmproj-model-f16-12B.gguf",
+            "-p", prompt,
+            "--image", image_path
+        ]
+    else:
+        cmd = [
+            "/home/mani/Repos/llama.cpp/build/bin/llama-cli",
+            "-m", "/home/mani/Repos/llama.cpp/models/gemma-3-12b-it-q4_0.gguf",
+            "-p", prompt
+        ]
     # Copy current environment and remove LD_LIBRARY_PATH
     env = os.environ.copy()
     env.pop("LD_LIBRARY_PATH", None)

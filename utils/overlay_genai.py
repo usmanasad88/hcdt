@@ -193,6 +193,38 @@ def overlay_velocities_video(
     out.release()
     print(f"Velocity overlay video saved to {output_path}")
 
+def overlay_frame_numbers(video_path, output_path):
+    """
+    Overlays frame numbers on a video.
+    
+    Args:
+        video_path (str): Path to the input video.
+        output_path (str): Path to save the output video with frame numbers.
+    """
+    cap = cv2.VideoCapture(video_path)
+    if not cap.isOpened():
+        print(f"Error: Could not open video {video_path}")
+        return
+
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+
+    for current_frame in tqdm(range(total_frames), desc="Processing frame numbers"):
+        ret, frame = cap.read()
+        if not ret:
+            break
+
+        cv2.putText(frame, f"Frame: {current_frame}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255,255,255), 1, cv2.LINE_AA)
+        out.write(frame)
+
+    cap.release()
+    out.release()
+    print(f"Frame number overlay video saved to {output_path}")
 
 def main():
     video_path = "/home/mani/Central/Cooking1/Stack/cam2_cr.mp4"
@@ -266,9 +298,17 @@ if __name__ == "__main__":
     #     "data/overlay-gemini-flash-image-gen-cooking-dag.mp4",
     #     fields=["timestamp", "last_observed_action","expected_immediate_next_action"]    
     # )
-    video_path_velocities="/home/mani/Central/HaVid/S01A02I01S1.mp4"
-    output_path_velocities = "/home/mani/Central/HaVid/S01A02I01S1_velocities_overlay.mp4"
-    overlay_velocities_video(video_path_velocities, output_path_velocities,font_scale=2)
+    # video_path_velocities="/home/mani/Central/HaVid/S01A02I01S1.mp4"
+    # output_path_velocities = "/home/mani/Central/HaVid/S01A02I01S1_velocities_overlay.mp4"
+    # overlay_velocities_video(video_path_velocities, output_path_velocities,font_scale=2)
+
+    video_path = "/home/mani/Central/HaVid/S02A08I21S1/front.mp4"
+    output_path = "/home/mani/Central/HaVid/S02A08I21S1/front_frame_numbers.mp4"
+    overlay_frame_numbers(video_path, output_path)
+
+
+
+
 
 
 
