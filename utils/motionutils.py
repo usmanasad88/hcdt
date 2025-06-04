@@ -88,32 +88,32 @@ def get_end_effector_velocities(file_name_without_ext, frame_number):
         total_frames
     )
 
-if __name__ == '__main__':
-    # Example usage:
-    # Create a dummy file for testing
-    data_path = "/home/mani/Repos/hcdt/data/humanml3d/S01A02I01S1.pt"
-    test="S01A02I01S1"
+# if __name__ == '__main__':
+#     # Example usage:
+#     # Create a dummy file for testing
+#     data_path = "/home/mani/Repos/hcdt/data/humanml3d/S01A02I01S1.pt"
+#     test="S01A02I01S1"
 
-    target_frame = 10
-    (
-        root_ang_vel_y,
-        root_lin_vel_x,
-        root_lin_vel_z,
-        lf_v,
-        rf_v,
-        lh_v,
-        rh_v,
-        framecount,
-    ) = get_end_effector_velocities(test, target_frame)
-    print(f"\nData for frame {target_frame}:")
-    print(f"Root Angular Velocity (Y): {root_ang_vel_y:.4f}")
-    print(f"Root Linear Velocity (X): {root_lin_vel_x:.4f}")
-    print(f"Root Linear Velocity (Z): {root_lin_vel_z:.4f}")
-    print(f"Left Foot Velocity Norm: {lf_v:.4f}")
-    print(f"Right Foot Velocity Norm: {rf_v:.4f}")
-    print(f"Left Hand Velocity Norm: {lh_v:.4f}")
-    print(f"Right Hand Velocity Norm: {rh_v:.4f}")
-    print(f"Total Frames in sequence: {framecount}")
+#     target_frame = 10
+#     (
+#         root_ang_vel_y,
+#         root_lin_vel_x,
+#         root_lin_vel_z,
+#         lf_v,
+#         rf_v,
+#         lh_v,
+#         rh_v,
+#         framecount,
+#     ) = get_end_effector_velocities(test, target_frame)
+#     print(f"\nData for frame {target_frame}:")
+#     print(f"Root Angular Velocity (Y): {root_ang_vel_y:.4f}")
+#     print(f"Root Linear Velocity (X): {root_lin_vel_x:.4f}")
+#     print(f"Root Linear Velocity (Z): {root_lin_vel_z:.4f}")
+#     print(f"Left Foot Velocity Norm: {lf_v:.4f}")
+#     print(f"Right Foot Velocity Norm: {rf_v:.4f}")
+#     print(f"Left Hand Velocity Norm: {lh_v:.4f}")
+#     print(f"Right Hand Velocity Norm: {rh_v:.4f}")
+#     print(f"Total Frames in sequence: {framecount}")
 
         
 

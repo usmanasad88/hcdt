@@ -1,0 +1,72 @@
+[
+  {
+    "id": "step_01_orient_plate",
+    "description": "Move Assembly Box so that Cylinder Plate is facing upwards",
+    "predecessors": []
+  },
+  {
+    "id": "step_02_insert_bs1",
+    "description": "Insert the first ball seat into the cylinder base",
+    "predecessors": []
+  },
+  {
+    "id": "step_03_insert_ball",
+    "description": "Insert the ball into the cylinder base",
+    "predecessors": ["step_02_insert_bs1"]
+  },
+  {
+    "id": "step_04_insert_bs2",
+    "description": "Insert the second ball seat into the cylinder base",
+    "predecessors": ["step_03_insert_ball"]
+  },
+  {
+    "id": "step_05_screw_cap",
+    "description": "Screw the cylinder cap to the cylinder base",
+    "predecessors": ["step_04_insert_bs2",
+    "step_07_insert_bracket2"]
+  },
+  {
+    "id": "step_06_insert_bracket1",
+    "description": "Insert the first cylinder bracket onto the cylinder base",
+    "predecessors": []
+  },
+  {
+    "id": "step_07_insert_bracket2",
+    "description": "Insert the second cylinder bracket onto the cylinder base",
+    "predecessors": ["step_06_insert_bracket1"]
+  },
+  {
+    "id": "step_08_slide_brackets",
+    "description": "Slide the cylinder brackets to the ends of the cylinder",
+    "predecessors": ["step_07_insert_bracket2"]
+  },
+  {
+    "id": "step_09_place_subassembly",
+    "description": "Place the cylinder sub-assembly onto assembly plate 1, aligning one of the cylinder bracket holes to the assembly plate holes",
+    "predecessors": [
+      "step_01_orient_plate",
+      "step_05_screw_cap",
+      "step_08_slide_brackets"
+    ]
+  },
+  {
+    "id": "step_10_screw1_M8",
+    "description": "Screw first M8 screw into cylinder bracket hole to fasten cylinder bracket to assembly plate",
+    "predecessors": ["step_09_place_subassembly"]
+  },
+  {
+    "id": "step_11_screw2_M8",
+    "description": "Screw second M8 screw into cylinder bracket hole to fasten cylinder bracket to assembly plate",
+    "predecessors": ["step_10_screw1_M8"]
+  },
+  {
+    "id": "step_12_screw3_M8",
+    "description": "Screw third M8 screw into cylinder bracket hole to fasten cylinder bracket to assembly plate",
+    "predecessors": ["step_11_screw2_M8"]
+  },
+  {
+    "id": "step_13_screw4_M8",
+    "description": "Screw fourth M8 screw into cylinder bracket hole to fasten cylinder bracket to assembly plate",
+    "predecessors": ["step_12_screw3_M8"]
+  }
+]

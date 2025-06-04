@@ -1,0 +1,132 @@
+Analyze this assembly video and the annotations, based on the annotation dictionary, as the person performs the task as per the directed action graph (dag) file, assembling the component shown in the figure. Once you have analyzed this task, I will share a one-second video of a different operator performing this task, and ask questions
+
+In this sequence of frames, each image is 1 second apart. Which steps have been performed so far. What is the predicted next step the operator will take? Output as JSON with completed_steps [step ids], next_steps [step_id]
+
+
+Gemini 1.5 Flash
+{"completed_steps": ["step_01_orient_plate","step_02_insert_bs1","step_03_insert_ball","step_04_insert_bs2","step_05_screw_cap"],"next_steps": ["step_06_insert_bracket1"]}
+Gemini 1.5 Flash-8B
+{
+  "completed_steps": [
+    "step_01_orient_plate",
+    "step_02_insert_bs1",
+    "step_03_insert_ball",
+    "step_04_insert_bs2",
+    "step_05_screw_cap",
+    "step_06_insert_bracket1",
+    "step_07_insert_bracket2",
+    "step_08_slide_brackets",
+    "step_09_place_subassembly"
+  ],
+  "next_steps": "step_10_screw1_M8"
+}
+
+Gemini 1.5 Pro
+{"completed_steps": ["step_01_orient_plate"], "next_steps": ["step_02_insert_bs1"]}
+
+
+Gemini 2.0 Flash-Lite
+{
+  "completed_steps": [
+    "step_01_orient_plate"
+  ],
+  "next_steps": [
+    "step_02_insert_bs1"
+  ]
+}
+Gemini 2.0 Flash
+{
+  "completed_steps": [
+    "step_01_orient_plate",
+    "step_02_insert_bs1",
+    "step_03_insert_ball",
+    "step_04_insert_bs2",
+    "step_05_screw_cap"
+  ],
+  "next_steps": [
+    "step_06_insert_bracket1"
+  ]
+}
+
+Gemini 2.5 Flash Preview (No thinking)
+{
+  "completed_steps": [
+    "step_01_orient_plate",
+    "step_02_insert_bs1",
+    "step_03_insert_ball",
+    "step_04_insert_bs2",
+    "step_05_screw_cap",
+    "step_06_insert_bracket1",
+    "step_07_insert_bracket2",
+    "step_08_slide_brackets"
+  ],
+  "next_steps": [
+    "step_09_place_subassembly"
+  ]
+}
+Gemini 2.5 Flash Preview (Thinking) CoT: "The operator is currently working on step_06_insert_bracket1"
+{
+  "completed_steps": [
+    "step_01_orient_plate",
+    "step_02_insert_bs1",
+    "step_03_insert_ball",
+    "step_04_insert_bs2",
+    "step_05_screw_cap"
+  ],
+  "next_steps": "step_07_insert_bracket2"
+}
+Gemini 2.5 Pro
+{
+  "completed_steps": [
+    "step_01_orient_plate",
+    "step_02_insert_bs1",
+    "step_03_insert_ball",
+    "step_04_insert_bs2",
+    "step_05_screw_cap",
+    "step_06_insert_bracket1"
+  ],
+  "next_steps": [
+    "step_07_insert_bracket2"
+  ]
+}
+
+Revised DAG:
+Gemini 2.5 Pro
+{
+  "completed_steps": [
+    "step_01_orient_plate",
+    "step_02_insert_bs1",
+    "step_03_insert_ball",
+    "step_04_insert_bs2"
+  ],
+  "next_steps": [
+    "step_07_insert_bracket2"
+  ]
+}
+
+Gemini 2.5 Flash (Thinking) CoT: "The operator is currently working on step_06_insert_bracket1"
+"While step_05_screw_cap was attempted, it appears incomplete or out of sequence with the original DAG. Now, they've picked up the bracket. I predict they'll proceed with either step_06_insert_bracket1 or step_07_insert_bracket2, or possibly re-attempt step_05_screw_cap after addressing the bracket."
+{
+  "completed_steps": [
+    "step_01_orient_plate",
+    "step_02_insert_bs1",
+    "step_03_insert_ball",
+    "step_04_insert_bs2"
+  ],
+  "next_steps": [
+    "step_06_insert_bracket1"
+  ]
+}
+Gemini 2.5 Flash (No thinking)
+{
+  "completed_steps": [
+    "step_01_orient_plate",
+    "step_02_insert_bs1",
+    "step_03_insert_ball",
+    "step_04_insert_bs2"
+  ],
+  "next_steps": [
+    "step_06_insert_bracket1"
+  ]
+}
+

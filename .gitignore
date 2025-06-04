@@ -1,3 +1,14 @@
 Local/
 data/OverlayVids
-data/HAViD_temporalAnnotation
+data/HAViD/view0_lh_aa
+data/HAViD/view1_lh_aa
+data/HAViD/view2_lh_aa
+data/HAViD/view0_rh_aa
+data/HAViD/view1_rh_aa
+data/HAViD/view2_rh_aa
+data/HAViD/view0_lh_pt
+data/HAViD/view1_lh_pt
+data/HAViD/view2_lh_pt
+data/HAViD/view0_rh_pt
+data/HAViD/view1_rh_pt
+data/HAViD/view2_rh_pt
