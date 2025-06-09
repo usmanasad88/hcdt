@@ -1,0 +1,230 @@
+[
+  {
+    "id": "step_1",
+    "description": "a person adds noodles into the boiling water",
+    "predecessors": [
+      "step_4"
+    ]
+  },
+  {
+    "id": "step_2",
+    "description": "a person adds salt into the pot",
+    "predecessors": [
+      "step_1"
+    ]
+  },
+  {
+    "id": "step_3",
+    "description": "a person adjusts the heat setting on the stove",
+    "predecessors": [
+      "step_38",
+      "step_4"
+    ]
+  },
+  {
+    "id": "step_4",
+    "description": "a person places a pot onto the stove burner",
+    "predecessors": []
+  },
+  {
+    "id": "step_5",
+    "description": "a person stirs noodles cooking in the pot",
+    "predecessors": [
+      "step_1"
+    ]
+  },
+  {
+    "id": "step_9",
+    "description": "a person picks up cabbage",
+    "predecessors": []
+  },
+  {
+    "id": "step_10",
+    "description": "a person cuts cabbage with a knife",
+    "predecessors": [
+      "step_9"
+    ]
+  },
+  {
+    "id": "step_11",
+    "description": "a person picks up spring onions",
+    "predecessors": []
+  },
+  {
+    "id": "step_12",
+    "description": "a person peels garlic cloves",
+    "predecessors": []
+  },
+  {
+    "id": "step_13",
+    "description": "a person discards waste materials",
+    "predecessors": [
+      "step_12",
+      "step_26",
+      "step_29"
+    ]
+  },
+  {
+    "id": "step_14",
+    "description": "a person cuts garlic cloves with a knife",
+    "predecessors": [
+      "step_12"
+    ]
+  },
+  {
+    "id": "step_16",
+    "description": "a person adds chopped cabbage to the pot",
+    "predecessors": [
+      "step_1",
+      "step_10"
+    ]
+  },
+  {
+    "id": "step_17",
+    "description": "a person washes their hands",
+    "predecessors": []
+  },
+  {
+    "id": "step_18",
+    "description": "a person wipes their hands dry",
+    "predecessors": [
+      "step_17"
+    ]
+  },
+  {
+    "id": "step_23",
+    "description": "a person picks up a bottle of oil",
+    "predecessors": []
+  },
+  {
+    "id": "step_24",
+    "description": "a person adds cut garlic cloves into the pan",
+    "predecessors": [
+      "step_14",
+      "step_38"
+    ]
+  },
+  {
+    "id": "step_26",
+    "description": "a person peels spring onions",
+    "predecessors": [
+      "step_11"
+    ]
+  },
+  {
+    "id": "step_29",
+    "description": "a person cuts spring onions with a knife",
+    "predecessors": [
+      "step_26"
+    ]
+  },
+  {
+    "id": "step_37",
+    "description": "a person washes a sieve",
+    "predecessors": []
+  },
+  {
+    "id": "step_38",
+    "description": "a person adds oil into the pan",
+    "predecessors": [
+      "step_23"
+    ]
+  },
+  {
+    "id": "step_39",
+    "description": "a person adds spring onions into the pan",
+    "predecessors": [
+      "step_29",
+      "step_38"
+    ]
+  },
+  {
+    "id": "step_41",
+    "description": "a person drains noodles using a strainer",
+    "predecessors": [
+      "step_1",
+      "step_37"
+    ]
+  },
+  {
+    "id": "step_42",
+    "description": "a person turns off the stove burner (pot)",
+    "predecessors": [
+      "step_41"
+    ]
+  },
+  {
+    "id": "step_43",
+    "description": "a person tilts the skillet to spread oil",
+    "predecessors": [
+      "step_38"
+    ]
+  },
+  {
+    "id": "step_45",
+    "description": "a person stirs the mixture in the pan/skillet",
+    "predecessors": [
+      "step_24",
+      "step_39",
+      "step_46",
+      "step_47",
+      "step_53",
+      "step_55"
+    ]
+  },
+  {
+    "id": "step_46",
+    "description": "a person adds chili powder to the pan",
+    "predecessors": [
+      "step_45"
+    ]
+  },
+  {
+    "id": "step_47",
+    "description": "a person adds olive oil into the skillet",
+    "predecessors": [
+      "step_45"
+    ]
+  },
+  {
+    "id": "step_49",
+    "description": "a person picks up a plate",
+    "predecessors": []
+  },
+  {
+    "id": "step_51",
+    "description": "a person picks up soy sauce bottle",
+    "predecessors": []
+  },
+  {
+    "id": "step_53",
+    "description": "a person adds noodles into the skillet",
+    "predecessors": [
+      "step_41",
+      "step_45"
+    ]
+  },
+  {
+    "id": "step_55",
+    "description": "a person adds soy sauce to the skillet",
+    "predecessors": [
+      "step_45",
+      "step_51"
+    ]
+  },
+  {
+    "id": "step_59",
+    "description": "a person transfers food from skillet onto a plate",
+    "predecessors": [
+      "step_45",
+      "step_49"
+    ]
+  },
+  {
+    "id": "step_60",
+    "description": "a person washes a spoon",
+    "predecessors": [
+      "step_59"
+    ]
+  }
+]

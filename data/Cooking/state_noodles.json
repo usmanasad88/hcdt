@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pot_on_stove",
+    "type": "Boolean",
+    "description": "True if the pot is on the stove."
+  },
+  {
+    "name": "stove_burner_on",
+    "type": "Boolean",
+    "description": "True if the stove burner under the pot is on."
+  },
+  {
+    "name": "water_in_pot",
+    "type": "Boolean",
+    "description": "True if water has been added to the pot."
+  },
+  {
+    "name": "water_boiling",
+    "type": "Boolean",
+    "description": "True if water in the pot is boiling."
+  },
+  {
+    "name": "noodles_in_pot",
+    "type": "Boolean",
+    "description": "True if noodles are in the pot."
+  },
+  {
+    "name": "noodles_cooked",
+    "type": "Boolean",
+    "description": "True if noodles are cooked."
+  },
+  {
+    "name": "cabbage_prepared",
+    "type": "Boolean",
+    "description": "True if cabbage is chopped."
+  },
+  {
+    "name": "garlic_prepared",
+    "type": "Boolean",
+    "description": "True if garlic is peeled and cut."
+  },
+  {
+    "name": "spring_onions_prepared",
+    "type": "Boolean",
+    "description": "True if spring onions are peeled and cut."
+  },
+  {
+    "name": "oil_in_pan",
+    "type": "Boolean",
+    "description": "True if oil is in the pan."
+  },
+  {
+    "name": "ingredients_in_pan_cooked",
+    "type": "Boolean",
+    "description": "True if pan ingredients (garlic, spring onions, noodles, soy sauce) are cooked and stirred."
+  },
+  {
+    "name": "noodles_drained",
+    "type": "Boolean",
+    "description": "True if noodles have been drained."
+  },
+  {
+    "name": "food_on_plate",
+    "type": "Boolean",
+    "description": "True if food is transferred to plate."
+  },
+  {
+    "name": "operator_holding",
+    "type": "String",
+    "description": "Object currently held by the operator. Should be marked as 'null' if no object is held."
+  },
+  {
+    "name": "gaze_target",
+    "type": "String",
+    "description": "Estimate target of the operator gaze. Should be marked as 'null' if no target is available."
+  },
+  {
+    "name": "steps_completed",
+    "type": "List of Strings (Step IDs)",
+    "description": "A list of IDs for actions that have been successfully completed."
+  },
+  {
+    "name": "steps_in_progress",
+    "type": "List of Strings (Step IDs)",
+    "description": "A list of IDs for actions that are currently being executed."
+  },
+  {
+    "name": "steps_available",
+    "type": "List of Strings (Step IDs)",
+    "description": "A list of IDs for actions that can be started next, based on satisfied predecessors and state dependencies."
+  }
+]

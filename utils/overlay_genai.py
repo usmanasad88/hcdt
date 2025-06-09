@@ -302,8 +302,8 @@ if __name__ == "__main__":
     # output_path_velocities = "/home/mani/Central/HaVid/S01A02I01S1_velocities_overlay.mp4"
     # overlay_velocities_video(video_path_velocities, output_path_velocities,font_scale=2)
 
-    video_path = "/home/mani/Central/HaVid/S02A08I21S1/front.mp4"
-    output_path = "/home/mani/Central/HaVid/S02A08I21S1/front_frame_numbers.mp4"
+    video_path = "/home/mani/Central/Stack/cam1.mp4"
+    output_path = "/home/mani/Central/Stack/cam1_f.mp4"
     overlay_frame_numbers(video_path, output_path)
 
 

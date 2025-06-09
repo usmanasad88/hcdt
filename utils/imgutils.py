@@ -208,13 +208,113 @@ def resize_image_to_largest_dimension(image_path, target_largest_dimension, save
     except Exception as e:
         print(f"An error occurred: {e}")
 
-if __name__ == "__main__":
+def overlay_frame_numbers_on_folder(input_folder, output_folder=None, font_size=36, font_color='white', position='top-left'):
+    """
+    Overlay frame numbers on all image files in an input folder.
 
-    image_path = "/home/mani/Central/HaVid/S01A02I01S1/frame_0001.png"  
-    points=[[859, 696]]
-    base_path, _ = os.path.splitext(image_path)
-    new_save_path = f"{base_path}_copy.png"
-    draw_multiple_points_on_image(image_path,points,new_save_path)
+    Args:
+        input_folder (str): Path to the folder containing input images.
+        output_folder (str, optional): Path to save images with frame numbers. 
+                                     If None, saves to input_folder + '_numbered'.
+        font_size (int): Size of the font for frame numbers.
+        font_color (str): Color of the frame number text.
+        position (str): Position of the frame number ('top-left', 'top-right', 'bottom-left', 'bottom-right').
+
+    Returns:
+        str: Path to the output folder.
+    """
+    from PIL import ImageFont
+    
+    # Set output folder if not provided
+    if output_folder is None:
+        output_folder = f"{input_folder}_numbered"
+    
+    os.makedirs(output_folder, exist_ok=True)
+    
+    # Get all image files and sort them
+    image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}
+    image_files = [f for f in os.listdir(input_folder) 
+                   if os.path.splitext(f.lower())[1] in image_extensions]
+    image_files.sort()
+    
+    if not image_files:
+        print(f"No image files found in {input_folder}")
+        return output_folder
+    
+    # Try to load a font, fall back to default if not available
+    try:
+        font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", font_size)
+    except (OSError, IOError):
+        try:
+            font = ImageFont.truetype("arial.ttf", font_size)
+        except (OSError, IOError):
+            font = ImageFont.load_default()
+            print("Warning: Using default font as system fonts not found")
+    
+    for frame_num, filename in enumerate(image_files, 1):
+        input_path = os.path.join(input_folder, filename)
+        output_path = os.path.join(output_folder, filename)
+        
+        try:
+            # Open image
+            img = Image.open(input_path).convert("RGB")
+            draw = ImageDraw.Draw(img)
+            
+            # Prepare frame number text
+            frame_text = f"Frame {frame_num:04d}"
+            
+            # Get text dimensions
+            bbox = draw.textbbox((0, 0), frame_text, font=font)
+            text_width = bbox[2] - bbox[0]
+            text_height = bbox[3] - bbox[1]
+            
+            # Calculate position based on user preference
+            img_width, img_height = img.size
+            margin = 20
+            
+            if position == 'top-left':
+                text_x, text_y = margin, margin
+            elif position == 'top-right':
+                text_x, text_y = img_width - text_width - margin, margin
+            elif position == 'bottom-left':
+                text_x, text_y = margin, img_height - text_height - margin
+            elif position == 'bottom-right':
+                text_x, text_y = img_width - text_width - margin, img_height - text_height - margin
+            else:
+                # Default to top-left
+                text_x, text_y = margin, margin
+            
+            # Draw text with outline for better visibility
+            outline_width = 2
+            # Draw outline
+            for dx in range(-outline_width, outline_width + 1):
+                for dy in range(-outline_width, outline_width + 1):
+                    if dx != 0 or dy != 0:
+                        draw.text((text_x + dx, text_y + dy), frame_text, font=font, fill='black')
+            
+            # Draw main text
+            draw.text((text_x, text_y), frame_text, font=font, fill=font_color)
+            
+            # Save image
+            img.save(output_path)
+            
+        except Exception as e:
+            print(f"Error processing {filename}: {e}")
+            continue
+    
+    print(f"Processed {len(image_files)} images. Output saved to {output_folder}")
+    return output_folder
+
+if __name__ == "__main__":
+    input_folder = "/home/mani/Central/Cooking1/combined_frames"
+    output_folder = "/home/mani/Central/Cooking1/combined_frames_numbered"
+    overlay_frame_numbers_on_folder(input_folder, font_size=48, position='top-right')
+
+    # image_path = "/home/mani/Central/HaVid/S01A02I01S1/frame_0001.png"  
+    # points=[[859, 696]]
+    # base_path, _ = os.path.splitext(image_path)
+    # new_save_path = f"{base_path}_copy.png"
+    # draw_multiple_points_on_image(image_path,points,new_save_path)
     # resize_image_to_largest_dimension(image_path , 640, image_path)
 
     # input_folders = [

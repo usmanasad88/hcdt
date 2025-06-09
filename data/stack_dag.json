@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "action": "Walk to toolbox",
+    "dependencies": []
+  },
+  {
+    "id": 2,
+    "action": "Pick up toolbox",
+    "dependencies": [
+      1
+    ]
+  },
+  {
+    "id": 3,
+    "action": "Transport toolbox",
+    "dependencies": [
+      2
+    ]
+  },
+  {
+    "id": 4,
+    "action": "Place toolbox on table",
+    "dependencies": [
+      3
+    ]
+  },
+  {
+    "id": 5,
+    "action": "Walk to turquoise chair",
+    "dependencies": [
+      4
+    ]
+  },
+  {
+    "id": 6,
+    "action": "Pick up turquoise chair",
+    "dependencies": [
+      5
+    ]
+  },
+  {
+    "id": 7,
+    "action": "Transport turquoise chair",
+    "dependencies": [
+      6
+    ]
+  },
+  {
+    "id": 8,
+    "action": "Stack turquoise chair",
+    "dependencies": [
+      7
+    ]
+  },
+  {
+    "id": 9,
+    "action": "Walk to red chair 1",
+    "dependencies": [
+      4
+    ]
+  },
+  {
+    "id": 10,
+    "action": "Pick up red chair 1",
+    "dependencies": [
+      9
+    ]
+  },
+  {
+    "id": 11,
+    "action": "Transport red chair 1",
+    "dependencies": [
+      10
+    ]
+  },
+  {
+    "id": 12,
+    "action": "Stack red chair 1",
+    "dependencies": [
+      11
+    ]
+  },
+  {
+    "id": 13,
+    "action": "Walk to red chair 2",
+    "dependencies": [
+      4
+    ]
+  },
+  {
+    "id": 14,
+    "action": "Pick up red chair 2",
+    "dependencies": [
+      13
+    ]
+  },
+  {
+    "id": 15,
+    "action": "Transport red chair 2",
+    "dependencies": [
+      14
+    ]
+  },
+  {
+    "id": 16,
+    "action": "Stack red chair 2",
+    "dependencies": [
+      15
+    ]
+  },
+  {
+    "id": 17,
+    "action": "Walk to red chair 3",
+    "dependencies": [
+      4
+    ]
+  },
+  {
+    "id": 18,
+    "action": "Pick up red chair 3",
+    "dependencies": [
+      17
+    ]
+  },
+  {
+    "id": 19,
+    "action": "Transport red chair 3",
+    "dependencies": [
+      18
+    ]
+  },
+  {
+    "id": 20,
+    "action": "Stack red chair 3",
+    "dependencies": [
+      19
+    ]
+  }
+]
