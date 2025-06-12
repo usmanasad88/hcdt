@@ -5,12 +5,22 @@ import json
 import re
 import requests
 from typing import Optional
+import sys
+import os
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-def run_ollama_llama_vision(prompt: str, image_path: Optional[str] = None, model: str = "llama3.2-vision") -> dict:
+from utils.imgutils import encode_file_to_base64  
+
+def run_ollama_llama_vision(prompt: str, image_paths: Optional[list] = None, model: str = "llama3.2-vision") -> dict:
     """
-    Sends a prompt and image to the Ollama server running llama3.2-vision.
+    Sends a prompt and multiple images to the Ollama server running llama3.2-vision.
     Returns the model's response as a dict (parsed JSON).
+    
+    Args:
+        prompt (str): The text prompt to send to the model
+        image_paths (list, optional): List of paths to image files
+        model (str): The model name to use
     """
     url = "http://localhost:11434/api/generate"
     payload = {
@@ -19,19 +29,39 @@ def run_ollama_llama_vision(prompt: str, image_path: Optional[str] = None, model
         #"format": "json",
         "stream": False
     }
-    if image_path:
-        with open(image_path, "rb") as img_file:
-            image_bytes = img_file.read()
+    
+    if image_paths:
         import base64
-        image_b64 = base64.b64encode(image_bytes).decode("utf-8")
-        payload["images"] = [image_b64]
-
+        images_b64 = []
+        for image_path in image_paths:
+            with open(image_path, "rb") as img_file:
+                image_bytes = img_file.read()
+            image_b64 = base64.b64encode(image_bytes).decode("utf-8")
+            images_b64.append(image_b64)
+        payload["images"] = images_b64
 
     response = requests.post(url, json=payload)
     response.raise_for_status()
-    return response.json()["response"]  # This will be a dict if the model responds with JSON
+    return response
+
+image_paths = []
+base_path = "/home/mani/Central/Cooking1/combined_frames/"
+# Define the upper limit for i, for example:
+num_frames = 570  # Or any other number you need
+for i in range(1, num_frames + 1):
+    frame_number_str = str(i).zfill(5)  # Format as 5 digits with leading zeros
+    image_paths.append(f"{base_path}frame-{frame_number_str}.jpg")
 
 
+response = run_ollama_llama_vision(
+        prompt="What is the chef making",
+        image_paths=image_paths,
+        model="gemma3:12b"
+)
+
+print(response.json()["prompt_eval_count"])
+print(response.json()["eval_count"])
+print(response.json()["response"])
 
 # def run_llama_mtmd(prompt: str, image_path: str) -> str:
 #     cmd = [

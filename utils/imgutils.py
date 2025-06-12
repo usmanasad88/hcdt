@@ -1,7 +1,26 @@
+import subprocess
+import matplotlib.pyplot as plt
+import json
+import re
 from PIL import Image, ImageDraw
 import os
 import subprocess
+import base64
+import tempfile
 
+def encode_file_to_base64(file_path):
+    """Encodes a file to a base64 string."""
+    if not os.path.exists(file_path):
+        print(f"Error: File not found at {file_path}")
+        return None
+    try:
+        with open(file_path, "rb") as f:
+            encoded_string = base64.b64encode(f.read()).decode("utf-8")
+        return encoded_string
+    except Exception as e:
+        print(f"Error encoding file {file_path}: {e}")
+        return None
+    
 def extract_frames_ffmpeg(video_path, output_folder, interval_sec=1.0, prefix="frame"):
     os.makedirs(output_folder, exist_ok=True)
     fps = 1.0 / interval_sec
@@ -304,6 +323,77 @@ def overlay_frame_numbers_on_folder(input_folder, output_folder=None, font_size=
     
     print(f"Processed {len(image_files)} images. Output saved to {output_folder}")
     return output_folder
+
+def image_to_base64(image_path, target_largest_dimension=1024):
+    """
+    Resizes an image to a target largest dimension and encodes it to base64.
+
+    Args:
+        image_path (str): Path to the input image file.
+        target_largest_dimension (int): The desired size for the largest dimension of the image. Default is 1024.
+
+    Returns:
+        str: Base64 encoded string of the resized image, or None if an error occurs.
+    """
+    try:
+        # Create a temporary file for the resized image
+        with tempfile.NamedTemporaryFile(suffix='.jpg', delete=False) as temp_file:
+            temp_path = temp_file.name
+        
+        # Resize the image to the target dimension
+        resize_image_to_largest_dimension(image_path, target_largest_dimension, temp_path)
+        
+        # Encode the resized image to base64
+        base64_string = encode_file_to_base64(temp_path)
+        
+        # Clean up the temporary file
+        os.unlink(temp_path)
+        
+        return base64_string
+        
+    except Exception as e:
+        print(f"Error processing image {image_path}: {e}")
+        # Clean up temp file if it exists
+        if 'temp_path' in locals() and os.path.exists(temp_path):
+            os.unlink(temp_path)
+        return None
+    
+def resize_image_to_model_size(image_path, w_model, h_model, save_path=None):
+    """
+    Resize the input image to the model's expected size.
+    """
+    img = Image.open(image_path)
+    img_resized = img.resize((w_model, h_model), Image.LANCZOS)
+    if save_path:
+        img_resized.save(save_path)
+        return save_path
+    return img_resized
+
+def plot_points_on_image(image_path, points, point_color='red', point_size=50):
+    """
+    Plots given (x, y) points on the image.
+    """
+    img = Image.open(image_path)
+    plt.imshow(img)
+    xs, ys = zip(*points)
+    plt.scatter(xs, ys, c=point_color, s=point_size)
+    plt.axis('off')
+    plt.show()
+
+def extract_xy_coords(data):
+    """
+    Recursively extract all dicts with 'x' and 'y' keys from data.
+    """
+    coords = []
+    if isinstance(data, dict):
+        if "x" in data and "y" in data:
+            coords.append(data)
+        for v in data.values():
+            coords.extend(extract_xy_coords(v))
+    elif isinstance(data, list):
+        for item in data:
+            coords.extend(extract_xy_coords(item))
+    return coords
 
 if __name__ == "__main__":
     input_folder = "/home/mani/Central/Cooking1/combined_frames"
