@@ -1,0 +1,27 @@
+[
+    {
+    "name": "operator_holding",
+    "type": "String",
+    "description": "Object currently held by the operator. Should be marked as 'null' if no object is held."
+  },
+  {
+    "name": "gaze_target",
+    "type": "String",
+    "description": "Estimate target of the operator gaze. Should be marked as 'null' if no target is available."
+  },
+  {
+    "name": "steps_completed",
+    "type": "List of Strings (Step IDs)",
+    "description": "A list of IDs for actions that have been successfully completed."
+  },
+  {
+    "name": "steps_in_progress",
+    "type": "List of Strings (Step IDs)",
+    "description": "The step or list of IDs for steps that are mostly likely currently being executed."
+  },
+  {
+    "name": "steps_available",
+    "type": "List of Strings (Step IDs)",
+    "description": "A list of IDs for actions that can be started next, based on satisfied predecessors and state dependencies."
+  }
+]

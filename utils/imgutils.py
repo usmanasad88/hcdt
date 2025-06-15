@@ -324,32 +324,45 @@ def overlay_frame_numbers_on_folder(input_folder, output_folder=None, font_size=
     print(f"Processed {len(image_files)} images. Output saved to {output_folder}")
     return output_folder
 
-def image_to_base64(image_path, target_largest_dimension=1024):
+def image_to_base64(image_path, target_largest_dimension=None):
     """
-    Resizes an image to a target largest dimension and encodes it to base64.
+    Optionally resizes an image to a target largest dimension and encodes it to base64.
+    If target_largest_dimension is None, the original image is encoded without resizing.
 
     Args:
         image_path (str): Path to the input image file.
-        target_largest_dimension (int): The desired size for the largest dimension of the image. Default is 1024.
+        target_largest_dimension (int, optional): The desired size for the largest dimension of the image.
+                                                 If None, no resizing is performed. Defaults to None.
 
     Returns:
-        str: Base64 encoded string of the resized image, or None if an error occurs.
+        str: Base64 encoded string of the (potentially resized) image, or None if an error occurs.
     """
     try:
-        # Create a temporary file for the resized image
-        with tempfile.NamedTemporaryFile(suffix='.jpg', delete=False) as temp_file:
-            temp_path = temp_file.name
-        
-        # Resize the image to the target dimension
-        resize_image_to_largest_dimension(image_path, target_largest_dimension, temp_path)
-        
-        # Encode the resized image to base64
-        base64_string = encode_file_to_base64(temp_path)
-        
-        # Clean up the temporary file
-        os.unlink(temp_path)
-        
+        if target_largest_dimension is not None:
+            # Create a temporary file for the resized image
+            with tempfile.NamedTemporaryFile(suffix='.jpg', delete=False) as temp_file:
+                temp_path = temp_file.name
+            
+            try:
+                # Resize the image to the target dimension
+                resize_image_to_largest_dimension(image_path, target_largest_dimension, temp_path)
+                # Encode the resized image to base64
+                base64_string = encode_file_to_base64(temp_path)
+            finally:
+                # Clean up the temporary file
+                os.unlink(temp_path)
+        else:
+            # No resizing, encode the original image directly
+            base64_string = encode_file_to_base64(image_path)
+            
         return base64_string
+        
+    except Exception as e:
+        print(f"Error processing image {image_path} for base64 encoding: {e}")
+        # Clean up temp file if it was created and an error occurred before unlinking
+        if 'temp_path' in locals() and os.path.exists(temp_path):
+            os.unlink(temp_path)
+        return None
         
     except Exception as e:
         print(f"Error processing image {image_path}: {e}")

@@ -1,0 +1,2001 @@
+[
+    {
+        "frame": 1,
+        "state": {
+            "operator_holding": "cylinder base",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [
+                "step_02_insert_bs1"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 2,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "Assembly Box",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 3,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "assembly box",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_09_place_subassembly"
+            ],
+            "steps_available": [
+                "step_10_screw1_M8"
+            ]
+        }
+    },
+    {
+        "frame": 4,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "Assembly Box",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 5,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 6,
+        "state": {
+            "operator_holding": "cylinder cap",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 7,
+        "state": {
+            "operator_holding": "M8 screw",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 8,
+        "state": {
+            "operator_holding": "screw",
+            "gaze_target": "assembly",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 9,
+        "state": {
+            "operator_holding": "screw_M8",
+            "gaze_target": "cylinder_subassembly",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 10,
+        "state": {
+            "operator_holding": "screw",
+            "gaze_target": "assembly",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 11,
+        "state": {
+            "operator_holding": "screw",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 12,
+        "state": {
+            "operator_holding": "screw1_M8",
+            "gaze_target": "cylinder_bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 13,
+        "state": {
+            "operator_holding": "screw",
+            "gaze_target": "cylinder_bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 14,
+        "state": {
+            "operator_holding": "M8 screw",
+            "gaze_target": "cylinder bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 15,
+        "state": {
+            "operator_holding": "screw",
+            "gaze_target": "assembly",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 16,
+        "state": {
+            "operator_holding": "screw",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 17,
+        "state": {
+            "operator_holding": "screw",
+            "gaze_target": "assembly",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 18,
+        "state": {
+            "operator_holding": "screw",
+            "gaze_target": "assembly",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 19,
+        "state": {
+            "operator_holding": "M8 screw",
+            "gaze_target": "cylinder bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 20,
+        "state": {
+            "operator_holding": "screw_M8",
+            "gaze_target": "cylinder_bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 21,
+        "state": {
+            "operator_holding": "cylinder bracket",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1"
+            ],
+            "steps_in_progress": [
+                "step_07_insert_bracket2"
+            ],
+            "steps_available": [
+                "step_05_screw_cap",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ]
+        }
+    },
+    {
+        "frame": 22,
+        "state": {
+            "operator_holding": "bracket",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1"
+            ],
+            "steps_in_progress": [
+                "step_07_insert_bracket2"
+            ],
+            "steps_available": [
+                "step_08_slide_brackets"
+            ]
+        }
+    },
+    {
+        "frame": 23,
+        "state": {
+            "operator_holding": "M8 screw",
+            "gaze_target": "cylinder bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 24,
+        "state": {
+            "operator_holding": "M8 screw",
+            "gaze_target": "cylinder bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 25,
+        "state": {
+            "operator_holding": "M8 screw",
+            "gaze_target": "cylinder bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 26,
+        "state": {
+            "operator_holding": "M8 screw",
+            "gaze_target": "cylinder bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8"
+            ]
+        }
+    },
+    {
+        "frame": 27,
+        "state": {
+            "operator_holding": "cylinder cap",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 28,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 29,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 30,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 31,
+        "state": {
+            "operator_holding": "cylinder cap",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 32,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 33,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 34,
+        "state": {
+            "operator_holding": "screw",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 35,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 36,
+        "state": {
+            "operator_holding": "cylinder cap",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 37,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 38,
+        "state": {
+            "operator_holding": "M8 screw",
+            "gaze_target": "cylinder bracket",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_05_screw_cap",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ],
+            "steps_in_progress": [
+                "step_10_screw1_M8"
+            ],
+            "steps_available": [
+                "step_11_screw2_M8",
+                "step_12_screw3_M8",
+                "step_13_screw4_M8"
+            ]
+        }
+    },
+    {
+        "frame": 39,
+        "state": {
+            "operator_holding": "cylinder cap",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 40,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 41,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 42,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 43,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 44,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 45,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 46,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 47,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 48,
+        "state": {
+            "operator_holding": "screw_driver",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 49,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 50,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 51,
+        "state": {
+            "operator_holding": "cylinder cap",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 52,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 53,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 54,
+        "state": {
+            "operator_holding": "screwdriver",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 55,
+        "state": {
+            "operator_holding": "screwdriver",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 56,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 57,
+        "state": {
+            "operator_holding": "cylinder cap",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 58,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 59,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 60,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 61,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 62,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_08_slide_brackets",
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 63,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 64,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 65,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 66,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 67,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 68,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 69,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 70,
+        "state": {
+            "operator_holding": "cylinder cap",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 71,
+        "state": {
+            "operator_holding": "cylinder cap",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 72,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 73,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 74,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 75,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 76,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 77,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 78,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 79,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 80,
+        "state": {
+            "operator_holding": "cylinder_plate",
+            "gaze_target": "cylinder_plate",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 81,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 82,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 83,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 84,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 85,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 86,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 87,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 88,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 89,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    },
+    {
+        "frame": 90,
+        "state": {
+            "operator_holding": "cylinder_cap",
+            "gaze_target": "cylinder_base",
+            "steps_completed": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_03_insert_ball",
+                "step_04_insert_bs2",
+                "step_06_insert_bracket1",
+                "step_07_insert_bracket2",
+                "step_08_slide_brackets"
+            ],
+            "steps_in_progress": [
+                "step_05_screw_cap"
+            ],
+            "steps_available": [
+                "step_09_place_subassembly"
+            ]
+        }
+    }
+]

@@ -1,0 +1,3072 @@
+[
+    {
+        "frame": 1,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "False",
+            "water_in_pot": "Unknown",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 2,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 3,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 4,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "spring_onions",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3",
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_8",
+                "step_9",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 5,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 6,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "False",
+            "water_in_pot": "Unknown",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 7,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "noodles",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 8,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": true,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "pan",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 9,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 10,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 11,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "tongs",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 12,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 13,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 14,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "False",
+            "water_in_pot": "Unknown",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 15,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "True",
+            "spring_onions_prepared": "True",
+            "oil_in_pan": "True",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_9",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 16,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "True",
+            "spring_onions_prepared": "True",
+            "oil_in_pan": "True",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pan",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_9"
+            ]
+        }
+    },
+    {
+        "frame": 17,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 18,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "pot",
+            "gaze_target": "pot",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 19,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 20,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "Unknown",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 21,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "pot",
+            "gaze_target": "stove",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 22,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": false,
+            "water_in_pot": true,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "pot",
+            "gaze_target": "stove",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 23,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 24,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 25,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 26,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 27,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 28,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 29,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "ladle",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 30,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "ladle",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 31,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 32,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 33,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "True",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 34,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 35,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "False",
+            "water_in_pot": "True",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 36,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": false,
+            "water_in_pot": true,
+            "water_boiling": false,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [
+                "step_12"
+            ],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 37,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 38,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": false,
+            "water_in_pot": true,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "pot",
+            "gaze_target": "stove",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1"
+            ]
+        }
+    },
+    {
+        "frame": 39,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "False",
+            "water_in_pot": "True",
+            "water_boiling": "False",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "True",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "True",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3",
+                "step_11",
+                "step_12"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_9",
+                "step_10",
+                "step_13",
+                "step_14"
+            ]
+        }
+    },
+    {
+        "frame": 40,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 41,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 42,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 43,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 44,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 45,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "False",
+            "water_in_pot": "Unknown",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 46,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 47,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "False",
+            "water_in_pot": "Unknown",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 48,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 49,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "noodles",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 50,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "False",
+            "water_in_pot": "Unknown",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "noodles",
+            "gaze_target": "noodles",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 51,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "noodles",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 52,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "noodles",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 53,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "noodles",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 54,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "package",
+            "gaze_target": "package",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 55,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "noodles",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 56,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "noodles",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 57,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "noodles",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 58,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 59,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "noodles",
+            "gaze_target": "noodles",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 60,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 61,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 62,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 63,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 64,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 65,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 66,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 67,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "False",
+            "water_in_pot": "True",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_2",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 68,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 69,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "False",
+            "water_in_pot": "True",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 70,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": false,
+            "water_in_pot": true,
+            "water_boiling": false,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "noodles_in_pot",
+            "steps_completed": [
+                "step_1",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_2",
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 71,
+        "state": {
+            "pot_on_stove": true,
+            "stove_burner_on": false,
+            "water_in_pot": true,
+            "water_boiling": false,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "noodles_in_pot",
+            "steps_completed": [
+                "step_1",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_2",
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 72,
+        "state": {
+            "pot_on_stove": "True",
+            "stove_burner_on": "True",
+            "water_in_pot": "True",
+            "water_boiling": "True",
+            "noodles_in_pot": "True",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "step_1",
+                "step_2",
+                "step_3"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_4",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 73,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "False",
+            "garlic_prepared": "False",
+            "spring_onions_prepared": "False",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 74,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "Unknown",
+            "garlic_prepared": "True",
+            "spring_onions_prepared": "True",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 75,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 76,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "True",
+            "spring_onions_prepared": "True",
+            "oil_in_pan": "True",
+            "ingredients_in_pan_cooked": "True",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_9"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_10",
+                "step_11",
+                "step_13"
+            ]
+        }
+    },
+    {
+        "frame": 77,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_8",
+                "step_9",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 78,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_available": [
+                "step_8",
+                "step_9",
+                "step_10"
+            ]
+        }
+    },
+    {
+        "frame": 79,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "cabbage",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8",
+                "step_1"
+            ]
+        }
+    },
+    {
+        "frame": 80,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "True",
+            "spring_onions_prepared": "True",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "null",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_8",
+                "step_9",
+                "step_10",
+                "step_11"
+            ]
+        }
+    },
+    {
+        "frame": 81,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "True",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 82,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_5"
+            ],
+            "steps_available": [
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 83,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 84,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_5"
+            ],
+            "steps_available": [
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 85,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 86,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_5"
+            ],
+            "steps_available": [
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 87,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 88,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "True",
+            "spring_onions_prepared": "True",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_available": [
+                "step_8",
+                "step_9",
+                "step_10"
+            ]
+        }
+    },
+    {
+        "frame": 89,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_5"
+            ],
+            "steps_available": [
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 90,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "Unknown",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 91,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": false,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_5",
+                "step_7"
+            ],
+            "steps_available": [
+                "step_6",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 92,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_8",
+                "step_9",
+                "step_10"
+            ]
+        }
+    },
+    {
+        "frame": 93,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_8",
+                "step_9",
+                "step_10"
+            ]
+        }
+    },
+    {
+        "frame": 94,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "null",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 95,
+        "state": {
+            "pot_on_stove": "Unknown",
+            "stove_burner_on": "Unknown",
+            "water_in_pot": "Unknown",
+            "water_boiling": "Unknown",
+            "noodles_in_pot": "Unknown",
+            "noodles_cooked": "Unknown",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "True",
+            "spring_onions_prepared": "Unknown",
+            "oil_in_pan": "Unknown",
+            "ingredients_in_pan_cooked": "Unknown",
+            "noodles_drained": "Unknown",
+            "food_on_plate": "Unknown",
+            "operator_holding": "null",
+            "gaze_target": "cabbage",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_5",
+                "step_6",
+                "step_7",
+                "step_8"
+            ]
+        }
+    },
+    {
+        "frame": 96,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_8",
+                "step_9",
+                "step_10"
+            ]
+        }
+    },
+    {
+        "frame": 97,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_8",
+                "step_9",
+                "step_10"
+            ]
+        }
+    },
+    {
+        "frame": 98,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_8",
+                "step_9",
+                "step_10"
+            ]
+        }
+    },
+    {
+        "frame": 99,
+        "state": {
+            "pot_on_stove": false,
+            "stove_burner_on": false,
+            "water_in_pot": false,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "oil_in_pan": false,
+            "ingredients_in_pan_cooked": false,
+            "noodles_drained": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_8",
+                "step_9",
+                "step_10"
+            ]
+        }
+    },
+    {
+        "frame": 100,
+        "state": {
+            "pot_on_stove": "False",
+            "stove_burner_on": "False",
+            "water_in_pot": "False",
+            "water_boiling": "False",
+            "noodles_in_pot": "False",
+            "noodles_cooked": "False",
+            "cabbage_prepared": "True",
+            "garlic_prepared": "True",
+            "spring_onions_prepared": "True",
+            "oil_in_pan": "False",
+            "ingredients_in_pan_cooked": "False",
+            "noodles_drained": "False",
+            "food_on_plate": "False",
+            "operator_holding": "knife",
+            "gaze_target": "cabbage",
+            "steps_completed": [
+                "step_5",
+                "step_6",
+                "step_7"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_1",
+                "step_8",
+                "step_9",
+                "step_10",
+                "step_11"
+            ]
+        }
+    }
+]

@@ -80,7 +80,7 @@
   },
   {
     "id": "step_9",
-    "description": "Add prepared garlic and spring onions to pan, stir",
+    "description": "Add prepared garlic and spring onions to pan",
     "predecessors": ["step_6", "step_7", "step_8"],
     "state_dependencies": [
       { "state": "oil_in_pan", "value": true },

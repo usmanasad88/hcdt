@@ -153,33 +153,98 @@ def create_cooking_context_messages(image_paths: List[str], query_prompt: str) -
     
     return messages
 
-def analyze_cooking_video_sequence(image_paths: List[str], model: str = "gemma3:12b") -> str:
+def create_context_messages(
+    image_paths: List[str], 
+    query_prompt: str, 
+    responses: Optional[List[str]] = None
+) -> List[Dict]:
     """
-    Analyzes a sequence of cooking video frames to determine what dish is being made.
-    
+    Creates a message history for Ollama.
+    It includes past interactions if `responses` are provided, and a final user query 
+    for the last image in `image_paths`.
+
+    The `query_prompt` is used for the first user turn in the history, or for the
+    sole user turn if no history (`responses`) is provided. Subsequent user turns
+    in the history and the final query (if history exists) use "Next frame:".
+
     Args:
-        image_paths (List[str]): List of paths to video frames
-        model (str): Model to use for analysis
+        image_paths (List[str]): List of paths to images. 
+                                 Its length must be `len(responses) + 1`.
+        query_prompt (str): The text prompt for the first turn in the sequence.
+        responses (Optional[List[str]]): Optional list of assistant responses for the 
+                                         initial `len(responses)` images.
         
     Returns:
-        str: Analysis of what the chef is making
+        List[Dict]: Formatted messages for in-context learning.
+        
+    Raises:
+        ValueError: If `len(image_paths)` is not equal to `len(responses) + 1`.
     """
-    query_prompt = """Analyze this sequence of cooking video frames and determine:
-1. What dish is the chef making?
-2. What are the main ingredients being used?
-3. What cooking techniques are being employed?
-4. What is the approximate cooking progression from start to finish?
+    
+    if responses is None:
+        current_responses = []
+    else:
+        current_responses = responses
 
-Please provide a detailed analysis based on all the frames provided."""
+    # if len(image_paths) != len(current_responses) + 1:
+    #     raise ValueError(
+    #         f"Input length mismatch: len(image_paths) ({len(image_paths)}) "
+    #         f"must be len(responses) ({len(current_responses)}) + 1."
+    #     )
+
+    messages = []
     
-    messages = create_cooking_context_messages(image_paths, query_prompt)
+    encoded_images = []
+    for img_path in image_paths:
+        encoded_img = image_to_base64(img_path, target_largest_dimension=512)
+        encoded_images.append(encoded_img) # Will store None if encoding failed
+
+    # Build context from provided image-response pairs (history)
+    for i in range(len(image_paths)):
+        user_prompt_text = query_prompt if i == 0 else "Next frame:"
+
+        user_message = {"role": "user", "content": user_prompt_text}
+        if i < len(encoded_images) and encoded_images[i]: # Check index and if encoding was successful
+            user_message["images"] = [encoded_images[i]]
+        messages.append(user_message)
+        
+        # messages.append({"role": "assistant", "content": current_responses[i]})
+
     
-    print(f"--- Analyzing cooking sequence with {len(image_paths)} frames using {model} ---")
-    return run_ollama_messages(messages, model=model, stream=True)
+    return messages
+
+
 
 # Example usage with your existing image paths
 if __name__ == "__main__":
     # Use your existing image path setup
+    script_dir = os.path.dirname(__file__)
+    dag_file_path = os.path.join(script_dir, '..', 'data', 'Cooking', 'dag_noodles_v2.json')
+    state_file_path = os.path.join(script_dir, '..', 'data', 'Cooking', 'state_noodles.json')
+    with open(dag_file_path, 'r') as f:
+            task_graph_string = f.read()
+    with open(state_file_path, 'r') as f:
+            state_schema_string = f.read()
+
+    prompt_text = f"""
+You are an AI assistant analyzing a cooking video frame.
+Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from the image.
+
+Task Graph Definition:
+```json
+{task_graph_string}
+```
+
+State Variables Schema:
+```json
+{state_schema_string}
+```
+
+Instruction:
+Based on the image provided and the schemas above, update the state variables.
+Boolean state variables are not strictly boolean, and can be True, False or Unknown.
+Output the updated state variables as a JSON object.
+"""
     image_paths = []
     base_path = "/home/mani/Central/Cooking1/combined_frames/"
     num_frames = 570
@@ -189,22 +254,14 @@ if __name__ == "__main__":
         image_path = f"{base_path}frame-{frame_number_str}.jpg"
         if os.path.exists(image_path):  # Only add existing files
             image_paths.append(image_path)
-    
-    if image_paths:
-        print(f"Found {len(image_paths)} frames to analyze")
-        response = analyze_cooking_video_sequence(image_paths, model="gemma3:12b")
-        print(f"\n\nFinal Analysis:\n{response}")
-    else:
-        print("No valid image frames found. Please check the base_path.")
-    
-    # Alternative: Simple question with fewer frames
-    sample_frames = image_paths[:10] if len(image_paths) >= 10 else image_paths
-    if sample_frames:
-        simple_query = "What is the chef making in these cooking frames?"
-        simple_messages = create_cooking_context_messages(sample_frames, simple_query)
-        
-        print("\n\n--- Simple Analysis ---")
-        simple_response = run_ollama_messages(simple_messages, model="gemma3:12b", stream=False)
-        print(f"Simple analysis result: {simple_response}")
+
+    for i in range(1, 11):
+        sample_frames = image_paths[:i] if len(image_paths) >= 10 else image_paths
+        if sample_frames:
+            simple_messages = create_context_messages(sample_frames, prompt_text)
+            
+            print("\n\n--- Simple Analysis ---")
+            simple_response = run_ollama_messages(simple_messages, model="gemma3:12b", stream=False)
+            print(f"Simple analysis result: {simple_response}")
 
 # Utility functions from your original file

@@ -1,5 +1,6 @@
 import json
 import re
+from typing import Optional
 
 def parse_yx(response):
     try:
@@ -20,6 +21,29 @@ def parse_yx(response):
 
 input_path = "data/gemini-flash-image-gen-3-memv1.json"
 output_path = "data/gemini-flash-image-gen-3-memv1.fixed.json"
+
+def extract_json_from_response(response_string: str) -> Optional[str]:
+    """
+    Extracts a JSON string from a response that might be wrapped in Markdown code fences.
+    
+    Args:
+        response_string (str): The raw response string from the model.
+        
+    Returns:
+        Optional[str]: The extracted JSON string, or None if the input is None or empty.
+    """
+    if not response_string:
+        return None
+
+    cleaned_string = response_string.strip()
+
+    if cleaned_string.startswith("```json") and cleaned_string.endswith("```"):
+        return cleaned_string[len("```json"):-len("```")].strip()
+    elif cleaned_string.startswith("```") and cleaned_string.endswith("```"): # More generic markdown
+        return cleaned_string[len("```"):-len("```")].strip()
+    
+    # If no markdown fences are detected, assume the whole string might be the JSON
+    return cleaned_string
 
 def fix_json_file(input_path, output_path):
     data = []
@@ -92,6 +116,6 @@ def log_to_json(input_path, output_path):
     with open(output_path, "w") as f:
         json.dump(records, f, indent=2)
 
-input_path = "data/gemini-flash-image-gen-cooking-dag.json"
-output_path = "data/gemini-flash-image-gen-cooking-dag.fixed.json"
-log_to_json(input_path, output_path)
+# input_path = "data/gemini-flash-image-gen-cooking-dag.json"
+# output_path = "data/gemini-flash-image-gen-cooking-dag.fixed.json"
+# log_to_json(input_path, output_path)
