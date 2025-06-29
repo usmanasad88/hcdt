@@ -24,7 +24,8 @@ output_path = "data/gemini-flash-image-gen-3-memv1.fixed.json"
 
 def extract_json_from_response(response_string: str) -> Optional[str]:
     """
-    Extracts a JSON string from a response that might be wrapped in Markdown code fences.
+    Extracts a JSON string from a response that might be wrapped in Markdown code fences
+    or triple-double-quotes.
     
     Args:
         response_string (str): The raw response string from the model.
@@ -37,12 +38,29 @@ def extract_json_from_response(response_string: str) -> Optional[str]:
 
     cleaned_string = response_string.strip()
 
+    # Case 1: ```json ... ```
     if cleaned_string.startswith("```json") and cleaned_string.endswith("```"):
         return cleaned_string[len("```json"):-len("```")].strip()
-    elif cleaned_string.startswith("```") and cleaned_string.endswith("```"): # More generic markdown
+    # Case 2: ```"""..."""``` (less likely but good to be specific if it occurs)
+    elif cleaned_string.startswith("```\"\"\"") and cleaned_string.endswith("\"\"\"```"):
+        return cleaned_string[len("```\"\"\""):-len("\"\"\"```")].strip()
+    # Case 3: ``` ... ``` (generic markdown code block)
+    elif cleaned_string.startswith("```") and cleaned_string.endswith("```"):
         return cleaned_string[len("```"):-len("```")].strip()
-    
-    # If no markdown fences are detected, assume the whole string might be the JSON
+    # Case 4: """{"operator_holding": ...}""" (starts and ends with triple-double-quotes)
+    elif cleaned_string.startswith("\"\"\"") and cleaned_string.endswith("\"\"\""):
+        # Check if the content within is likely JSON (starts with { or [)
+        # to avoid stripping """ from a multi-line string that isn't JSON.
+        potential_json = cleaned_string[len("\"\"\""):-len("\"\"\"")].strip()
+        if potential_json.startswith("{") or potential_json.startswith("["):
+            return potential_json
+        # If not, it might be a regular multi-line string, so return as is or handle differently
+        # For now, assume if it's """...""", it's meant to be the content within.
+        return potential_json
+
+
+    # If no markdown fences or triple-double-quotes are detected,
+    # assume the whole string might be the JSON or needs no stripping.
     return cleaned_string
 
 def fix_json_file(input_path, output_path):

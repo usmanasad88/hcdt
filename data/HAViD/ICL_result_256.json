@@ -1,0 +1,270 @@
+[
+    {
+        "frame": 1,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "assembly box",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 16,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 31,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "assembly box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 46,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "assembly box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 61,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 76,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 91,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 106,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 121,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 136,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 151,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "null",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 166,
+        "state": {
+            "operator_holding": "cylinder base",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 181,
+        "state": {
+            "operator_holding": "cylinder base",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 196,
+        "state": {
+            "operator_holding": "cylinder base",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 211,
+        "state": {
+            "operator_holding": "cylinder base",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 226,
+        "state": {
+            "operator_holding": "cylinder base",
+            "gaze_target": "cylinder base",
+            "steps_completed": [
+                "step_01_orient_plate"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 241,
+        "state": {
+            "operator_holding": "cylinder base",
+            "gaze_target": "ball seat",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_02_insert_bs1"
+            ],
+            "steps_available": [
+                "step_01_orient_plate",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 256,
+        "state": {
+            "operator_holding": "ball seat",
+            "gaze_target": "cylinder base",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_02_insert_bs1"
+            ],
+            "steps_available": [
+                "step_01_orient_plate",
+                "step_06_insert_bracket1"
+            ]
+        }
+    }
+]

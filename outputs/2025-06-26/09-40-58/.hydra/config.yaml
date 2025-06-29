@@ -1,0 +1,10 @@
+case_study: HAViD
+use_ground_truth: false
+total_frames_to_process: all
+test_frame_step: 15
+example_frame_step: 30
+model: gemini-2.5-flash-preview-05-20
+test_image_dir: ''
+test_gt_filename: ''
+example_image_dir: ''
+example_gt_filename: ''

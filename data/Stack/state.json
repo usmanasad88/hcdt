@@ -1,0 +1,47 @@
+[
+  {
+    "name": "frame_number",
+    "type": "Integer",
+    "description": "The current frame number of the video."
+  },
+  {
+    "name": "gaze_target",
+    "type": "String",
+    "description": "Estimate target of the operator's gaze. Can be an object (e.g., 'toolbox', 'turquoise_chair') or a location (e.g., 'stacking_area', 'table_location'). Should be 'none' if no clear target."
+  },
+  {
+    "name": "toolbox_placed_on_table",
+    "type": "Boolean",
+    "description": "Indicates whether the toolbox has been successfully placed on the folding table. Starts as `false`."
+  },
+  {
+    "name": "num_chairs_stacked",
+    "type": "Integer",
+    "description": "The total count of chairs that have been placed in the stacking area. Starts at 0 and increments up to 4."
+  },
+  {
+    "name": "operator_holding",
+    "type": "String",
+    "description": "The type of object currently held by the operator. Possible values: 'toolbox', 'chair', 'none'."
+  },
+  {
+    "name": "list_of_stacked_chairs",
+    "type": "List of Strings (Object IDs)",
+    "description": "A list of unique identifiers for the chairs that have been successfully placed in the stack (e.g., ['turquoise_chair', 'red_chair_1'])."
+  },
+  {
+    "name": "steps_completed",
+    "type": "List of Integers (Step IDs)",
+    "description": "A list of IDs for actions from the DAG that have been successfully completed."
+  },
+  {
+    "name": "steps_in_progress",
+    "type": "List of Integers (Step IDs)",
+    "description": "The ID or list of IDs for steps from the DAG that are currently being executed. Should be marked as 'idle' if no the operator is idle, unclear if not clear"
+  },
+  {
+    "name": "steps_available",
+    "type": "List of Integers (Step IDs)",
+    "description": "A list of IDs for actions from the DAG that can be started next, based on satisfied predecessors."
+  }
+]

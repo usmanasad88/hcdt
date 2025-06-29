@@ -17,7 +17,7 @@
   {
     "name": "steps_in_progress",
     "type": "List of Strings (Step IDs)",
-    "description": "The step or list of IDs for steps that are mostly likely currently being executed."
+    "description": "The step or list of IDs for steps that are mostly likely currently being executed. Should be marked as 'idle' if no the operator is idle, unclear if not clear"
   },
   {
     "name": "steps_available",

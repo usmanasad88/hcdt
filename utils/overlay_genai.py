@@ -219,7 +219,7 @@ def overlay_frame_numbers(video_path, output_path):
         if not ret:
             break
 
-        cv2.putText(frame, f"Frame: {current_frame}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255,255,255), 1, cv2.LINE_AA)
+        cv2.putText(frame, f"Frame: {current_frame}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 1.6, (255,255,255), 1, cv2.LINE_AA)
         out.write(frame)
 
     cap.release()
@@ -302,8 +302,8 @@ if __name__ == "__main__":
     # output_path_velocities = "/home/mani/Central/HaVid/S01A02I01S1_velocities_overlay.mp4"
     # overlay_velocities_video(video_path_velocities, output_path_velocities,font_scale=2)
 
-    video_path = "/home/mani/Central/Stack/cam1.mp4"
-    output_path = "/home/mani/Central/Stack/cam1_f.mp4"
+    video_path = "/home/mani/Central/HaVid/ExampleContext/front.mp4"
+    output_path = "/home/mani/Central/HaVid/ExampleContext/front_f.mp4"
     overlay_frame_numbers(video_path, output_path)
 
 

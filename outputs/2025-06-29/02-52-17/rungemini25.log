@@ -1,0 +1,57 @@
+[2025-06-29 02:52:22,091][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 02:52:22,091][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 02:53:04,882][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 02:53:11,496][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 02:53:11,496][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 02:54:10,594][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 02:54:16,909][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 02:54:16,909][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 02:55:04,373][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 02:55:10,937][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 02:55:10,937][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 02:55:54,254][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 02:56:00,358][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 02:56:00,358][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 02:56:48,356][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 02:56:54,769][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 02:56:54,769][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 02:57:52,411][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 02:57:58,528][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 02:57:58,528][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 02:58:53,249][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 02:58:59,500][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 02:58:59,500][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 02:59:58,852][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:00:05,244][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:00:05,244][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:01:07,346][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:01:13,917][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:01:13,917][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:02:21,841][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:02:28,287][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:02:28,287][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:03:41,729][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:03:48,882][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:03:48,882][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:05:09,817][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:05:16,860][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:05:16,860][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:06:49,460][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:06:56,042][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:06:56,042][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:08:31,384][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:08:38,147][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:08:38,148][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:10:23,270][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:10:30,543][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:10:30,543][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:12:20,319][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:12:27,496][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:12:27,496][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:14:31,152][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:14:38,391][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:14:38,391][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:16:49,269][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 200 OK"
+[2025-06-29 03:16:56,921][google_genai.models][INFO] - AFC is enabled with max remote calls: 10.
+[2025-06-29 03:16:56,921][google_genai.models][INFO] - AFC remote call 1 is done.
+[2025-06-29 03:17:59,264][httpx][INFO] - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 400 Bad Request"

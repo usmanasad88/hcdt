@@ -1,0 +1,150 @@
+[
+  {
+    "id": "step_1",
+    "description": "Place pot on stove and add water",
+    "predecessors": [],
+    "state_dependencies": [],
+    "effects": [
+      { "state": "pot_on_stove", "value": true },
+      { "state": "water_in_pot", "value": true }
+    ]
+  },
+  {
+    "id": "step_2",
+    "description": "Turn on stove burner for pot",
+    "predecessors": ["step_1"],
+    "state_dependencies": [
+      { "state": "pot_on_stove", "value": true },
+      { "state": "water_in_pot", "value": true }
+    ],
+    "effects": [
+      { "state": "stove_burner_on", "value": true },
+      { "state": "water_boiling", "value": true }
+    ]
+  },
+  {
+    "id": "step_3",
+    "description": "Add noodles to boiling water",
+    "predecessors": ["step_2"],
+    "state_dependencies": [
+      {"state": "water_boiling", "value": true}
+    ],
+    "effects": [
+      { "state": "noodles_in_pot", "value": true }
+    ]
+  },
+  {
+    "id": "step_4",
+    "description": "Add salt to pot",
+    "predecessors": ["step_3"],
+    "state_dependencies": [
+      {"state": "noodles_in_pot", "value": true}
+    ],
+    "effects": []
+  },
+  {
+    "id": "step_5",
+    "description": "Prepare (cut) cabbage",
+    "predecessors": [],
+    "state_dependencies": [],
+    "effects": [
+      { "state": "cabbage_prepared", "value": true }
+    ]
+  },
+  {
+    "id": "step_6",
+    "description": "Prepare (peel and cut) garlic",
+    "predecessors": [],
+    "state_dependencies": [],
+    "effects": [
+      { "state": "garlic_prepared", "value": true }
+    ]
+  },
+  {
+    "id": "step_7",
+    "description": "Prepare (peel and cut) spring onions",
+    "predecessors": [],
+    "state_dependencies": [],
+    "effects": [
+      { "state": "spring_onions_prepared", "value": true }
+    ]
+  },
+  {
+    "id": "step_8",
+    "description": "Add oil to pan and place on stove",
+    "predecessors": [],
+    "state_dependencies": [],
+    "effects": [
+      { "state": "oil_in_pan", "value": true }
+    ]
+  },
+  {
+    "id": "step_9",
+    "description": "Add prepared garlic and spring onions to pan",
+    "predecessors": ["step_6", "step_7", "step_8"],
+    "state_dependencies": [
+      { "state": "oil_in_pan", "value": true },
+      { "state": "garlic_prepared", "value": true },
+      { "state": "spring_onions_prepared", "value": true }
+    ],
+    "effects": [
+      { "state": "ingredients_in_pan_cooked", "value": true }
+    ]
+  },
+  {
+    "id": "step_10",
+    "description": "Add chopped cabbage to pot (optional, but in original graph)",
+    "predecessors": ["step_3", "step_5"],
+    "state_dependencies": [
+      { "state": "noodles_in_pot", "value": true },
+      { "state": "cabbage_prepared", "value": true }
+    ],
+    "effects": []
+  },
+  {
+    "id": "step_11",
+    "description": "Cook noodles until done",
+    "predecessors": ["step_3"],
+    "state_dependencies": [
+      { "state": "noodles_in_pot", "value": true }
+    ],
+    "effects": [
+      { "state": "noodles_cooked", "value": true }
+    ]
+  },
+  {
+    "id": "step_12",
+    "description": "Drain cooked noodles",
+    "predecessors": ["step_11"],
+    "state_dependencies": [
+      { "state": "noodles_cooked", "value": true }
+    ],
+    "effects": [
+      { "state": "noodles_drained", "value": true },
+      { "state": "stove_burner_on", "value": false }
+    ]
+  },
+  {
+    "id": "step_13",
+    "description": "Add noodles and soy sauce to pan, stir thoroughly",
+    "predecessors": ["step_9", "step_12"],
+    "state_dependencies": [
+      { "state": "noodles_drained", "value": true },
+      { "state": "ingredients_in_pan_cooked", "value": true }
+    ],
+    "effects": [
+      { "state": "ingredients_in_pan_cooked", "value": true }
+    ]
+  },
+  {
+    "id": "step_14",
+    "description": "Transfer food from pan to plate",
+    "predecessors": ["step_13"],
+    "state_dependencies": [
+      { "state": "ingredients_in_pan_cooked", "value": true }
+    ],
+    "effects": [
+      { "state": "food_on_plate", "value": true }
+    ]
+  }
+]

@@ -1,13 +1,6 @@
-defaults:
-  - exp: HAViD 
-  - _self_
-
 case_study: HAViD
 use_ground_truth: false
 total_frames_to_process: all
-start_frame: 391
-end_frame: 0
 test_frame_step: 15
-fps: 15
 example_frame_step: 30
-model: gemini-2.5-flash
+model: gemini-2.5-flash-preview-05-20
