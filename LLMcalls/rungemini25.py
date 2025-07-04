@@ -1,6 +1,3 @@
-# To run this code you need to install the following dependencies:
-# pip install google-genai
-
 import base64
 import os
 from google import genai
@@ -16,13 +13,18 @@ from omegaconf import DictConfig, OmegaConf
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.imgutils import image_to_base64
 from utils.textutils import extract_json_from_response
+from utils.experiment_logger import ExperimentLogger
 
 def generate(cfg: DictConfig,
     example_image_paths: List[str], 
     test_image_paths: List[str], 
     query_prompt: str,
     next_query_prompt: str, 
-    responses: Optional[List[str]] = None):
+    logger: ExperimentLogger = None,
+    frame_number: int = 0,
+    responses: Optional[List[str]] = None,
+    json_data: Optional[Dict[str, str]] = None):
+
     encoded_example_images = []
     for img_path in example_image_paths:
         encoded_img = image_to_base64(img_path, target_largest_dimension=None)
@@ -38,13 +40,9 @@ def generate(cfg: DictConfig,
     )
     
     model=cfg.model
-    # model = "gemini-2.5-flash-preview-05-20"
-    # model = "gemma-3-27b-it"
-    # model = "gemini-2.0-flash"
-    if model == "gemma-3-27b-it":
-        time.sleep(1) # Add a 1-second delay
-    else:
-        time.sleep(4)
+
+    start_time = time.time()
+    
     current_responses = responses if responses is not None else []
     contents = []
 
@@ -71,39 +69,90 @@ def generate(cfg: DictConfig,
     # APPROACH 2
     # Build context from a complete example, and the history of frames till current frame.
     
-    first_prompt_part = [types.Part.from_text(text=query_prompt)]
-    contents.append(types.Content(role="user", parts=first_prompt_part))
+    # first_prompt_part = [types.Part.from_text(text=query_prompt)]
+    # contents.append(types.Content(role="user", parts=first_prompt_part))
     
-    for i in range(len(encoded_example_images)):
-        example_images_bytes=base64.b64decode(encoded_example_images[i])
-        contents.append(types.Content(
-            role="user",
-            parts=[types.Part.from_bytes(
-                mime_type="image/jpeg",  # Assuming JPEG, adjust if type varies
-                data=example_images_bytes,
-            )]
-        ))
+    # # Add JSON files if provided
+    # if json_data:
+    #     for json_name, json_content in json_data.items():
+    #         json_bytes = base64.b64encode(json_content.encode('utf-8')).decode('utf-8')
+    #         contents.append(types.Content(
+    #             role="user",
+    #             parts=[types.Part.from_bytes(
+    #                 mime_type="application/json",
+    #                 data=base64.b64decode(json_bytes),
+    #             )]
+    #         ))
 
-    model_reponse="Okay, I have analyzed the example video. I am ready for your questions about test video."
+    # for i in range(len(encoded_example_images)):
+    #     example_images_bytes=base64.b64decode(encoded_example_images[i])
+    #     contents.append(types.Content(
+    #         role="user",
+    #         parts=[types.Part.from_bytes(
+    #             mime_type="image/png",  # Assuming JPEG, adjust if type varies
+    #             data=example_images_bytes,
+    #         )]
+    #     ))
+
+    # model_reponse="Okay, I have analyzed the example video. I am ready for your questions about test video."
+    # contents.append(types.Content(role="model", parts=[types.Part.from_text(text=model_reponse)]))
+    # contents.append(types.Content(role="user", parts=[types.Part.from_text(text=next_query_prompt)]))
+    # for i in range(len(encoded_test_images)):
+    #     example_images_bytes=base64.b64decode(encoded_test_images[i])
+    #     contents.append(types.Content(
+    #         role="user",
+    #         parts=[types.Part.from_bytes(
+    #             mime_type="image/png",  # adjust if type varies
+    #             data=example_images_bytes,
+    #         )]
+    #     ))
+
+    # Turn 1: User provides the main prompt, JSON data, and example images
+    first_user_parts = [types.Part.from_text(text=query_prompt)]
+    
+    # Add JSON files if provided
+    if json_data:
+        for json_name, json_content in json_data.items():
+            json_bytes = base64.b64encode(json_content.encode('utf-8'))
+            first_user_parts.append(types.Part.from_bytes(
+                mime_type="application/json",
+                data=json_bytes
+            ))
+
+    # Add example images
+    for encoded_image in encoded_example_images:
+        if encoded_image:
+            image_bytes = base64.b64decode(encoded_image)
+            first_user_parts.append(types.Part.from_bytes(
+                mime_type="image/png",
+                data=image_bytes
+            ))
+    
+    contents.append(types.Content(role="user", parts=first_user_parts))
+
+    # Turn 2: Model acknowledges the examples
+    model_reponse="Okay, I have analyzed the example video and supporting documents. I am ready for your questions about the test video."
     contents.append(types.Content(role="model", parts=[types.Part.from_text(text=model_reponse)]))
-    contents.append(types.Content(role="user", parts=[types.Part.from_text(text=next_query_prompt)]))
-    for i in range(len(encoded_test_images)):
-        example_images_bytes=base64.b64decode(encoded_test_images[i])
-        contents.append(types.Content(
-            role="user",
-            parts=[types.Part.from_bytes(
-                mime_type="image/jpeg",  # Assuming JPEG, adjust if type varies
-                data=example_images_bytes,
-            )]
-        ))
+
+    # Turn 3: User provides the next prompt and test images
+    second_user_parts = [types.Part.from_text(text=next_query_prompt)]
+    for encoded_image in encoded_test_images:
+        if encoded_image:
+            image_bytes = base64.b64decode(encoded_image)
+            second_user_parts.append(types.Part.from_bytes(
+                mime_type="image/png",
+                data=image_bytes
+            ))
+
+    contents.append(types.Content(role="user", parts=second_user_parts))
 
     generate_content_config = types.GenerateContentConfig(
         thinking_config = types.ThinkingConfig(
-            thinking_budget=0,),
+            thinking_budget=1,),
         response_mime_type="text/plain",
-        temperature=0,  
-        top_p=1,        
-        top_k=50 
+        temperature=0.5,  
+        top_p=0.95,        
+        top_k=30 
         # response_mime_type="application/json",
 
     )
@@ -117,7 +166,30 @@ def generate(cfg: DictConfig,
             print(chunk.text, end="")
             full_response.append(chunk.text)
 
-    return "".join(full_response)
+    response_text = "".join(full_response)
+    
+    # End timing and log if logger is provided
+    end_time = time.time()
+    generation_duration = end_time - start_time
+    
+    if logger:
+        # Create combined prompt for token counting
+        combined_prompt = f"{query_prompt}\n\n{next_query_prompt}"
+        
+        logger.log_generation(
+            frame_number=frame_number,
+            prompt=combined_prompt,
+            response=response_text,
+            duration=generation_duration,
+            model=model,
+            example_images_count=len(example_image_paths),
+            test_images_count=len(test_image_paths),
+            temperature=generate_content_config.temperature,
+            top_p=generate_content_config.top_p,
+            top_k=generate_content_config.top_k
+        )
+    
+    return response_text
 
 def get_ground_truth(frame_number: int, gt_filename: str) -> Optional[Dict]:
     """
@@ -227,11 +299,19 @@ def runPIPS(case_study, test_image_dir, total_frames_to_process='all', frame_ste
 
 def runICL_HI(cfg: DictConfig):
     
+    # Initialize experiment logger
+    output_dir = os.getcwd()
+    output_dir = os.path.join(output_dir, 'logs')
+    logger = ExperimentLogger(output_dir=output_dir)
+    
+    # Start experiment with notes
+    experiment_notes = f"ICL experiment on {cfg.case_study} dataset"
+    experiment_id = logger.start_experiment(cfg, experiment_notes)
+    
     script_dir = os.path.dirname(__file__)
     dag_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'dag.json')
     state_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'state.json')
     # example_gt_path=  os.path.join(script_dir, '..', 'data', case_study, 'S02A08I21_gt.json')
-    output_dir = os.getcwd() 
     result_store_path = os.path.join(script_dir, '..', 'data', cfg.case_study, cfg.exp.type + '_result.json')
     
     with open(dag_file_path, 'r') as f:
@@ -241,36 +321,29 @@ def runICL_HI(cfg: DictConfig):
     with open(cfg.exp.example_gt_filename, 'r') as f:
             example_gt_string = f.read()
 
-    prompt_text = f"""
-    You are an AI assistant analyzing video frames of a person performing a task.
-    Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from a series of images.
+    json_data = {
+        "task_graph": task_graph_string,
+        "state_schema": state_schema_string,
+        "example_gt": example_gt_string
+    }
 
-    Task Graph Definition:
-    ```json
-    {task_graph_string}
-    ```
-
-    State Variables Schema:
-    ```json
-    {state_schema_string}
-    ```
-
-    Instruction:
-    
-    First, as an example, you are being provided with a series of images {cfg.example_frame_step / cfg.fps:.2f} seconds apart for the same task performed by a different subject.
-    Next, you will be provided with frames {cfg.test_frame_step / cfg.fps:.2f} seconds apart for the task performed by the test subject. Based on the image provided and the schemas above, update the state variables.
-    Boolean state variables are not strictly boolean and can be False, True or Unknown.
-    Output the updated state variables as a JSON object.
-    Ensure your output is only the JSON object representing the updated state variables.
-
-    The ground truth states for the example is provided below:
-
-    Example Ground Truth States:
-       ```json
-    {example_gt_string}
-    ```
-    """
-
+    prompt_template = cfg.prompts.version2
+    if cfg.exp.prompt_version == "version1":
+        prompt_text = prompt_template.format(
+            task_graph_string=task_graph_string,
+            state_schema_string=state_schema_string,
+            example_gt_string=example_gt_string,
+            example_frame_step=cfg.example_frame_step,
+            fps=cfg.fps,
+            test_frame_step=cfg.test_frame_step,
+            example_frame_step_seconds=cfg.example_frame_step / cfg.fps,
+            test_frame_step_seconds=cfg.test_frame_step / cfg.fps
+        )
+    elif cfg.exp.prompt_version == "version2":
+        prompt_text = prompt_template.format(
+            example_frame_step_seconds=cfg.example_frame_step / cfg.fps,
+            test_frame_step_seconds=cfg.test_frame_step / cfg.fps
+        )
     example_image_paths = []
     example_frame_files = sorted([f for f in os.listdir(cfg.exp.example_image_dir) if f.endswith('.png')])
     for i in range(0, len(example_frame_files), cfg.example_frame_step):
@@ -283,44 +356,57 @@ def runICL_HI(cfg: DictConfig):
     current_response = None
     frame_num = cfg.start_frame
 
-    test_image_paths = []
+    
 
-    while frame_num < total_frames_to_process:
-        if cfg.end_frame > 0 and frame_num >= cfg.end_frame:
-            break
+    try:
+        while frame_num < total_frames_to_process:
+            if cfg.end_frame > 0 and frame_num >= cfg.end_frame:
+                break
 
-        second_prompt_text = f"Next frame (after {cfg.test_frame_step / cfg.fps:.2f} second) at frame number {frame_num}:"
+            second_prompt_text = f"History of frames uptil {cfg.test_frame_step / cfg.fps:.2f} second(s) at frame number {frame_num} at {cfg.fps} fps :"
+            test_image_paths = []
+            test_frame_files = sorted([f for f in os.listdir(cfg.exp.test_image_dir) if f.endswith('.png')])
+            for i in range(0, frame_num, cfg.test_frame_step):
+                test_image_paths.append(os.path.join(cfg.exp.test_image_dir, test_frame_files[i]))
 
-        test_frame_files = sorted([f for f in os.listdir(cfg.exp.test_image_dir) if f.endswith('.png')])
-        for i in range(0, frame_num, cfg.test_frame_step):
-            test_image_paths.append(os.path.join(cfg.exp.test_image_dir, test_frame_files[i]))
+            # if frame_num == 1:
+            current_response = generate(cfg, example_image_paths, test_image_paths, prompt_text, second_prompt_text, logger, frame_num, json_data=json_data)
+            response_obj = json.loads(extract_json_from_response(current_response))     
+            all_responses_data.append({"frame": frame_num, "state": response_obj})        
 
-        # if frame_num == 1:
-        current_response = generate(cfg,example_image_paths,test_image_paths, prompt_text, second_prompt_text)
-        response_obj = json.loads(extract_json_from_response(current_response))     
-        all_responses_data.append({"frame": frame_num, "state": response_obj})        
+            # else:
+            #     prev_frame = frame_num - cfg.test_frame_step
+            #     prev_frame_path = os.path.join(cfg.test_image_dir, f"frame_{prev_frame:04d}.png")
 
-        # else:
-        #     prev_frame = frame_num - cfg.test_frame_step
-        #     prev_frame_path = os.path.join(cfg.test_image_dir, f"frame_{prev_frame:04d}.png")
+            #     call_image_paths = [prev_frame_path, current_frame_path]
+            #     call_responses = [current_response]
+            #     if cfg.use_ground_truth:
+            #         call_responses = [json.dumps(get_ground_truth(prev_frame, cfg.gt_filename))]
+            #     current_response = generate(call_image_paths, prompt_text, second_prompt_text, responses=call_responses)              
+            #     response_obj = json.loads(extract_json_from_response(current_response))
+            #     all_responses_data.append({"frame": frame_num, "state": response_obj})        
+            
+            current_response = f'"""{json.dumps(response_obj)}"""'
 
-        #     call_image_paths = [prev_frame_path, current_frame_path]
-        #     call_responses = [current_response]
-        #     if cfg.use_ground_truth:
-        #         call_responses = [json.dumps(get_ground_truth(prev_frame, cfg.gt_filename))]
-        #     current_response = generate(call_image_paths, prompt_text, second_prompt_text, responses=call_responses)              
-        #     response_obj = json.loads(extract_json_from_response(current_response))
-        #     all_responses_data.append({"frame": frame_num, "state": response_obj})        
-        
-        current_response = f'"""{json.dumps(response_obj)}"""'
-
-        all_responses_data.sort(key=lambda x: x.get("frame", float('inf'))) # Sort by frame number
-        with open(result_store_path, 'w') as f:
-            json.dump(all_responses_data, f, indent=4)
-        frame_num += cfg.test_frame_step
-            # Save the config for reproducibility
+            all_responses_data.sort(key=lambda x: x.get("frame", float('inf'))) # Sort by frame number
+            with open(result_store_path, 'w') as f:
+                json.dump(all_responses_data, f, indent=4)
+            frame_num += cfg.test_frame_step
+            
+            # Save checkpoint every 5 generations
+            if len(all_responses_data) % 5 == 0:
+                logger.save_checkpoint()
+                
+        # Save the config for reproducibility
         with open(os.path.join(output_dir, "config_used.yaml"), 'w') as f:
             f.write(OmegaConf.to_yaml(cfg))
+            
+    except Exception as e:
+        print(f"❌ Experiment failed: {e}")
+        raise
+    finally:
+        # Always end the experiment to save logs
+        logger.end_experiment()
 
 @hydra.main(config_path="../config", config_name="config", version_base=None)
 def main(cfg: DictConfig):

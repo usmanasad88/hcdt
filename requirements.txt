@@ -1,0 +1,4 @@
+google-genai
+tiktoken
+omegaconf
+hydra-core

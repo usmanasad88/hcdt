@@ -1,14 +1,14 @@
 type: "ICL" # In-Context Learning "test" or "ICL"
-example_image_dir: "/home/mani/Central/HaVid/S13A11I21/frames"
+example_image_dir: "/home/mani/Central/Stack/cam2/frames"
 example_gt_filename: "data/HAViD/S13A11I21_gt.json"
 
-test_image_dir: "/home/mani/Central/HaVid/S02A08I21/frames"
+test_image_dir: "/home/mani/Central/Stack/cam1/frames"
 test_gt_filename: "data/HAViD/S02A08I21_gt.json"
 
-test_frame_step: 15
-fps: 15
-example_frame_step: 15
+test_frame_step: 30
+fps: 30
+example_frame_step: 30
 
 drawing: "/home/mani/Central/HaVid/S13A11I21/assembly_exploded_view.png"
-attach_drawing: true
+attach_drawing: false
 drawing_prompt: "Use the provided drawing to help you understand the task and update the state variables accordingly. The drawing is an exploded view of the assembly, showing how the parts fit together."

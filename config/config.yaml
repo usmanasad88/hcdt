@@ -1,13 +1,93 @@
 defaults:
-  - exp: HAViD 
+  - exp: Stack
   - _self_
 
-case_study: HAViD
+case_study: Stack
 use_ground_truth: false
 total_frames_to_process: all
-start_frame: 391
+use_file_upload: false
+use_openai: false
+start_frame: 1
 end_frame: 0
-test_frame_step: 15
-fps: 15
-example_frame_step: 30
 model: gemini-2.5-flash
+
+prompts:
+  version1: |
+    You are an AI assistant analyzing video frames of a person performing a task.
+    Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from a series of images.
+
+    Task Graph Definition:
+    ```json
+    {task_graph_string}
+    ```
+
+    State Variables Schema:
+    ```json
+    {state_schema_string}
+    ```
+
+    Instruction:
+    
+    First, as an example, you are being provided with a series of images {example_frame_step} / {fps} = {example_frame_step_seconds:.2f} seconds apart for the same task performed by a different subject.
+    Next, you will be provided with frames {test_frame_step} / {fps} = {test_frame_step_seconds:.2f} seconds apart for the task performed by the test subject.
+    
+    The ground truth states for the example is provided below:
+    ```json
+    {example_gt_string}
+    ```
+    
+  version2: |
+    You are an AI assistant analyzing video frames of a person performing a task.
+    Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from a series of images.
+
+    Instruction:
+    
+    First, as an example, you are being provided with a series of images {example_frame_step_seconds:.2f} seconds apart for the same task performed by a different subject.
+    Next, you will be provided with frames {test_frame_step_seconds:.2f} seconds apart for the task performed by the test subject. Based on the image provided and the schemas above, update the state variables.
+    Boolean state variables are not strictly boolean and can be False, True or Unknown.
+    Output the updated state variables as a JSON object.
+    The ground truth states for the example is also provided. Analyse provided the information.    
+    ```
+  version3: |
+    You are an AI assistant analyzing video frames of a person performing a task.
+    Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from a series of images.
+
+    Task Graph Definition:
+    ```json
+    {task_graph_string}
+    ```
+
+    State Variables Schema:
+    ```json
+    {state_schema_string}
+    ```
+
+    Instruction:
+    
+    First, as an example, you are being provided with a series of images {example_frame_step} / {fps} = {example_frame_step_seconds:.2f} seconds apart for the same task performed by a different subject.
+    Next, you will be provided with frames {test_frame_step} / {fps} = {test_frame_step_seconds:.2f} seconds apart for the task performed by the test subject.
+    
+    The example video frames are provided below:
+    ```
+  getgroundtruth: |
+    You are an AI assistant analyzing video frames of a person performing a task.
+    Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from a series of images.
+
+    Instruction:
+    
+    You are being provided with a series of images 1 seconds apart 
+    Based on the images provided and the schemas above, update the state variables.
+    Boolean state variables are not strictly boolean and can be False, True or Unknown.
+    Output the updated state variables as a JSON object.    .
+
+    
+    ```
+exp:
+  prompt_version: "version3"
+
+second_prompt: 
+  v1: |
+    Now the history of frames for the test video is provided.
+    Ensure your output is only the JSON object representing the updated state variables, for the last provided frame (frame number: {frame_num}). 
+    History of frames uptil {last_frame_time} second(s) at frame number {frame_num} at {fps} fps :
+    ```

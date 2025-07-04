@@ -94,8 +94,8 @@ def overlay_genai_video(
                 if field in info:
                     lines.append(f"{field}: {info[field]}")
                 # Try inside llm_parsed_output
-                elif "llm_parsed_output" in info and field in info["llm_parsed_output"]:
-                    lines.append(f"{field}: {info['llm_parsed_output'][field]}")
+                elif "state" in info and field in info["state"]:
+                    lines.append(f"{field}: {info['state'][field]}")
                 # Try inside current_full_state (optional)
                 elif "current_full_state" in info and field in info["current_full_state"]:
                     lines.append(f"{field}: {info['current_full_state'][field]}")
@@ -286,15 +286,23 @@ if __name__ == "__main__":
     # main()
 
     # overlay_genai_video(
-    #     "/home/mani/Central/Stack/cam2_cr.mp4",
-    #     "data/gemini-flash-image-gen-3-memv1.json",
-    #     "data/overlay-gemini-flash-image-gen-3-memv1.mp4",
-    #     fields=["time", "Expected Immediate Next Action"]
+    #     "/home/mani/Central/Stack/cam1.mp4",
+    #     "data/Stack/ICL_result.json",
+    #     "data/OverlayVids/overlay-cam1-ICL.mp4",
+    #     fields=["frame","steps_completed","steps_in_progress","steps_available"]
     # )
+
+    overlay_genai_video(
+        "/home/mani/Central/HaVid/S02A08I21/front.mp4",
+        "logs/ICL_result_havid_ex0002.json",
+        "data/OverlayVids/overlay-S02A08-ICL.mp4",
+        fields=["frame","steps_completed","steps_in_progress","steps_available"]
+    )
+
 
     # overlay_genai_video(
     #     "/home/mani/Central/Cooking1/aria01_214-1.mp4",
-    #     "data/gemini-flash-image-gen-cooking-dag.fixed.json",
+    #     "data/OverlayVids/gemini-flash-image-gen-cooking-dag.fixed.json",
     #     "data/overlay-gemini-flash-image-gen-cooking-dag.mp4",
     #     fields=["timestamp", "last_observed_action","expected_immediate_next_action"]    
     # )
@@ -302,9 +310,9 @@ if __name__ == "__main__":
     # output_path_velocities = "/home/mani/Central/HaVid/S01A02I01S1_velocities_overlay.mp4"
     # overlay_velocities_video(video_path_velocities, output_path_velocities,font_scale=2)
 
-    video_path = "/home/mani/Central/HaVid/ExampleContext/front.mp4"
-    output_path = "/home/mani/Central/HaVid/ExampleContext/front_f.mp4"
-    overlay_frame_numbers(video_path, output_path)
+    # video_path = "/home/mani/Central/HaVid/ExampleContext/front.mp4"
+    # output_path = "/home/mani/Central/HaVid/ExampleContext/front_f.mp4"
+    # overlay_frame_numbers(video_path, output_path)
 
 
 
