@@ -1,0 +1,4062 @@
+[
+    {
+        "input_end_frame": 76,
+        "prediction_frame": 106,
+        "prediction_time_seconds": 7.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 49,
+                "time_seconds": 3.2,
+                "left_hand_x": 534.8100185394287,
+                "left_hand_y": 559.9462721082899,
+                "right_hand_x": 480.2137851715088,
+                "right_hand_y": 447.9927910698785,
+                "left_hand_velocity": 0.6980473641306162,
+                "right_hand_velocity": 0.8380631916224957
+            },
+            {
+                "frame": 52,
+                "time_seconds": 3.4,
+                "left_hand_x": 532.14111328125,
+                "left_hand_y": 562.7861870659723,
+                "right_hand_x": 465.6174659729004,
+                "right_hand_y": 437.0998806423611,
+                "left_hand_velocity": 0.5598344840109348,
+                "right_hand_velocity": 1.035546138882637
+            },
+            {
+                "frame": 55,
+                "time_seconds": 3.6,
+                "left_hand_x": 525.5306243896484,
+                "left_hand_y": 570.4772525363499,
+                "right_hand_x": 444.0671920776367,
+                "right_hand_y": 420.86957295735675,
+                "left_hand_velocity": 0.8060740306973457,
+                "right_hand_velocity": 1.8274849280714989
+            },
+            {
+                "frame": 58,
+                "time_seconds": 3.8,
+                "left_hand_x": 513.3831977844238,
+                "left_hand_y": 570.9686279296875,
+                "right_hand_x": 414.7503852844238,
+                "right_hand_y": 414.62436252170136,
+                "left_hand_velocity": 0.7626542821526527,
+                "right_hand_velocity": 1.9489845260977745
+            },
+            {
+                "frame": 61,
+                "time_seconds": 4.0,
+                "left_hand_x": 502.65593528747553,
+                "left_hand_y": 563.1211174858942,
+                "right_hand_x": 390.5642032623291,
+                "right_hand_y": 415.2771843804253,
+                "left_hand_velocity": 1.294730044901371,
+                "right_hand_velocity": 2.6941148564219475
+            },
+            {
+                "frame": 64,
+                "time_seconds": 4.2,
+                "left_hand_x": 506.6027164459228,
+                "left_hand_y": 534.018792046441,
+                "right_hand_x": 372.467565536499,
+                "right_hand_y": 414.449225531684,
+                "left_hand_velocity": 2.2765159606933594,
+                "right_hand_velocity": 0.7952593266963959
+            },
+            {
+                "frame": 67,
+                "time_seconds": 4.4,
+                "left_hand_x": 521.3539123535156,
+                "left_hand_y": 507.57378472222223,
+                "right_hand_x": 371.1345672607422,
+                "right_hand_y": 432.03989664713544,
+                "left_hand_velocity": 1.7344672232866287,
+                "right_hand_velocity": 2.23372932523489
+            },
+            {
+                "frame": 70,
+                "time_seconds": 4.6,
+                "left_hand_x": 529.4955253601074,
+                "left_hand_y": 498.944346110026,
+                "right_hand_x": 385.4099988937378,
+                "right_hand_y": 485.83484225802954,
+                "left_hand_velocity": 0.6698850076645613,
+                "right_hand_velocity": 2.8240662068128586
+            },
+            {
+                "frame": 73,
+                "time_seconds": 4.8,
+                "left_hand_x": 530.3566932678223,
+                "left_hand_y": 504.3121337890625,
+                "right_hand_x": 386.61670684814453,
+                "right_hand_y": 532.6492309570312,
+                "left_hand_velocity": 0.34149084240198135,
+                "right_hand_velocity": 1.7234349623322487
+            },
+            {
+                "frame": 76,
+                "time_seconds": 5.0,
+                "left_hand_x": 531.9906234741211,
+                "left_hand_y": 501.15000406901044,
+                "right_hand_x": 377.50396728515625,
+                "right_hand_y": 546.6807895236545,
+                "left_hand_velocity": 0.5732132587581873,
+                "right_hand_velocity": 0.9694736450910568
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands move down and slightly outward to place the assembly box flat on the table, then rest.",
+            "target_object": "Assembly Box",
+            "left_hand_x": 550,
+            "left_hand_y": 700,
+            "right_hand_x": 350,
+            "right_hand_y": 700
+        }
+    },
+    {
+        "input_end_frame": 136,
+        "prediction_frame": 166,
+        "prediction_time_seconds": 11.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 109,
+                "time_seconds": 7.2,
+                "left_hand_x": 544.6379661560059,
+                "left_hand_y": 504.4930352105035,
+                "right_hand_x": 484.5641613006592,
+                "right_hand_y": 499.9808417426215,
+                "left_hand_velocity": 1.2644831091165543,
+                "right_hand_velocity": 5.295423790812492
+            },
+            {
+                "frame": 112,
+                "time_seconds": 7.4,
+                "left_hand_x": 543.2164669036865,
+                "left_hand_y": 504.9018012152777,
+                "right_hand_x": 392.6159858703613,
+                "right_hand_y": 514.1859266493055,
+                "left_hand_velocity": 0.9160174988210201,
+                "right_hand_velocity": 3.4552719444036484
+            },
+            {
+                "frame": 115,
+                "time_seconds": 7.6,
+                "left_hand_x": 538.9873504638672,
+                "left_hand_y": 502.7596367730035,
+                "right_hand_x": 382.21940994262695,
+                "right_hand_y": 525.6967332628038,
+                "left_hand_velocity": 0.6618496496230364,
+                "right_hand_velocity": 1.057315431535244
+            },
+            {
+                "frame": 118,
+                "time_seconds": 7.8,
+                "left_hand_x": 537.0291709899902,
+                "left_hand_y": 503.9733462863498,
+                "right_hand_x": 376.5213966369629,
+                "right_hand_y": 528.649181789822,
+                "left_hand_velocity": 0.6589998491108418,
+                "right_hand_velocity": 0.7842065766453743
+            },
+            {
+                "frame": 121,
+                "time_seconds": 8.0,
+                "left_hand_x": 540.0112628936768,
+                "left_hand_y": 505.0938924153646,
+                "right_hand_x": 376.1730670928955,
+                "right_hand_y": 517.7688598632812,
+                "left_hand_velocity": 1.070141326636076,
+                "right_hand_velocity": 1.442926935851574
+            },
+            {
+                "frame": 124,
+                "time_seconds": 8.2,
+                "left_hand_x": 551.5201568603516,
+                "left_hand_y": 508.3340538872613,
+                "right_hand_x": 381.709361076355,
+                "right_hand_y": 484.2103322347005,
+                "left_hand_velocity": 1.2739858590066433,
+                "right_hand_velocity": 3.2612133771181107
+            },
+            {
+                "frame": 127,
+                "time_seconds": 8.4,
+                "left_hand_x": 560.626745223999,
+                "left_hand_y": 513.9334360758464,
+                "right_hand_x": 438.29102516174316,
+                "right_hand_y": 440.98252190483936,
+                "left_hand_velocity": 0.46475818380713463,
+                "right_hand_velocity": 4.937554150819778
+            },
+            {
+                "frame": 130,
+                "time_seconds": 8.6,
+                "left_hand_x": 569.5474147796631,
+                "left_hand_y": 515.9366183810764,
+                "right_hand_x": 493.8662052154541,
+                "right_hand_y": 468.8551161024306,
+                "left_hand_velocity": 0.6674754898995161,
+                "right_hand_velocity": 4.436209052801132
+            },
+            {
+                "frame": 133,
+                "time_seconds": 8.8,
+                "left_hand_x": 599.8156070709229,
+                "left_hand_y": 523.1382158067491,
+                "right_hand_x": 505.70430755615234,
+                "right_hand_y": 546.0079193115234,
+                "left_hand_velocity": 1.7652884125709534,
+                "right_hand_velocity": 3.1593017280101776
+            },
+            {
+                "frame": 136,
+                "time_seconds": 9.0,
+                "left_hand_x": 613.4483337402344,
+                "left_hand_y": 528.6747402615017,
+                "right_hand_x": 509.81516838073725,
+                "right_hand_y": 575.079600016276,
+                "left_hand_velocity": 0.950369518250227,
+                "right_hand_velocity": 0.9929660707712173
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Right hand picks up cylinder bracket; Left hand moves to grasp cylinder base.",
+            "target_object": "first cylinder bracket",
+            "left_hand_x": 514,
+            "left_hand_y": 535,
+            "right_hand_x": 450,
+            "right_hand_y": 550
+        }
+    },
+    {
+        "input_end_frame": 196,
+        "prediction_frame": 226,
+        "prediction_time_seconds": 15.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 169,
+                "time_seconds": 11.2,
+                "left_hand_x": 555.6330680847168,
+                "left_hand_y": 502.4434831407335,
+                "right_hand_x": 321.8036890029907,
+                "right_hand_y": 443.3189815945096,
+                "left_hand_velocity": 3.910401090979576,
+                "right_hand_velocity": 5.599596723914146
+            },
+            {
+                "frame": 172,
+                "time_seconds": 11.4,
+                "left_hand_x": 589.9059772491455,
+                "left_hand_y": 508.93410576714416,
+                "right_hand_x": 397.921085357666,
+                "right_hand_y": 387.1883816189236,
+                "left_hand_velocity": 2.8084170073270798,
+                "right_hand_velocity": 3.631836920976639
+            },
+            {
+                "frame": 175,
+                "time_seconds": 11.6,
+                "left_hand_x": 605.1639080047607,
+                "left_hand_y": 506.1165703667535,
+                "right_hand_x": 478.6095142364502,
+                "right_hand_y": 420.6117418077257,
+                "left_hand_velocity": 2.625199966132641,
+                "right_hand_velocity": 5.037422105669975
+            },
+            {
+                "frame": 178,
+                "time_seconds": 11.8,
+                "left_hand_x": 610.159158706665,
+                "left_hand_y": 516.5623982747396,
+                "right_hand_x": 521.3223934173584,
+                "right_hand_y": 499.14644029405383,
+                "left_hand_velocity": 1.2259488925337791,
+                "right_hand_velocity": 2.7823923155665398
+            },
+            {
+                "frame": 181,
+                "time_seconds": 12.0,
+                "left_hand_x": 607.5057983398438,
+                "left_hand_y": 541.4920806884766,
+                "right_hand_x": 525.8504867553711,
+                "right_hand_y": 511.48940192328564,
+                "left_hand_velocity": 1.2596388347446918,
+                "right_hand_velocity": 1.1090499348938465
+            },
+            {
+                "frame": 184,
+                "time_seconds": 12.2,
+                "left_hand_x": 610.3187084197998,
+                "left_hand_y": 564.1606648763021,
+                "right_hand_x": 504.9334049224854,
+                "right_hand_y": 498.8611857096354,
+                "left_hand_velocity": 1.309274137020111,
+                "right_hand_velocity": 2.5060640648007393
+            },
+            {
+                "frame": 187,
+                "time_seconds": 12.4,
+                "left_hand_x": 609.2037677764893,
+                "left_hand_y": 573.9590115017361,
+                "right_hand_x": 497.34559059143066,
+                "right_hand_y": 497.1665276421441,
+                "left_hand_velocity": 0.5902850069105625,
+                "right_hand_velocity": 0.8344562724232674
+            },
+            {
+                "frame": 190,
+                "time_seconds": 12.6,
+                "left_hand_x": 606.8539142608643,
+                "left_hand_y": 579.7320895724827,
+                "right_hand_x": 497.5560665130615,
+                "right_hand_y": 496.25286526150177,
+                "left_hand_velocity": 0.5260473117232323,
+                "right_hand_velocity": 0.5111996084451675
+            },
+            {
+                "frame": 193,
+                "time_seconds": 12.8,
+                "left_hand_x": 606.7915916442871,
+                "left_hand_y": 580.34176296658,
+                "right_hand_x": 497.77135848999023,
+                "right_hand_y": 496.81566026475696,
+                "left_hand_velocity": 0.6897957995533943,
+                "right_hand_velocity": 1.063612848520279
+            },
+            {
+                "frame": 196,
+                "time_seconds": 13.0,
+                "left_hand_x": 618.3300971984863,
+                "left_hand_y": 569.9993133544922,
+                "right_hand_x": 499.35712814331055,
+                "right_hand_y": 504.38516404893664,
+                "left_hand_velocity": 0.8419345133006573,
+                "right_hand_velocity": 2.768387459218502
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Right hand holds cylinder base, left hand reaches for first ball seat.",
+            "target_object": "First ball seat",
+            "left_hand_x": 380,
+            "left_hand_y": 680,
+            "right_hand_x": 500,
+            "right_hand_y": 520
+        }
+    },
+    {
+        "input_end_frame": 256,
+        "prediction_frame": 286,
+        "prediction_time_seconds": 19.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 229,
+                "time_seconds": 15.2,
+                "left_hand_x": 592.2852516174316,
+                "left_hand_y": 586.3257514105903,
+                "right_hand_x": 484.2364311218262,
+                "right_hand_y": 599.2192586263021,
+                "left_hand_velocity": 0.589826749637723,
+                "right_hand_velocity": 0.9611358866095543
+            },
+            {
+                "frame": 232,
+                "time_seconds": 15.4,
+                "left_hand_x": 586.569881439209,
+                "left_hand_y": 585.7103983561199,
+                "right_hand_x": 482.89012908935547,
+                "right_hand_y": 600.1818339029949,
+                "left_hand_velocity": 3.5633910447359085,
+                "right_hand_velocity": 1.3790025375783443
+            },
+            {
+                "frame": 235,
+                "time_seconds": 15.6,
+                "left_hand_x": 604.0001392364502,
+                "left_hand_y": 531.97021484375,
+                "right_hand_x": 484.1620445251465,
+                "right_hand_y": 623.1771681043838,
+                "left_hand_velocity": 4.419659450650215,
+                "right_hand_velocity": 0.7146372459828854
+            },
+            {
+                "frame": 238,
+                "time_seconds": 15.8,
+                "left_hand_x": 529.7354698181152,
+                "left_hand_y": 569.3311903211805,
+                "right_hand_x": 469.7132110595703,
+                "right_hand_y": 585.1064893934463,
+                "left_hand_velocity": 8.480466902256012,
+                "right_hand_velocity": 1.0344146750867367
+            },
+            {
+                "frame": 241,
+                "time_seconds": 16.0,
+                "left_hand_x": 465.5670166015625,
+                "left_hand_y": 667.7903917100695,
+                "right_hand_x": 420.2934741973877,
+                "right_hand_y": 608.1364949544271,
+                "left_hand_velocity": 4.1222818195819855,
+                "right_hand_velocity": 1.623302884399891
+            },
+            {
+                "frame": 244,
+                "time_seconds": 16.2,
+                "left_hand_x": 446.9106674194336,
+                "left_hand_y": 702.4979909261068,
+                "right_hand_x": 413.1162643432617,
+                "right_hand_y": 669.7614457872179,
+                "left_hand_velocity": 1.373917143791914,
+                "right_hand_velocity": 1.1610981076955795
+            },
+            {
+                "frame": 247,
+                "time_seconds": 16.4,
+                "left_hand_x": 452.6580333709717,
+                "left_hand_y": 684.5164404975044,
+                "right_hand_x": 415.0182247161865,
+                "right_hand_y": 644.7671254475912,
+                "left_hand_velocity": 4.54183965921402,
+                "right_hand_velocity": 1.4870473183691502
+            },
+            {
+                "frame": 250,
+                "time_seconds": 16.6,
+                "left_hand_x": 503.3169746398926,
+                "left_hand_y": 588.886006673177,
+                "right_hand_x": 450.4190444946289,
+                "right_hand_y": 593.2820638020834,
+                "left_hand_velocity": 5.602968856692314,
+                "right_hand_velocity": 2.6116425171494484
+            },
+            {
+                "frame": 253,
+                "time_seconds": 16.8,
+                "left_hand_x": 588.5028839111328,
+                "left_hand_y": 508.40890672471784,
+                "right_hand_x": 481.6327095031738,
+                "right_hand_y": 657.6483408610027,
+                "left_hand_velocity": 3.057052195072174,
+                "right_hand_velocity": 3.3031295984983444
+            },
+            {
+                "frame": 256,
+                "time_seconds": 17.0,
+                "left_hand_x": 608.5831165313721,
+                "left_hand_y": 497.49081929524743,
+                "right_hand_x": 470.8674907684326,
+                "right_hand_y": 466.4037492540147,
+                "left_hand_velocity": 0.8938126266002655,
+                "right_hand_velocity": 2.7957217767834663
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands will be positioned around the cylinder base after completing the ball seat insertion. Right hand stabilizes cylinder, left hand assists.",
+            "target_object": "first ball seat",
+            "left_hand_x": 420,
+            "left_hand_y": 470,
+            "right_hand_x": 470,
+            "right_hand_y": 465
+        }
+    },
+    {
+        "input_end_frame": 316,
+        "prediction_frame": 346,
+        "prediction_time_seconds": 23.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 289,
+                "time_seconds": 19.2,
+                "left_hand_x": 610.1229667663574,
+                "left_hand_y": 514.8391299777561,
+                "right_hand_x": 516.5914535522461,
+                "right_hand_y": 563.2346683078342,
+                "left_hand_velocity": 0.22085364907979965,
+                "right_hand_velocity": 0.30687509570270777
+            },
+            {
+                "frame": 292,
+                "time_seconds": 19.4,
+                "left_hand_x": 609.1883182525635,
+                "left_hand_y": 512.8743489583333,
+                "right_hand_x": 517.1584606170654,
+                "right_hand_y": 564.6360609266493,
+                "left_hand_velocity": 0.11532708304002881,
+                "right_hand_velocity": 0.21613289136439562
+            },
+            {
+                "frame": 295,
+                "time_seconds": 19.6,
+                "left_hand_x": 610.9808921813965,
+                "left_hand_y": 511.59773932562933,
+                "right_hand_x": 518.4668064117432,
+                "right_hand_y": 565.9413231743706,
+                "left_hand_velocity": 0.19366639899089932,
+                "right_hand_velocity": 0.20181683357805014
+            },
+            {
+                "frame": 298,
+                "time_seconds": 19.8,
+                "left_hand_x": 614.4393444061279,
+                "left_hand_y": 511.89422607421875,
+                "right_hand_x": 519.6471214294434,
+                "right_hand_y": 566.3200378417969,
+                "left_hand_velocity": 0.3907608799636364,
+                "right_hand_velocity": 0.23360683117061853
+            },
+            {
+                "frame": 301,
+                "time_seconds": 20.0,
+                "left_hand_x": 616.1161422729492,
+                "left_hand_y": 517.289310031467,
+                "right_hand_x": 519.8107719421387,
+                "right_hand_y": 565.9827338324652,
+                "left_hand_velocity": 0.5424688570201397,
+                "right_hand_velocity": 0.15911133959889412
+            },
+            {
+                "frame": 304,
+                "time_seconds": 20.2,
+                "left_hand_x": 620.366382598877,
+                "left_hand_y": 519.4042629665798,
+                "right_hand_x": 516.3849353790283,
+                "right_hand_y": 567.033216688368,
+                "left_hand_velocity": 0.5518610589206219,
+                "right_hand_velocity": 0.059526291443035007
+            },
+            {
+                "frame": 307,
+                "time_seconds": 20.4,
+                "left_hand_x": 619.896125793457,
+                "left_hand_y": 523.8128662109375,
+                "right_hand_x": 518.704891204834,
+                "right_hand_y": 565.7075670030381,
+                "left_hand_velocity": 0.355131970718503,
+                "right_hand_velocity": 0.024682216462679207
+            },
+            {
+                "frame": 310,
+                "time_seconds": 20.6,
+                "left_hand_x": 616.8213844299316,
+                "left_hand_y": 525.5497402615017,
+                "right_hand_x": 516.6648864746094,
+                "right_hand_y": 567.1952141655817,
+                "left_hand_velocity": 0.3024416044354439,
+                "right_hand_velocity": 0.0693577982019633
+            },
+            {
+                "frame": 313,
+                "time_seconds": 20.8,
+                "left_hand_x": 615.0535106658936,
+                "left_hand_y": 520.546129014757,
+                "right_hand_x": 515.108060836792,
+                "right_hand_y": 567.2692192925347,
+                "left_hand_velocity": 0.7641260512173176,
+                "right_hand_velocity": 0.26998030953109264
+            },
+            {
+                "frame": 316,
+                "time_seconds": 21.0,
+                "left_hand_x": 616.407299041748,
+                "left_hand_y": 507.9811520046658,
+                "right_hand_x": 518.4155464172363,
+                "right_hand_y": 566.6075388590494,
+                "left_hand_velocity": 0.5926961544901133,
+                "right_hand_velocity": 0.18766700522974133
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Left hand holds base steady, right hand moves ball seat into base.",
+            "target_object": "first ball seat",
+            "left_hand_x": 616,
+            "left_hand_y": 508,
+            "right_hand_x": 592,
+            "right_hand_y": 523
+        }
+    },
+    {
+        "input_end_frame": 376,
+        "prediction_frame": 406,
+        "prediction_time_seconds": 27.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 349,
+                "time_seconds": 23.2,
+                "left_hand_x": 624.32861328125,
+                "left_hand_y": 493.6698913574219,
+                "right_hand_x": 515.4942512512207,
+                "right_hand_y": 560.4974534776476,
+                "left_hand_velocity": 2.1435122936964035,
+                "right_hand_velocity": 0.45932503417134285
+            },
+            {
+                "frame": 352,
+                "time_seconds": 23.4,
+                "left_hand_x": 635.543155670166,
+                "left_hand_y": 483.02650451660156,
+                "right_hand_x": 513.5378360748291,
+                "right_hand_y": 554.7255198160808,
+                "left_hand_velocity": 0.8567383512854576,
+                "right_hand_velocity": 0.8397020399570465
+            },
+            {
+                "frame": 355,
+                "time_seconds": 23.6,
+                "left_hand_x": 621.7916488647461,
+                "left_hand_y": 501.35676066080725,
+                "right_hand_x": 510.1431369781494,
+                "right_hand_y": 568.6780293782551,
+                "left_hand_velocity": 1.8738167360424995,
+                "right_hand_velocity": 1.8361261114478111
+            },
+            {
+                "frame": 358,
+                "time_seconds": 23.8,
+                "left_hand_x": 603.3782482147217,
+                "left_hand_y": 514.9280124240452,
+                "right_hand_x": 503.8352489471436,
+                "right_hand_y": 574.2276509602865,
+                "left_hand_velocity": 1.1767471209168434,
+                "right_hand_velocity": 1.9072094932198524
+            },
+            {
+                "frame": 361,
+                "time_seconds": 24.0,
+                "left_hand_x": 598.6255645751953,
+                "left_hand_y": 515.8994038899739,
+                "right_hand_x": 504.63924407958984,
+                "right_hand_y": 580.1795959472656,
+                "left_hand_velocity": 2.1274708211421967,
+                "right_hand_velocity": 1.5146439895033836
+            },
+            {
+                "frame": 364,
+                "time_seconds": 24.2,
+                "left_hand_x": 603.1928062438965,
+                "left_hand_y": 517.8975847032335,
+                "right_hand_x": 504.6806335449219,
+                "right_hand_y": 578.4542931450738,
+                "left_hand_velocity": 4.035815969109535,
+                "right_hand_velocity": 1.3472985476255417
+            },
+            {
+                "frame": 367,
+                "time_seconds": 24.4,
+                "left_hand_x": 573.8361358642578,
+                "left_hand_y": 563.4206983778212,
+                "right_hand_x": 503.1874179840088,
+                "right_hand_y": 572.6626078287761,
+                "left_hand_velocity": 5.808049440383911,
+                "right_hand_velocity": 3.2633841037750244
+            },
+            {
+                "frame": 370,
+                "time_seconds": 24.6,
+                "left_hand_x": 514.6801471710205,
+                "left_hand_y": 612.0944552951388,
+                "right_hand_x": 500.0490188598633,
+                "right_hand_y": 566.7015075683594,
+                "left_hand_velocity": 5.120649188756943,
+                "right_hand_velocity": 1.2784135527908802
+            },
+            {
+                "frame": 373,
+                "time_seconds": 24.8,
+                "left_hand_x": 438.9004707336426,
+                "left_hand_y": 656.8587832980686,
+                "right_hand_x": 500.92782974243164,
+                "right_hand_y": 592.3849741617838,
+                "left_hand_velocity": 4.025541618466377,
+                "right_hand_velocity": 1.0908301919698715
+            },
+            {
+                "frame": 376,
+                "time_seconds": 25.0,
+                "left_hand_x": 413.2931709289551,
+                "left_hand_y": 690.3417799207899,
+                "right_hand_x": 495.11632919311523,
+                "right_hand_y": 593.9374287923177,
+                "left_hand_velocity": 1.688987948000431,
+                "right_hand_velocity": 0.6574633531272411
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Left hand moves from ball pickup to insert into cylinder held by right hand.",
+            "target_object": "Cylinder base",
+            "left_hand_x": 500,
+            "left_hand_y": 500,
+            "right_hand_x": 495,
+            "right_hand_y": 590
+        }
+    },
+    {
+        "input_end_frame": 436,
+        "prediction_frame": 466,
+        "prediction_time_seconds": 31.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 409,
+                "time_seconds": 27.2,
+                "left_hand_x": 587.879753112793,
+                "left_hand_y": 480.44904073079425,
+                "right_hand_x": 505.96194267272955,
+                "right_hand_y": 579.529783460829,
+                "left_hand_velocity": 0.3712005680426955,
+                "right_hand_velocity": 0.037703110137954354
+            },
+            {
+                "frame": 412,
+                "time_seconds": 27.4,
+                "left_hand_x": 587.8476142883301,
+                "left_hand_y": 480.53682115342883,
+                "right_hand_x": 505.54342269897455,
+                "right_hand_y": 578.8313971625433,
+                "left_hand_velocity": 1.058105193078518,
+                "right_hand_velocity": 0.16350270016118884
+            },
+            {
+                "frame": 415,
+                "time_seconds": 27.6,
+                "left_hand_x": 589.1491889953613,
+                "left_hand_y": 479.74785698784723,
+                "right_hand_x": 505.2717208862305,
+                "right_hand_y": 578.2460530598959,
+                "left_hand_velocity": 2.7066562324762344,
+                "right_hand_velocity": 0.37681644316762686
+            },
+            {
+                "frame": 418,
+                "time_seconds": 27.8,
+                "left_hand_x": 618.7352180480957,
+                "left_hand_y": 467.57837931315106,
+                "right_hand_x": 508.66570472717285,
+                "right_hand_y": 585.5702718098959,
+                "left_hand_velocity": 5.263685807585716,
+                "right_hand_velocity": 1.143004186451435
+            },
+            {
+                "frame": 421,
+                "time_seconds": 28.0,
+                "left_hand_x": 650.8139610290527,
+                "left_hand_y": 506.0685475667318,
+                "right_hand_x": 502.8485298156738,
+                "right_hand_y": 577.7201758490669,
+                "left_hand_velocity": 4.662193730473518,
+                "right_hand_velocity": 1.384270191192627
+            },
+            {
+                "frame": 424,
+                "time_seconds": 28.2,
+                "left_hand_x": 659.9081039428711,
+                "left_hand_y": 519.3226284450955,
+                "right_hand_x": 501.7637729644775,
+                "right_hand_y": 574.156273735894,
+                "left_hand_velocity": 3.3315468579530716,
+                "right_hand_velocity": 0.2584562171250582
+            },
+            {
+                "frame": 427,
+                "time_seconds": 28.4,
+                "left_hand_x": 650.3247261047363,
+                "left_hand_y": 531.6890292697483,
+                "right_hand_x": 502.2265434265136,
+                "right_hand_y": 575.3952874077692,
+                "left_hand_velocity": 1.1829973198473454,
+                "right_hand_velocity": 0.48824455589056015
+            },
+            {
+                "frame": 430,
+                "time_seconds": 28.6,
+                "left_hand_x": 649.6027946472168,
+                "left_hand_y": 536.7036607530382,
+                "right_hand_x": 503.17592620849604,
+                "right_hand_y": 576.9496493869357,
+                "left_hand_velocity": 0.4333019256591797,
+                "right_hand_velocity": 0.26859312783926725
+            },
+            {
+                "frame": 433,
+                "time_seconds": 28.8,
+                "left_hand_x": 644.9371337890625,
+                "left_hand_y": 542.5638410780165,
+                "right_hand_x": 501.9022941589355,
+                "right_hand_y": 574.6796078152126,
+                "left_hand_velocity": 0.3744326299056411,
+                "right_hand_velocity": 0.269301887601614
+            },
+            {
+                "frame": 436,
+                "time_seconds": 29.0,
+                "left_hand_x": 647.4381923675537,
+                "left_hand_y": 537.0917426215278,
+                "right_hand_x": 505.68752288818365,
+                "right_hand_y": 581.1802334255642,
+                "left_hand_velocity": 0.3633367596194148,
+                "right_hand_velocity": 0.23533222265541553
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Left hand stabilizes cylinder, right hand inserts ball seat.",
+            "target_object": "second ball seat",
+            "left_hand_x": 640,
+            "left_hand_y": 540,
+            "right_hand_x": 650,
+            "right_hand_y": 480
+        }
+    },
+    {
+        "input_end_frame": 496,
+        "prediction_frame": 526,
+        "prediction_time_seconds": 35.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 469,
+                "time_seconds": 31.2,
+                "left_hand_x": 806.1153411865234,
+                "left_hand_y": 569.2980872260199,
+                "right_hand_x": 507.271671295166,
+                "right_hand_y": 569.304699367947,
+                "left_hand_velocity": 0.438309321179986,
+                "right_hand_velocity": 0.05898258532397449
+            },
+            {
+                "frame": 472,
+                "time_seconds": 31.4,
+                "left_hand_x": 802.3748397827148,
+                "left_hand_y": 552.0455254448785,
+                "right_hand_x": 501.9148826599121,
+                "right_hand_y": 554.1289435492621,
+                "left_hand_velocity": 0.7163031492382288,
+                "right_hand_velocity": 0.22893245331943035
+            },
+            {
+                "frame": 475,
+                "time_seconds": 31.6,
+                "left_hand_x": 800.6098747253418,
+                "left_hand_y": 511.19778951009107,
+                "right_hand_x": 503.3230781555176,
+                "right_hand_y": 562.2649722629122,
+                "left_hand_velocity": 0.8087282069027424,
+                "right_hand_velocity": 0.2844862639904022
+            },
+            {
+                "frame": 478,
+                "time_seconds": 31.8,
+                "left_hand_x": 787.2350692749023,
+                "left_hand_y": 521.1644066704644,
+                "right_hand_x": 508.83493423461914,
+                "right_hand_y": 577.0383622911241,
+                "left_hand_velocity": 1.5901509672403336,
+                "right_hand_velocity": 0.5179283209145069
+            },
+            {
+                "frame": 481,
+                "time_seconds": 32.0,
+                "left_hand_x": 767.9937362670898,
+                "left_hand_y": 538.7224409315321,
+                "right_hand_x": 508.30078125,
+                "right_hand_y": 575.7693396674262,
+                "left_hand_velocity": 1.3157817535102367,
+                "right_hand_velocity": 0.46108709648251534
+            },
+            {
+                "frame": 484,
+                "time_seconds": 32.2,
+                "left_hand_x": 764.9073600769043,
+                "left_hand_y": 530.3949991861979,
+                "right_hand_x": 510.11915206909174,
+                "right_hand_y": 579.490492078993,
+                "left_hand_velocity": 1.581483706831932,
+                "right_hand_velocity": 0.41558779776096344
+            },
+            {
+                "frame": 487,
+                "time_seconds": 32.4,
+                "left_hand_x": 750.7074356079102,
+                "left_hand_y": 561.8007236056858,
+                "right_hand_x": 509.6726417541504,
+                "right_hand_y": 579.4332716200087,
+                "left_hand_velocity": 0.9215448051691055,
+                "right_hand_velocity": 0.26006775442510843
+            },
+            {
+                "frame": 490,
+                "time_seconds": 32.6,
+                "left_hand_x": 741.691780090332,
+                "left_hand_y": 573.3258565266926,
+                "right_hand_x": 508.12315940856934,
+                "right_hand_y": 577.5947570800781,
+                "left_hand_velocity": 0.42964951135218143,
+                "right_hand_velocity": 0.128375890199095
+            },
+            {
+                "frame": 493,
+                "time_seconds": 32.8,
+                "left_hand_x": 745.6023693084717,
+                "left_hand_y": 567.3146565755209,
+                "right_hand_x": 507.44934082031244,
+                "right_hand_y": 576.3060675726996,
+                "left_hand_velocity": 0.6907082628458738,
+                "right_hand_velocity": 0.05273669958114624
+            },
+            {
+                "frame": 496,
+                "time_seconds": 33.0,
+                "left_hand_x": 749.5705604553223,
+                "left_hand_y": 549.7392442491318,
+                "right_hand_x": 509.1404914855957,
+                "right_hand_y": 578.3348931206598,
+                "left_hand_velocity": 0.850745290517807,
+                "right_hand_velocity": 0.12695761397480965
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Right hand grasping cylinder bracket; left hand moving to preparatory position.",
+            "target_object": "First cylinder bracket",
+            "left_hand_x": 700,
+            "left_hand_y": 580,
+            "right_hand_x": 480,
+            "right_hand_y": 700
+        }
+    },
+    {
+        "input_end_frame": 556,
+        "prediction_frame": 586,
+        "prediction_time_seconds": 39.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 529,
+                "time_seconds": 35.2,
+                "left_hand_x": 696.1813926696777,
+                "left_hand_y": 535.3519015842014,
+                "right_hand_x": 509.133243560791,
+                "right_hand_y": 577.3615519205729,
+                "left_hand_velocity": 8.56102779507637,
+                "right_hand_velocity": 0.5367561709135771
+            },
+            {
+                "frame": 532,
+                "time_seconds": 35.4,
+                "left_hand_x": 622.161054611206,
+                "left_hand_y": 533.6028628879124,
+                "right_hand_x": 508.5809707641602,
+                "right_hand_y": 579.2671627468533,
+                "left_hand_velocity": 4.432135075330734,
+                "right_hand_velocity": 1.0122008621692657
+            },
+            {
+                "frame": 535,
+                "time_seconds": 35.6,
+                "left_hand_x": 587.2744560241699,
+                "left_hand_y": 534.1220431857638,
+                "right_hand_x": 508.5518836975098,
+                "right_hand_y": 580.4963853624132,
+                "left_hand_velocity": 2.3041481152176857,
+                "right_hand_velocity": 0.5919320043176413
+            },
+            {
+                "frame": 538,
+                "time_seconds": 35.8,
+                "left_hand_x": 585.0000858306885,
+                "left_hand_y": 532.3069254557292,
+                "right_hand_x": 509.0222835540772,
+                "right_hand_y": 581.683603922526,
+                "left_hand_velocity": 1.8982063978910446,
+                "right_hand_velocity": 0.28066339436918497
+            },
+            {
+                "frame": 541,
+                "time_seconds": 36.0,
+                "left_hand_x": 588.623046875,
+                "left_hand_y": 515.0488111707899,
+                "right_hand_x": 510.0729942321778,
+                "right_hand_y": 584.0214199490017,
+                "left_hand_velocity": 2.914075553417206,
+                "right_hand_velocity": 0.48331343568861485
+            },
+            {
+                "frame": 544,
+                "time_seconds": 36.2,
+                "left_hand_x": 584.3125820159912,
+                "left_hand_y": 507.8958299424913,
+                "right_hand_x": 508.0502986907959,
+                "right_hand_y": 578.9875454372831,
+                "left_hand_velocity": 5.121146887540817,
+                "right_hand_velocity": 1.50532815605402
+            },
+            {
+                "frame": 547,
+                "time_seconds": 36.4,
+                "left_hand_x": 497.56970405578613,
+                "left_hand_y": 584.0132819281683,
+                "right_hand_x": 508.27574729919434,
+                "right_hand_y": 586.7329915364583,
+                "left_hand_velocity": 6.512536108493805,
+                "right_hand_velocity": 3.6322269588708878
+            },
+            {
+                "frame": 550,
+                "time_seconds": 36.6,
+                "left_hand_x": 432.49549865722656,
+                "left_hand_y": 666.3235982259115,
+                "right_hand_x": 504.8052787780761,
+                "right_hand_y": 592.785390218099,
+                "left_hand_velocity": 3.7153642624616623,
+                "right_hand_velocity": 0.6607165094465017
+            },
+            {
+                "frame": 553,
+                "time_seconds": 36.8,
+                "left_hand_x": 422.1017837524414,
+                "left_hand_y": 698.9572313096788,
+                "right_hand_x": 501.5099525451661,
+                "right_hand_y": 591.8585035536025,
+                "left_hand_velocity": 0.5641342606395483,
+                "right_hand_velocity": 0.16282580327242613
+            },
+            {
+                "frame": 556,
+                "time_seconds": 37.0,
+                "left_hand_x": 425.57382583618164,
+                "left_hand_y": 697.8671603732639,
+                "right_hand_x": 506.9211483001709,
+                "right_hand_y": 594.2586263020834,
+                "left_hand_velocity": 3.4639019519090652,
+                "right_hand_velocity": 0.8781780488789082
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Left hand completes insertion at cylinder base; right hand moves to a resting position on the table.",
+            "target_object": "second ball seat",
+            "left_hand_x": 550,
+            "left_hand_y": 700,
+            "right_hand_x": 510,
+            "right_hand_y": 650
+        }
+    },
+    {
+        "input_end_frame": 616,
+        "prediction_frame": 646,
+        "prediction_time_seconds": 43.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 589,
+                "time_seconds": 39.2,
+                "left_hand_x": 595.8766937255859,
+                "left_hand_y": 545.8654615614149,
+                "right_hand_x": 480.46717643737793,
+                "right_hand_y": 565.8066643608942,
+                "left_hand_velocity": 0.26232388336211443,
+                "right_hand_velocity": 0.9336325339972973
+            },
+            {
+                "frame": 592,
+                "time_seconds": 39.4,
+                "left_hand_x": 599.2664813995361,
+                "left_hand_y": 544.7440677218966,
+                "right_hand_x": 484.9458694458008,
+                "right_hand_y": 516.4771609836154,
+                "left_hand_velocity": 1.6761144623160362,
+                "right_hand_velocity": 2.3208757862448692
+            },
+            {
+                "frame": 595,
+                "time_seconds": 39.6,
+                "left_hand_x": 596.979284286499,
+                "left_hand_y": 531.8700154622395,
+                "right_hand_x": 503.2084465026856,
+                "right_hand_y": 516.6447957356771,
+                "left_hand_velocity": 0.5505010951310396,
+                "right_hand_velocity": 1.9746754318475723
+            },
+            {
+                "frame": 598,
+                "time_seconds": 39.8,
+                "left_hand_x": 604.5218467712402,
+                "left_hand_y": 547.3268720838759,
+                "right_hand_x": 510.1388931274414,
+                "right_hand_y": 511.14184061686194,
+                "left_hand_velocity": 0.6037990562617779,
+                "right_hand_velocity": 0.7000343408435583
+            },
+            {
+                "frame": 601,
+                "time_seconds": 40.0,
+                "left_hand_x": 601.996898651123,
+                "left_hand_y": 553.188239203559,
+                "right_hand_x": 502.20708847045904,
+                "right_hand_y": 515.1992797851562,
+                "left_hand_velocity": 0.5230984184890985,
+                "right_hand_velocity": 0.37054670974612236
+            },
+            {
+                "frame": 604,
+                "time_seconds": 40.2,
+                "left_hand_x": 599.2527008056641,
+                "left_hand_y": 557.4549357096355,
+                "right_hand_x": 505.3153514862061,
+                "right_hand_y": 506.0989379882812,
+                "left_hand_velocity": 0.2528677461668849,
+                "right_hand_velocity": 0.5477622617036104
+            },
+            {
+                "frame": 607,
+                "time_seconds": 40.4,
+                "left_hand_x": 597.6654529571533,
+                "left_hand_y": 560.8044518364801,
+                "right_hand_x": 509.0888500213623,
+                "right_hand_y": 502.82961527506507,
+                "left_hand_velocity": 0.2530021360144019,
+                "right_hand_velocity": 0.7736865896731615
+            },
+            {
+                "frame": 610,
+                "time_seconds": 40.6,
+                "left_hand_x": 597.4794387817383,
+                "left_hand_y": 561.1785464816624,
+                "right_hand_x": 511.43593788146967,
+                "right_hand_y": 496.0976918538412,
+                "left_hand_velocity": 0.2245116513222456,
+                "right_hand_velocity": 0.7751451339572668
+            },
+            {
+                "frame": 613,
+                "time_seconds": 40.8,
+                "left_hand_x": 596.2951183319092,
+                "left_hand_y": 561.9053310818143,
+                "right_hand_x": 516.3305759429932,
+                "right_hand_y": 492.91941324869794,
+                "left_hand_velocity": 0.3810411784797907,
+                "right_hand_velocity": 0.36122240126132965
+            },
+            {
+                "frame": 616,
+                "time_seconds": 41.0,
+                "left_hand_x": 596.3380813598633,
+                "left_hand_y": 563.1856282552084,
+                "right_hand_x": 513.3223533630371,
+                "right_hand_y": 497.5145128038194,
+                "left_hand_velocity": 0.39042967837303877,
+                "right_hand_velocity": 0.5243121180683374
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Insertion complete, right hand retracts, left hand stabilizes cylinder.",
+            "target_object": "second ball seat",
+            "left_hand_x": 595.0,
+            "left_hand_y": 565.0,
+            "right_hand_x": 483.3,
+            "right_hand_y": 543.5
+        }
+    },
+    {
+        "input_end_frame": 676,
+        "prediction_frame": 706,
+        "prediction_time_seconds": 47.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 649,
+                "time_seconds": 43.2,
+                "left_hand_x": 584.09104347229,
+                "left_hand_y": 491.57257080078125,
+                "right_hand_x": 333.978796005249,
+                "right_hand_y": 664.4913567437067,
+                "left_hand_velocity": 0.7765505462884903,
+                "right_hand_velocity": 1.1373860761523247
+            },
+            {
+                "frame": 652,
+                "time_seconds": 43.4,
+                "left_hand_x": 581.858491897583,
+                "left_hand_y": 493.11557345920136,
+                "right_hand_x": 331.93368911743164,
+                "right_hand_y": 651.4729817708334,
+                "left_hand_velocity": 2.257172018289566,
+                "right_hand_velocity": 4.330045357346535
+            },
+            {
+                "frame": 655,
+                "time_seconds": 43.6,
+                "left_hand_x": 550.7084846496582,
+                "left_hand_y": 512.3963673909506,
+                "right_hand_x": 339.7080421447754,
+                "right_hand_y": 529.6747419569227,
+                "left_hand_velocity": 1.8611378967761993,
+                "right_hand_velocity": 5.733972415328026
+            },
+            {
+                "frame": 658,
+                "time_seconds": 43.8,
+                "left_hand_x": 541.7819023132324,
+                "left_hand_y": 516.1254035101996,
+                "right_hand_x": 371.45609855651855,
+                "right_hand_y": 415.8811781141493,
+                "left_hand_velocity": 1.0031210258603096,
+                "right_hand_velocity": 4.213499277830124
+            },
+            {
+                "frame": 661,
+                "time_seconds": 44.0,
+                "left_hand_x": 531.5072536468506,
+                "left_hand_y": 519.746314154731,
+                "right_hand_x": 412.2060298919678,
+                "right_hand_y": 404.45836385091144,
+                "left_hand_velocity": 0.9089325554668903,
+                "right_hand_velocity": 4.615448415279388
+            },
+            {
+                "frame": 664,
+                "time_seconds": 44.2,
+                "left_hand_x": 528.3984184265137,
+                "left_hand_y": 520.4138014051649,
+                "right_hand_x": 436.0300064086914,
+                "right_hand_y": 462.4163309733073,
+                "left_hand_velocity": 0.8158542215824127,
+                "right_hand_velocity": 1.7069809138774872
+            },
+            {
+                "frame": 667,
+                "time_seconds": 44.4,
+                "left_hand_x": 526.3298988342285,
+                "left_hand_y": 524.0150451660156,
+                "right_hand_x": 433.22386741638184,
+                "right_hand_y": 468.93412272135413,
+                "left_hand_velocity": 0.3381673712283373,
+                "right_hand_velocity": 1.2357687577605247
+            },
+            {
+                "frame": 670,
+                "time_seconds": 44.6,
+                "left_hand_x": 523.0045795440674,
+                "left_hand_y": 531.2891642252604,
+                "right_hand_x": 421.51713371276855,
+                "right_hand_y": 472.9162428114149,
+                "left_hand_velocity": 0.9570950642228127,
+                "right_hand_velocity": 0.8010802790522575
+            },
+            {
+                "frame": 673,
+                "time_seconds": 44.8,
+                "left_hand_x": 540.5020713806152,
+                "left_hand_y": 508.7019602457682,
+                "right_hand_x": 452.9754638671875,
+                "right_hand_y": 459.809070163303,
+                "left_hand_velocity": 3.614484518766403,
+                "right_hand_velocity": 4.031587019562721
+            },
+            {
+                "frame": 676,
+                "time_seconds": 45.0,
+                "left_hand_x": 571.9931602478027,
+                "left_hand_y": 485.1643456353081,
+                "right_hand_x": 499.1297721862793,
+                "right_hand_y": 507.91180928548175,
+                "left_hand_velocity": 1.8881531432271004,
+                "right_hand_velocity": 2.3533832281827927
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands converge on cylinder base for insertion.",
+            "target_object": "cylinder base",
+            "left_hand_x": 450,
+            "left_hand_y": 550,
+            "right_hand_x": 500,
+            "right_hand_y": 550
+        }
+    },
+    {
+        "input_end_frame": 736,
+        "prediction_frame": 766,
+        "prediction_time_seconds": 51.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 709,
+                "time_seconds": 47.2,
+                "left_hand_x": 605.0809383392334,
+                "left_hand_y": 530.6752522786459,
+                "right_hand_x": 525.1135349273682,
+                "right_hand_y": 545.259263780382,
+                "left_hand_velocity": 1.0281529277563095,
+                "right_hand_velocity": 0.8002694696187973
+            },
+            {
+                "frame": 712,
+                "time_seconds": 47.4,
+                "left_hand_x": 605.3970336914062,
+                "left_hand_y": 542.0015970865886,
+                "right_hand_x": 523.8577365875244,
+                "right_hand_y": 548.2430352105034,
+                "left_hand_velocity": 0.4615318030118942,
+                "right_hand_velocity": 0.34740883857011795
+            },
+            {
+                "frame": 715,
+                "time_seconds": 47.6,
+                "left_hand_x": 605.3879737854004,
+                "left_hand_y": 545.025126139323,
+                "right_hand_x": 521.9009399414062,
+                "right_hand_y": 542.4266391330294,
+                "left_hand_velocity": 0.4163889214396477,
+                "right_hand_velocity": 0.2824406372383237
+            },
+            {
+                "frame": 718,
+                "time_seconds": 47.8,
+                "left_hand_x": 603.9620399475098,
+                "left_hand_y": 529.5924716525608,
+                "right_hand_x": 519.3706512451172,
+                "right_hand_y": 543.5315450032551,
+                "left_hand_velocity": 0.6022988818585873,
+                "right_hand_velocity": 0.4831317812204361
+            },
+            {
+                "frame": 721,
+                "time_seconds": 48.0,
+                "left_hand_x": 603.1877517700195,
+                "left_hand_y": 524.3698967827692,
+                "right_hand_x": 521.5359687805176,
+                "right_hand_y": 540.7543606228298,
+                "left_hand_velocity": 0.6345887202769518,
+                "right_hand_velocity": 0.25941499043256044
+            },
+            {
+                "frame": 724,
+                "time_seconds": 48.2,
+                "left_hand_x": 611.956787109375,
+                "left_hand_y": 539.869859483507,
+                "right_hand_x": 517.3642635345459,
+                "right_hand_y": 536.6990831163195,
+                "left_hand_velocity": 0.997629389166832,
+                "right_hand_velocity": 0.42402767576277256
+            },
+            {
+                "frame": 727,
+                "time_seconds": 48.4,
+                "left_hand_x": 603.9004802703857,
+                "left_hand_y": 496.35611640082465,
+                "right_hand_x": 518.6629295349121,
+                "right_hand_y": 547.2360399034288,
+                "left_hand_velocity": 0.9778640232980251,
+                "right_hand_velocity": 0.2636078279465437
+            },
+            {
+                "frame": 730,
+                "time_seconds": 48.6,
+                "left_hand_x": 602.4343490600586,
+                "left_hand_y": 496.8886481391059,
+                "right_hand_x": 518.3337211608887,
+                "right_hand_y": 547.4460177951389,
+                "left_hand_velocity": 0.4051925614476204,
+                "right_hand_velocity": 0.1803276129066944
+            },
+            {
+                "frame": 733,
+                "time_seconds": 48.8,
+                "left_hand_x": 602.1218299865723,
+                "left_hand_y": 498.0931176079644,
+                "right_hand_x": 517.8787231445312,
+                "right_hand_y": 548.1197357177734,
+                "left_hand_velocity": 0.6218483671545982,
+                "right_hand_velocity": 0.6013796664774418
+            },
+            {
+                "frame": 736,
+                "time_seconds": 49.0,
+                "left_hand_x": 615.4855728149414,
+                "left_hand_y": 493.14159817165796,
+                "right_hand_x": 508.6493492126465,
+                "right_hand_y": 556.7376878526476,
+                "left_hand_velocity": 1.9912175834178925,
+                "right_hand_velocity": 1.5153131447732449
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands will be positioned for grasping the first cylinder bracket and having placed the main cylinder aside.",
+            "target_object": "First cylinder bracket",
+            "left_hand_x": 650,
+            "left_hand_y": 650,
+            "right_hand_x": 470,
+            "right_hand_y": 700
+        }
+    },
+    {
+        "input_end_frame": 796,
+        "prediction_frame": 826,
+        "prediction_time_seconds": 55.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 769,
+                "time_seconds": 51.2,
+                "left_hand_x": 652.2316932678223,
+                "left_hand_y": 600.787862141927,
+                "right_hand_x": 500.57458877563477,
+                "right_hand_y": 574.0203009711371,
+                "left_hand_velocity": 2.454221062362194,
+                "right_hand_velocity": 0.7420388516038656
+            },
+            {
+                "frame": 772,
+                "time_seconds": 51.4,
+                "left_hand_x": 638.4108543395996,
+                "left_hand_y": 568.6334821912977,
+                "right_hand_x": 502.18987464904785,
+                "right_hand_y": 577.2007836235894,
+                "left_hand_velocity": 5.384593456983566,
+                "right_hand_velocity": 0.8508749306201935
+            },
+            {
+                "frame": 775,
+                "time_seconds": 51.6,
+                "left_hand_x": 553.3758163452148,
+                "left_hand_y": 618.5647328694661,
+                "right_hand_x": 500.35614967346186,
+                "right_hand_y": 575.1568688286676,
+                "left_hand_velocity": 6.087017804384232,
+                "right_hand_velocity": 1.1471480131149292
+            },
+            {
+                "frame": 778,
+                "time_seconds": 51.8,
+                "left_hand_x": 509.65242385864263,
+                "left_hand_y": 686.9517856174045,
+                "right_hand_x": 500.66089630126953,
+                "right_hand_y": 576.8833584255642,
+                "left_hand_velocity": 3.336162120103836,
+                "right_hand_velocity": 0.3178738057613373
+            },
+            {
+                "frame": 781,
+                "time_seconds": 52.0,
+                "left_hand_x": 502.99863815307623,
+                "left_hand_y": 699.6346791585286,
+                "right_hand_x": 500.29311180114746,
+                "right_hand_y": 575.9504954020183,
+                "left_hand_velocity": 1.7075084149837494,
+                "right_hand_velocity": 0.6533255334943533
+            },
+            {
+                "frame": 784,
+                "time_seconds": 52.2,
+                "left_hand_x": 526.4015674591064,
+                "left_hand_y": 652.4110582139757,
+                "right_hand_x": 502.33521461486816,
+                "right_hand_y": 579.0851169162327,
+                "left_hand_velocity": 6.391206383705139,
+                "right_hand_velocity": 2.8111645951867104
+            },
+            {
+                "frame": 787,
+                "time_seconds": 52.4,
+                "left_hand_x": 570.1777458190918,
+                "left_hand_y": 562.240727742513,
+                "right_hand_x": 499.42665100097656,
+                "right_hand_y": 577.2116343180339,
+                "left_hand_velocity": 5.145722255110741,
+                "right_hand_velocity": 1.8374215811491013
+            },
+            {
+                "frame": 790,
+                "time_seconds": 52.6,
+                "left_hand_x": 600.2014636993408,
+                "left_hand_y": 540.3922186957465,
+                "right_hand_x": 504.1006565093994,
+                "right_hand_y": 586.1008538140192,
+                "left_hand_velocity": 3.1697534024715424,
+                "right_hand_velocity": 0.9534057229757309
+            },
+            {
+                "frame": 793,
+                "time_seconds": 52.8,
+                "left_hand_x": 609.1897964477539,
+                "left_hand_y": 532.0217556423611,
+                "right_hand_x": 507.6082706451416,
+                "right_hand_y": 588.8125949435764,
+                "left_hand_velocity": 2.103983610868454,
+                "right_hand_velocity": 1.199472602456808
+            },
+            {
+                "frame": 796,
+                "time_seconds": 53.0,
+                "left_hand_x": 612.4299049377441,
+                "left_hand_y": 524.6255662706163,
+                "right_hand_x": 500.643539428711,
+                "right_hand_y": 558.6808946397568,
+                "left_hand_velocity": 0.30372284818440676,
+                "right_hand_velocity": 2.2384561598300934
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Left hand stabilizes cylinder; right hand picks up and positions bracket for insertion.",
+            "target_object": "First Cylinder Bracket",
+            "left_hand_x": 612,
+            "left_hand_y": 525,
+            "right_hand_x": 580,
+            "right_hand_y": 550
+        }
+    },
+    {
+        "input_end_frame": 856,
+        "prediction_frame": 886,
+        "prediction_time_seconds": 59.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 829,
+                "time_seconds": 55.2,
+                "left_hand_x": 598.1963157653809,
+                "left_hand_y": 568.5188293457031,
+                "right_hand_x": 498.9194869995117,
+                "right_hand_y": 577.7276780870225,
+                "left_hand_velocity": 0.43556266464293003,
+                "right_hand_velocity": 0.5164194852113724
+            },
+            {
+                "frame": 832,
+                "time_seconds": 55.4,
+                "left_hand_x": 597.8645324707031,
+                "left_hand_y": 567.0108371310764,
+                "right_hand_x": 498.4838008880615,
+                "right_hand_y": 579.3003506130643,
+                "left_hand_velocity": 0.3384885611012578,
+                "right_hand_velocity": 0.22470727562904358
+            },
+            {
+                "frame": 835,
+                "time_seconds": 55.6,
+                "left_hand_x": 596.8210220336914,
+                "left_hand_y": 564.2901950412327,
+                "right_hand_x": 499.1893768310547,
+                "right_hand_y": 577.4533589680989,
+                "left_hand_velocity": 0.5540422163903713,
+                "right_hand_velocity": 0.3530615009367466
+            },
+            {
+                "frame": 838,
+                "time_seconds": 55.8,
+                "left_hand_x": 593.4650421142578,
+                "left_hand_y": 559.7230699327257,
+                "right_hand_x": 493.2955741882324,
+                "right_hand_y": 577.4068196614584,
+                "left_hand_velocity": 1.552862673997879,
+                "right_hand_velocity": 0.8544599637389183
+            },
+            {
+                "frame": 841,
+                "time_seconds": 56.0,
+                "left_hand_x": 603.1581878662109,
+                "left_hand_y": 546.6240776909722,
+                "right_hand_x": 489.5403861999512,
+                "right_hand_y": 577.7488708496094,
+                "left_hand_velocity": 2.8568383306264877,
+                "right_hand_velocity": 1.888006180524826
+            },
+            {
+                "frame": 844,
+                "time_seconds": 56.2,
+                "left_hand_x": 597.1352577209473,
+                "left_hand_y": 539.2791748046875,
+                "right_hand_x": 490.82489013671875,
+                "right_hand_y": 577.3186577690972,
+                "left_hand_velocity": 3.8000784814357758,
+                "right_hand_velocity": 2.1101346239447594
+            },
+            {
+                "frame": 847,
+                "time_seconds": 56.4,
+                "left_hand_x": 546.4628219604492,
+                "left_hand_y": 583.4145439995659,
+                "right_hand_x": 501.1979103088379,
+                "right_hand_y": 593.3193630642362,
+                "left_hand_velocity": 5.6200336664915085,
+                "right_hand_velocity": 3.2647859305143356
+            },
+            {
+                "frame": 850,
+                "time_seconds": 56.6,
+                "left_hand_x": 502.39124298095703,
+                "left_hand_y": 658.7764316134983,
+                "right_hand_x": 493.11814308166504,
+                "right_hand_y": 574.0538703070747,
+                "left_hand_velocity": 3.441118821501732,
+                "right_hand_velocity": 0.8002322167158127
+            },
+            {
+                "frame": 853,
+                "time_seconds": 56.8,
+                "left_hand_x": 477.0369529724121,
+                "left_hand_y": 702.9012891981337,
+                "right_hand_x": 492.20123291015625,
+                "right_hand_y": 570.8190070258247,
+                "left_hand_velocity": 1.6396284103393555,
+                "right_hand_velocity": 0.19946135580539703
+            },
+            {
+                "frame": 856,
+                "time_seconds": 57.0,
+                "left_hand_x": 474.8867988586426,
+                "left_hand_y": 714.8356119791666,
+                "right_hand_x": 492.49706268310547,
+                "right_hand_y": 570.8149804009331,
+                "left_hand_velocity": 1.3464145362377167,
+                "right_hand_velocity": 0.2700843149796128
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Left hand inserting bracket, right hand stabilizing cylinder.",
+            "target_object": "second cylinder bracket",
+            "left_hand_x": 500,
+            "left_hand_y": 520,
+            "right_hand_x": 495,
+            "right_hand_y": 570
+        }
+    },
+    {
+        "input_end_frame": 916,
+        "prediction_frame": 946,
+        "prediction_time_seconds": 63.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 889,
+                "time_seconds": 59.2,
+                "left_hand_x": 587.0318412780762,
+                "left_hand_y": 494.2645602756076,
+                "right_hand_x": 493.10975074768066,
+                "right_hand_y": 583.1017388237847,
+                "left_hand_velocity": 0.39171362295746803,
+                "right_hand_velocity": 0.21097168792039156
+            },
+            {
+                "frame": 892,
+                "time_seconds": 59.4,
+                "left_hand_x": 586.2046241760254,
+                "left_hand_y": 492.86698235405817,
+                "right_hand_x": 492.80195236206055,
+                "right_hand_y": 582.0669809977213,
+                "left_hand_velocity": 0.35942099057137966,
+                "right_hand_velocity": 0.17307120142504573
+            },
+            {
+                "frame": 895,
+                "time_seconds": 59.6,
+                "left_hand_x": 586.1812114715576,
+                "left_hand_y": 494.4129943847656,
+                "right_hand_x": 492.9247856140137,
+                "right_hand_y": 582.4686686197916,
+                "left_hand_velocity": 0.1011200132779777,
+                "right_hand_velocity": 0.0947472348343581
+            },
+            {
+                "frame": 898,
+                "time_seconds": 59.8,
+                "left_hand_x": 588.8361930847168,
+                "left_hand_y": 498.35951063368054,
+                "right_hand_x": 492.73786544799805,
+                "right_hand_y": 582.2585211859808,
+                "left_hand_velocity": 0.11097198585048318,
+                "right_hand_velocity": 0.08731947164051235
+            },
+            {
+                "frame": 901,
+                "time_seconds": 60.0,
+                "left_hand_x": 586.9395732879639,
+                "left_hand_y": 501.8466101752387,
+                "right_hand_x": 492.73414611816406,
+                "right_hand_y": 582.3941972520616,
+                "left_hand_velocity": 0.05917035159654915,
+                "right_hand_velocity": 0.07160220993682742
+            },
+            {
+                "frame": 904,
+                "time_seconds": 60.2,
+                "left_hand_x": 585.3143692016602,
+                "left_hand_y": 497.31716579861114,
+                "right_hand_x": 492.93212890625,
+                "right_hand_y": 582.502916124132,
+                "left_hand_velocity": 0.17334631411358714,
+                "right_hand_velocity": 0.038987037260085344
+            },
+            {
+                "frame": 907,
+                "time_seconds": 60.4,
+                "left_hand_x": 584.0723037719727,
+                "left_hand_y": 493.07971530490454,
+                "right_hand_x": 492.919397354126,
+                "right_hand_y": 582.1908738878037,
+                "left_hand_velocity": 0.2976230578497052,
+                "right_hand_velocity": 0.03343145945109427
+            },
+            {
+                "frame": 910,
+                "time_seconds": 60.6,
+                "left_hand_x": 581.0946941375732,
+                "left_hand_y": 489.1357845730252,
+                "right_hand_x": 492.9786205291748,
+                "right_hand_y": 582.3328230116102,
+                "left_hand_velocity": 0.2789513673633337,
+                "right_hand_velocity": 0.030576568678952754
+            },
+            {
+                "frame": 913,
+                "time_seconds": 60.8,
+                "left_hand_x": 581.1038970947266,
+                "left_hand_y": 490.73537190755206,
+                "right_hand_x": 493.2313919067383,
+                "right_hand_y": 582.5186835394966,
+                "left_hand_velocity": 0.2544855233281851,
+                "right_hand_velocity": 0.02539073466323316
+            },
+            {
+                "frame": 916,
+                "time_seconds": 61.0,
+                "left_hand_x": 581.940746307373,
+                "left_hand_y": 494.8086632622613,
+                "right_hand_x": 493.52006912231445,
+                "right_hand_y": 582.8108469645182,
+                "left_hand_velocity": 0.9916126728057861,
+                "right_hand_velocity": 0.05090933991596103
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Right hand holding assembly, left hand moved to pick up screws for fastening.",
+            "target_object": "screws",
+            "left_hand_x": 350,
+            "left_hand_y": 750,
+            "right_hand_x": 493,
+            "right_hand_y": 583
+        }
+    },
+    {
+        "input_end_frame": 976,
+        "prediction_frame": 1006,
+        "prediction_time_seconds": 67.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 949,
+                "time_seconds": 63.2,
+                "left_hand_x": 586.1209869384766,
+                "left_hand_y": 523.5237969292534,
+                "right_hand_x": 477.89855003356934,
+                "right_hand_y": 441.51272243923614,
+                "left_hand_velocity": 1.989004947245121,
+                "right_hand_velocity": 1.0906708426773548
+            },
+            {
+                "frame": 952,
+                "time_seconds": 63.4,
+                "left_hand_x": 583.2314491271973,
+                "left_hand_y": 552.1894666883682,
+                "right_hand_x": 484.87815856933594,
+                "right_hand_y": 418.9702351888021,
+                "left_hand_velocity": 1.352292113006115,
+                "right_hand_velocity": 0.6461688317358494
+            },
+            {
+                "frame": 955,
+                "time_seconds": 63.6,
+                "left_hand_x": 578.0168533325195,
+                "left_hand_y": 558.9801788330078,
+                "right_hand_x": 496.86665534973145,
+                "right_hand_y": 415.33868577745227,
+                "left_hand_velocity": 0.4470778163522482,
+                "right_hand_velocity": 0.4826690535992384
+            },
+            {
+                "frame": 958,
+                "time_seconds": 63.8,
+                "left_hand_x": 577.3881435394287,
+                "left_hand_y": 559.5396677652996,
+                "right_hand_x": 500.4425525665284,
+                "right_hand_y": 416.26269022623694,
+                "left_hand_velocity": 0.5866776686161757,
+                "right_hand_velocity": 0.5325909703969955
+            },
+            {
+                "frame": 961,
+                "time_seconds": 64.0,
+                "left_hand_x": 577.1340847015381,
+                "left_hand_y": 559.6505906846788,
+                "right_hand_x": 501.89294815063477,
+                "right_hand_y": 416.1927117241753,
+                "left_hand_velocity": 0.21886220201849937,
+                "right_hand_velocity": 0.14570800121873617
+            },
+            {
+                "frame": 964,
+                "time_seconds": 64.2,
+                "left_hand_x": 577.4666786193848,
+                "left_hand_y": 559.7352345784506,
+                "right_hand_x": 503.9774894714355,
+                "right_hand_y": 402.70813835991754,
+                "left_hand_velocity": 0.2580501837655902,
+                "right_hand_velocity": 0.3342711366713047
+            },
+            {
+                "frame": 967,
+                "time_seconds": 64.4,
+                "left_hand_x": 577.3527145385742,
+                "left_hand_y": 559.7866058349609,
+                "right_hand_x": 506.9182872772217,
+                "right_hand_y": 402.71339416503906,
+                "left_hand_velocity": 0.13570182491093874,
+                "right_hand_velocity": 0.26644477620720863
+            },
+            {
+                "frame": 970,
+                "time_seconds": 64.6,
+                "left_hand_x": 577.6961803436279,
+                "left_hand_y": 559.8272959391276,
+                "right_hand_x": 508.90297889709467,
+                "right_hand_y": 389.48020935058594,
+                "left_hand_velocity": 0.28672099579125643,
+                "right_hand_velocity": 0.2900393679738045
+            },
+            {
+                "frame": 973,
+                "time_seconds": 64.8,
+                "left_hand_x": 576.5363693237305,
+                "left_hand_y": 559.0721130371094,
+                "right_hand_x": 501.07936859130865,
+                "right_hand_y": 398.2777913411458,
+                "left_hand_velocity": 0.18581828335300088,
+                "right_hand_velocity": 0.22142566740512848
+            },
+            {
+                "frame": 976,
+                "time_seconds": 65.0,
+                "left_hand_x": 576.1074066162109,
+                "left_hand_y": 559.3864440917969,
+                "right_hand_x": 504.8166275024414,
+                "right_hand_y": 404.4256422254774,
+                "left_hand_velocity": 0.3547774627804756,
+                "right_hand_velocity": 0.2679546130821109
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands engaged in final screwing/tightening of cylinder cap, remaining in stable positions on the cylinder assembly.",
+            "target_object": "cylinder cap",
+            "left_hand_x": 576,
+            "left_hand_y": 559,
+            "right_hand_x": 505,
+            "right_hand_y": 404
+        }
+    },
+    {
+        "input_end_frame": 1036,
+        "prediction_frame": 1066,
+        "prediction_time_seconds": 71.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1009,
+                "time_seconds": 67.2,
+                "left_hand_x": 573.8526344299316,
+                "left_hand_y": 558.2537757025825,
+                "right_hand_x": 509.9949359893798,
+                "right_hand_y": 398.9859263102213,
+                "left_hand_velocity": 0.17626615008339286,
+                "right_hand_velocity": 0.28556971810758114
+            },
+            {
+                "frame": 1012,
+                "time_seconds": 67.4,
+                "left_hand_x": 574.4767189025879,
+                "left_hand_y": 557.2080400254991,
+                "right_hand_x": 504.6147346496582,
+                "right_hand_y": 419.4549136691623,
+                "left_hand_velocity": 0.18366212025284767,
+                "right_hand_velocity": 0.2590607851743698
+            },
+            {
+                "frame": 1015,
+                "time_seconds": 67.6,
+                "left_hand_x": 574.3087291717529,
+                "left_hand_y": 555.335193210178,
+                "right_hand_x": 502.5419235229492,
+                "right_hand_y": 415.4603322347005,
+                "left_hand_velocity": 0.19504125230014324,
+                "right_hand_velocity": 0.2999411663040519
+            },
+            {
+                "frame": 1018,
+                "time_seconds": 67.8,
+                "left_hand_x": 574.4427680969238,
+                "left_hand_y": 555.2526262071398,
+                "right_hand_x": 500.93965530395513,
+                "right_hand_y": 414.86939324273004,
+                "left_hand_velocity": 0.26063367258757353,
+                "right_hand_velocity": 0.48477831296622753
+            },
+            {
+                "frame": 1021,
+                "time_seconds": 68.0,
+                "left_hand_x": 574.248218536377,
+                "left_hand_y": 556.8607330322266,
+                "right_hand_x": 496.1535453796387,
+                "right_hand_y": 437.78436448838977,
+                "left_hand_velocity": 0.4163207020610571,
+                "right_hand_velocity": 1.1096174828708172
+            },
+            {
+                "frame": 1024,
+                "time_seconds": 68.2,
+                "left_hand_x": 572.0728874206543,
+                "left_hand_y": 556.8286895751953,
+                "right_hand_x": 491.1993980407715,
+                "right_hand_y": 468.0264366997613,
+                "left_hand_velocity": 0.6929623428732157,
+                "right_hand_velocity": 1.2534057721495628
+            },
+            {
+                "frame": 1027,
+                "time_seconds": 68.4,
+                "left_hand_x": 571.4215755462646,
+                "left_hand_y": 558.5189819335938,
+                "right_hand_x": 494.34027671813965,
+                "right_hand_y": 469.37917073567706,
+                "left_hand_velocity": 1.3244789093732834,
+                "right_hand_velocity": 0.7822912186384201
+            },
+            {
+                "frame": 1030,
+                "time_seconds": 68.6,
+                "left_hand_x": 606.1161994934082,
+                "left_hand_y": 532.7483707004124,
+                "right_hand_x": 486.20028495788574,
+                "right_hand_y": 467.43617587619354,
+                "left_hand_velocity": 3.9438538253307343,
+                "right_hand_velocity": 1.518506370484829
+            },
+            {
+                "frame": 1033,
+                "time_seconds": 68.8,
+                "left_hand_x": 640.6206607818604,
+                "left_hand_y": 532.2281731499567,
+                "right_hand_x": 483.50071907043457,
+                "right_hand_y": 491.0061306423611,
+                "left_hand_velocity": 2.570378966629505,
+                "right_hand_velocity": 1.4881146140396595
+            },
+            {
+                "frame": 1036,
+                "time_seconds": 69.0,
+                "left_hand_x": 646.0038185119629,
+                "left_hand_y": 541.8709648980034,
+                "right_hand_x": 488.12522888183594,
+                "right_hand_y": 508.5755242241754,
+                "left_hand_velocity": 1.3223513960838318,
+                "right_hand_velocity": 1.3817125000059605
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands move to grip and slide cylinder brackets to the top and bottom ends of the cylinder.",
+            "target_object": "cylinder brackets",
+            "left_hand_x": 510,
+            "left_hand_y": 600,
+            "right_hand_x": 510,
+            "right_hand_y": 380
+        }
+    },
+    {
+        "input_end_frame": 1096,
+        "prediction_frame": 1126,
+        "prediction_time_seconds": 75.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1069,
+                "time_seconds": 71.2,
+                "left_hand_x": 754.5547485351562,
+                "left_hand_y": 546.6888427734375,
+                "right_hand_x": 498.9919662475586,
+                "right_hand_y": 545.1564364963108,
+                "left_hand_velocity": 1.049769762903452,
+                "right_hand_velocity": 0.44601066038012505
+            },
+            {
+                "frame": 1072,
+                "time_seconds": 71.4,
+                "left_hand_x": 749.9183654785156,
+                "left_hand_y": 558.3998786078558,
+                "right_hand_x": 498.60429763793945,
+                "right_hand_y": 544.5535447862413,
+                "left_hand_velocity": 1.1145385913550854,
+                "right_hand_velocity": 0.4716441035270691
+            },
+            {
+                "frame": 1075,
+                "time_seconds": 71.6,
+                "left_hand_x": 744.7320938110352,
+                "left_hand_y": 556.0555352105034,
+                "right_hand_x": 498.3940124511719,
+                "right_hand_y": 544.8407491048177,
+                "left_hand_velocity": 2.62420903891325,
+                "right_hand_velocity": 0.3484539221972227
+            },
+            {
+                "frame": 1078,
+                "time_seconds": 71.8,
+                "left_hand_x": 720.6857681274414,
+                "left_hand_y": 533.8392469618055,
+                "right_hand_x": 498.80051612854004,
+                "right_hand_y": 547.7360195583767,
+                "left_hand_velocity": 4.237490147352219,
+                "right_hand_velocity": 1.0335561819374561
+            },
+            {
+                "frame": 1081,
+                "time_seconds": 72.0,
+                "left_hand_x": 652.4666786193848,
+                "left_hand_y": 521.1996290418837,
+                "right_hand_x": 500.43611526489263,
+                "right_hand_y": 551.9418504503038,
+                "left_hand_velocity": 7.8731536865234375,
+                "right_hand_velocity": 1.9459323957562447
+            },
+            {
+                "frame": 1084,
+                "time_seconds": 72.2,
+                "left_hand_x": 596.5201377868652,
+                "left_hand_y": 523.7449222140842,
+                "right_hand_x": 502.0251274108887,
+                "right_hand_y": 554.3179406060112,
+                "left_hand_velocity": 2.026541158556938,
+                "right_hand_velocity": 0.8567613549530506
+            },
+            {
+                "frame": 1087,
+                "time_seconds": 72.4,
+                "left_hand_x": 575.7457256317139,
+                "left_hand_y": 524.1813659667969,
+                "right_hand_x": 503.1520843505859,
+                "right_hand_y": 557.0732116699219,
+                "left_hand_velocity": 1.0827365331351757,
+                "right_hand_velocity": 0.1854623551480472
+            },
+            {
+                "frame": 1090,
+                "time_seconds": 72.6,
+                "left_hand_x": 575.5486011505127,
+                "left_hand_y": 529.1922675238715,
+                "right_hand_x": 501.9131660461426,
+                "right_hand_y": 562.8712972005209,
+                "left_hand_velocity": 0.5626183934509754,
+                "right_hand_velocity": 0.35560657270252705
+            },
+            {
+                "frame": 1093,
+                "time_seconds": 72.8,
+                "left_hand_x": 575.3807544708252,
+                "left_hand_y": 530.757564968533,
+                "right_hand_x": 499.09958839416504,
+                "right_hand_y": 561.4273918999567,
+                "left_hand_velocity": 0.6988963112235069,
+                "right_hand_velocity": 0.3623515600338578
+            },
+            {
+                "frame": 1096,
+                "time_seconds": 73.0,
+                "left_hand_x": 576.5566349029541,
+                "left_hand_y": 535.4694790310331,
+                "right_hand_x": 496.2371349334717,
+                "right_hand_y": 566.7221917046442,
+                "left_hand_velocity": 0.676566967740655,
+                "right_hand_velocity": 0.38609225302934647
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands holding cylinder for precise alignment on assembly plate.",
+            "target_object": "cylinder sub-assembly",
+            "left_hand_x": 576.6,
+            "left_hand_y": 535.5,
+            "right_hand_x": 496.2,
+            "right_hand_y": 566.7
+        }
+    },
+    {
+        "input_end_frame": 1156,
+        "prediction_frame": 1186,
+        "prediction_time_seconds": 79.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1129,
+                "time_seconds": 75.2,
+                "left_hand_x": 507.305383682251,
+                "left_hand_y": 485.7199774848091,
+                "right_hand_x": 352.2106170654297,
+                "right_hand_y": 488.791741265191,
+                "left_hand_velocity": 0.22985136602073908,
+                "right_hand_velocity": 0.9167914278805256
+            },
+            {
+                "frame": 1132,
+                "time_seconds": 75.4,
+                "left_hand_x": 507.6681137084961,
+                "left_hand_y": 488.6255052354601,
+                "right_hand_x": 353.14507484436035,
+                "right_hand_y": 492.29176839192706,
+                "left_hand_velocity": 0.8397280238568783,
+                "right_hand_velocity": 1.256835088133812
+            },
+            {
+                "frame": 1135,
+                "time_seconds": 75.6,
+                "left_hand_x": 507.9417705535889,
+                "left_hand_y": 487.3937818739149,
+                "right_hand_x": 354.76980209350586,
+                "right_hand_y": 486.85497707790796,
+                "left_hand_velocity": 1.5325352549552917,
+                "right_hand_velocity": 0.8110584691166878
+            },
+            {
+                "frame": 1138,
+                "time_seconds": 75.8,
+                "left_hand_x": 512.0980739593506,
+                "left_hand_y": 461.3476223415799,
+                "right_hand_x": 355.69586753845215,
+                "right_hand_y": 487.7817789713542,
+                "left_hand_velocity": 1.9267141819000244,
+                "right_hand_velocity": 1.6990482807159424
+            },
+            {
+                "frame": 1141,
+                "time_seconds": 76.0,
+                "left_hand_x": 482.06024169921875,
+                "left_hand_y": 409.894053141276,
+                "right_hand_x": 355.9732675552368,
+                "right_hand_y": 487.4281989203559,
+                "left_hand_velocity": 2.986152283847332,
+                "right_hand_velocity": 1.7408676445484161
+            },
+            {
+                "frame": 1144,
+                "time_seconds": 76.2,
+                "left_hand_x": 460.2625846862793,
+                "left_hand_y": 406.04082743326825,
+                "right_hand_x": 355.63621520996094,
+                "right_hand_y": 485.54742601182727,
+                "left_hand_velocity": 0.9925085119903088,
+                "right_hand_velocity": 0.662385206669569
+            },
+            {
+                "frame": 1147,
+                "time_seconds": 76.4,
+                "left_hand_x": 456.97803497314453,
+                "left_hand_y": 404.82029385036896,
+                "right_hand_x": 355.2076578140259,
+                "right_hand_y": 485.93542310926654,
+                "left_hand_velocity": 0.42148041538894176,
+                "right_hand_velocity": 0.48867189325392246
+            },
+            {
+                "frame": 1150,
+                "time_seconds": 76.6,
+                "left_hand_x": 458.2001209259033,
+                "left_hand_y": 408.6391872829861,
+                "right_hand_x": 355.38015365600586,
+                "right_hand_y": 485.9873453776042,
+                "left_hand_velocity": 0.2822480630129576,
+                "right_hand_velocity": 0.49060373567044735
+            },
+            {
+                "frame": 1153,
+                "time_seconds": 76.8,
+                "left_hand_x": 461.27991676330566,
+                "left_hand_y": 410.1781209309896,
+                "right_hand_x": 355.7468891143799,
+                "right_hand_y": 486.45044962565106,
+                "left_hand_velocity": 0.580872455611825,
+                "right_hand_velocity": 0.6055198609828949
+            },
+            {
+                "frame": 1156,
+                "time_seconds": 77.0,
+                "left_hand_x": 459.9881172180176,
+                "left_hand_y": 404.2366027832031,
+                "right_hand_x": 356.69517517089844,
+                "right_hand_y": 488.1037394205729,
+                "left_hand_velocity": 0.6306705996394157,
+                "right_hand_velocity": 0.547416415065527
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands are stable with low velocities, indicating task completion or holding position.",
+            "target_object": "Cylinder",
+            "left_hand_x": 460.0,
+            "left_hand_y": 404.2,
+            "right_hand_x": 356.7,
+            "right_hand_y": 488.1
+        }
+    },
+    {
+        "input_end_frame": 1216,
+        "prediction_frame": 1246,
+        "prediction_time_seconds": 83.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1189,
+                "time_seconds": 79.2,
+                "left_hand_x": 460.6400966644287,
+                "left_hand_y": 409.52487521701386,
+                "right_hand_x": 346.3348388671875,
+                "right_hand_y": 505.7463751898872,
+                "left_hand_velocity": 0.6279794033616781,
+                "right_hand_velocity": 1.3933727517724037
+            },
+            {
+                "frame": 1192,
+                "time_seconds": 79.4,
+                "left_hand_x": 462.9229545593262,
+                "left_hand_y": 408.41496785481775,
+                "right_hand_x": 349.20990467071533,
+                "right_hand_y": 525.8408440483942,
+                "left_hand_velocity": 1.2865393422544003,
+                "right_hand_velocity": 3.6270171403884888
+            },
+            {
+                "frame": 1195,
+                "time_seconds": 79.6,
+                "left_hand_x": 465.3179168701172,
+                "left_hand_y": 412.179438273112,
+                "right_hand_x": 348.97446632385254,
+                "right_hand_y": 529.4993506537543,
+                "left_hand_velocity": 1.371448114514351,
+                "right_hand_velocity": 1.570826955139637
+            },
+            {
+                "frame": 1198,
+                "time_seconds": 79.8,
+                "left_hand_x": 464.8806571960449,
+                "left_hand_y": 413.5587904188368,
+                "right_hand_x": 345.4864501953125,
+                "right_hand_y": 539.1126844618057,
+                "left_hand_velocity": 0.3320649964734912,
+                "right_hand_velocity": 0.5907318089157343
+            },
+            {
+                "frame": 1201,
+                "time_seconds": 80.0,
+                "left_hand_x": 461.0874652862549,
+                "left_hand_y": 409.93313259548614,
+                "right_hand_x": 346.70209884643555,
+                "right_hand_y": 537.3758951822916,
+                "left_hand_velocity": 1.1733205989003181,
+                "right_hand_velocity": 1.1783447116613388
+            },
+            {
+                "frame": 1204,
+                "time_seconds": 80.2,
+                "left_hand_x": 460.4301452636719,
+                "left_hand_y": 408.406745062934,
+                "right_hand_x": 346.045446395874,
+                "right_hand_y": 512.9681905110676,
+                "left_hand_velocity": 1.0486855171620846,
+                "right_hand_velocity": 0.550964567810297
+            },
+            {
+                "frame": 1207,
+                "time_seconds": 80.4,
+                "left_hand_x": 460.21714210510254,
+                "left_hand_y": 408.4361606174045,
+                "right_hand_x": 346.9090461730957,
+                "right_hand_y": 509.19774373372394,
+                "left_hand_velocity": 0.9169697761535645,
+                "right_hand_velocity": 0.5295703187584877
+            },
+            {
+                "frame": 1210,
+                "time_seconds": 80.6,
+                "left_hand_x": 461.39001846313477,
+                "left_hand_y": 407.33184814453125,
+                "right_hand_x": 347.31619358062744,
+                "right_hand_y": 507.21791585286456,
+                "left_hand_velocity": 0.5753070581704378,
+                "right_hand_velocity": 0.4690387286245823
+            },
+            {
+                "frame": 1213,
+                "time_seconds": 80.8,
+                "left_hand_x": 473.7405776977539,
+                "left_hand_y": 400.6231096055772,
+                "right_hand_x": 346.8688726425171,
+                "right_hand_y": 507.00412326388886,
+                "left_hand_velocity": 0.6986256688833237,
+                "right_hand_velocity": 0.33564711920917034
+            },
+            {
+                "frame": 1216,
+                "time_seconds": 81.0,
+                "left_hand_x": 482.4900150299072,
+                "left_hand_y": 405.9974670410156,
+                "right_hand_x": 345.9698677062988,
+                "right_hand_y": 518.9689636230469,
+                "left_hand_velocity": 0.30353935435414314,
+                "right_hand_velocity": 0.2714865608140826
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Left hand stabilizes cylinder bracket, right hand reaches for M8 screw.",
+            "target_object": "M8 screw",
+            "left_hand_x": 480,
+            "left_hand_y": 410,
+            "right_hand_x": 250,
+            "right_hand_y": 750
+        }
+    },
+    {
+        "input_end_frame": 1276,
+        "prediction_frame": 1306,
+        "prediction_time_seconds": 87.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1249,
+                "time_seconds": 83.2,
+                "left_hand_x": 601.0589122772217,
+                "left_hand_y": 523.319583468967,
+                "right_hand_x": 515.1013851165771,
+                "right_hand_y": 565.2205573187933,
+                "left_hand_velocity": 0.5090845283120871,
+                "right_hand_velocity": 1.9463106989860535
+            },
+            {
+                "frame": 1252,
+                "time_seconds": 83.4,
+                "left_hand_x": 597.0715045928955,
+                "left_hand_y": 526.9948323567708,
+                "right_hand_x": 515.3462409973145,
+                "right_hand_y": 571.8629625108507,
+                "left_hand_velocity": 0.8957570418715477,
+                "right_hand_velocity": 0.8127507753670216
+            },
+            {
+                "frame": 1255,
+                "time_seconds": 83.6,
+                "left_hand_x": 595.7803726196289,
+                "left_hand_y": 534.0934753417969,
+                "right_hand_x": 516.1394119262695,
+                "right_hand_y": 569.4352043999567,
+                "left_hand_velocity": 1.918341964483261,
+                "right_hand_velocity": 0.18681425135582685
+            },
+            {
+                "frame": 1258,
+                "time_seconds": 83.8,
+                "left_hand_x": 601.6343116760254,
+                "left_hand_y": 539.6798875596787,
+                "right_hand_x": 515.8717155456543,
+                "right_hand_y": 560.0854661729601,
+                "left_hand_velocity": 3.667999804019928,
+                "right_hand_velocity": 0.6788481026887894
+            },
+            {
+                "frame": 1261,
+                "time_seconds": 84.0,
+                "left_hand_x": 605.1255226135254,
+                "left_hand_y": 560.3731367323134,
+                "right_hand_x": 510.752534866333,
+                "right_hand_y": 563.3026546902126,
+                "left_hand_velocity": 5.768033862113953,
+                "right_hand_velocity": 2.140035852789879
+            },
+            {
+                "frame": 1264,
+                "time_seconds": 84.2,
+                "left_hand_x": 569.9490070343018,
+                "left_hand_y": 617.5676981608073,
+                "right_hand_x": 501.80187225341797,
+                "right_hand_y": 551.0398017035591,
+                "left_hand_velocity": 3.360074758529663,
+                "right_hand_velocity": 3.05271428078413
+            },
+            {
+                "frame": 1267,
+                "time_seconds": 84.4,
+                "left_hand_x": 535.6267929077148,
+                "left_hand_y": 673.8547007242839,
+                "right_hand_x": 478.9290428161621,
+                "right_hand_y": 548.3949873182509,
+                "left_hand_velocity": 1.2392162345349789,
+                "right_hand_velocity": 0.5926871672272682
+            },
+            {
+                "frame": 1270,
+                "time_seconds": 84.6,
+                "left_hand_x": 530.6682109832764,
+                "left_hand_y": 722.8746202256945,
+                "right_hand_x": 461.81602478027344,
+                "right_hand_y": 551.934814453125,
+                "left_hand_velocity": 2.156260423362255,
+                "right_hand_velocity": 1.0478604584932327
+            },
+            {
+                "frame": 1273,
+                "time_seconds": 84.8,
+                "left_hand_x": 531.7595481872559,
+                "left_hand_y": 736.8576049804688,
+                "right_hand_x": 459.4581604003906,
+                "right_hand_y": 566.3589053683811,
+                "left_hand_velocity": 1.7542853951454163,
+                "right_hand_velocity": 0.4330613184720278
+            },
+            {
+                "frame": 1276,
+                "time_seconds": 85.0,
+                "left_hand_x": 553.7930488586426,
+                "left_hand_y": 684.7920311821831,
+                "right_hand_x": 460.0018501281738,
+                "right_hand_y": 568.2248857286241,
+                "left_hand_velocity": 3.340589255094528,
+                "right_hand_velocity": 2.540445514023304
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands positioned to slide cylinder assembly onto plate.",
+            "target_object": "Cylinder Assembly",
+            "left_hand_x": 390,
+            "left_hand_y": 460,
+            "right_hand_x": 610,
+            "right_hand_y": 460
+        }
+    },
+    {
+        "input_end_frame": 1336,
+        "prediction_frame": 1366,
+        "prediction_time_seconds": 91.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1309,
+                "time_seconds": 87.2,
+                "left_hand_x": 567.2505378723145,
+                "left_hand_y": 654.2205810546875,
+                "right_hand_x": 504.0736198425293,
+                "right_hand_y": 566.7894151475695,
+                "left_hand_velocity": 2.4320093914866447,
+                "right_hand_velocity": 1.5731863677501678
+            },
+            {
+                "frame": 1312,
+                "time_seconds": 87.4,
+                "left_hand_x": 549.9859809875488,
+                "left_hand_y": 680.231942070855,
+                "right_hand_x": 502.99463272094727,
+                "right_hand_y": 567.035378350152,
+                "left_hand_velocity": 1.70020442456007,
+                "right_hand_velocity": 0.7348510902374983
+            },
+            {
+                "frame": 1315,
+                "time_seconds": 87.6,
+                "left_hand_x": 542.0324802398682,
+                "left_hand_y": 689.3840365939669,
+                "right_hand_x": 494.1624641418457,
+                "right_hand_y": 561.9967990451389,
+                "left_hand_velocity": 3.691691905260086,
+                "right_hand_velocity": 1.3512816280126572
+            },
+            {
+                "frame": 1318,
+                "time_seconds": 87.8,
+                "left_hand_x": 533.4274291992188,
+                "left_hand_y": 684.0581681993273,
+                "right_hand_x": 455.0503730773926,
+                "right_hand_y": 649.7578514946831,
+                "left_hand_velocity": 5.998194217681885,
+                "right_hand_velocity": 2.3484626784920692
+            },
+            {
+                "frame": 1321,
+                "time_seconds": 88.0,
+                "left_hand_x": 538.92822265625,
+                "left_hand_y": 613.7339697943793,
+                "right_hand_x": 353.46696376800537,
+                "right_hand_y": 499.773195054796,
+                "left_hand_velocity": 5.150219053030014,
+                "right_hand_velocity": 6.372284144163132
+            },
+            {
+                "frame": 1324,
+                "time_seconds": 88.2,
+                "left_hand_x": 538.249921798706,
+                "left_hand_y": 531.4731174045139,
+                "right_hand_x": 278.25074195861816,
+                "right_hand_y": 563.9742533365886,
+                "left_hand_velocity": 3.829215094447136,
+                "right_hand_velocity": 6.6962845623493195
+            },
+            {
+                "frame": 1327,
+                "time_seconds": 88.4,
+                "left_hand_x": 519.4888591766357,
+                "left_hand_y": 508.5000779893664,
+                "right_hand_x": 284.35187339782715,
+                "right_hand_y": 667.9294162326389,
+                "left_hand_velocity": 3.964308649301529,
+                "right_hand_velocity": 3.60051766037941
+            },
+            {
+                "frame": 1330,
+                "time_seconds": 88.6,
+                "left_hand_x": 512.9486560821533,
+                "left_hand_y": 493.95955403645837,
+                "right_hand_x": 294.6633815765381,
+                "right_hand_y": 720.652347140842,
+                "left_hand_velocity": 1.5240080654621124,
+                "right_hand_velocity": 1.4874471351504326
+            },
+            {
+                "frame": 1333,
+                "time_seconds": 88.8,
+                "left_hand_x": 505.24063110351557,
+                "left_hand_y": 495.0999789767795,
+                "right_hand_x": 299.69043731689453,
+                "right_hand_y": 729.1914198133682,
+                "left_hand_velocity": 0.6040828302502632,
+                "right_hand_velocity": 0.5142970010638237
+            },
+            {
+                "frame": 1336,
+                "time_seconds": 89.0,
+                "left_hand_x": 502.1318912506103,
+                "left_hand_y": 503.20926242404516,
+                "right_hand_x": 301.3278007507324,
+                "right_hand_y": 725.4136827256943,
+                "left_hand_velocity": 1.391890738159418,
+                "right_hand_velocity": 1.922944001853466
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands are engaged in screwing the first M8 screw, remaining stable at the screw and assembly.",
+            "target_object": "M8 screw",
+            "left_hand_x": 502,
+            "left_hand_y": 503,
+            "right_hand_x": 301,
+            "right_hand_y": 725
+        }
+    },
+    {
+        "input_end_frame": 1396,
+        "prediction_frame": 1426,
+        "prediction_time_seconds": 95.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1369,
+                "time_seconds": 91.2,
+                "left_hand_x": 624.7045040130615,
+                "left_hand_y": 522.8282504611545,
+                "right_hand_x": 471.0209846496582,
+                "right_hand_y": 626.6168382432725,
+                "left_hand_velocity": 3.6895442754030228,
+                "right_hand_velocity": 1.0890834033489227
+            },
+            {
+                "frame": 1372,
+                "time_seconds": 91.4,
+                "left_hand_x": 617.0566558837891,
+                "left_hand_y": 509.6998426649305,
+                "right_hand_x": 469.891357421875,
+                "right_hand_y": 615.5303955078125,
+                "left_hand_velocity": 4.483054950833321,
+                "right_hand_velocity": 0.8986710570752621
+            },
+            {
+                "frame": 1375,
+                "time_seconds": 91.6,
+                "left_hand_x": 584.3806266784668,
+                "left_hand_y": 513.2484859890408,
+                "right_hand_x": 464.4179344177246,
+                "right_hand_y": 593.1886884901259,
+                "left_hand_velocity": 3.5871047526597977,
+                "right_hand_velocity": 1.1840804480016232
+            },
+            {
+                "frame": 1378,
+                "time_seconds": 91.8,
+                "left_hand_x": 541.3772583007812,
+                "left_hand_y": 530.7463751898871,
+                "right_hand_x": 460.2948188781738,
+                "right_hand_y": 529.650624593099,
+                "left_hand_velocity": 2.369428239762783,
+                "right_hand_velocity": 1.904233731329441
+            },
+            {
+                "frame": 1381,
+                "time_seconds": 92.0,
+                "left_hand_x": 516.4060592651367,
+                "left_hand_y": 545.2921549479167,
+                "right_hand_x": 458.5670471191406,
+                "right_hand_y": 536.7012871636285,
+                "left_hand_velocity": 0.914824940264225,
+                "right_hand_velocity": 0.9812409989535809
+            },
+            {
+                "frame": 1384,
+                "time_seconds": 92.2,
+                "left_hand_x": 510.86697578430176,
+                "left_hand_y": 552.2200690375433,
+                "right_hand_x": 455.05237579345703,
+                "right_hand_y": 542.7569071451824,
+                "left_hand_velocity": 1.3269000686705112,
+                "right_hand_velocity": 1.7230559140443802
+            },
+            {
+                "frame": 1387,
+                "time_seconds": 92.4,
+                "left_hand_x": 508.8994979858399,
+                "left_hand_y": 555.9479607476129,
+                "right_hand_x": 446.37556076049805,
+                "right_hand_y": 549.548594156901,
+                "left_hand_velocity": 3.34981232881546,
+                "right_hand_velocity": 8.512462675571442
+            },
+            {
+                "frame": 1390,
+                "time_seconds": 92.6,
+                "left_hand_x": 509.02843475341797,
+                "left_hand_y": 556.9356282552084,
+                "right_hand_x": 337.6012325286865,
+                "right_hand_y": 514.0472412109375,
+                "left_hand_velocity": 0.8516831323504448,
+                "right_hand_velocity": 2.888163737952709
+            },
+            {
+                "frame": 1393,
+                "time_seconds": 92.8,
+                "left_hand_x": 510.08472442626953,
+                "left_hand_y": 557.6638539632162,
+                "right_hand_x": 331.7824363708496,
+                "right_hand_y": 474.20404222276477,
+                "left_hand_velocity": 1.3805759139358997,
+                "right_hand_velocity": 1.8348310142755508
+            },
+            {
+                "frame": 1396,
+                "time_seconds": 93.0,
+                "left_hand_x": 512.4570369720459,
+                "left_hand_y": 531.7626105414497,
+                "right_hand_x": 326.2059211730957,
+                "right_hand_y": 462.815433078342,
+                "left_hand_velocity": 4.055366665124893,
+                "right_hand_velocity": 0.9937022812664509
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands are in a stable, engaged position for screwing the M8 screw into the cylinder bracket. Right hand holds screwdriver, left hand stabilizes the assembly.",
+            "target_object": "M8 screw",
+            "left_hand_x": 512,
+            "left_hand_y": 530,
+            "right_hand_x": 326,
+            "right_hand_y": 463
+        }
+    },
+    {
+        "input_end_frame": 1456,
+        "prediction_frame": 1486,
+        "prediction_time_seconds": 99.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1429,
+                "time_seconds": 95.2,
+                "left_hand_x": 458.29334259033203,
+                "left_hand_y": 411.9524637858073,
+                "right_hand_x": 324.0564823150635,
+                "right_hand_y": 453.8907368977865,
+                "left_hand_velocity": 0.7894484326243401,
+                "right_hand_velocity": 0.49571837298572063
+            },
+            {
+                "frame": 1432,
+                "time_seconds": 95.4,
+                "left_hand_x": 458.60581398010254,
+                "left_hand_y": 413.1018320719401,
+                "right_hand_x": 325.07786750793457,
+                "right_hand_y": 441.35280185275604,
+                "left_hand_velocity": 0.8625263348221779,
+                "right_hand_velocity": 0.7863346487283707
+            },
+            {
+                "frame": 1435,
+                "time_seconds": 95.6,
+                "left_hand_x": 458.292293548584,
+                "left_hand_y": 411.9553460015191,
+                "right_hand_x": 326.5698194503784,
+                "right_hand_y": 436.38297186957465,
+                "left_hand_velocity": 0.5040043033659458,
+                "right_hand_velocity": 0.48270998522639275
+            },
+            {
+                "frame": 1438,
+                "time_seconds": 95.8,
+                "left_hand_x": 458.3487033843994,
+                "left_hand_y": 412.02791002061633,
+                "right_hand_x": 328.52940559387207,
+                "right_hand_y": 430.13475206163196,
+                "left_hand_velocity": 0.3612374886870384,
+                "right_hand_velocity": 0.3625504206866026
+            },
+            {
+                "frame": 1441,
+                "time_seconds": 96.0,
+                "left_hand_x": 458.27322006225586,
+                "left_hand_y": 413.45032585991754,
+                "right_hand_x": 326.4753580093384,
+                "right_hand_y": 439.96849060058594,
+                "left_hand_velocity": 0.3379693254828453,
+                "right_hand_velocity": 0.2511650789529085
+            },
+            {
+                "frame": 1444,
+                "time_seconds": 96.2,
+                "left_hand_x": 459.40842628479004,
+                "left_hand_y": 414.44422403971356,
+                "right_hand_x": 325.03275871276855,
+                "right_hand_y": 436.60795423719617,
+                "left_hand_velocity": 0.2458957489579916,
+                "right_hand_velocity": 0.16998446080833673
+            },
+            {
+                "frame": 1447,
+                "time_seconds": 96.4,
+                "left_hand_x": 459.9149703979492,
+                "left_hand_y": 415.35792880588104,
+                "right_hand_x": 329.1822910308838,
+                "right_hand_y": 430.4261525472005,
+                "left_hand_velocity": 0.2320499625056982,
+                "right_hand_velocity": 0.21751767490059137
+            },
+            {
+                "frame": 1450,
+                "time_seconds": 96.6,
+                "left_hand_x": 460.3053092956543,
+                "left_hand_y": 415.21792941623266,
+                "right_hand_x": 330.3954601287842,
+                "right_hand_y": 427.8477986653646,
+                "left_hand_velocity": 0.4091835580766201,
+                "right_hand_velocity": 0.3589075058698654
+            },
+            {
+                "frame": 1453,
+                "time_seconds": 96.8,
+                "left_hand_x": 460.0520133972168,
+                "left_hand_y": 416.19525485568573,
+                "right_hand_x": 327.4061441421509,
+                "right_hand_y": 451.12448798285595,
+                "left_hand_velocity": 0.4509451799094677,
+                "right_hand_velocity": 0.4521357826888561
+            },
+            {
+                "frame": 1456,
+                "time_seconds": 97.0,
+                "left_hand_x": 459.2101573944092,
+                "left_hand_y": 415.707270304362,
+                "right_hand_x": 326.0568141937256,
+                "right_hand_y": 460.6329600016276,
+                "left_hand_velocity": 0.3246739041060209,
+                "right_hand_velocity": 0.26263552717864513
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Left hand stabilizes cylinder, right hand engaged in screwing M8 screw into bracket.",
+            "target_object": "M8 screw",
+            "left_hand_x": 460,
+            "left_hand_y": 415,
+            "right_hand_x": 325,
+            "right_hand_y": 465
+        }
+    },
+    {
+        "input_end_frame": 1516,
+        "prediction_frame": 1546,
+        "prediction_time_seconds": 103.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1489,
+                "time_seconds": 99.2,
+                "left_hand_x": 496.81339263916016,
+                "left_hand_y": 528.3413357204861,
+                "right_hand_x": 316.97492599487305,
+                "right_hand_y": 528.252919514974,
+                "left_hand_velocity": 0.3872321918606758,
+                "right_hand_velocity": 0.8756466209888458
+            },
+            {
+                "frame": 1492,
+                "time_seconds": 99.4,
+                "left_hand_x": 505.54981231689453,
+                "left_hand_y": 524.8831431070964,
+                "right_hand_x": 324.03581142425537,
+                "right_hand_y": 523.6187828911676,
+                "left_hand_velocity": 1.1240571737289429,
+                "right_hand_velocity": 1.31924357265234
+            },
+            {
+                "frame": 1495,
+                "time_seconds": 99.6,
+                "left_hand_x": 518.2837963104248,
+                "left_hand_y": 522.5151909722222,
+                "right_hand_x": 342.3006057739258,
+                "right_hand_y": 528.9010789659288,
+                "left_hand_velocity": 1.3855730183422565,
+                "right_hand_velocity": 1.1734110303223133
+            },
+            {
+                "frame": 1498,
+                "time_seconds": 99.8,
+                "left_hand_x": 528.860330581665,
+                "left_hand_y": 526.2928009033203,
+                "right_hand_x": 357.0113182067871,
+                "right_hand_y": 526.2022654215494,
+                "left_hand_velocity": 0.9818132966756821,
+                "right_hand_velocity": 0.6500622257590294
+            },
+            {
+                "frame": 1501,
+                "time_seconds": 100.0,
+                "left_hand_x": 533.6050987243652,
+                "left_hand_y": 528.6582946777344,
+                "right_hand_x": 358.9075803756714,
+                "right_hand_y": 512.8086513943142,
+                "left_hand_velocity": 0.6088618654757738,
+                "right_hand_velocity": 0.7389876060187817
+            },
+            {
+                "frame": 1504,
+                "time_seconds": 100.2,
+                "left_hand_x": 531.7368030548096,
+                "left_hand_y": 529.0609571668838,
+                "right_hand_x": 358.85677337646484,
+                "right_hand_y": 506.41471015082465,
+                "left_hand_velocity": 2.7108287438750267,
+                "right_hand_velocity": 2.4726470932364464
+            },
+            {
+                "frame": 1507,
+                "time_seconds": 100.4,
+                "left_hand_x": 528.0425548553467,
+                "left_hand_y": 495.85465325249567,
+                "right_hand_x": 368.77875328063965,
+                "right_hand_y": 459.05884636773004,
+                "left_hand_velocity": 2.965959347784519,
+                "right_hand_velocity": 2.7059968560934067
+            },
+            {
+                "frame": 1510,
+                "time_seconds": 100.6,
+                "left_hand_x": 514.5142078399658,
+                "left_hand_y": 472.98109266493054,
+                "right_hand_x": 378.6132335662842,
+                "right_hand_y": 453.14144558376734,
+                "left_hand_velocity": 2.2230030968785286,
+                "right_hand_velocity": 0.45311078429222107
+            },
+            {
+                "frame": 1513,
+                "time_seconds": 100.8,
+                "left_hand_x": 503.56268882751465,
+                "left_hand_y": 453.58679029676654,
+                "right_hand_x": 386.7893695831299,
+                "right_hand_y": 457.29942321777344,
+                "left_hand_velocity": 0.6331278011202812,
+                "right_hand_velocity": 0.2888166345655918
+            },
+            {
+                "frame": 1516,
+                "time_seconds": 101.0,
+                "left_hand_x": 503.1440258026123,
+                "left_hand_y": 453.1210581461588,
+                "right_hand_x": 383.96496772766113,
+                "right_hand_y": 458.3187950981988,
+                "left_hand_velocity": 0.11784153757616878,
+                "right_hand_velocity": 0.4602205939590931
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands are in position for fine manipulation (screwing); minimal movement expected.",
+            "target_object": "M8 screw",
+            "left_hand_x": 503,
+            "left_hand_y": 453,
+            "right_hand_x": 384,
+            "right_hand_y": 458
+        }
+    },
+    {
+        "input_end_frame": 1576,
+        "prediction_frame": 1606,
+        "prediction_time_seconds": 107.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1549,
+                "time_seconds": 103.2,
+                "left_hand_x": 499.77216720581055,
+                "left_hand_y": 459.68140496148004,
+                "right_hand_x": 385.38429737091064,
+                "right_hand_y": 453.8766225179037,
+                "left_hand_velocity": 0.2852415665984154,
+                "right_hand_velocity": 0.4137640818953514
+            },
+            {
+                "frame": 1552,
+                "time_seconds": 103.4,
+                "left_hand_x": 499.32003021240234,
+                "left_hand_y": 459.2750549316406,
+                "right_hand_x": 385.9606981277466,
+                "right_hand_y": 453.91854180230035,
+                "left_hand_velocity": 0.24952373933047056,
+                "right_hand_velocity": 0.19834383856505156
+            },
+            {
+                "frame": 1555,
+                "time_seconds": 103.6,
+                "left_hand_x": 499.6012210845947,
+                "left_hand_y": 459.9583519829644,
+                "right_hand_x": 384.52558517456055,
+                "right_hand_y": 453.268305460612,
+                "left_hand_velocity": 0.23570556659251451,
+                "right_hand_velocity": 0.37959753535687923
+            },
+            {
+                "frame": 1558,
+                "time_seconds": 103.8,
+                "left_hand_x": 499.7807502746582,
+                "left_hand_y": 460.59226989746094,
+                "right_hand_x": 385.59234142303467,
+                "right_hand_y": 454.507319132487,
+                "left_hand_velocity": 0.42321491055190563,
+                "right_hand_velocity": 0.31378185376524925
+            },
+            {
+                "frame": 1561,
+                "time_seconds": 104.0,
+                "left_hand_x": 499.6188163757324,
+                "left_hand_y": 460.0357479519314,
+                "right_hand_x": 384.33549404144287,
+                "right_hand_y": 456.5286000569662,
+                "left_hand_velocity": 0.5022114142775536,
+                "right_hand_velocity": 0.6123830564320087
+            },
+            {
+                "frame": 1564,
+                "time_seconds": 104.2,
+                "left_hand_x": 499.4344234466553,
+                "left_hand_y": 461.3073560926649,
+                "right_hand_x": 383.9946746826172,
+                "right_hand_y": 459.00556776258685,
+                "left_hand_velocity": 0.33355262130498886,
+                "right_hand_velocity": 0.3686582902446389
+            },
+            {
+                "frame": 1567,
+                "time_seconds": 104.4,
+                "left_hand_x": 499.4676113128662,
+                "left_hand_y": 460.9399583604601,
+                "right_hand_x": 384.04555320739746,
+                "right_hand_y": 458.31654866536456,
+                "left_hand_velocity": 0.25852241087704897,
+                "right_hand_velocity": 0.32315992284566164
+            },
+            {
+                "frame": 1570,
+                "time_seconds": 104.6,
+                "left_hand_x": 498.83670806884766,
+                "left_hand_y": 458.8576422797309,
+                "right_hand_x": 384.5965623855591,
+                "right_hand_y": 458.7532891167534,
+                "left_hand_velocity": 0.20189378410577774,
+                "right_hand_velocity": 0.32674993854016066
+            },
+            {
+                "frame": 1573,
+                "time_seconds": 104.8,
+                "left_hand_x": 499.0506172180176,
+                "left_hand_y": 458.92690022786456,
+                "right_hand_x": 383.4251642227173,
+                "right_hand_y": 457.3471917046441,
+                "left_hand_velocity": 0.7394539657980204,
+                "right_hand_velocity": 0.8207932114601135
+            },
+            {
+                "frame": 1576,
+                "time_seconds": 105.0,
+                "left_hand_x": 499.0607261657715,
+                "left_hand_y": 459.0574476453993,
+                "right_hand_x": 386.63530349731445,
+                "right_hand_y": 457.07668728298614,
+                "left_hand_velocity": 0.7303339894860983,
+                "right_hand_velocity": 0.7424391806125641
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands remain stable for continued screwing motion.",
+            "target_object": "M8 screw",
+            "left_hand_x": 499.0,
+            "left_hand_y": 459.0,
+            "right_hand_x": 384.9,
+            "right_hand_y": 457.7
+        }
+    },
+    {
+        "input_end_frame": 1636,
+        "prediction_frame": 1666,
+        "prediction_time_seconds": 111.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1609,
+                "time_seconds": 107.2,
+                "left_hand_x": 552.8208255767822,
+                "left_hand_y": 518.2543436686198,
+                "right_hand_x": 390.11802673339844,
+                "right_hand_y": 445.4307556152344,
+                "left_hand_velocity": 0.3697057720273733,
+                "right_hand_velocity": 0.3802057821303606
+            },
+            {
+                "frame": 1612,
+                "time_seconds": 107.4,
+                "left_hand_x": 550.1931190490723,
+                "left_hand_y": 518.5966067843967,
+                "right_hand_x": 389.08703327178955,
+                "right_hand_y": 444.80976528591583,
+                "left_hand_velocity": 0.3035528352484107,
+                "right_hand_velocity": 0.2754759741947055
+            },
+            {
+                "frame": 1615,
+                "time_seconds": 107.6,
+                "left_hand_x": 549.6316432952881,
+                "left_hand_y": 518.4505038791233,
+                "right_hand_x": 390.4970169067383,
+                "right_hand_y": 445.1182895236545,
+                "left_hand_velocity": 0.2541400957852602,
+                "right_hand_velocity": 0.27439428959041834
+            },
+            {
+                "frame": 1618,
+                "time_seconds": 107.8,
+                "left_hand_x": 549.3200302124023,
+                "left_hand_y": 518.9913855658637,
+                "right_hand_x": 385.18943786621094,
+                "right_hand_y": 446.98897467719183,
+                "left_hand_velocity": 0.24472505319863558,
+                "right_hand_velocity": 0.2994342241436243
+            },
+            {
+                "frame": 1621,
+                "time_seconds": 108.0,
+                "left_hand_x": 548.7518310546875,
+                "left_hand_y": 519.7241465250652,
+                "right_hand_x": 387.2612237930298,
+                "right_hand_y": 444.2874060736762,
+                "left_hand_velocity": 0.23621038999408484,
+                "right_hand_velocity": 0.18264390528202057
+            },
+            {
+                "frame": 1624,
+                "time_seconds": 108.2,
+                "left_hand_x": 545.6884384155273,
+                "left_hand_y": 520.3319125705294,
+                "right_hand_x": 388.76774311065674,
+                "right_hand_y": 444.23226250542535,
+                "left_hand_velocity": 0.22939012851566076,
+                "right_hand_velocity": 0.27075191028416157
+            },
+            {
+                "frame": 1627,
+                "time_seconds": 108.4,
+                "left_hand_x": 541.9769763946533,
+                "left_hand_y": 519.9270884195963,
+                "right_hand_x": 388.032865524292,
+                "right_hand_y": 445.33670213487414,
+                "left_hand_velocity": 0.34482914488762617,
+                "right_hand_velocity": 0.6112183909863234
+            },
+            {
+                "frame": 1630,
+                "time_seconds": 108.6,
+                "left_hand_x": 537.5205516815186,
+                "left_hand_y": 520.5784267849392,
+                "right_hand_x": 390.08450508117676,
+                "right_hand_y": 445.3595479329427,
+                "left_hand_velocity": 0.5004972219467163,
+                "right_hand_velocity": 1.086078304797411
+            },
+            {
+                "frame": 1633,
+                "time_seconds": 108.8,
+                "left_hand_x": 528.9611339569092,
+                "left_hand_y": 521.7478434244792,
+                "right_hand_x": 388.4326934814453,
+                "right_hand_y": 445.5936008029514,
+                "left_hand_velocity": 0.5319017451256514,
+                "right_hand_velocity": 1.5078228898346424
+            },
+            {
+                "frame": 1636,
+                "time_seconds": 109.0,
+                "left_hand_x": 517.0243263244629,
+                "left_hand_y": 520.183351304796,
+                "right_hand_x": 386.42802238464355,
+                "right_hand_y": 447.89110819498694,
+                "left_hand_velocity": 0.3307419130578637,
+                "right_hand_velocity": 0.6680643651634455
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Left hand (screwing) continues slight downward/leftward motion; Right hand (stabilizing) holds position.",
+            "target_object": "M8 screw",
+            "left_hand_x": 511.7,
+            "left_hand_y": 528.9,
+            "right_hand_x": 385.0,
+            "right_hand_y": 448.0
+        }
+    },
+    {
+        "input_end_frame": 1696,
+        "prediction_frame": 1726,
+        "prediction_time_seconds": 115.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1669,
+                "time_seconds": 111.2,
+                "left_hand_x": 513.2477283477783,
+                "left_hand_y": 503.84470621744794,
+                "right_hand_x": 393.82848739624023,
+                "right_hand_y": 374.61149427625867,
+                "left_hand_velocity": 1.2971588410437107,
+                "right_hand_velocity": 4.025375843048096
+            },
+            {
+                "frame": 1672,
+                "time_seconds": 111.4,
+                "left_hand_x": 527.0891189575195,
+                "left_hand_y": 499.9058193630642,
+                "right_hand_x": 432.7521800994873,
+                "right_hand_y": 375.0781589084201,
+                "left_hand_velocity": 0.7478957995772362,
+                "right_hand_velocity": 1.1230679228901863
+            },
+            {
+                "frame": 1675,
+                "time_seconds": 111.6,
+                "left_hand_x": 544.5342063903809,
+                "left_hand_y": 498.6140780978733,
+                "right_hand_x": 449.50733184814453,
+                "right_hand_y": 376.8444485134549,
+                "left_hand_velocity": 0.6749595515429974,
+                "right_hand_velocity": 0.28645764105021954
+            },
+            {
+                "frame": 1678,
+                "time_seconds": 111.8,
+                "left_hand_x": 556.3009262084961,
+                "left_hand_y": 499.28580390082465,
+                "right_hand_x": 453.63030433654785,
+                "right_hand_y": 373.97969563802087,
+                "left_hand_velocity": 0.42528389021754265,
+                "right_hand_velocity": 0.37316326051950455
+            },
+            {
+                "frame": 1681,
+                "time_seconds": 112.0,
+                "left_hand_x": 564.1709327697754,
+                "left_hand_y": 500.292714436849,
+                "right_hand_x": 455.08055686950684,
+                "right_hand_y": 375.17996893988715,
+                "left_hand_velocity": 0.4678958095610142,
+                "right_hand_velocity": 0.3137625986710191
+            },
+            {
+                "frame": 1684,
+                "time_seconds": 112.2,
+                "left_hand_x": 567.5037860870361,
+                "left_hand_y": 501.5325334337023,
+                "right_hand_x": 454.5508861541748,
+                "right_hand_y": 375.8261786566841,
+                "left_hand_velocity": 0.983042735606432,
+                "right_hand_velocity": 0.28714516665786505
+            },
+            {
+                "frame": 1687,
+                "time_seconds": 112.4,
+                "left_hand_x": 549.4285106658936,
+                "left_hand_y": 494.8107401529948,
+                "right_hand_x": 455.8391571044922,
+                "right_hand_y": 375.2211676703559,
+                "left_hand_velocity": 0.9922939352691174,
+                "right_hand_velocity": 0.7077785208821297
+            },
+            {
+                "frame": 1690,
+                "time_seconds": 112.6,
+                "left_hand_x": 537.8905773162842,
+                "left_hand_y": 491.8668958875868,
+                "right_hand_x": 455.6711196899414,
+                "right_hand_y": 374.4194030761719,
+                "left_hand_velocity": 0.38237040862441063,
+                "right_hand_velocity": 0.5173439625650644
+            },
+            {
+                "frame": 1693,
+                "time_seconds": 112.8,
+                "left_hand_x": 537.6080989837646,
+                "left_hand_y": 486.1980862087674,
+                "right_hand_x": 457.5579643249512,
+                "right_hand_y": 373.65993923611114,
+                "left_hand_velocity": 0.541898887604475,
+                "right_hand_velocity": 0.22459074389189482
+            },
+            {
+                "frame": 1696,
+                "time_seconds": 113.0,
+                "left_hand_x": 535.4109764099121,
+                "left_hand_y": 486.5726894802517,
+                "right_hand_x": 458.60419273376465,
+                "right_hand_y": 377.978515625,
+                "left_hand_velocity": 0.3897568443790078,
+                "right_hand_velocity": 0.5415983498096466
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands maintain working positions for continued screwing and stabilization.",
+            "target_object": "second M8 screw",
+            "left_hand_x": 537,
+            "left_hand_y": 488,
+            "right_hand_x": 457,
+            "right_hand_y": 375
+        }
+    },
+    {
+        "input_end_frame": 1756,
+        "prediction_frame": 1786,
+        "prediction_time_seconds": 119.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1729,
+                "time_seconds": 115.2,
+                "left_hand_x": 523.5350608825684,
+                "left_hand_y": 482.5684441460503,
+                "right_hand_x": 378.507924079895,
+                "right_hand_y": 470.43329874674475,
+                "left_hand_velocity": 0.35319782327860594,
+                "right_hand_velocity": 1.123583596199751
+            },
+            {
+                "frame": 1732,
+                "time_seconds": 115.4,
+                "left_hand_x": 516.8240547180176,
+                "left_hand_y": 482.25106133355035,
+                "right_hand_x": 378.8962125778198,
+                "right_hand_y": 474.79578653971356,
+                "left_hand_velocity": 0.5440122913569212,
+                "right_hand_velocity": 0.6924058776348829
+            },
+            {
+                "frame": 1735,
+                "time_seconds": 115.6,
+                "left_hand_x": 515.3412818908691,
+                "left_hand_y": 479.5735677083333,
+                "right_hand_x": 380.20381927490234,
+                "right_hand_y": 477.9886881510417,
+                "left_hand_velocity": 0.25481695774942636,
+                "right_hand_velocity": 0.5883159581571817
+            },
+            {
+                "frame": 1738,
+                "time_seconds": 115.8,
+                "left_hand_x": 515.4433250427246,
+                "left_hand_y": 478.4538269042969,
+                "right_hand_x": 384.1752052307129,
+                "right_hand_y": 476.2320624457465,
+                "left_hand_velocity": 0.28891453985124826,
+                "right_hand_velocity": 0.43692043982446194
+            },
+            {
+                "frame": 1741,
+                "time_seconds": 116.0,
+                "left_hand_x": 516.6915893554688,
+                "left_hand_y": 483.8676452636719,
+                "right_hand_x": 384.6641540527344,
+                "right_hand_y": 471.06814914279516,
+                "left_hand_velocity": 0.2221086760982871,
+                "right_hand_velocity": 0.25235319044440985
+            },
+            {
+                "frame": 1744,
+                "time_seconds": 116.2,
+                "left_hand_x": 518.3249473571777,
+                "left_hand_y": 476.12931993272565,
+                "right_hand_x": 384.06360149383545,
+                "right_hand_y": 470.6842210557726,
+                "left_hand_velocity": 0.3563649719581008,
+                "right_hand_velocity": 0.17721536569297314
+            },
+            {
+                "frame": 1747,
+                "time_seconds": 116.4,
+                "left_hand_x": 518.281364440918,
+                "left_hand_y": 481.4648946126302,
+                "right_hand_x": 378.982138633728,
+                "right_hand_y": 469.6990966796875,
+                "left_hand_velocity": 0.37545168306678534,
+                "right_hand_velocity": 0.21312301978468895
+            },
+            {
+                "frame": 1750,
+                "time_seconds": 116.6,
+                "left_hand_x": 519.2974090576172,
+                "left_hand_y": 479.4050004747179,
+                "right_hand_x": 370.16663551330566,
+                "right_hand_y": 477.1849314371745,
+                "left_hand_velocity": 0.49481820315122604,
+                "right_hand_velocity": 0.25829740334302187
+            },
+            {
+                "frame": 1753,
+                "time_seconds": 116.8,
+                "left_hand_x": 518.1973934173584,
+                "left_hand_y": 487.47261895073785,
+                "right_hand_x": 380.2081108093262,
+                "right_hand_y": 479.70004611545136,
+                "left_hand_velocity": 0.3438428742811084,
+                "right_hand_velocity": 0.4589277319610119
+            },
+            {
+                "frame": 1756,
+                "time_seconds": 117.0,
+                "left_hand_x": 524.8708248138428,
+                "left_hand_y": 478.8309733072917,
+                "right_hand_x": 385.1649284362793,
+                "right_hand_y": 484.36864217122394,
+                "left_hand_velocity": 0.4189091268926859,
+                "right_hand_velocity": 0.486633600667119
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands remain positioned for continued screwing/tightening.",
+            "target_object": "M8 screw",
+            "left_hand_x": 520,
+            "left_hand_y": 481,
+            "right_hand_x": 380,
+            "right_hand_y": 476
+        }
+    },
+    {
+        "input_end_frame": 1816,
+        "prediction_frame": 1846,
+        "prediction_time_seconds": 123.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1789,
+                "time_seconds": 119.2,
+                "left_hand_x": 519.2244052886963,
+                "left_hand_y": 475.49463907877606,
+                "right_hand_x": 379.44278717041016,
+                "right_hand_y": 484.24919976128473,
+                "left_hand_velocity": 0.23726895451545715,
+                "right_hand_velocity": 0.3188403323292732
+            },
+            {
+                "frame": 1792,
+                "time_seconds": 119.4,
+                "left_hand_x": 518.3119297027588,
+                "left_hand_y": 472.23214043511285,
+                "right_hand_x": 381.44779205322266,
+                "right_hand_y": 483.5035536024306,
+                "left_hand_velocity": 0.6303773727267981,
+                "right_hand_velocity": 0.31977780163288116
+            },
+            {
+                "frame": 1795,
+                "time_seconds": 119.6,
+                "left_hand_x": 523.1755256652832,
+                "left_hand_y": 478.36235894097223,
+                "right_hand_x": 379.4461250305176,
+                "right_hand_y": 481.12352159288196,
+                "left_hand_velocity": 0.5800561513751745,
+                "right_hand_velocity": 0.7955988869071007
+            },
+            {
+                "frame": 1798,
+                "time_seconds": 119.8,
+                "left_hand_x": 530.7199478149414,
+                "left_hand_y": 477.01712714301215,
+                "right_hand_x": 385.2119207382202,
+                "right_hand_y": 471.26744588216144,
+                "left_hand_velocity": 1.0201780125498772,
+                "right_hand_velocity": 0.8120969869196415
+            },
+            {
+                "frame": 1801,
+                "time_seconds": 120.0,
+                "left_hand_x": 534.0863227844238,
+                "left_hand_y": 475.0565846761068,
+                "right_hand_x": 405.9422492980957,
+                "right_hand_y": 457.24449157714844,
+                "left_hand_velocity": 1.288764365017414,
+                "right_hand_velocity": 0.8870350196957588
+            },
+            {
+                "frame": 1804,
+                "time_seconds": 120.2,
+                "left_hand_x": 536.4774703979492,
+                "left_hand_y": 474.58135816786023,
+                "right_hand_x": 430.8462142944336,
+                "right_hand_y": 454.8697153727214,
+                "left_hand_velocity": 0.4207096993923187,
+                "right_hand_velocity": 1.6134539619088173
+            },
+            {
+                "frame": 1807,
+                "time_seconds": 120.4,
+                "left_hand_x": 541.0499095916748,
+                "left_hand_y": 476.86903211805554,
+                "right_hand_x": 468.4763431549072,
+                "right_hand_y": 467.3474629720052,
+                "left_hand_velocity": 0.8877894841134548,
+                "right_hand_velocity": 2.670634165406227
+            },
+            {
+                "frame": 1810,
+                "time_seconds": 120.6,
+                "left_hand_x": 549.2569923400879,
+                "left_hand_y": 484.7968207465278,
+                "right_hand_x": 469.8634147644043,
+                "right_hand_y": 451.6880459255642,
+                "left_hand_velocity": 3.741065040230751,
+                "right_hand_velocity": 2.6252036914229393
+            },
+            {
+                "frame": 1813,
+                "time_seconds": 120.8,
+                "left_hand_x": 556.4133644104004,
+                "left_hand_y": 533.5282219780815,
+                "right_hand_x": 469.84100341796875,
+                "right_hand_y": 446.93603515625,
+                "left_hand_velocity": 1.205903198570013,
+                "right_hand_velocity": 2.101077325642109
+            },
+            {
+                "frame": 1816,
+                "time_seconds": 121.0,
+                "left_hand_x": 559.4242095947266,
+                "left_hand_y": 549.0250481499565,
+                "right_hand_x": 473.4005928039551,
+                "right_hand_y": 448.1229994032118,
+                "left_hand_velocity": 1.0306957177817822,
+                "right_hand_velocity": 3.0329806730151176
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands positioned for tightening screw; right hand on screw, left hand stabilizing assembly.",
+            "target_object": "M8 screw",
+            "left_hand_x": 560,
+            "left_hand_y": 555,
+            "right_hand_x": 475,
+            "right_hand_y": 450
+        }
+    },
+    {
+        "input_end_frame": 1876,
+        "prediction_frame": 1906,
+        "prediction_time_seconds": 127.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1849,
+                "time_seconds": 123.2,
+                "left_hand_x": 517.4347400665283,
+                "left_hand_y": 375.01152886284723,
+                "right_hand_x": 432.00669288635254,
+                "right_hand_y": 426.15186903211804,
+                "left_hand_velocity": 0.6383740343153477,
+                "right_hand_velocity": 0.6553209386765957
+            },
+            {
+                "frame": 1852,
+                "time_seconds": 123.4,
+                "left_hand_x": 526.4486789703369,
+                "left_hand_y": 373.0704413519965,
+                "right_hand_x": 419.9751853942871,
+                "right_hand_y": 430.28106689453125,
+                "left_hand_velocity": 0.31972448341548443,
+                "right_hand_velocity": 0.4506621975451708
+            },
+            {
+                "frame": 1855,
+                "time_seconds": 123.6,
+                "left_hand_x": 529.3274402618408,
+                "left_hand_y": 379.5064290364583,
+                "right_hand_x": 421.2250232696533,
+                "right_hand_y": 425.8758544921875,
+                "left_hand_velocity": 0.44668037444353104,
+                "right_hand_velocity": 1.9489150494337082
+            },
+            {
+                "frame": 1858,
+                "time_seconds": 123.8,
+                "left_hand_x": 530.2506446838379,
+                "left_hand_y": 380.771721733941,
+                "right_hand_x": 422.67017364501953,
+                "right_hand_y": 425.9884304470486,
+                "left_hand_velocity": 1.979665644466877,
+                "right_hand_velocity": 7.200325280427933
+            },
+            {
+                "frame": 1861,
+                "time_seconds": 124.0,
+                "left_hand_x": 548.2225894927979,
+                "left_hand_y": 398.0962965223525,
+                "right_hand_x": 426.0366439819336,
+                "right_hand_y": 429.5961168077257,
+                "left_hand_velocity": 5.727478116750717,
+                "right_hand_velocity": 9.074842184782028
+            },
+            {
+                "frame": 1864,
+                "time_seconds": 124.2,
+                "left_hand_x": 556.4060688018799,
+                "left_hand_y": 494.9913448757596,
+                "right_hand_x": 409.79576110839844,
+                "right_hand_y": 442.788823445638,
+                "left_hand_velocity": 4.395858198404312,
+                "right_hand_velocity": 4.232245311141014
+            },
+            {
+                "frame": 1867,
+                "time_seconds": 124.4,
+                "left_hand_x": 535.8864307403564,
+                "left_hand_y": 528.3790164523654,
+                "right_hand_x": 404.2439937591553,
+                "right_hand_y": 450.8431752522786,
+                "left_hand_velocity": 3.3461712300777435,
+                "right_hand_velocity": 3.4915730357170105
+            },
+            {
+                "frame": 1870,
+                "time_seconds": 124.6,
+                "left_hand_x": 525.3540992736816,
+                "left_hand_y": 531.2025705973308,
+                "right_hand_x": 379.62732315063477,
+                "right_hand_y": 470.0330522325304,
+                "left_hand_velocity": 1.8633075058460236,
+                "right_hand_velocity": 2.7241142466664314
+            },
+            {
+                "frame": 1873,
+                "time_seconds": 124.8,
+                "left_hand_x": 522.5924491882324,
+                "left_hand_y": 528.2638549804688,
+                "right_hand_x": 373.4081268310547,
+                "right_hand_y": 473.55906168619794,
+                "left_hand_velocity": 2.4164121598005295,
+                "right_hand_velocity": 3.431634232401848
+            },
+            {
+                "frame": 1876,
+                "time_seconds": 125.0,
+                "left_hand_x": 516.1982536315918,
+                "left_hand_y": 525.2657572428385,
+                "right_hand_x": 350.0284671783447,
+                "right_hand_y": 500.8958604600694,
+                "left_hand_velocity": 1.7726758494973183,
+                "right_hand_velocity": 6.79505318403244
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Screwing action in progress; hands positioned at screw and stabilizing assembly.",
+            "target_object": "M8 screw",
+            "left_hand_x": 520,
+            "left_hand_y": 560,
+            "right_hand_x": 450,
+            "right_hand_y": 570
+        }
+    },
+    {
+        "input_end_frame": 1936,
+        "prediction_frame": 1966,
+        "prediction_time_seconds": 131.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1909,
+                "time_seconds": 127.2,
+                "left_hand_x": 791.1891937255859,
+                "left_hand_y": 549.1900126139323,
+                "right_hand_x": 404.4877052307129,
+                "right_hand_y": 476.66634453667535,
+                "left_hand_velocity": 1.3418128713965416,
+                "right_hand_velocity": 2.303464151918888
+            },
+            {
+                "frame": 1912,
+                "time_seconds": 127.4,
+                "left_hand_x": 795.229959487915,
+                "left_hand_y": 561.5451388888889,
+                "right_hand_x": 415.8788204193115,
+                "right_hand_y": 455.4872300889757,
+                "left_hand_velocity": 3.763926401734352,
+                "right_hand_velocity": 3.605145961046219
+            },
+            {
+                "frame": 1915,
+                "time_seconds": 127.6,
+                "left_hand_x": 778.092098236084,
+                "left_hand_y": 550.152587890625,
+                "right_hand_x": 419.7802543640137,
+                "right_hand_y": 418.7361823187934,
+                "left_hand_velocity": 7.075753808021545,
+                "right_hand_velocity": 4.794423654675484
+            },
+            {
+                "frame": 1918,
+                "time_seconds": 127.8,
+                "left_hand_x": 680.3966522216797,
+                "left_hand_y": 510.4871961805556,
+                "right_hand_x": 430.6041717529297,
+                "right_hand_y": 366.50246514214405,
+                "left_hand_velocity": 8.073043078184128,
+                "right_hand_velocity": 7.29016587138176
+            },
+            {
+                "frame": 1921,
+                "time_seconds": 128.0,
+                "left_hand_x": 590.1973724365234,
+                "left_hand_y": 508.3573235405816,
+                "right_hand_x": 442.58785247802734,
+                "right_hand_y": 368.7104966905382,
+                "left_hand_velocity": 2.7636565268039703,
+                "right_hand_velocity": 5.061766877770424
+            },
+            {
+                "frame": 1924,
+                "time_seconds": 128.2,
+                "left_hand_x": 562.9684448242188,
+                "left_hand_y": 501.71288384331604,
+                "right_hand_x": 457.61237144470215,
+                "right_hand_y": 385.59332953559027,
+                "left_hand_velocity": 0.6521948147565126,
+                "right_hand_velocity": 1.8956569954752922
+            },
+            {
+                "frame": 1927,
+                "time_seconds": 128.4,
+                "left_hand_x": 558.6642742156982,
+                "left_hand_y": 493.38243272569446,
+                "right_hand_x": 457.78517723083496,
+                "right_hand_y": 390.4640621609158,
+                "left_hand_velocity": 0.7530792616307735,
+                "right_hand_velocity": 0.7513660006225109
+            },
+            {
+                "frame": 1930,
+                "time_seconds": 128.6,
+                "left_hand_x": 555.6271553039551,
+                "left_hand_y": 492.39264594184027,
+                "right_hand_x": 454.4578552246094,
+                "right_hand_y": 389.6007961697049,
+                "left_hand_velocity": 0.6582894362509251,
+                "right_hand_velocity": 0.3319147974252701
+            },
+            {
+                "frame": 1933,
+                "time_seconds": 128.8,
+                "left_hand_x": 555.88698387146,
+                "left_hand_y": 492.09264119466144,
+                "right_hand_x": 454.95967864990234,
+                "right_hand_y": 388.73994615342883,
+                "left_hand_velocity": 0.3884768346324563,
+                "right_hand_velocity": 1.178578194230795
+            },
+            {
+                "frame": 1936,
+                "time_seconds": 129.0,
+                "left_hand_x": 558.0233573913574,
+                "left_hand_y": 491.5335761176216,
+                "right_hand_x": 446.0460662841797,
+                "right_hand_y": 369.7898864746094,
+                "left_hand_velocity": 0.8014108054339886,
+                "right_hand_velocity": 2.986256591975689
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Holding bracket, screwing screw.",
+            "target_object": "third M8 screw",
+            "left_hand_x": 557,
+            "left_hand_y": 492,
+            "right_hand_x": 453,
+            "right_hand_y": 385
+        }
+    },
+    {
+        "input_end_frame": 1996,
+        "prediction_frame": 2026,
+        "prediction_time_seconds": 135.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 1969,
+                "time_seconds": 131.2,
+                "left_hand_x": 558.6893081665039,
+                "left_hand_y": 488.17041185167096,
+                "right_hand_x": 477.53257751464844,
+                "right_hand_y": 476.976564195421,
+                "left_hand_velocity": 0.13893627328798175,
+                "right_hand_velocity": 0.47432268038392067
+            },
+            {
+                "frame": 1972,
+                "time_seconds": 131.4,
+                "left_hand_x": 560.8658790588379,
+                "left_hand_y": 490.23878309461804,
+                "right_hand_x": 479.24256324768066,
+                "right_hand_y": 476.11863878038196,
+                "left_hand_velocity": 1.399625837802887,
+                "right_hand_velocity": 1.1115239933133125
+            },
+            {
+                "frame": 1975,
+                "time_seconds": 131.6,
+                "left_hand_x": 561.3163948059082,
+                "left_hand_y": 495.3717973497179,
+                "right_hand_x": 478.1534194946289,
+                "right_hand_y": 473.80510965983075,
+                "left_hand_velocity": 0.3823886392638087,
+                "right_hand_velocity": 0.42981691658496857
+            },
+            {
+                "frame": 1978,
+                "time_seconds": 131.8,
+                "left_hand_x": 560.305643081665,
+                "left_hand_y": 493.2105594211155,
+                "right_hand_x": 478.20401191711426,
+                "right_hand_y": 476.8704308403863,
+                "left_hand_velocity": 0.37670633755624294,
+                "right_hand_velocity": 0.338019453920424
+            },
+            {
+                "frame": 1981,
+                "time_seconds": 132.0,
+                "left_hand_x": 559.2894077301025,
+                "left_hand_y": 493.60389709472656,
+                "right_hand_x": 475.94943046569824,
+                "right_hand_y": 475.2432505289714,
+                "left_hand_velocity": 0.30704671517014503,
+                "right_hand_velocity": 0.25310644414275885
+            },
+            {
+                "frame": 1984,
+                "time_seconds": 132.2,
+                "left_hand_x": 560.4564189910889,
+                "left_hand_y": 492.21839904785156,
+                "right_hand_x": 477.5141716003418,
+                "right_hand_y": 478.48955790201825,
+                "left_hand_velocity": 0.09794014040380716,
+                "right_hand_velocity": 0.12084880145266652
+            },
+            {
+                "frame": 1987,
+                "time_seconds": 132.4,
+                "left_hand_x": 560.3034973144531,
+                "left_hand_y": 495.8542717827691,
+                "right_hand_x": 476.9479274749756,
+                "right_hand_y": 475.72725084092883,
+                "left_hand_velocity": 0.46037016436457634,
+                "right_hand_velocity": 0.12434766395017505
+            },
+            {
+                "frame": 1990,
+                "time_seconds": 132.6,
+                "left_hand_x": 560.5792999267578,
+                "left_hand_y": 490.31350877549914,
+                "right_hand_x": 477.21691131591797,
+                "right_hand_y": 475.7241566975912,
+                "left_hand_velocity": 0.11809294810518622,
+                "right_hand_velocity": 0.5946497898548841
+            },
+            {
+                "frame": 1993,
+                "time_seconds": 132.8,
+                "left_hand_x": 559.4614028930664,
+                "left_hand_y": 493.90496148003473,
+                "right_hand_x": 476.5871047973633,
+                "right_hand_y": 476.5246073404948,
+                "left_hand_velocity": 0.7405724376440048,
+                "right_hand_velocity": 1.9072098657488823
+            },
+            {
+                "frame": 1996,
+                "time_seconds": 133.0,
+                "left_hand_x": 570.0242042541504,
+                "left_hand_y": 495.77318827311194,
+                "right_hand_x": 476.5390396118164,
+                "right_hand_y": 473.1409284803603,
+                "left_hand_velocity": 4.14324551820755,
+                "right_hand_velocity": 4.487966746091843
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands completing screw, disengaging slightly near assembly.",
+            "target_object": "cylinder bracket",
+            "left_hand_x": 565,
+            "left_hand_y": 485,
+            "right_hand_x": 480,
+            "right_hand_y": 465
+        }
+    },
+    {
+        "input_end_frame": 2056,
+        "prediction_frame": 2086,
+        "prediction_time_seconds": 139.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 2029,
+                "time_seconds": 135.2,
+                "left_hand_x": 574.0005016326904,
+                "left_hand_y": 374.17305840386285,
+                "right_hand_x": 454.42705154418945,
+                "right_hand_y": 357.8275892469618,
+                "left_hand_velocity": 0.1738410908728838,
+                "right_hand_velocity": 0.4148096311837435
+            },
+            {
+                "frame": 2032,
+                "time_seconds": 135.4,
+                "left_hand_x": 572.6228713989258,
+                "left_hand_y": 367.4616919623481,
+                "right_hand_x": 453.9921760559082,
+                "right_hand_y": 358.7014516194661,
+                "left_hand_velocity": 0.3089726669713855,
+                "right_hand_velocity": 0.44005410745739937
+            },
+            {
+                "frame": 2035,
+                "time_seconds": 135.6,
+                "left_hand_x": 571.3194847106934,
+                "left_hand_y": 364.2131805419922,
+                "right_hand_x": 449.82008934020996,
+                "right_hand_y": 362.3657650417752,
+                "left_hand_velocity": 0.6790479645133018,
+                "right_hand_velocity": 0.31766556203365326
+            },
+            {
+                "frame": 2038,
+                "time_seconds": 135.8,
+                "left_hand_x": 570.7642555236816,
+                "left_hand_y": 375.61967637803815,
+                "right_hand_x": 449.5826721191406,
+                "right_hand_y": 370.12566460503473,
+                "left_hand_velocity": 0.64241630025208,
+                "right_hand_velocity": 0.5739711690694094
+            },
+            {
+                "frame": 2041,
+                "time_seconds": 136.0,
+                "left_hand_x": 564.9792671203613,
+                "left_hand_y": 363.177490234375,
+                "right_hand_x": 430.15403747558594,
+                "right_hand_y": 347.1698760986328,
+                "left_hand_velocity": 1.4474637806415558,
+                "right_hand_velocity": 1.387317944318056
+            },
+            {
+                "frame": 2044,
+                "time_seconds": 136.2,
+                "left_hand_x": 565.5803203582764,
+                "left_hand_y": 388.95865546332465,
+                "right_hand_x": 446.3820457458496,
+                "right_hand_y": 322.1844779120551,
+                "left_hand_velocity": 1.8893513828516006,
+                "right_hand_velocity": 0.9306312538683414
+            },
+            {
+                "frame": 2047,
+                "time_seconds": 136.4,
+                "left_hand_x": 564.054536819458,
+                "left_hand_y": 437.5656975640191,
+                "right_hand_x": 439.2478942871094,
+                "right_hand_y": 328.8420995076498,
+                "left_hand_velocity": 1.3453909195959568,
+                "right_hand_velocity": 1.4899343252182007
+            },
+            {
+                "frame": 2050,
+                "time_seconds": 136.6,
+                "left_hand_x": 554.5780181884766,
+                "left_hand_y": 448.63883124457465,
+                "right_hand_x": 433.06188583374023,
+                "right_hand_y": 331.55172136094836,
+                "left_hand_velocity": 0.9768116287887096,
+                "right_hand_velocity": 1.0862313210964203
+            },
+            {
+                "frame": 2053,
+                "time_seconds": 136.8,
+                "left_hand_x": 552.5105476379395,
+                "left_hand_y": 448.0900234646267,
+                "right_hand_x": 429.3749809265137,
+                "right_hand_y": 333.0524232652452,
+                "left_hand_velocity": 0.4159878473728895,
+                "right_hand_velocity": 0.3929115831851959
+            },
+            {
+                "frame": 2056,
+                "time_seconds": 137.0,
+                "left_hand_x": 549.8288154602051,
+                "left_hand_y": 444.35450236002606,
+                "right_hand_x": 427.618408203125,
+                "right_hand_y": 335.16186608208545,
+                "left_hand_velocity": 0.20626680925488472,
+                "right_hand_velocity": 0.2387572079896927
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Hands remain engaged with screw for tightening.",
+            "target_object": "M8 screw",
+            "left_hand_x": 550,
+            "left_hand_y": 445,
+            "right_hand_x": 428,
+            "right_hand_y": 335
+        }
+    },
+    {
+        "input_end_frame": 2116,
+        "prediction_frame": 2146,
+        "prediction_time_seconds": 143.0,
+        "input_frames": 10,
+        "hand_positions_input": [
+            {
+                "frame": 2089,
+                "time_seconds": 139.2,
+                "left_hand_x": 552.0474433898926,
+                "left_hand_y": 451.5395270453559,
+                "right_hand_x": 444.97265815734863,
+                "right_hand_y": 331.28195868598095,
+                "left_hand_velocity": 0.3126404481008649,
+                "right_hand_velocity": 0.4530393984168768
+            },
+            {
+                "frame": 2092,
+                "time_seconds": 139.4,
+                "left_hand_x": 556.0628890991211,
+                "left_hand_y": 456.65380689832904,
+                "right_hand_x": 444.2770004272461,
+                "right_hand_y": 324.2387983534071,
+                "left_hand_velocity": 0.2881604013964534,
+                "right_hand_velocity": 0.24360152892768383
+            },
+            {
+                "frame": 2095,
+                "time_seconds": 139.6,
+                "left_hand_x": 556.7132949829102,
+                "left_hand_y": 459.6845838758681,
+                "right_hand_x": 442.8570747375488,
+                "right_hand_y": 331.180657280816,
+                "left_hand_velocity": 0.22983704693615437,
+                "right_hand_velocity": 0.2524386625736952
+            },
+            {
+                "frame": 2098,
+                "time_seconds": 139.8,
+                "left_hand_x": 551.6257286071777,
+                "left_hand_y": 449.14220174153644,
+                "right_hand_x": 445.09668350219727,
+                "right_hand_y": 329.7455469767253,
+                "left_hand_velocity": 0.3374663880094886,
+                "right_hand_velocity": 0.33344326075166464
+            },
+            {
+                "frame": 2101,
+                "time_seconds": 140.0,
+                "left_hand_x": 553.6744594573975,
+                "left_hand_y": 453.97296481662323,
+                "right_hand_x": 443.90411376953125,
+                "right_hand_y": 325.0504599677192,
+                "left_hand_velocity": 0.7967469282448292,
+                "right_hand_velocity": 0.5625375080853701
+            },
+            {
+                "frame": 2104,
+                "time_seconds": 140.2,
+                "left_hand_x": 548.2715129852295,
+                "left_hand_y": 449.1431766086155,
+                "right_hand_x": 430.2070140838623,
+                "right_hand_y": 331.21808369954425,
+                "left_hand_velocity": 1.8812388181686401,
+                "right_hand_velocity": 1.1677478440105915
+            },
+            {
+                "frame": 2107,
+                "time_seconds": 140.4,
+                "left_hand_x": 555.8342933654785,
+                "left_hand_y": 405.2045186360677,
+                "right_hand_x": 414.7278308868408,
+                "right_hand_y": 341.45446353488495,
+                "left_hand_velocity": 3.679731860756874,
+                "right_hand_velocity": 1.8661437556147575
+            },
+            {
+                "frame": 2110,
+                "time_seconds": 140.6,
+                "left_hand_x": 599.4812965393066,
+                "left_hand_y": 488.6755625406901,
+                "right_hand_x": 388.31770420074463,
+                "right_hand_y": 383.51131015353735,
+                "left_hand_velocity": 5.546681582927704,
+                "right_hand_velocity": 4.831013083457947
+            },
+            {
+                "frame": 2113,
+                "time_seconds": 140.8,
+                "left_hand_x": 599.1916179656982,
+                "left_hand_y": 569.746822781033,
+                "right_hand_x": 367.9072380065918,
+                "right_hand_y": 464.2999437120225,
+                "left_hand_velocity": 3.1663332134485245,
+                "right_hand_velocity": 3.865654766559601
+            },
+            {
+                "frame": 2116,
+                "time_seconds": 141.0,
+                "left_hand_x": 588.8083457946777,
+                "left_hand_y": 592.700703938802,
+                "right_hand_x": 352.3979187011719,
+                "right_hand_y": 537.0478312174479,
+                "left_hand_velocity": 1.8454065546393394,
+                "right_hand_velocity": 2.990715391933918
+            }
+        ],
+        "predicted_positions": {
+            "reasoning_summary": "Cylinder placed, hands positioned for screwing.",
+            "target_object": "M8 screw",
+            "left_hand_x": 570,
+            "left_hand_y": 670,
+            "right_hand_x": 580,
+            "right_hand_y": 680
+        }
+    }
+]

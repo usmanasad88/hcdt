@@ -13,10 +13,10 @@ from openai import OpenAI
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.imgutils import image_to_base64
-from utils.textutils import extract_json_from_response
+from utils.textutils import extract_json_from_response,get_action_description_for_frame
 from utils.experiment_logger import ExperimentLogger
+from utils.motionutils import get_hand_xy_positions, get_end_effector_velocities
 
-# Add this import at the top with your other imports
 from openai import OpenAI
 
 def generate_openAI(cfg: DictConfig,
@@ -166,7 +166,7 @@ def generate(cfg: DictConfig,
 
     encoded_test_images = []
     for img_path in second_image_paths:
-        encoded_img = image_to_base64(img_path, target_largest_dimension=None)
+        encoded_img = image_to_base64(img_path, target_largest_dimension=640)
         encoded_test_images.append(encoded_img) # Will store None if encoding failed
     
     client = genai.Client(
@@ -192,30 +192,40 @@ def generate(cfg: DictConfig,
                 data=json_content.encode('utf-8')  # Direct encoding, no base64
             ))
 
-    # Add example images
-    if cfg.use_file_upload:
-        # Upload files first, then add to parts
-        for img_path in first_image_paths:
-            uploaded_file = client.files.upload(file=img_path)
-            first_user_parts.append(types.Part.from_uri(file_uri=uploaded_file.uri, mime_type="image/png"))  
+    # Add example images (for ICL experiments)
+    if first_image_paths and cfg.exp.type == "ICL":
+        if cfg.use_file_upload:
+            for img_path in first_image_paths:
+                uploaded_file = client.files.upload(file=img_path)
+                first_user_parts.append(types.Part.from_uri(file_uri=uploaded_file.uri, mime_type="image/png"))  
+        else:
+            encoded_example_images = []
+            for img_path in first_image_paths:
+                encoded_img = image_to_base64(img_path, target_largest_dimension=640)
+                encoded_example_images.append(encoded_img)
 
-    else:
-        encoded_example_images = []
-        for img_path in first_image_paths:
-            encoded_img = image_to_base64(img_path, target_largest_dimension=None)
-            encoded_example_images.append(encoded_img) # Will store None if encoding failed
-
-        if encoded_example_images:
-            for encoded_image in encoded_example_images:
-                if encoded_image:
-                    image_bytes = base64.b64decode(encoded_image)
-                    first_user_parts.append(types.Part.from_bytes(
-                        mime_type="image/png",
-                        data=image_bytes
-                    ))
+            if encoded_example_images:
+                for encoded_image in encoded_example_images:
+                    if encoded_image:
+                        image_bytes = base64.b64decode(encoded_image)
+                        first_user_parts.append(types.Part.from_bytes(
+                            mime_type="image/png",
+                            data=image_bytes
+                        ))
+    
+    # Add test images for Phase 2 experiments (or any non-ICL experiment)
+    if encoded_test_images and cfg.exp.type != "ICL":
+        for encoded_image in encoded_test_images:
+            if encoded_image:
+                image_bytes = base64.b64decode(encoded_image)
+                first_user_parts.append(types.Part.from_bytes(
+                    mime_type="image/png",
+                    data=image_bytes
+                ))
         
     contents.append(types.Content(role="user", parts=first_user_parts))
-
+    
+    # ICL-specific conversation flow
     # Turn 2: Model acknowledges the examples
     if cfg.exp.type == "ICL":
         model_reponse="Okay, I have analyzed the example video and supporting documents. I am ready for your questions about the test video."
@@ -235,7 +245,7 @@ def generate(cfg: DictConfig,
 
     generate_content_config = types.GenerateContentConfig(
         thinking_config = types.ThinkingConfig(
-            thinking_budget=1,),
+            thinking_budget=1,), #Is this a hyperparameter?
         response_mime_type="text/plain",
         temperature=0.5,  
         top_p=0.95,        
@@ -319,6 +329,179 @@ def get_ground_truth(frame_number: int, gt_filename: str) -> Optional[Dict]:
     # print(f"Warning: Frame {frame_number} not found in ground truth file: {gt_filename}")
     return None
 
+def runPhase2(cfg: DictConfig):
+    """
+    Runs the second phase of the experiment, which inputting 10 images 0.2 seconds apart with human pose overlay
+    and left and right hand pixel locations, and asks the gemini model to predict left and right hand pixel locations
+    two seconds after the last frame of the first phase. 
+    and generating responses using the configured model.
+
+    Args:
+        cfg (DictConfig): The configuration object containing experiment settings.
+    """
+
+    # Initialize experiment logger
+    output_dir = os.getcwd()
+    output_dir = os.path.join(output_dir, 'logs')
+    logger = ExperimentLogger(output_dir=output_dir)
+
+     # Start experiment with notes 
+    experiment_notes = f"Phase 2 experiment: Hand position prediction using {cfg.model} on {cfg.case_study} dataset"
+    experiment_id = logger.start_experiment(cfg, experiment_notes)
+
+    # Build prompt
+    prompt_template = cfg.prompts.phase_two
+
+    # Get test image files
+    test_frame_files = sorted([f for f in os.listdir(cfg.exp.test_vitpose_frames) if f.endswith('.png')])
+    
+    # Process frames with 0.2 second intervals (every 3 frames at 15fps)
+    frame_interval = int(0.2 * cfg.exp.fps)  # 0.2 seconds * 15 fps = 3 frames
+    num_input_frames = 10
+    
+    all_responses_data = []
+    script_dir = os.path.dirname(__file__)
+    dag_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'dag.json')
+
+    try:
+        # Define the frame numbers to process: 31, 46, 61, etc.
+        frame_numbers = [76 + i * 60 for i in range(35)]
+        
+        for frame_num in frame_numbers:
+            print(f"\n🔄 Processing frame {frame_num}...")
+            input_frames = []
+            task_description_string=get_action_description_for_frame(frame_num, cfg.exp.test_gt_filename, dag_file_path)
+            # Print task description for debugging
+            print(f"Task description for frame {frame_num}: {task_description_string}")
+            
+            prompt_text= prompt_template.format(task_description_string=task_description_string)
+            if cfg.exp.attach_drawing:
+                input_frames = [cfg.exp.drawing]        
+                prompt_text += f"\n\n{cfg.exp.drawing_prompt}\n\n"
+            # Get 10 frames at 0.2 second intervals
+            
+            hand_positions_data = []
+            end_frame_idx = frame_num - 1
+
+            for i in range(num_input_frames):
+                frame_idx = end_frame_idx - (num_input_frames - 1 - i) * frame_interval
+
+                if frame_idx >= 0 and frame_idx < len(test_frame_files):
+                    input_frames.append(os.path.join(cfg.exp.test_vitpose_frames, test_frame_files[frame_idx]))
+                    
+                    # Get hand positions for this frame
+                    try:
+                        left_hand_x, left_hand_y, right_hand_x, right_hand_y = get_hand_xy_positions(
+                            cfg.exp.test_vitpose, frame_idx
+                        )
+                        
+                        # Get hand velocities for this frame
+                        (_, _, _, _, _, left_hand_vel, right_hand_vel, _) = get_end_effector_velocities(
+                            cfg.exp.test_humanml3d, frame_idx
+                        )
+                        # Scale the velocities by a factor of 100
+                        left_hand_vel *= 100
+                        right_hand_vel *= 100
+                        
+                        hand_positions_data.append({
+                            'frame': frame_idx+1,
+                            'time_seconds': frame_idx / cfg.exp.fps,
+                            'left_hand_x': left_hand_x,
+                            'left_hand_y': left_hand_y,
+                            'right_hand_x': right_hand_x,
+                            'right_hand_y': right_hand_y,
+                            'left_hand_velocity': left_hand_vel,
+                            'right_hand_velocity': right_hand_vel
+                        })
+                        
+                    except Exception as e:
+                        print(f"Warning: Could not get hand positions/velocities for frame {frame_idx}: {e}")
+                        hand_positions_data.append({
+                            'frame': frame_idx+1,
+                            'time_seconds': frame_idx / cfg.exp.fps,
+                            'left_hand_x': None,
+                            'left_hand_y': None,
+                            'right_hand_x': None,
+                            'right_hand_y': None,
+                            'left_hand_velocity': None,
+                            'right_hand_velocity': None
+                        })
+            
+            # Create hand positions text to append to prompt
+            hand_positions_text = "\n\nHand Position and Velocity Data:\n"
+            hand_positions_text += "Frame | Time(s) | Left Hand (x,y) | Right Hand (x,y) | Left Vel | Right Vel\n"
+            hand_positions_text += "------|---------|-----------------|------------------|----------|----------\n"
+            
+            for pos_data in hand_positions_data:
+                if pos_data['left_hand_x'] is not None:
+                    hand_positions_text += f"{pos_data['frame']:5d} | {pos_data['time_seconds']:7.2f} | ({pos_data['left_hand_x']:7.1f}, {pos_data['left_hand_y']:7.1f}) | ({pos_data['right_hand_x']:7.1f}, {pos_data['right_hand_y']:7.1f}) | {pos_data['left_hand_velocity']:8.3f} | {pos_data['right_hand_velocity']:8.3f}\n"
+                else:
+                    hand_positions_text += f"{pos_data['frame']:5d} | {pos_data['time_seconds']:7.2f} | (N/A, N/A) | (N/A, N/A) | N/A | N/A\n"
+            
+            # Append hand position data to prompt
+            enhanced_prompt = prompt_text + hand_positions_text
+            
+            # Add prediction request
+            last_frame_time = end_frame_idx / cfg.exp.fps
+            prediction_time = last_frame_time + 2.0  # 2 seconds after last frame
+            
+            enhanced_prompt += f"\n\nBased on the above hand position and velocity data from the 10 input frames, "
+            enhanced_prompt += f"predict the left and right hand pixel positions at {prediction_time:.1f} seconds (frame {frame_num + 30}). "
+            enhanced_prompt += "The velocities are provided as L2 norms (magnitude) of the 3D velocity vectors. "
+            enhanced_prompt += "Use both the position trends and velocity information to make accurate predictions. "
+            enhanced_prompt += "Provide your answer in JSON format with keys: 'reasoning_summary', 'target_object', 'left_hand_x', 'left_hand_y', 'right_hand_x', 'right_hand_y'."
+            
+            # Generate response using the model
+            if cfg.use_openai:
+                response = generate_openAI(
+                    cfg, 
+                    enhanced_prompt, 
+                    second_image_paths=input_frames, 
+                    first_image_paths=[], 
+                    next_query_prompt="", 
+                    logger=logger, 
+                    frame_number=frame_num
+                )
+            else:
+                response = generate(
+                    cfg, 
+                    enhanced_prompt, 
+                    second_image_paths=input_frames, 
+                    first_image_paths=[], 
+                    next_query_prompt="", 
+                    logger=logger, 
+                    frame_number=frame_num
+                )
+            
+            # Extract and store response
+            response_obj = json.loads(extract_json_from_response(response))
+            all_responses_data.append({
+                "input_end_frame": frame_num,
+                "prediction_frame": frame_num + 30,
+                "prediction_time_seconds": prediction_time,
+                "input_frames": num_input_frames,
+                "hand_positions_input": hand_positions_data,
+                "predicted_positions": response_obj
+            })
+            
+            print(f"✅ Completed prediction for frame {frame_num} -> {frame_num + 30}")
+        
+        # Save results
+        result_store_path = os.path.join(
+            os.path.dirname(__file__), '..', 'data', cfg.case_study, 'phase2_result.json'
+        )
+        os.makedirs(os.path.dirname(result_store_path), exist_ok=True)
+        with open(result_store_path, 'w') as f:
+            json.dump(all_responses_data, f, indent=4)
+            
+        print(f"✅ Phase 2 experiment completed for all frames. Results saved to {result_store_path}")
+        
+    except Exception as e:
+        print(f"❌ Phase 2 experiment failed: {e}")
+        raise
+    finally:
+        # Always end the experiment to save logs
+        logger.end_experiment()
 
 
 def runICL_HI(cfg: DictConfig):
@@ -457,6 +640,8 @@ def main(cfg: DictConfig):
     # print(OmegaConf.to_yaml(cfg))  # Print the entire config for debugging
     if cfg.exp.type=="ICL":
         runICL_HI(cfg)
+    elif cfg.exp.type == "phase2":
+        runPhase2(cfg)
     # try:
     #     json_file_path = "/home/mani/Repos/hcdt/data/stack_dag.json"
     #     with open(json_file_path, 'r') as f:

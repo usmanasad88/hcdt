@@ -1,15 +1,15 @@
 defaults:
-  - exp: Stack
+  - exp: HAViD
   - _self_
 
-case_study: Stack
+case_study: HAViD
 use_ground_truth: false
 total_frames_to_process: all
 use_file_upload: false
 use_openai: false
 start_frame: 1
 end_frame: 0
-model: gemini-2.5-flash
+model: gemini-2.5-flash #gemini-2.0-flash, gemini-2.5-flash-lite-preview-06-17 , gemini-2.5-flash gemma-3-27b-it gemma-3-27b-it
 
 prompts:
   version1: |
@@ -82,8 +82,24 @@ prompts:
 
     
     ```
+  #  Each input image will be 1280×720 pixels in size. 
+
+  phase_two: |
+    You are an AI assistant analyzing video frames of a person performing a task.
+    Currently, the person is performing this subtask: {task_description_string}
+   
+    You will be provided with a sequence of 10 images, each captured 0.2 seconds apart. 
+    For each image, you will also receive an overlay indicating the human pose and the precise pixel locations of both the left and right hands. 
+    The pixel locations (x, y coordinates) will be normalized to a range of 0 to 1000.
+    The velocities of the left and right hands in cm/s will also be provided.
+    Your task is to analyze this sequence of images and the associated pose and hand data. 
+    Based on this input, predict the exact pixel locations for both the left hand and the right hand two seconds after the timestamp of the very last image in the provided sequence.
+    Do not simply extrapolate the data, estimate where the hands will be at that time based on the task being performed.
+    Provide your prediction as a structured output, clearly indicating the predicted (x, y) coordinates for each hand, with values normalized from 0 to 1000, as well as the name of the target object being manipulated in the task. 
+    Also provide a very brief reasoning summary (no more than a few words) of your prediction. 
+
 exp:
-  prompt_version: "version3"
+  prompt_version: "phase_two" # version1, version2, version3, getgroundtruth, phase_two
 
 second_prompt: 
   v1: |

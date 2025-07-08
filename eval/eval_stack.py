@@ -122,12 +122,31 @@ def calculate_set_metrics(prediction: List[str], ground_truth: List[str]) -> Dic
 def evaluate_frames(gt_data: List[Dict[str, Any]], pred_data: List[Dict[str, Any]]) -> Dict:
     """
     Compares ground truth and prediction data frame by frame and computes metrics.
+    Handles different data structures for Stack dataset.
 
     Returns:
         A dictionary containing per-frame metrics and aggregate metrics.
     """
-    gt_states = {item['frame']: item['state'] for item in gt_data}
-    pred_states = {item['frame']: item['state'] for item in pred_data}
+    # Handle different data structures
+    # GT data: direct state data with frame_number field
+    # Pred data: nested structure with frame and state fields
+    gt_states = {}
+    pred_states = {}
+    
+    # Process ground truth data (Stack format)
+    for item in gt_data:
+        if 'frame_number' in item:
+            frame_num = item['frame_number']
+            # The entire item is the state for Stack dataset
+            gt_states[frame_num] = item
+        elif 'frame' in item and 'state' in item:
+            # HAViD format fallback
+            gt_states[item['frame']] = item['state']
+    
+    # Process prediction data
+    for item in pred_data:
+        if 'frame' in item and 'state' in item:
+            pred_states[item['frame']] = item['state']
 
     per_frame_metrics = []
     
@@ -146,10 +165,39 @@ def evaluate_frames(gt_data: List[Dict[str, Any]], pred_data: List[Dict[str, Any
         frame_metrics['holding_acc'] = 1.0 if pred_state['operator_holding'] == gt_state['operator_holding'] else 0.0
         frame_metrics['gaze_acc'] = 1.0 if pred_state['gaze_target'] == gt_state['gaze_target'] else 0.0
         
-        # 2. Metrics and counts for list/set fields
-        frame_metrics['completed_metrics'] = calculate_set_metrics(pred_state['steps_completed'], gt_state['steps_completed'])
-        frame_metrics['inprogress_metrics'] = calculate_set_metrics(pred_state['steps_in_progress'], gt_state['steps_in_progress'])
-        frame_metrics['available_metrics'] = calculate_set_metrics(pred_state['steps_available'], gt_state['steps_available'])
+        # 2. Accuracy for boolean fields (Stack-specific)
+        if 'toolbox_placed_on_table' in gt_state and 'toolbox_placed_on_table' in pred_state:
+            frame_metrics['toolbox_acc'] = 1.0 if pred_state['toolbox_placed_on_table'] == gt_state['toolbox_placed_on_table'] else 0.0
+        
+        # 3. Accuracy for numeric fields (Stack-specific)
+        if 'num_chairs_stacked' in gt_state and 'num_chairs_stacked' in pred_state:
+            frame_metrics['num_chairs_acc'] = 1.0 if pred_state['num_chairs_stacked'] == gt_state['num_chairs_stacked'] else 0.0
+        
+        # 4. Metrics for list fields (handle both string and list formats)
+        def safe_get_list(state, key):
+            """Convert steps_in_progress to list if it's a string"""
+            value = state.get(key, [])
+            if isinstance(value, str):
+                return [value] if value != "idle" else []
+            return value if isinstance(value, list) else []
+        
+        gt_completed = safe_get_list(gt_state, 'steps_completed')
+        pred_completed = safe_get_list(pred_state, 'steps_completed')
+        gt_inprogress = safe_get_list(gt_state, 'steps_in_progress')
+        pred_inprogress = safe_get_list(pred_state, 'steps_in_progress')
+        gt_available = safe_get_list(gt_state, 'steps_available')
+        pred_available = safe_get_list(pred_state, 'steps_available')
+        
+        frame_metrics['completed_metrics'] = calculate_set_metrics(pred_completed, gt_completed)
+        frame_metrics['inprogress_metrics'] = calculate_set_metrics(pred_inprogress, gt_inprogress)
+        frame_metrics['available_metrics'] = calculate_set_metrics(pred_available, gt_available)
+        
+        # 5. List comparison metrics (Stack-specific)
+        if 'list_of_stacked_chairs' in gt_state and 'list_of_stacked_chairs' in pred_state:
+            frame_metrics['stacked_chairs_metrics'] = calculate_set_metrics(
+                pred_state['list_of_stacked_chairs'], 
+                gt_state['list_of_stacked_chairs']
+            )
         
         per_frame_metrics.append(frame_metrics)
 
@@ -166,6 +214,17 @@ def evaluate_frames(gt_data: List[Dict[str, Any]], pred_data: List[Dict[str, Any
         "mean_inprogress_f1": sum(m['inprogress_metrics']['f1'] for m in per_frame_metrics) / num_frames,
         "mean_available_f1": sum(m['available_metrics']['f1'] for m in per_frame_metrics) / num_frames,
     }
+    
+    # Add Stack-specific metrics if available
+    if any('toolbox_acc' in m for m in per_frame_metrics):
+        aggregate_metrics["mean_toolbox_accuracy"] = sum(m.get('toolbox_acc', 0) for m in per_frame_metrics) / num_frames
+    
+    if any('num_chairs_acc' in m for m in per_frame_metrics):
+        aggregate_metrics["mean_num_chairs_accuracy"] = sum(m.get('num_chairs_acc', 0) for m in per_frame_metrics) / num_frames
+    
+    if any('stacked_chairs_metrics' in m for m in per_frame_metrics):
+        aggregate_metrics["mean_stacked_chairs_f1"] = sum(m.get('stacked_chairs_metrics', {}).get('f1', 0) for m in per_frame_metrics) / num_frames
+    
     aggregate_metrics['overall_score'] = sum(aggregate_metrics.values()) / len(aggregate_metrics)
     
     # 4. Aggregate counts
@@ -187,6 +246,14 @@ def evaluate_frames(gt_data: List[Dict[str, Any]], pred_data: List[Dict[str, Any
         },
     }
     
+    # Add Stack-specific counts if available
+    if any('stacked_chairs_metrics' in m for m in per_frame_metrics):
+        aggregate_counts["stacked_chairs"] = {
+            "tp": sum(m.get('stacked_chairs_metrics', {}).get('tp', 0) for m in per_frame_metrics),
+            "fp": sum(m.get('stacked_chairs_metrics', {}).get('fp', 0) for m in per_frame_metrics),
+            "fn": sum(m.get('stacked_chairs_metrics', {}).get('fn', 0) for m in per_frame_metrics),
+        }
+    
     return {
         "aggregate_metrics": aggregate_metrics,
         "aggregate_counts": aggregate_counts,
@@ -200,6 +267,7 @@ def analyze_step_completion_timing(
     """
     Analyzes and compares the frame numbers at which steps are first marked as completed
     in the ground truth versus the prediction data.
+    Updated to handle Stack dataset structure.
 
     Args:
         gt_data: List of ground truth frame states.
@@ -214,45 +282,55 @@ def analyze_step_completion_timing(
     pred_first_completion: Dict[str, int] = {}
     all_steps: Set[str] = set()
 
+    def safe_get_list(state, key):
+        """Convert steps to list if it's a string"""
+        value = state.get(key, [])
+        if isinstance(value, str):
+            return [value] if value != "idle" else []
+        return value if isinstance(value, list) else []
+
     # Process Ground Truth data
-    # Sort by frame to ensure we get the *first* completion
-    sorted_gt_data = sorted(gt_data, key=lambda x: x.get('frame', float('inf')))
-    for item in sorted_gt_data:
-        frame_num = item.get('frame')
-        state = item.get('state')
-        if frame_num is None or state is None:
+    for item in gt_data:
+        # Handle Stack format (frame_number) vs HAViD format (frame + state)
+        if 'frame_number' in item:
+            frame_num = item['frame_number']
+            state = item  # The entire item is the state for Stack dataset
+        elif 'frame' in item and 'state' in item:
+            frame_num = item['frame']
+            state = item['state']
+        else:
             continue
         
-        completed_steps = state.get('steps_completed', [])
+        completed_steps = safe_get_list(state, 'steps_completed')
         for step in completed_steps:
             all_steps.add(step)
             if step not in gt_first_completion:
                 gt_first_completion[step] = frame_num
+        
         # Also collect steps from in_progress and available to have a full list of steps
-        for step in state.get('steps_in_progress', []):
+        for step in safe_get_list(state, 'steps_in_progress'):
             all_steps.add(step)
-        for step in state.get('steps_available', []):
+        for step in safe_get_list(state, 'steps_available'):
             all_steps.add(step)
-
 
     # Process Prediction data
-    # Sort by frame to ensure we get the *first* completion
-    sorted_pred_data = sorted(pred_data, key=lambda x: x.get('frame', float('inf')))
-    for item in sorted_pred_data:
-        frame_num = item.get('frame')
-        state = item.get('state')
-        if frame_num is None or state is None:
+    for item in pred_data:
+        if 'frame' in item and 'state' in item:
+            frame_num = item['frame']
+            state = item['state']
+        else:
             continue
 
-        completed_steps = state.get('steps_completed', [])
+        completed_steps = safe_get_list(state, 'steps_completed')
         for step in completed_steps:
-            all_steps.add(step) # Ensure all steps from pred are also considered
+            all_steps.add(step)
             if step not in pred_first_completion:
                 pred_first_completion[step] = frame_num
+        
         # Also collect steps from in_progress and available from predictions
-        for step in state.get('steps_in_progress', []):
+        for step in safe_get_list(state, 'steps_in_progress'):
             all_steps.add(step)
-        for step in state.get('steps_available', []):
+        for step in safe_get_list(state, 'steps_available'):
             all_steps.add(step)
 
     # Compile results
@@ -297,7 +375,14 @@ def main():
         print("--- PER-FRAME METRICS & COUNTS ---")
         for fm in results["per_frame"]:
             print(f"\nFrame {fm['frame']}:")
-            print(f"  - Accuracy: Holding={fm['holding_acc']:.2f}, Gaze={fm['gaze_acc']:.2f}")
+            print(f"  - Accuracy: Holding={fm['holding_acc']:.2f}, Gaze={fm['gaze_acc']:.2f}", end="")
+            
+            # Add Stack-specific accuracies if available
+            if 'toolbox_acc' in fm:
+                print(f", Toolbox={fm['toolbox_acc']:.2f}", end="")
+            if 'num_chairs_acc' in fm:
+                print(f", NumChairs={fm['num_chairs_acc']:.2f}", end="")
+            print()  # New line
             
             cm = fm['completed_metrics']
             im = fm['inprogress_metrics']
@@ -306,6 +391,11 @@ def main():
             print(f"  - Completed:   F1={cm['f1']:.2f} (TP:{cm['tp']}, FP:{cm['fp']}, FN:{cm['fn']})")
             print(f"  - In-Progress: F1={im['f1']:.2f} (TP:{im['tp']}, FP:{im['fp']}, FN:{im['fn']})")
             print(f"  - Available:   F1={am['f1']:.2f} (TP:{am['tp']}, FP:{am['fp']}, FN:{am['fn']})")
+            
+            # Add stacked chairs metrics if available
+            if 'stacked_chairs_metrics' in fm:
+                scm = fm['stacked_chairs_metrics']
+                print(f"  - Stacked Chairs: F1={scm['f1']:.2f} (TP:{scm['tp']}, FP:{scm['fp']}, FN:{scm['fn']})")
         print("-" * 35)
 
     if results["aggregate_metrics"]:
@@ -319,6 +409,15 @@ def main():
         print(f"  Mean F1 (Steps Completed):  {agg_met['mean_completed_f1']:.4f}")
         print(f"  Mean F1 (Steps In Progress):{agg_met['mean_inprogress_f1']:.4f}")
         print(f"  Mean F1 (Steps Available):  {agg_met['mean_available_f1']:.4f}")
+        
+        # Add Stack-specific metrics if available
+        if 'mean_toolbox_accuracy' in agg_met:
+            print(f"  Mean Toolbox Accuracy:      {agg_met['mean_toolbox_accuracy']:.4f}")
+        if 'mean_num_chairs_accuracy' in agg_met:
+            print(f"  Mean Num Chairs Accuracy:   {agg_met['mean_num_chairs_accuracy']:.4f}")
+        if 'mean_stacked_chairs_f1' in agg_met:
+            print(f"  Mean F1 (Stacked Chairs):   {agg_met['mean_stacked_chairs_f1']:.4f}")
+        
         print("---------------------------------------")
         print(f"  OVERALL MODEL SCORE:        {agg_met['overall_score']:.4f}")
         
@@ -326,6 +425,10 @@ def main():
         print(f"  Steps Completed:    TP: {agg_cnt['completed']['tp']}, FP: {agg_cnt['completed']['fp']}, FN: {agg_cnt['completed']['fn']}")
         print(f"  Steps In Progress:  TP: {agg_cnt['inprogress']['tp']}, FP: {agg_cnt['inprogress']['fp']}, FN: {agg_cnt['inprogress']['fn']}")
         print(f"  Steps Available:    TP: {agg_cnt['available']['tp']}, FP: {agg_cnt['available']['fp']}, FN: {agg_cnt['available']['fn']}")
+        
+        # Add stacked chairs counts if available
+        if 'stacked_chairs' in agg_cnt:
+            print(f"  Stacked Chairs:     TP: {agg_cnt['stacked_chairs']['tp']}, FP: {agg_cnt['stacked_chairs']['fp']}, FN: {agg_cnt['stacked_chairs']['fn']}")
 
     else:
         print("No matching frames were found to evaluate.")

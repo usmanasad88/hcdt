@@ -408,10 +408,128 @@ def extract_xy_coords(data):
             coords.extend(extract_xy_coords(item))
     return coords
 
-if __name__ == "__main__":
-    input_folder = "/home/mani/Central/Cooking1/combined_frames"
-    output_folder = "/home/mani/Central/Cooking1/combined_frames_numbered"
-    overlay_frame_numbers_on_folder(input_folder, font_size=48, position='top-right')
+
+def plot_points_phase2(phase2_file, frames_folder, output_folder): # Create output folder
+    os.makedirs(output_folder, exist_ok=True)
+    
+    try:
+        with open(phase2_file, 'r') as f:
+            phase2_data = json.load(f)
+        
+        # Get all frame files and sort them
+        image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}
+        frame_files = [f for f in os.listdir(frames_folder) 
+                      if os.path.splitext(f.lower())[1] in image_extensions]
+        frame_files.sort()
+        
+        if not frame_files:
+            print(f"No image files found in {frames_folder}")
+        else:
+            print(f"Found {len(frame_files)} frame files")
+            
+        # Create a dictionary for quick lookup of predictions by frame number
+        predictions_dict = {entry["frame"]: entry["predicted_hand_positions"] for entry in phase2_data}
+        
+        print(f"Loaded predictions for frames: {sorted(predictions_dict.keys())}")
+        
+        # Process each frame file
+        for i, frame_file in enumerate(frame_files, 1):
+            frame_number = i  # Frame numbering starts from 1
+            frame_path = os.path.join(frames_folder, frame_file)
+            output_path = os.path.join(output_folder, f"frame_{frame_number:04d}_with_predictions.png")
+            
+            # Check if we have predictions for this frame
+            if frame_number in predictions_dict:
+                pred_positions = predictions_dict[frame_number]
+                
+                # Extract hand positions (note: coordinates are already in 0-1000 range)
+                left_hand_point = [pred_positions["left_hand_y"], pred_positions["left_hand_x"]]
+                right_hand_point = [pred_positions["right_hand_y"], pred_positions["right_hand_x"]]
+                
+                # Create points list with different colors
+                points = [left_hand_point, right_hand_point]
+                
+                print(f"Frame {frame_number}: Adding predicted hand positions")
+                print(f"  Left hand: ({pred_positions['left_hand_x']:.1f}, {pred_positions['left_hand_y']:.1f})")
+                print(f"  Right hand: ({pred_positions['right_hand_x']:.1f}, {pred_positions['right_hand_y']:.1f})")
+                
+                # Load image and draw points
+                img = Image.open(frame_path).convert("RGB")
+                width, height = img.size
+                draw = ImageDraw.Draw(img)
+                
+                # Draw left hand (red circle)
+                left_x_px = int((pred_positions["left_hand_x"] / 1000.0) * width)
+                left_y_px = int((pred_positions["left_hand_y"] / 1000.0) * height)
+                point_radius = 12
+                
+                # Left hand - Red
+                draw.ellipse([
+                    (left_x_px - point_radius, left_y_px - point_radius),
+                    (left_x_px + point_radius, left_y_px + point_radius)
+                ], fill='red', outline='darkred', width=2)
+                
+                # Right hand - Blue
+                right_x_px = int((pred_positions["right_hand_x"] / 1000.0) * width)
+                right_y_px = int((pred_positions["right_hand_y"] / 1000.0) * height)
+                
+                draw.ellipse([
+                    (right_x_px - point_radius, right_y_px - point_radius),
+                    (right_x_px + point_radius, right_y_px + point_radius)
+                ], fill='blue', outline='darkblue', width=2)
+                
+                # Add text labels
+                from PIL import ImageFont
+                try:
+                    font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 16)
+                except (OSError, IOError):
+                    font = ImageFont.load_default()
+                
+                # Left hand label
+                draw.text((left_x_px + 15, left_y_px - 10), "L", fill='red', font=font)
+                # Right hand label  
+                draw.text((right_x_px + 15, right_y_px - 10), "R", fill='blue', font=font)
+                
+                # Add frame info
+                frame_info = f"Frame {frame_number} - Predicted Hand Positions"
+                draw.text((10, 10), frame_info, fill='white', font=font)
+                
+                # Save the image
+                img.save(output_path)
+                
+            else:
+                # No predictions for this frame, just copy the original
+                img = Image.open(frame_path).convert("RGB")
+                draw = ImageDraw.Draw(img)
+                
+                # Add frame info indicating no predictions
+                from PIL import ImageFont
+                try:
+                    font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 16)
+                except (OSError, IOError):
+                    font = ImageFont.load_default()
+                
+                frame_info = f"Frame {frame_number} - No Predictions"
+                draw.text((10, 10), frame_info, fill='yellow', font=font)
+                img.save(output_path)
+                
+                print(f"Frame {frame_number}: No predictions available")
+        
+        print(f"\n✅ Processed {len(frame_files)} frames")
+        print(f"📁 Output saved to: {output_folder}")
+        print(f"🔴 Red circles = Left hand predictions")
+        print(f"🔵 Blue circles = Right hand predictions")
+        
+    except FileNotFoundError:
+        print(f"❌ Error: Could not find {phase2_file}")
+    except json.JSONDecodeError as e:
+        print(f"❌ Error parsing JSON: {e}")
+    except Exception as e:
+        print(f"❌ Unexpected error: {e}")
+    
+    # input_folder = "/home/mani/Central/Cooking1/combined_frames"
+    # output_folder = "/home/mani/Central/Cooking1/combined_frames_numbered"
+    # overlay_frame_numbers_on_folder(input_folder, font_size=48, position='top-right')
 
     # image_path = "/home/mani/Central/HaVid/S01A02I01S1/frame_0001.png"  
     # points=[[859, 696]]
@@ -433,3 +551,10 @@ if __name__ == "__main__":
     #     background_color=(0, 0, 0)
     # )
     # print(f"Combined frames saved to {output_folder}")
+
+if __name__ == "__main__":
+    phase2_file = "data/HAViD/phase2_simplified.json"
+    frames_folder = "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_temp"
+    output_folder = "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/VitPose-overlay"
+    plot_points_phase2(phase2_file, frames_folder, output_folder)
+    

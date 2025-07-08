@@ -1,7 +1,7 @@
 import torch
 import os
 
-def get_end_effector_velocities(file_name_without_ext, frame_number):
+def get_end_effector_velocities(file_path, frame_number):
     """
     Loads HumanML3D motion data from a .pt file and calculates the L2 norm
     of the velocities for the left foot, right foot, left hand, and right hand,
@@ -21,8 +21,8 @@ def get_end_effector_velocities(file_name_without_ext, frame_number):
                - left_hand_vel_norm (float): L2 norm of left hand velocity for the frame.
                - right_hand_vel_norm (float): L2 norm of right hand velocity for the frame.
     """
-    base_path = "/home/mani/Repos/hcdt/data/humanml3d/"
-    file_path = os.path.join(base_path, f"{file_name_without_ext}.pt")
+    # base_path = "/home/mani/Repos/hcdt/data/humanml3d/"
+    # file_path = os.path.join(base_path, f"{file_name_without_ext}.pt")
 
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"File not found: {file_path}")
@@ -88,7 +88,71 @@ def get_end_effector_velocities(file_name_without_ext, frame_number):
         total_frames
     )
 
+def get_hand_xy_positions(full_path, frame_number):
+    """
+    Loads VitPose motion data from a .pt file and extracts the X and Y positions
+    of the left and right hands for a specific frame.
+
+    Args:
+        file_name_without_ext (str): The name of the .pt file without the extension.
+        frame_number (int): The specific frame number for which to extract data.
+
+    Returns:
+        tuple: A tuple containing:
+               - left_hand_x (float): X position of the left hand.
+               - left_hand_y (float): Y position of the left hand.
+               - right_hand_x (float): X position of the right hand.
+               - right_hand_y (float): Y position of the right hand.
+    """
+    file_path = full_path
+
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"File not found: {file_path}")
+
+    data = torch.load(file_path)
+
+   
+
+    num_frames = data.shape[0]
+    if not (0 <= frame_number < num_frames):
+        raise ValueError(
+            f"frame_number {frame_number} is out of bounds. Must be between 0 and {num_frames - 1}."
+        )
+
+    # Get data for the specific frame
+    frame_data = data[frame_number, :]
+
+    # Indices for hand positions
+    # Left Hand (Wrist): Index: 9
+    # Right Hand (Wrist): Index: 10
+    # Original frame dimensions
+    frame_width = 1280
+    frame_height = 720
+
+    # Extract raw coordinates
+    left_hand_x_raw = frame_data[9, 0].item()   # Row 9, column 0 (x coordinate)
+    left_hand_y_raw = frame_data[9, 1].item()   # Row 9, column 1 (y coordinate)
+    right_hand_x_raw = frame_data[10, 0].item() # Row 10, column 0 (x coordinate)
+    right_hand_y_raw = frame_data[10, 1].item() # Row 10, column 1 (y coordinate)
+    
+    # Normalize to 0-1000 range
+    left_hand_x = (left_hand_x_raw / frame_width) * 1000
+    left_hand_y = (left_hand_y_raw / frame_height) * 1000
+    right_hand_x = (right_hand_x_raw / frame_width) * 1000
+    right_hand_y = (right_hand_y_raw / frame_height) * 1000
+
+ 
+    return (
+        left_hand_x,
+        left_hand_y,
+        right_hand_x,
+        right_hand_y
+    )
+
+
 # if __name__ == '__main__':
+    # coords=get_hand_xy_positions("/home/mani/Central/HaVid/S13A11I21/GVHMR/front/preprocess/vitpose.pt",1)
+    # print(f"Left Hand Position: ({coords[0]:.4f}, {coords[1]:.4f})")
 #     # Example usage:
 #     # Create a dummy file for testing
 #     data_path = "/home/mani/Repos/hcdt/data/humanml3d/S01A02I01S1.pt"

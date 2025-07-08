@@ -1,9 +1,17 @@
-type: "ICL" # In-Context Learning "test" or "ICL"
+type: "phase2" # In-Context Learning "phase2" or "ICL"
 example_image_dir: "/home/mani/Central/HaVid/S13A11I21/frames"
 example_gt_filename: "data/HAViD/S13A11I21_gt.json"
+example_vitpose: /home/mani/Central/HaVid/S13A11I21/GVHMR/front/preprocess/vitpose.pt
+example_vitpose_frames: /home/mani/Central/HaVid/S13A11I21/GVHMR/front/preprocess/VitPose
 
 test_image_dir: "/home/mani/Central/HaVid/S02A08I21/frames"
 test_gt_filename: "data/HAViD/S02A08I21_gt.json"
+test_vitpose: /home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose.pt
+test_humanml3d: /home/mani/Repos/hcdt/data/humanml3d/S02A08I21.pt
+test_vitpose_frames: /home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/VitPose
+
+frame_width: 1280
+frame_height: 720
 
 test_frame_step: 15
 fps: 15
@@ -11,4 +19,6 @@ example_frame_step: 15
 
 drawing: "/home/mani/Central/HaVid/S13A11I21/assembly_exploded_view.png"
 attach_drawing: true
-drawing_prompt: "Use the provided drawing to help you understand the task and update the state variables accordingly. The drawing is an exploded view of the assembly, showing how the parts fit together."
+drawing_prompt: "Use the provided drawing to help you understand the task. The drawing is an exploded view of the assembly, showing how the parts fit together."
+
+#and update the state variables accordingly

@@ -46,7 +46,7 @@ def overlay_genai_video(
     font_scale=0.6,
     color=(255,255,255),
     thickness=2,
-    pos=(10, 30)
+    pos=(50, 100)
 ):
     """
     Overlays selected fields from JSON blocks in a markdown file onto a video.
@@ -69,6 +69,10 @@ def overlay_genai_video(
 
     frame_info = extract_json_sections(md_path)
 
+    # Build a sorted list of prediction frames
+    prediction_frames = sorted([info.get("prediction_frame") for info in frame_info.values() if "prediction_frame" in info])
+    prediction_idx = 0
+
     cap = cv2.VideoCapture(video_path)
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     fps = cap.get(cv2.CAP_PROP_FPS)
@@ -84,22 +88,29 @@ def overlay_genai_video(
         if not ret:
             break
 
-        json_idx = current_frame // 30
-        json_idx = min(json_idx, max_json_idx)
-        info = frame_info.get(json_idx)
-        if info:
-            lines = []
-            for field in fields:
-                # Try top-level
-                if field in info:
-                    lines.append(f"{field}: {info[field]}")
-                # Try inside llm_parsed_output
-                elif "state" in info and field in info["state"]:
-                    lines.append(f"{field}: {info['state'][field]}")
-                # Try inside current_full_state (optional)
-                elif "current_full_state" in info and field in info["current_full_state"]:
-                    lines.append(f"{field}: {info['current_full_state'][field]}")
-            frame = overlay_text(frame, lines, pos=pos, font_scale=font_scale, color=color, thickness=thickness)
+        # Find the current prediction_frame to use
+        while (prediction_idx < len(prediction_frames) and current_frame > prediction_frames[prediction_idx]):
+            prediction_idx += 1
+
+        if prediction_idx < len(prediction_frames):
+            pred_frame = prediction_frames[prediction_idx]
+            if current_frame <= pred_frame:
+                # Find the corresponding info
+                info = None
+                for v in frame_info.values():
+                    if v.get("prediction_frame") == pred_frame:
+                        info = v
+                        break
+                if info:
+                    # Print the prediction result for this frame
+                    print(f"Frame {current_frame}: Prediction for frame {pred_frame}: {info.get('predicted_positions', {})}")
+                    lines = []
+                    for field in fields:
+                        if field in info:
+                            lines.append(f"{field}: {info[field]}")
+                        elif "predicted_positions" in info and field in info["predicted_positions"]:
+                            lines.append(f"{field}: {info['predicted_positions'][field]}")
+                    frame = overlay_text(frame, lines, pos=pos, font_scale=font_scale, color=color, thickness=thickness)
 
         out.write(frame)
 
@@ -285,19 +296,19 @@ def main():
 if __name__ == "__main__":
     # main()
 
+    overlay_genai_video(
+        "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_video_overlay_frames.mp4",
+        "/home/mani/Repos/hcdt/data/HAViD/phase2_result.json",
+        "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_video_overlay_frames_predictions.mp4",
+        fields=["prediction_frame","reasoning_summary","target_object"]
+    )
+
     # overlay_genai_video(
-    #     "/home/mani/Central/Stack/cam1.mp4",
-    #     "data/Stack/ICL_result.json",
-    #     "data/OverlayVids/overlay-cam1-ICL.mp4",
+    #     "/home/mani/Central/HaVid/S02A08I21/front.mp4",
+    #     "logs/ICL_result_havid_ex0002.json",
+    #     "data/OverlayVids/overlay-S02A08-ICL.mp4",
     #     fields=["frame","steps_completed","steps_in_progress","steps_available"]
     # )
-
-    overlay_genai_video(
-        "/home/mani/Central/HaVid/S02A08I21/front.mp4",
-        "logs/ICL_result_havid_ex0002.json",
-        "data/OverlayVids/overlay-S02A08-ICL.mp4",
-        fields=["frame","steps_completed","steps_in_progress","steps_available"]
-    )
 
 
     # overlay_genai_video(
@@ -312,7 +323,11 @@ if __name__ == "__main__":
 
     # video_path = "/home/mani/Central/HaVid/ExampleContext/front.mp4"
     # output_path = "/home/mani/Central/HaVid/ExampleContext/front_f.mp4"
+    # video_path = "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_video_overlay.mp4"
+    # output_path = "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_video_overlay_frames.mp4"
+    
     # overlay_frame_numbers(video_path, output_path)
+
 
 
 
