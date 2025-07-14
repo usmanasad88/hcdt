@@ -11,4 +11,4 @@ example_frame_step: 30
 
 drawing: "/home/mani/Central/HaVid/S13A11I21/assembly_exploded_view.png"
 attach_drawing: false
-drawing_prompt: "Use the provided drawing to help you understand the task and update the state variables accordingly. The drawing is an exploded view of the assembly, showing how the parts fit together."
+drawing_prompt: "Use the provided drawing to help you understand the task and update the state variables accordingly."

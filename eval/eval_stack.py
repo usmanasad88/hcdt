@@ -349,9 +349,9 @@ def main():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )    
     # parser.add_argument("ground_truth_file", nargs="?", default="data/HAViD/S02A08I21_gt.json", help="Path to the ground truth JSON file. Defaults to '/home/mani/Repos/hcdt/data/HAViD/S13A11I21_gt.json'.")
-    parser.add_argument("ground_truth_file", nargs="?", default="data/Stack/cam1_gt.json", help="Path to the ground truth JSON file. Defaults to '/home/mani/Repos/hcdt/data/HAViD/S13A11I21_gt.json'.")
+    parser.add_argument("ground_truth_file", nargs="?", default="data/Stack/exp2_gt.json", help="Path to the ground truth JSON file. Defaults to '/home/mani/Repos/hcdt/data/HAViD/S13A11I21_gt.json'.")
     # parser.add_argument("prediction_file", nargs="?", default="logs/ICL_result_havid_ex0002.json", help="Path to the model's prediction JSON file.")
-    parser.add_argument("prediction_file", nargs="?", default="data/Stack/ICL_result.json", help="Path to the model's prediction JSON file.")
+    parser.add_argument("prediction_file", nargs="?", default="data/Stack/ICL_result_exp2_base.json", help="Path to the model's prediction JSON file.")
     parser.add_argument("-v", "--verbose", action="store_true", help="Print metrics for each individual frame.")
     parser.add_argument("--analyze-timing", action="store_true", help="Analyze and print step completion timing.")
 

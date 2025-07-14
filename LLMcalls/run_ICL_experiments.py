@@ -19,6 +19,79 @@ from utils.motionutils import get_hand_xy_positions, get_end_effector_velocities
 
 from openai import OpenAI
 
+def output_contents(contents: List[types.Content], response_text: str, file_path: Optional[str] = None) -> str:
+    """
+    Formats the conversation history and response, and optionally saves it to a file.
+    
+    Args:
+        contents (List[types.Content]): The list of Content objects (conversation history).
+        response_text (str): The final generated response from the model.
+        file_path (Optional[str]): The path to the file to save the output.
+        
+    Returns:
+        str: A formatted string representation of the contents and response.
+    """
+    output = []
+    for content in contents:
+        role = content.role.capitalize()
+        # The last user message is part of the history but its response isn't yet,
+        # so we handle it separately after the loop.
+        if content.role == "user" and content == contents[-1]:
+            continue
+
+        text_parts = []
+        has_image = False
+        has_json = False
+
+        for part in content.parts:
+            # Use hasattr to safely check for attributes
+            if hasattr(part, 'text') and part.text:
+                text_parts.append(part.text)
+            if hasattr(part, 'mime_type'):
+                if 'image/png' in part.mime_type:
+                    has_image = True
+                elif 'json' in part.mime_type:
+                    has_json = True
+        
+        full_text = "".join(text_parts)
+        if has_image:
+            full_text += "\n[Image Content Attached]"
+        if has_json:
+            full_text += "\n[JSON Data Attached]"
+        
+        output.append(f"--- {role} Turn ---\n{full_text.strip()}")
+
+        # For ICL examples, the model's response is already in `contents`
+        if content.role == "model":
+            # The model's response text is already in full_text, 
+            # so we just need to add the separator.
+            output.append("-" * 20)
+
+    # Handle the final user prompt and the model's response to it
+    final_user_content = contents[-1]
+    final_user_text_parts = [part.text for part in final_user_content.parts if hasattr(part, 'text') and part.text]
+    final_user_full_text = "".join(final_user_text_parts)
+    if any('image/png' in part.mime_type for part in final_user_content.parts if hasattr(part, 'mime_type')):
+        final_user_full_text += "\n[Image Content Attached]"
+    if any('json' in part.mime_type for part in final_user_content.parts if hasattr(part, 'mime_type')):
+        final_user_full_text += "\n[JSON Data Attached]"
+
+    output.append(f"--- User Turn ---\n{final_user_full_text.strip()}")
+    output.append(f"--- Model Turn ---\n{response_text.strip()}")
+    output.append("-" * 20)
+
+    formatted_string = "\n\n".join(output)
+    
+    if file_path:
+        try:
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
+            with open(file_path, 'w') as f:
+                f.write(formatted_string)
+        except Exception as e:
+            print(f"Error writing to log file {file_path}: {e}")
+
+    return formatted_string
+
 def generate_openAI(cfg: DictConfig,
     query_prompt: str,
     second_image_paths: Optional[List[str]] = None,   
@@ -160,9 +233,8 @@ def generate(cfg: DictConfig,
     logger: ExperimentLogger = None,
     frame_number: int = 0,
     responses: Optional[List[str]] = None,
-    json_data: Optional[List[str]] = None):
-
-
+    json_data: Optional[List[str]] = None,
+    contents: List[types.Content] = None):
 
     encoded_test_images = []
     for img_path in second_image_paths:
@@ -177,8 +249,11 @@ def generate(cfg: DictConfig,
 
     start_time = time.time()
     
+    # Use provided contents or create new ones
+    if contents is None:
+        contents = []
+
     current_responses = responses if responses is not None else []
-    contents = []  
 
     # Turn 1: User provides the main prompt, JSON data, and example images
     first_user_parts = [types.Part.from_text(text=query_prompt)]
@@ -270,6 +345,11 @@ def generate(cfg: DictConfig,
     generation_duration = end_time - start_time
     
     if logger:
+        # Log the full conversation to a file using output_contents
+        conversation_log_path = os.path.join(logger.output_dir, 'conversations', f'frame_{frame_number}_conversation.log')
+        output_contents(contents, response_text, file_path=conversation_log_path)
+        print(f"Full conversation saved to {conversation_log_path}")
+        
         # Create combined prompt for token counting
         combined_prompt = f"{query_prompt}\n\n{next_query_prompt}"
         
@@ -279,8 +359,8 @@ def generate(cfg: DictConfig,
             response=response_text,
             duration=generation_duration,
             model=model,
-            example_images_count=len(first_image_paths),
-            test_images_count=len(second_image_paths),
+            example_images_count=len(first_image_paths) if first_image_paths else 0,
+            test_images_count=len(second_image_paths) if second_image_paths else 0,
             temperature=generate_content_config.temperature,
             top_p=generate_content_config.top_p,
             top_k=generate_content_config.top_k
@@ -675,4 +755,3 @@ def main(cfg: DictConfig):
 if __name__ == "__main__":
      main()
 
-    

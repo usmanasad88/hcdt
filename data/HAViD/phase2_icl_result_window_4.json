@@ -1,0 +1,560 @@
+[
+    {
+        "input_end_frame": 316,
+        "prediction_frame": 346,
+        "predicted_hand_positions": {
+            "left_hand_x": 617.47043800354,
+            "left_hand_y": 508.8741369247437,
+            "right_hand_x": 519.8601531982422,
+            "right_hand_y": 567.8920166015625
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 617.9332256317139,
+            "left_hand_y": 501.65396796332465,
+            "right_hand_x": 516.2649154663086,
+            "right_hand_y": 562.9436916775173
+        },
+        "reasoning": "Hands holding, stable position.",
+        "target_object": "first ball seat"
+    },
+    {
+        "input_end_frame": 376,
+        "prediction_frame": 406,
+        "predicted_hand_positions": {
+            "left_hand_x": 425.2931709289551,
+            "left_hand_y": 690.3417799207899,
+            "right_hand_x": 495.11632919311523,
+            "right_hand_y": 593.9374287923177
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 589.1652584075928,
+            "left_hand_y": 480.95550537109375,
+            "right_hand_x": 506.1536312103272,
+            "right_hand_y": 579.5380486382379
+        },
+        "reasoning": "",
+        "target_object": "ball"
+    },
+    {
+        "input_end_frame": 436,
+        "prediction_frame": 466,
+        "predicted_hand_positions": {
+            "left_hand_x": 589.1652584075928,
+            "left_hand_y": 480.95550537109375,
+            "right_hand_x": 506.1536312103272,
+            "right_hand_y": 579.5380486382379
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 805.4122924804688,
+            "left_hand_y": 571.1275312635635,
+            "right_hand_x": 509.5588207244873,
+            "right_hand_y": 575.6346384684244
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 496,
+        "prediction_frame": 526,
+        "predicted_hand_positions": {
+            "left_hand_x": 747.5705604553223,
+            "left_hand_y": 559.7392442491318,
+            "right_hand_x": 509.1404914855957,
+            "right_hand_y": 578.3348931206598
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 740.3287410736084,
+            "left_hand_y": 552.5527954101562,
+            "right_hand_x": 509.5582962036133,
+            "right_hand_y": 579.7862582736545
+        },
+        "reasoning": "Left hand moves to pick up the second ball seat, while the right hand remains stable near the cylinder base.",
+        "target_object": "second ball seat"
+    },
+    {
+        "input_end_frame": 556,
+        "prediction_frame": 586,
+        "predicted_hand_positions": {
+            "left_hand_x": 589.1652584075928,
+            "left_hand_y": 480.95550537109375,
+            "right_hand_x": 506.1536312103272,
+            "right_hand_y": 579.5380486382379
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 594.4920539855957,
+            "left_hand_y": 544.2110273573135,
+            "right_hand_x": 479.73976135253906,
+            "right_hand_y": 559.4488779703776
+        },
+        "reasoning": "Hands will return to initial position after inserting the ball seat.",
+        "target_object": "second ball seat"
+    },
+    {
+        "input_end_frame": 616,
+        "prediction_frame": 646,
+        "predicted_hand_positions": {
+            "left_hand_x": 596,
+            "left_hand_y": 563,
+            "right_hand_x": 513,
+            "right_hand_y": 497
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 583.8342666625977,
+            "left_hand_y": 486.6218566894531,
+            "right_hand_x": 340.4822826385498,
+            "right_hand_y": 627.3262871636285
+        },
+        "reasoning": "",
+        "target_object": "Cylinder base"
+    },
+    {
+        "input_end_frame": 676,
+        "prediction_frame": 706,
+        "predicted_hand_positions": {
+            "left_hand_x": 583.8342666625977,
+            "left_hand_y": 486.6218566894531,
+            "right_hand_x": 340.4822826385498,
+            "right_hand_y": 627.3262871636285
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 604.6812057495117,
+            "left_hand_y": 522.876951429579,
+            "right_hand_x": 523.619270324707,
+            "right_hand_y": 537.8114064534504
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 736,
+        "prediction_frame": 766,
+        "predicted_hand_positions": {
+            "left_hand_x": 609.5673828125,
+            "left_hand_y": 510.138671875,
+            "right_hand_x": 515.6888427734375,
+            "right_hand_y": 550.08984375
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 652.7714729309082,
+            "left_hand_y": 594.8231167263455,
+            "right_hand_x": 500.3412246704102,
+            "right_hand_y": 573.3840942382812
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 796,
+        "prediction_frame": 826,
+        "predicted_hand_positions": {
+            "left_hand_x": 560.1008605957031,
+            "left_hand_y": 610.1587524414062,
+            "right_hand_x": 500.5694274902344,
+            "right_hand_y": 575.2974243164062
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 600.6148338317871,
+            "left_hand_y": 557.9685635036893,
+            "right_hand_x": 498.79140853881836,
+            "right_hand_y": 571.7068990071614
+        },
+        "reasoning": "",
+        "target_object": "first cylinder bracket"
+    },
+    {
+        "input_end_frame": 856,
+        "prediction_frame": 886,
+        "predicted_hand_positions": {
+            "left_hand_x": 586.299560546875,
+            "left_hand_y": 622.753308802294,
+            "right_hand_x": 500.56554412841797,
+            "right_hand_y": 571.3323068618774
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 585.5818748474121,
+            "left_hand_y": 500.6276448567708,
+            "right_hand_x": 493.2722568511963,
+            "right_hand_y": 583.569590250651
+        },
+        "reasoning": "",
+        "target_object": "second cylinder bracket"
+    },
+    {
+        "input_end_frame": 916,
+        "prediction_frame": 946,
+        "predicted_hand_positions": {
+            "left_hand_x": 550,
+            "left_hand_y": 600,
+            "right_hand_x": 350,
+            "right_hand_y": 750
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 582.902193069458,
+            "left_hand_y": 508.65732828776044,
+            "right_hand_x": 486.06133460998535,
+            "right_hand_y": 465.64500596788196
+        },
+        "reasoning": "",
+        "target_object": "Screw"
+    },
+    {
+        "input_end_frame": 976,
+        "prediction_frame": 1006,
+        "predicted_hand_positions": {
+            "left_hand_x": 576.1074066162109,
+            "left_hand_y": 559.3864440917969,
+            "right_hand_x": 504.8166275024414,
+            "right_hand_y": 404.4256422254774
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 574.0915775299072,
+            "left_hand_y": 558.5377587212457,
+            "right_hand_x": 508.50353240966797,
+            "right_hand_y": 414.1980912950304
+        },
+        "reasoning": "Holding and screwing.",
+        "target_object": "cylinder cap"
+    },
+    {
+        "input_end_frame": 1036,
+        "prediction_frame": 1066,
+        "predicted_hand_positions": {
+            "left_hand_x": 700,
+            "left_hand_y": 550,
+            "right_hand_x": 450,
+            "right_hand_y": 550
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 761.7281913757324,
+            "left_hand_y": 536.3269805908203,
+            "right_hand_x": 498.22959899902344,
+            "right_hand_y": 542.1532948811849
+        },
+        "reasoning": "",
+        "target_object": "cylinder brackets"
+    },
+    {
+        "input_end_frame": 1096,
+        "prediction_frame": 1126,
+        "predicted_hand_positions": {
+            "left_hand_x": 575.0,
+            "left_hand_y": 535.0,
+            "right_hand_x": 495.0,
+            "right_hand_y": 565.0
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 507.41777420043945,
+            "left_hand_y": 482.82246059841583,
+            "right_hand_x": 351.13258361816406,
+            "right_hand_y": 485.80216301812067
+        },
+        "reasoning": "",
+        "target_object": "cylinder sub-assembly"
+    },
+    {
+        "input_end_frame": 1156,
+        "prediction_frame": 1186,
+        "predicted_hand_positions": {
+            "left_hand_x": 459.9881172180176,
+            "left_hand_y": 404.2366027832031,
+            "right_hand_x": 356.69517517089844,
+            "right_hand_y": 488.1037394205729
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 459.35301780700684,
+            "left_hand_y": 407.0473988850912,
+            "right_hand_x": 346.20800018310547,
+            "right_hand_y": 498.0709923638238
+        },
+        "reasoning": "",
+        "target_object": "Cylinder sub-assembly"
+    },
+    {
+        "input_end_frame": 1216,
+        "prediction_frame": 1246,
+        "predicted_hand_positions": {
+            "left_hand_x": 459.9881172180176,
+            "left_hand_y": 404.2366027832031,
+            "right_hand_x": 346.69517517089844,
+            "right_hand_y": 518.1037394205729
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 599.5829582214355,
+            "left_hand_y": 519.7029961480035,
+            "right_hand_x": 501.2570858001709,
+            "right_hand_y": 545.4717000325521
+        },
+        "reasoning": "",
+        "target_object": "cylinder bracket"
+    },
+    {
+        "input_end_frame": 1276,
+        "prediction_frame": 1306,
+        "predicted_hand_positions": {
+            "left_hand_x": 551.4938659667969,
+            "left_hand_y": 685.1278858184814,
+            "right_hand_x": 461.35308837890625,
+            "right_hand_y": 569.2131580193819
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 586.347246170044,
+            "left_hand_y": 622.5530412462023,
+            "right_hand_x": 504.1649341583252,
+            "right_hand_y": 567.9744720458984
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 1336,
+        "prediction_frame": 1366,
+        "predicted_hand_positions": {
+            "left_hand_x": 500.0,
+            "left_hand_y": 500.0,
+            "right_hand_x": 300.0,
+            "right_hand_y": 720.0
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 628.3923625946045,
+            "left_hand_y": 544.0697140163846,
+            "right_hand_x": 469.7969913482666,
+            "right_hand_y": 615.8933427598741
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1396,
+        "prediction_frame": 1426,
+        "predicted_hand_positions": {
+            "left_hand_x": 515.6599636077881,
+            "left_hand_y": 508.48187828063965,
+            "right_hand_x": 326.0468969345093,
+            "right_hand_y": 456.9696388244629
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 456.9638729095459,
+            "left_hand_y": 413.252936469184,
+            "right_hand_x": 321.6139316558838,
+            "right_hand_y": 467.41595798068573
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1456,
+        "prediction_frame": 1486,
+        "predicted_hand_positions": {
+            "left_hand_x": 459.2101573944092,
+            "left_hand_y": 415.707270304362,
+            "right_hand_x": 326.0568141937256,
+            "right_hand_y": 460.6329600016276
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 494.3163871765137,
+            "left_hand_y": 528.4596761067708,
+            "right_hand_x": 316.15848541259766,
+            "right_hand_y": 525.0986735026042
+        },
+        "reasoning": "Hands remain steady, tightening screw.",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1516,
+        "prediction_frame": 1546,
+        "predicted_hand_positions": {
+            "left_hand_x": 503.4140228271484,
+            "left_hand_y": 453.6477169494629,
+            "right_hand_x": 383.96496772766113,
+            "right_hand_y": 458.3187950981988
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 499.637508392334,
+            "left_hand_y": 458.4154764811198,
+            "right_hand_x": 385.1076126098633,
+            "right_hand_y": 453.49824693467883
+        },
+        "reasoning": "Hands holding screw/tool.",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1576,
+        "prediction_frame": 1606,
+        "predicted_hand_positions": {
+            "left_hand_x": 499.0607261657715,
+            "left_hand_y": 459.0574476453993,
+            "right_hand_x": 386.63530349731445,
+            "right_hand_y": 457.07668728298614
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 555.7832717895508,
+            "left_hand_y": 517.6824781629774,
+            "right_hand_x": 389.0652894973755,
+            "right_hand_y": 445.94311184353296
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1636,
+        "prediction_frame": 1666,
+        "predicted_hand_positions": {
+            "left_hand_x": 515.6582336425781,
+            "left_hand_y": 519.82421875,
+            "right_hand_x": 387.0543670654297,
+            "right_hand_y": 447.886474609375
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 506.45680427551264,
+            "left_hand_y": 500.6759643554688,
+            "right_hand_x": 350.924015045166,
+            "right_hand_y": 422.92811075846356
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 1696,
+        "prediction_frame": 1726,
+        "predicted_hand_positions": {
+            "left_hand_x": 535.4109764099121,
+            "left_hand_y": 486.5726894802517,
+            "right_hand_x": 458.60419273376465,
+            "right_hand_y": 377.978515625
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 525.7513046264648,
+            "left_hand_y": 479.50998942057294,
+            "right_hand_x": 375.5725145339966,
+            "right_hand_y": 472.8505452473958
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1756,
+        "prediction_frame": 1786,
+        "predicted_hand_positions": {
+            "left_hand_x": 515.6566276550293,
+            "left_hand_y": 483.3323067800204,
+            "right_hand_x": 382.4930305480957,
+            "right_hand_y": 476.1042730013529
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 519.7153091430664,
+            "left_hand_y": 476.5707651774089,
+            "right_hand_x": 378.6868095397949,
+            "right_hand_y": 485.4278988308377
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 1816,
+        "prediction_frame": 1846,
+        "predicted_hand_positions": {
+            "left_hand_x": 559.4242095947266,
+            "left_hand_y": 549.0250481499565,
+            "right_hand_x": 473.4005928039551,
+            "right_hand_y": 448.1229994032118
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 504.94470596313477,
+            "left_hand_y": 375.8273654513889,
+            "right_hand_x": 436.344051361084,
+            "right_hand_y": 425.11935763888886
+        },
+        "reasoning": "",
+        "target_object": "assembly plate"
+    },
+    {
+        "input_end_frame": 1876,
+        "prediction_frame": 1906,
+        "predicted_hand_positions": {
+            "left_hand_x": 515.6568042755127,
+            "left_hand_y": 500.6759643554688,
+            "right_hand_x": 350.924015045166,
+            "right_hand_y": 422.92811075846356
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 785.3087425231934,
+            "left_hand_y": 549.0818447536892,
+            "right_hand_x": 400.3530502319336,
+            "right_hand_y": 493.12201605902777
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 1936,
+        "prediction_frame": 1966,
+        "predicted_hand_positions": {
+            "left_hand_x": 515.4851245880127,
+            "left_hand_y": 486.2307525634765,
+            "right_hand_x": 379.23485565185547,
+            "right_hand_y": 477.5847422281901
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 560.4207992553711,
+            "left_hand_y": 502.11058722601996,
+            "right_hand_x": 478.3177852630615,
+            "right_hand_y": 475.69397820366754
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 1996,
+        "prediction_frame": 2026,
+        "predicted_hand_positions": {
+            "left_hand_x": 560.4207992553711,
+            "left_hand_y": 492.11058722601996,
+            "right_hand_x": 478.3177852630615,
+            "right_hand_y": 475.69397820366754
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 574.0873336791992,
+            "left_hand_y": 376.1058807373047,
+            "right_hand_x": 454.6018600463867,
+            "right_hand_y": 356.45425584581164
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 2056,
+        "prediction_frame": 2086,
+        "predicted_hand_positions": {
+            "left_hand_x": 551.4938631057739,
+            "left_hand_y": 445.6983818054199,
+            "right_hand_x": 428.09062671661377,
+            "right_hand_y": 336.5682856241862
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 553.3394813537598,
+            "left_hand_y": 451.02081298828125,
+            "right_hand_x": 445.0793266296387,
+            "right_hand_y": 332.5005001491971
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 2116,
+        "prediction_frame": 2146,
+        "predicted_hand_positions": {
+            "left_hand_x": 560.8083457946777,
+            "left_hand_y": 592.700703938802,
+            "right_hand_x": 350.3979187011719,
+            "right_hand_y": 537.0478312174479
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 542.118501663208,
+            "left_hand_y": 504.63968912760413,
+            "right_hand_x": 461.1837863922119,
+            "right_hand_y": 463.9625549316406
+        },
+        "reasoning": "",
+        "target_object": ""
+    }
+]

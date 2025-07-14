@@ -1,0 +1,138 @@
+[
+  {
+    "name": "pot_on_stove",
+    "type": "Boolean",
+    "description": "True if the pot is on the stove."
+  },
+  {
+    "name": "pot_burner_on",
+    "type": "Boolean",
+    "description": "True if the stove burner under the pot is on."
+  },
+  {
+    "name": "water_in_pot",
+    "type": "Boolean",
+    "description": "True if water has been added to the pot."
+  },
+  {
+    "name": "water_boiling",
+    "type": "Boolean",
+    "description": "True if water in the pot is boiling."
+  },
+  {
+    "name": "noodles_in_pot",
+    "type": "Boolean",
+    "description": "True if noodles are in the pot of boiling water."
+  },
+  {
+    "name": "noodles_cooked",
+    "type": "Boolean",
+    "description": "True if noodles are cooked through."
+  },
+  {
+    "name": "noodles_drained",
+    "type": "Boolean",
+    "description": "True if noodles have been drained."
+  },
+  {
+    "name": "cabbage_prepared",
+    "type": "Boolean",
+    "description": "True if cabbage is chopped."
+  },
+  {
+    "name": "garlic_prepared",
+    "type": "Boolean",
+    "description": "True if garlic is peeled and cut."
+  },
+  {
+    "name": "spring_onions_prepared",
+    "type": "Boolean",
+    "description": "True if spring onions are cut."
+  },
+  {
+    "name": "celery_prepared",
+    "type": "Boolean",
+    "description": "True if celery is cut."
+  },
+  {
+    "name": "pan_on_stove",
+    "type": "Boolean",
+    "description": "True if the pan/skillet is on the stove."
+  },
+  {
+    "name": "pan_burner_on",
+    "type": "Boolean",
+    "description": "True if the stove burner under the pan/skillet is on."
+  },
+  {
+    "name": "oil_in_pan",
+    "type": "Boolean",
+    "description": "True if oil has been added to the pan."
+  },
+  {
+    "name": "aromatics_in_pan",
+    "type": "Boolean",
+    "description": "True if aromatics (garlic, onions, etc.) have been added to the pan."
+  },
+  {
+    "name": "noodles_in_pan",
+    "type": "Boolean",
+    "description": "True if drained noodles have been added to the pan."
+  },
+  {
+    "name": "sauce_in_pan",
+    "type": "Boolean",
+    "description": "True if sauce (e.g., soy sauce) has been added to the pan."
+  },
+  {
+    "name": "stir_fry_cooked",
+    "type": "Boolean",
+    "description": "True if all ingredients in the pan are combined and cooked."
+  },
+  {
+    "name": "food_on_plate",
+    "type": "Boolean",
+    "description": "True if the final dish has been transferred to a plate."
+  },
+  {
+    "name": "operator_holding",
+    "type": "String",
+    "description": "Object currently held by the operator. Should be marked as 'null' if no object is held."
+  },
+  {
+    "name": "gaze_target",
+    "type": "String",
+    "description": "Estimate target of the operator gaze. Should be marked as 'null' if no target is available."
+  },
+  {
+    "name": "steps_completed",
+    "type": "List of Strings",
+    "description": "A list of action desciptions that have been successfully completed."
+  },
+  {
+    "name": "steps_in_progress",
+    "type": "List of Strings",
+    "description": "A list of action desciptions that are currently being executed."
+  },
+  {
+    "name": "steps_available",
+    "type": "List of Strings",
+    "description": "A list of action desciptions that can be started next, based on satisfied predecessors and state dependencies."
+  },
+  {
+    "name": "current_keystep",
+    "type": "String",
+    "description": "Natural language description of the current keystep being performed"
+  },
+  {
+    "name": "next_keystep",
+    "type": "String",
+    "description": "Natural language description of the next keystep while be performed immediate after current keystep"       
+  },
+  {
+    "name": "next_keystep_time",
+    "type": "Float",
+    "description": "Estimate time after which the next keystep will begin."       
+  }
+  
+]

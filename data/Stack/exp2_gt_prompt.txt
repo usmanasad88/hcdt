@@ -1,0 +1,17 @@
+Create a ground truth states file similar to the one shared.  
+I'm walking to box till frame 50, picking till 100, 
+transporting till 160, putting on table till 210. 
+
+I'm walking to red chair 1 till 286, picking till 312, 
+transporting till 390, stacking till 550. 
+
+I'm walking till turquoise chair till 616, picking till 640, 
+transporting till 717, stacking till 763. 
+
+I'm walking to red chair 2 till 827, picking till 860, 
+transporting till 932, stacking till 985, 
+
+I'm walking to red chair 3 till 1040, picking till 1075, 
+transporting till 1134, stacking till 1174. 
+
+I'm idle after that.

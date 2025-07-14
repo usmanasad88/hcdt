@@ -1,0 +1,290 @@
+[
+    {
+        "input_end_frame": 241,
+        "prediction_frame": 301,
+        "predicted_hand_positions": {
+            "left_hand_x": 317,
+            "left_hand_y": 547,
+            "right_hand_x": 307,
+            "right_hand_y": 487
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 269.91331577301025,
+            "left_hand_y": 652.6313357883029,
+            "right_hand_x": 171.62091732025146,
+            "right_hand_y": 596.1049821641709
+        },
+        "reasoning": "Walking towards chair, hands swinging.",
+        "target_object": "red chair 1"
+    },
+    {
+        "input_end_frame": 301,
+        "prediction_frame": 361,
+        "predicted_hand_positions": {
+            "left_hand_x": 200,
+            "left_hand_y": 450,
+            "right_hand_x": 300,
+            "right_hand_y": 450
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 523.626184463501,
+            "left_hand_y": 276.5044530232748,
+            "right_hand_x": 519.3962097167969,
+            "right_hand_y": 368.10395982530383
+        },
+        "reasoning": "Standing, holding chair.",
+        "target_object": "red chair 1"
+    },
+    {
+        "input_end_frame": 361,
+        "prediction_frame": 421,
+        "predicted_hand_positions": {
+            "left_hand_x": 519.234676361084,
+            "left_hand_y": 381.1661605834961,
+            "right_hand_x": 507.0396041870117,
+            "right_hand_y": 383.5683937072754
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 687.7062797546387,
+            "left_hand_y": 296.8699137369792,
+            "right_hand_x": 673.9973068237305,
+            "right_hand_y": 334.56285264756946
+        },
+        "reasoning": "",
+        "target_object": "table"
+    },
+    {
+        "input_end_frame": 421,
+        "prediction_frame": 481,
+        "predicted_hand_positions": {
+            "left_hand_x": 620,
+            "left_hand_y": 450,
+            "right_hand_x": 680,
+            "right_hand_y": 450
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 674.0381240844727,
+            "left_hand_y": 268.38565402560766,
+            "right_hand_x": 651.8084526062012,
+            "right_hand_y": 307.9911549886068
+        },
+        "reasoning": "",
+        "target_object": "red chair 1"
+    },
+    {
+        "input_end_frame": 481,
+        "prediction_frame": 541,
+        "predicted_hand_positions": {
+            "left_hand_x": 674.0381240844727,
+            "left_hand_y": 268.38565402560766,
+            "right_hand_x": 651.8084526062012,
+            "right_hand_y": 307.9911549886068
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 682.7985763549805,
+            "left_hand_y": 411.84090508355035,
+            "right_hand_x": 671.1152076721191,
+            "right_hand_y": 476.80799696180554
+        },
+        "reasoning": "",
+        "target_object": "red chair 1"
+    },
+    {
+        "input_end_frame": 541,
+        "prediction_frame": 601,
+        "predicted_hand_positions": {
+            "left_hand_x": 662,
+            "left_hand_y": 381,
+            "right_hand_x": 691,
+            "right_hand_y": 446
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 478.37696075439453,
+            "left_hand_y": 516.9324662950304,
+            "right_hand_x": 400.45013427734375,
+            "right_hand_y": 462.89371914333765
+        },
+        "reasoning": "",
+        "target_object": "red chair 1"
+    },
+    {
+        "input_end_frame": 601,
+        "prediction_frame": 661,
+        "predicted_hand_positions": {
+            "left_hand_x": 250,
+            "left_hand_y": 420,
+            "right_hand_x": 350,
+            "right_hand_y": 420
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 438.5118007659912,
+            "left_hand_y": 343.4246063232422,
+            "right_hand_x": 358.9625358581543,
+            "right_hand_y": 430.44658237033417
+        },
+        "reasoning": "",
+        "target_object": "turquoise chair"
+    },
+    {
+        "input_end_frame": 661,
+        "prediction_frame": 721,
+        "predicted_hand_positions": {
+            "left_hand_x": 682,
+            "left_hand_y": 412,
+            "right_hand_x": 671,
+            "right_hand_y": 477
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 642.4342155456543,
+            "left_hand_y": 300.42319827609595,
+            "right_hand_x": 623.7332344055176,
+            "right_hand_y": 352.8618918524848
+        },
+        "reasoning": "",
+        "target_object": "turquoise chair"
+    },
+    {
+        "input_end_frame": 721,
+        "prediction_frame": 781,
+        "predicted_hand_positions": {
+            "left_hand_x": 640,
+            "left_hand_y": 280,
+            "right_hand_x": 620,
+            "right_hand_y": 330
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 576.888370513916,
+            "left_hand_y": 353.35572560628253,
+            "right_hand_x": 528.7453651428223,
+            "right_hand_y": 359.72357855902777
+        },
+        "reasoning": "Hands finishing placement, withdrawing.",
+        "target_object": "turquoise chair"
+    },
+    {
+        "input_end_frame": 781,
+        "prediction_frame": 841,
+        "predicted_hand_positions": {
+            "left_hand_x": 625,
+            "left_hand_y": 480,
+            "right_hand_x": 675,
+            "right_hand_y": 480
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 589.7531509399414,
+            "left_hand_y": 585.6821695963542,
+            "right_hand_x": 564.4143104553223,
+            "right_hand_y": 737.018076578776
+        },
+        "reasoning": "",
+        "target_object": "red chair 2"
+    },
+    {
+        "input_end_frame": 841,
+        "prediction_frame": 901,
+        "predicted_hand_positions": {
+            "left_hand_x": 590,
+            "left_hand_y": 380,
+            "right_hand_x": 570,
+            "right_hand_y": 460
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 433.4517478942871,
+            "left_hand_y": 267.53908793131507,
+            "right_hand_x": 451.6874313354492,
+            "right_hand_y": 372.15758429633246
+        },
+        "reasoning": "",
+        "target_object": "red chair 2"
+    },
+    {
+        "input_end_frame": 901,
+        "prediction_frame": 961,
+        "predicted_hand_positions": {
+            "left_hand_x": 483.5,
+            "left_hand_y": 270.0,
+            "right_hand_x": 440.0,
+            "right_hand_y": 380.0
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 611.3524913787842,
+            "left_hand_y": 337.2329499986437,
+            "right_hand_x": 596.7615604400635,
+            "right_hand_y": 399.9034457736545
+        },
+        "reasoning": "",
+        "target_object": "red chair 2"
+    },
+    {
+        "input_end_frame": 961,
+        "prediction_frame": 1021,
+        "predicted_hand_positions": {
+            "left_hand_x": 580,
+            "left_hand_y": 380,
+            "right_hand_x": 570,
+            "right_hand_y": 430
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 511.28239631652826,
+            "left_hand_y": 337.057261996799,
+            "right_hand_x": 478.7078380584717,
+            "right_hand_y": 383.6379157172309
+        },
+        "reasoning": "",
+        "target_object": "red chair 2"
+    },
+    {
+        "input_end_frame": 1021,
+        "prediction_frame": 1081,
+        "predicted_hand_positions": {
+            "left_hand_x": 500,
+            "left_hand_y": 450,
+            "right_hand_x": 450,
+            "right_hand_y": 500
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 526.2922763824463,
+            "left_hand_y": 349.29773542616107,
+            "right_hand_x": 479.6703338623047,
+            "right_hand_y": 408.201175265842
+        },
+        "reasoning": "Moving towards chair 3.",
+        "target_object": "red chair 3"
+    },
+    {
+        "input_end_frame": 1081,
+        "prediction_frame": 1141,
+        "predicted_hand_positions": {
+            "left_hand_x": 611.35,
+            "left_hand_y": 337.23,
+            "right_hand_x": 596.76,
+            "right_hand_y": 399.9
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 574.8900413513184,
+            "left_hand_y": 273.2002258300781,
+            "right_hand_x": 558.2160949707031,
+            "right_hand_y": 323.1461418999566
+        },
+        "reasoning": "",
+        "target_object": "red chair 3"
+    },
+    {
+        "input_end_frame": 1141,
+        "prediction_frame": 1201,
+        "predicted_hand_positions": {
+            "left_hand_x": 570,
+            "left_hand_y": 270,
+            "right_hand_x": 550,
+            "right_hand_y": 320
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 447.1217632293701,
+            "left_hand_y": 299.29400549994574,
+            "right_hand_x": 436.237096786499,
+            "right_hand_y": 273.29993777804907
+        },
+        "reasoning": "Hands will remain on chair.",
+        "target_object": "red chair 3"
+    }
+]

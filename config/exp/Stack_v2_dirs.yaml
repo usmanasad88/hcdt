@@ -1,0 +1,43 @@
+experiment_name: Stack_v2
+test_folders:
+  input_folder: /home/mani/Central/Stack/exp2
+  frames_dir: /home/mani/Central/Stack/exp2/frames
+  gvhmr_output_root: /home/mani/Central/Stack/exp2/GVHMR
+  gvhmr_video_dir: /home/mani/Central/Stack/exp2/GVHMR/cam01
+  vitpose_file: /home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose.pt
+  vitpose_frames_dir: /home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/VitPose
+  vitpose_video_overlay: /home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_video_overlay.mp4
+  vitpose_overlay_frames_dir: /home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_overlay_frames
+  hmr4d_results: /home/mani/Central/Stack/exp2/GVHMR/cam01/hmr4d_results.pt
+  gazelle_output_dir: /home/mani/Central/Stack/exp2/gazelle_output
+  humanml3d_file: /home/mani/Repos/hcdt/data/humanml3d/test_cam01.pt
+  phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_test_cam01.json
+example_folders:
+  input_folder: /home/mani/Central/Stack/cam1
+  frames_dir: /home/mani/Central/Stack/cam1/frames
+  gvhmr_output_root: /home/mani/Central/Stack/cam1/GVHMR
+  gvhmr_video_dir: /home/mani/Central/Stack/cam1/GVHMR/cam01
+  vitpose_file: /home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/vitpose.pt
+  vitpose_frames_dir: /home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/VitPose
+  vitpose_video_overlay: /home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/vitpose_video_overlay.mp4
+  vitpose_overlay_frames_dir: /home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/vitpose_overlay_frames
+  hmr4d_results: /home/mani/Central/Stack/cam1/GVHMR/cam01/hmr4d_results.pt
+  gazelle_output_dir: /home/mani/Central/Stack/cam1/gazelle_output
+  humanml3d_file: /home/mani/Repos/hcdt/data/humanml3d/example_cam01.pt
+  phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_example_cam01.json
+data_folders:
+  stack_data_dir: /home/mani/Repos/hcdt/data/Stack
+  havid_data_dir: /home/mani/Repos/hcdt/data/HAViD
+  humanml3d_data_dir: /home/mani/Repos/hcdt/data/humanml3d
+config_paths:
+  main_config: /home/mani/Repos/hcdt/config/exp/Stack_v2.yaml
+  dirs_config: /home/mani/Repos/hcdt/config/exp/Stack_v2_dirs.yaml
+phase2_files:
+  test_vitpose_frames: /home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/VitPose
+  example_vitpose_frames: /home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/VitPose
+  test_vitpose_overlay_frames: /home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_overlay_frames
+  example_vitpose_overlay_frames: /home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/vitpose_overlay_frames
+  test_image_dir: /home/mani/Central/Stack/exp2/frames
+  example_image_dir: /home/mani/Central/Stack/cam1/frames
+  test_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_test_cam01.json
+  example_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_example_cam01.json

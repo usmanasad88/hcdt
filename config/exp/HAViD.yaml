@@ -21,4 +21,8 @@ drawing: "/home/mani/Central/HaVid/S13A11I21/assembly_exploded_view.png"
 attach_drawing: true
 drawing_prompt: "Use the provided drawing to help you understand the task. The drawing is an exploded view of the assembly, showing how the parts fit together."
 
+
+prompt_version: "phase_two" # version1, version2, version3, getgroundtruth, phase_two
+num_examples: 3
+phase2_ground_truth_file: #data/HAViD/phase2_simplified.json
 #and update the state variables accordingly

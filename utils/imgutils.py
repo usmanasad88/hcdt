@@ -428,7 +428,7 @@ def plot_points_phase2(phase2_file, frames_folder, output_folder): # Create outp
             print(f"Found {len(frame_files)} frame files")
             
         # Create a dictionary for quick lookup of predictions by frame number
-        predictions_dict = {entry["frame"]: entry["predicted_hand_positions"] for entry in phase2_data}
+        predictions_dict = {entry["prediction_frame"]: entry["predicted_hand_positions"] for entry in phase2_data}
         
         print(f"Loaded predictions for frames: {sorted(predictions_dict.keys())}")
         
@@ -553,8 +553,8 @@ def plot_points_phase2(phase2_file, frames_folder, output_folder): # Create outp
     # print(f"Combined frames saved to {output_folder}")
 
 if __name__ == "__main__":
-    phase2_file = "data/HAViD/phase2_simplified.json"
+    phase2_file = "data/HAViD/phase2_icl_result_window_3.json"
     frames_folder = "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_temp"
-    output_folder = "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/VitPose-overlay"
+    output_folder = "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/VitPose-overlay-window3"
     plot_points_phase2(phase2_file, frames_folder, output_folder)
     

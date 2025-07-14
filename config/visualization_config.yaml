@@ -1,0 +1,62 @@
+# Phase 2 Visualization Configuration
+# This file contains settings for customizing the visualization output
+
+visualization:
+  # Output settings
+  output_base_dir: "outputs"
+  create_subdirs: true
+  
+  # Frame visualization settings
+  point_radius: 15
+  font_size: 20
+  small_font_size: 16
+  
+  # Color scheme for predictions and ground truth
+  colors:
+    left_hand_prediction: "red"
+    right_hand_prediction: "blue"
+    left_hand_ground_truth: "green"
+    right_hand_ground_truth: "orange"
+    prediction_outline: "darkred"
+    ground_truth_outline: "darkgreen"
+    text_color: "white"
+    info_color: "yellow"
+    reasoning_color: "lightgray"
+  
+  # Video settings
+  video:
+    fps: 15
+    pause_duration: 2  # seconds
+    initial_pause_frame: 5
+    pause_interval: 10
+    codec: "mp4v"
+  
+  # Analysis settings
+  analysis:
+    plot_dpi: 300
+    figure_size: [15, 10]
+    histogram_bins: 20
+    error_units: "normalized_pixels"  # or "actual_pixels"
+  
+  # Text overlays
+  overlays:
+    show_frame_number: true
+    show_target_object: true
+    show_reasoning: true
+    show_legend: true
+    max_reasoning_length: 60
+    
+  # File naming
+  naming:
+    prediction_frame_prefix: "prediction_frame_"
+    output_video_name: "phase2_predictions.mp4"
+    error_plot_name: "error_analysis.png"
+    stats_file_name: "error_statistics.txt"
+    summary_report_name: "summary_report.txt"
+
+# Default experiment configuration (fallback)
+exp:
+  test_vitpose_frames: "/home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_overlay_frames" # "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/VitPose" #"/home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_overlay_frames"
+  frame_width: 1920
+  frame_height: 1080
+  fps: 30

@@ -1,8 +1,8 @@
 defaults:
-  - exp: HAViD
+  - exp: Stack_v2
   - _self_
 
-case_study: HAViD
+case_study: Stack
 use_ground_truth: false
 total_frames_to_process: all
 use_file_upload: false
@@ -10,6 +10,9 @@ use_openai: false
 start_frame: 1
 end_frame: 0
 model: gemini-2.5-flash #gemini-2.0-flash, gemini-2.5-flash-lite-preview-06-17 , gemini-2.5-flash gemma-3-27b-it gemma-3-27b-it
+
+use_gaze: true
+gaze_prompt: Images of heatmaps of the gaze target of the subject performing the task are also provided.
 
 prompts:
   version1: |
@@ -98,12 +101,10 @@ prompts:
     Provide your prediction as a structured output, clearly indicating the predicted (x, y) coordinates for each hand, with values normalized from 0 to 1000, as well as the name of the target object being manipulated in the task. 
     Also provide a very brief reasoning summary (no more than a few words) of your prediction. 
 
-exp:
-  prompt_version: "phase_two" # version1, version2, version3, getgroundtruth, phase_two
-
 second_prompt: 
   v1: |
     Now the history of frames for the test video is provided.
     Ensure your output is only the JSON object representing the updated state variables, for the last provided frame (frame number: {frame_num}). 
     History of frames uptil {last_frame_time} second(s) at frame number {frame_num} at {fps} fps :
     ```
+

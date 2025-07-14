@@ -1,0 +1,182 @@
+[
+  {
+    "frame": 121,
+    "actual_hand_positions": {
+      "left_hand_x": 456.15177154541016,
+      "left_hand_y": 415.2445051405165,
+      "right_hand_x": 430.26466369628906,
+      "right_hand_y": 428.48235236273877
+    }
+  },
+  {
+    "frame": 181,
+    "actual_hand_positions": {
+      "left_hand_x": 654.8800945281982,
+      "left_hand_y": 541.5577358669706,
+      "right_hand_x": 616.0108089447021,
+      "right_hand_y": 566.3965861002605
+    }
+  },
+  {
+    "frame": 241,
+    "actual_hand_positions": {
+      "left_hand_x": 397.2726583480835,
+      "left_hand_y": 480.7098388671875,
+      "right_hand_x": 335.46416759490967,
+      "right_hand_y": 477.85330878363715
+    }
+  },
+  {
+    "frame": 301,
+    "actual_hand_positions": {
+      "left_hand_x": 526.2146949768066,
+      "left_hand_y": 435.0911882188585,
+      "right_hand_x": 466.22371673583984,
+      "right_hand_y": 480.9524959988064
+    }
+  },
+  {
+    "frame": 361,
+    "actual_hand_positions": {
+      "left_hand_x": 584.5749855041504,
+      "left_hand_y": 414.8130628797743,
+      "right_hand_x": 575.8316516876221,
+      "right_hand_y": 446.7685275607639
+    }
+  },
+  {
+    "frame": 421,
+    "actual_hand_positions": {
+      "left_hand_x": 376.1716365814209,
+      "left_hand_y": 324.421755472819,
+      "right_hand_x": 436.31091117858887,
+      "right_hand_y": 350.53420596652563
+    }
+  },
+  {
+    "frame": 481,
+    "actual_hand_positions": {
+      "left_hand_x": 404.1647434234619,
+      "left_hand_y": 422.69744873046875,
+      "right_hand_x": 447.41058349609375,
+      "right_hand_y": 435.8636644151476
+    }
+  },
+  {
+    "frame": 541,
+    "actual_hand_positions": {
+      "left_hand_x": 458.26711654663086,
+      "left_hand_y": 406.71556260850696,
+      "right_hand_x": 381.0922384262085,
+      "right_hand_y": 442.3959520128038
+    }
+  },
+  {
+    "frame": 601,
+    "actual_hand_positions": {
+      "left_hand_x": 585.4407787322998,
+      "left_hand_y": 485.16710069444446,
+      "right_hand_x": 588.6635780334473,
+      "right_hand_y": 542.875247531467
+    }
+  },
+  {
+    "frame": 661,
+    "actual_hand_positions": {
+      "left_hand_x": 369.63868141174316,
+      "left_hand_y": 303.95821465386285,
+      "right_hand_x": 429.85997200012207,
+      "right_hand_y": 311.95687188042535
+    }
+  },
+  {
+    "frame": 721,
+    "actual_hand_positions": {
+      "left_hand_x": 408.6392402648926,
+      "left_hand_y": 409.48753356933594,
+      "right_hand_x": 420.7606315612793,
+      "right_hand_y": 408.4567175971137
+    }
+  },
+  {
+    "frame": 781,
+    "actual_hand_positions": {
+      "left_hand_x": 509.1123580932617,
+      "left_hand_y": 421.68295118543836,
+      "right_hand_x": 538.9630317687988,
+      "right_hand_y": 413.40209113226996
+    }
+  },
+  {
+    "frame": 841,
+    "actual_hand_positions": {
+      "left_hand_x": 446.0463047027588,
+      "left_hand_y": 374.5807223849826,
+      "right_hand_x": 506.813907623291,
+      "right_hand_y": 383.10792711046
+    }
+  },
+  {
+    "frame": 901,
+    "actual_hand_positions": {
+      "left_hand_x": 396.6573715209961,
+      "left_hand_y": 372.71321614583337,
+      "right_hand_x": 446.6871738433838,
+      "right_hand_y": 387.4788072374132
+    }
+  },
+  {
+    "frame": 961,
+    "actual_hand_positions": {
+      "left_hand_x": 434.2406749725342,
+      "left_hand_y": 388.6622534857856,
+      "right_hand_x": 439.74900245666504,
+      "right_hand_y": 391.17533365885413
+    }
+  },
+  {
+    "frame": 1021,
+    "actual_hand_positions": {
+      "left_hand_x": 444.6509838104248,
+      "left_hand_y": 401.32988823784723,
+      "right_hand_x": 487.85552978515625,
+      "right_hand_y": 407.5392829047309
+    }
+  },
+  {
+    "frame": 1081,
+    "actual_hand_positions": {
+      "left_hand_x": 371.3536262512207,
+      "left_hand_y": 307.3031319512261,
+      "right_hand_x": 417.5482749938965,
+      "right_hand_y": 305.72401682535804
+    }
+  },
+  {
+    "frame": 1141,
+    "actual_hand_positions": {
+      "left_hand_x": 390.5365467071533,
+      "left_hand_y": 371.25074598524304,
+      "right_hand_x": 433.85534286499023,
+      "right_hand_y": 372.1044328477647
+    }
+  },
+  {
+    "frame": 1201,
+    "actual_hand_positions": {
+      "left_hand_x": 355.15384674072266,
+      "left_hand_y": 395.13108995225696,
+      "right_hand_x": 332.67822265625,
+      "right_hand_y": 377.1979014078776
+    }
+  },
+  {
+    "frame": 1261,
+    "actual_hand_positions": {
+      "left_hand_x": 74.21728372573853,
+      "left_hand_y": 397.9209052191841,
+      "right_hand_x": 105.44358491897583,
+      "right_hand_y": 386.5494622124566
+    }
+  }
+]

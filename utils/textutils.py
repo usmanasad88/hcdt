@@ -174,13 +174,23 @@ def get_action_description_for_frame(frame_number: int, gt_file_path: str, dag_f
         with open(dag_file_path, 'r') as f:
             dag_data = json.load(f)
         
-        # Create a mapping from step ID to description
-        step_descriptions = {step['id']: step['description'] for step in dag_data}
+        # Create a mapping from step ID to description, handling both formats
+        step_descriptions = {}
+        for step in dag_data:
+            step_id = step.get('id')
+            description = step.get('description') or step.get('action', 'Unknown')
+            
+            # Handle both string and numeric IDs
+            step_descriptions[step_id] = description
+            step_descriptions[str(step_id)] = description  # Also store as string
+            if isinstance(step_id, str) and step_id.isdigit():
+                step_descriptions[int(step_id)] = description  # Also store as int if possible
         
         # Find the frame data
         frame_data = None
         for entry in gt_data:
-            if entry['frame'] == frame_number:
+            entry_frame = entry.get('frame') or entry.get('frame_number')
+            if entry_frame == frame_number:
                 frame_data = entry
                 break
         
@@ -189,11 +199,11 @@ def get_action_description_for_frame(frame_number: int, gt_file_path: str, dag_f
             return None
         
         # Get steps in progress
-        steps_in_progress = frame_data['state']['steps_in_progress']
+        steps_in_progress = frame_data.get('steps_in_progress', [])
         
         if not steps_in_progress:
             # Get available steps when no action is in progress
-            steps_available = frame_data['state'].get('steps_available', [])
+            steps_available = frame_data.get('steps_available', [])
             
             if not steps_available:
                 return "No action in progress and no steps available"
@@ -201,10 +211,13 @@ def get_action_description_for_frame(frame_number: int, gt_file_path: str, dag_f
             # Get descriptions for available steps
             available_descriptions = []
             for step_id in steps_available:
+                # Check if it's already a description or needs to be looked up
                 if step_id in step_descriptions:
                     available_descriptions.append(step_descriptions[step_id])
                 else:
-                    print(f"Warning: Step ID '{step_id}' not found in DAG")
+                    # If not found in mapping, it might already be a description
+                    available_descriptions.append(str(step_id))
+                    print(f"Warning: Step ID '{step_id}' not found in DAG, using as-is")
             
             if available_descriptions:
                 return f"No action in progress. Available steps: {'; '.join(available_descriptions)}"
@@ -214,10 +227,13 @@ def get_action_description_for_frame(frame_number: int, gt_file_path: str, dag_f
         # Get descriptions for all steps in progress
         descriptions = []
         for step_id in steps_in_progress:
+            # Check if it's already a description or needs to be looked up
             if step_id in step_descriptions:
                 descriptions.append(step_descriptions[step_id])
             else:
-                print(f"Warning: Step ID '{step_id}' not found in DAG")
+                # If not found in mapping, it might already be a description
+                descriptions.append(str(step_id))
+                print(f"Warning: Step ID '{step_id}' not found in DAG, using as-is")
         
         # Join multiple descriptions if there are multiple steps in progress
         if descriptions:
@@ -258,44 +274,61 @@ def get_all_actions_for_frame(frame_number: int, gt_file_path: str, dag_file_pat
         with open(dag_file_path, 'r') as f:
             dag_data = json.load(f)
         
-        # Create a mapping from step ID to description
-        step_descriptions = {step['id']: step['description'] for step in dag_data}
+        # Create a mapping from step ID to description, handling both formats
+        step_descriptions = {}
+        for step in dag_data:
+            step_id = step.get('id')
+            description = step.get('description') or step.get('action', 'Unknown')
+            
+            # Handle both string and numeric IDs
+            step_descriptions[step_id] = description
+            step_descriptions[str(step_id)] = description  # Also store as string
+            if isinstance(step_id, str) and step_id.isdigit():
+                step_descriptions[int(step_id)] = description  # Also store as int if possible
         
         # Find the frame data
         frame_data = None
+        actual_frame_number = None
         for entry in gt_data:
-            if entry['frame'] == frame_number:
+            entry_frame = entry.get('frame') or entry.get('frame_number')
+            if entry_frame == frame_number:
                 frame_data = entry
+                actual_frame_number = entry_frame
                 break
         
         if not frame_data:
             return {"error": f"Frame {frame_number} not found in ground truth data"}
         
-        state = frame_data['state']
+        # Helper function to get description for a step
+        def get_step_description(step_id):
+            if step_id in step_descriptions:
+                return step_descriptions[step_id]
+            else:
+                # If not found in mapping, it might already be a description
+                return str(step_id)
         
         # Build comprehensive action information
         result = {
-            "frame": frame_number,
-            "operator_holding": state.get('operator_holding', 'unknown'),
-            "gaze_target": state.get('gaze_target', 'unknown'),
+            "frame": actual_frame_number,
+            "operator_holding": frame_data.get('operator_holding', 'unknown'),
+            "gaze_target": frame_data.get('gaze_target', 'unknown'),
             "steps_completed": [
-                {"id": step_id, "description": step_descriptions.get(step_id, "Unknown")}
-                for step_id in state.get('steps_completed', [])
+                {"id": step_id, "description": get_step_description(step_id)}
+                for step_id in frame_data.get('steps_completed', [])
             ],
             "steps_in_progress": [
-                {"id": step_id, "description": step_descriptions.get(step_id, "Unknown")}
-                for step_id in state.get('steps_in_progress', [])
+                {"id": step_id, "description": get_step_description(step_id)}
+                for step_id in frame_data.get('steps_in_progress', [])
             ],
             "steps_available": [
-                {"id": step_id, "description": step_descriptions.get(step_id, "Unknown")}
-                for step_id in state.get('steps_available', [])
+                {"id": step_id, "description": get_step_description(step_id)}
+                for step_id in frame_data.get('steps_available', [])
             ]
         }
         
         # Add current action description
-        if state.get('steps_in_progress'):
-            current_actions = [step_descriptions.get(step_id, "Unknown") 
-                             for step_id in state['steps_in_progress']]
+        if frame_data.get('steps_in_progress'):
+            current_actions = [get_step_description(step_id) for step_id in frame_data['steps_in_progress']]
             result["current_action"] = "; ".join(current_actions)
         else:
             result["current_action"] = "No action in progress"

@@ -2,8 +2,10 @@ import cv2
 import json
 import re
 from tqdm import tqdm
-from motionutils import get_end_effector_velocities 
+import sys
 import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.motionutils import get_end_effector_velocities 
 
 
 def extract_json_sections(md_path):
@@ -38,7 +40,86 @@ def overlay_text(frame, text_lines, pos=(10, 30), font_scale=0.7, color=(0,255,0
         y += int(30 * font_scale)
     return frame
 
-def overlay_genai_video(
+
+def overlay_genai_video_gt(
+    video_path,
+    md_path,
+    output_path,
+    fields=None,
+    font_scale=0.6,
+    color=(255,255,255),
+    thickness=2,
+    pos=(50, 100)
+):
+    """
+    Overlays selected fields from JSON blocks in a markdown file onto a video.
+
+    Args:
+        video_path (str): Path to the input video.
+        md_path (str): Path to the markdown file with JSON code blocks.
+        output_path (str): Path to save the output video.
+        fields (list of str): List of JSON fields to overlay. If None, uses a default set.
+        font_scale (float): Font scale for overlay text.
+        color (tuple): Text color (B, G, R).
+        thickness (int): Text thickness.
+        pos (tuple): Starting position (x, y) for text.
+    """
+    if fields is None:
+        fields = [
+            "time",
+            "Expected Immediate Next Action"
+        ]
+
+
+    # Load JSON as a list of dicts
+    with open(md_path, "r") as f:
+        data = json.load(f)
+
+    # Sort entries by frame_number
+    entries = [entry for entry in data if "frame_number" in entry]
+    entries.sort(key=lambda x: x["frame_number"])
+
+    cap = cv2.VideoCapture(video_path)
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    entry_idx = 0
+    num_entries = len(entries)
+
+    for current_frame in tqdm(range(total_frames), desc="Processing frames"):
+        ret, frame = cap.read()
+        if not ret:
+            break
+
+        # Advance entry_idx to the closest frame_number <= current_frame
+        while entry_idx + 1 < num_entries and entries[entry_idx + 1]["frame_number"] <= current_frame:
+            entry_idx += 1
+
+        info = entries[entry_idx] if num_entries > 0 and entries[entry_idx]["frame_number"] <= current_frame else None
+        lines = []
+        if info:
+            for field in fields:
+                value = info.get(field, None)
+                if value is not None:
+                    # Format lists nicely
+                    if isinstance(value, list):
+                        lines.append(f"{field}: {', '.join(str(v) for v in value)}")
+                    else:
+                        lines.append(f"{field}: {value}")
+        frame = overlay_text(frame, lines, pos=pos, font_scale=font_scale, color=color, thickness=thickness)
+
+        out.write(frame)
+
+    cap.release()
+    out.release()
+    print(f"Overlay video saved to {output_path}")
+
+
+def overlay_genai_video_phase2(
     video_path,
     md_path,
     output_path,
@@ -296,19 +377,20 @@ def main():
 if __name__ == "__main__":
     # main()
 
-    overlay_genai_video(
-        "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_video_overlay_frames.mp4",
-        "/home/mani/Repos/hcdt/data/HAViD/phase2_result.json",
-        "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_video_overlay_frames_predictions.mp4",
-        fields=["prediction_frame","reasoning_summary","target_object"]
-    )
-
     # overlay_genai_video(
-    #     "/home/mani/Central/HaVid/S02A08I21/front.mp4",
-    #     "logs/ICL_result_havid_ex0002.json",
-    #     "data/OverlayVids/overlay-S02A08-ICL.mp4",
-    #     fields=["frame","steps_completed","steps_in_progress","steps_available"]
+    #     "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_video_overlay_frames.mp4",
+    #     "/home/mani/Repos/hcdt/data/HAViD/phase2_icl_result_window_3.json",
+    #     "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose_video_overlay_frames_predictions_window3.mp4",
+    #     fields=["prediction_frame","reasoning","target_object"]
     # )
+
+
+    overlay_genai_video_gt(
+        "/home/mani/Central/Stack/exp2/cam01.mp4",
+        "data/Stack/exp2_gt.json",
+        "data/OverlayVids/cam01_gt.mp4",
+        fields=["frame_number","steps_completed","steps_in_progress","steps_available"]
+    )
 
 
     # overlay_genai_video(

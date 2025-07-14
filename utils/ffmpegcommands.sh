@@ -7,7 +7,8 @@ ffmpeg -i overlay-S02A08-ICL.mp4 \
   -movflags +faststart \
   overlay-S02A08-ICL-whatsapp.mp4
 
-  ffmpeg -ss 00:00:00 -i input.mp4 -t 00:00:08 \
+
+ffmpeg -ss 00:00:00 -i input.mp4 -t 00:00:08 \
 -c:v libx264 \
 -profile:v baseline \
 -level 3.0 \
@@ -20,3 +21,5 @@ ffmpeg -i overlay-S02A08-ICL.mp4 \
 -b:a 128k \
 -movflags +faststart \
 output_whatsapp.mp4
+
+ffmpeg -i qalam.webm -vf "scale=ceil(iw/2)*2:ceil(ih/2)*2" -c:v libx264 -preset medium -crf 23 -profile:v high -level 4.0 -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart method.mp4

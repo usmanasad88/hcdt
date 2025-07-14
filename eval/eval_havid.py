@@ -140,6 +140,20 @@ def evaluate_frames(gt_data: List[Dict[str, Any]], pred_data: List[Dict[str, Any
         gt_state = gt_states[frame]
         pred_state = pred_states[frame]
         
+        # Validate that required fields exist
+        required_fields = ['operator_holding', 'gaze_target', 'steps_completed', 'steps_in_progress', 'steps_available']
+        
+        missing_gt_fields = [field for field in required_fields if field not in gt_state]
+        missing_pred_fields = [field for field in required_fields if field not in pred_state]
+        
+        if missing_gt_fields:
+            print(f"Warning: Frame {frame} missing fields in ground truth: {missing_gt_fields}. Skipping.")
+            continue
+            
+        if missing_pred_fields:
+            print(f"Warning: Frame {frame} missing fields in prediction: {missing_pred_fields}. Skipping.")
+            continue
+        
         frame_metrics = {'frame': frame}
 
         # 1. Accuracy for categorical fields
@@ -271,9 +285,9 @@ def main():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )    
     # parser.add_argument("ground_truth_file", nargs="?", default="data/HAViD/S02A08I21_gt.json", help="Path to the ground truth JSON file. Defaults to '/home/mani/Repos/hcdt/data/HAViD/S13A11I21_gt.json'.")
-    parser.add_argument("ground_truth_file", nargs="?", default="data/Stack/cam1_gt.json", help="Path to the ground truth JSON file. Defaults to '/home/mani/Repos/hcdt/data/HAViD/S13A11I21_gt.json'.")
+    parser.add_argument("ground_truth_file", nargs="?", default="data/Stack/exp2_gt.json", help="Path to the ground truth JSON file. Defaults to '/home/mani/Repos/hcdt/data/HAViD/S13A11I21_gt.json'.")
     # parser.add_argument("prediction_file", nargs="?", default="logs/ICL_result_havid_ex0002.json", help="Path to the model's prediction JSON file.")
-    parser.add_argument("prediction_file", nargs="?", default="data/Stack/ICL_result.json", help="Path to the model's prediction JSON file.")
+    parser.add_argument("prediction_file", nargs="?", default="data/Stack/ICL_result_exp2_base.json", help="Path to the model's prediction JSON file.")
     parser.add_argument("-v", "--verbose", action="store_true", help="Print metrics for each individual frame.")
     parser.add_argument("--analyze-timing", action="store_true", help="Analyze and print step completion timing.")
 
@@ -368,4 +382,3 @@ def main():
 if __name__ == "__main__":
     # check_frame_coverage("/home/mani/Repos/hcdt/data/HAViD/S13A11I21_gt.json", 15, 1786)
     main()
-    

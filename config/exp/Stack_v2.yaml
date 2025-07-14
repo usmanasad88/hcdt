@@ -1,0 +1,30 @@
+type: "ICL" # Phase 2 experiment for hand position prediction
+example_image_dir: "/home/mani/Central/Stack/cam1/frames"
+example_gt_filename: "data/Stack/cam1_gt.json"
+example_vitpose: "/home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/vitpose.pt"
+example_vitpose_frames: "/home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/vitpose_overlay_frames"
+example_gazelle_output_dir: /home/mani/Central/Stack/cam1/gazelle_output
+example_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_example_cam01.json
+
+test_image_dir: "/home/mani/Central/Stack/exp2/frames"
+test_gt_filename: "data/Stack/exp2_gt.json"
+test_vitpose: "/home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose.pt"
+test_humanml3d: "/home/mani/Repos/hcdt/data/humanml3d/test_cam01.pt"
+test_vitpose_frames: "/home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_overlay_frames"
+test_gazelle_output_dir: /home/mani/Central/Stack/exp2/gazelle_output
+test_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_test_cam01.json
+
+frame_width: 1920
+frame_height: 1080
+
+test_frame_step: 30
+fps: 30
+example_frame_step: 30
+
+drawing: "/home/mani/Central/Stack/drawing.png"
+attach_drawing: true
+drawing_prompt: "Use the provided drawing to help you understand the task."
+
+prompt_version: "version1" # version1, version2, version3, getgroundtruth, phase_two
+num_examples: 3
+

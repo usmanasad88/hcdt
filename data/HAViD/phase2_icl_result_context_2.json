@@ -1,0 +1,596 @@
+[
+    {
+        "input_end_frame": 196,
+        "prediction_frame": 226,
+        "predicted_hand_positions": {
+            "left_hand_x": 538.6025428771973,
+            "left_hand_y": 495.6619686550564,
+            "right_hand_x": 295.1653242111206,
+            "right_hand_y": 535.0983937581381
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 595.3422546386719,
+            "left_hand_y": 584.0599483913845,
+            "right_hand_x": 485.88409423828125,
+            "right_hand_y": 598.4161800808376
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 256,
+        "prediction_frame": 286,
+        "predicted_hand_positions": {
+            "left_hand_x": 595.3422546386719,
+            "left_hand_y": 584.0599483913845,
+            "right_hand_x": 485.88409423828125,
+            "right_hand_y": 598.4161800808376
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 612.5750541687012,
+            "left_hand_y": 512.1862623426649,
+            "right_hand_x": 517.4448013305664,
+            "right_hand_y": 563.6319478352865
+        },
+        "reasoning": "Inserting ball seat.",
+        "target_object": "ball seat"
+    },
+    {
+        "input_end_frame": 316,
+        "prediction_frame": 346,
+        "predicted_hand_positions": {
+            "left_hand_x": 617.8427734375,
+            "left_hand_y": 508.0673321882883,
+            "right_hand_x": 519.8661804199219,
+            "right_hand_y": 567.0673321882883
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 617.9332256317139,
+            "left_hand_y": 501.65396796332465,
+            "right_hand_x": 516.2649154663086,
+            "right_hand_y": 562.9436916775173
+        },
+        "reasoning": "",
+        "target_object": "cylinder base"
+    },
+    {
+        "input_end_frame": 376,
+        "prediction_frame": 406,
+        "predicted_hand_positions": {
+            "left_hand_x": 380,
+            "left_hand_y": 700,
+            "right_hand_x": 500,
+            "right_hand_y": 580
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 589.1652584075928,
+            "left_hand_y": 480.95550537109375,
+            "right_hand_x": 506.1536312103272,
+            "right_hand_y": 579.5380486382379
+        },
+        "reasoning": "",
+        "target_object": "Second ball seat"
+    },
+    {
+        "input_end_frame": 436,
+        "prediction_frame": 466,
+        "predicted_hand_positions": {
+            "left_hand_x": 616.0,
+            "left_hand_y": 507.0,
+            "right_hand_x": 505.0,
+            "right_hand_y": 581.0
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 805.4122924804688,
+            "left_hand_y": 571.1275312635635,
+            "right_hand_x": 509.5588207244873,
+            "right_hand_y": 575.6346384684244
+        },
+        "reasoning": "",
+        "target_object": "second ball seat"
+    },
+    {
+        "input_end_frame": 496,
+        "prediction_frame": 526,
+        "predicted_hand_positions": {
+            "left_hand_x": 747.0784912109375,
+            "left_hand_y": 558.5270690917969,
+            "right_hand_x": 508.8286285400391,
+            "right_hand_y": 577.8540935516357
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 740.3287410736084,
+            "left_hand_y": 552.5527954101562,
+            "right_hand_x": 509.5582962036133,
+            "right_hand_y": 579.7862582736545
+        },
+        "reasoning": "Left hand moves to cylinder base, right hand remains near.",
+        "target_object": "cylinder base"
+    },
+    {
+        "input_end_frame": 556,
+        "prediction_frame": 586,
+        "predicted_hand_positions": {
+            "left_hand_x": 425.57382583618164,
+            "left_hand_y": 697.8671603732639,
+            "right_hand_x": 506.9211483001709,
+            "right_hand_y": 594.2586263020834
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 594.4920539855957,
+            "left_hand_y": 544.2110273573135,
+            "right_hand_x": 479.73976135253906,
+            "right_hand_y": 559.4488779703776
+        },
+        "reasoning": "",
+        "target_object": "second ball seat"
+    },
+    {
+        "input_end_frame": 616,
+        "prediction_frame": 646,
+        "predicted_hand_positions": {
+            "left_hand_x": 595.6020610809326,
+            "left_hand_y": 562.9069690704346,
+            "right_hand_x": 510.98592376708984,
+            "right_hand_y": 494.39413261413574
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 583.8342666625977,
+            "left_hand_y": 486.6218566894531,
+            "right_hand_x": 340.4822826385498,
+            "right_hand_y": 627.3262871636285
+        },
+        "reasoning": "Hands holding cylinder base.",
+        "target_object": "cylinder base"
+    },
+    {
+        "input_end_frame": 676,
+        "prediction_frame": 706,
+        "predicted_hand_positions": {
+            "left_hand_x": 411,
+            "left_hand_y": 605,
+            "right_hand_x": 550,
+            "right_hand_y": 550
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 604.6812057495117,
+            "left_hand_y": 522.876951429579,
+            "right_hand_x": 523.619270324707,
+            "right_hand_y": 537.8114064534504
+        },
+        "reasoning": "",
+        "target_object": "First cylinder bracket"
+    },
+    {
+        "input_end_frame": 736,
+        "prediction_frame": 766,
+        "predicted_hand_positions": {
+            "left_hand_x": 580,
+            "left_hand_y": 520,
+            "right_hand_x": 450,
+            "right_hand_y": 620
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 652.7714729309082,
+            "left_hand_y": 594.8231167263455,
+            "right_hand_x": 500.3412246704102,
+            "right_hand_y": 573.3840942382812
+        },
+        "reasoning": "",
+        "target_object": "first cylinder bracket"
+    },
+    {
+        "input_end_frame": 796,
+        "prediction_frame": 826,
+        "predicted_hand_positions": {
+            "left_hand_x": 550,
+            "left_hand_y": 540,
+            "right_hand_x": 565,
+            "right_hand_y": 545
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 600.6148338317871,
+            "left_hand_y": 557.9685635036893,
+            "right_hand_x": 498.79140853881836,
+            "right_hand_y": 571.7068990071614
+        },
+        "reasoning": "",
+        "target_object": "first cylinder bracket"
+    },
+    {
+        "input_end_frame": 856,
+        "prediction_frame": 886,
+        "predicted_hand_positions": {
+            "left_hand_x": 480.20166015625,
+            "left_hand_y": 690.3236328125,
+            "right_hand_x": 490.87103271484375,
+            "right_hand_y": 570.6277221679687
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 585.5818748474121,
+            "left_hand_y": 500.6276448567708,
+            "right_hand_x": 493.2722568511963,
+            "right_hand_y": 583.569590250651
+        },
+        "reasoning": "Placing second bracket.",
+        "target_object": "second cylinder bracket"
+    },
+    {
+        "input_end_frame": 916,
+        "prediction_frame": 946,
+        "predicted_hand_positions": {
+            "left_hand_x": 582.0298538208008,
+            "left_hand_y": 494.9458923339844,
+            "right_hand_x": 493.52006912231445,
+            "right_hand_y": 582.8108469645182
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 582.902193069458,
+            "left_hand_y": 508.65732828776044,
+            "right_hand_x": 486.06133460998535,
+            "right_hand_y": 465.64500596788196
+        },
+        "reasoning": "Hands holding/adjusting bracket.",
+        "target_object": "cylinder bracket"
+    },
+    {
+        "input_end_frame": 976,
+        "prediction_frame": 1006,
+        "predicted_hand_positions": {
+            "left_hand_x": 575,
+            "left_hand_y": 560,
+            "right_hand_x": 550,
+            "right_hand_y": 500
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 574.0915775299072,
+            "left_hand_y": 558.5377587212457,
+            "right_hand_x": 508.50353240966797,
+            "right_hand_y": 414.1980912950304
+        },
+        "reasoning": "",
+        "target_object": "cylinder cap"
+    },
+    {
+        "input_end_frame": 1036,
+        "prediction_frame": 1066,
+        "predicted_hand_positions": {
+            "left_hand_x": 630,
+            "left_hand_y": 530,
+            "right_hand_x": 490,
+            "right_hand_y": 530
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 761.7281913757324,
+            "left_hand_y": 536.3269805908203,
+            "right_hand_x": 498.22959899902344,
+            "right_hand_y": 542.1532948811849
+        },
+        "reasoning": "",
+        "target_object": "Cylinder brackets"
+    },
+    {
+        "input_end_frame": 1096,
+        "prediction_frame": 1126,
+        "predicted_hand_positions": {
+            "left_hand_x": 576.5566349029541,
+            "left_hand_y": 535.4694790310331,
+            "right_hand_x": 496.2371349334717,
+            "right_hand_y": 566.7221917046442
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 507.41777420043945,
+            "left_hand_y": 482.82246059841583,
+            "right_hand_x": 351.13258361816406,
+            "right_hand_y": 485.80216301812067
+        },
+        "reasoning": "",
+        "target_object": "cylinder sub-assembly"
+    },
+    {
+        "input_end_frame": 1156,
+        "prediction_frame": 1186,
+        "predicted_hand_positions": {
+            "left_hand_x": 460,
+            "left_hand_y": 404,
+            "right_hand_x": 357,
+            "right_hand_y": 488
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 459.35301780700684,
+            "left_hand_y": 407.0473988850912,
+            "right_hand_x": 346.20800018310547,
+            "right_hand_y": 498.0709923638238
+        },
+        "reasoning": "",
+        "target_object": "Cylinder"
+    },
+    {
+        "input_end_frame": 1216,
+        "prediction_frame": 1246,
+        "predicted_hand_positions": {
+            "left_hand_x": 472,
+            "left_hand_y": 405,
+            "right_hand_x": 175,
+            "right_hand_y": 725
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 599.5829582214355,
+            "left_hand_y": 519.7029961480035,
+            "right_hand_x": 501.2570858001709,
+            "right_hand_y": 545.4717000325521
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1276,
+        "prediction_frame": 1306,
+        "predicted_hand_positions": {
+            "left_hand_x": 400,
+            "left_hand_y": 700,
+            "right_hand_x": 570,
+            "right_hand_y": 670
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 586.347246170044,
+            "left_hand_y": 622.5530412462023,
+            "right_hand_x": 504.1649341583252,
+            "right_hand_y": 567.9744720458984
+        },
+        "reasoning": "Reaching for screw and tool.",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1336,
+        "prediction_frame": 1366,
+        "predicted_hand_positions": {
+            "left_hand_x": 400,
+            "left_hand_y": 550,
+            "right_hand_x": 350,
+            "right_hand_y": 600
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 628.3923625946045,
+            "left_hand_y": 544.0697140163846,
+            "right_hand_x": 469.7969913482666,
+            "right_hand_y": 615.8933427598741
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1396,
+        "prediction_frame": 1426,
+        "predicted_hand_positions": {
+            "left_hand_x": 515.0000000000001,
+            "left_hand_y": 550.0,
+            "right_hand_x": 350.0,
+            "right_hand_y": 480.0
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 456.9638729095459,
+            "left_hand_y": 413.252936469184,
+            "right_hand_x": 321.6139316558838,
+            "right_hand_y": 467.41595798068573
+        },
+        "reasoning": "Tightening the screw.",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1456,
+        "prediction_frame": 1486,
+        "predicted_hand_positions": {
+            "left_hand_x": 459.2101573944092,
+            "left_hand_y": 415.707270304362,
+            "right_hand_x": 326.0568141937256,
+            "right_hand_y": 460.6329600016276
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 494.3163871765137,
+            "left_hand_y": 528.4596761067708,
+            "right_hand_x": 316.15848541259766,
+            "right_hand_y": 525.0986735026042
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1516,
+        "prediction_frame": 1546,
+        "predicted_hand_positions": {
+            "left_hand_x": 503.1440258026123,
+            "left_hand_y": 453.1210581461588,
+            "right_hand_x": 383.96496772766113,
+            "right_hand_y": 458.3187950981988
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 499.637508392334,
+            "left_hand_y": 458.4154764811198,
+            "right_hand_x": 385.1076126098633,
+            "right_hand_y": 453.49824693467883
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1576,
+        "prediction_frame": 1606,
+        "predicted_hand_positions": {
+            "left_hand_x": 499.06,
+            "left_hand_y": 459.06,
+            "right_hand_x": 386.64,
+            "right_hand_y": 457.08
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 555.7832717895508,
+            "left_hand_y": 517.6824781629774,
+            "right_hand_x": 389.0652894973755,
+            "right_hand_y": 445.94311184353296
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1636,
+        "prediction_frame": 1666,
+        "predicted_hand_positions": {
+            "left_hand_x": 517,
+            "left_hand_y": 520,
+            "right_hand_x": 386,
+            "right_hand_y": 448
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 506.45680427551264,
+            "left_hand_y": 500.6759643554688,
+            "right_hand_x": 350.924015045166,
+            "right_hand_y": 422.92811075846356
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1696,
+        "prediction_frame": 1726,
+        "predicted_hand_positions": {
+            "left_hand_x": 537.4109764099121,
+            "left_hand_y": 486.5726894802517,
+            "right_hand_x": 458.60419273376465,
+            "right_hand_y": 377.978515625
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 525.7513046264648,
+            "left_hand_y": 479.50998942057294,
+            "right_hand_x": 375.5725145339966,
+            "right_hand_y": 472.8505452473958
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1756,
+        "prediction_frame": 1786,
+        "predicted_hand_positions": {
+            "left_hand_x": 515.418701171875,
+            "left_hand_y": 482.015869140625,
+            "right_hand_x": 381.7589945793152,
+            "right_hand_y": 477.5683288574219
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 519.7153091430664,
+            "left_hand_y": 476.5707651774089,
+            "right_hand_x": 378.6868095397949,
+            "right_hand_y": 485.4278988308377
+        },
+        "reasoning": "",
+        "target_object": ""
+    },
+    {
+        "input_end_frame": 1816,
+        "prediction_frame": 1846,
+        "predicted_hand_positions": {
+            "left_hand_x": 550,
+            "left_hand_y": 500,
+            "right_hand_x": 550,
+            "right_hand_y": 450
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 504.94470596313477,
+            "left_hand_y": 375.8273654513889,
+            "right_hand_x": 436.344051361084,
+            "right_hand_y": 425.11935763888886
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1876,
+        "prediction_frame": 1906,
+        "predicted_hand_positions": {
+            "left_hand_x": 516,
+            "left_hand_y": 515,
+            "right_hand_x": 350,
+            "right_hand_y": 490
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 785.3087425231934,
+            "left_hand_y": 549.0818447536892,
+            "right_hand_x": 400.3530502319336,
+            "right_hand_y": 493.12201605902777
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1936,
+        "prediction_frame": 1966,
+        "predicted_hand_positions": {
+            "left_hand_x": 555.88698387146,
+            "left_hand_y": 492.09264119466144,
+            "right_hand_x": 454.95967864990234,
+            "right_hand_y": 388.73994615342883
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 560.4207992553711,
+            "left_hand_y": 502.11058722601996,
+            "right_hand_x": 478.3177852630615,
+            "right_hand_y": 475.69397820366754
+        },
+        "reasoning": "Hands are stable, finishing screw.",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 1996,
+        "prediction_frame": 2026,
+        "predicted_hand_positions": {
+            "left_hand_x": 565.0,
+            "left_hand_y": 490.0,
+            "right_hand_x": 480.0,
+            "right_hand_y": 480.0
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 574.0873336791992,
+            "left_hand_y": 376.1058807373047,
+            "right_hand_x": 454.6018600463867,
+            "right_hand_y": 356.45425584581164
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 2056,
+        "prediction_frame": 2086,
+        "predicted_hand_positions": {
+            "left_hand_x": 549.8,
+            "left_hand_y": 444.3,
+            "right_hand_x": 427.6,
+            "right_hand_y": 335.1
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 553.3394813537598,
+            "left_hand_y": 451.02081298828125,
+            "right_hand_x": 445.0793266296387,
+            "right_hand_y": 332.5005001491971
+        },
+        "reasoning": "",
+        "target_object": "M8 screw"
+    },
+    {
+        "input_end_frame": 2116,
+        "prediction_frame": 2146,
+        "predicted_hand_positions": {
+            "left_hand_x": 550,
+            "left_hand_y": 440,
+            "right_hand_x": 420,
+            "right_hand_y": 400
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 542.118501663208,
+            "left_hand_y": 504.63968912760413,
+            "right_hand_x": 461.1837863922119,
+            "right_hand_y": 463.9625549316406
+        },
+        "reasoning": "",
+        "target_object": "Cylinder bracket"
+    }
+]

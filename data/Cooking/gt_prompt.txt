@@ -1,0 +1,98 @@
+
+
+For fair_cooking_05_02, the keysteps are:
+0:02 - 0:03 Get noodles
+0:03 - 0:13 Add the noodles in the boiling water
+0:14 - 0:27 Stir noodles in the pot
+0:30 - 0:31 Get napkin
+0:41 - 0:50 Stir noodles in the pot
+0:51 - 0:53 Adjust the stove heat
+01:12 - 01:18 Stir noodles in the pot
+01:18 - 01:20 Adjust the stove heat
+01:24 - 01:33 Stir noodles in the pot
+01:41 - 01:48 Stir noodles in the pot
+02:05 - 02:16 Stir noodles in the pot
+02:29 - 02:39 Stir noodles in the pot
+02:45 - 02:55 Taste noodles to check the doneness
+02:58 - 03:00 Get garlic cloves
+03:00 - 03:01 Get spring onions
+03:01 - 03:09 Get celeries
+03:16 - 03:47 Taste noodles to check the doneness
+04:03 - 04:22 Stir noodles in the pot
+04:29 - 04:36 Taste noodles to check the doneness
+04:36 - 04:56 Drain the noodles into a strainer
+04:56 - 05:00 Adjust the stove heat
+05:00 - 05:01 Check heat of the skillet
+05:01 - 05:09 Peel garlic cloves
+05:09 - 05:14 Peel garlic cloves
+05:14 - 05:25 Cut garlic cloves
+05:25 - 05:46 Cut spring onions
+05:46 - 06:15 Cut celeries
+06:15 - 06:16 Get spoon
+06:16 - 06:19 Check heat of the skillet
+06:19 - 06:21 Get oil
+06:21 - 06:26 Add oil
+06:30 - 06:35 Tilt and rotate the skillet to allow oil or butter flow into empty space
+06:35 - 06:48 Add spring onions
+06:48 - 06:52 Stir the mixture
+06:52 - 06:55 Get soy sauce
+06:55 - 07:06 Stir the mixture
+07:06 - 07:21 Add noodles
+07:21 - 07:28 Wash hands
+07:28 - 07:31 Wipe hands
+07:31 - 07:36 Stir the mixture
+07:36 - 07:51 Stir the mixture
+07:51 - 07:53 Get a bowl
+07:53 - 07:58 Stir the mixture
+07:58 - 08:03 Add soy sauce
+08:03 - 08:12 Stir the mixture
+08:12 - 08:28 Transfer food to a plate
+
+For fair_cooking_05_04, the keysteps are:
+0:00 - 0:03 Add the noodles in the boiling water
+0:05 - 0:07 Get spoon
+0:07 - 0:25 Stir noodles in the pot
+0:25 - 0:27 Adjust the stove heat
+0:27 - 0:32 Stir noodles in the pot
+0:32 - 0:36 Turn on the stove
+0:36 - 0:59 Stir noodles in the pot
+0:59 - 01:00 Taste noodles to check the doneness
+01:00 - 01:06 Stir noodles in the pot
+01:11 - 01:14 Get oil
+01:15 - 01:20 Taste noodles to check the doneness
+01:25 - 01:26 Stir noodles in the pot
+01:26 - 01:34 Drain the noodles into a strainer
+01:35 - 01:36 Put away pot or saucepan
+01:37 - 02:12 Stir noodles in the pot
+02:12 - 02:14 Put away spoon
+02:14 - 02:29 Drain the noodles into a strainer
+02:29 - 02:31 Get plate
+02:31 - 02:33 Wipe hands
+02:33 - 02:34 Check heat of the skillet
+02:34 - 02:35 Turn off the stove
+02:35 - 02:41 Add oil
+02:41 - 02:44 Tilt and rotate the skillet to allow oil or butter flow into empty space
+02:44 - 02:45 Put away oil
+02:46 - 02:50 Get garlic cloves
+02:51 - 02:53 Put away spoon
+02:53 - 03:16 Peel garlic cloves
+03:16 - 03:57 Cut garlic cloves
+03:57 - 03:59 Get scallion
+04:01 - 04:36 Cut scallion
+04:36 - 04:42 Get spring onions
+04:42 - 04:43 Put away spring onions
+04:43 - 05:10 Cut spring onions
+05:10 - 05:12 Throw out trash or waste
+05:14 - 05:22 Tilt and rotate the skillet to allow oil or butter flow into empty space
+05:22 - 05:25 Get sesame oil
+05:28 - 05:32 Add sesame oil
+05:32 - 05:34 Put away sesame oil
+05:34 - 05:40 Add scallion
+05:40 - 05:48 Stir the mixture
+05:49 - 06:05 Add noodles
+06:05 - 06:07 Put away sieve
+06:07 - 06:27 Stir the mixture
+06:27 - 06:31 Transfer food to a plate
+06:31 - 06:33 Put away skillet or frying pan or wok
+
+Refine the draft state_scheme and directed_action_graph for this task
