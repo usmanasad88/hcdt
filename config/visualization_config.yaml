@@ -56,7 +56,7 @@ visualization:
 
 # Default experiment configuration (fallback)
 exp:
-  test_vitpose_frames: "/home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_overlay_frames" # "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/VitPose" #"/home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_overlay_frames"
-  frame_width: 1920
-  frame_height: 1080
+  test_vitpose_frames: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_2/GVHMR/cam03/preprocess/vitpose_overlay_frames" # "/home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/VitPose" #"/home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_overlay_frames"
+  frame_width: 796
+  frame_height: 448
   fps: 30

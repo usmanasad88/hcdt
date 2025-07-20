@@ -1,0 +1,326 @@
+{
+  "actions": [
+    {
+      "start_time": "00:02",
+      "end_time": "00:03",
+      "action": "Get noodles",
+      "start_frame": 60,
+      "end_frame": 90
+    },
+    {
+      "start_time": "00:03",
+      "end_time": "00:13",
+      "action": "Add the noodles in the boiling water",
+      "start_frame": 90,
+      "end_frame": 390
+    },
+    {
+      "start_time": "00:14",
+      "end_time": "00:27",
+      "action": "Stir noodles in the pot",
+      "start_frame": 420,
+      "end_frame": 810
+    },
+    {
+      "start_time": "00:30",
+      "end_time": "00:31",
+      "action": "Get napkin",
+      "start_frame": 900,
+      "end_frame": 930
+    },
+    {
+      "start_time": "00:41",
+      "end_time": "00:50",
+      "action": "Stir noodles in the pot",
+      "start_frame": 1230,
+      "end_frame": 1500
+    },
+    {
+      "start_time": "00:51",
+      "end_time": "00:53",
+      "action": "Adjust the stove heat",
+      "start_frame": 1530,
+      "end_frame": 1590
+    },
+    {
+      "start_time": "01:12",
+      "end_time": "01:18",
+      "action": "Stir noodles in the pot",
+      "start_frame": 2160,
+      "end_frame": 2340
+    },
+    {
+      "start_time": "01:18",
+      "end_time": "01:20",
+      "action": "Adjust the stove heat",
+      "start_frame": 2340,
+      "end_frame": 2400
+    },
+    {
+      "start_time": "01:24",
+      "end_time": "01:33",
+      "action": "Stir noodles in the pot",
+      "start_frame": 2520,
+      "end_frame": 2790
+    },
+    {
+      "start_time": "01:41",
+      "end_time": "01:48",
+      "action": "Stir noodles in the pot",
+      "start_frame": 3030,
+      "end_frame": 3240
+    },
+    {
+      "start_time": "02:05",
+      "end_time": "02:16",
+      "action": "Stir noodles in the pot",
+      "start_frame": 3750,
+      "end_frame": 4080
+    },
+    {
+      "start_time": "02:29",
+      "end_time": "02:39",
+      "action": "Stir noodles in the pot",
+      "start_frame": 4470,
+      "end_frame": 4770
+    },
+    {
+      "start_time": "02:45",
+      "end_time": "02:55",
+      "action": "Taste noodles to check the doneness",
+      "start_frame": 4950,
+      "end_frame": 5250
+    },
+    {
+      "start_time": "02:58",
+      "end_time": "03:00",
+      "action": "Get garlic cloves",
+      "start_frame": 5340,
+      "end_frame": 5400
+    },
+    {
+      "start_time": "03:00",
+      "end_time": "03:01",
+      "action": "Get spring onions",
+      "start_frame": 5400,
+      "end_frame": 5430
+    },
+    {
+      "start_time": "03:01",
+      "end_time": "03:09",
+      "action": "Get celeries",
+      "start_frame": 5430,
+      "end_frame": 5670
+    },
+    {
+      "start_time": "03:16",
+      "end_time": "03:47",
+      "action": "Taste noodles to check the doneness",
+      "start_frame": 5880,
+      "end_frame": 6810
+    },
+    {
+      "start_time": "04:03",
+      "end_time": "04:22",
+      "action": "Stir noodles in the pot",
+      "start_frame": 7290,
+      "end_frame": 7860
+    },
+    {
+      "start_time": "04:29",
+      "end_time": "04:36",
+      "action": "Taste noodles to check the doneness",
+      "start_frame": 8070,
+      "end_frame": 8280
+    },
+    {
+      "start_time": "04:36",
+      "end_time": "04:56",
+      "action": "Drain the noodles into a strainer",
+      "start_frame": 8280,
+      "end_frame": 8880
+    },
+    {
+      "start_time": "04:56",
+      "end_time": "05:00",
+      "action": "Adjust the stove heat",
+      "start_frame": 8880,
+      "end_frame": 9000
+    },
+    {
+      "start_time": "05:00",
+      "end_time": "05:01",
+      "action": "Check heat of the skillet",
+      "start_frame": 9000,
+      "end_frame": 9030
+    },
+    {
+      "start_time": "05:01",
+      "end_time": "05:09",
+      "action": "Peel garlic cloves",
+      "start_frame": 9030,
+      "end_frame": 9270
+    },
+    {
+      "start_time": "05:09",
+      "end_time": "05:14",
+      "action": "Peel garlic cloves",
+      "start_frame": 9270,
+      "end_frame": 9420
+    },
+    {
+      "start_time": "05:14",
+      "end_time": "05:25",
+      "action": "Cut garlic cloves",
+      "start_frame": 9420,
+      "end_frame": 9750
+    },
+    {
+      "start_time": "05:25",
+      "end_time": "05:46",
+      "action": "Cut spring onions",
+      "start_frame": 9750,
+      "end_frame": 10380
+    },
+    {
+      "start_time": "05:46",
+      "end_time": "06:15",
+      "action": "Cut celeries",
+      "start_frame": 10380,
+      "end_frame": 11250
+    },
+    {
+      "start_time": "06:15",
+      "end_time": "06:16",
+      "action": "Get spoon",
+      "start_frame": 11250,
+      "end_frame": 11280
+    },
+    {
+      "start_time": "06:16",
+      "end_time": "06:19",
+      "action": "Check heat of the skillet",
+      "start_frame": 11280,
+      "end_frame": 11370
+    },
+    {
+      "start_time": "06:19",
+      "end_time": "06:21",
+      "action": "Get oil",
+      "start_frame": 11370,
+      "end_frame": 11430
+    },
+    {
+      "start_time": "06:21",
+      "end_time": "06:26",
+      "action": "Add oil",
+      "start_frame": 11430,
+      "end_frame": 11580
+    },
+    {
+      "start_time": "06:30",
+      "end_time": "06:35",
+      "action": "Tilt and rotate the skillet to allow oil or butter flow into empty space",
+      "start_frame": 11700,
+      "end_frame": 11850
+    },
+    {
+      "start_time": "06:35",
+      "end_time": "06:48",
+      "action": "Add spring onions",
+      "start_frame": 11850,
+      "end_frame": 12240
+    },
+    {
+      "start_time": "06:48",
+      "end_time": "06:52",
+      "action": "Stir the mixture",
+      "start_frame": 12240,
+      "end_frame": 12360
+    },
+    {
+      "start_time": "06:52",
+      "end_time": "06:55",
+      "action": "Get soy sauce",
+      "start_frame": 12360,
+      "end_frame": 12450
+    },
+    {
+      "start_time": "06:55",
+      "end_time": "07:06",
+      "action": "Stir the mixture",
+      "start_frame": 12450,
+      "end_frame": 12780
+    },
+    {
+      "start_time": "07:06",
+      "end_time": "07:21",
+      "action": "Add noodles",
+      "start_frame": 12780,
+      "end_frame": 13230
+    },
+    {
+      "start_time": "07:21",
+      "end_time": "07:28",
+      "action": "Wash hands",
+      "start_frame": 13230,
+      "end_frame": 13440
+    },
+    {
+      "start_time": "07:28",
+      "end_time": "07:31",
+      "action": "Wipe hands",
+      "start_frame": 13440,
+      "end_frame": 13530
+    },
+    {
+      "start_time": "07:31",
+      "end_time": "07:36",
+      "action": "Stir the mixture",
+      "start_frame": 13530,
+      "end_frame": 13680
+    },
+    {
+      "start_time": "07:36",
+      "end_time": "07:51",
+      "action": "Stir the mixture",
+      "start_frame": 13680,
+      "end_frame": 14130
+    },
+    {
+      "start_time": "07:51",
+      "end_time": "07:53",
+      "action": "Get a bowl",
+      "start_frame": 14130,
+      "end_frame": 14190
+    },
+    {
+      "start_time": "07:53",
+      "end_time": "07:58",
+      "action": "Stir the mixture",
+      "start_frame": 14190,
+      "end_frame": 14340
+    },
+    {
+      "start_time": "07:58",
+      "end_time": "08:03",
+      "action": "Add soy sauce",
+      "start_frame": 14340,
+      "end_frame": 14490
+    },
+    {
+      "start_time": "08:03",
+      "end_time": "08:12",
+      "action": "Stir the mixture",
+      "start_frame": 14490,
+      "end_frame": 14760
+    },
+    {
+      "start_time": "08:12",
+      "end_time": "08:28",
+      "action": "Transfer food to a plate",
+      "start_frame": 14760,
+      "end_frame": 15240
+    }
+  ]
+}

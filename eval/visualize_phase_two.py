@@ -126,7 +126,7 @@ class Phase2Visualizer:
             print(f"❌ VitPose frames directory not found: {vitpose_frames_dir}")
             return None
             
-        frame_files = sorted([f for f in os.listdir(vitpose_frames_dir) if f.endswith('.png')])
+        frame_files = sorted([f for f in os.listdir(vitpose_frames_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
         
         for entry in self.results_data:
             prediction_frame = entry.get("prediction_frame", entry.get("frame"))
@@ -136,7 +136,10 @@ class Phase2Visualizer:
             # Find corresponding frame file
             frame_file = None
             for f in frame_files:
-                if f"frame_{prediction_frame:04d}" in f or f"{prediction_frame:04d}" in f:
+                # Try different precision formats: 4-digit, 5-digit, 6-digit
+                if (f"frame_{prediction_frame:04d}" in f or f"{prediction_frame:04d}" in f or
+                    f"frame_{prediction_frame:05d}" in f or f"{prediction_frame:05d}" in f or
+                    f"frame_{prediction_frame:06d}" in f or f"{prediction_frame:06d}" in f):
                     frame_file = f
                     break
             
@@ -249,9 +252,34 @@ class Phase2Visualizer:
         
         if reasoning:
             info_y += 25
-            # Truncate reasoning if too long
-            reasoning_text = reasoning[:60] + "..." if len(reasoning) > 60 else reasoning
-            draw.text((10, info_y), f"Reasoning: {reasoning_text}", fill='lightgray', font=small_font)
+            # Wrap reasoning text for multiline display
+            max_chars_per_line = 80
+            lines = []
+            words = reasoning.split()
+            current_line = ""
+            
+            for word in words:
+                if len(current_line + " " + word) <= max_chars_per_line:
+                    current_line += " " + word if current_line else word
+                else:
+                    if current_line:
+                        lines.append(current_line)
+                    current_line = word
+            
+            if current_line:
+                lines.append(current_line)
+            
+            # Limit to 3 lines to avoid overcrowding
+            if len(lines) > 3:
+                lines = lines[:3]
+                lines[-1] += "..."
+            
+            draw.text((10, info_y), "Reasoning:", fill='lightgray', font=small_font)
+            for i, line in enumerate(lines):
+                draw.text((10, info_y + 20 + (i * 18)), line, fill='lightgray', font=small_font)
+            
+            # Adjust info_y for any subsequent elements
+            info_y += 20 + (len(lines) * 18)
         
         # Add legend
         legend_y = height - 120
@@ -495,7 +523,7 @@ def get_default_output_dir(base_name="phase2_visualization"):
 def main():
     """Main function for command-line usage."""
     parser = argparse.ArgumentParser(description="Visualize Phase 2 experiment results")
-    parser.add_argument("results_file", nargs="?", default="data/Stack/phase2_icl_result_window_3.json", help="Path to the phase_two results JSON file")
+    parser.add_argument("results_file", nargs="?", default="/home/mani/Repos/hcdt/data/Cooking/phase2_icl_result_window_3.json", help="Path to the phase_two results JSON file")
     parser.add_argument("--config", help="Path to configuration file")
     parser.add_argument("--no-ground-truth", action="store_true", 
                        help="Don't show ground truth positions")

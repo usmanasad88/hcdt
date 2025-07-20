@@ -126,14 +126,20 @@ def create_directories():
         f"{example_input_folder}/gazelle_output",
         
         # Data directories
-        "/home/mani/Repos/hcdt/data/Stack",
-        "/home/mani/Repos/hcdt/data/HAViD", 
+        f"/home/mani/Repos/hcdt/data/{exp_name}",
+        f"/home/mani/Repos/hcdt/data/{exp_name}", 
         "/home/mani/Repos/hcdt/data/humanml3d"
     ]
     
     for dir_path in dirs_to_create:
-        Path(dir_path).mkdir(parents=True, exist_ok=True)
-        logger.info(f"Created directory: {dir_path}")
+        if os.path.exists(dir_path):
+            logger.info(f"Directory already exists: {dir_path}")
+        else:
+            if not DRY_RUN:
+                Path(dir_path).mkdir(parents=True, exist_ok=True)
+                logger.info(f"Created directory: {dir_path}")
+            else:
+                logger.info(f"DRY RUN: Would create directory: {dir_path}")
 
 
 def generate_dirs_yaml():
@@ -162,7 +168,7 @@ def generate_dirs_yaml():
             "hmr4d_results": f"{test_input_folder}/GVHMR/{test_video_stem}/hmr4d_results.pt",
             "gazelle_output_dir": f"{test_input_folder}/gazelle_output",
             "humanml3d_file": f"/home/mani/Repos/hcdt/data/humanml3d/test_{test_video_stem}.pt",
-            "phase2_ground_truth_file": f"/home/mani/Repos/hcdt/data/HAViD/phase2_test_{test_video_stem}.json"
+            "phase2_ground_truth_file": f"/home/mani/Repos/hcdt/data/{exp_name}/phase2_test_{test_video_stem}.json"
         },
         "example_folders": {
             "input_folder": example_input_folder,
@@ -176,7 +182,7 @@ def generate_dirs_yaml():
             "hmr4d_results": f"{example_input_folder}/GVHMR/{example_video_stem}/hmr4d_results.pt",
             "gazelle_output_dir": f"{example_input_folder}/gazelle_output",
             "humanml3d_file": f"/home/mani/Repos/hcdt/data/humanml3d/example_{example_video_stem}.pt",
-            "phase2_ground_truth_file": f"/home/mani/Repos/hcdt/data/HAViD/phase2_example_{example_video_stem}.json"
+            "phase2_ground_truth_file": f"/home/mani/Repos/hcdt/data/{exp_name}/phase2_example_{example_video_stem}.json"
         },
         "data_folders": {
             "stack_data_dir": "/home/mani/Repos/hcdt/data/Stack",
@@ -194,8 +200,8 @@ def generate_dirs_yaml():
             "example_vitpose_overlay_frames": f"{example_input_folder}/GVHMR/{example_video_stem}/preprocess/vitpose_overlay_frames",
             "test_image_dir": f"{test_input_folder}/frames",
             "example_image_dir": f"{example_input_folder}/frames",
-            "test_phase2_ground_truth_file": f"/home/mani/Repos/hcdt/data/HAViD/phase2_test_{test_video_stem}.json",
-            "example_phase2_ground_truth_file": f"/home/mani/Repos/hcdt/data/HAViD/phase2_example_{example_video_stem}.json"
+            "test_phase2_ground_truth_file": f"/home/mani/Repos/hcdt/data/{exp_name}/phase2_test_{test_video_stem}.json",
+            "example_phase2_ground_truth_file": f"/home/mani/Repos/hcdt/data/{exp_name}/phase2_example_{example_video_stem}.json"
         }
     }
     
@@ -216,11 +222,11 @@ def extract_frames_ffmpeg(video_path, output_dir):
     """Extract all frames from video using ffmpeg and add frame numbers."""
     logger.info(f"Extracting frames from {video_path} to {output_dir}")
     
-    # Check if frames already exist
+    # Check if frames already exist and validate count
     if os.path.exists(output_dir) and not DRY_RUN:
-        existing_frames = len([f for f in os.listdir(output_dir) if f.endswith('.jpg')])
-        if existing_frames > 0:
-            logger.info(f"Frames already exist in {output_dir} ({existing_frames} frames). Skipping extraction.")
+        existing_frames = [f for f in os.listdir(output_dir) if f.endswith('.jpg')]
+        if len(existing_frames) > 0:
+            logger.info(f"Frames already exist in {output_dir} ({len(existing_frames)} frames). Skipping extraction.")
             return
     
     # Create output directory
@@ -266,11 +272,11 @@ def extract_vitpose_overlay_frames(gvhmr_output_root, video_stem):
     
     logger.info(f"Extracting frames from VitPose video overlay: {vitpose_video_path}")
     
-    # Check if frames already exist
+    # Check if frames already exist and validate count
     if os.path.exists(vitpose_frames_output_dir) and not DRY_RUN:
-        existing_frames = len([f for f in os.listdir(vitpose_frames_output_dir) if f.endswith('.jpg')])
-        if existing_frames > 0:
-            logger.info(f"VitPose overlay frames already exist in {vitpose_frames_output_dir} ({existing_frames} frames). Skipping extraction.")
+        existing_frames = [f for f in os.listdir(vitpose_frames_output_dir) if f.endswith('.jpg')]
+        if len(existing_frames) > 0:
+            logger.info(f"VitPose overlay frames already exist in {vitpose_frames_output_dir} ({len(existing_frames)} frames). Skipping extraction.")
             return
     
     # Create output directory
@@ -288,8 +294,8 @@ def extract_vitpose_overlay_frames(gvhmr_output_root, video_stem):
         
         # Add frame numbers to the extracted VitPose overlay frames
         if not DRY_RUN:
-            frame_count = len([f for f in os.listdir(vitpose_frames_output_dir) if f.endswith('.jpg')])
-            logger.info(f"Adding frame numbers to {frame_count} VitPose overlay frames...")
+            existing_frames = [f for f in os.listdir(vitpose_frames_output_dir) if f.endswith('.jpg')]
+            logger.info(f"Adding frame numbers to {len(existing_frames)} VitPose overlay frames...")
             overlay_frame_numbers_on_folder(
                 input_folder=vitpose_frames_output_dir,
                 output_folder=vitpose_frames_output_dir,
@@ -299,8 +305,9 @@ def extract_vitpose_overlay_frames(gvhmr_output_root, video_stem):
             )
             logger.info(f"Successfully added frame numbers to VitPose overlay frames")
         
-        frame_count = len([f for f in os.listdir(vitpose_frames_output_dir) if f.endswith('.jpg')])
-        logger.info(f"Successfully extracted {frame_count} frames from VitPose overlay to {vitpose_frames_output_dir}")
+        if not DRY_RUN:
+            existing_frames = [f for f in os.listdir(vitpose_frames_output_dir) if f.endswith('.jpg')]
+            logger.info(f"Successfully extracted {len(existing_frames)} frames from VitPose overlay to {vitpose_frames_output_dir}")
     except subprocess.CalledProcessError as e:
         logger.error(f"Failed to extract VitPose overlay frames: {e}")
         raise
@@ -313,15 +320,43 @@ def run_gvhmr_pose_estimation(video_path, output_root):
     # Check if GVHMR results already exist
     video_stem = Path(video_path).stem
     hmr4d_results_path = os.path.join(output_root, video_stem, "hmr4d_results.pt")
+    vitpose_file_path = os.path.join(output_root, video_stem, "preprocess", "vitpose.pt")
     vitpose_frames_dir = os.path.join(output_root, video_stem, "preprocess", "VitPose")
+    vitpose_overlay_video = os.path.join(output_root, video_stem, "preprocess", "vitpose_video_overlay.mp4")
     
-    if os.path.exists(hmr4d_results_path) and not DRY_RUN:
-        logger.info(f"GVHMR results already exist at {hmr4d_results_path}. Skipping pose estimation.")
-        # Check if VitPose frames also exist
-        if os.path.exists(vitpose_frames_dir):
-            vitpose_frame_count = len([f for f in os.listdir(vitpose_frames_dir) if f.endswith('.jpg')])
-            logger.info(f"VitPose frames directory exists with {vitpose_frame_count} frames at {vitpose_frames_dir}")
+    # Check if all expected outputs exist
+    outputs_exist = True
+    missing_files = []
+    
+    if not os.path.exists(hmr4d_results_path) and not DRY_RUN:
+        outputs_exist = False
+        missing_files.append("hmr4d_results.pt")
+    
+    if not os.path.exists(vitpose_file_path) and not DRY_RUN:
+        outputs_exist = False
+        missing_files.append("vitpose.pt")
+    
+    if not os.path.exists(vitpose_frames_dir) and not DRY_RUN:
+        outputs_exist = False
+        missing_files.append("VitPose frames directory")
+    elif os.path.exists(vitpose_frames_dir) and not DRY_RUN:
+        vitpose_frame_count = len([f for f in os.listdir(vitpose_frames_dir) if f.endswith('.jpg')])
+        if vitpose_frame_count == 0:
+            outputs_exist = False
+            missing_files.append("VitPose frames (directory empty)")
+    
+    if outputs_exist or DRY_RUN:
+        if not DRY_RUN:
+            logger.info(f"GVHMR results already exist at {hmr4d_results_path}. Skipping pose estimation.")
+            if os.path.exists(vitpose_frames_dir):
+                vitpose_frame_count = len([f for f in os.listdir(vitpose_frames_dir) if f.endswith('.jpg')])
+                logger.info(f"VitPose frames directory exists with {vitpose_frame_count} frames at {vitpose_frames_dir}")
+        else:
+            logger.info(f"DRY RUN: GVHMR outputs would be at {output_root}/{video_stem}/")
         return
+    
+    if missing_files:
+        logger.info(f"Missing GVHMR outputs: {', '.join(missing_files)}. Running pose estimation.")
     
     # Change to GVHMR directory for execution
     gvhmr_dir = "/home/mani/GVHMR"
@@ -370,11 +405,31 @@ def run_gazelle_gaze_estimation(input_dir, output_dir):
     """Run Gazelle gaze estimation."""
     logger.info(f"Running Gazelle gaze estimation for {input_dir}")
     
+    # Check if input directory exists and has frames
+    if not os.path.exists(input_dir) and not DRY_RUN:
+        logger.warning(f"Input directory for Gazelle not found: {input_dir}. Skipping gaze estimation.")
+        return
+    
+    if not DRY_RUN:
+        input_frames = [f for f in os.listdir(input_dir) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+        if len(input_frames) == 0:
+            logger.warning(f"No image files found in input directory: {input_dir}. Skipping gaze estimation.")
+            return
+        logger.info(f"Found {len(input_frames)} input frames for Gazelle processing")
+    
     # Check if Gazelle results already exist
     gazelle_results_file = os.path.join(output_dir, "gaze_pixel_locations.txt")
+    gazelle_config_file = os.path.join(output_dir, "config.yaml")
     
-    if os.path.exists(gazelle_results_file) and not DRY_RUN:
+    outputs_exist = True
+    if not os.path.exists(gazelle_results_file) and not DRY_RUN:
+        outputs_exist = False
+    
+    if outputs_exist and not DRY_RUN:
         logger.info(f"Gazelle results already exist at {gazelle_results_file}. Skipping gaze estimation.")
+        return
+    elif DRY_RUN:
+        logger.info(f"DRY RUN: Gazelle outputs would be at {output_dir}")
         return
     
     # Change to gazelle directory for execution
@@ -451,7 +506,7 @@ def process_video_set(input_folder, video_names, egocentric_video_names, set_nam
             
             # Create phase2 ground truth file (only for first video)
             vitpose_file_path = os.path.join(gvhmr_output_root, video_stem, "preprocess", "vitpose.pt")
-            phase2_gt_output_path = os.path.join("/home/mani/Repos/hcdt/data/HAViD", f"phase2_{set_name}_{video_stem}.json")
+            phase2_gt_output_path = os.path.join(f"/home/mani/Repos/hcdt/data/{exp_name}", f"phase2_{set_name}_{video_stem}.json")
             
             if not (args and args.skip_phase2_gt):
                 # Try to read fps from config, default to 30 if not available
@@ -564,7 +619,7 @@ def main():
         logger.info("Preprocessing pipeline completed successfully!")
         logger.info(f"Configuration file available at: {config_path}{exp_name}.yaml")
         logger.info(f"Directory configuration available at: {config_path}{exp_name}_dirs.yaml")
-        logger.info("Generated phase2 ground truth files are available in: /home/mani/Repos/hcdt/data/HAViD/")
+        logger.info(f"Generated phase2 ground truth files are available in: /home/mani/Repos/hcdt/data/{exp_name}/")
         logger.info("You can now run the phase2 experiment using the generated data.")
         
     except Exception as e:

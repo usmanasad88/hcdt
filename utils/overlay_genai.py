@@ -70,14 +70,29 @@ def overlay_genai_video_gt(
             "Expected Immediate Next Action"
         ]
 
-
     # Load JSON as a list of dicts
     with open(md_path, "r") as f:
         data = json.load(f)
 
+    # Determine the format and extract entries
+    if len(data) > 0:
+        first_item = data[0]
+        # Check if it's the new format (has "frame" and "state" keys)
+        if "frame" in first_item and "state" in first_item:
+            # New format: extract state data and use "frame" for frame numbers
+            entries = []
+            for item in data:
+                entry = item["state"].copy()  # Copy the state data
+                entry["frame_number"] = item["frame"]  # Add frame number from outer level
+                entries.append(entry)
+        else:
+            # Original format: use data as-is
+            entries = [entry for entry in data if "frame_number" in entry or "frame" in entry]
+    else:
+        entries = []
+
     # Sort entries by frame_number
-    entries = [entry for entry in data if "frame_number" in entry]
-    entries.sort(key=lambda x: x["frame_number"])
+    entries.sort(key=lambda x: x.get("frame_number", x.get("frame")))
 
     cap = cv2.VideoCapture(video_path)
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
@@ -95,11 +110,15 @@ def overlay_genai_video_gt(
         if not ret:
             break
 
-        # Advance entry_idx to the closest frame_number <= current_frame
-        while entry_idx + 1 < num_entries and entries[entry_idx + 1]["frame_number"] <= current_frame:
+        # Advance entry_idx to the closest frame_number or frame <= current_frame
+        while entry_idx + 1 < num_entries and (
+            entries[entry_idx + 1].get("frame_number", entries[entry_idx + 1].get("frame")) <= current_frame
+        ):
             entry_idx += 1
 
-        info = entries[entry_idx] if num_entries > 0 and entries[entry_idx]["frame_number"] <= current_frame else None
+        info = entries[entry_idx] if num_entries > 0 and (
+            entries[entry_idx].get("frame_number", entries[entry_idx].get("frame")) <= current_frame
+        ) else None
         lines = []
         if info:
             for field in fields:
@@ -387,8 +406,8 @@ if __name__ == "__main__":
 
     overlay_genai_video_gt(
         "/home/mani/Central/Stack/exp2/cam01.mp4",
-        "data/Stack/exp2_gt.json",
-        "data/OverlayVids/cam01_gt.mp4",
+        "data/Stack/ICL_result_exp2_base.json",
+        "data/OverlayVids/cam01_icl_best.mp4",
         fields=["frame_number","steps_completed","steps_in_progress","steps_available"]
     )
 

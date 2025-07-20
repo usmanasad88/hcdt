@@ -10,10 +10,11 @@ import time
 import hydra
 from omegaconf import DictConfig, OmegaConf
 from openai import OpenAI
+import hashlib
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.imgutils import image_to_base64
-from utils.textutils import extract_json_from_response,get_action_description_for_frame
+from utils.textutils import extract_json_from_response,get_action_description_for_frame, get_keystep_for_frame
 from utils.experiment_logger import ExperimentLogger
 from utils.motionutils import get_hand_xy_positions, get_end_effector_velocities
 
@@ -40,7 +41,8 @@ def get_image_mime_type(file_path: str) -> str:
 
 def output_contents(contents: List[types.Content], response_text: str, file_path: Optional[str] = None) -> str:
     """
-    Formats the conversation history and response, and optionally saves it to a file.
+    Formats the conversation history and response with specific image identifiers,
+    and optionally saves it to a file. Handles text-only messages safely.
     
     Args:
         contents (List[types.Content]): The list of Content objects (conversation history).
@@ -51,52 +53,66 @@ def output_contents(contents: List[types.Content], response_text: str, file_path
         str: A formatted string representation of the contents and response.
     """
     output = []
+    
+    # Process all content objects, including the final user message
     for content in contents:
-        role = content.role.capitalize()
-        # The last user message is part of the history but its response isn't yet,
-        # so we handle it separately after the loop.
+        # The model's response to the final message is handled after the loop
         if content.role == "user" and content == contents[-1]:
             continue
 
+        role = content.role.capitalize()
         text_parts = []
-        has_image = False
-        has_json = False
+        attachment_parts = []
 
         for part in content.parts:
-            # Use hasattr to safely check for attributes
             if hasattr(part, 'text') and part.text:
                 text_parts.append(part.text)
-            if hasattr(part, 'mime_type'):
-                if 'image/' in part.mime_type:
-                    has_image = True
-                elif 'json' in part.mime_type:
-                    has_json = True
-        
+            
+            # This check now safely handles cases where inline_data is None
+            if hasattr(part, 'inline_data') and part.inline_data:
+                mime_type = part.inline_data.mime_type
+                data = part.inline_data.data
+
+                if 'image/' in mime_type:
+                    image_hash = hashlib.sha256(data).hexdigest()
+                    identifier = f"[Image Attached: {mime_type}, sha256: {image_hash[:12]}]"
+                    attachment_parts.append(identifier)
+                elif 'json' in mime_type:
+                    attachment_parts.append("[JSON Data Attached]")
+
         full_text = "".join(text_parts)
-        if has_image:
-            full_text += "\n[Image Content Attached]"
-        if has_json:
-            full_text += "\n[JSON Data Attached]"
+        if attachment_parts:
+            full_text += "\n" + "\n".join(attachment_parts)
         
         output.append(f"--- {role} Turn ---\n{full_text.strip()}")
 
-        # For ICL examples, the model's response is already in `contents`
         if content.role == "model":
-            # The model's response text is already in full_text, 
-            # so we just need to add the separator.
             output.append("-" * 20)
 
-
-    # Handle the final user prompt and the model's response to it
+    # Handle the final user prompt
     final_user_content = contents[-1]
     final_user_text_parts = [part.text for part in final_user_content.parts if hasattr(part, 'text') and part.text]
     final_user_full_text = "".join(final_user_text_parts)
-    if any('image/' in part.mime_type for part in final_user_content.parts if hasattr(part, 'mime_type')):
-        final_user_full_text += "\n[Image Content Attached]"
-    if any('json' in part.mime_type for part in final_user_content.parts if hasattr(part, 'mime_type')):
-        final_user_full_text += "\n[JSON Data Attached]"
+    
+    final_attachment_parts = []
+    for part in final_user_content.parts:
+        # Apply the same safe check here to prevent the crash
+        if hasattr(part, 'inline_data') and part.inline_data:
+            mime_type = part.inline_data.mime_type
+            data = part.inline_data.data
+            if 'image/' in mime_type:
+                image_hash = hashlib.sha256(data).hexdigest()
+                identifier = f"[Image Attached: {mime_type}, sha256: {image_hash[:12]}]"
+                final_attachment_parts.append(identifier)
+            elif 'json' in mime_type:
+                final_attachment_parts.append("[JSON Data Attached]")
+
+    if final_attachment_parts:
+        final_user_full_text += "\n" + "\n".join(final_attachment_parts)
 
     output.append(f"--- User Turn ---\n{final_user_full_text.strip()}")
+    
+    # Add the final model response
     output.append(f"--- Model Turn ---\n{response_text.strip()}")
     output.append("-" * 20)
 
@@ -104,8 +120,10 @@ def output_contents(contents: List[types.Content], response_text: str, file_path
     
     if file_path:
         try:
-            os.makedirs(os.path.dirname(file_path), exist_ok=True)
-            with open(file_path, 'w') as f:
+            # Ensure the directory exists before writing the file
+            if os.path.dirname(file_path):
+                 os.makedirs(os.path.dirname(file_path), exist_ok=True)
+            with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(formatted_string)
         except Exception as e:
             print(f"Error writing to log file {file_path}: {e}")
@@ -135,8 +153,8 @@ def generate(cfg: DictConfig,
     )
     
     model=cfg.model
+    # time.sleep(10)
 
-    start_time = time.time()
     
     # `contents` is now passed in, representing the conversation history.
     # The function will append the current turn's user message to it.
@@ -191,10 +209,28 @@ def generate(cfg: DictConfig,
         
     contents.append(types.Content(role="user", parts=first_user_parts))
     
-    # ICL-specific conversation flow is now handled in runPhase2
+    # ICL-specific conversation flow
+    # Turn 2: Model acknowledges the examples
+    if cfg.exp.type == "ICL":
+        model_reponse="Okay, I have analyzed the example video and supporting documents. I am ready for your questions about the test video."
+        contents.append(types.Content(role="model", parts=[types.Part.from_text(text=model_reponse)]))
+
+        # Turn 3: User provides the next prompt and test images
+        second_user_parts = [types.Part.from_text(text=next_query_prompt)]
+        for encoded_image in encoded_test_images:
+            if encoded_image:
+                image_bytes = base64.b64decode(encoded_image)
+                second_user_parts.append(types.Part.from_bytes(
+                    mime_type="image/png",
+                    data=image_bytes
+                ))
+
+        contents.append(types.Content(role="user", parts=second_user_parts))
+
+
     generate_content_config = types.GenerateContentConfig(
         thinking_config = types.ThinkingConfig(
-            thinking_budget=1,), #Is this a hyperparameter?
+            thinking_budget=512,), #Is this a hyperparameter?
         response_mime_type="text/plain",
         temperature=0.5,  
         top_p=0.95,        
@@ -202,15 +238,34 @@ def generate(cfg: DictConfig,
         # response_mime_type="application/json",
 
     )
+    start_time = time.time()
     full_response = []
-    for chunk in client.models.generate_content_stream(
-        model=model,
-        contents=contents,
-        config=generate_content_config,
-    ):
-        if chunk.text is not None: # Check if chunk.text is not None
-            print(chunk.text, end="")
-            full_response.append(chunk.text)
+    retries = 5
+    for attempt in range(retries):
+        try:
+            # Reset full_response for each attempt
+            full_response = []
+            for chunk in client.models.generate_content_stream(
+                model=model,
+                contents=contents,
+                config=generate_content_config,
+            ):
+                if chunk.text is not None: # Check if chunk.text is not None
+                    print(chunk.text, end="")
+                    full_response.append(chunk.text)
+            # If the loop completes without an exception, break out of the retry loop
+            break
+        except genai.errors.ClientError as e:
+            # if e.reason == 'RESOURCE_EXHAUSTED':
+            print(f"\nResource exhausted error: {e}. Waiting 10 seconds to retry... (Attempt {attempt + 1}/{retries})")
+            if attempt < retries - 1:
+                time.sleep(15*attempt)  # Wait before retrying
+            else:
+                print("Max retries reached. Failing.")
+                raise
+            # else:
+            #     # Re-raise the exception if it's not a resource exhausted error
+            #     raise
 
     response_text = "".join(full_response)
     
@@ -272,6 +327,9 @@ def runPhase2(cfg: DictConfig):
         test_gaze_frame_files = sorted([f for f in os.listdir(cfg.exp.test_gazelle_output_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
         example_gaze_frame_files = sorted([f for f in os.listdir(cfg.exp.example_gazelle_output_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
     
+    if cfg.exp.use_ego:
+        test_ego_frame_files = sorted([f for f in os.listdir(cfg.exp.test_ego_frames) if f.endswith(('.png', '.jpg', '.jpeg'))])
+        example_ego_frame_files = sorted([f for f in os.listdir(cfg.exp.example_ego_frames) if f.endswith(('.png', '.jpg', '.jpeg'))])
     # Process frames with 0.2 second intervals (every 3 frames at 15fps)
     frame_interval = int(0.2 * cfg.exp.fps)  # 0.2 seconds * 15 fps = 3 frames
     num_input_frames = 10
@@ -280,19 +338,20 @@ def runPhase2(cfg: DictConfig):
     script_dir = os.path.dirname(__file__)
     dag_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'dag.json')
 
-    # Load ground truth data for examples
-    with open(cfg.exp.test_phase2_ground_truth_file, 'r') as f:
-        ground_truth_data = json.load(f)
+    # Remove ground truth file loading - we'll use get_hand_xy_positions instead
     
-    gt_map = {item['frame']: item for item in ground_truth_data}
-
     try:
         # Define the frame numbers to process dynamically
         fps = cfg.exp.fps
         start_frame = 1 + fps * 2
-        max_frame = len(test_frame_files) - 2 * fps
-        frame_numbers = [start_frame + i * 60 for i in range((max_frame - start_frame) // 60 + 1)]
-        
+        if cfg.max_frames > 0:
+            max_frame = cfg.max_frames
+        else:
+            max_frame = len(test_frame_files) - 2 * fps
+        frame_increment = cfg.phase_two_increment
+        frame_numbers = [start_frame + i * frame_increment for i in range((max_frame - start_frame) // frame_increment + 1)] #Usman: Changing casually to 240 for quick test
+        # frame_numbers = [61, 301, 541, 781] # test
+
         # Main loop for processing each frame that needs a prediction
         for i, frame_num in enumerate(frame_numbers):
             # Skip the frames that will only be used as examples
@@ -315,7 +374,10 @@ def runPhase2(cfg: DictConfig):
 
                 # This block is similar to your original loop, but now it's for building examples
                 example_input_frames = []
-                example_task_desc = get_action_description_for_frame(example_frame_num, cfg.exp.test_gt_filename, dag_file_path)
+                if cfg.exp.use_keystep:
+                    example_task_desc= get_keystep_for_frame(example_frame_num, cfg.exp.test_keystep_filename)
+                else:
+                    example_task_desc = get_action_description_for_frame(example_frame_num, cfg.exp.test_gt_filename, dag_file_path)
                 example_prompt_text = prompt_template.format(task_description_string=example_task_desc)
                 
                 if cfg.exp.attach_drawing:
@@ -325,6 +387,9 @@ def runPhase2(cfg: DictConfig):
                 if cfg.use_gaze:
                     example_prompt_text += f"\n\n{cfg.gaze_prompt}\n\n"
 
+                if cfg.exp.use_ego:
+                    example_prompt_text += f"\n\n{cfg.exp.ego_prompt}\n\n"
+
                 example_hand_pos_data = []
                 example_end_frame_idx = example_frame_num - 1
                 for j in range(num_input_frames):
@@ -333,8 +398,10 @@ def runPhase2(cfg: DictConfig):
                         example_input_frames.append(os.path.join(cfg.exp.test_vitpose_frames, test_frame_files[frame_idx]))
                         if cfg.use_gaze:
                             example_input_frames.append(os.path.join(cfg.exp.test_gazelle_output_dir, test_gaze_frame_files[frame_idx]))
+                        if cfg.exp.use_ego:
+                            example_input_frames.append(os.path.join(cfg.exp.test_ego_frames, test_ego_frame_files[frame_idx]))
                         try:
-                            left_hand_x, left_hand_y, right_hand_x, right_hand_y = get_hand_xy_positions(cfg.exp.test_vitpose, frame_idx)
+                            left_hand_x, left_hand_y, right_hand_x, right_hand_y = get_hand_xy_positions(cfg.exp.test_vitpose, frame_idx, frame_width=cfg.exp.frame_width, frame_height=cfg.exp.frame_height)
                             (_, _, _, _, _, left_hand_vel, right_hand_vel, _) = get_end_effector_velocities(cfg.exp.test_humanml3d, frame_idx)
                             left_hand_vel *= 100
                             right_hand_vel *= 100
@@ -360,14 +427,25 @@ def runPhase2(cfg: DictConfig):
                 contents.append(types.Content(role="user", parts=user_parts))
 
                 # Add the model part (ground truth) of the example to history
-                prediction_frame = example_frame_num + 2*cfg.exp.fps  # 2 seconds * 15 fps = 30 frames
-                if prediction_frame in gt_map:
-                    gt_entry = gt_map[prediction_frame]
-                    model_response = {"predicted_hand_positions": gt_entry.get("actual_hand_positions", {})}
+                prediction_frame = example_frame_num + cfg.prediction_delay_seconds * cfg.exp.fps
+                try:
+                    # Use get_hand_xy_positions to get actual hand positions for the prediction frame
+                    pred_frame_idx = prediction_frame - 1  # Convert to 0-based index
+                    left_hand_x, left_hand_y, right_hand_x, right_hand_y = get_hand_xy_positions(
+                        cfg.exp.test_vitpose, pred_frame_idx, 
+                        frame_width=cfg.exp.frame_width, frame_height=cfg.exp.frame_height
+                    )
+                    actual_hand_positions = {
+                        "left_hand_x": left_hand_x,
+                        "left_hand_y": left_hand_y,
+                        "right_hand_x": right_hand_x,
+                        "right_hand_y": right_hand_y
+                    }
+                    model_response = {"predicted_hand_positions": actual_hand_positions}
                     parts_model_response = [types.Part.from_text(text=json.dumps(model_response))]
                     contents.append(types.Content(role="model", parts=parts_model_response))
-                else:
-                    print(f"Warning: Ground truth for example prediction frame {prediction_frame} not found.")
+                except Exception as e:
+                    print(f"Warning: Could not get hand positions for example prediction frame {prediction_frame}: {e}")
             # --- End of Context Window Creation ---
 
 
@@ -389,7 +467,7 @@ def runPhase2(cfg: DictConfig):
                 if frame_idx >= 0 and frame_idx < len(test_frame_files):
                     input_frames.append(os.path.join(cfg.exp.test_vitpose_frames, test_frame_files[frame_idx]))
                     try:
-                        left_hand_x, left_hand_y, right_hand_x, right_hand_y = get_hand_xy_positions(cfg.exp.test_vitpose, frame_idx)
+                        left_hand_x, left_hand_y, right_hand_x, right_hand_y = get_hand_xy_positions(cfg.exp.test_vitpose, frame_idx, frame_width=cfg.exp.frame_width, frame_height=cfg.exp.frame_height)
                         (_, _, _, _, _, left_hand_vel, right_hand_vel, _) = get_end_effector_velocities(cfg.exp.test_humanml3d, frame_idx)
                         left_hand_vel *= 100
                         right_hand_vel *= 100
@@ -420,12 +498,24 @@ def runPhase2(cfg: DictConfig):
             if json_part:
                 try:
                     response_data = json.loads(json_part)
-                    prediction_frame = frame_num + 2*cfg.exp.fps  # 2 seconds * 15 fps = 30 frames
+                    prediction_frame = frame_num + cfg.prediction_delay_seconds * cfg.exp.fps
                     
-                    # Get actual hand positions for the prediction frame for comparison
+                    # Get actual hand positions for the prediction frame using get_hand_xy_positions
                     actual_positions = {}
-                    if prediction_frame in gt_map:
-                        actual_positions = gt_map[prediction_frame].get('actual_hand_positions', {})
+                    try:
+                        pred_frame_idx = prediction_frame - 1  # Convert to 0-based index
+                        left_hand_x, left_hand_y, right_hand_x, right_hand_y = get_hand_xy_positions(
+                            cfg.exp.test_vitpose, pred_frame_idx, 
+                            frame_width=cfg.exp.frame_width, frame_height=cfg.exp.frame_height
+                        )
+                        actual_positions = {
+                            "left_hand_x": left_hand_x,
+                            "left_hand_y": left_hand_y,
+                            "right_hand_x": right_hand_x,
+                            "right_hand_y": right_hand_y
+                        }
+                    except Exception as e:
+                        print(f"Warning: Could not get actual hand positions for prediction frame {prediction_frame}: {e}")
 
                     all_responses_data.append({
                         "input_end_frame": frame_num,
@@ -456,9 +546,172 @@ def runPhase2(cfg: DictConfig):
         
         print(f"\n✅ Phase 2 experiment finished. Results saved to {results_file_path}")
 
+def runICL_HI(cfg: DictConfig):
+    
+    # Initialize experiment logger
+    output_dir = os.getcwd()
+    output_dir = os.path.join(output_dir, 'logs')
+    logger = ExperimentLogger(output_dir=output_dir)
+    
+    # Start experiment with notes
+    experiment_notes = f"ICL experiment on {cfg.case_study} dataset"
+    experiment_id = logger.start_experiment(cfg, experiment_notes)
+    
+    script_dir = os.path.dirname(__file__)
+    dag_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'dag.json')
+    state_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'state.json')
+    # example_gt_path=  os.path.join(script_dir, '..', 'data', case_study, 'S02A08I21_gt.json')
+    result_store_path = os.path.join(script_dir, '..', 'data', cfg.case_study, cfg.exp.type + '_result.json')
+    
+    with open(dag_file_path, 'r') as f:
+            task_graph_string = f.read()
+    with open(state_file_path, 'r') as f:
+            state_schema_string = f.read()
+    with open(cfg.exp.example_gt_filename, 'r') as f:
+            example_gt_string = f.read()
+
+
+    if cfg.exp.prompt_version == "version1":
+        prompt_template = cfg.prompts.version1
+
+        prompt_text = prompt_template.format(
+            task_graph_string=task_graph_string,
+            state_schema_string=state_schema_string,
+            example_gt_string=example_gt_string,
+            example_frame_step=cfg.exp.example_frame_step,
+            fps=cfg.exp.fps,
+            test_frame_step=cfg.exp.test_frame_step,
+            example_frame_step_seconds=cfg.exp.example_frame_step / cfg.exp.fps,
+            test_frame_step_seconds=cfg.exp.test_frame_step / cfg.exp.fps
+        )
+        json_data = None  # No JSON data needed for version1 prompt
+
+    elif cfg.exp.prompt_version == "version2":
+        prompt_template = cfg.prompts.version2
+
+        prompt_text = prompt_template.format(
+            example_frame_step_seconds=cfg.exp.example_frame_step / cfg.exp.fps,
+            test_frame_step_seconds=cfg.exp.test_frame_step / cfg.exp.fps
+        )
+        json_data = {
+            "task_graph": task_graph_string,
+            "state_schema": state_schema_string,
+            "example_gt": example_gt_string
+        }
+    elif cfg.exp.prompt_version == "version3":
+        prompt_template = cfg.prompts.version3
+
+        prompt_text = prompt_template.format(
+            task_graph_string=task_graph_string,
+            state_schema_string=state_schema_string,
+            example_frame_step=cfg.exp.example_frame_step,
+            fps=cfg.exp.fps,
+            test_frame_step=cfg.exp.test_frame_step,
+            example_frame_step_seconds=cfg.exp.example_frame_step / cfg.exp.fps,
+            test_frame_step_seconds=cfg.exp.test_frame_step / cfg.exp.fps
+        )
+        json_data = None  # No JSON data needed for version1 prompt
+    
+    first_image_paths = []
+
+    if cfg.exp.attach_drawing:
+        first_image_paths = [cfg.exp.drawing]        
+        prompt_text += f"\n\n{cfg.exp.drawing_prompt}\n\n"
+
+    if cfg.exp.use_ego:
+        prompt_text += f"\n\n{cfg.exp.ego_prompt}\n\n"
+        
+    # Accept both .png, .jpg, .jpeg files for examples
+    example_frame_files = sorted([
+        f for f in os.listdir(cfg.exp.example_image_dir)
+        if f.endswith(('.png', '.jpg', '.jpeg'))
+    ])
+    for i in range(0, len(example_frame_files), cfg.exp.example_frame_step):
+        first_image_paths.append(os.path.join(cfg.exp.example_image_dir, example_frame_files[i]))
+
+    # Accept both .png, .jpg, .jpeg files for test frames
+    if cfg.total_frames_to_process == 'all':
+        total_frames_to_process = len([
+            f for f in os.listdir(cfg.exp.test_image_dir)
+            if f.endswith(('.png', '.jpg', '.jpeg'))
+        ])
+    all_responses_data = []
+    
+    current_response = None
+    frame_num = cfg.start_frame
+
+    if cfg.use_gaze:
+        test_gaze_frame_files = sorted([f for f in os.listdir(cfg.exp.test_gazelle_output_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
+        example_gaze_frame_files = sorted([f for f in os.listdir(cfg.exp.example_gazelle_output_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
+    
+    if cfg.exp.use_ego:
+        test_ego_frame_files = sorted([f for f in os.listdir(cfg.exp.test_ego_frames) if f.endswith(('.png', '.jpg', '.jpeg'))])
+        example_ego_frame_files = sorted([f for f in os.listdir(cfg.exp.example_ego_frames) if f.endswith(('.png', '.jpg', '.jpeg'))])
+
+    
+
+    try:
+        while frame_num < total_frames_to_process:
+            if cfg.end_frame > 0 and frame_num >= cfg.end_frame:
+                break
+            second_prompt_template = cfg.second_prompt.v1
+            second_prompt_text = second_prompt_template.format(                
+                fps=cfg.exp.fps,
+                frame_num=frame_num,
+                last_frame_time=f"{frame_num / cfg.exp.fps:.2f}"
+            )
+            second_image_paths = []
+            # Accept both .png, .jpg, .jpeg files for test frames
+            test_frame_files = sorted([
+                f for f in os.listdir(cfg.exp.test_image_dir)
+                if f.endswith(('.png', '.jpg', '.jpeg'))
+            ])
+            for i in range(0, frame_num, cfg.exp.test_frame_step):
+                second_image_paths.append(os.path.join(cfg.exp.test_image_dir, test_frame_files[i]))
+                if cfg.use_gaze:
+                    second_image_paths.append(os.path.join(cfg.exp.test_gazelle_output_dir, test_gaze_frame_files[i]))
+                if cfg.exp.use_ego:
+                    second_image_paths.append(os.path.join(cfg.exp.test_ego_frames, test_ego_frame_files[i]))
+
+
+            # if cfg.use_openai:
+            #     current_response = generate_openAI(cfg, prompt_text, second_image_paths, first_image_paths, second_prompt_text, logger, frame_num, json_data=json_data)
+            # else:
+            
+            current_response = generate(cfg, prompt_text, second_image_paths, first_image_paths, second_prompt_text, logger, frame_num, json_data=json_data)
+            response_obj = json.loads(extract_json_from_response(current_response))     
+            all_responses_data.append({"frame": frame_num, "state": response_obj})        
+
+              
+            current_response = f'"""{json.dumps(response_obj)}"""'
+
+            all_responses_data.sort(key=lambda x: x.get("frame", float('inf'))) # Sort by frame number
+            with open(result_store_path, 'w') as f:
+                json.dump(all_responses_data, f, indent=4)
+            frame_num += cfg.exp.test_frame_step
+            
+            # Save checkpoint every 5 generations
+            if len(all_responses_data) % 5 == 0:
+                logger.save_checkpoint()
+                
+        # Save the config for reproducibility
+        with open(os.path.join(output_dir, "config_used.yaml"), 'w') as f:
+            f.write(OmegaConf.to_yaml(cfg))
+            
+    except Exception as e:
+        print(f"❌ Experiment failed: {e}")
+        raise
+    finally:
+        # Always end the experiment to save logs
+        logger.end_experiment()
+
 @hydra.main(config_path="../config", config_name="config", version_base=None)
-def main(cfg: DictConfig) -> None:
-    runPhase2(cfg)
+def main(cfg: DictConfig):
+    # print(OmegaConf.to_yaml(cfg))  # Print the entire config for debugging
+    if cfg.exp.type=="ICL":
+        runICL_HI(cfg)
+    elif cfg.exp.type == "phase2":
+        runPhase2(cfg)
 
 if __name__ == "__main__":
      main()

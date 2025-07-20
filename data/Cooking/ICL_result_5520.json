@@ -1,0 +1,416 @@
+[
+    {
+        "frame": 4800,
+        "state": {
+            "pot_on_stove": true,
+            "pot_burner_on": false,
+            "water_in_pot": true,
+            "water_boiling": false,
+            "noodles_in_pot": false,
+            "noodles_cooked": false,
+            "noodles_drained": false,
+            "cabbage_prepared": true,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "celery_prepared": false,
+            "pan_on_stove": true,
+            "pan_burner_on": true,
+            "oil_in_pan": true,
+            "aromatics_in_pan": true,
+            "noodles_in_pan": false,
+            "sauce_in_pan": false,
+            "stir_fry_cooked": false,
+            "food_on_plate": false,
+            "operator_holding": "pan",
+            "gaze_target": "pan",
+            "steps_completed": [
+                "Place pot on stove and add water",
+                "Place pan on stove",
+                "Turn on stove burner for pan",
+                "Add oil to hot pan",
+                "Add prepared aromatics (e.g., garlic, onions) to pan and stir",
+                "Prepare (cut) cabbage"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "Add noodles to boiling water",
+                "Prepare (peel and cut) garlic",
+                "Prepare (cut) spring onions",
+                "Prepare (cut) celery",
+                "Add drained noodles to pan",
+                "Add sauce(s) (e.g., soy sauce) to pan",
+                "Stir-fry all ingredients together"
+            ],
+            "current_keystep": "Stir the mixture",
+            "next_keystep": "Add noodles"
+        }
+    },
+    {
+        "frame": 4890,
+        "state": {
+            "pot_on_stove": true,
+            "pot_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": true,
+            "noodles_drained": true,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "celery_prepared": true,
+            "pan_on_stove": true,
+            "pan_burner_on": true,
+            "oil_in_pan": true,
+            "aromatics_in_pan": true,
+            "noodles_in_pan": true,
+            "sauce_in_pan": false,
+            "stir_fry_cooked": false,
+            "food_on_plate": false,
+            "operator_holding": "pan",
+            "gaze_target": "pan",
+            "steps_completed": [
+                "Place pot on stove and add water",
+                "Turn on stove burner for pot",
+                "Add noodles to boiling water",
+                "Cook noodles until done (includes stirring/tasting)",
+                "Drain cooked noodles",
+                "Place pan on stove",
+                "Turn on stove burner for pan",
+                "Prepare (cut) cabbage",
+                "Prepare (peel and cut) garlic",
+                "Prepare (cut) spring onions",
+                "Prepare (cut) celery",
+                "Add oil to hot pan",
+                "Add prepared aromatics (e.g., garlic, onions) to pan and stir",
+                "Add drained noodles to pan"
+            ],
+            "steps_in_progress": [
+                "Stir-fry all ingredients together"
+            ],
+            "steps_available": [
+                "Add sauce(s) (e.g., soy sauce) to pan"
+            ],
+            "current_keystep": "Stir the mixture",
+            "next_keystep": "Add soy sauce"
+        }
+    },
+    {
+        "frame": 4980,
+        "state": {
+            "pot_on_stove": true,
+            "pot_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": false,
+            "noodles_drained": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "celery_prepared": false,
+            "pan_on_stove": true,
+            "pan_burner_on": false,
+            "oil_in_pan": false,
+            "aromatics_in_pan": false,
+            "noodles_in_pan": false,
+            "sauce_in_pan": false,
+            "stir_fry_cooked": false,
+            "food_on_plate": false,
+            "operator_holding": "strainer/skimmer",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "Place pot on stove and add water",
+                "Turn on stove burner for pot",
+                "Place pan on stove",
+                "Add noodles to boiling water"
+            ],
+            "steps_in_progress": [
+                "Cook noodles until done (includes stirring/tasting)"
+            ],
+            "steps_available": [
+                "Drain cooked noodles",
+                "Turn on stove burner for pan",
+                "Prepare (cut) cabbage",
+                "Prepare (peel and cut) garlic",
+                "Prepare (cut) spring onions",
+                "Prepare (cut) celery"
+            ],
+            "current_keystep": "Stir noodles in the pot",
+            "next_keystep": "Taste noodles to check the doneness"
+        }
+    },
+    {
+        "frame": 5070,
+        "state": {
+            "pot_on_stove": true,
+            "pot_burner_on": false,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": true,
+            "noodles_drained": true,
+            "cabbage_prepared": true,
+            "garlic_prepared": true,
+            "spring_onions_prepared": true,
+            "celery_prepared": true,
+            "pan_on_stove": true,
+            "pan_burner_on": true,
+            "oil_in_pan": true,
+            "aromatics_in_pan": true,
+            "noodles_in_pan": true,
+            "sauce_in_pan": false,
+            "stir_fry_cooked": false,
+            "food_on_plate": false,
+            "operator_holding": "pan",
+            "gaze_target": "pan",
+            "steps_completed": [
+                "Place pot on stove and add water",
+                "Turn on stove burner for pot",
+                "Add noodles to boiling water",
+                "Cook noodles until done (includes stirring/tasting)",
+                "Drain cooked noodles",
+                "Prepare (cut) cabbage",
+                "Prepare (peel and cut) garlic",
+                "Prepare (cut) spring onions",
+                "Prepare (cut) celery",
+                "Place pan on stove",
+                "Turn on stove burner for pan",
+                "Add oil to hot pan",
+                "Add prepared aromatics (e.g., garlic, onions) to pan and stir",
+                "Add drained noodles to pan"
+            ],
+            "steps_in_progress": [
+                "Stir-fry all ingredients together"
+            ],
+            "steps_available": [
+                "Add sauce(s) (e.g., soy sauce) to pan"
+            ],
+            "current_keystep": "Stir the mixture",
+            "next_keystep": "Add soy sauce"
+        }
+    },
+    {
+        "frame": 5160,
+        "state": {
+            "pot_on_stove": true,
+            "pot_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": true,
+            "noodles_drained": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "celery_prepared": false,
+            "pan_on_stove": true,
+            "pan_burner_on": false,
+            "oil_in_pan": false,
+            "aromatics_in_pan": false,
+            "noodles_in_pan": false,
+            "sauce_in_pan": false,
+            "stir_fry_cooked": false,
+            "food_on_plate": false,
+            "operator_holding": "strainer/skimmer",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "Place pot on stove and add water",
+                "Turn on stove burner for pot",
+                "Add noodles to boiling water",
+                "Cook noodles until done (includes stirring/tasting)",
+                "Place pan on stove"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "Drain cooked noodles",
+                "Turn on stove burner for pan",
+                "Prepare (cut) cabbage",
+                "Prepare (peel and cut) garlic",
+                "Prepare (cut) spring onions",
+                "Prepare (cut) celery"
+            ],
+            "current_keystep": "Stir noodles in the pot",
+            "next_keystep": "Drain the noodles into a strainer"
+        }
+    },
+    {
+        "frame": 5250,
+        "state": {
+            "pot_on_stove": true,
+            "pot_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": true,
+            "noodles_drained": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "celery_prepared": false,
+            "pan_on_stove": true,
+            "pan_burner_on": true,
+            "oil_in_pan": false,
+            "aromatics_in_pan": false,
+            "noodles_in_pan": false,
+            "sauce_in_pan": false,
+            "stir_fry_cooked": false,
+            "food_on_plate": false,
+            "operator_holding": "strainer/skimmer",
+            "gaze_target": "pot",
+            "steps_completed": [
+                "Place pot on stove and add water",
+                "Turn on stove burner for pot",
+                "Add noodles to boiling water",
+                "Cook noodles until done (includes stirring/tasting)",
+                "Place pan on stove",
+                "Turn on stove burner for pan"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "Drain cooked noodles",
+                "Add oil to hot pan",
+                "Prepare (cut) cabbage",
+                "Prepare (peel and cut) garlic",
+                "Prepare (cut) spring onions",
+                "Prepare (cut) celery"
+            ],
+            "current_keystep": "Stir noodles in the pot",
+            "next_keystep": "Drain the noodles into a strainer"
+        }
+    },
+    {
+        "frame": 5340,
+        "state": {
+            "pot_on_stove": true,
+            "pot_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": true,
+            "noodles_drained": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "celery_prepared": false,
+            "pan_on_stove": false,
+            "pan_burner_on": false,
+            "oil_in_pan": false,
+            "aromatics_in_pan": false,
+            "noodles_in_pan": false,
+            "sauce_in_pan": false,
+            "stir_fry_cooked": false,
+            "food_on_plate": false,
+            "operator_holding": "knife",
+            "gaze_target": "cutting board",
+            "steps_completed": [
+                "Place pot on stove and add water",
+                "Turn on stove burner for pot",
+                "Add noodles to boiling water",
+                "Cook noodles until done (includes stirring/tasting)"
+            ],
+            "steps_in_progress": [
+                "Prepare (cut) cabbage"
+            ],
+            "steps_available": [
+                "Drain cooked noodles",
+                "Place pan on stove",
+                "Prepare (peel and cut) garlic",
+                "Prepare (cut) spring onions",
+                "Prepare (cut) celery"
+            ],
+            "current_keystep": "Cut cabbage",
+            "next_keystep": "Drain cooked noodles"
+        }
+    },
+    {
+        "frame": 5430,
+        "state": {
+            "pot_on_stove": true,
+            "pot_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": true,
+            "noodles_drained": true,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "celery_prepared": false,
+            "pan_on_stove": false,
+            "pan_burner_on": false,
+            "oil_in_pan": false,
+            "aromatics_in_pan": false,
+            "noodles_in_pan": false,
+            "sauce_in_pan": false,
+            "stir_fry_cooked": false,
+            "food_on_plate": false,
+            "operator_holding": "pot",
+            "gaze_target": "sink",
+            "steps_completed": [
+                "Place pot on stove and add water",
+                "Turn on stove burner for pot",
+                "Add noodles to boiling water",
+                "Cook noodles until done (includes stirring/tasting)",
+                "Drain cooked noodles"
+            ],
+            "steps_in_progress": [],
+            "steps_available": [
+                "Place pan on stove",
+                "Prepare (cut) cabbage",
+                "Prepare (peel and cut) garlic",
+                "Prepare (cut) spring onions",
+                "Prepare (cut) celery"
+            ],
+            "current_keystep": "Drain the noodles into a strainer",
+            "next_keystep": "Put the pot back on the stove",
+            "next_keystep_time": null
+        }
+    },
+    {
+        "frame": 5520,
+        "state": {
+            "pot_on_stove": true,
+            "pot_burner_on": true,
+            "water_in_pot": true,
+            "water_boiling": true,
+            "noodles_in_pot": true,
+            "noodles_cooked": true,
+            "noodles_drained": false,
+            "cabbage_prepared": false,
+            "garlic_prepared": false,
+            "spring_onions_prepared": false,
+            "celery_prepared": false,
+            "pan_on_stove": true,
+            "pan_burner_on": true,
+            "oil_in_pan": false,
+            "aromatics_in_pan": false,
+            "noodles_in_pan": false,
+            "sauce_in_pan": false,
+            "stir_fry_cooked": false,
+            "food_on_plate": false,
+            "operator_holding": "cabbage",
+            "gaze_target": "cabbage on cutting board",
+            "steps_completed": [
+                "Place pot on stove and add water",
+                "Turn on stove burner for pot",
+                "Add noodles to boiling water",
+                "Cook noodles until done (includes stirring/tasting)",
+                "Place pan on stove",
+                "Turn on stove burner for pan"
+            ],
+            "steps_in_progress": [
+                "Prepare (cut) cabbage"
+            ],
+            "steps_available": [
+                "Drain cooked noodles",
+                "Prepare (peel and cut) garlic",
+                "Prepare (cut) spring onions",
+                "Prepare (cut) celery",
+                "Add oil to hot pan"
+            ],
+            "current_keystep": "Cut cabbage",
+            "next_keystep": "Cut cabbage"
+        }
+    }
+]

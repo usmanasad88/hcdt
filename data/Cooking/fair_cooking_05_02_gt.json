@@ -1,7 +1,7 @@
 [
   {
     "frame_number": 0,
-    "time": 0.00,
+    "time": 0.0,
     "state": {
       "pot_on_stove": true,
       "pot_burner_on": true,
@@ -44,7 +44,7 @@
     }
   },
   {
-    "frame_number": 2,
+    "frame_number": 60,
     "time": 0.02,
     "state": {
       "pot_on_stove": true,
@@ -88,7 +88,7 @@
     }
   },
   {
-    "frame_number": 3,
+    "frame_number": 90,
     "time": 0.03,
     "state": {
       "pot_on_stove": true,
@@ -133,7 +133,7 @@
     }
   },
   {
-    "frame_number": 6,
+    "frame_number": 180,
     "time": 0.06,
     "state": {
       "pot_on_stove": true,
@@ -178,7 +178,7 @@
     }
   },
   {
-    "frame_number": 14,
+    "frame_number": 420,
     "time": 0.14,
     "state": {
       "pot_on_stove": true,
@@ -220,12 +220,12 @@
       ],
       "current_keystep": "Stir noodles in the pot",
       "next_keystep": "Get napkin",
-      "next_keystep_time": 0.30
+      "next_keystep_time": 0.3
     }
   },
   {
-    "frame_number": 30,
-    "time": 0.30,
+    "frame_number": 900,
+    "time": 0.3,
     "state": {
       "pot_on_stove": true,
       "pot_burner_on": true,
@@ -270,7 +270,7 @@
     }
   },
   {
-    "frame_number": 41,
+    "frame_number": 1230,
     "time": 0.41,
     "state": {
       "pot_on_stove": true,
@@ -316,7 +316,7 @@
     }
   },
   {
-    "frame_number": 51,
+    "frame_number": 1530,
     "time": 0.51,
     "state": {
       "pot_on_stove": true,
@@ -362,7 +362,7 @@
     }
   },
   {
-    "frame_number": 112,
+    "frame_number": 2160,
     "time": 1.12,
     "state": {
       "pot_on_stove": true,
@@ -408,7 +408,7 @@
     }
   },
   {
-    "frame_number": 118,
+    "frame_number": 2340,
     "time": 1.18,
     "state": {
       "pot_on_stove": true,
@@ -454,7 +454,7 @@
     }
   },
   {
-    "frame_number": 124,
+    "frame_number": 2520,
     "time": 1.24,
     "state": {
       "pot_on_stove": true,
@@ -500,8 +500,8 @@
     }
   },
   {
-    "frame_number": 250,
-    "time": 2.50,
+    "frame_number": 5100,
+    "time": 2.5,
     "state": {
       "pot_on_stove": true,
       "pot_burner_on": true,
@@ -546,7 +546,7 @@
     }
   },
   {
-    "frame_number": 298,
+    "frame_number": 5340,
     "time": 2.58,
     "state": {
       "pot_on_stove": true,
@@ -590,12 +590,12 @@
       ],
       "current_keystep": "Get garlic cloves",
       "next_keystep": "Get spring onions",
-      "next_keystep_time": 3.00
+      "next_keystep_time": 3.0
     }
   },
   {
-    "frame_number": 300,
-    "time": 3.00,
+    "frame_number": 5400,
+    "time": 3.0,
     "state": {
       "pot_on_stove": true,
       "pot_burner_on": true,
@@ -641,7 +641,7 @@
     }
   },
   {
-    "frame_number": 301,
+    "frame_number": 5400,
     "time": 3.01,
     "state": {
       "pot_on_stove": true,
@@ -688,7 +688,7 @@
     }
   },
   {
-    "frame_number": 316,
+    "frame_number": 5880,
     "time": 3.16,
     "state": {
       "pot_on_stove": true,
@@ -735,7 +735,7 @@
     }
   },
   {
-    "frame_number": 403,
+    "frame_number": 7290,
     "time": 4.03,
     "state": {
       "pot_on_stove": true,
@@ -782,7 +782,7 @@
     }
   },
   {
-    "frame_number": 429,
+    "frame_number": 8070,
     "time": 4.29,
     "state": {
       "pot_on_stove": true,
@@ -829,7 +829,7 @@
     }
   },
   {
-    "frame_number": 436,
+    "frame_number": 8280,
     "time": 4.36,
     "state": {
       "pot_on_stove": true,
@@ -876,8 +876,8 @@
     }
   },
   {
-    "frame_number": 440,
-    "time": 4.40,
+    "frame_number": 8400,
+    "time": 4.4,
     "state": {
       "pot_on_stove": true,
       "pot_burner_on": false,
@@ -923,7 +923,7 @@
     }
   },
   {
-    "frame_number": 456,
+    "frame_number": 8850,
     "time": 4.56,
     "state": {
       "pot_on_stove": true,
@@ -967,11 +967,11 @@
       ],
       "current_keystep": "Adjust the stove heat",
       "next_keystep": "Check heat of the skillet",
-      "next_keystep_time": 5.00
+      "next_keystep_time": 5.0
     }
   },
   {
-    "frame_number": 499,
+    "frame_number": 8970,
     "time": 4.59,
     "state": {
       "pot_on_stove": true,
@@ -1015,12 +1015,12 @@
       ],
       "current_keystep": "Adjust the stove heat",
       "next_keystep": "Check heat of the skillet",
-      "next_keystep_time": 5.00
+      "next_keystep_time": 5.0
     }
   },
   {
-    "frame_number": 500,
-    "time": 5.00,
+    "frame_number": 9000,
+    "time": 5.0,
     "state": {
       "pot_on_stove": true,
       "pot_burner_on": false,
@@ -1067,7 +1067,7 @@
     }
   },
   {
-    "frame_number": 501,
+    "frame_number": 9030,
     "time": 5.01,
     "state": {
       "pot_on_stove": true,
@@ -1115,7 +1115,7 @@
     }
   },
   {
-    "frame_number": 509,
+    "frame_number": 9270,
     "time": 5.09,
     "state": {
       "pot_on_stove": true,
@@ -1163,7 +1163,7 @@
     }
   },
   {
-    "frame_number": 514,
+    "frame_number": 9390,
     "time": 5.14,
     "state": {
       "pot_on_stove": true,
@@ -1211,7 +1211,7 @@
     }
   },
   {
-    "frame_number": 525,
+    "frame_number": 9750,
     "time": 5.25,
     "state": {
       "pot_on_stove": true,
@@ -1259,7 +1259,7 @@
     }
   },
   {
-    "frame_number": 546,
+    "frame_number": 10380,
     "time": 5.46,
     "state": {
       "pot_on_stove": true,
@@ -1307,7 +1307,7 @@
     }
   },
   {
-    "frame_number": 615,
+    "frame_number": 11250,
     "time": 6.15,
     "state": {
       "pot_on_stove": true,
@@ -1354,7 +1354,7 @@
     }
   },
   {
-    "frame_number": 616,
+    "frame_number": 11280,
     "time": 6.16,
     "state": {
       "pot_on_stove": true,
@@ -1401,7 +1401,7 @@
     }
   },
   {
-    "frame_number": 619,
+    "frame_number": 11370,
     "time": 6.19,
     "state": {
       "pot_on_stove": true,
@@ -1449,7 +1449,7 @@
     }
   },
   {
-    "frame_number": 621,
+    "frame_number": 11430,
     "time": 6.21,
     "state": {
       "pot_on_stove": true,
@@ -1493,11 +1493,11 @@
       ],
       "current_keystep": "Add oil",
       "next_keystep": "Tilt and rotate the skillet to allow oil or butter flow into empty space",
-      "next_keystep_time": 6.30
+      "next_keystep_time": 6.3
     }
   },
   {
-    "frame_number": 623,
+    "frame_number": 11490,
     "time": 6.23,
     "state": {
       "pot_on_stove": true,
@@ -1541,12 +1541,12 @@
       ],
       "current_keystep": "Add oil",
       "next_keystep": "Tilt and rotate the skillet to allow oil or butter flow into empty space",
-      "next_keystep_time": 6.30
+      "next_keystep_time": 6.3
     }
   },
   {
-    "frame_number": 630,
-    "time": 6.30,
+    "frame_number": 11700,
+    "time": 6.3,
     "state": {
       "pot_on_stove": true,
       "pot_burner_on": false,
@@ -1594,7 +1594,7 @@
     }
   },
   {
-    "frame_number": 635,
+    "frame_number": 11820,
     "time": 6.35,
     "state": {
       "pot_on_stove": true,
@@ -1643,7 +1643,7 @@
     }
   },
   {
-    "frame_number": 648,
+    "frame_number": 12240,
     "time": 6.48,
     "state": {
       "pot_on_stove": true,
@@ -1692,7 +1692,7 @@
     }
   },
   {
-    "frame_number": 652,
+    "frame_number": 12330,
     "time": 6.52,
     "state": {
       "pot_on_stove": true,
@@ -1741,7 +1741,7 @@
     }
   },
   {
-    "frame_number": 655,
+    "frame_number": 12450,
     "time": 6.55,
     "state": {
       "pot_on_stove": true,
@@ -1790,7 +1790,7 @@
     }
   },
   {
-    "frame_number": 706,
+    "frame_number": 12750,
     "time": 7.06,
     "state": {
       "pot_on_stove": true,
@@ -1842,7 +1842,7 @@
     }
   },
   {
-    "frame_number": 716,
+    "frame_number": 13080,
     "time": 7.16,
     "state": {
       "pot_on_stove": true,
@@ -1893,7 +1893,7 @@
     }
   },
   {
-    "frame_number": 721,
+    "frame_number": 13230,
     "time": 7.21,
     "state": {
       "pot_on_stove": true,
@@ -1944,7 +1944,7 @@
     }
   },
   {
-    "frame_number": 728,
+    "frame_number": 13440,
     "time": 7.28,
     "state": {
       "pot_on_stove": true,
@@ -1995,7 +1995,7 @@
     }
   },
   {
-    "frame_number": 731,
+    "frame_number": 13500,
     "time": 7.31,
     "state": {
       "pot_on_stove": true,
@@ -2047,7 +2047,7 @@
     }
   },
   {
-    "frame_number": 736,
+    "frame_number": 13680,
     "time": 7.36,
     "state": {
       "pot_on_stove": true,
@@ -2099,7 +2099,7 @@
     }
   },
   {
-    "frame_number": 751,
+    "frame_number": 14130,
     "time": 7.51,
     "state": {
       "pot_on_stove": true,
@@ -2151,7 +2151,7 @@
     }
   },
   {
-    "frame_number": 753,
+    "frame_number": 14190,
     "time": 7.53,
     "state": {
       "pot_on_stove": true,
@@ -2203,7 +2203,7 @@
     }
   },
   {
-    "frame_number": 758,
+    "frame_number": 14340,
     "time": 7.58,
     "state": {
       "pot_on_stove": true,
@@ -2255,7 +2255,7 @@
     }
   },
   {
-    "frame_number": 802,
+    "frame_number": 14430,
     "time": 8.02,
     "state": {
       "pot_on_stove": true,
@@ -2307,7 +2307,7 @@
     }
   },
   {
-    "frame_number": 803,
+    "frame_number": 14460,
     "time": 8.03,
     "state": {
       "pot_on_stove": true,
@@ -2359,7 +2359,7 @@
     }
   },
   {
-    "frame_number": 812,
+    "frame_number": 14730,
     "time": 8.12,
     "state": {
       "pot_on_stove": true,
@@ -2412,7 +2412,7 @@
     }
   },
   {
-    "frame_number": 815,
+    "frame_number": 14850,
     "time": 8.15,
     "state": {
       "pot_on_stove": true,

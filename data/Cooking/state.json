@@ -112,7 +112,7 @@
   {
     "name": "steps_in_progress",
     "type": "List of Strings",
-    "description": "A list of action desciptions that are currently being executed."
+    "description": "The desciption of the action currently being executed. Should be be empty. Output the most likely action."
   },
   {
     "name": "steps_available",
@@ -127,12 +127,6 @@
   {
     "name": "next_keystep",
     "type": "String",
-    "description": "Natural language description of the next keystep while be performed immediate after current keystep"       
-  },
-  {
-    "name": "next_keystep_time",
-    "type": "Float",
-    "description": "Estimate time after which the next keystep will begin."       
+    "description": "Natural language description of the next keystep which will be performed immediate after current keystep"       
   }
-  
 ]

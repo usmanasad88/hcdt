@@ -220,7 +220,7 @@ def resize_image_to_largest_dimension(image_path, target_largest_dimension, save
         # Ensure the directory for save_path exists
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
         resized_img.save(save_path)
-        print(f"Resized image saved to {save_path}")
+        # print(f"Resized image saved to {save_path}")
 
     except FileNotFoundError:
         print(f"Error: Image file not found at {image_path}")

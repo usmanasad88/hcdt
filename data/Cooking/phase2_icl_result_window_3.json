@@ -1,0 +1,1064 @@
+[
+    {
+        "input_end_frame": 421,
+        "prediction_frame": 481,
+        "predicted_hand_positions": {
+            "left_hand_x": 500,
+            "left_hand_y": 480,
+            "right_hand_x": 550,
+            "right_hand_y": 510
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 505.0398860145454,
+            "left_hand_y": 434.6200738634382,
+            "right_hand_x": 590.6229833861692,
+            "right_hand_y": 403.98240089416504
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 541,
+        "prediction_frame": 601,
+        "predicted_hand_positions": {
+            "left_hand_x": 465,
+            "left_hand_y": 445,
+            "right_hand_x": 570,
+            "right_hand_y": 370
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 459.39797252865895,
+            "left_hand_y": 435.9142439705985,
+            "right_hand_x": 565.9857131727975,
+            "right_hand_y": 369.8855127607073
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 661,
+        "prediction_frame": 721,
+        "predicted_hand_positions": {
+            "left_hand_x": 450,
+            "left_hand_y": 420,
+            "right_hand_x": 500,
+            "right_hand_y": 450
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 507.9259057739871,
+            "left_hand_y": 418.1361539023263,
+            "right_hand_x": 548.3883805011385,
+            "right_hand_y": 436.9323934827532
+        },
+        "reasoning": "",
+        "target_object": "Stirring Utensil"
+    },
+    {
+        "input_end_frame": 781,
+        "prediction_frame": 841,
+        "predicted_hand_positions": {
+            "left_hand_x": 490,
+            "left_hand_y": 425,
+            "right_hand_x": 610,
+            "right_hand_y": 410
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 435.0350154704185,
+            "left_hand_y": 461.30500520978654,
+            "right_hand_x": 355.22135058839115,
+            "right_hand_y": 574.3358475821359
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 901,
+        "prediction_frame": 961,
+        "predicted_hand_positions": {
+            "left_hand_x": 350,
+            "left_hand_y": 450,
+            "right_hand_x": 150,
+            "right_hand_y": 480
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 476.9859505658174,
+            "left_hand_y": 452.3941448756627,
+            "right_hand_x": 498.98222343406485,
+            "right_hand_y": 464.2312867300851
+        },
+        "reasoning": "",
+        "target_object": "None"
+    },
+    {
+        "input_end_frame": 1141,
+        "prediction_frame": 1201,
+        "predicted_hand_positions": {
+            "left_hand_x": 500,
+            "left_hand_y": 450,
+            "right_hand_x": 540,
+            "right_hand_y": 450
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 527.6325168322079,
+            "left_hand_y": 461.6852487836565,
+            "right_hand_x": 500.0398722126256,
+            "right_hand_y": 450.22991725376676
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 1261,
+        "prediction_frame": 1321,
+        "predicted_hand_positions": {
+            "left_hand_x": 480,
+            "left_hand_y": 450,
+            "right_hand_x": 520,
+            "right_hand_y": 440
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 454.4777798293224,
+            "left_hand_y": 457.41197041102816,
+            "right_hand_x": 580.8573583861692,
+            "right_hand_y": 383.9594977242606
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 1381,
+        "prediction_frame": 1441,
+        "predicted_hand_positions": {
+            "left_hand_x": 453,
+            "left_hand_y": 466,
+            "right_hand_x": 587,
+            "right_hand_y": 386
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 450.6433764893805,
+            "left_hand_y": 457.11769376482283,
+            "right_hand_x": 565.4360900572198,
+            "right_hand_y": 354.2799949645996
+        },
+        "reasoning": "",
+        "target_object": "pot/noodles"
+    },
+    {
+        "input_end_frame": 1501,
+        "prediction_frame": 1561,
+        "predicted_hand_positions": {
+            "left_hand_x": 450,
+            "left_hand_y": 550,
+            "right_hand_x": 500,
+            "right_hand_y": 500
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 449.01935059820585,
+            "left_hand_y": 489.87344333103727,
+            "right_hand_x": 544.2706160808928,
+            "right_hand_y": 560.1928234100342
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 1621,
+        "prediction_frame": 1681,
+        "predicted_hand_positions": {
+            "left_hand_x": 480,
+            "left_hand_y": 650,
+            "right_hand_x": 500,
+            "right_hand_y": 590
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 473.07000088332285,
+            "left_hand_y": 563.3769035339355,
+            "right_hand_x": 479.8233568967886,
+            "right_hand_y": 587.6628330775669
+        },
+        "reasoning": "The current subtask is 'None' and the next keystep is 'Adjust the stove heat'. The right hand is currently holding a strainer in the pot, so the left hand is predicted to move towards the stove knobs to adjust the heat, while the right hand remains near the pot.",
+        "target_object": "stove knob"
+    },
+    {
+        "input_end_frame": 1741,
+        "prediction_frame": 1801,
+        "predicted_hand_positions": {
+            "left_hand_x": 520,
+            "left_hand_y": 445,
+            "right_hand_x": 400,
+            "right_hand_y": 600
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 509.2946728270258,
+            "left_hand_y": 444.5627076285226,
+            "right_hand_x": 441.1249208689934,
+            "right_hand_y": 595.517771584647
+        },
+        "reasoning": "",
+        "target_object": "stove knob"
+    },
+    {
+        "input_end_frame": 1861,
+        "prediction_frame": 1921,
+        "predicted_hand_positions": {
+            "left_hand_x": 509.6,
+            "left_hand_y": 444.6,
+            "right_hand_x": 442.2,
+            "right_hand_y": 593.0
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 513.871772804452,
+            "left_hand_y": 456.1793122972761,
+            "right_hand_x": 456.40909012837625,
+            "right_hand_y": 583.9741570608957
+        },
+        "reasoning": "",
+        "target_object": "Noodle pot/stove"
+    },
+    {
+        "input_end_frame": 1981,
+        "prediction_frame": 2041,
+        "predicted_hand_positions": {
+            "left_hand_x": 485,
+            "left_hand_y": 460,
+            "right_hand_x": 500,
+            "right_hand_y": 480
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 492.3028993846184,
+            "left_hand_y": 447.8894301823207,
+            "right_hand_x": 487.72464924721265,
+            "right_hand_y": 468.2049410683768
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 2221,
+        "prediction_frame": 2281,
+        "predicted_hand_positions": {
+            "left_hand_x": 465,
+            "left_hand_y": 455,
+            "right_hand_x": 500,
+            "right_hand_y": 450
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 489.2987965339392,
+            "left_hand_y": 420.22218023027693,
+            "right_hand_x": 551.2164321976092,
+            "right_hand_y": 359.70984186444963
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 2341,
+        "prediction_frame": 2401,
+        "predicted_hand_positions": {
+            "left_hand_x": 500,
+            "left_hand_y": 450,
+            "right_hand_x": 500,
+            "right_hand_y": 450
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 451.5774980861338,
+            "left_hand_y": 521.3049820491245,
+            "right_hand_x": 529.5489900675251,
+            "right_hand_y": 605.2167075020926
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 2581,
+        "prediction_frame": 2641,
+        "predicted_hand_positions": {
+            "left_hand_x": 475,
+            "left_hand_y": 420,
+            "right_hand_x": 560,
+            "right_hand_y": 380
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 454.7860610425173,
+            "left_hand_y": 462.03766550336564,
+            "right_hand_x": 569.6228640762406,
+            "right_hand_y": 359.76181711469377
+        },
+        "reasoning": "The person is preparing to stir noodles, so both hands will likely be positioned over or near the pot, with the right hand holding a stirring utensil inside the pot and the left hand stabilizing the pot or holding a towel.",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 2701,
+        "prediction_frame": 2761,
+        "predicted_hand_positions": {
+            "left_hand_x": 460,
+            "left_hand_y": 435,
+            "right_hand_x": 560,
+            "right_hand_y": 360
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 460.9060622938913,
+            "left_hand_y": 436.1797741481236,
+            "right_hand_x": 499.830849805669,
+            "right_hand_y": 447.5836753845215
+        },
+        "reasoning": "",
+        "target_object": "pot on stove"
+    },
+    {
+        "input_end_frame": 2821,
+        "prediction_frame": 2881,
+        "predicted_hand_positions": {
+            "left_hand_x": 490,
+            "left_hand_y": 450,
+            "right_hand_x": 495,
+            "right_hand_y": 500
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 477.5468835878612,
+            "left_hand_y": 524.859939302717,
+            "right_hand_x": 513.0783924505339,
+            "right_hand_y": 559.9924836839948
+        },
+        "reasoning": "The person has likely finished stirring the noodles and is moving both hands away from the pot, with the right hand still holding the stirring utensil but preparing to move it away, and the left hand moving from the pot's side.",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 3061,
+        "prediction_frame": 3121,
+        "predicted_hand_positions": {
+            "left_hand_x": 500,
+            "left_hand_y": 420,
+            "right_hand_x": 560,
+            "right_hand_y": 380
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 506.34282557808575,
+            "left_hand_y": 415.76995168413436,
+            "right_hand_x": 551.1934673366834,
+            "right_hand_y": 400.86701938084195
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 3181,
+        "prediction_frame": 3241,
+        "predicted_hand_positions": {
+            "left_hand_x": 470,
+            "left_hand_y": 500,
+            "right_hand_x": 480,
+            "right_hand_y": 550
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 404.75425528521515,
+            "left_hand_y": 598.5116958618164,
+            "right_hand_x": 196.3012350264506,
+            "right_hand_y": 581.7304338727679
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 3301,
+        "prediction_frame": 3361,
+        "predicted_hand_positions": {
+            "left_hand_x": 380,
+            "left_hand_y": 550,
+            "right_hand_x": 300,
+            "right_hand_y": 510
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 444.3459055531564,
+            "left_hand_y": 475.41843141828264,
+            "right_hand_x": 444.44593113271435,
+            "right_hand_y": 514.5038877214704
+        },
+        "reasoning": "",
+        "target_object": "None"
+    },
+    {
+        "input_end_frame": 3421,
+        "prediction_frame": 3481,
+        "predicted_hand_positions": {
+            "left_hand_x": 500,
+            "left_hand_y": 450,
+            "right_hand_x": 550,
+            "right_hand_y": 400
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 501.4197191401343,
+            "left_hand_y": 450.8906773158482,
+            "right_hand_x": 487.0535308991245,
+            "right_hand_y": 501.0885511125837
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 3541,
+        "prediction_frame": 3601,
+        "predicted_hand_positions": {
+            "left_hand_x": 470,
+            "left_hand_y": 550,
+            "right_hand_x": 500,
+            "right_hand_y": 550
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 406.4767348706423,
+            "left_hand_y": 521.6116224016462,
+            "right_hand_x": 451.56906357961685,
+            "right_hand_y": 550.8042063031878
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 3661,
+        "prediction_frame": 3721,
+        "predicted_hand_positions": {
+            "left_hand_x": 480,
+            "left_hand_y": 550,
+            "right_hand_x": 520,
+            "right_hand_y": 580
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 500.1708370956344,
+            "left_hand_y": 448.50305148533414,
+            "right_hand_x": 453.43523648516015,
+            "right_hand_y": 568.3082512446812
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 3781,
+        "prediction_frame": 3841,
+        "predicted_hand_positions": {
+            "left_hand_x": 480,
+            "left_hand_y": 500,
+            "right_hand_x": 490,
+            "right_hand_y": 550
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 476.3020271032899,
+            "left_hand_y": 445.04577772957936,
+            "right_hand_x": 587.9000563118326,
+            "right_hand_y": 401.3232163020543
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 4021,
+        "prediction_frame": 4081,
+        "predicted_hand_positions": {
+            "left_hand_x": 500,
+            "left_hand_y": 420,
+            "right_hand_x": 540,
+            "right_hand_y": 410
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 492.62015184565405,
+            "left_hand_y": 454.44110461643766,
+            "right_hand_x": 486.7426809953086,
+            "right_hand_y": 462.6467227935791
+        },
+        "reasoning": "The person is currently stirring noodles in the pot. It is expected that they will continue stirring or maintain their position over the pot for the next two seconds.",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 4141,
+        "prediction_frame": 4201,
+        "predicted_hand_positions": {
+            "left_hand_x": 458.0,
+            "left_hand_y": 497.0,
+            "right_hand_x": 447.0,
+            "right_hand_y": 511.0
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 458.08249622134105,
+            "left_hand_y": 499.52074459620883,
+            "right_hand_x": 448.00655805884895,
+            "right_hand_y": 513.1351266588483
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 4261,
+        "prediction_frame": 4321,
+        "predicted_hand_positions": {
+            "left_hand_x": 490,
+            "left_hand_y": 460,
+            "right_hand_x": 465,
+            "right_hand_y": 485
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 496.7530983776303,
+            "left_hand_y": 446.627071925572,
+            "right_hand_x": 457.89923739792715,
+            "right_hand_y": 488.05359431675504
+        },
+        "reasoning": "The current subtask is 'None' and the next keystep is 'Stir noodles in the pot'. The person is actively engaged in stirring, with the right hand holding a utensil in the pot and the left hand near the pot. It is highly probable that the stirring action will continue, keeping both hands in close proximity to the pot.",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 4381,
+        "prediction_frame": 4441,
+        "predicted_hand_positions": {
+            "left_hand_x": 494,
+            "left_hand_y": 441,
+            "right_hand_x": 460,
+            "right_hand_y": 489
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 495.5608425427921,
+            "left_hand_y": 441.9592108045305,
+            "right_hand_x": 464.4957882675094,
+            "right_hand_y": 492.13331086294994
+        },
+        "reasoning": "The person is currently holding the pot and a stirring utensil. As the next keystep is to stir noodles, the hands will remain in position over the pot, ready to continue or perform the stirring action.",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 4501,
+        "prediction_frame": 4561,
+        "predicted_hand_positions": {
+            "left_hand_x": 490,
+            "left_hand_y": 480,
+            "right_hand_x": 450,
+            "right_hand_y": 490
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 464.624529507891,
+            "left_hand_y": 440.284047807966,
+            "right_hand_x": 570.9466982127434,
+            "right_hand_y": 389.6917615618025
+        },
+        "reasoning": "The next keystep is to 'Stir noodles in the pot'. The right hand, which appears to be holding a stirring utensil, will move into the pot to stir, while the left hand will likely be near or holding the pot. The predicted coordinates place both hands over the pot, ready for the stirring action.",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 4621,
+        "prediction_frame": 4681,
+        "predicted_hand_positions": {
+            "left_hand_x": 454.89,
+            "left_hand_y": 457.96,
+            "right_hand_x": 564.56,
+            "right_hand_y": 350.03
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 463.2341011085702,
+            "left_hand_y": 437.6753398350307,
+            "right_hand_x": 545.1476514039925,
+            "right_hand_y": 376.9556454249791
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 4741,
+        "prediction_frame": 4801,
+        "predicted_hand_positions": {
+            "left_hand_x": 455,
+            "left_hand_y": 455,
+            "right_hand_x": 550,
+            "right_hand_y": 430
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 475.6141547581658,
+            "left_hand_y": 443.4291294642857,
+            "right_hand_x": 433.81009509216,
+            "right_hand_y": 470.062323978969
+        },
+        "reasoning": "",
+        "target_object": "Pot with noodles"
+    },
+    {
+        "input_end_frame": 4861,
+        "prediction_frame": 4921,
+        "predicted_hand_positions": {
+            "left_hand_x": 470,
+            "left_hand_y": 460,
+            "right_hand_x": 435,
+            "right_hand_y": 470
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 504.0962180899615,
+            "left_hand_y": 455.50475801740373,
+            "right_hand_x": 509.44668563766095,
+            "right_hand_y": 500.26559829711914
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 4981,
+        "prediction_frame": 5041,
+        "predicted_hand_positions": {
+            "left_hand_x": 510,
+            "left_hand_y": 425,
+            "right_hand_x": 540,
+            "right_hand_y": 410
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 495.1463248861495,
+            "left_hand_y": 440.61551775251115,
+            "right_hand_x": 572.5944940768295,
+            "right_hand_y": 390.1520456586565
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 5101,
+        "prediction_frame": 5161,
+        "predicted_hand_positions": {
+            "left_hand_x": 540,
+            "left_hand_y": 415,
+            "right_hand_x": 560,
+            "right_hand_y": 400
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 492.78098254946605,
+            "left_hand_y": 449.64613233293807,
+            "right_hand_x": 549.9268344898319,
+            "right_hand_y": 433.5831914629255
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 5221,
+        "prediction_frame": 5281,
+        "predicted_hand_positions": {
+            "left_hand_x": 450,
+            "left_hand_y": 480,
+            "right_hand_x": 280,
+            "right_hand_y": 510
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 292.6837211877257,
+            "left_hand_y": 556.4506735120501,
+            "right_hand_x": 156.44247927258363,
+            "right_hand_y": 556.4969948359898
+        },
+        "reasoning": "",
+        "target_object": "pot/stove"
+    },
+    {
+        "input_end_frame": 5341,
+        "prediction_frame": 5401,
+        "predicted_hand_positions": {
+            "left_hand_x": 305,
+            "left_hand_y": 600,
+            "right_hand_x": 250,
+            "right_hand_y": 550
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 327.2217410293656,
+            "left_hand_y": 554.2988777160645,
+            "right_hand_x": 82.36918617133519,
+            "right_hand_y": 655.613899230957
+        },
+        "reasoning": "",
+        "target_object": "utensil/counter"
+    },
+    {
+        "input_end_frame": 5461,
+        "prediction_frame": 5521,
+        "predicted_hand_positions": {
+            "left_hand_x": 320,
+            "left_hand_y": 550,
+            "right_hand_x": 50,
+            "right_hand_y": 690
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 229.80158053450847,
+            "left_hand_y": 563.7369155883789,
+            "right_hand_x": 199.08878192230682,
+            "right_hand_y": 527.0300592694964
+        },
+        "reasoning": "",
+        "target_object": "garlic cloves"
+    },
+    {
+        "input_end_frame": 5581,
+        "prediction_frame": 5641,
+        "predicted_hand_positions": {
+            "left_hand_x": 220,
+            "left_hand_y": 550,
+            "right_hand_x": 180,
+            "right_hand_y": 520
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 234.33623960868798,
+            "left_hand_y": 563.462495803833,
+            "right_hand_x": 178.04683512778738,
+            "right_hand_y": 547.6383141108921
+        },
+        "reasoning": "The person is holding celery and will likely continue to hold it while preparing to cut it on the cutting board, keeping hands near the current position.",
+        "target_object": "celery"
+    },
+    {
+        "input_end_frame": 5701,
+        "prediction_frame": 5761,
+        "predicted_hand_positions": {
+            "left_hand_x": 280,
+            "left_hand_y": 550,
+            "right_hand_x": 190,
+            "right_hand_y": 540
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 349.9719437642313,
+            "left_hand_y": 538.1925787244525,
+            "right_hand_x": 187.60439618748038,
+            "right_hand_y": 567.427260535104
+        },
+        "reasoning": "",
+        "target_object": "celery"
+    },
+    {
+        "input_end_frame": 5821,
+        "prediction_frame": 5881,
+        "predicted_hand_positions": {
+            "left_hand_x": 550,
+            "left_hand_y": 480,
+            "right_hand_x": 580,
+            "right_hand_y": 490
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 505.54051231499295,
+            "left_hand_y": 475.9000369480678,
+            "right_hand_x": 505.72446123439465,
+            "right_hand_y": 587.728704724993
+        },
+        "reasoning": "",
+        "target_object": "noodles"
+    },
+    {
+        "input_end_frame": 5941,
+        "prediction_frame": 6001,
+        "predicted_hand_positions": {
+            "left_hand_x": 500,
+            "left_hand_y": 450,
+            "right_hand_x": 500,
+            "right_hand_y": 500
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 484.40490415946925,
+            "left_hand_y": 463.72444289071217,
+            "right_hand_x": 594.6179873979271,
+            "right_hand_y": 408.80649430411205
+        },
+        "reasoning": "",
+        "target_object": "noodles"
+    },
+    {
+        "input_end_frame": 6061,
+        "prediction_frame": 6121,
+        "predicted_hand_positions": {
+            "left_hand_x": 550,
+            "left_hand_y": 380,
+            "right_hand_x": 590,
+            "right_hand_y": 405
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 472.2107547012406,
+            "left_hand_y": 435.64827101571217,
+            "right_hand_x": 584.855506168538,
+            "right_hand_y": 354.8633371080671
+        },
+        "reasoning": "The person is currently near the stove, and the next keystep is to taste noodles. The hands are positioned over the pot, indicating an ongoing or imminent action related to checking the doneness of the noodles. The prediction places the hands near the pot, ready to interact with the noodles, with the left hand potentially holding a utensil or the pot lid, and the right hand ready to scoop or taste.",
+        "target_object": "pot of noodles"
+    },
+    {
+        "input_end_frame": 6181,
+        "prediction_frame": 6241,
+        "predicted_hand_positions": {
+            "left_hand_x": 470,
+            "left_hand_y": 420,
+            "right_hand_x": 570,
+            "right_hand_y": 360
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 528.758753484218,
+            "left_hand_y": 410.7898303440639,
+            "right_hand_x": 544.1798684585034,
+            "right_hand_y": 388.64837374006
+        },
+        "reasoning": "",
+        "target_object": "Pot on stove"
+    },
+    {
+        "input_end_frame": 6301,
+        "prediction_frame": 6361,
+        "predicted_hand_positions": {
+            "left_hand_x": 470,
+            "left_hand_y": 450,
+            "right_hand_x": 560,
+            "right_hand_y": 360
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 468.9298083434752,
+            "left_hand_y": 442.9074696132115,
+            "right_hand_x": 568.4488574464117,
+            "right_hand_y": 369.92897306169783
+        },
+        "reasoning": "",
+        "target_object": "noodle pot"
+    },
+    {
+        "input_end_frame": 6421,
+        "prediction_frame": 6481,
+        "predicted_hand_positions": {
+            "left_hand_x": 460,
+            "left_hand_y": 460,
+            "right_hand_x": 580,
+            "right_hand_y": 390
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 463.8901906995917,
+            "left_hand_y": 445.6454345158168,
+            "right_hand_x": 575.9900730458936,
+            "right_hand_y": 363.7088026319231
+        },
+        "reasoning": "",
+        "target_object": "Pot"
+    },
+    {
+        "input_end_frame": 6541,
+        "prediction_frame": 6601,
+        "predicted_hand_positions": {
+            "left_hand_x": 470,
+            "left_hand_y": 440,
+            "right_hand_x": 560,
+            "right_hand_y": 410
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 523.9448739056611,
+            "left_hand_y": 386.44358089991977,
+            "right_hand_x": 580.0991345889604,
+            "right_hand_y": 422.59464945111955
+        },
+        "reasoning": "",
+        "target_object": "Noodles/Pot"
+    },
+    {
+        "input_end_frame": 6661,
+        "prediction_frame": 6721,
+        "predicted_hand_positions": {
+            "left_hand_x": 450,
+            "left_hand_y": 445,
+            "right_hand_x": 560,
+            "right_hand_y": 380
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 479.59248145021985,
+            "left_hand_y": 446.2446144648961,
+            "right_hand_x": 555.8156535853094,
+            "right_hand_y": 436.0191140856062
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 6781,
+        "prediction_frame": 6841,
+        "predicted_hand_positions": {
+            "left_hand_x": 380,
+            "left_hand_y": 480,
+            "right_hand_x": 250,
+            "right_hand_y": 550
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 326.9729230871153,
+            "left_hand_y": 482.11428097316195,
+            "right_hand_x": 249.9453482316367,
+            "right_hand_y": 516.7342254093716
+        },
+        "reasoning": "",
+        "target_object": "Strainer/Ladle"
+    },
+    {
+        "input_end_frame": 6901,
+        "prediction_frame": 6961,
+        "predicted_hand_positions": {
+            "left_hand_x": 360,
+            "left_hand_y": 465,
+            "right_hand_x": 280,
+            "right_hand_y": 495
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 379.1490487716905,
+            "left_hand_y": 448.4442983354841,
+            "right_hand_x": 250.45017261600972,
+            "right_hand_y": 482.3066847664969
+        },
+        "reasoning": "",
+        "target_object": "none"
+    },
+    {
+        "input_end_frame": 7021,
+        "prediction_frame": 7081,
+        "predicted_hand_positions": {
+            "left_hand_x": 480,
+            "left_hand_y": 440,
+            "right_hand_x": 560,
+            "right_hand_y": 400
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 381.0468510766724,
+            "left_hand_y": 559.488262448992,
+            "right_hand_x": 243.369366056356,
+            "right_hand_y": 576.8933977399554
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 7141,
+        "prediction_frame": 7201,
+        "predicted_hand_positions": {
+            "left_hand_x": 420,
+            "left_hand_y": 550,
+            "right_hand_x": 450,
+            "right_hand_y": 500
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 477.2604554142784,
+            "left_hand_y": 528.956413269043,
+            "right_hand_x": 528.2274179123156,
+            "right_hand_y": 590.5397960117886
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 7261,
+        "prediction_frame": 7321,
+        "predicted_hand_positions": {
+            "left_hand_x": 485,
+            "left_hand_y": 495,
+            "right_hand_x": 568,
+            "right_hand_y": 604
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 444.749228319331,
+            "left_hand_y": 503.38275091988703,
+            "right_hand_x": 346.98382813726835,
+            "right_hand_y": 563.9241082327707
+        },
+        "reasoning": "",
+        "target_object": "None"
+    },
+    {
+        "input_end_frame": 7381,
+        "prediction_frame": 7441,
+        "predicted_hand_positions": {
+            "left_hand_x": 550,
+            "left_hand_y": 450,
+            "right_hand_x": 570,
+            "right_hand_y": 450
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 477.1975416633951,
+            "left_hand_y": 420.2704770224435,
+            "right_hand_x": 572.6201043057082,
+            "right_hand_y": 381.95790563310896
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 7501,
+        "prediction_frame": 7561,
+        "predicted_hand_positions": {
+            "left_hand_x": 480,
+            "left_hand_y": 425,
+            "right_hand_x": 570,
+            "right_hand_y": 390
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 467.81844709386775,
+            "left_hand_y": 446.3420254843576,
+            "right_hand_x": 572.0515418891332,
+            "right_hand_y": 385.5914047786168
+        },
+        "reasoning": "",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 7621,
+        "prediction_frame": 7681,
+        "predicted_hand_positions": {
+            "left_hand_x": 470,
+            "left_hand_y": 435,
+            "right_hand_x": 565,
+            "right_hand_y": 385
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 463.6058328139722,
+            "left_hand_y": 444.4230284009661,
+            "right_hand_x": 580.5974222307829,
+            "right_hand_y": 344.991786139352
+        },
+        "reasoning": "The person is currently stirring noodles in the pot. It is expected that the stirring action will continue or conclude with the right hand remaining in or near the pot, and the left hand remaining stable, likely holding the pot or a cloth. The predicted coordinates are based on the average of the last few frames, indicating continued stability or minor adjustments within the stirring area.",
+        "target_object": "pot with noodles"
+    },
+    {
+        "input_end_frame": 7741,
+        "prediction_frame": 7801,
+        "predicted_hand_positions": {
+            "left_hand_x": 475.0,
+            "left_hand_y": 430.0,
+            "right_hand_x": 570.0,
+            "right_hand_y": 380.0
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 473.30524693781405,
+            "left_hand_y": 432.3888506208147,
+            "right_hand_x": 540.116889991952,
+            "right_hand_y": 421.7067446027483
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 7861,
+        "prediction_frame": 7921,
+        "predicted_hand_positions": {
+            "left_hand_x": 480,
+            "left_hand_y": 485,
+            "right_hand_x": 490,
+            "right_hand_y": 495
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 508.5132157982294,
+            "left_hand_y": 430.6173324584961,
+            "right_hand_x": 517.0779971022102,
+            "right_hand_y": 420.7488468715123
+        },
+        "reasoning": "",
+        "target_object": "pot"
+    },
+    {
+        "input_end_frame": 7981,
+        "prediction_frame": 8041,
+        "predicted_hand_positions": {
+            "left_hand_x": 509,
+            "left_hand_y": 438,
+            "right_hand_x": 550,
+            "right_hand_y": 250
+        },
+        "actual_hand_positions": {
+            "left_hand_x": 509.75780391213885,
+            "left_hand_y": 438.490629196167,
+            "right_hand_x": 519.4866237927921,
+            "right_hand_y": 433.3503246307373
+        },
+        "reasoning": "",
+        "target_object": "noodles"
+    }
+]

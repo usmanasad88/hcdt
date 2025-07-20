@@ -1,8 +1,9 @@
 import json
 import re
-from typing import Optional
+from typing import Optional, Dict
 import sys
 import os
+from graphviz import Digraph
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.motionutils import get_hand_xy_positions
@@ -24,8 +25,8 @@ def parse_yx(response):
         return None, None
     
 
-input_path = "data/gemini-flash-image-gen-3-memv1.json"
-output_path = "data/gemini-flash-image-gen-3-memv1.fixed.json"
+# input_path = "data/gemini-flash-image-gen-3-memv1.json"
+# output_path = "data/gemini-flash-image-gen-3-memv1.fixed.json"
 
 def extract_json_from_response(response_string: str) -> Optional[str]:
     """
@@ -251,6 +252,61 @@ def get_action_description_for_frame(frame_number: int, gt_file_path: str, dag_f
         print(f"Error getting action description: {e}")
         return None
 
+def get_keystep_for_frame(frame_number: int, gt_file_path: str) -> Optional[str]:
+    """
+    Get the action description for a given frame number by checking which action
+    is in progress (frame number falls between start_frame and end_frame).
+    If no action is in progress, returns the next upcoming action.
+    
+    Args:
+        frame_number (int): The frame number to look up
+        gt_file_path (str): Path to the ground truth JSON file containing actions
+        
+    Returns:
+        Optional[str]: The action description if found, or next action info if none in progress, None on error
+    """
+    try:
+        # Load ground truth data
+        with open(gt_file_path, 'r') as f:
+            gt_data = json.load(f)
+        
+        # Handle the case where data has an "actions" key containing the array
+        actions_list = gt_data.get("actions", gt_data) if isinstance(gt_data, dict) else gt_data
+        
+        # Find the action that contains this frame number
+        for action in actions_list:
+            start_frame = action.get('start_frame')
+            end_frame = action.get('end_frame')
+            
+            if start_frame is not None and end_frame is not None:
+                if start_frame <= frame_number <= end_frame:
+                    return action.get('action', 'Unknown action')
+        
+        # If no action found for this frame, find the next upcoming action
+        next_action = None
+        min_start_frame = float('inf')
+        
+        for action in actions_list:
+            start_frame = action.get('start_frame')
+            if start_frame is not None and start_frame > frame_number:
+                if start_frame < min_start_frame:
+                    min_start_frame = start_frame
+                    next_action = action.get('action', 'Unknown action')
+        
+        if next_action:
+            return f"No keystep at current. The next keystep is {next_action}"
+        else:
+            return f"No keystep at current. No upcoming keysteps found after frame {frame_number}"
+        
+    except FileNotFoundError as e:
+        print(f"File not found: {e}")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"Error parsing JSON: {e}")
+        return None
+    except Exception as e:
+        print(f"Error getting keystep for frame: {e}")
+        return None
 
 def get_all_actions_for_frame(frame_number: int, gt_file_path: str, dag_file_path: str) -> dict:
     """
@@ -420,14 +476,68 @@ def simplify_phase2_results(input_path: str, output_path: str):
     print(f"✅ Simplified Phase 2 results saved to {output_path}")
     print(f"📊 Processed {len(simplified_results)} prediction frames")
 
- 
-
-# Example usage:
-if __name__ == "__main__":
-    input_file = "data/HAViD/phase2_result.json"
-    output_file = "data/HAViD/phase2_simplified.json"
+def set_frame_number_in_json(input_json_path, fps, output_path=None):
+    """
+    Set the 'frame' or 'frame_number' key in the JSON data according to the time, or timestamp key, for the given fps.
     
-    compare_phase2_results(input_file, output_file)
+    Args:
+        input_json_path (string): path of the input JSON file.
+        fps (int): frame number.
+        output_path (string, optional): path to save the modified JSON file. If None, modifies in place.
+        
+    Returns:
+        Creates output path, returns nothing.
+    """
+    with open(input_json_path, 'r') as f:
+        data = json.load(f)
+    
+    alt=True
+    if alt:
+        # Handle the case where data has an "actions" key containing the array
+        actions_list = data.get("actions", data) if isinstance(data, dict) else data
+        
+        for entry in actions_list:
+            start_time=entry['start_time'] # MM:SS
+            start_seconds= int(start_time.split(':')[0]) * 60 + int(start_time.split(':')[1])
+            start_frame = int(start_seconds * fps)
+            entry['start_frame'] = start_frame
+
+            end_time=entry['end_time']
+            end_seconds= int(end_time.split(':')[0]) * 60 + int(end_time.split(':')[1])
+            end_frame = int(end_seconds * fps)
+            entry['end_frame'] = end_frame
+
+    conventional = False
+    if conventional:
+        for entry in data:
+            if 'time' in entry:
+                # Calculate frame number based on time and fps
+                # If time is say 1.15, it means 1 minutes and 15 seconds, so we convert it to total seconds
+                minutes, seconds = divmod(entry['time'], 1)
+                total_seconds = int(minutes * 60 + seconds * 100)
+                entry['frame_number'] = int(total_seconds * fps)
+            elif 'timestamp' in entry:
+                # Calculate frame number based on timestamp and fps
+                entry['frame'] = int(entry['timestamp'] * fps)
+            else:
+                print(f"Warning: No 'time' or 'timestamp' key found in entry: {entry}")
+        
+    if output_path:
+        with open(output_path, 'w') as f:
+            json.dump(data, f, indent=2)
+        print(f"Modified JSON saved to {output_path}")
+    else:
+        with open(input_json_path, 'w') as f:
+            json.dump(data, f, indent=2)
+        print(f"Modified JSON saved to {input_json_path}")
+
+# # Example usage:
+# if __name__ == "__main__":
+#     set_frame_number_in_json("data/Cooking/fair_cooking_05_02_gt_alt.json", 30)
+    # input_file = "data/HAViD/phase2_result.json"
+    # output_file = "data/HAViD/phase2_simplified.json"
+    
+    # compare_phase2_results(input_file, output_file)
 #     gt_path = "data/HAViD/S02A08I21_gt.json"
 #     dag_path = "data/HAViD/dag.json"
     
@@ -440,3 +550,279 @@ if __name__ == "__main__":
 #     # all_info = get_all_actions_for_frame(frame, gt_path, dag_path)
 #     # print(f"\nComprehensive info for frame {frame}:")
 #     # print(json.dumps(all_info, indent=2))
+
+
+
+def create_task_graph_visualization(json_data_string: str, output_filename: str = 'task_graph'):
+    """
+    Takes a JSON string representing a task action graph, creates a Graphviz
+    visualization, and saves it as a DOT file and a PNG image.
+
+    Args:
+        json_data_string (str): A JSON string containing the task actions
+                                with 'id', 'action', and 'dependencies'.
+        output_filename (str): The base name for the output files (e.g.,
+                                'task_graph' will generate 'task_graph.dot'
+                                and 'task_graph.png').
+    """
+    try:
+        # 1. Parse the JSON input string
+        task_actions = json.loads(json_data_string)
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON: {e}")
+        return
+
+    # 2. Create a Digraph object (for directed graph)
+    #    'comment' is for internal Graphviz use, 'strict' avoids duplicate edges
+    dot = Digraph(comment='Task Action Graph', strict=True)
+
+    # Set some global graph attributes for better appearance
+    dot.graph_attr['rankdir'] = 'LR' # Layout from Left to Right (alternatively 'TB' for Top to Bottom)
+    dot.graph_attr['overlap'] = 'false' # Avoid node overlaps
+    dot.graph_attr['splines'] = 'true' # Smooth edges
+
+    # Set some global node attributes
+    dot.node_attr['shape'] = 'box' # Nodes will be rectangular boxes
+    dot.node_attr['style'] = 'rounded,filled' # Rounded corners and filled
+    dot.node_attr['fillcolor'] = '#ADD8E6' # Light blue background for nodes
+    dot.node_attr['fontname'] = 'Helvetica' # Use a common sans-serif font
+
+    # Set some global edge attributes
+    dot.edge_attr['color'] = '#696969' # Dark grey edges
+    dot.edge_attr['arrowhead'] = 'vee' # V-shaped arrowheads
+    dot.edge_attr['penwidth'] = '1.5' # Thicker lines for edges
+
+    # Create a dictionary to easily map IDs to action names for labels
+    action_labels = {action['id']: action['action'] for action in task_actions}
+
+    # 3. Add nodes
+    for action in task_actions:
+        node_id = str(action['id']) # Graphviz expects string IDs
+        node_label = action['action']
+        dot.node(node_id, node_label)
+
+    # 4. Add edges based on dependencies
+    for action in task_actions:
+        current_id = str(action['id'])
+        for dep_id in action['dependencies']:
+            # Ensure the dependency exists as a node before adding an edge
+            if dep_id in action_labels:
+                dot.edge(str(dep_id), current_id)
+            else:
+                print(f"Warning: Dependency ID {dep_id} for action '{action['action']}' not found in provided actions.")
+
+    # 5. Output the graph
+    # Save as DOT file
+    # dot.render(output_filename, view=False, format='dot')
+    # print(f"Graph DOT file saved as '{output_filename}.dot'")
+
+    # # Save as PNG image
+    # # Graphviz automatically looks for the dot executable in your PATH
+    # dot.render(output_filename, view=False, format='png')
+    # print(f"Graph PNG image saved as '{output_filename}.png'")
+
+    # You can also render to other formats like SVG for scalability
+    dot.render(output_filename, view=False, format='svg')
+    print(f"Graph SVG image saved as '{output_filename}.svg'")
+
+
+# --- Example Usage ---
+# # Your provided JSON data as a multi-line string
+# task_json_input = """
+# [
+#   {
+#     "id": 1,
+#     "action": "Walk to toolbox",
+#     "dependencies": []
+#   },
+#   {
+#     "id": 2,
+#     "action": "Pick up toolbox",
+#     "dependencies": [
+#       1
+#     ]
+#   },
+#   {
+#     "id": 3,
+#     "action": "Transport toolbox",
+#     "dependencies": [
+#       2
+#     ]
+#   },
+#   {
+#     "id": 4,
+#     "action": "Place toolbox on table",
+#     "dependencies": [
+#       3
+#     ]
+#   },
+#   {
+#     "id": 5,
+#     "action": "Walk to turquoise chair",
+#     "dependencies": [
+#       4
+#     ]
+#   },
+#   {
+#     "id": 6,
+#     "action": "Pick up turquoise chair",
+#     "dependencies": [
+#       5
+#     ]
+#   },
+#   {
+#     "id": 7,
+#     "action": "Transport turquoise chair",
+#     "dependencies": [
+#       6
+#     ]
+#   },
+#   {
+#     "id": 8,
+#     "action": "Stack turquoise chair",
+#     "dependencies": [
+#       7
+#     ]
+#   },
+#   {
+#     "id": 9,
+#     "action": "Walk to red chair 1",
+#     "dependencies": [
+#       4
+#     ]
+#   },
+#   {
+#     "id": 10,
+#     "action": "Pick up red chair 1",
+#     "dependencies": [
+#       9
+#     ]
+#   },
+#   {
+#     "id": 11,
+#     "action": "Transport red chair 1",
+#     "dependencies": [
+#       10
+#     ]
+#   },
+#   {
+#     "id": 12,
+#     "action": "Stack red chair 1",
+#     "dependencies": [
+#       11
+#     ]
+#   },
+#   {
+#     "id": 13,
+#     "action": "Walk to red chair 2",
+#     "dependencies": [
+#       4
+#     ]
+#   },
+#   {
+#     "id": 14,
+#     "action": "Pick up red chair 2",
+#     "dependencies": [
+#       13
+#     ]
+#   },
+#   {
+#     "id": 15,
+#     "action": "Transport red chair 2",
+#     "dependencies": [
+#       14
+#     ]
+#   },
+#   {
+#     "id": 16,
+#     "action": "Stack red chair 2",
+#     "dependencies": [
+#       15
+#     ]
+#   },
+#   {
+#     "id": 17,
+#     "action": "Walk to red chair 3",
+#     "dependencies": [
+#       4
+#     ]
+#   },
+#   {
+#     "id": 18,
+#     "action": "Pick up red chair 3",
+#     "dependencies": [
+#       17
+#     ]
+#   },
+#   {
+#     "id": 19,
+#     "action": "Transport red chair 3",
+#     "dependencies": [
+#       18
+#     ]
+#   },
+#   {
+#     "id": 20,
+#     "action": "Stack red chair 3",
+#     "dependencies": [
+#       19
+#     ]
+#   }
+# ]
+# """
+
+# # Call the function to generate the graph
+# create_task_graph_visualization(task_json_input, output_filename='task_action_graph')
+
+def get_ground_truth(frame_number: int, gt_filename: str) -> Optional[Dict]:
+    """
+    Retrieves the ground truth state for a specific frame number from a JSON file.
+    The assumption is that the ground truth remains the same until the next entry.
+
+    Args:
+        frame_number (int): The frame number to look for.
+        gt_filename (str): The path to the ground truth JSON file.
+
+    Returns:
+        Optional[Dict]: The state dictionary for the given frame_number if found, 
+                        otherwise None.
+    """
+    try:
+        # Load ground truth data
+        with open(gt_filename, 'r') as f:
+            gt_data = json.load(f)
+        
+        # Sort the data by frame_number to ensure proper ordering
+        gt_data.sort(key=lambda x: x.get('frame_number', 0))
+        
+        # Find the appropriate ground truth entry
+        # The ground truth for a frame is the last entry with frame_number <= target frame
+        selected_entry = None
+        
+        for entry in gt_data:
+            entry_frame = entry.get('frame_number')
+            if entry_frame is None:
+                continue
+                
+            if entry_frame <= frame_number:
+                selected_entry = entry
+            else:
+                # Since data is sorted, we can break once we exceed the target frame
+                break
+        
+        if selected_entry is not None:
+            return selected_entry.get('state', {})
+        else:
+            print(f"No ground truth found for frame {frame_number}")
+            return None
+            
+    except FileNotFoundError as e:
+        print(f"Ground truth file not found: {e}")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"Error parsing ground truth JSON: {e}")
+        return None
+    except Exception as e:
+        print(f"Error getting ground truth for frame {frame_number}: {e}")
+        return None
+    

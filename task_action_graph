@@ -1,0 +1,45 @@
+// Task Action Graph
+strict digraph {
+	graph [overlap=false rankdir=LR splines=true]
+	node [fillcolor="#ADD8E6" fontname=Helvetica shape=box style="rounded,filled"]
+	edge [arrowhead=vee color="#696969" penwidth=1.5]
+	1 [label="Walk to toolbox"]
+	2 [label="Pick up toolbox"]
+	3 [label="Transport toolbox"]
+	4 [label="Place toolbox on table"]
+	5 [label="Walk to turquoise chair"]
+	6 [label="Pick up turquoise chair"]
+	7 [label="Transport turquoise chair"]
+	8 [label="Stack turquoise chair"]
+	9 [label="Walk to red chair 1"]
+	10 [label="Pick up red chair 1"]
+	11 [label="Transport red chair 1"]
+	12 [label="Stack red chair 1"]
+	13 [label="Walk to red chair 2"]
+	14 [label="Pick up red chair 2"]
+	15 [label="Transport red chair 2"]
+	16 [label="Stack red chair 2"]
+	17 [label="Walk to red chair 3"]
+	18 [label="Pick up red chair 3"]
+	19 [label="Transport red chair 3"]
+	20 [label="Stack red chair 3"]
+	1 -> 2
+	2 -> 3
+	3 -> 4
+	4 -> 5
+	5 -> 6
+	6 -> 7
+	7 -> 8
+	4 -> 9
+	9 -> 10
+	10 -> 11
+	11 -> 12
+	4 -> 13
+	13 -> 14
+	14 -> 15
+	15 -> 16
+	4 -> 17
+	17 -> 18
+	18 -> 19
+	19 -> 20
+}

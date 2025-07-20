@@ -1,0 +1,2279 @@
+[
+  {
+    "frame": 121,
+    "actual_hand_positions": {
+      "left_hand_x": 130.76947927474976,
+      "left_hand_y": 398.750008477105,
+      "right_hand_x": 108.8905930519104,
+      "right_hand_y": 351.05018615722656
+    }
+  },
+  {
+    "frame": 181,
+    "actual_hand_positions": {
+      "left_hand_x": 331.88624382019043,
+      "left_hand_y": 221.92535400390625,
+      "right_hand_x": 350.8378505706787,
+      "right_hand_y": 236.28701104058158
+    }
+  },
+  {
+    "frame": 241,
+    "actual_hand_positions": {
+      "left_hand_x": 295.02220153808594,
+      "left_hand_y": 290.46806759304474,
+      "right_hand_x": 247.94702529907227,
+      "right_hand_y": 338.02259233262805
+    }
+  },
+  {
+    "frame": 301,
+    "actual_hand_positions": {
+      "left_hand_x": 177.30846405029297,
+      "left_hand_y": 398.65409003363715,
+      "right_hand_x": 135.74624061584473,
+      "right_hand_y": 381.9356282552083
+    }
+  },
+  {
+    "frame": 361,
+    "actual_hand_positions": {
+      "left_hand_x": 343.89941692352295,
+      "left_hand_y": 246.89388275146484,
+      "right_hand_x": 281.75952434539795,
+      "right_hand_y": 310.6069140964084
+    }
+  },
+  {
+    "frame": 421,
+    "actual_hand_positions": {
+      "left_hand_x": 314.83447551727295,
+      "left_hand_y": 305.2494896782769,
+      "right_hand_x": 346.65839672088623,
+      "right_hand_y": 324.999745686849
+    }
+  },
+  {
+    "frame": 481,
+    "actual_hand_positions": {
+      "left_hand_x": 314.0716791152954,
+      "left_hand_y": 270.4302681816948,
+      "right_hand_x": 367.2936677932739,
+      "right_hand_y": 251.36682722303604
+    }
+  },
+  {
+    "frame": 541,
+    "actual_hand_positions": {
+      "left_hand_x": 287.81540393829346,
+      "left_hand_y": 276.2550777859158,
+      "right_hand_x": 359.12482738494873,
+      "right_hand_y": 236.0576629638672
+    }
+  },
+  {
+    "frame": 601,
+    "actual_hand_positions": {
+      "left_hand_x": 285.68811416625977,
+      "left_hand_y": 271.2355295817057,
+      "right_hand_x": 351.9723653793335,
+      "right_hand_y": 230.15098571777344
+    }
+  },
+  {
+    "frame": 661,
+    "actual_hand_positions": {
+      "left_hand_x": 287.1253490447998,
+      "left_hand_y": 263.20232815212677,
+      "right_hand_x": 346.463680267334,
+      "right_hand_y": 229.06036376953125
+    }
+  },
+  {
+    "frame": 721,
+    "actual_hand_positions": {
+      "left_hand_x": 315.86642265319824,
+      "left_hand_y": 260.1736068725586,
+      "right_hand_x": 341.0290241241455,
+      "right_hand_y": 271.8690448337131
+    }
+  },
+  {
+    "frame": 781,
+    "actual_hand_positions": {
+      "left_hand_x": 309.74864959716797,
+      "left_hand_y": 263.2180743747287,
+      "right_hand_x": 375.4915714263916,
+      "right_hand_y": 260.6144587198893
+    }
+  },
+  {
+    "frame": 841,
+    "actual_hand_positions": {
+      "left_hand_x": 270.5374002456665,
+      "left_hand_y": 287.0342254638672,
+      "right_hand_x": 220.90327739715576,
+      "right_hand_y": 357.36452738444007
+    }
+  },
+  {
+    "frame": 901,
+    "actual_hand_positions": {
+      "left_hand_x": 224.58796501159668,
+      "left_hand_y": 292.31132931179474,
+      "right_hand_x": 104.93890047073364,
+      "right_hand_y": 318.7981711493598
+    }
+  },
+  {
+    "frame": 961,
+    "actual_hand_positions": {
+      "left_hand_x": 296.6256380081177,
+      "left_hand_y": 281.48969014485675,
+      "right_hand_x": 310.3045701980591,
+      "right_hand_y": 288.85502285427515
+    }
+  },
+  {
+    "frame": 1021,
+    "actual_hand_positions": {
+      "left_hand_x": 297.5576877593994,
+      "left_hand_y": 355.6994967990451,
+      "right_hand_x": 320.06993293762207,
+      "right_hand_y": 382.12551540798614
+    }
+  },
+  {
+    "frame": 1081,
+    "actual_hand_positions": {
+      "left_hand_x": 322.47791290283203,
+      "left_hand_y": 274.5163811577691,
+      "right_hand_x": 294.28486824035645,
+      "right_hand_y": 368.202887641059
+    }
+  },
+  {
+    "frame": 1141,
+    "actual_hand_positions": {
+      "left_hand_x": 312.7365827560425,
+      "left_hand_y": 278.2438490125868,
+      "right_hand_x": 333.8278532028198,
+      "right_hand_y": 284.50414869520404
+    }
+  },
+  {
+    "frame": 1201,
+    "actual_hand_positions": {
+      "left_hand_x": 328.1214714050293,
+      "left_hand_y": 287.2708214653863,
+      "right_hand_x": 310.96229553222656,
+      "right_hand_y": 280.143059624566
+    }
+  },
+  {
+    "frame": 1261,
+    "actual_hand_positions": {
+      "left_hand_x": 290.98546504974365,
+      "left_hand_y": 269.0410614013672,
+      "right_hand_x": 349.4623899459839,
+      "right_hand_y": 248.9143795437283
+    }
+  },
+  {
+    "frame": 1321,
+    "actual_hand_positions": {
+      "left_hand_x": 282.62836933135986,
+      "left_hand_y": 284.6118927001953,
+      "right_hand_x": 361.2206697463989,
+      "right_hand_y": 238.90813191731772
+    }
+  },
+  {
+    "frame": 1381,
+    "actual_hand_positions": {
+      "left_hand_x": 281.73351287841797,
+      "left_hand_y": 289.9721569485135,
+      "right_hand_x": 365.004301071167,
+      "right_hand_y": 240.03717634412976
+    }
+  },
+  {
+    "frame": 1441,
+    "actual_hand_positions": {
+      "left_hand_x": 280.2438497543335,
+      "left_hand_y": 284.4287872314453,
+      "right_hand_x": 351.6305685043335,
+      "right_hand_y": 220.44088575575088
+    }
+  },
+  {
+    "frame": 1501,
+    "actual_hand_positions": {
+      "left_hand_x": 276.3491153717041,
+      "left_hand_y": 292.04559326171875,
+      "right_hand_x": 311.73133850097656,
+      "right_hand_y": 304.4933319091797
+    }
+  },
+  {
+    "frame": 1561,
+    "actual_hand_positions": {
+      "left_hand_x": 279.2339086532593,
+      "left_hand_y": 304.81014251708984,
+      "right_hand_x": 338.4682893753052,
+      "right_hand_y": 348.5644234551324
+    }
+  },
+  {
+    "frame": 1621,
+    "actual_hand_positions": {
+      "left_hand_x": 295.9379196166992,
+      "left_hand_y": 354.2644500732422,
+      "right_hand_x": 316.75281524658203,
+      "right_hand_y": 370.5551995171441
+    }
+  },
+  {
+    "frame": 1681,
+    "actual_hand_positions": {
+      "left_hand_x": 294.1904067993164,
+      "left_hand_y": 350.5456288655599,
+      "right_hand_x": 298.39015007019043,
+      "right_hand_y": 365.65687391493054
+    }
+  },
+  {
+    "frame": 1741,
+    "actual_hand_positions": {
+      "left_hand_x": 324.7321367263794,
+      "left_hand_y": 278.6600112915039,
+      "right_hand_x": 267.73674488067627,
+      "right_hand_y": 368.6805725097656
+    }
+  },
+  {
+    "frame": 1801,
+    "actual_hand_positions": {
+      "left_hand_x": 316.71762466430664,
+      "left_hand_y": 276.6167958577474,
+      "right_hand_x": 274.3245601654053,
+      "right_hand_y": 370.5443912082248
+    }
+  },
+  {
+    "frame": 1861,
+    "actual_hand_positions": {
+      "left_hand_x": 316.91222190856934,
+      "left_hand_y": 276.6674677530924,
+      "right_hand_x": 275.0204563140869,
+      "right_hand_y": 369.0134684244792
+    }
+  },
+  {
+    "frame": 1921,
+    "actual_hand_positions": {
+      "left_hand_x": 319.56400871276855,
+      "left_hand_y": 283.8449054294162,
+      "right_hand_x": 283.829402923584,
+      "right_hand_y": 363.3616977267795
+    }
+  },
+  {
+    "frame": 1981,
+    "actual_hand_positions": {
+      "left_hand_x": 298.7508773803711,
+      "left_hand_y": 287.90539635552295,
+      "right_hand_x": 316.6635990142822,
+      "right_hand_y": 294.5362726847331
+    }
+  },
+  {
+    "frame": 2041,
+    "actual_hand_positions": {
+      "left_hand_x": 306.15086555480957,
+      "left_hand_y": 278.68675655788843,
+      "right_hand_x": 303.30376625061035,
+      "right_hand_y": 291.32751888699005
+    }
+  },
+  {
+    "frame": 2101,
+    "actual_hand_positions": {
+      "left_hand_x": 308.96923542022705,
+      "left_hand_y": 269.3562189737956,
+      "right_hand_x": 286.3482713699341,
+      "right_hand_y": 290.5194812350803
+    }
+  },
+  {
+    "frame": 2161,
+    "actual_hand_positions": {
+      "left_hand_x": 302.548623085022,
+      "left_hand_y": 263.51636250813806,
+      "right_hand_x": 294.54972743988037,
+      "right_hand_y": 292.3085530598958
+    }
+  },
+  {
+    "frame": 2221,
+    "actual_hand_positions": {
+      "left_hand_x": 286.5877628326416,
+      "left_hand_y": 280.05309634738495,
+      "right_hand_x": 361.9870662689209,
+      "right_hand_y": 216.40343136257596
+    }
+  },
+  {
+    "frame": 2281,
+    "actual_hand_positions": {
+      "left_hand_x": 304.28268909454346,
+      "left_hand_y": 261.4715788099501,
+      "right_hand_x": 342.7877187728882,
+      "right_hand_y": 223.819457160102
+    }
+  },
+  {
+    "frame": 2341,
+    "actual_hand_positions": {
+      "left_hand_x": 306.10148906707764,
+      "left_hand_y": 267.82588958740234,
+      "right_hand_x": 314.91711139678955,
+      "right_hand_y": 268.9379586113824
+    }
+  },
+  {
+    "frame": 2401,
+    "actual_hand_positions": {
+      "left_hand_x": 280.82475662231445,
+      "left_hand_y": 324.36754438612195,
+      "right_hand_x": 329.3132781982422,
+      "right_hand_y": 376.57928466796875
+    }
+  },
+  {
+    "frame": 2461,
+    "actual_hand_positions": {
+      "left_hand_x": 296.06878757476807,
+      "left_hand_y": 282.858403523763,
+      "right_hand_x": 267.7784204483032,
+      "right_hand_y": 307.55000644259985
+    }
+  },
+  {
+    "frame": 2521,
+    "actual_hand_positions": {
+      "left_hand_x": 296.81477546691895,
+      "left_hand_y": 280.24158477783203,
+      "right_hand_x": 270.6575632095337,
+      "right_hand_y": 316.3071738349067
+    }
+  },
+  {
+    "frame": 2581,
+    "actual_hand_positions": {
+      "left_hand_x": 294.694185256958,
+      "left_hand_y": 253.92667982313367,
+      "right_hand_x": 363.17906379699707,
+      "right_hand_y": 230.37134806315103
+    }
+  },
+  {
+    "frame": 2641,
+    "actual_hand_positions": {
+      "left_hand_x": 282.82008171081543,
+      "left_hand_y": 287.490102979872,
+      "right_hand_x": 354.2342185974121,
+      "right_hand_y": 223.85179731580945
+    }
+  },
+  {
+    "frame": 2701,
+    "actual_hand_positions": {
+      "left_hand_x": 287.31441497802734,
+      "left_hand_y": 268.1825002034505,
+      "right_hand_x": 351.1314868927002,
+      "right_hand_y": 221.55621846516925
+    }
+  },
+  {
+    "frame": 2761,
+    "actual_hand_positions": {
+      "left_hand_x": 286.6259574890137,
+      "left_hand_y": 271.4007483588325,
+      "right_hand_x": 310.8323097229004,
+      "right_hand_y": 278.4965091281467
+    }
+  },
+  {
+    "frame": 2821,
+    "actual_hand_positions": {
+      "left_hand_x": 304.04975414276123,
+      "left_hand_y": 281.0453414916992,
+      "right_hand_x": 305.04491329193115,
+      "right_hand_y": 391.8323940700955
+    }
+  },
+  {
+    "frame": 2881,
+    "actual_hand_positions": {
+      "left_hand_x": 296.9744682312012,
+      "left_hand_y": 326.5795177883572,
+      "right_hand_x": 319.0706253051758,
+      "right_hand_y": 348.4397676255968
+    }
+  },
+  {
+    "frame": 2941,
+    "actual_hand_positions": {
+      "left_hand_x": 315.6809329986572,
+      "left_hand_y": 284.133063422309,
+      "right_hand_x": 323.10948371887207,
+      "right_hand_y": 328.62031724717883
+    }
+  },
+  {
+    "frame": 3001,
+    "actual_hand_positions": {
+      "left_hand_x": 286.88275814056396,
+      "left_hand_y": 303.04671393500433,
+      "right_hand_x": 332.250714302063,
+      "right_hand_y": 332.2622934977214
+    }
+  },
+  {
+    "frame": 3061,
+    "actual_hand_positions": {
+      "left_hand_x": 312.2966527938843,
+      "left_hand_y": 262.705315483941,
+      "right_hand_x": 348.53999614715576,
+      "right_hand_y": 238.38623894585504
+    }
+  },
+  {
+    "frame": 3121,
+    "actual_hand_positions": {
+      "left_hand_x": 314.88194465637207,
+      "left_hand_y": 258.70130327012805,
+      "right_hand_x": 342.7734375,
+      "right_hand_y": 249.4283676147461
+    }
+  },
+  {
+    "frame": 3181,
+    "actual_hand_positions": {
+      "left_hand_x": 302.58851051330566,
+      "left_hand_y": 286.7795520358615,
+      "right_hand_x": 295.92342376708984,
+      "right_hand_y": 298.75142839219836
+    }
+  },
+  {
+    "frame": 3241,
+    "actual_hand_positions": {
+      "left_hand_x": 251.70655250549316,
+      "left_hand_y": 372.4072774251302,
+      "right_hand_x": 122.07483053207397,
+      "right_hand_y": 361.9656032986111
+    }
+  },
+  {
+    "frame": 3301,
+    "actual_hand_positions": {
+      "left_hand_x": 233.81671905517578,
+      "left_hand_y": 344.9599372016059,
+      "right_hand_x": 182.9602599143982,
+      "right_hand_y": 322.5626627604167
+    }
+  },
+  {
+    "frame": 3361,
+    "actual_hand_positions": {
+      "left_hand_x": 276.32761001586914,
+      "left_hand_y": 295.815912882487,
+      "right_hand_x": 276.38981342315674,
+      "right_hand_y": 320.13575236002606
+    }
+  },
+  {
+    "frame": 3421,
+    "actual_hand_positions": {
+      "left_hand_x": 312.6272201538086,
+      "left_hand_y": 281.8924162122938,
+      "right_hand_x": 303.6580562591553,
+      "right_hand_y": 310.9742694430881
+    }
+  },
+  {
+    "frame": 3481,
+    "actual_hand_positions": {
+      "left_hand_x": 311.820387840271,
+      "left_hand_y": 280.55419921875,
+      "right_hand_x": 302.88641452789307,
+      "right_hand_y": 311.7884318033854
+    }
+  },
+  {
+    "frame": 3541,
+    "actual_hand_positions": {
+      "left_hand_x": 284.546160697937,
+      "left_hand_y": 317.87554423014325,
+      "right_hand_x": 318.3605432510376,
+      "right_hand_y": 347.40926954481336
+    }
+  },
+  {
+    "frame": 3601,
+    "actual_hand_positions": {
+      "left_hand_x": 252.7777194976807,
+      "left_hand_y": 324.558342827691,
+      "right_hand_x": 280.8195114135742,
+      "right_hand_y": 342.72261725531683
+    }
+  },
+  {
+    "frame": 3661,
+    "actual_hand_positions": {
+      "left_hand_x": 279.2410373687744,
+      "left_hand_y": 351.92390018039276,
+      "right_hand_x": 293.2445526123047,
+      "right_hand_y": 384.4598558213976
+    }
+  },
+  {
+    "frame": 3721,
+    "actual_hand_positions": {
+      "left_hand_x": 311.04373931884766,
+      "left_hand_y": 279.06856536865234,
+      "right_hand_x": 281.980037689209,
+      "right_hand_y": 353.61402299669055
+    }
+  },
+  {
+    "frame": 3781,
+    "actual_hand_positions": {
+      "left_hand_x": 270.5894470214844,
+      "left_hand_y": 294.2908816867404,
+      "right_hand_x": 138.75921964645386,
+      "right_hand_y": 357.8912523057726
+    }
+  },
+  {
+    "frame": 3841,
+    "actual_hand_positions": {
+      "left_hand_x": 296.2003231048584,
+      "left_hand_y": 276.91737280951605,
+      "right_hand_x": 365.6003475189209,
+      "right_hand_y": 249.71222347683377
+    }
+  },
+  {
+    "frame": 3901,
+    "actual_hand_positions": {
+      "left_hand_x": 292.356014251709,
+      "left_hand_y": 265.5540254380968,
+      "right_hand_x": 354.3030261993408,
+      "right_hand_y": 210.91136932373047
+    }
+  },
+  {
+    "frame": 3961,
+    "actual_hand_positions": {
+      "left_hand_x": 288.23232650756836,
+      "left_hand_y": 283.82979498969183,
+      "right_hand_x": 358.7867498397827,
+      "right_hand_y": 237.49465942382812
+    }
+  },
+  {
+    "frame": 4021,
+    "actual_hand_positions": {
+      "left_hand_x": 316.8978691101074,
+      "left_hand_y": 257.7710469563802,
+      "right_hand_x": 335.08524894714355,
+      "right_hand_y": 251.98398166232639
+    }
+  },
+  {
+    "frame": 4081,
+    "actual_hand_positions": {
+      "left_hand_x": 306.3481569290161,
+      "left_hand_y": 282.76335398356116,
+      "right_hand_x": 302.6931047439575,
+      "right_hand_y": 287.8690719604492
+    }
+  },
+  {
+    "frame": 4141,
+    "actual_hand_positions": {
+      "left_hand_x": 284.8365306854248,
+      "left_hand_y": 309.50344933403863,
+      "right_hand_x": 278.4416675567627,
+      "right_hand_y": 318.3335834079318
+    }
+  },
+  {
+    "frame": 4201,
+    "actual_hand_positions": {
+      "left_hand_x": 284.8700523376465,
+      "left_hand_y": 310.81290774875214,
+      "right_hand_x": 278.6040782928467,
+      "right_hand_y": 319.2840788099501
+    }
+  },
+  {
+    "frame": 4261,
+    "actual_hand_positions": {
+      "left_hand_x": 308.6592674255371,
+      "left_hand_y": 289.23153347439234,
+      "right_hand_x": 290.33708572387695,
+      "right_hand_y": 300.4148271348741
+    }
+  },
+  {
+    "frame": 4321,
+    "actual_hand_positions": {
+      "left_hand_x": 308.91833305358887,
+      "left_hand_y": 277.90128919813367,
+      "right_hand_x": 284.75608825683594,
+      "right_hand_y": 303.6777920193142
+    }
+  },
+  {
+    "frame": 4381,
+    "actual_hand_positions": {
+      "left_hand_x": 307.75561332702637,
+      "left_hand_y": 274.2737028333876,
+      "right_hand_x": 287.0786666870117,
+      "right_hand_y": 304.5347637600369
+    }
+  },
+  {
+    "frame": 4441,
+    "actual_hand_positions": {
+      "left_hand_x": 308.1768989562988,
+      "left_hand_y": 274.9968422783746,
+      "right_hand_x": 288.8583183288574,
+      "right_hand_y": 306.2162823147244
+    }
+  },
+  {
+    "frame": 4501,
+    "actual_hand_positions": {
+      "left_hand_x": 304.7058343887329,
+      "left_hand_y": 274.57622951931427,
+      "right_hand_x": 336.1984968185425,
+      "right_hand_y": 232.1033901638455
+    }
+  },
+  {
+    "frame": 4561,
+    "actual_hand_positions": {
+      "left_hand_x": 288.9383792877197,
+      "left_hand_y": 273.95451863606775,
+      "right_hand_x": 355.0574779510498,
+      "right_hand_y": 242.4748738606771
+    }
+  },
+  {
+    "frame": 4621,
+    "actual_hand_positions": {
+      "left_hand_x": 282.88655281066895,
+      "left_hand_y": 284.9525663587782,
+      "right_hand_x": 351.0863780975342,
+      "right_hand_y": 217.79694027370877
+    }
+  },
+  {
+    "frame": 4681,
+    "actual_hand_positions": {
+      "left_hand_x": 288.0737066268921,
+      "left_hand_y": 272.3313225640191,
+      "right_hand_x": 339.0136957168579,
+      "right_hand_y": 234.55017937554254
+    }
+  },
+  {
+    "frame": 4741,
+    "actual_hand_positions": {
+      "left_hand_x": 284.25562381744385,
+      "left_hand_y": 281.9534089830187,
+      "right_hand_x": 344.9580430984497,
+      "right_hand_y": 272.5099563598633
+    }
+  },
+  {
+    "frame": 4801,
+    "actual_hand_positions": {
+      "left_hand_x": 295.7725524902344,
+      "left_hand_y": 275.91145833333337,
+      "right_hand_x": 269.775652885437,
+      "right_hand_y": 292.4832238091363
+    }
+  },
+  {
+    "frame": 4861,
+    "actual_hand_positions": {
+      "left_hand_x": 293.23887825012207,
+      "left_hand_y": 290.54056803385413,
+      "right_hand_x": 271.37012481689453,
+      "right_hand_y": 293.6089833577474
+    }
+  },
+  {
+    "frame": 4921,
+    "actual_hand_positions": {
+      "left_hand_x": 313.4848356246948,
+      "left_hand_y": 283.4251827663846,
+      "right_hand_x": 316.8121576309204,
+      "right_hand_y": 311.27637227376306
+    }
+  },
+  {
+    "frame": 4981,
+    "actual_hand_positions": {
+      "left_hand_x": 319.4949150085449,
+      "left_hand_y": 266.35379791259766,
+      "right_hand_x": 337.1530055999756,
+      "right_hand_y": 258.22900136311847
+    }
+  },
+  {
+    "frame": 5041,
+    "actual_hand_positions": {
+      "left_hand_x": 307.9191207885742,
+      "left_hand_y": 274.1607666015625,
+      "right_hand_x": 356.0822010040283,
+      "right_hand_y": 242.76127285427518
+    }
+  },
+  {
+    "frame": 5101,
+    "actual_hand_positions": {
+      "left_hand_x": 334.6370220184326,
+      "left_hand_y": 256.80154164632165,
+      "right_hand_x": 346.8617916107178,
+      "right_hand_y": 249.25056033664282
+    }
+  },
+  {
+    "frame": 5161,
+    "actual_hand_positions": {
+      "left_hand_x": 306.4481735229492,
+      "left_hand_y": 279.7798156738281,
+      "right_hand_x": 341.98575019836426,
+      "right_hand_y": 269.78509691026477
+    }
+  },
+  {
+    "frame": 5221,
+    "actual_hand_positions": {
+      "left_hand_x": 287.09802627563477,
+      "left_hand_y": 295.2616797553169,
+      "right_hand_x": 195.9636926651001,
+      "right_hand_y": 313.85036044650604
+    }
+  },
+  {
+    "frame": 5281,
+    "actual_hand_positions": {
+      "left_hand_x": 182.01268911361694,
+      "left_hand_y": 346.23597462972003,
+      "right_hand_x": 97.28766679763794,
+      "right_hand_y": 346.2647967868381
+    }
+  },
+  {
+    "frame": 5341,
+    "actual_hand_positions": {
+      "left_hand_x": 188.94001245498657,
+      "left_hand_y": 360.02320183648,
+      "right_hand_x": 120.31103372573853,
+      "right_hand_y": 348.09201558430993
+    }
+  },
+  {
+    "frame": 5401,
+    "actual_hand_positions": {
+      "left_hand_x": 203.49102020263672,
+      "left_hand_y": 344.89707946777344,
+      "right_hand_x": 51.22333765029907,
+      "right_hand_y": 407.93753729926215
+    }
+  },
+  {
+    "frame": 5461,
+    "actual_hand_positions": {
+      "left_hand_x": 198.29800128936768,
+      "left_hand_y": 336.71726650661896,
+      "right_hand_x": 33.90507698059082,
+      "right_hand_y": 425.7394154866537
+    }
+  },
+  {
+    "frame": 5521,
+    "actual_hand_positions": {
+      "left_hand_x": 142.90785789489746,
+      "left_hand_y": 350.7696363661024,
+      "right_hand_x": 123.80833625793457,
+      "right_hand_y": 327.9298146565755
+    }
+  },
+  {
+    "frame": 5581,
+    "actual_hand_positions": {
+      "left_hand_x": 139.29541110992432,
+      "left_hand_y": 346.72480689154736,
+      "right_hand_x": 112.00213432312012,
+      "right_hand_y": 326.1789321899414
+    }
+  },
+  {
+    "frame": 5641,
+    "actual_hand_positions": {
+      "left_hand_x": 145.72784900665283,
+      "left_hand_y": 350.59888627794055,
+      "right_hand_x": 110.72287559509277,
+      "right_hand_y": 340.7527287801107
+    }
+  },
+  {
+    "frame": 5701,
+    "actual_hand_positions": {
+      "left_hand_x": 177.13594436645508,
+      "left_hand_y": 331.22198316786023,
+      "right_hand_x": 49.08410310745239,
+      "right_hand_y": 377.7687496609158
+    }
+  },
+  {
+    "frame": 5761,
+    "actual_hand_positions": {
+      "left_hand_x": 217.63880252838135,
+      "left_hand_y": 334.8753823174371,
+      "right_hand_x": 116.66648387908936,
+      "right_hand_y": 353.06585099962024
+    }
+  },
+  {
+    "frame": 5821,
+    "actual_hand_positions": {
+      "left_hand_x": 313.8382911682129,
+      "left_hand_y": 278.912247551812,
+      "right_hand_x": 307.2683334350586,
+      "right_hand_y": 330.79802195231116
+    }
+  },
+  {
+    "frame": 5881,
+    "actual_hand_positions": {
+      "left_hand_x": 314.38300609588623,
+      "left_hand_y": 296.11557854546436,
+      "right_hand_x": 314.49739933013916,
+      "right_hand_y": 365.69786071777344
+    }
+  },
+  {
+    "frame": 5941,
+    "actual_hand_positions": {
+      "left_hand_x": 256.1634063720703,
+      "left_hand_y": 314.13553025987414,
+      "right_hand_x": 128.67271900177002,
+      "right_hand_y": 353.1855689154731
+    }
+  },
+  {
+    "frame": 6001,
+    "actual_hand_positions": {
+      "left_hand_x": 301.2392997741699,
+      "left_hand_y": 288.53965335422095,
+      "right_hand_x": 369.77806091308594,
+      "right_hand_y": 254.3684853447808
+    }
+  },
+  {
+    "frame": 6061,
+    "actual_hand_positions": {
+      "left_hand_x": 336.8777275085449,
+      "left_hand_y": 240.42928483751086,
+      "right_hand_x": 369.0577507019043,
+      "right_hand_y": 251.0725869072808
+    }
+  },
+  {
+    "frame": 6121,
+    "actual_hand_positions": {
+      "left_hand_x": 293.656063079834,
+      "left_hand_y": 271.07003529866535,
+      "right_hand_x": 363.70701789855957,
+      "right_hand_y": 220.80385420057507
+    }
+  },
+  {
+    "frame": 6181,
+    "actual_hand_positions": {
+      "left_hand_x": 296.06268405914307,
+      "left_hand_y": 264.74539438883465,
+      "right_hand_x": 357.7808141708374,
+      "right_hand_y": 225.47516292995874
+    }
+  },
+  {
+    "frame": 6241,
+    "actual_hand_positions": {
+      "left_hand_x": 328.82184982299805,
+      "left_hand_y": 255.60256110297308,
+      "right_hand_x": 338.41185569763184,
+      "right_hand_y": 241.82565477159287
+    }
+  },
+  {
+    "frame": 6301,
+    "actual_hand_positions": {
+      "left_hand_x": 293.55578422546387,
+      "left_hand_y": 279.65592278374567,
+      "right_hand_x": 351.22532844543457,
+      "right_hand_y": 224.18246799045139
+    }
+  },
+  {
+    "frame": 6361,
+    "actual_hand_positions": {
+      "left_hand_x": 291.61572456359863,
+      "left_hand_y": 275.5868699815538,
+      "right_hand_x": 353.5041332244873,
+      "right_hand_y": 230.17802768283423
+    }
+  },
+  {
+    "frame": 6421,
+    "actual_hand_positions": {
+      "left_hand_x": 289.4753932952881,
+      "left_hand_y": 281.38018714057074,
+      "right_hand_x": 358.27460289001465,
+      "right_hand_y": 244.22732459174262
+    }
+  },
+  {
+    "frame": 6481,
+    "actual_hand_positions": {
+      "left_hand_x": 288.4817123413086,
+      "left_hand_y": 277.2904925876193,
+      "right_hand_x": 358.19382667541504,
+      "right_hand_y": 226.30769941541885
+    }
+  },
+  {
+    "frame": 6541,
+    "actual_hand_positions": {
+      "left_hand_x": 292.4503803253174,
+      "left_hand_y": 273.2607735527886,
+      "right_hand_x": 347.7246284484863,
+      "right_hand_y": 253.84642283121744
+    }
+  },
+  {
+    "frame": 6601,
+    "actual_hand_positions": {
+      "left_hand_x": 325.828218460083,
+      "left_hand_y": 240.45378367106122,
+      "right_hand_x": 360.74914932250977,
+      "right_hand_y": 262.9477818806966
+    }
+  },
+  {
+    "frame": 6661,
+    "actual_hand_positions": {
+      "left_hand_x": 282.0279598236084,
+      "left_hand_y": 279.1967603895399,
+      "right_hand_x": 346.90098762512207,
+      "right_hand_y": 224.1038852267795
+    }
+  },
+  {
+    "frame": 6721,
+    "actual_hand_positions": {
+      "left_hand_x": 298.24657440185547,
+      "left_hand_y": 277.66331566704645,
+      "right_hand_x": 345.64785957336426,
+      "right_hand_y": 271.3007820977105
+    }
+  },
+  {
+    "frame": 6781,
+    "actual_hand_positions": {
+      "left_hand_x": 259.16943550109863,
+      "left_hand_y": 282.45521121554907,
+      "right_hand_x": 187.58941888809204,
+      "right_hand_y": 333.6334864298502
+    }
+  },
+  {
+    "frame": 6841,
+    "actual_hand_positions": {
+      "left_hand_x": 203.3362865447998,
+      "left_hand_y": 299.98221927218964,
+      "right_hand_x": 155.43476343154907,
+      "right_hand_y": 321.52351803249786
+    }
+  },
+  {
+    "frame": 6901,
+    "actual_hand_positions": {
+      "left_hand_x": 226.22780799865723,
+      "left_hand_y": 287.1814727783203,
+      "right_hand_x": 172.21832275390625,
+      "right_hand_y": 309.972169664171
+    }
+  },
+  {
+    "frame": 6961,
+    "actual_hand_positions": {
+      "left_hand_x": 235.78331470489502,
+      "left_hand_y": 279.0320078531901,
+      "right_hand_x": 155.74870109558105,
+      "right_hand_y": 300.1019371880425
+    }
+  },
+  {
+    "frame": 7021,
+    "actual_hand_positions": {
+      "left_hand_x": 220.4367160797119,
+      "left_hand_y": 296.6615253024631,
+      "right_hand_x": 187.49879598617554,
+      "right_hand_y": 306.95849524603955
+    }
+  },
+  {
+    "frame": 7081,
+    "actual_hand_positions": {
+      "left_hand_x": 236.96351051330566,
+      "left_hand_y": 348.1260299682617,
+      "right_hand_x": 151.3453245162964,
+      "right_hand_y": 358.9558919270833
+    }
+  },
+  {
+    "frame": 7141,
+    "actual_hand_positions": {
+      "left_hand_x": 251.01332664489746,
+      "left_hand_y": 350.2481884426541,
+      "right_hand_x": 229.54864501953125,
+      "right_hand_y": 362.71616617838544
+    }
+  },
+  {
+    "frame": 7201,
+    "actual_hand_positions": {
+      "left_hand_x": 296.7963457107544,
+      "left_hand_y": 329.1284349229601,
+      "right_hand_x": 328.4914255142212,
+      "right_hand_y": 367.44698418511285
+    }
+  },
+  {
+    "frame": 7261,
+    "actual_hand_positions": {
+      "left_hand_x": 302.2766590118408,
+      "left_hand_y": 307.30582343207465,
+      "right_hand_x": 353.192138671875,
+      "right_hand_y": 375.519773695204
+    }
+  },
+  {
+    "frame": 7321,
+    "actual_hand_positions": {
+      "left_hand_x": 276.578426361084,
+      "left_hand_y": 313.21593390570746,
+      "right_hand_x": 215.78056812286377,
+      "right_hand_y": 350.88611178927954
+    }
+  },
+  {
+    "frame": 7381,
+    "actual_hand_positions": {
+      "left_hand_x": 308.3599328994751,
+      "left_hand_y": 252.4148941040039,
+      "right_hand_x": 349.6814012527466,
+      "right_hand_y": 239.1201655069987
+    }
+  },
+  {
+    "frame": 7441,
+    "actual_hand_positions": {
+      "left_hand_x": 296.7572212219238,
+      "left_hand_y": 261.50163014729816,
+      "right_hand_x": 356.0981273651123,
+      "right_hand_y": 237.6626968383789
+    }
+  },
+  {
+    "frame": 7501,
+    "actual_hand_positions": {
+      "left_hand_x": 301.09591484069824,
+      "left_hand_y": 264.9361928304036,
+      "right_hand_x": 356.0462474822998,
+      "right_hand_y": 247.37141927083334
+    }
+  },
+  {
+    "frame": 7561,
+    "actual_hand_positions": {
+      "left_hand_x": 290.924596786499,
+      "left_hand_y": 277.72392696804474,
+      "right_hand_x": 355.7445526123047,
+      "right_hand_y": 239.92354075113934
+    }
+  },
+  {
+    "frame": 7621,
+    "actual_hand_positions": {
+      "left_hand_x": 293.4380292892456,
+      "left_hand_y": 269.25398508707684,
+      "right_hand_x": 352.53069400787354,
+      "right_hand_y": 240.00047047932944
+    }
+  },
+  {
+    "frame": 7681,
+    "actual_hand_positions": {
+      "left_hand_x": 288.30487728118896,
+      "left_hand_y": 276.5298843383789,
+      "right_hand_x": 361.05902194976807,
+      "right_hand_y": 214.66155582004123
+    }
+  },
+  {
+    "frame": 7741,
+    "actual_hand_positions": {
+      "left_hand_x": 295.89293003082275,
+      "left_hand_y": 269.3487379286024,
+      "right_hand_x": 354.68590259552,
+      "right_hand_y": 236.48584153917102
+    }
+  },
+  {
+    "frame": 7801,
+    "actual_hand_positions": {
+      "left_hand_x": 294.3367004394531,
+      "left_hand_y": 269.04195149739587,
+      "right_hand_x": 335.8851909637451,
+      "right_hand_y": 262.39530775282117
+    }
+  },
+  {
+    "frame": 7861,
+    "actual_hand_positions": {
+      "left_hand_x": 304.1159152984619,
+      "left_hand_y": 305.5437299940321,
+      "right_hand_x": 302.82087326049805,
+      "right_hand_y": 314.4983079698351
+    }
+  },
+  {
+    "frame": 7921,
+    "actual_hand_positions": {
+      "left_hand_x": 316.2316560745239,
+      "left_hand_y": 267.9396735297309,
+      "right_hand_x": 321.557879447937,
+      "right_hand_y": 261.79928249782984
+    }
+  },
+  {
+    "frame": 7981,
+    "actual_hand_positions": {
+      "left_hand_x": 316.7522430419922,
+      "left_hand_y": 272.76619805230035,
+      "right_hand_x": 321.282958984375,
+      "right_hand_y": 269.4773356119792
+    }
+  },
+  {
+    "frame": 8041,
+    "actual_hand_positions": {
+      "left_hand_x": 317.0056343078613,
+      "left_hand_y": 272.83861372205945,
+      "right_hand_x": 323.0557441711426,
+      "right_hand_y": 269.64020199245874
+    }
+  },
+  {
+    "frame": 8101,
+    "actual_hand_positions": {
+      "left_hand_x": 306.3514471054077,
+      "left_hand_y": 276.5765084160699,
+      "right_hand_x": 340.134072303772,
+      "right_hand_y": 250.54013994004993
+    }
+  },
+  {
+    "frame": 8161,
+    "actual_hand_positions": {
+      "left_hand_x": 320.07062435150146,
+      "left_hand_y": 247.52415551079642,
+      "right_hand_x": 335.9493017196655,
+      "right_hand_y": 238.01979488796655
+    }
+  },
+  {
+    "frame": 8221,
+    "actual_hand_positions": {
+      "left_hand_x": 306.1969518661499,
+      "left_hand_y": 285.3225496080187,
+      "right_hand_x": 348.6591100692749,
+      "right_hand_y": 243.85649363199872
+    }
+  },
+  {
+    "frame": 8281,
+    "actual_hand_positions": {
+      "left_hand_x": 298.98011684417725,
+      "left_hand_y": 269.5365269978841,
+      "right_hand_x": 338.32199573516846,
+      "right_hand_y": 258.2277297973633
+    }
+  },
+  {
+    "frame": 8341,
+    "actual_hand_positions": {
+      "left_hand_x": 186.26530170440674,
+      "left_hand_y": 293.8527637057834,
+      "right_hand_x": 237.37328052520752,
+      "right_hand_y": 276.8111122979058
+    }
+  },
+  {
+    "frame": 8401,
+    "actual_hand_positions": {
+      "left_hand_x": 108.45391750335693,
+      "left_hand_y": 302.63705783420136,
+      "right_hand_x": 103.73797416687012,
+      "right_hand_y": 301.84512668185766
+    }
+  },
+  {
+    "frame": 8461,
+    "actual_hand_positions": {
+      "left_hand_x": 108.35471153259277,
+      "left_hand_y": 302.3728688557943,
+      "right_hand_x": 105.48527240753174,
+      "right_hand_y": 307.35787285698785
+    }
+  },
+  {
+    "frame": 8521,
+    "actual_hand_positions": {
+      "left_hand_x": 112.1915340423584,
+      "left_hand_y": 304.1987525092231,
+      "right_hand_x": 103.82465124130249,
+      "right_hand_y": 304.1900210910373
+    }
+  },
+  {
+    "frame": 8581,
+    "actual_hand_positions": {
+      "left_hand_x": 111.8504285812378,
+      "left_hand_y": 309.24133724636505,
+      "right_hand_x": 107.10086822509766,
+      "right_hand_y": 303.14362843831384
+    }
+  },
+  {
+    "frame": 8641,
+    "actual_hand_positions": {
+      "left_hand_x": 62.04943656921387,
+      "left_hand_y": 378.4489525689019,
+      "right_hand_x": 123.70017766952515,
+      "right_hand_y": 353.14305623372394
+    }
+  },
+  {
+    "frame": 8701,
+    "actual_hand_positions": {
+      "left_hand_x": 96.2301254272461,
+      "left_hand_y": 361.08597649468317,
+      "right_hand_x": 107.13036060333252,
+      "right_hand_y": 337.95288933648004
+    }
+  },
+  {
+    "frame": 8761,
+    "actual_hand_positions": {
+      "left_hand_x": 95.7396924495697,
+      "left_hand_y": 356.8390316433377,
+      "right_hand_x": 59.66140627861023,
+      "right_hand_y": 350.0694698757595
+    }
+  },
+  {
+    "frame": 8821,
+    "actual_hand_positions": {
+      "left_hand_x": 114.11106586456299,
+      "left_hand_y": 314.0481313069661,
+      "right_hand_x": 110.73470115661621,
+      "right_hand_y": 303.0767652723524
+    }
+  },
+  {
+    "frame": 8881,
+    "actual_hand_positions": {
+      "left_hand_x": 92.70238280296326,
+      "left_hand_y": 342.76358286539715,
+      "right_hand_x": 103.70862483978271,
+      "right_hand_y": 339.87924787733294
+    }
+  },
+  {
+    "frame": 8941,
+    "actual_hand_positions": {
+      "left_hand_x": 284.7585678100586,
+      "left_hand_y": 284.69312455919055,
+      "right_hand_x": 275.60131549835205,
+      "right_hand_y": 358.1775241427951
+    }
+  },
+  {
+    "frame": 9001,
+    "actual_hand_positions": {
+      "left_hand_x": 276.4613151550293,
+      "left_hand_y": 293.2215372721354,
+      "right_hand_x": 340.38357734680176,
+      "right_hand_y": 346.6751946343316
+    }
+  },
+  {
+    "frame": 9061,
+    "actual_hand_positions": {
+      "left_hand_x": 239.47546482086182,
+      "left_hand_y": 313.5786904229058,
+      "right_hand_x": 195.1725959777832,
+      "right_hand_y": 318.97106170654297
+    }
+  },
+  {
+    "frame": 9121,
+    "actual_hand_positions": {
+      "left_hand_x": 206.48598670959473,
+      "left_hand_y": 345.71588304307727,
+      "right_hand_x": 116.04373455047607,
+      "right_hand_y": 375.30377705891925
+    }
+  },
+  {
+    "frame": 9181,
+    "actual_hand_positions": {
+      "left_hand_x": 119.72005367279053,
+      "left_hand_y": 399.0766313340929,
+      "right_hand_x": 142.7438259124756,
+      "right_hand_y": 353.376219007704
+    }
+  },
+  {
+    "frame": 9241,
+    "actual_hand_positions": {
+      "left_hand_x": 124.66654777526855,
+      "left_hand_y": 360.0750393337674,
+      "right_hand_x": 136.7077112197876,
+      "right_hand_y": 366.8570624457465
+    }
+  },
+  {
+    "frame": 9301,
+    "actual_hand_positions": {
+      "left_hand_x": 137.31988668441772,
+      "left_hand_y": 364.64547051323785,
+      "right_hand_x": 116.8552041053772,
+      "right_hand_y": 356.42488267686633
+    }
+  },
+  {
+    "frame": 9361,
+    "actual_hand_positions": {
+      "left_hand_x": 136.84988021850586,
+      "left_hand_y": 379.3728722466363,
+      "right_hand_x": 123.25112819671631,
+      "right_hand_y": 363.6664920383029
+    }
+  },
+  {
+    "frame": 9421,
+    "actual_hand_positions": {
+      "left_hand_x": 146.45308256149292,
+      "left_hand_y": 374.36676025390625,
+      "right_hand_x": 123.0188250541687,
+      "right_hand_y": 358.8829040527344
+    }
+  },
+  {
+    "frame": 9481,
+    "actual_hand_positions": {
+      "left_hand_x": 130.09309768676758,
+      "left_hand_y": 383.0752478705512,
+      "right_hand_x": 132.80456066131592,
+      "right_hand_y": 350.3523932562934
+    }
+  },
+  {
+    "frame": 9541,
+    "actual_hand_positions": {
+      "left_hand_x": 122.85263538360596,
+      "left_hand_y": 389.55230712890625,
+      "right_hand_x": 138.9589548110962,
+      "right_hand_y": 354.9873775906033
+    }
+  },
+  {
+    "frame": 9601,
+    "actual_hand_positions": {
+      "left_hand_x": 121.1760401725769,
+      "left_hand_y": 391.99456108940973,
+      "right_hand_x": 146.9643473625183,
+      "right_hand_y": 350.8628845214844
+    }
+  },
+  {
+    "frame": 9661,
+    "actual_hand_positions": {
+      "left_hand_x": 123.37732315063477,
+      "left_hand_y": 391.5351867675781,
+      "right_hand_x": 142.65475273132324,
+      "right_hand_y": 368.08378431532117
+    }
+  },
+  {
+    "frame": 9721,
+    "actual_hand_positions": {
+      "left_hand_x": 129.8527479171753,
+      "left_hand_y": 392.57846408420136,
+      "right_hand_x": 142.0449733734131,
+      "right_hand_y": 359.5993889702691
+    }
+  },
+  {
+    "frame": 9781,
+    "actual_hand_positions": {
+      "left_hand_x": 140.6352400779724,
+      "left_hand_y": 391.99125501844617,
+      "right_hand_x": 137.515127658844,
+      "right_hand_y": 318.721686469184
+    }
+  },
+  {
+    "frame": 9841,
+    "actual_hand_positions": {
+      "left_hand_x": 133.16612243652344,
+      "left_hand_y": 390.1728736029731,
+      "right_hand_x": 156.51659965515137,
+      "right_hand_y": 340.98786248101123
+    }
+  },
+  {
+    "frame": 9901,
+    "actual_hand_positions": {
+      "left_hand_x": 75.54559707641602,
+      "left_hand_y": 394.6949428982205,
+      "right_hand_x": 147.28294610977173,
+      "right_hand_y": 337.8357993231879
+    }
+  },
+  {
+    "frame": 9961,
+    "actual_hand_positions": {
+      "left_hand_x": 128.08247804641724,
+      "left_hand_y": 387.1879577636719,
+      "right_hand_x": 140.01997709274292,
+      "right_hand_y": 346.48980034722223
+    }
+  },
+  {
+    "frame": 10021,
+    "actual_hand_positions": {
+      "left_hand_x": 128.79843711853027,
+      "left_hand_y": 389.39713372124567,
+      "right_hand_x": 135.54439544677734,
+      "right_hand_y": 356.4666324191623
+    }
+  },
+  {
+    "frame": 10081,
+    "actual_hand_positions": {
+      "left_hand_x": 131.75275325775146,
+      "left_hand_y": 393.4334648980035,
+      "right_hand_x": 132.57369995117188,
+      "right_hand_y": 380.8206770155165
+    }
+  },
+  {
+    "frame": 10141,
+    "actual_hand_positions": {
+      "left_hand_x": 126.64355039596559,
+      "left_hand_y": 391.23047722710504,
+      "right_hand_x": 135.31397581100464,
+      "right_hand_y": 355.6200239393446
+    }
+  },
+  {
+    "frame": 10201,
+    "actual_hand_positions": {
+      "left_hand_x": 126.32259130477905,
+      "left_hand_y": 394.70180935329864,
+      "right_hand_x": 139.66768980026245,
+      "right_hand_y": 342.1205096774631
+    }
+  },
+  {
+    "frame": 10261,
+    "actual_hand_positions": {
+      "left_hand_x": 128.26998233795166,
+      "left_hand_y": 397.05844455295136,
+      "right_hand_x": 138.90326023101807,
+      "right_hand_y": 343.50229899088544
+    }
+  },
+  {
+    "frame": 10321,
+    "actual_hand_positions": {
+      "left_hand_x": 122.04980850219727,
+      "left_hand_y": 402.9368930392795,
+      "right_hand_x": 133.74392986297607,
+      "right_hand_y": 362.9305097791884
+    }
+  },
+  {
+    "frame": 10381,
+    "actual_hand_positions": {
+      "left_hand_x": 128.96770238876343,
+      "left_hand_y": 387.68013848198785,
+      "right_hand_x": 142.5451159477234,
+      "right_hand_y": 348.77533382839624
+    }
+  },
+  {
+    "frame": 10441,
+    "actual_hand_positions": {
+      "left_hand_x": 148.4166145324707,
+      "left_hand_y": 404.25249735514325,
+      "right_hand_x": 146.3761806488037,
+      "right_hand_y": 337.0466868082682
+    }
+  },
+  {
+    "frame": 10501,
+    "actual_hand_positions": {
+      "left_hand_x": 152.06189155578613,
+      "left_hand_y": 329.7087139553494,
+      "right_hand_x": 126.54561996459962,
+      "right_hand_y": 341.5093527899848
+    }
+  },
+  {
+    "frame": 10561,
+    "actual_hand_positions": {
+      "left_hand_x": 148.43823909759521,
+      "left_hand_y": 386.70633104112414,
+      "right_hand_x": 132.8423261642456,
+      "right_hand_y": 355.9357113308377
+    }
+  },
+  {
+    "frame": 10621,
+    "actual_hand_positions": {
+      "left_hand_x": 163.27968835830688,
+      "left_hand_y": 403.6273532443576,
+      "right_hand_x": 139.44226503372192,
+      "right_hand_y": 352.1775775485568
+    }
+  },
+  {
+    "frame": 10681,
+    "actual_hand_positions": {
+      "left_hand_x": 129.23917770385742,
+      "left_hand_y": 399.60382249620227,
+      "right_hand_x": 149.35007095336914,
+      "right_hand_y": 347.7929433186849
+    }
+  },
+  {
+    "frame": 10741,
+    "actual_hand_positions": {
+      "left_hand_x": 148.21171760559082,
+      "left_hand_y": 393.1329515245225,
+      "right_hand_x": 148.55096340179443,
+      "right_hand_y": 352.24062601725257
+    }
+  },
+  {
+    "frame": 10801,
+    "actual_hand_positions": {
+      "left_hand_x": 142.07723140716553,
+      "left_hand_y": 395.1210021972656,
+      "right_hand_x": 149.6995449066162,
+      "right_hand_y": 352.307743496365
+    }
+  },
+  {
+    "frame": 10861,
+    "actual_hand_positions": {
+      "left_hand_x": 141.166889667511,
+      "left_hand_y": 393.9687940809462,
+      "right_hand_x": 150.33894777297974,
+      "right_hand_y": 351.47969987657336
+    }
+  },
+  {
+    "frame": 10921,
+    "actual_hand_positions": {
+      "left_hand_x": 145.59835195541382,
+      "left_hand_y": 392.226070827908,
+      "right_hand_x": 137.72403001785278,
+      "right_hand_y": 341.23728010389544
+    }
+  },
+  {
+    "frame": 10981,
+    "actual_hand_positions": {
+      "left_hand_x": 143.9645290374756,
+      "left_hand_y": 394.364251030816,
+      "right_hand_x": 138.25571537017822,
+      "right_hand_y": 355.2902857462565
+    }
+  },
+  {
+    "frame": 11041,
+    "actual_hand_positions": {
+      "left_hand_x": 145.05709409713745,
+      "left_hand_y": 394.91034613715277,
+      "right_hand_x": 136.63963079452515,
+      "right_hand_y": 346.8628989325629
+    }
+  },
+  {
+    "frame": 11101,
+    "actual_hand_positions": {
+      "left_hand_x": 142.5192952156067,
+      "left_hand_y": 395.0771755642361,
+      "right_hand_x": 139.43074941635132,
+      "right_hand_y": 352.4554146660699
+    }
+  },
+  {
+    "frame": 11161,
+    "actual_hand_positions": {
+      "left_hand_x": 145.073139667511,
+      "left_hand_y": 399.7734493679471,
+      "right_hand_x": 140.58455228805542,
+      "right_hand_y": 363.04660373263886
+    }
+  },
+  {
+    "frame": 11221,
+    "actual_hand_positions": {
+      "left_hand_x": 173.02566766738892,
+      "left_hand_y": 384.35931735568573,
+      "right_hand_x": 108.07722806930542,
+      "right_hand_y": 364.97980753580725
+    }
+  },
+  {
+    "frame": 11281,
+    "actual_hand_positions": {
+      "left_hand_x": 230.42800426483154,
+      "left_hand_y": 300.3274917602539,
+      "right_hand_x": 118.43907833099365,
+      "right_hand_y": 348.7904654608833
+    }
+  },
+  {
+    "frame": 11341,
+    "actual_hand_positions": {
+      "left_hand_x": 316.09787940979004,
+      "left_hand_y": 297.7771335177951,
+      "right_hand_x": 319.5343494415283,
+      "right_hand_y": 349.2564731174045
+    }
+  },
+  {
+    "frame": 11401,
+    "actual_hand_positions": {
+      "left_hand_x": 237.58058547973633,
+      "left_hand_y": 310.32867431640625,
+      "right_hand_x": 199.95006322860718,
+      "right_hand_y": 319.27134195963544
+    }
+  },
+  {
+    "frame": 11461,
+    "actual_hand_positions": {
+      "left_hand_x": 273.0170726776123,
+      "left_hand_y": 286.50923834906683,
+      "right_hand_x": 333.19640159606934,
+      "right_hand_y": 269.96248033311633
+    }
+  },
+  {
+    "frame": 11521,
+    "actual_hand_positions": {
+      "left_hand_x": 244.05574798583984,
+      "left_hand_y": 324.49103461371527,
+      "right_hand_x": 360.43739318847656,
+      "right_hand_y": 245.69100273980035
+    }
+  },
+  {
+    "frame": 11581,
+    "actual_hand_positions": {
+      "left_hand_x": 220.3381061553955,
+      "left_hand_y": 320.66287994384766,
+      "right_hand_x": 105.77167272567749,
+      "right_hand_y": 347.5998136732313
+    }
+  },
+  {
+    "frame": 11641,
+    "actual_hand_positions": {
+      "left_hand_x": 210.69388389587402,
+      "left_hand_y": 312.43604024251306,
+      "right_hand_x": 115.83867073059082,
+      "right_hand_y": 350.94367133246527
+    }
+  },
+  {
+    "frame": 11701,
+    "actual_hand_positions": {
+      "left_hand_x": 216.41125679016113,
+      "left_hand_y": 369.0597958034939,
+      "right_hand_x": 109.57996845245361,
+      "right_hand_y": 358.05905659993493
+    }
+  },
+  {
+    "frame": 11761,
+    "actual_hand_positions": {
+      "left_hand_x": 303.82769107818604,
+      "left_hand_y": 273.1528600056966,
+      "right_hand_x": 269.84124183654785,
+      "right_hand_y": 325.6341086493598
+    }
+  },
+  {
+    "frame": 11821,
+    "actual_hand_positions": {
+      "left_hand_x": 298.90284538269043,
+      "left_hand_y": 275.1509136623807,
+      "right_hand_x": 272.3463535308838,
+      "right_hand_y": 337.4725553724501
+    }
+  },
+  {
+    "frame": 11881,
+    "actual_hand_positions": {
+      "left_hand_x": 244.33178901672363,
+      "left_hand_y": 316.61815643310547,
+      "right_hand_x": 179.43843603134155,
+      "right_hand_y": 334.36239030626086
+    }
+  },
+  {
+    "frame": 11941,
+    "actual_hand_positions": {
+      "left_hand_x": 210.14814376831055,
+      "left_hand_y": 341.84320237901477,
+      "right_hand_x": 86.61974668502808,
+      "right_hand_y": 324.2126888699002
+    }
+  },
+  {
+    "frame": 12001,
+    "actual_hand_positions": {
+      "left_hand_x": 208.58070850372314,
+      "left_hand_y": 342.9862976074219,
+      "right_hand_x": 101.60644054412842,
+      "right_hand_y": 297.8498670789931
+    }
+  },
+  {
+    "frame": 12061,
+    "actual_hand_positions": {
+      "left_hand_x": 233.22827816009521,
+      "left_hand_y": 318.68042416042755,
+      "right_hand_x": 179.96532917022705,
+      "right_hand_y": 313.34120432535804
+    }
+  },
+  {
+    "frame": 12121,
+    "actual_hand_positions": {
+      "left_hand_x": 307.86473751068115,
+      "left_hand_y": 277.6688681708442,
+      "right_hand_x": 250.076150894165,
+      "right_hand_y": 318.770620557997
+    }
+  },
+  {
+    "frame": 12181,
+    "actual_hand_positions": {
+      "left_hand_x": 192.24834442138672,
+      "left_hand_y": 338.0372365315755,
+      "right_hand_x": 139.298677444458,
+      "right_hand_y": 368.3462778727213
+    }
+  },
+  {
+    "frame": 12241,
+    "actual_hand_positions": {
+      "left_hand_x": 300.48067569732666,
+      "left_hand_y": 293.5958650377062,
+      "right_hand_x": 225.23491382598877,
+      "right_hand_y": 349.6105406019423
+    }
+  },
+  {
+    "frame": 12301,
+    "actual_hand_positions": {
+      "left_hand_x": 307.01818466186523,
+      "left_hand_y": 287.835693359375,
+      "right_hand_x": 291.31603240966797,
+      "right_hand_y": 317.6350911458333
+    }
+  },
+  {
+    "frame": 12361,
+    "actual_hand_positions": {
+      "left_hand_x": 310.121750831604,
+      "left_hand_y": 288.7350930107964,
+      "right_hand_x": 275.0192642211914,
+      "right_hand_y": 319.46743859185113
+    }
+  },
+  {
+    "frame": 12421,
+    "actual_hand_positions": {
+      "left_hand_x": 434.8139762878418,
+      "left_hand_y": 291.8333901299371,
+      "right_hand_x": 487.210750579834,
+      "right_hand_y": 298.47278594970703
+    }
+  },
+  {
+    "frame": 12481,
+    "actual_hand_positions": {
+      "left_hand_x": 134.60272550582886,
+      "left_hand_y": 338.174671596951,
+      "right_hand_x": 200.34799575805664,
+      "right_hand_y": 327.9605229695638
+    }
+  },
+  {
+    "frame": 12541,
+    "actual_hand_positions": {
+      "left_hand_x": 125.90999603271486,
+      "left_hand_y": 285.53025987413196,
+      "right_hand_x": 120.57180404663086,
+      "right_hand_y": 301.83160569932727
+    }
+  },
+  {
+    "frame": 12601,
+    "actual_hand_positions": {
+      "left_hand_x": 122.88117408752441,
+      "left_hand_y": 287.95134226481116,
+      "right_hand_x": 115.7020092010498,
+      "right_hand_y": 312.29712168375653
+    }
+  },
+  {
+    "frame": 12661,
+    "actual_hand_positions": {
+      "left_hand_x": 213.13128471374512,
+      "left_hand_y": 295.09243435329864,
+      "right_hand_x": 137.5785231590271,
+      "right_hand_y": 353.2691955566406
+    }
+  },
+  {
+    "frame": 12721,
+    "actual_hand_positions": {
+      "left_hand_x": 209.1313123703003,
+      "left_hand_y": 290.3299755520291,
+      "right_hand_x": 163.48271369934082,
+      "right_hand_y": 294.3485895792643
+    }
+  },
+  {
+    "frame": 12781,
+    "actual_hand_positions": {
+      "left_hand_x": 285.4189872741699,
+      "left_hand_y": 273.21253882514105,
+      "right_hand_x": 256.40594959259033,
+      "right_hand_y": 358.09326171875
+    }
+  },
+  {
+    "frame": 12841,
+    "actual_hand_positions": {
+      "left_hand_x": 181.74673318862915,
+      "left_hand_y": 289.7724363538954,
+      "right_hand_x": 129.96395826339722,
+      "right_hand_y": 289.8343192206489
+    }
+  },
+  {
+    "frame": 12901,
+    "actual_hand_positions": {
+      "left_hand_x": 184.31365489959717,
+      "left_hand_y": 288.1665547688802,
+      "right_hand_x": 123.74260425567627,
+      "right_hand_y": 248.0579800075955
+    }
+  },
+  {
+    "frame": 12961,
+    "actual_hand_positions": {
+      "left_hand_x": 308.9144229888916,
+      "left_hand_y": 292.7389780680338,
+      "right_hand_x": 334.04784202575684,
+      "right_hand_y": 268.67192586263025
+    }
+  },
+  {
+    "frame": 13021,
+    "actual_hand_positions": {
+      "left_hand_x": 342.2931671142578,
+      "left_hand_y": 263.014645046658,
+      "right_hand_x": 356.5642833709717,
+      "right_hand_y": 264.74931504991315
+    }
+  },
+  {
+    "frame": 13081,
+    "actual_hand_positions": {
+      "left_hand_x": 329.1248321533203,
+      "left_hand_y": 227.98442840576172,
+      "right_hand_x": 361.68432235717773,
+      "right_hand_y": 251.45833757188583
+    }
+  },
+  {
+    "frame": 13141,
+    "actual_hand_positions": {
+      "left_hand_x": 327.47769355773926,
+      "left_hand_y": 224.97704823811847,
+      "right_hand_x": 363.2588863372803,
+      "right_hand_y": 262.26698557535804
+    }
+  },
+  {
+    "frame": 13201,
+    "actual_hand_positions": {
+      "left_hand_x": 278.304123878479,
+      "left_hand_y": 289.63379330105255,
+      "right_hand_x": 211.5859031677246,
+      "right_hand_y": 292.9983562893338
+    }
+  },
+  {
+    "frame": 13261,
+    "actual_hand_positions": {
+      "left_hand_x": 79.43856716156006,
+      "left_hand_y": 358.8242001003689,
+      "right_hand_x": 37.33712434768677,
+      "right_hand_y": 358.36050245496966
+    }
+  },
+  {
+    "frame": 13321,
+    "actual_hand_positions": {
+      "left_hand_x": 57.698774337768555,
+      "left_hand_y": 379.8114352756076,
+      "right_hand_x": 58.20726156234741,
+      "right_hand_y": 378.3060709635417
+    }
+  },
+  {
+    "frame": 13381,
+    "actual_hand_positions": {
+      "left_hand_x": 58.61539840698242,
+      "left_hand_y": 375.85966322157117,
+      "right_hand_x": 57.784998416900635,
+      "right_hand_y": 374.81621636284723
+    }
+  },
+  {
+    "frame": 13441,
+    "actual_hand_positions": {
+      "left_hand_x": 107.63111114501953,
+      "left_hand_y": 347.1804089016385,
+      "right_hand_x": 80.34461736679077,
+      "right_hand_y": 349.45718977186414
+    }
+  },
+  {
+    "frame": 13501,
+    "actual_hand_positions": {
+      "left_hand_x": 170.34884691238403,
+      "left_hand_y": 335.93716091579864,
+      "right_hand_x": 110.9697699546814,
+      "right_hand_y": 393.0666181776259
+    }
+  },
+  {
+    "frame": 13561,
+    "actual_hand_positions": {
+      "left_hand_x": 286.43436431884766,
+      "left_hand_y": 307.9817030164931,
+      "right_hand_x": 309.3735694885254,
+      "right_hand_y": 325.98889668782556
+    }
+  },
+  {
+    "frame": 13621,
+    "actual_hand_positions": {
+      "left_hand_x": 262.434720993042,
+      "left_hand_y": 266.9996685451931,
+      "right_hand_x": 264.5150661468506,
+      "right_hand_y": 331.34593963623047
+    }
+  },
+  {
+    "frame": 13681,
+    "actual_hand_positions": {
+      "left_hand_x": 262.7243995666504,
+      "left_hand_y": 281.8858040703667,
+      "right_hand_x": 264.0305280685425,
+      "right_hand_y": 312.64137691921655
+    }
+  },
+  {
+    "frame": 13741,
+    "actual_hand_positions": {
+      "left_hand_x": 210.58979034423828,
+      "left_hand_y": 284.2933019002279,
+      "right_hand_x": 114.34558629989624,
+      "right_hand_y": 346.4470969306098
+    }
+  },
+  {
+    "frame": 13801,
+    "actual_hand_positions": {
+      "left_hand_x": 287.6047611236572,
+      "left_hand_y": 287.9919264051649,
+      "right_hand_x": 320.61777114868164,
+      "right_hand_y": 281.3106113009983
+    }
+  },
+  {
+    "frame": 13861,
+    "actual_hand_positions": {
+      "left_hand_x": 304.3945074081421,
+      "left_hand_y": 266.35390387641064,
+      "right_hand_x": 316.46440029144287,
+      "right_hand_y": 256.6916995578342
+    }
+  },
+  {
+    "frame": 13921,
+    "actual_hand_positions": {
+      "left_hand_x": 300.1845359802246,
+      "left_hand_y": 274.9372270372179,
+      "right_hand_x": 317.4463748931885,
+      "right_hand_y": 258.6960262722439
+    }
+  },
+  {
+    "frame": 13981,
+    "actual_hand_positions": {
+      "left_hand_x": 296.63426876068115,
+      "left_hand_y": 264.874627855089,
+      "right_hand_x": 311.4079236984253,
+      "right_hand_y": 257.69278208414715
+    }
+  },
+  {
+    "frame": 14041,
+    "actual_hand_positions": {
+      "left_hand_x": 298.84305000305176,
+      "left_hand_y": 274.7766918606228,
+      "right_hand_x": 310.60051918029785,
+      "right_hand_y": 264.7173775566949
+    }
+  },
+  {
+    "frame": 14101,
+    "actual_hand_positions": {
+      "left_hand_x": 220.78406810760498,
+      "left_hand_y": 291.3616180419922,
+      "right_hand_x": 158.98163318634033,
+      "right_hand_y": 297.64048258463544
+    }
+  },
+  {
+    "frame": 14161,
+    "actual_hand_positions": {
+      "left_hand_x": 167.38369464874268,
+      "left_hand_y": 287.61923048231336,
+      "right_hand_x": 107.74469375610352,
+      "right_hand_y": 312.8588358561198
+    }
+  },
+  {
+    "frame": 14221,
+    "actual_hand_positions": {
+      "left_hand_x": 182.70695209503174,
+      "left_hand_y": 283.27950371636285,
+      "right_hand_x": 72.69947528839111,
+      "right_hand_y": 342.192882961697
+    }
+  },
+  {
+    "frame": 14281,
+    "actual_hand_positions": {
+      "left_hand_x": 235.3571653366089,
+      "left_hand_y": 283.3374659220377,
+      "right_hand_x": 215.24078845977783,
+      "right_hand_y": 285.50993601481116
+    }
+  },
+  {
+    "frame": 14341,
+    "actual_hand_positions": {
+      "left_hand_x": 250.42526721954346,
+      "left_hand_y": 287.9722171359592,
+      "right_hand_x": 150.34689903259277,
+      "right_hand_y": 346.06581793891064
+    }
+  },
+  {
+    "frame": 14401,
+    "actual_hand_positions": {
+      "left_hand_x": 254.3532371520996,
+      "left_hand_y": 297.7001190185547,
+      "right_hand_x": 183.89970064163208,
+      "right_hand_y": 266.5908389621311
+    }
+  },
+  {
+    "frame": 14461,
+    "actual_hand_positions": {
+      "left_hand_x": 229.0658950805664,
+      "left_hand_y": 306.4129935370552,
+      "right_hand_x": 150.30778646469116,
+      "right_hand_y": 265.07239871554907
+    }
+  },
+  {
+    "frame": 14521,
+    "actual_hand_positions": {
+      "left_hand_x": 240.5869960784912,
+      "left_hand_y": 292.82654656304254,
+      "right_hand_x": 165.8211350440979,
+      "right_hand_y": 310.14404296875
+    }
+  },
+  {
+    "frame": 14581,
+    "actual_hand_positions": {
+      "left_hand_x": 184.55336093902588,
+      "left_hand_y": 290.0076548258463,
+      "right_hand_x": 144.74332332611084,
+      "right_hand_y": 288.55412801106775
+    }
+  },
+  {
+    "frame": 14641,
+    "actual_hand_positions": {
+      "left_hand_x": 192.98051595687866,
+      "left_hand_y": 305.29232025146484,
+      "right_hand_x": 143.21411848068237,
+      "right_hand_y": 295.16162872314453
+    }
+  },
+  {
+    "frame": 14701,
+    "actual_hand_positions": {
+      "left_hand_x": 191.51685237884521,
+      "left_hand_y": 312.40641276041663,
+      "right_hand_x": 141.3080930709839,
+      "right_hand_y": 291.41883850097656
+    }
+  },
+  {
+    "frame": 14761,
+    "actual_hand_positions": {
+      "left_hand_x": 170.65789699554443,
+      "left_hand_y": 287.5055101182726,
+      "right_hand_x": 131.06043338775635,
+      "right_hand_y": 285.10394626193573
+    }
+  },
+  {
+    "frame": 14821,
+    "actual_hand_positions": {
+      "left_hand_x": 164.61646556854248,
+      "left_hand_y": 310.88744269476996,
+      "right_hand_x": 121.2677001953125,
+      "right_hand_y": 314.5868513319228
+    }
+  },
+  {
+    "frame": 14881,
+    "actual_hand_positions": {
+      "left_hand_x": 250.8192300796509,
+      "left_hand_y": 287.9934946695963,
+      "right_hand_x": 237.17360496520996,
+      "right_hand_y": 299.47272406684027
+    }
+  },
+  {
+    "frame": 14941,
+    "actual_hand_positions": {
+      "left_hand_x": 241.94138050079346,
+      "left_hand_y": 325.57610405815973,
+      "right_hand_x": 151.64310932159424,
+      "right_hand_y": 315.2809143066406
+    }
+  },
+  {
+    "frame": 15001,
+    "actual_hand_positions": {
+      "left_hand_x": 233.33382606506348,
+      "left_hand_y": 382.10440741644965,
+      "right_hand_x": 115.71024656295776,
+      "right_hand_y": 339.0839258829753
+    }
+  },
+  {
+    "frame": 15061,
+    "actual_hand_positions": {
+      "left_hand_x": 236.67874336242676,
+      "left_hand_y": 392.18088785807294,
+      "right_hand_x": 128.58017683029175,
+      "right_hand_y": 366.393322414822
+    }
+  },
+  {
+    "frame": 15121,
+    "actual_hand_positions": {
+      "left_hand_x": 236.75150871276855,
+      "left_hand_y": 396.75593905978735,
+      "right_hand_x": 98.80279302597046,
+      "right_hand_y": 399.5692359076606
+    }
+  },
+  {
+    "frame": 15181,
+    "actual_hand_positions": {
+      "left_hand_x": 223.50661754608154,
+      "left_hand_y": 368.44804551866315,
+      "right_hand_x": 116.89271926879883,
+      "right_hand_y": 308.07840559217664
+    }
+  },
+  {
+    "frame": 15241,
+    "actual_hand_positions": {
+      "left_hand_x": 315.6998634338379,
+      "left_hand_y": 403.37863498263886,
+      "right_hand_x": 75.08835792541504,
+      "right_hand_y": 316.717274983724
+    }
+  }
+]

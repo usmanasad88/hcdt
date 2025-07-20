@@ -88,7 +88,7 @@ def get_end_effector_velocities(file_path, frame_number):
         total_frames
     )
 
-def get_hand_xy_positions(full_path, frame_number):
+def get_hand_xy_positions(full_path, frame_number, frame_width=1280, frame_height=720):
     """
     Loads VitPose motion data from a .pt file and extracts the X and Y positions
     of the left and right hands for a specific frame.
@@ -126,8 +126,8 @@ def get_hand_xy_positions(full_path, frame_number):
     # Left Hand (Wrist): Index: 9
     # Right Hand (Wrist): Index: 10
     # Original frame dimensions
-    frame_width = 1280
-    frame_height = 720
+    # frame_width = 1280
+    # frame_height = 720
 
     # Extract raw coordinates
     left_hand_x_raw = frame_data[9, 0].item()   # Row 9, column 0 (x coordinate)

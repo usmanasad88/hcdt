@@ -11,7 +11,7 @@ test_folders:
   hmr4d_results: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_2/GVHMR/cam03/hmr4d_results.pt
   gazelle_output_dir: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_2/gazelle_output
   humanml3d_file: /home/mani/Repos/hcdt/data/humanml3d/test_cam03.pt
-  phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_test_cam03.json
+  phase2_ground_truth_file: /home/mani/Repos/hcdt/data/cooking/phase2_test_cam03.json
 example_folders:
   input_folder: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4
   frames_dir: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/frames
@@ -24,7 +24,7 @@ example_folders:
   hmr4d_results: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/GVHMR/cam03/hmr4d_results.pt
   gazelle_output_dir: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/gazelle_output
   humanml3d_file: /home/mani/Repos/hcdt/data/humanml3d/example_cam03.pt
-  phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_example_cam03.json
+  phase2_ground_truth_file: /home/mani/Repos/hcdt/data/cooking/phase2_example_cam03.json
 data_folders:
   stack_data_dir: /home/mani/Repos/hcdt/data/Stack
   havid_data_dir: /home/mani/Repos/hcdt/data/HAViD
@@ -39,5 +39,5 @@ phase2_files:
   example_vitpose_overlay_frames: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/GVHMR/cam03/preprocess/vitpose_overlay_frames
   test_image_dir: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_2/frames
   example_image_dir: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/frames
-  test_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_test_cam03.json
-  example_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_example_cam03.json
+  test_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/cooking/phase2_test_cam03.json
+  example_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/cooking/phase2_example_cam03.json

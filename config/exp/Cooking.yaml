@@ -1,0 +1,37 @@
+type: "ICL" # Phase 2 experiment for hand position prediction
+example_image_dir: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/frames"
+example_gt_filename: "data/Cooking/fair_cooking_05_04_gt.json"
+example_vitpose: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/GVHMR/cam03/preprocess/vitpose.pt"
+example_vitpose_frames: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/GVHMR/cam03/preprocess/vitpose_overlay_frames"
+example_gazelle_output_dir: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/gazelle_output
+example_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/Cooking/phase2_example_cam03.json
+example_ego_frames: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/aria"
+
+test_image_dir: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_2/frames"
+test_gt_filename: "data/Cooking/fair_cooking_05_02_gt_alt.json"
+test_vitpose: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_2/GVHMR/cam03/preprocess/vitpose.pt"
+test_humanml3d: "/home/mani/Repos/hcdt/data/humanml3d/test_cam03.pt"
+test_vitpose_frames: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_2/GVHMR/cam03/preprocess/vitpose_overlay_frames"
+test_gazelle_output_dir: /home/mani/Central/Cooking1/FairCooking/fair_cooking_05_2/gazelle_output
+test_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/Cooking/phase2_test_cam03.json
+test_ego_frames: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_2/aria"
+
+use_keystep: true
+test_keystep_filename: "data/Cooking/fair_cooking_05_02_gt_alt.json"
+
+frame_width: 796
+frame_height: 448
+
+test_frame_step: 90
+fps: 30
+example_frame_step: 120
+
+drawing: "/home/mani/Central/Cooking1/drawing.png"
+attach_drawing: false
+drawing_prompt: "Use the provided drawing to help you understand the task."
+
+prompt_version: "version1" # version1, version2, version3, getgroundtruth, phase_two
+num_examples: 3
+
+use_ego: false
+ego_prompt: "Use the provided egocentric frames to help you understand the task."
