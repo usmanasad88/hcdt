@@ -1,0 +1,175 @@
+{
+  "boolean_states": {
+    "f1": 0.8011503630530575,
+    "precision": 0.8290010201860827,
+    "recall": 0.7963386727688787,
+    "total_comparisons": 3933
+  },
+  "steps_completed": {
+    "f1": 0.7229918377890172,
+    "precision": 0.6912845450175766,
+    "recall": 0.8595352564102564
+  },
+  "steps_in_progress": {
+    "f1": 0.18701923076923077,
+    "precision": 0.20673076923076922,
+    "recall": 0.219150641025641
+  },
+  "steps_available": {
+    "f1": 0.5384910228660229,
+    "precision": 0.5246108058608058,
+    "recall": 0.6009615384615384
+  },
+  "current_keystep_similarity": 0.8927138447761536,
+  "next_keystep_similarity": 0.7906695604324341,
+  "operator_holding_similarity": 0.8327851891517639,
+  "gaze_target_similarity": 0.9534745812416077,
+  "timing_analysis": {
+    "add prepared aromatics (e.g., garlic, onions) to pan and stir": {
+      "predicted_frame": 901,
+      "actual_frame": 12240,
+      "difference": -11339,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "stir-fry all ingredients together": {
+      "predicted_frame": 901,
+      "actual_frame": 14730,
+      "difference": -13829,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "turn on stove burner for pan": {
+      "predicted_frame": 601,
+      "actual_frame": 8970,
+      "difference": -8369,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "prepare (peel and cut) garlic": {
+      "predicted_frame": 901,
+      "actual_frame": 9750,
+      "difference": -8849,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "add sauce(s) (e.g., soy sauce) to pan": {
+      "predicted_frame": 901,
+      "actual_frame": 14430,
+      "difference": -13529,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "drain cooked noodles": {
+      "predicted_frame": 3661,
+      "actual_frame": 8400,
+      "difference": -4739,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "transfer food from pan to plate": {
+      "predicted_frame": 7141,
+      "actual_frame": 14850,
+      "difference": -7709,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "add noodles to boiling water": {
+      "predicted_frame": 181,
+      "actual_frame": 180,
+      "difference": 1,
+      "early": false,
+      "late": true,
+      "correct": false
+    },
+    "prepare (cut) spring onions": {
+      "predicted_frame": 901,
+      "actual_frame": 10380,
+      "difference": -9479,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "prepare (cut) celery": {
+      "predicted_frame": 421,
+      "actual_frame": 11250,
+      "difference": -10829,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "place pan on stove": {
+      "predicted_frame": 121,
+      "actual_frame": 0,
+      "difference": 121,
+      "early": false,
+      "late": true,
+      "correct": false
+    },
+    "place pot on stove and add water": {
+      "predicted_frame": 121,
+      "actual_frame": 0,
+      "difference": 121,
+      "early": false,
+      "late": true,
+      "correct": false
+    },
+    "prepare (cut) cabbage": {
+      "predicted_frame": 121,
+      "actual_frame": null,
+      "difference": null,
+      "early": null,
+      "late": null,
+      "correct": null
+    },
+    "cook noodles until done (includes stirring/tasting)": {
+      "predicted_frame": 181,
+      "actual_frame": 5100,
+      "difference": -4919,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "add drained noodles to pan": {
+      "predicted_frame": 901,
+      "actual_frame": 13080,
+      "difference": -12179,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "add oil to hot pan": {
+      "predicted_frame": 901,
+      "actual_frame": 11490,
+      "difference": -10589,
+      "early": true,
+      "late": false,
+      "correct": false
+    },
+    "turn on stove burner for pot": {
+      "predicted_frame": 181,
+      "actual_frame": 0,
+      "difference": 181,
+      "early": false,
+      "late": true,
+      "correct": false
+    }
+  },
+  "timing_statistics": {
+    "mean_difference": -7245.875,
+    "std_difference": 4904.517966566643,
+    "median_difference": -8609.0,
+    "early_predictions": 12,
+    "late_predictions": 4,
+    "correct_predictions": 0,
+    "total_compared": 16
+  },
+  "overall_score": 0.6798402981564008
+}

@@ -1,4 +1,5 @@
-eval/
+__pycache__/
+eval/*/
 logs/
 outputs/
 Local/
