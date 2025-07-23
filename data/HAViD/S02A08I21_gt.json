@@ -1,6 +1,6 @@
 [
   {
-    "frame": 1,
+    "frame_number": 1,
     "state": {
       "operator_holding": "null",
       "gaze_target": "box",
@@ -14,7 +14,7 @@
     }
   },
   {
-    "frame": 16,
+    "frame_number": 16,
     "state": {
       "operator_holding": "box",
       "gaze_target": "box",
@@ -29,7 +29,7 @@
     }
   },
   {
-    "frame": 31,
+    "frame_number": 31,
     "state": {
       "operator_holding": "box",
       "gaze_target": "box",
@@ -44,7 +44,7 @@
     }
   },
   {
-    "frame": 46,
+    "frame_number": 46,
     "state": {
       "operator_holding": "box",
       "gaze_target": "box",
@@ -59,7 +59,7 @@
     }
   },
   {
-    "frame": 61,
+    "frame_number": 61,
     "state": {
       "operator_holding": "box",
       "gaze_target": "box",
@@ -74,7 +74,7 @@
     }
   },
   {
-    "frame": 76,
+    "frame_number": 76,
     "state": {
       "operator_holding": "box",
       "gaze_target": "box",
@@ -89,7 +89,7 @@
     }
   },
   {
-    "frame": 91,
+    "frame_number": 91,
     "state": {
       "operator_holding": "null",
       "gaze_target": "box",
@@ -104,7 +104,7 @@
     }
   },
   {
-    "frame": 106,
+    "frame_number": 106,
     "state": {
       "operator_holding": "null",
       "gaze_target": "box",
@@ -119,22 +119,7 @@
     }
   },
   {
-    "frame": 121,
-    "state": {
-      "operator_holding": "null",
-      "gaze_target": "null",
-      "steps_completed": [
-        "step_01_orient_plate"
-      ],
-      "steps_in_progress": [],
-      "steps_available": [
-        "step_02_insert_bs1",
-        "step_06_insert_bracket1"
-      ]
-    }
-  },
-  {
-    "frame": 136,
+    "frame_number": 121,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -149,7 +134,7 @@
     }
   },
   {
-    "frame": 151,
+    "frame_number": 136,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -164,7 +149,22 @@
     }
   },
   {
-    "frame": 166,
+    "frame_number": 151,
+    "state": {
+      "operator_holding": "null",
+      "gaze_target": "null",
+      "steps_completed": [
+        "step_01_orient_plate"
+      ],
+      "steps_in_progress": [],
+      "steps_available": [
+        "step_02_insert_bs1",
+        "step_06_insert_bracket1"
+      ]
+    }
+  },
+  {
+    "frame_number": 166,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -179,7 +179,7 @@
     }
   },
   {
-    "frame": 181,
+    "frame_number": 181,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -194,7 +194,7 @@
     }
   },
   {
-    "frame": 196,
+    "frame_number": 196,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -209,7 +209,7 @@
     }
   },
   {
-    "frame": 211,
+    "frame_number": 211,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -224,7 +224,7 @@
     }
   },
   {
-    "frame": 226,
+    "frame_number": 226,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -239,7 +239,7 @@
     }
   },
   {
-    "frame": 241,
+    "frame_number": 241,
     "state": {
       "operator_holding": "ball seat",
       "gaze_target": "cylinder base",
@@ -255,7 +255,7 @@
     }
   },
   {
-    "frame": 256,
+    "frame_number": 256,
     "state": {
       "operator_holding": "ball seat",
       "gaze_target": "cylinder base",
@@ -271,7 +271,7 @@
     }
   },
   {
-    "frame": 271,
+    "frame_number": 271,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -287,7 +287,7 @@
     }
   },
   {
-    "frame": 286,
+    "frame_number": 286,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -303,7 +303,7 @@
     }
   },
   {
-    "frame": 301,
+    "frame_number": 301,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -319,7 +319,7 @@
     }
   },
   {
-    "frame": 316,
+    "frame_number": 316,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -335,7 +335,7 @@
     }
   },
   {
-    "frame": 331,
+    "frame_number": 331,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -351,7 +351,7 @@
     }
   },
   {
-    "frame": 346,
+    "frame_number": 346,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder base",
@@ -367,7 +367,7 @@
     }
   },
   {
-    "frame": 361,
+    "frame_number": 361,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "ball",
@@ -384,7 +384,7 @@
     }
   },
   {
-    "frame": 376,
+    "frame_number": 376,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "ball",
@@ -401,7 +401,7 @@
     }
   },
   {
-    "frame": 391,
+    "frame_number": 391,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "ball",
@@ -418,7 +418,7 @@
     }
   },
   {
-    "frame": 406,
+    "frame_number": 406,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -435,7 +435,7 @@
     }
   },
   {
-    "frame": 421,
+    "frame_number": 421,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -452,7 +452,7 @@
     }
   },
   {
-    "frame": 436,
+    "frame_number": 436,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -469,7 +469,7 @@
     }
   },
   {
-    "frame": 451,
+    "frame_number": 451,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -486,7 +486,7 @@
     }
   },
   {
-    "frame": 466,
+    "frame_number": 466,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -503,7 +503,7 @@
     }
   },
   {
-    "frame": 481,
+    "frame_number": 481,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -520,7 +520,7 @@
     }
   },
   {
-    "frame": 496,
+    "frame_number": 496,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -537,7 +537,7 @@
     }
   },
   {
-    "frame": 511,
+    "frame_number": 511,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -554,7 +554,7 @@
     }
   },
   {
-    "frame": 526,
+    "frame_number": 526,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -571,7 +571,7 @@
     }
   },
   {
-    "frame": 541,
+    "frame_number": 541,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -589,7 +589,7 @@
     }
   },
   {
-    "frame": 556,
+    "frame_number": 556,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -607,7 +607,7 @@
     }
   },
   {
-    "frame": 571,
+    "frame_number": 571,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -625,7 +625,7 @@
     }
   },
   {
-    "frame": 586,
+    "frame_number": 586,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -643,7 +643,7 @@
     }
   },
   {
-    "frame": 601,
+    "frame_number": 601,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -661,7 +661,7 @@
     }
   },
   {
-    "frame": 616,
+    "frame_number": 616,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -679,7 +679,7 @@
     }
   },
   {
-    "frame": 631,
+    "frame_number": 631,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder cap",
@@ -696,7 +696,7 @@
     }
   },
   {
-    "frame": 646,
+    "frame_number": 646,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder cap",
@@ -713,7 +713,7 @@
     }
   },
   {
-    "frame": 661,
+    "frame_number": 661,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder cap",
@@ -730,7 +730,7 @@
     }
   },
   {
-    "frame": 676,
+    "frame_number": 676,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder cap",
@@ -747,7 +747,7 @@
     }
   },
   {
-    "frame": 691,
+    "frame_number": 691,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -764,7 +764,7 @@
     }
   },
   {
-    "frame": 706,
+    "frame_number": 706,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -781,7 +781,7 @@
     }
   },
   {
-    "frame": 721,
+    "frame_number": 721,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -798,7 +798,7 @@
     }
   },
   {
-    "frame": 736,
+    "frame_number": 736,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder cap",
@@ -815,7 +815,7 @@
     }
   },
   {
-    "frame": 751,
+    "frame_number": 751,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "null",
@@ -832,7 +832,7 @@
     }
   },
   {
-    "frame": 766,
+    "frame_number": 766,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder bracket",
@@ -849,7 +849,7 @@
     }
   },
   {
-    "frame": 781,
+    "frame_number": 781,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder bracket",
@@ -866,7 +866,7 @@
     }
   },
   {
-    "frame": 796,
+    "frame_number": 796,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder bracket",
@@ -883,7 +883,7 @@
     }
   },
   {
-    "frame": 811,
+    "frame_number": 811,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -900,7 +900,7 @@
     }
   },
   {
-    "frame": 826,
+    "frame_number": 826,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -917,7 +917,7 @@
     }
   },
   {
-    "frame": 841,
+    "frame_number": 841,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder bracket",
@@ -935,7 +935,7 @@
     }
   },
   {
-    "frame": 856,
+    "frame_number": 856,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder bracket",
@@ -953,7 +953,7 @@
     }
   },
   {
-    "frame": 871,
+    "frame_number": 871,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder bracket",
@@ -971,7 +971,7 @@
     }
   },
   {
-    "frame": 886,
+    "frame_number": 886,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -989,7 +989,7 @@
     }
   },
   {
-    "frame": 901,
+    "frame_number": 901,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -1007,7 +1007,7 @@
     }
   },
   {
-    "frame": 916,
+    "frame_number": 916,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -1025,7 +1025,7 @@
     }
   },
   {
-    "frame": 931,
+    "frame_number": 931,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder cap",
@@ -1045,7 +1045,7 @@
     }
   },
   {
-    "frame": 946,
+    "frame_number": 946,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -1066,7 +1066,7 @@
     }
   },
   {
-    "frame": 961,
+    "frame_number": 961,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -1087,7 +1087,7 @@
     }
   },
   {
-    "frame": 976,
+    "frame_number": 976,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -1108,7 +1108,7 @@
     }
   },
   {
-    "frame": 991,
+    "frame_number": 991,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -1129,7 +1129,7 @@
     }
   },
   {
-    "frame": 1006,
+    "frame_number": 1006,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -1150,7 +1150,7 @@
     }
   },
   {
-    "frame": 1021,
+    "frame_number": 1021,
     "state": {
       "operator_holding": "cylinder base",
       "gaze_target": "cylinder base",
@@ -1171,7 +1171,7 @@
     }
   },
   {
-    "frame": 1036,
+    "frame_number": 1036,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1191,7 +1191,7 @@
     }
   },
   {
-    "frame": 1051,
+    "frame_number": 1051,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1211,7 +1211,7 @@
     }
   },
   {
-    "frame": 1066,
+    "frame_number": 1066,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1231,7 +1231,7 @@
     }
   },
   {
-    "frame": 1081,
+    "frame_number": 1081,
     "state": {
       "operator_holding": "cylinder subassembly",
       "gaze_target": "box",
@@ -1253,7 +1253,7 @@
     }
   },
   {
-    "frame": 1096,
+    "frame_number": 1096,
     "state": {
       "operator_holding": "cylinder subassembly",
       "gaze_target": "box",
@@ -1275,7 +1275,7 @@
     }
   },
   {
-    "frame": 1111,
+    "frame_number": 1111,
     "state": {
       "operator_holding": "cylinder subassembly",
       "gaze_target": "box",
@@ -1297,7 +1297,7 @@
     }
   },
   {
-    "frame": 1126,
+    "frame_number": 1126,
     "state": {
       "operator_holding": "cylinder subassembly",
       "gaze_target": "box",
@@ -1319,30 +1319,7 @@
     }
   },
   {
-    "frame": 1141,
-    "state": {
-      "operator_holding": "cylinder bracket",
-      "gaze_target": "cylinder bracket",
-      "steps_completed": [
-        "step_01_orient_plate",
-        "step_02_insert_bs1",
-        "step_03_insert_ball",
-        "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
-        "step_09_place_subassembly"
-      ],
-      "steps_in_progress": [
-        "step_08_slide_brackets"
-      ],
-      "steps_available": [
-        "step_10_screw1_M8"
-      ]
-    }
-  },
-  {
-    "frame": 1156,
+    "frame_number": 1141,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder bracket",
@@ -1365,7 +1342,30 @@
     }
   },
   {
-    "frame": 1171,
+    "frame_number": 1156,
+    "state": {
+      "operator_holding": "cylinder bracket",
+      "gaze_target": "cylinder bracket",
+      "steps_completed": [
+        "step_01_orient_plate",
+        "step_02_insert_bs1",
+        "step_03_insert_ball",
+        "step_04_insert_bs2",
+        "step_06_insert_bracket1",
+        "step_07_insert_bracket2",
+        "step_05_screw_cap",
+        "step_09_place_subassembly"
+      ],
+      "steps_in_progress": [
+        "step_08_slide_brackets"
+      ],
+      "steps_available": [
+        "step_10_screw1_M8"
+      ]
+    }
+  },
+  {
+    "frame_number": 1171,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1387,7 +1387,7 @@
     }
   },
   {
-    "frame": 1186,
+    "frame_number": 1186,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1409,7 +1409,7 @@
     }
   },
   {
-    "frame": 1201,
+    "frame_number": 1201,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1431,7 +1431,7 @@
     }
   },
   {
-    "frame": 1216,
+    "frame_number": 1216,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1453,7 +1453,7 @@
     }
   },
   {
-    "frame": 1231,
+    "frame_number": 1231,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1475,7 +1475,7 @@
     }
   },
   {
-    "frame": 1246,
+    "frame_number": 1246,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1497,7 +1497,7 @@
     }
   },
   {
-    "frame": 1261,
+    "frame_number": 1261,
     "state": {
       "operator_holding": "null",
       "gaze_target": "philips screw",
@@ -1519,7 +1519,7 @@
     }
   },
   {
-    "frame": 1276,
+    "frame_number": 1276,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1541,7 +1541,7 @@
     }
   },
   {
-    "frame": 1291,
+    "frame_number": 1291,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -1563,7 +1563,7 @@
     }
   },
   {
-    "frame": 1306,
+    "frame_number": 1306,
     "state": {
       "operator_holding": "philips screw",
       "gaze_target": "philips screw",
@@ -1585,7 +1585,7 @@
     }
   },
   {
-    "frame": 1321,
+    "frame_number": 1321,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 3",
@@ -1608,7 +1608,7 @@
     }
   },
   {
-    "frame": 1336,
+    "frame_number": 1336,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 3",
@@ -1631,7 +1631,7 @@
     }
   },
   {
-    "frame": 1351,
+    "frame_number": 1351,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 3",
@@ -1654,7 +1654,7 @@
     }
   },
   {
-    "frame": 1366,
+    "frame_number": 1366,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 3",
@@ -1677,7 +1677,7 @@
     }
   },
   {
-    "frame": 1381,
+    "frame_number": 1381,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 3",
@@ -1700,7 +1700,7 @@
     }
   },
   {
-    "frame": 1396,
+    "frame_number": 1396,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1723,7 +1723,7 @@
     }
   },
   {
-    "frame": 1411,
+    "frame_number": 1411,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1746,7 +1746,7 @@
     }
   },
   {
-    "frame": 1426,
+    "frame_number": 1426,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1769,7 +1769,7 @@
     }
   },
   {
-    "frame": 1441,
+    "frame_number": 1441,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1792,7 +1792,7 @@
     }
   },
   {
-    "frame": 1456,
+    "frame_number": 1456,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1815,7 +1815,7 @@
     }
   },
   {
-    "frame": 1471,
+    "frame_number": 1471,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1838,7 +1838,7 @@
     }
   },
   {
-    "frame": 1486,
+    "frame_number": 1486,
     "state": {
       "operator_holding": "box",
       "gaze_target": "box",
@@ -1861,7 +1861,7 @@
     }
   },
   {
-    "frame": 1501,
+    "frame_number": 1501,
     "state": {
       "operator_holding": "box",
       "gaze_target": "box",
@@ -1884,7 +1884,7 @@
     }
   },
   {
-    "frame": 1516,
+    "frame_number": 1516,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1907,7 +1907,7 @@
     }
   },
   {
-    "frame": 1531,
+    "frame_number": 1531,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1930,7 +1930,7 @@
     }
   },
   {
-    "frame": 1546,
+    "frame_number": 1546,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1953,7 +1953,7 @@
     }
   },
   {
-    "frame": 1561,
+    "frame_number": 1561,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1976,7 +1976,7 @@
     }
   },
   {
-    "frame": 1576,
+    "frame_number": 1576,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 3",
@@ -1999,7 +1999,7 @@
     }
   },
   {
-    "frame": 1591,
+    "frame_number": 1591,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 3",
@@ -2022,7 +2022,7 @@
     }
   },
   {
-    "frame": 1606,
+    "frame_number": 1606,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 3",
@@ -2045,7 +2045,7 @@
     }
   },
   {
-    "frame": 1621,
+    "frame_number": 1621,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 3",
@@ -2068,7 +2068,7 @@
     }
   },
   {
-    "frame": 1636,
+    "frame_number": 1636,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 3",
@@ -2091,7 +2091,7 @@
     }
   },
   {
-    "frame": 1651,
+    "frame_number": 1651,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 1",
@@ -2115,7 +2115,7 @@
     }
   },
   {
-    "frame": 1666,
+    "frame_number": 1666,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 1",
@@ -2139,7 +2139,7 @@
     }
   },
   {
-    "frame": 1681,
+    "frame_number": 1681,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 1",
@@ -2163,7 +2163,7 @@
     }
   },
   {
-    "frame": 1696,
+    "frame_number": 1696,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 1",
@@ -2187,7 +2187,7 @@
     }
   },
   {
-    "frame": 1711,
+    "frame_number": 1711,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 1",
@@ -2211,7 +2211,7 @@
     }
   },
   {
-    "frame": 1726,
+    "frame_number": 1726,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 1",
@@ -2235,7 +2235,7 @@
     }
   },
   {
-    "frame": 1741,
+    "frame_number": 1741,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 1",
@@ -2259,7 +2259,7 @@
     }
   },
   {
-    "frame": 1756,
+    "frame_number": 1756,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 1",
@@ -2283,7 +2283,7 @@
     }
   },
   {
-    "frame": 1771,
+    "frame_number": 1771,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 1",
@@ -2307,7 +2307,7 @@
     }
   },
   {
-    "frame": 1786,
+    "frame_number": 1786,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 1",
@@ -2331,7 +2331,7 @@
     }
   },
   {
-    "frame": 1801,
+    "frame_number": 1801,
     "state": {
       "operator_holding": "null",
       "gaze_target": "cylinder plate hole 1",
@@ -2355,7 +2355,7 @@
     }
   },
   {
-    "frame": 1816,
+    "frame_number": 1816,
     "state": {
       "operator_holding": "box",
       "gaze_target": "cylinder plate hole 1",
@@ -2379,7 +2379,7 @@
     }
   },
   {
-    "frame": 1831,
+    "frame_number": 1831,
     "state": {
       "operator_holding": "box",
       "gaze_target": "cylinder plate hole 1",
@@ -2403,7 +2403,7 @@
     }
   },
   {
-    "frame": 1846,
+    "frame_number": 1846,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder bracket",
@@ -2428,7 +2428,7 @@
     }
   },
   {
-    "frame": 1861,
+    "frame_number": 1861,
     "state": {
       "operator_holding": "null",
       "gaze_target": "null",
@@ -2452,7 +2452,7 @@
     }
   },
   {
-    "frame": 1876,
+    "frame_number": 1876,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 4",
@@ -2476,7 +2476,7 @@
     }
   },
   {
-    "frame": 1891,
+    "frame_number": 1891,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 4",
@@ -2500,7 +2500,7 @@
     }
   },
   {
-    "frame": 1906,
+    "frame_number": 1906,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 4",
@@ -2524,7 +2524,7 @@
     }
   },
   {
-    "frame": 1921,
+    "frame_number": 1921,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 4",
@@ -2548,7 +2548,7 @@
     }
   },
   {
-    "frame": 1936,
+    "frame_number": 1936,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 4",
@@ -2572,7 +2572,7 @@
     }
   },
   {
-    "frame": 1951,
+    "frame_number": 1951,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 4",
@@ -2596,7 +2596,7 @@
     }
   },
   {
-    "frame": 1966,
+    "frame_number": 1966,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 4",
@@ -2620,7 +2620,7 @@
     }
   },
   {
-    "frame": 1981,
+    "frame_number": 1981,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 4",
@@ -2644,7 +2644,7 @@
     }
   },
   {
-    "frame": 1996,
+    "frame_number": 1996,
     "state": {
       "operator_holding": "cylinder bracket",
       "gaze_target": "cylinder plate hole 4",
@@ -2668,7 +2668,7 @@
     }
   },
   {
-    "frame": 2011,
+    "frame_number": 2011,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 4",
@@ -2692,7 +2692,7 @@
     }
   },
   {
-    "frame": 2026,
+    "frame_number": 2026,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 4",
@@ -2716,7 +2716,7 @@
     }
   },
   {
-    "frame": 2041,
+    "frame_number": 2041,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 4",
@@ -2740,7 +2740,7 @@
     }
   },
   {
-    "frame": 2056,
+    "frame_number": 2056,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 4",
@@ -2764,7 +2764,7 @@
     }
   },
   {
-    "frame": 2071,
+    "frame_number": 2071,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 4",
@@ -2788,7 +2788,7 @@
     }
   },
   {
-    "frame": 2086,
+    "frame_number": 2086,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 4",
@@ -2812,7 +2812,7 @@
     }
   },
   {
-    "frame": 2101,
+    "frame_number": 2101,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 2",
@@ -2837,7 +2837,7 @@
     }
   },
   {
-    "frame": 2116,
+    "frame_number": 2116,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 2",
@@ -2862,7 +2862,7 @@
     }
   },
   {
-    "frame": 2131,
+    "frame_number": 2131,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 2",
@@ -2887,7 +2887,7 @@
     }
   },
   {
-    "frame": 2146,
+    "frame_number": 2146,
     "state": {
       "operator_holding": "hex screw",
       "gaze_target": "cylinder plate hole 2",
@@ -2912,7 +2912,7 @@
     }
   },
   {
-    "frame": 2161,
+    "frame_number": 2161,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 2",
@@ -2937,7 +2937,7 @@
     }
   },
   {
-    "frame": 2176,
+    "frame_number": 2176,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 2",
@@ -2962,7 +2962,7 @@
     }
   },
   {
-    "frame": 2191,
+    "frame_number": 2191,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 2",
@@ -2987,7 +2987,7 @@
     }
   },
   {
-    "frame": 2206,
+    "frame_number": 2206,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 2",
@@ -3012,7 +3012,7 @@
     }
   },
   {
-    "frame": 2221,
+    "frame_number": 2221,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 2",
@@ -3037,7 +3037,7 @@
     }
   },
   {
-    "frame": 2236,
+    "frame_number": 2236,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 2",
@@ -3062,7 +3062,7 @@
     }
   },
   {
-    "frame": 2251,
+    "frame_number": 2251,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "cylinder plate hole 2",
@@ -3087,7 +3087,7 @@
     }
   },
   {
-    "frame": 2266,
+    "frame_number": 2266,
     "state": {
       "operator_holding": "hex screwdriver",
       "gaze_target": "hex screwdriver",

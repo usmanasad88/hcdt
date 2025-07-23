@@ -12,55 +12,47 @@ from pathlib import Path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import our evaluation modules
-from evaluate_icl_cooking import evaluate_icl_results, print_evaluation_results
+from eval.evaluate_generic import evaluate_icl_results, print_evaluation_results
 from simple_analysis import (analyze_temporal_patterns, analyze_step_progression, 
                            analyze_error_patterns, generate_comprehensive_report)
 
-def main():
-    """Main evaluation pipeline."""
-    parser = argparse.ArgumentParser(description='Evaluate ICL cooking results against ground truth')
-    parser.add_argument('--icl_file', type=str, 
-                       default='logs/ICL_result_cooking_ex0001_no_ego_no_gaze.json',
-                       help='Path to ICL results JSON file')
-    parser.add_argument('--gt_file', type=str,
-                       default='/home/mani/Repos/hcdt/data/Cooking/fair_cooking_05_02_gt.json',
-                       help='Path to ground truth JSON file')
-    parser.add_argument('--output_dir', type=str,
-                       default='/home/mani/Repos/hcdt/eval/evaluation_results',
-                       help='Output directory for results')
-    parser.add_argument('--skip_bert', action='store_true',
-                       help='Skip BERT score computation for faster evaluation')
-    
-    args = parser.parse_args()
-    
+gt_files ={
+    'Cooking': '/home/mani/Repos/hcdt/data/Cooking/fair_cooking_05_02_gt.json',
+    'Stack_v2': '/home/mani/Repos/hcdt/data/Stack/exp2_gt_new.json',
+    'havid': '/home/mani/Repos/hcdt/data/HAViD/S02A08I21_gt.json'
+
+}
+
+def do_evaluation(icl_file: str, gt_file: str, output_dir: str, skip_bert: bool = False):
+    """Core evaluation logic, callable from other scripts."""
     # Ensure output directory exists
-    os.makedirs(args.output_dir, exist_ok=True)
+    os.makedirs(output_dir, exist_ok=True)
     
     print("="*80)
     print("ICL COOKING EVALUATION PIPELINE")
     print("="*80)
-    print(f"ICL Results: {args.icl_file}")
-    print(f"Ground Truth: {args.gt_file}")
-    print(f"Output Directory: {args.output_dir}")
+    print(f"ICL Results: {icl_file}")
+    print(f"Ground Truth: {gt_file}")
+    print(f"Output Directory: {output_dir}")
     print()
     
     # Check if files exist
-    if not os.path.exists(args.icl_file):
-        print(f"Error: ICL results file not found: {args.icl_file}")
+    if not os.path.exists(icl_file):
+        print(f"Error: ICL results file not found: {icl_file}")
         return 1
     
-    if not os.path.exists(args.gt_file):
-        print(f"Error: Ground truth file not found: {args.gt_file}")
+    if not os.path.exists(gt_file):
+        print(f"Error: Ground truth file not found: {gt_file}")
         return 1
     
     try:
         # Step 1: Basic evaluation
         print("Step 1: Running basic evaluation...")
-        results = evaluate_icl_results(args.icl_file, args.gt_file)
+        results = evaluate_icl_results(icl_file, gt_file)
         
         # Save basic results
         import json
-        basic_results_file = os.path.join(args.output_dir, "basic_evaluation_results.json")
+        basic_results_file = os.path.join(output_dir, "basic_evaluation_results.json")
         with open(basic_results_file, 'w') as f:
             json.dump(results, f, indent=2, default=str)
         
@@ -69,13 +61,13 @@ def main():
         
         # Step 3: Advanced analysis
         print("\nStep 3: Running advanced analysis...")
-        temporal_analysis = analyze_temporal_patterns(args.icl_file, args.gt_file)
-        step_analysis = analyze_step_progression(args.icl_file, args.gt_file)
-        error_analysis = analyze_error_patterns(args.icl_file, args.gt_file)
+        temporal_analysis = analyze_temporal_patterns(icl_file, gt_file)
+        step_analysis = analyze_step_progression(icl_file, gt_file)
+        error_analysis = analyze_error_patterns(icl_file, gt_file)
         
         # Step 4: Generate comprehensive report
         print("Step 4: Generating comprehensive report...")
-        report_file = os.path.join(args.output_dir, "comprehensive_evaluation_report.md")
+        report_file = os.path.join(output_dir, "comprehensive_evaluation_report.md")
         generate_comprehensive_report(results, temporal_analysis, step_analysis, 
                                     error_analysis, report_file)
         
@@ -88,24 +80,24 @@ def main():
             'error_analysis': error_analysis
         }
         
-        analysis_file = os.path.join(args.output_dir, "complete_analysis_data.json")
+        analysis_file = os.path.join(output_dir, "complete_analysis_data.json")
         with open(analysis_file, 'w') as f:
             json.dump(analysis_data, f, indent=2, default=str)
         
         # Step 6: Create summary
         print("Step 6: Creating executive summary...")
-        create_executive_summary(results, args.output_dir)
+        create_executive_summary(results, output_dir)
         
         print("\n" + "="*80)
         print("EVALUATION COMPLETE")
         print("="*80)
         print(f"📊 Overall Score: {results.get('overall_score', 0.0):.4f}")
-        print(f"📁 Results saved in: {args.output_dir}")
+        print(f"📁 Results saved in: {output_dir}")
         print("📋 Generated files:")
         print(f"   - {basic_results_file}")
         print(f"   - {report_file}")
         print(f"   - {analysis_file}")
-        print(f"   - {os.path.join(args.output_dir, 'executive_summary.txt')}")
+        print(f"   - {os.path.join(output_dir, 'executive_summary.txt')}")
         
         return 0
         
@@ -114,6 +106,25 @@ def main():
         import traceback
         traceback.print_exc()
         return 1
+
+def main():
+    """Main evaluation pipeline wrapper for command-line execution."""
+    parser = argparse.ArgumentParser(description='Evaluate ICL cooking results against ground truth')
+    parser.add_argument('--icl_file', type=str, 
+                       default='logs/RCWPS_Stack_gemini-2.5-flash-lite-preview-06-17_use_gaze_result.json',
+                       help='Path to ICL results JSON file')
+    parser.add_argument('--gt_file', type=str,
+                       default='/home/mani/Repos/hcdt/data/Stack/exp2_gt_new.json',
+                       help='Path to ground truth JSON file')
+    parser.add_argument('--output_dir', type=str,
+                       default='/home/mani/Repos/hcdt/eval/evaluation_results',
+                       help='Output directory for results')
+    parser.add_argument('--skip_bert', action='store_true',
+                       help='Skip BERT score computation for faster evaluation')
+    
+    args = parser.parse_args()
+    
+    return do_evaluation(args.icl_file, args.gt_file, args.output_dir, args.skip_bert)
 
 def create_executive_summary(results: dict, output_dir: str):
     """Create a brief executive summary."""
@@ -150,7 +161,7 @@ def create_executive_summary(results: dict, output_dir: str):
         
         # Key metrics
         f.write("KEY METRICS:\n")
-        f.write(f"• Boolean States F1: {results['boolean_states']['f1']:.3f}\n")
+        # f.write(f"• Boolean States F1: {results['boolean_states']['f1']:.3f}\n")
         f.write(f"• Steps Completed F1: {results['steps_completed']['f1']:.3f}\n")
         f.write(f"• Steps In Progress F1: {results['steps_in_progress']['f1']:.3f}\n")
         f.write(f"• Current Keystep Similarity: {results['current_keystep_similarity']:.3f}\n")
@@ -169,8 +180,8 @@ def create_executive_summary(results: dict, output_dir: str):
         if 'timing_statistics' in results and results['timing_statistics']['correct_predictions'] == 0:
             issues.append("• No accurate timing predictions")
         
-        if results['boolean_states']['recall'] < 0.8:
-            issues.append("• Missing many true boolean states")
+        # if results['boolean_states']['recall'] < 0.8:
+        #     issues.append("• Missing many true boolean states")
         
         if not issues:
             issues.append("• Performance is generally acceptable")

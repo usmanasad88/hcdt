@@ -32,7 +32,7 @@
   {
     "name": "steps_completed",
     "type": "List of Actions",
-    "description": "The names of actions from the DAG that have been successfully completed."
+    "description": "The names of all actions from the DAG that have been successfully completed."
   },
   {
     "name": "steps_in_progress",

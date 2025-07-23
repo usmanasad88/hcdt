@@ -1,0 +1,91 @@
+[
+    {
+        "frame": 1,
+        "state": {
+            "operator_holding": "null",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [],
+            "steps_available": [
+                "step_01_orient_plate",
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 16,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 31,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 46,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 61,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    },
+    {
+        "frame": 76,
+        "state": {
+            "operator_holding": "box",
+            "gaze_target": "box",
+            "steps_completed": [],
+            "steps_in_progress": [
+                "step_01_orient_plate"
+            ],
+            "steps_available": [
+                "step_02_insert_bs1",
+                "step_06_insert_bracket1"
+            ]
+        }
+    }
+]

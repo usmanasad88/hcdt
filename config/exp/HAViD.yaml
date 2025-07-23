@@ -1,4 +1,4 @@
-type: "phase2" # In-Context Learning "phase2" or "ICL"
+type: "RCWPS" # In-Context Learning "phase2" or "ICL" or "RCWPS" or "Single"
 example_image_dir: "/home/mani/Central/HaVid/S13A11I21/frames"
 example_gt_filename: "data/HAViD/S13A11I21_gt.json"
 example_vitpose: /home/mani/Central/HaVid/S13A11I21/GVHMR/front/preprocess/vitpose.pt
@@ -20,9 +20,10 @@ example_frame_step: 15
 drawing: "/home/mani/Central/HaVid/S13A11I21/assembly_exploded_view.png"
 attach_drawing: true
 drawing_prompt: "Use the provided drawing to help you understand the task. The drawing is an exploded view of the assembly, showing how the parts fit together."
+use_ego: false
 
 
-prompt_version: "phase_two" # version1, version2, version3, getgroundtruth, phase_two
+prompt_version: "version1" # version1, version2, version3, getgroundtruth, phase_two not applicable to RCWPS
 num_examples: 3
 phase2_ground_truth_file: #data/HAViD/phase2_simplified.json
 #and update the state variables accordingly

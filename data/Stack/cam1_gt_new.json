@@ -1,0 +1,3764 @@
+[
+  {
+    "frame": 1,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 11,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 21,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 31,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 41,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 51,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 61,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 71,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 81,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 91,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 101,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 111,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 121,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 131,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 141,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [],
+      "steps_in_progress": [
+        "Walk to toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 151,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox"
+      ],
+      "steps_in_progress": [
+        "Pick up toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 161,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox"
+      ],
+      "steps_in_progress": [
+        "Pick up toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 171,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox"
+      ],
+      "steps_in_progress": [
+        "Pick up toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 181,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox"
+      ],
+      "steps_in_progress": [
+        "Pick up toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 191,
+    "state": {
+      "gaze_target": "toolbox",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox"
+      ],
+      "steps_in_progress": [
+        "Pick up toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 201,
+    "state": {
+      "gaze_target": "table_location",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "toolbox",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox"
+      ],
+      "steps_in_progress": [
+        "Transport toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 211,
+    "state": {
+      "gaze_target": "table_location",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "toolbox",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox"
+      ],
+      "steps_in_progress": [
+        "Transport toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 221,
+    "state": {
+      "gaze_target": "table_location",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "toolbox",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox"
+      ],
+      "steps_in_progress": [
+        "Transport toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 231,
+    "state": {
+      "gaze_target": "table_location",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "toolbox",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox"
+      ],
+      "steps_in_progress": [
+        "Transport toolbox"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 241,
+    "state": {
+      "gaze_target": "table_location",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "toolbox",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox"
+      ],
+      "steps_in_progress": [
+        "Place toolbox on table"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 251,
+    "state": {
+      "gaze_target": "table_location",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "toolbox",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox"
+      ],
+      "steps_in_progress": [
+        "Place toolbox on table"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 261,
+    "state": {
+      "gaze_target": "table_location",
+      "toolbox_placed_on_table": false,
+      "num_chairs_stacked": 0,
+      "operator_holding": "toolbox",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox"
+      ],
+      "steps_in_progress": [
+        "Place toolbox on table"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 271,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to turquoise chair",
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 281,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to turquoise chair",
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 291,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to turquoise chair",
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 301,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to turquoise chair",
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 311,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to turquoise chair",
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 321,
+    "state": {
+      "gaze_target": "turquoise_chair",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table"
+      ],
+      "steps_in_progress": [
+        "Walk to turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 331,
+    "state": {
+      "gaze_target": "turquoise_chair",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table"
+      ],
+      "steps_in_progress": [
+        "Walk to turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 341,
+    "state": {
+      "gaze_target": "turquoise_chair",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table"
+      ],
+      "steps_in_progress": [
+        "Walk to turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 351,
+    "state": {
+      "gaze_target": "turquoise_chair",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Transport turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 361,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Transport turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 371,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Transport turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 381,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Transport turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 391,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Transport turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 401,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Transport turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 411,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Transport turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 421,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Stack turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 431,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Stack turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 441,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Stack turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 451,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Stack turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 461,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Stack turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 471,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Stack turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 481,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 0,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Stack turquoise chair"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 491,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 501,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 511,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 521,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 531,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 541,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 551,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 561,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 1",
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 571,
+    "state": {
+      "gaze_target": "red_chair_1",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 581,
+    "state": {
+      "gaze_target": "red_chair_1",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 591,
+    "state": {
+      "gaze_target": "red_chair_1",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 601,
+    "state": {
+      "gaze_target": "red_chair_1",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 611,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 621,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 631,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 641,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 651,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 661,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 671,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 681,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 691,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 701,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 711,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 1,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 1"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 721,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 731,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 741,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 751,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 761,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 771,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 781,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 2",
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 791,
+    "state": {
+      "gaze_target": "red_chair_2",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 801,
+    "state": {
+      "gaze_target": "red_chair_2",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 811,
+    "state": {
+      "gaze_target": "red_chair_2",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 821,
+    "state": {
+      "gaze_target": "red_chair_2",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 831,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 841,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 851,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 861,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 871,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 881,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 891,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 901,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 911,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 2,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 2"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 921,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 931,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 941,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 951,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 961,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 971,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": [
+        "Walk to red chair 3"
+      ]
+    }
+  },
+  {
+    "frame": 981,
+    "state": {
+      "gaze_target": "red_chair_3",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 991,
+    "state": {
+      "gaze_target": "red_chair_3",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1001,
+    "state": {
+      "gaze_target": "red_chair_3",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1011,
+    "state": {
+      "gaze_target": "red_chair_3",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2"
+      ],
+      "steps_in_progress": [
+        "Walk to red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1021,
+    "state": {
+      "gaze_target": "red_chair_3",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1031,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1041,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1051,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1061,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3"
+      ],
+      "steps_in_progress": [
+        "Transport red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1071,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1081,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1091,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1101,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1111,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1121,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1131,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1141,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1151,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1161,
+    "state": {
+      "gaze_target": "stacking_area",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 3,
+      "operator_holding": "chair",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3"
+      ],
+      "steps_in_progress": [
+        "Stack red chair 3"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1171,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1181,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1191,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1201,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1211,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1221,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1231,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1241,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1251,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  },
+  {
+    "frame": 1261,
+    "state": {
+      "gaze_target": "none",
+      "toolbox_placed_on_table": true,
+      "num_chairs_stacked": 4,
+      "operator_holding": "none",
+      "list_of_stacked_chairs": [
+        "turquoise_chair",
+        "red_chair_1",
+        "red_chair_2",
+        "red_chair_3"
+      ],
+      "steps_completed": [
+        "Walk to toolbox",
+        "Pick up toolbox",
+        "Transport toolbox",
+        "Place toolbox on table",
+        "Walk to turquoise chair",
+        "Pick up turquoise chair",
+        "Transport turquoise chair",
+        "Stack turquoise chair",
+        "Walk to red chair 1",
+        "Pick up red chair 1",
+        "Transport red chair 1",
+        "Stack red chair 1",
+        "Walk to red chair 2",
+        "Pick up red chair 2",
+        "Transport red chair 2",
+        "Stack red chair 2",
+        "Walk to red chair 3",
+        "Pick up red chair 3",
+        "Transport red chair 3",
+        "Stack red chair 3"
+      ],
+      "steps_in_progress": [
+        "idle"
+      ],
+      "steps_available": []
+    }
+  }
+]

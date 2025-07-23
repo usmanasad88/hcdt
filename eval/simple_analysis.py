@@ -210,7 +210,7 @@ def generate_comprehensive_report(results: dict, temporal_analysis: dict, step_a
         f.write(f"**Performance Grade: {grade}**\n\n")
         
         f.write("### Key Findings:\n")
-        f.write(f"- Boolean state prediction F1: {results['boolean_states']['f1']:.4f}\n")
+        f.write(f"- Boolean state prediction F1: {results.get('boolean_states', {}).get('f1', 0.0):.4f}\n")
         f.write(f"- Steps completion F1: {results['steps_completed']['f1']:.4f}\n")
         f.write(f"- Current keystep similarity (BERT): {results['current_keystep_similarity']:.4f}\n")
         f.write(f"- Next keystep similarity (BERT): {results['next_keystep_similarity']:.4f}\n")
@@ -225,8 +225,8 @@ def generate_comprehensive_report(results: dict, temporal_analysis: dict, step_a
         # Strengths and Weaknesses
         f.write("### Strengths:\n")
         strengths = []
-        if results['boolean_states']['f1'] > 0.8:
-            strengths.append("High accuracy in boolean state prediction")
+        # if results['boolean_states']['f1'] > 0.8:
+        #     strengths.append("High accuracy in boolean state prediction")
         if results['current_keystep_similarity'] > 0.8:
             strengths.append("Good understanding of current keysteps")
         if results['steps_completed']['precision'] > 0.8:
@@ -242,8 +242,8 @@ def generate_comprehensive_report(results: dict, temporal_analysis: dict, step_a
         weaknesses = []
         if results['steps_in_progress']['f1'] < 0.5:
             weaknesses.append("Poor identification of steps in progress")
-        if results['boolean_states']['recall'] < 0.7:
-            weaknesses.append("Missing many true positive boolean states")
+        # if results['boolean_states']['recall'] < 0.7:
+        #     weaknesses.append("Missing many true positive boolean states")
         if 'timing_statistics' in results and results['timing_statistics']['correct_predictions'] == 0:
             weaknesses.append("No correct timing predictions")
         
@@ -257,14 +257,14 @@ def generate_comprehensive_report(results: dict, temporal_analysis: dict, step_a
         # Detailed Metrics
         f.write("## Detailed Performance Metrics\n\n")
         
-        f.write("### Boolean States Performance\n")
-        bs = results['boolean_states']
-        f.write(f"| Metric | Score |\n")
-        f.write(f"|--------|-------|\n")
-        f.write(f"| F1 Score | {bs['f1']:.4f} |\n")
-        f.write(f"| Precision | {bs['precision']:.4f} |\n")
-        f.write(f"| Recall | {bs['recall']:.4f} |\n")
-        f.write(f"| Total Comparisons | {bs['total_comparisons']} |\n\n")
+        # f.write("### Boolean States Performance\n")
+        # bs = results['boolean_states']
+        # f.write(f"| Metric | Score |\n")
+        # f.write(f"|--------|-------|\n")
+        # f.write(f"| F1 Score | {bs['f1']:.4f} |\n")
+        # f.write(f"| Precision | {bs['precision']:.4f} |\n")
+        # f.write(f"| Recall | {bs['recall']:.4f} |\n")
+        # f.write(f"| Total Comparisons | {bs['total_comparisons']} |\n\n")
         
         f.write("### Steps Analysis\n")
         f.write("| Step Type | F1 | Precision | Recall |\n")
@@ -392,8 +392,8 @@ def generate_comprehensive_report(results: dict, temporal_analysis: dict, step_a
         if 'timing_statistics' in results and results['timing_statistics']['early_predictions'] > results['timing_statistics']['late_predictions'] * 2:
             recommendations.append("**Address early prediction bias**: The model predicts step completion too early. Implement delay mechanisms or more conservative completion criteria.")
         
-        if results['boolean_states']['recall'] < 0.8:
-            recommendations.append("**Reduce false negatives**: The model misses many true states. Consider lowering confidence thresholds or improving feature extraction.")
+        # if results['boolean_states']['recall'] < 0.8:
+        #     recommendations.append("**Reduce false negatives**: The model misses many true states. Consider lowering confidence thresholds or improving feature extraction.")
         
         if not recommendations:
             recommendations.append("**Fine-tune existing approach**: Performance is generally good. Focus on incremental improvements through hyperparameter tuning.")
@@ -431,12 +431,12 @@ def generate_comprehensive_report(results: dict, temporal_analysis: dict, step_a
             f.write("3. **Multi-frame Context**: Use sliding windows of 3-5 frames for context\n")
             f.write("4. **Uncertainty Quantification**: Add confidence scores for in-progress predictions\n\n")
         
-        if results['boolean_states']['recall'] < 0.8:
-            f.write("### For Boolean State Prediction:\n")
-            f.write("1. **Feature Engineering**: Add more visual features (object detection, pose estimation)\n")
-            f.write("2. **Data Augmentation**: Increase training data diversity\n")
-            f.write("3. **Class Balancing**: Address imbalanced boolean state distributions\n")
-            f.write("4. **Threshold Optimization**: Use ROC analysis to find optimal decision thresholds\n\n")
+        # if results['boolean_states']['recall'] < 0.8:
+        #     f.write("### For Boolean State Prediction:\n")
+        #     f.write("1. **Feature Engineering**: Add more visual features (object detection, pose estimation)\n")
+        #     f.write("2. **Data Augmentation**: Increase training data diversity\n")
+        #     f.write("3. **Class Balancing**: Address imbalanced boolean state distributions\n")
+        #     f.write("4. **Threshold Optimization**: Use ROC analysis to find optimal decision thresholds\n\n")
         
         if 'timing_statistics' in results and results['timing_statistics']['mean_difference'] < -1000:
             f.write("### For Timing Accuracy:\n")

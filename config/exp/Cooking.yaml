@@ -1,4 +1,4 @@
-type: "ICL" # Phase 2 experiment for hand position prediction
+type: "RCWPS" # Phase 2 experiment for hand position prediction
 example_image_dir: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/frames"
 example_gt_filename: "data/Cooking/fair_cooking_05_04_gt.json"
 example_vitpose: "/home/mani/Central/Cooking1/FairCooking/fair_cooking_05_4/GVHMR/cam03/preprocess/vitpose.pt"
@@ -33,5 +33,5 @@ drawing_prompt: "Use the provided drawing to help you understand the task."
 prompt_version: "version1" # version1, version2, version3, getgroundtruth, phase_two
 num_examples: 3
 
-use_ego: false
+use_ego: true
 ego_prompt: "Use the provided egocentric frames to help you understand the task."

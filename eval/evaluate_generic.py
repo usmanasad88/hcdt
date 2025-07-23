@@ -65,15 +65,16 @@ def compute_text_similarity(pred_texts: List[str], gt_texts: List[str]) -> float
 
 def extract_boolean_states(state: Dict) -> Dict[str, bool]:
     """Extract boolean state variables from a state dictionary."""
-    boolean_keys = [
-        "pot_on_stove", "pot_burner_on", "water_in_pot", "water_boiling",
-        "noodles_in_pot", "noodles_cooked", "noodles_drained", "cabbage_prepared",
-        "garlic_prepared", "spring_onions_prepared", "celery_prepared",
-        "pan_on_stove", "pan_burner_on", "oil_in_pan", "aromatics_in_pan",
-        "noodles_in_pan", "sauce_in_pan", "stir_fry_cooked", "food_on_plate"
-    ]
+    # Generic boolean extraction - find all boolean values in the state
+    boolean_states = {}
+    for key, value in state.items():
+        if isinstance(value, bool):
+            boolean_states[key] = value
+        # Also check for common boolean-like keys that might be stored as other types
+        elif key in ["toolbox_placed_on_table"] and value is not None:
+            boolean_states[key] = bool(value)
     
-    return {key: state.get(key, False) for key in boolean_keys if key in state}
+    return boolean_states
 
 def normalize_step_list(steps: List[str]) -> Set[str]:
     """Normalize step lists for comparison by converting to lowercase and stripping."""
@@ -99,6 +100,30 @@ def compute_step_f1(pred_steps: List[str], gt_steps: List[str]) -> Dict[str, flo
     
     precision = len(intersection) / len(pred_set) if pred_set else 0.0
     recall = len(intersection) / len(gt_set) if gt_set else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+    
+    return {"f1": f1, "precision": precision, "recall": recall}
+
+def compute_union_step_f1(pred_in_progress: List[str], pred_available: List[str], 
+                         gt_in_progress: List[str], gt_available: List[str]) -> Dict[str, float]:
+    """Compute F1, precision, and recall for the union of in_progress and available steps."""
+    # Create union sets
+    pred_union = normalize_step_list(pred_in_progress).union(normalize_step_list(pred_available))
+    gt_union = normalize_step_list(gt_in_progress).union(normalize_step_list(gt_available))
+    
+    if not pred_union and not gt_union:
+        return {"f1": 1.0, "precision": 1.0, "recall": 1.0}
+    
+    if not pred_union:
+        return {"f1": 0.0, "precision": 0.0, "recall": 0.0}
+    
+    if not gt_union:
+        return {"f1": 0.0, "precision": 0.0, "recall": 1.0}
+    
+    intersection = pred_union.intersection(gt_union)
+    
+    precision = len(intersection) / len(pred_union) if pred_union else 0.0
+    recall = len(intersection) / len(gt_union) if gt_union else 0.0
     f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
     
     return {"f1": f1, "precision": precision, "recall": recall}
@@ -191,6 +216,7 @@ def evaluate_icl_results(icl_filename: str, gt_filename: str) -> Dict:
     steps_completed_metrics = []
     steps_in_progress_metrics = []
     steps_available_metrics = []
+    steps_available_or_in_progress_metrics = []
     
     current_keystep_pred = []
     current_keystep_gt = []
@@ -214,7 +240,7 @@ def evaluate_icl_results(icl_filename: str, gt_filename: str) -> Dict:
             print(f"Warning: No ground truth found for frame {frame}")
             continue
         
-        # Extract boolean states
+        # Extract boolean states (keep for backwards compatibility but won't use in overall score)
         pred_bools = extract_boolean_states(pred_state)
         gt_bools = extract_boolean_states(gt_state)
         
@@ -238,6 +264,14 @@ def evaluate_icl_results(icl_filename: str, gt_filename: str) -> Dict:
         
         steps_available_metrics.append(compute_step_f1(
             pred_state.get("steps_available", []),
+            gt_state.get("steps_available", [])
+        ))
+        
+        # Evaluate union of steps_in_progress and steps_available
+        steps_available_or_in_progress_metrics.append(compute_union_step_f1(
+            pred_state.get("steps_in_progress", []),
+            pred_state.get("steps_available", []),
+            gt_state.get("steps_in_progress", []),
             gt_state.get("steps_available", [])
         ))
         
@@ -280,6 +314,7 @@ def evaluate_icl_results(icl_filename: str, gt_filename: str) -> Dict:
     results["steps_completed"] = aggregate_step_metrics(steps_completed_metrics)
     results["steps_in_progress"] = aggregate_step_metrics(steps_in_progress_metrics)
     results["steps_available"] = aggregate_step_metrics(steps_available_metrics)
+    results["steps_available_or_in_progress"] = aggregate_step_metrics(steps_available_or_in_progress_metrics)
     
     # Text similarity metrics
     results["current_keystep_similarity"] = compute_text_similarity(
@@ -334,14 +369,12 @@ def evaluate_icl_results(icl_filename: str, gt_filename: str) -> Dict:
             "total_compared": len(timing_diffs)
         }
     
-    # Compute overall score (weighted average)
+    # Compute overall score (weighted average) - Updated for universal metric across all experiments
     weights = {
-        "boolean_states": 0.3,
-        "steps_completed": 0.2,
-        "steps_in_progress": 0.15,
-        "steps_available": 0.1,
-        "current_keystep_similarity": 0.1,
-        "next_keystep_similarity": 0.1,
+        "steps_completed": 0.5,
+        "steps_in_progress": 0.10,
+        "steps_available": 0.15,
+        "steps_available_or_in_progress": 0.2,
         "operator_holding_similarity": 0.025,
         "gaze_target_similarity": 0.025
     }
@@ -367,24 +400,47 @@ def print_evaluation_results(results: Dict):
     
     print(f"\nOVERALL SCORE: {results.get('overall_score', 0.0):.4f}")
     
+    # Show the weights used in overall score calculation
     print("\n" + "-"*50)
-    print("BOOLEAN STATES")
+    print("OVERALL SCORE COMPOSITION (Universal Across All Experiments)")
     print("-"*50)
-    if "boolean_states" in results:
-        bs = results["boolean_states"]
-        print(f"F1 Score:     {bs['f1']:.4f}")
-        print(f"Precision:    {bs['precision']:.4f}")
-        print(f"Recall:       {bs['recall']:.4f}")
-        print(f"Comparisons:  {bs['total_comparisons']}")
+    print("Metric                          Weight    Score    Contribution")
+    print("-" * 65)
+    
+    weights = {
+        "steps_completed": 0.5,
+        "steps_in_progress": 0.10,
+        "steps_available": 0.15,
+        "steps_available_or_in_progress": 0.2,
+        "operator_holding_similarity": 0.025,
+        "gaze_target_similarity": 0.025
+    }
+    
+    for metric, weight in weights.items():
+        if metric in results:
+            if metric.endswith("_similarity"):
+                score = results[metric]
+            else:
+                score = results[metric].get("f1", 0.0)
+            contribution = weight * score
+            metric_label = metric.replace("_", " ").title()
+            print(f"{metric_label:30} {weight:6.3f}    {score:5.3f}    {contribution:8.4f}")
+        else:
+            metric_label = metric.replace("_", " ").title()
+            print(f"{metric_label:30} {weight:6.3f}    N/A      0.0000")
     
     print("\n" + "-"*50)
     print("STEPS ANALYSIS")
     print("-"*50)
     
-    for step_type in ["steps_completed", "steps_in_progress", "steps_available"]:
+    # Display all step metrics including the new union metric
+    step_types = ["steps_completed", "steps_in_progress", "steps_available", "steps_available_or_in_progress"]
+    step_labels = ["Steps Completed", "Steps In Progress", "Steps Available", "Steps Available OR In Progress"]
+    
+    for step_type, label in zip(step_types, step_labels):
         if step_type in results:
             step_metrics = results[step_type]
-            print(f"\n{step_type.replace('_', ' ').title()}:")
+            print(f"\n{label}:")
             print(f"  F1 Score:  {step_metrics['f1']:.4f}")
             print(f"  Precision: {step_metrics['precision']:.4f}")
             print(f"  Recall:    {step_metrics['recall']:.4f}")
@@ -403,6 +459,19 @@ def print_evaluation_results(results: Dict):
     for metric, label in text_metrics:
         if metric in results:
             print(f"{label:20}: {results[metric]:.4f}")
+    
+    # Show Boolean States for reference (but note they're not in overall score)
+    print("\n" + "-"*50)
+    print("BOOLEAN STATES (Reference Only - Not in Overall Score)")
+    print("-"*50)
+    if "boolean_states" in results:
+        bs = results["boolean_states"]
+        print(f"F1 Score:     {bs['f1']:.4f}")
+        print(f"Precision:    {bs['precision']:.4f}")
+        print(f"Recall:       {bs['recall']:.4f}")
+        print(f"Comparisons:  {bs['total_comparisons']}")
+    else:
+        print("No boolean states found in data.")
     
     print("\n" + "-"*50)
     print("TIMING ANALYSIS")

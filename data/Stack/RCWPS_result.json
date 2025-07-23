@@ -1,0 +1,134 @@
+[
+    {
+        "frame": 1,
+        "state": {
+            "frame_number": 1,
+            "gaze_target": "toolbox",
+            "toolbox_placed_on_table": false,
+            "num_chairs_stacked": 0,
+            "operator_holding": "none",
+            "list_of_stacked_chairs": [],
+            "steps_completed": [],
+            "steps_in_progress": [
+                "Walk to toolbox"
+            ],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 31,
+        "state": {
+            "frame_number": 31,
+            "gaze_target": "toolbox",
+            "toolbox_placed_on_table": false,
+            "num_chairs_stacked": 0,
+            "operator_holding": "none",
+            "list_of_stacked_chairs": [],
+            "steps_completed": [
+                "Walk to toolbox"
+            ],
+            "steps_in_progress": [
+                "Pick up toolbox"
+            ],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 61,
+        "state": {
+            "frame_number": 61,
+            "gaze_target": "toolbox",
+            "toolbox_placed_on_table": false,
+            "num_chairs_stacked": 0,
+            "operator_holding": "none",
+            "list_of_stacked_chairs": [],
+            "steps_completed": [
+                "Walk to toolbox"
+            ],
+            "steps_in_progress": [
+                "Pick up toolbox"
+            ],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 91,
+        "state": {
+            "frame_number": 91,
+            "gaze_target": "toolbox",
+            "toolbox_placed_on_table": false,
+            "num_chairs_stacked": 0,
+            "operator_holding": "none",
+            "list_of_stacked_chairs": [],
+            "steps_completed": [
+                "Walk to toolbox"
+            ],
+            "steps_in_progress": [
+                "Pick up toolbox"
+            ],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 121,
+        "state": {
+            "frame_number": 121,
+            "gaze_target": "table_location",
+            "toolbox_placed_on_table": false,
+            "num_chairs_stacked": 0,
+            "operator_holding": "toolbox",
+            "list_of_stacked_chairs": [],
+            "steps_completed": [
+                "Walk to toolbox",
+                "Pick up toolbox"
+            ],
+            "steps_in_progress": [
+                "Transport toolbox"
+            ],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 151,
+        "state": {
+            "frame_number": 151,
+            "gaze_target": "table_location",
+            "toolbox_placed_on_table": false,
+            "num_chairs_stacked": 0,
+            "operator_holding": "toolbox",
+            "list_of_stacked_chairs": [],
+            "steps_completed": [
+                "Walk to toolbox",
+                "Pick up toolbox"
+            ],
+            "steps_in_progress": [
+                "Transport toolbox"
+            ],
+            "steps_available": []
+        }
+    },
+    {
+        "frame": 181,
+        "state": {
+            "frame_number": 181,
+            "gaze_target": "table_location",
+            "toolbox_placed_on_table": true,
+            "num_chairs_stacked": 0,
+            "operator_holding": "none",
+            "list_of_stacked_chairs": [],
+            "steps_completed": [
+                "Walk to toolbox",
+                "Pick up toolbox",
+                "Transport toolbox",
+                "Place toolbox on table"
+            ],
+            "steps_in_progress": "idle",
+            "steps_available": [
+                "Walk to turquoise chair",
+                "Walk to red chair 1",
+                "Walk to red chair 2",
+                "Walk to red chair 3"
+            ]
+        }
+    }
+]

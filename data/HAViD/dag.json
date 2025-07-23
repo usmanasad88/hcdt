@@ -20,25 +20,25 @@
     "predecessors": ["step_03_insert_ball"]
   },
   {
-    "id": "step_05_screw_cap",
-    "description": "Screw the cylinder cap to the cylinder base",
-    "predecessors": ["step_04_insert_bs2",
-    "step_07_insert_bracket2"]
-  },
-  {
-    "id": "step_06_insert_bracket1",
+    "id": "step_05_insert_bracket1",
     "description": "Insert the first cylinder bracket onto the cylinder base",
     "predecessors": []
   },
   {
-    "id": "step_07_insert_bracket2",
+    "id": "step_06_insert_bracket2",
     "description": "Insert the second cylinder bracket onto the cylinder base",
-    "predecessors": ["step_06_insert_bracket1"]
+    "predecessors": ["step_05_insert_bracket1"]
+  },
+  {
+    "id": "step_07_screw_cap",
+    "description": "Screw the cylinder cap to the cylinder base",
+    "predecessors": ["step_04_insert_bs2",
+    "step_06_insert_bracket2"]
   },
   {
     "id": "step_08_slide_brackets",
     "description": "Slide the cylinder brackets to the ends of the cylinder",
-    "predecessors": ["step_07_insert_bracket2"]
+    "predecessors": ["step_06_insert_bracket2"]
   },
   {
     "id": "step_09_place_subassembly",

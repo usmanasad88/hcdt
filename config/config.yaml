@@ -1,18 +1,25 @@
 defaults:
-  - exp: Cooking
+  - exp: Stack_v2
   - _self_
 
-case_study: Cooking
+case_study: Stack
 use_ground_truth: false
 total_frames_to_process: all
 use_file_upload: false
 use_openai: false
 
-start_frame: 8940
+start_frame: 1
 end_frame: 0
 max_frames: 8000
 phase_two_increment: 120
 prediction_delay_seconds: 2
+
+overlay_results: true
+run_evaluation: true
+
+max_attached_frames: 10
+thinking: true
+thinking_budget: 512
 
 model: gemini-2.5-flash-lite-preview-06-17 #gemini-2.5-flash #gemini-2.0-flash, gemini-2.5-flash-lite-preview-06-17 , gemini-2.5-flash gemma-3-27b-it gemma-3-27b-it
 
@@ -90,6 +97,51 @@ prompts:
 
     
     ```
+
+  #Rolling Context Window with Previous State (RCWPS)
+  RCWPS: |
+  
+    You are an AI assistant analyzing video frames of a person performing a task.
+    Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from the image.
+
+    Task Graph Definition:
+    ```json
+    {task_graph_string}
+    ```
+
+    State Variables Schema:
+    ```json
+    {state_schema_string}
+    ```
+
+    Instruction:
+    You will be provided with the rolling window of previous frames {test_frame_step} / {fps} = {test_frame_step_seconds:.2f} seconds apart. Your task is to update the state variables, based on the image provided and the schemas above.
+    Boolean state variables are not strictly boolean and can be False, True or Unknown.
+    The state of the system at the first provided frame is as follows:
+    ```json
+    {previous_state_string}
+    Analyse this information. Next, you will be provided with the frames.
+    ```   
+  
+  Single: |
+  
+    You are an AI assistant analyzing video frames of a person performing a task.
+    Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from the image.
+
+    Task Graph Definition:
+    ```json
+    {task_graph_string}
+    ```
+
+    State Variables Schema:
+    ```json
+    {state_schema_string}
+    ```
+
+    Instruction:
+    You will be provided with the video frames of the person performing the task. Your task is to update the state variables, based on the image provided and the schemas above. Analyse this information. Next, you will be provided with the frame.
+    ```   
+
   #  Each input image will be 1280×720 pixels in size. 
 
   phase_two: |
@@ -105,6 +157,14 @@ prompts:
     Do not simply extrapolate the data, estimate where the hands will be at that time based on the task being performed.
     Provide your prediction as a structured output, clearly indicating the predicted (x, y) coordinates for each hand, with values normalized from 0 to 1000, as well as the name of the target object being manipulated in the task. 
     Also provide a one line reasoning summary of your prediction. 
+
+model_response:
+  v1: |
+    Okay, I have analyzed the example video and supporting documents. I am ready for your questions about the test video.
+    ```
+  v2: |
+    I have analyzed the Task Graph and State Variables, and the current system state. Please provide the frames of the test video.
+    ```
 
 second_prompt: 
   v1: |

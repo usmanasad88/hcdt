@@ -122,10 +122,22 @@ def overlay_genai_video_gt(
         lines = []
         if info:
             for field in fields:
-                value = info.get(field, None)
+                value = None
+                # First check top-level entry (for frame_number, etc.)
+                if field in info:
+                    value = info[field]
+                # Then check nested state data (for steps_completed, etc.)
+                elif "state" in info and field in info["state"]:
+                    value = info["state"][field]
+                
                 if value is not None:
-                    # Format lists nicely
-                    if isinstance(value, list):
+                    # Special handling for list fields that need to be on separate lines
+                    if field in ["steps_completed", "steps_in_progress", "steps_available"] and isinstance(value, list):
+                        lines.append(f"{field}:")
+                        for item in value:
+                            lines.append(f"  - {item}")
+                    # Format other lists nicely
+                    elif isinstance(value, list):
                         lines.append(f"{field}: {', '.join(str(v) for v in value)}")
                     else:
                         lines.append(f"{field}: {value}")
@@ -393,7 +405,7 @@ def main():
     out.release()
     print(f"Overlay video saved to {output_path}")
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # main()
 
     # overlay_genai_video(
@@ -404,12 +416,19 @@ if __name__ == "__main__":
     # )
 
 
-    overlay_genai_video_gt(
-        "/home/mani/Central/Stack/exp2/cam01.mp4",
-        "data/Stack/ICL_result_exp2_base.json",
-        "data/OverlayVids/cam01_icl_best.mp4",
-        fields=["frame_number","steps_completed","steps_in_progress","steps_available"]
-    )
+    # overlay_genai_video_gt(
+    #     "/home/mani/Central/HaVid/S02A08I21/front.mp4",
+    #     "/home/mani/Repos/hcdt/logs/RCWGT_HAViD_Gemini_Flash.json",
+    #     "data/OverlayVids/S02A08I21_RCWGT_HAViD_Gemini_Flash.mp4",
+    #     fields=["frame_number","steps_completed","steps_in_progress","steps_available"]
+    # )
+
+    # overlay_genai_video_gt(
+    #     "/home/mani/Central/Stack/cam1/cam01.mp4",
+    #     "/home/mani/Repos/hcdt/data/Stack/cam1_gt_new.json",
+    #     "data/OverlayVids/cam1_gt_new.mp4",
+    #     fields=["frame_number","steps_completed","steps_in_progress","steps_available"]
+    # )
 
 
     # overlay_genai_video(

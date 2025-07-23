@@ -44,20 +44,27 @@ def extract_json_from_response(response_string: str) -> Optional[str]:
 
     cleaned_string = response_string.strip()
 
+    def convert_python_booleans(json_str: str) -> str:
+        """Convert Python boolean strings to JSON format"""
+        # Replace standalone True/False with true/false
+        json_str = re.sub(r'\bTrue\b', 'true', json_str)
+        json_str = re.sub(r'\bFalse\b', 'false', json_str)
+        return json_str
+
     # Case 1: Look for JSON within ```json ... ``` blocks
     json_block_match = re.search(r'```json\s*(.*?)\s*```', cleaned_string, re.DOTALL)
     if json_block_match:
-        return json_block_match.group(1).strip()
+        return convert_python_booleans(json_block_match.group(1).strip())
     
     # Case 2: Look for JSON within generic ``` ... ``` blocks
     generic_block_match = re.search(r'```\s*([\{\[].*?[\}\]])\s*```', cleaned_string, re.DOTALL)
     if generic_block_match:
-        return generic_block_match.group(1).strip()
+        return convert_python_booleans(generic_block_match.group(1).strip())
     
     # Case 3: Look for JSON within """...""" blocks
     triple_quote_match = re.search(r'"""\s*([\{\[].*?[\}\]])\s*"""', cleaned_string, re.DOTALL)
     if triple_quote_match:
-        return triple_quote_match.group(1).strip()
+        return convert_python_booleans(triple_quote_match.group(1).strip())
     
     # Case 4: Look for standalone JSON objects/arrays anywhere in the text
     # This will find the last complete JSON object or array in the response
@@ -68,16 +75,17 @@ def extract_json_from_response(response_string: str) -> Optional[str]:
         # Try to parse each match to ensure it's valid JSON
         for match in reversed(json_matches):  # Start from the last match
             try:
-                # Test if it's valid JSON
-                json.loads(match)
-                return match.strip()
+                # Convert booleans first, then test if it's valid JSON
+                converted_match = convert_python_booleans(match)
+                json.loads(converted_match)
+                return converted_match.strip()
             except json.JSONDecodeError:
                 continue
     
     # Case 5: If the entire string starts and ends with { } or [ ], treat it as JSON
     if (cleaned_string.startswith("{") and cleaned_string.endswith("}")) or \
        (cleaned_string.startswith("[") and cleaned_string.endswith("]")):
-        return cleaned_string
+        return convert_python_booleans(cleaned_string)
 
     # If no JSON is found, return None
     return None
@@ -626,6 +634,7 @@ def create_task_graph_visualization(json_data_string: str, output_filename: str 
     print(f"Graph SVG image saved as '{output_filename}.svg'")
 
 
+
 # --- Example Usage ---
 # # Your provided JSON data as a multi-line string
 # task_json_input = """
@@ -825,4 +834,52 @@ def get_ground_truth(frame_number: int, gt_filename: str) -> Optional[Dict]:
     except Exception as e:
         print(f"Error getting ground truth for frame {frame_number}: {e}")
         return None
+
+def convert_stack_gt_to_standard_format(input_json_path: str, output_json_path: str = None) -> str:
+    """
+    Convert Stack dataset ground truth JSON format to standard format.
     
+    Moves all fields except 'frame_number' into a 'state' object and renames
+    'frame_number' to 'frame' to match the standard format used in S02A08I21_gt.json.
+    
+    Args:
+        input_json_path (str): Path to the input JSON file (Stack format)
+        output_json_path (str): Path to save the converted JSON file. 
+                               If None, saves as input_path with '_new' suffix
+                               
+    Returns:
+        str: Path to the output file
+    """
+    import json
+    import os
+    
+    # Read the input JSON
+    with open(input_json_path, 'r') as f:
+        data = json.load(f)
+    
+    # Convert each entry
+    converted_data = []
+    for entry in data:
+        # Extract frame_number and rename to frame
+        frame_number = entry.pop('frame_number')
+        
+        # Create new entry with standard format
+        new_entry = {
+            "frame": frame_number,
+            "state": entry  # All other fields go into state
+        }
+        converted_data.append(new_entry)
+    
+    # Determine output path
+    if output_json_path is None:
+        base_name = os.path.splitext(input_json_path)[0]
+        output_json_path = f"{base_name}_new.json"
+    
+    # Write the converted JSON
+    with open(output_json_path, 'w') as f:
+        json.dump(converted_data, f, indent=2)
+    
+    print(f"Converted {input_json_path} to standard format and saved as {output_json_path}")
+    return output_json_path
+
+# convert_stack_gt_to_standard_format("data/Stack/cam1_gt.json")

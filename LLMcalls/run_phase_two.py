@@ -13,10 +13,13 @@ from openai import OpenAI
 import hashlib
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.textutils import get_ground_truth
 from utils.imgutils import image_to_base64
 from utils.textutils import extract_json_from_response,get_action_description_for_frame, get_keystep_for_frame
 from utils.experiment_logger import ExperimentLogger
 from utils.motionutils import get_hand_xy_positions, get_end_effector_velocities
+from utils.overlay_genai import overlay_genai_video_gt
+from eval.run_evaluation import do_evaluation
 
 from openai import OpenAI
 
@@ -174,7 +177,7 @@ def generate(cfg: DictConfig,
             ))
 
     # Add example images (for ICL experiments)
-    if first_image_paths and cfg.exp.type == "ICL":
+    if first_image_paths and cfg.exp.type in ["ICL", "RCWPS"]:
         if cfg.use_file_upload:
             for img_path in first_image_paths:
                 uploaded_file = client.files.upload(file=img_path)
@@ -191,13 +194,17 @@ def generate(cfg: DictConfig,
                     if encoded_image:
                         image_bytes = base64.b64decode(encoded_image)
                         mime_type = get_image_mime_type(img_path)
+                        filename = os.path.basename(img_path)
+                        
+                        # Add filename as text before the image
+                        first_user_parts.append(types.Part.from_text(text=f"\nImage filename: {filename}"))
                         first_user_parts.append(types.Part.from_bytes(
                             mime_type=mime_type,
                             data=image_bytes
                         ))
     
     # Add test images for Phase 2 experiments (or any non-ICL experiment)
-    if encoded_test_images and cfg.exp.type != "ICL":
+    if encoded_test_images and cfg.exp.type not in ["ICL", "RCWPS"]:
         for i, encoded_image in enumerate(encoded_test_images):
             if encoded_image:
                 image_bytes = base64.b64decode(encoded_image)
@@ -211,17 +218,28 @@ def generate(cfg: DictConfig,
     
     # ICL-specific conversation flow
     # Turn 2: Model acknowledges the examples
-    if cfg.exp.type == "ICL":
-        model_reponse="Okay, I have analyzed the example video and supporting documents. I am ready for your questions about the test video."
+    if cfg.exp.type in ["ICL", "RCWPS"]:
+        # model_reponse="Okay, I have analyzed the example video and supporting documents. I am ready for your questions about the test video."
+        if cfg.exp.type == "RCWPS":
+            model_reponse = cfg.model_response.v2
+        elif cfg.exp.type == "ICL":
+            model_reponse = cfg.model_response.v1
+
         contents.append(types.Content(role="model", parts=[types.Part.from_text(text=model_reponse)]))
 
         # Turn 3: User provides the next prompt and test images
         second_user_parts = [types.Part.from_text(text=next_query_prompt)]
-        for encoded_image in encoded_test_images:
+        for i, encoded_image in enumerate(encoded_test_images):
             if encoded_image:
                 image_bytes = base64.b64decode(encoded_image)
+                img_path = second_image_paths[i]
+                mime_type = get_image_mime_type(img_path)
+                filename = os.path.basename(img_path)
+                
+                # Add filename as text before the image
+                second_user_parts.append(types.Part.from_text(text=f"\nImage filename: {filename}"))
                 second_user_parts.append(types.Part.from_bytes(
-                    mime_type="image/png",
+                    mime_type=mime_type,
                     data=image_bytes
                 ))
 
@@ -256,16 +274,21 @@ def generate(cfg: DictConfig,
             # If the loop completes without an exception, break out of the retry loop
             break
         except genai.errors.ClientError as e:
-            # if e.reason == 'RESOURCE_EXHAUSTED':
-            print(f"\nResource exhausted error: {e}. Waiting 10 seconds to retry... (Attempt {attempt + 1}/{retries})")
+            print(f"\nClient error: {e}. Waiting to retry... (Attempt {attempt + 1}/{retries})")
             if attempt < retries - 1:
                 time.sleep(15*attempt)  # Wait before retrying
             else:
                 print("Max retries reached. Failing.")
                 raise
-            # else:
-            #     # Re-raise the exception if it's not a resource exhausted error
-            #     raise
+        except genai.errors.ServerError as e:
+            # if e.status_code == 500:
+            #     print(f"\nServer internal error (500): {e}. Waiting to retry... (Attempt {attempt + 1}/{retries})")
+            if attempt < retries - 1:
+                time.sleep(attempt)  # Wait before retrying
+            else:
+                print("Max retries reached. Failing.")
+                raise
+
 
     response_text = "".join(full_response)
     
@@ -275,7 +298,7 @@ def generate(cfg: DictConfig,
     
     if logger:
         # Log the full conversation to a file
-        conversation_log_path = os.path.join(logger.output_dir, 'conversations', f'frame_{frame_number}_conversation.log')
+        conversation_log_path = os.path.join(logger.output_dir, 'conversations', cfg.case_study, cfg.exp.type, cfg.model, f'frame_{frame_number}_conversation.log')
         output_contents(contents, response_text, file_path=conversation_log_path)
         print(f"Full conversation saved to {conversation_log_path}")
         
@@ -309,7 +332,7 @@ def runPhase2(cfg: DictConfig):
         cfg (DictConfig): The configuration object containing experiment settings.
     """
 
-    # Initialize experiment logger (match run_ICL_experiments.py style)
+    # Initialize experiment logger 
     output_dir = os.getcwd()
     output_dir = os.path.join(output_dir, 'logs')
     logger = ExperimentLogger(output_dir=output_dir)
@@ -561,8 +584,12 @@ def runICL_HI(cfg: DictConfig):
     dag_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'dag.json')
     state_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'state.json')
     # example_gt_path=  os.path.join(script_dir, '..', 'data', case_study, 'S02A08I21_gt.json')
-    result_store_path = os.path.join(script_dir, '..', 'data', cfg.case_study, cfg.exp.type + '_result.json')
-    
+    result_store_path = os.path.join(
+        script_dir, 
+        '..', 
+        'logs', 
+        cfg.exp.type + '_' + cfg.case_study + '_' + cfg.model + ('_use_gaze' if cfg.use_gaze else '_no_gaze') + '_result.json'
+    )
     with open(dag_file_path, 'r') as f:
             task_graph_string = f.read()
     with open(state_file_path, 'r') as f:
@@ -666,12 +693,13 @@ def runICL_HI(cfg: DictConfig):
                 f for f in os.listdir(cfg.exp.test_image_dir)
                 if f.endswith(('.png', '.jpg', '.jpeg'))
             ])
-            for i in range(0, frame_num, cfg.exp.test_frame_step):
-                second_image_paths.append(os.path.join(cfg.exp.test_image_dir, test_frame_files[i]))
-                if cfg.use_gaze:
-                    second_image_paths.append(os.path.join(cfg.exp.test_gazelle_output_dir, test_gaze_frame_files[i]))
-                if cfg.exp.use_ego:
-                    second_image_paths.append(os.path.join(cfg.exp.test_ego_frames, test_ego_frame_files[i]))
+            for i in range(0, frame_num + 1, cfg.exp.test_frame_step):
+                if i < len(test_frame_files):
+                    second_image_paths.append(os.path.join(cfg.exp.test_image_dir, test_frame_files[i]))
+                    if cfg.use_gaze:
+                        second_image_paths.append(os.path.join(cfg.exp.test_gazelle_output_dir, test_gaze_frame_files[i]))
+                    if cfg.exp.use_ego:
+                        second_image_paths.append(os.path.join(cfg.exp.test_ego_frames, test_ego_frame_files[i]))
 
 
             # if cfg.use_openai:
@@ -703,7 +731,188 @@ def runICL_HI(cfg: DictConfig):
         raise
     finally:
         # Always end the experiment to save logs
+        print(f"\n✅ Experiment finished. Results saved to {result_store_path}")
         logger.end_experiment()
+        if cfg.overlay_results:
+            output_video_path = os.path.splitext(result_store_path)[0] + '.mp4'
+            overlay_genai_video_gt(
+                video_path=cfg.exp.test_video_file_path,
+                md_path=result_store_path,
+                output_path=output_video_path
+            )
+        if cfg.run_evaluation:
+            print("\nRunning evaluation...")
+            eval_output_dir = os.path.join(os.path.dirname(result_store_path), 'evaluation_results', os.path.basename(os.path.splitext(result_store_path)[0]))
+            do_evaluation(
+                icl_file=result_store_path,
+                gt_file=cfg.exp.test_gt_filename,
+                output_dir=eval_output_dir
+            )
+
+def runRCWPS(cfg: DictConfig):
+    
+    # Initialize experiment logger
+    output_dir = os.getcwd()
+    output_dir = os.path.join(output_dir, 'logs/logger')
+    logger = ExperimentLogger(output_dir=output_dir)
+    
+    # Start experiment with notes
+    experiment_notes = f"RCWPS experiment on {cfg.case_study} dataset"
+    experiment_id = logger.start_experiment(cfg, experiment_notes)
+    
+    script_dir = os.path.dirname(__file__)
+    dag_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'dag.json')
+    state_file_path = os.path.join(script_dir, '..', 'data', cfg.case_study, 'state.json')
+    # example_gt_path=  os.path.join(script_dir, '..', 'data', case_study, 'S02A08I21_gt.json')
+    result_store_path = os.path.join(
+        script_dir, 
+        '..', 
+        'logs', 
+        cfg.exp.type + '_' + cfg.case_study + '_' + cfg.model + ('_use_gaze' if cfg.use_gaze else '_no_gaze') + ('_use_gt' if cfg.use_ground_truth else '') + '_result.json'
+    )
+    
+    with open(dag_file_path, 'r') as f:
+            task_graph_string = f.read()
+    with open(state_file_path, 'r') as f:
+            state_schema_string = f.read()
+    with open(cfg.exp.example_gt_filename, 'r') as f:
+            example_gt_string = f.read()
+
+
+    
+    prompt_template = cfg.prompts.RCWPS
+
+  
+        
+    if cfg.total_frames_to_process == 'all':
+        total_frames_to_process = len([
+            f for f in os.listdir(cfg.exp.test_image_dir)
+            if f.endswith(('.png', '.jpg', '.jpeg'))
+        ])
+    all_responses_data = []
+    
+    current_response = None
+    frame_num = cfg.start_frame
+
+    if cfg.use_gaze:
+        test_gaze_frame_files = sorted([f for f in os.listdir(cfg.exp.test_gazelle_output_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
+        example_gaze_frame_files = sorted([f for f in os.listdir(cfg.exp.example_gazelle_output_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
+    
+    if cfg.exp.use_ego:
+        test_ego_frame_files = sorted([f for f in os.listdir(cfg.exp.test_ego_frames) if f.endswith(('.png', '.jpg', '.jpeg'))])
+        example_ego_frame_files = sorted([f for f in os.listdir(cfg.exp.example_ego_frames) if f.endswith(('.png', '.jpg', '.jpeg'))])
+
+    
+
+    try:
+        while frame_num < total_frames_to_process:
+            if cfg.end_frame > 0 and frame_num >= cfg.end_frame:
+                break
+
+             # Calculate the starting frame to ensure maximum 10 frames
+            max_frames = 10
+            total_possible_frames = len(range(0, frame_num, cfg.exp.test_frame_step))
+            if total_possible_frames <= max_frames:
+                start_frame = 0
+                previous_state = get_ground_truth(1, cfg.exp.test_gt_filename)
+            else:
+                # Start from a frame that gives us exactly 10 frames
+                start_frame = frame_num - (max_frames - 1) * cfg.exp.test_frame_step
+
+            if start_frame > 0:
+                if cfg.use_ground_truth:
+                    previous_state = get_ground_truth(start_frame+1, cfg.exp.test_gt_filename)
+                else:
+                    previous_state = get_ground_truth(start_frame+1, result_store_path)
+                
+            prompt_text = prompt_template.format(
+                task_graph_string=task_graph_string,
+                state_schema_string=state_schema_string,
+                number_of_frames_attached=cfg.max_attached_frames,
+                fps=cfg.exp.fps,
+                test_frame_step=cfg.exp.test_frame_step,
+                test_frame_step_seconds=cfg.exp.test_frame_step / cfg.exp.fps,
+                previous_state_string = previous_state
+            )
+
+            second_prompt_template = cfg.second_prompt.v1
+            second_prompt_text = second_prompt_template.format(                
+                fps=cfg.exp.fps,
+                frame_num=frame_num,
+                last_frame_time=f"{frame_num / cfg.exp.fps:.2f}"
+            )
+            json_data = None  # No JSON data needed for version1 prompt
+            
+            first_image_paths = []
+
+            if cfg.exp.attach_drawing:
+                first_image_paths = [cfg.exp.drawing]        
+                prompt_text += f"\n\n{cfg.exp.drawing_prompt}\n\n"
+
+            if cfg.exp.use_ego:
+                prompt_text += f"\n\n{cfg.exp.ego_prompt}\n\n"
+
+            second_image_paths = []
+            # Accept both .png, .jpg, .jpeg files for test frames
+            test_frame_files = sorted([
+                f for f in os.listdir(cfg.exp.test_image_dir)
+                if f.endswith(('.png', '.jpg', '.jpeg'))
+            ])
+            
+           
+                
+            for i in range(start_frame, frame_num + 1, cfg.exp.test_frame_step):
+                if i < len(test_frame_files):
+                    second_image_paths.append(os.path.join(cfg.exp.test_image_dir, test_frame_files[i]))
+                    if cfg.use_gaze:
+                        second_image_paths.append(os.path.join(cfg.exp.test_gazelle_output_dir, test_gaze_frame_files[i]))
+                    if cfg.exp.use_ego:
+                        second_image_paths.append(os.path.join(cfg.exp.test_ego_frames, test_ego_frame_files[i]))
+
+
+            
+            current_response = generate(cfg, prompt_text, second_image_paths, first_image_paths, second_prompt_text, logger, frame_num, json_data=json_data)
+            response_obj = json.loads(extract_json_from_response(current_response))     
+            all_responses_data.append({"frame": frame_num, "state": response_obj})        
+
+              
+            current_response = f'"""{json.dumps(response_obj)}"""'
+
+            all_responses_data.sort(key=lambda x: x.get("frame", float('inf'))) # Sort by frame number
+            with open(result_store_path, 'w') as f:
+                json.dump(all_responses_data, f, indent=4)
+            frame_num += cfg.exp.test_frame_step
+            
+            # Save checkpoint every 5 generations
+            if len(all_responses_data) % 5 == 0:
+                logger.save_checkpoint()
+                
+        # Save the config for reproducibility
+        with open(os.path.join(output_dir, "config_used.yaml"), 'w') as f:
+            f.write(OmegaConf.to_yaml(cfg))
+            
+    except Exception as e:
+        print(f"❌ Experiment failed: {e}")
+        raise
+    finally:
+        # Always end the experiment to save logs
+        logger.end_experiment()
+        print(f"\n✅ Experiment finished. Results saved to {result_store_path}")
+        if cfg.overlay_results:
+            output_video_path = os.path.splitext(result_store_path)[0] + '.mp4'
+            overlay_genai_video_gt(
+                video_path=cfg.exp.test_video_file_path,
+                md_path=result_store_path,
+                output_path=output_video_path
+            )
+        if cfg.run_evaluation:
+            print("\nRunning evaluation...")
+            eval_output_dir = os.path.join(os.path.dirname(result_store_path), 'evaluation_results', os.path.basename(os.path.splitext(result_store_path)[0]))
+            do_evaluation(
+                icl_file=result_store_path,
+                gt_file=cfg.exp.test_gt_filename,
+                output_dir=eval_output_dir
+            )
 
 @hydra.main(config_path="../config", config_name="config", version_base=None)
 def main(cfg: DictConfig):
@@ -712,6 +921,8 @@ def main(cfg: DictConfig):
         runICL_HI(cfg)
     elif cfg.exp.type == "phase2":
         runPhase2(cfg)
+    elif cfg.exp.type == "RCWPS":
+        runRCWPS(cfg)
 
 if __name__ == "__main__":
      main()
