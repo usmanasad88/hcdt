@@ -195,12 +195,21 @@ def get_action_description_for_frame(frame_number: int, gt_file_path: str, dag_f
             if isinstance(step_id, str) and step_id.isdigit():
                 step_descriptions[int(step_id)] = description  # Also store as int if possible
         
-        # Find the frame data
+        # Sort the data by frame number to ensure proper ordering
+        gt_data.sort(key=lambda x: x.get('frame') or x.get('frame_number') or 0)
+        
+        # Find the appropriate ground truth entry
+        # The ground truth for a frame is the last entry with frame_number <= target frame
         frame_data = None
         for entry in gt_data:
             entry_frame = entry.get('frame') or entry.get('frame_number')
-            if entry_frame == frame_number:
+            if entry_frame is None:
+                continue
+                
+            if entry_frame <= frame_number:
                 frame_data = entry
+            else:
+                # Since data is sorted, we can break once we exceed the target frame
                 break
         
         if not frame_data:
@@ -208,12 +217,13 @@ def get_action_description_for_frame(frame_number: int, gt_file_path: str, dag_f
             return None
         
         # Get steps in progress
-        steps_in_progress = frame_data.get('steps_in_progress', [])
+
+        steps_in_progress = frame_data['state'].get('steps_in_progress', [])
         
         if not steps_in_progress:
             # Get available steps when no action is in progress
-            steps_available = frame_data.get('steps_available', [])
-            
+            steps_available = frame_data['state'].get('steps_available', [])
+
             if not steps_available:
                 return "No action in progress and no steps available"
             
@@ -350,14 +360,23 @@ def get_all_actions_for_frame(frame_number: int, gt_file_path: str, dag_file_pat
             if isinstance(step_id, str) and step_id.isdigit():
                 step_descriptions[int(step_id)] = description  # Also store as int if possible
         
-        # Find the frame data
+        # Sort the data by frame number to ensure proper ordering
+        gt_data.sort(key=lambda x: x.get('frame') or x.get('frame_number') or 0)
+        
+        # Find the appropriate ground truth entry
+        # The ground truth for a frame is the last entry with frame_number <= target frame
         frame_data = None
         actual_frame_number = None
         for entry in gt_data:
             entry_frame = entry.get('frame') or entry.get('frame_number')
-            if entry_frame == frame_number:
+            if entry_frame is None:
+                continue
+                
+            if entry_frame <= frame_number:
                 frame_data = entry
                 actual_frame_number = entry_frame
+            else:
+                # Since data is sorted, we can break once we exceed the target frame
                 break
         
         if not frame_data:
@@ -802,14 +821,14 @@ def get_ground_truth(frame_number: int, gt_filename: str) -> Optional[Dict]:
             gt_data = json.load(f)
         
         # Sort the data by frame_number to ensure proper ordering
-        gt_data.sort(key=lambda x: x.get('frame_number', 0))
+        gt_data.sort(key=lambda x: x.get('frame') or x.get('frame_number') or 0)
         
         # Find the appropriate ground truth entry
         # The ground truth for a frame is the last entry with frame_number <= target frame
         selected_entry = None
         
         for entry in gt_data:
-            entry_frame = entry.get('frame_number')
+            entry_frame = entry.get('frame') or entry.get('frame_number')
             if entry_frame is None:
                 continue
                 
@@ -882,4 +901,202 @@ def convert_stack_gt_to_standard_format(input_json_path: str, output_json_path: 
     print(f"Converted {input_json_path} to standard format and saved as {output_json_path}")
     return output_json_path
 
-# convert_stack_gt_to_standard_format("data/Stack/cam1_gt.json")
+def condense_gt(input_json_path: str, output_json_path: str = None) -> str:
+    """
+    Condense ground truth JSON by removing entries where the state does not change.
+    Keeps only entries where the state has changed from the previous entry.
+    
+    Args:
+        input_json_path (str): Path to the input ground truth JSON file
+        output_json_path (str): Path to save the condensed JSON file. 
+                               If None, saves as input_path with '_condensed' suffix
+                               
+    Returns:
+        str: Path to the output file
+    """
+    import json
+    import os
+    
+    # Read the input JSON
+    with open(input_json_path, 'r') as f:
+        data = json.load(f)
+    
+    if not data:
+        print(f"Warning: Empty data in {input_json_path}")
+        return input_json_path
+    
+    # Always keep the first entry
+    condensed_data = [data[0]]
+    previous_state = data[0].get('state', {})
+    
+    # Compare each subsequent entry with the previous state
+    for i in range(1, len(data)):
+        current_entry = data[i]
+        current_state = current_entry.get('state', {})
+        
+        # Check if the current state is different from the previous state
+        if current_state != previous_state:
+            condensed_data.append(current_entry)
+            previous_state = current_state
+    
+    # Determine output path
+    if output_json_path is None:
+        base_name = os.path.splitext(input_json_path)[0]
+        output_json_path = f"{base_name}_condensed.json"
+    
+    # Write the condensed JSON
+    with open(output_json_path, 'w') as f:
+        json.dump(condensed_data, f, indent=2)
+    
+    original_count = len(data)
+    condensed_count = len(condensed_data)
+    reduction_percent = ((original_count - condensed_count) / original_count) * 100
+    
+    print(f"Condensed {input_json_path}:")
+    print(f"  Original entries: {original_count}")
+    print(f"  Condensed entries: {condensed_count}")
+    print(f"  Reduction: {reduction_percent:.1f}%")
+    print(f"  Saved as: {output_json_path}")
+    
+    return output_json_path
+
+def delete_field_from_json(input_json_path: str, field_name: str, output_json_path: str = None) -> str:
+    """
+    Delete a specified field from a JSON file. The field will be removed if it exists
+    at the top level of each entry or within the 'state' object of each entry.
+    
+    Args:
+        input_json_path (str): Path to the input JSON file
+        field_name (str): Name of the field to delete
+        output_json_path (str): Path to save the modified JSON file. 
+                               If None, saves as input_path with '_no_{field_name}' suffix
+                               
+    Returns:
+        str: Path to the output file
+    """
+    import json
+    import os
+    
+    # Read the input JSON
+    with open(input_json_path, 'r') as f:
+        data = json.load(f)
+    
+    if not data:
+        print(f"Warning: Empty data in {input_json_path}")
+        return input_json_path
+    
+    deleted_count = 0
+    
+    # Process each entry in the JSON array
+    for entry in data:
+        # Check and delete field at top level
+        if field_name in entry:
+            del entry[field_name]
+            deleted_count += 1
+        
+        # Check and delete field within 'state' object
+        if 'state' in entry and isinstance(entry['state'], dict):
+            if field_name in entry['state']:
+                del entry['state'][field_name]
+                deleted_count += 1
+    
+    # Determine output path
+    if output_json_path is None:
+        base_name = os.path.splitext(input_json_path)[0]
+        extension = os.path.splitext(input_json_path)[1]
+        output_json_path = f"{base_name}_no_{field_name}{extension}"
+    
+    # Write the modified JSON
+    with open(output_json_path, 'w') as f:
+        json.dump(data, f, indent=2)
+    
+    print(f"Deleted field '{field_name}' from {input_json_path}:")
+    print(f"  Total deletions: {deleted_count}")
+    print(f"  Saved as: {output_json_path}")
+    
+    return output_json_path
+
+def populate_immediate_next_step(input_json_path: str, output_json_path: str = None) -> str:
+    """
+    Load a JSON file and populate the 'immediate_next_step' field in each entry's 'state' object.
+    The immediate_next_step is determined by looking for the next entry chronologically (by frame_number)
+    where the steps_in_progress value actually changes, and taking the first step from that new list.
+    If steps_in_progress changes to an empty list, continue looking until a non-empty list is found.
+    
+    Args:
+        input_json_path (str): Path to the input JSON file
+        output_json_path (str): Path to save the modified JSON file. 
+                               If None, saves as input_path with '_with_next_step' suffix
+                               
+    Returns:
+        str: Path to the output file
+    """
+    import json
+    import os
+    
+    # Read the input JSON
+    with open(input_json_path, 'r') as f:
+        data = json.load(f)
+    
+    if not data:
+        print(f"Warning: Empty data in {input_json_path}")
+        return input_json_path
+    
+    # Sort the data by frame_number to ensure chronological order
+    data.sort(key=lambda x: x.get('frame') or x.get('frame_number') or 0)
+    
+    populated_count = 0
+    
+    # Process each entry
+    for i, entry in enumerate(data):
+        # Ensure the entry has a state object
+        if 'state' not in entry:
+            entry['state'] = {}
+        
+        # Get current steps_in_progress
+        current_steps_in_progress = entry.get('state', {}).get('steps_in_progress', [])
+        
+        # Initialize immediate_next_step as None
+        immediate_next_step = None
+        
+        # Look ahead chronologically to find when steps_in_progress changes to a non-empty value
+        for j in range(i + 1, len(data)):
+            next_entry = data[j]
+            next_steps_in_progress = next_entry.get('state', {}).get('steps_in_progress', [])
+            
+            # Check if steps_in_progress has changed
+            if next_steps_in_progress != current_steps_in_progress:
+                # If the new steps_in_progress is not empty, take the first step and break
+                if next_steps_in_progress:
+                    immediate_next_step = next_steps_in_progress[0]
+                    break
+                # If it's empty, continue looking for the next non-empty change
+                current_steps_in_progress = next_steps_in_progress
+        
+        # Populate the immediate_next_step field
+        entry['state']['immediate_next_step'] = immediate_next_step
+        
+        if immediate_next_step is not None:
+            populated_count += 1
+    
+    # Determine output path
+    if output_json_path is None:
+        base_name = os.path.splitext(input_json_path)[0]
+        extension = os.path.splitext(input_json_path)[1]
+        output_json_path = f"{base_name}_with_next_step{extension}"
+    
+    # Write the modified JSON
+    with open(output_json_path, 'w') as f:
+        json.dump(data, f, indent=2)
+    
+    total_entries = len(data)
+    no_next_step_count = total_entries - populated_count
+    
+    print(f"Populated immediate_next_step field in {input_json_path}:")
+    print(f"  Total entries: {total_entries}")
+    print(f"  Entries with immediate_next_step: {populated_count}")
+    print(f"  Entries with no future step changes: {no_next_step_count}")
+    print(f"  Saved as: {output_json_path}")
+    
+    return output_json_path
+

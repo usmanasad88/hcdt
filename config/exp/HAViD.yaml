@@ -1,14 +1,16 @@
 type: "RCWPS" # In-Context Learning "phase2" or "ICL" or "RCWPS" or "Single"
 example_image_dir: "/home/mani/Central/HaVid/S13A11I21/frames"
-example_gt_filename: "data/HAViD/S13A11I21_gt.json"
+example_gt_filename: "data/HAViD/S13A11I21_gt_final.json"
 example_vitpose: /home/mani/Central/HaVid/S13A11I21/GVHMR/front/preprocess/vitpose.pt
 example_vitpose_frames: /home/mani/Central/HaVid/S13A11I21/GVHMR/front/preprocess/VitPose
+example_video_file_path: /home/mani/Central/HaVid/S13A11I21/front.mp4
 
 test_image_dir: "/home/mani/Central/HaVid/S02A08I21/frames"
-test_gt_filename: "data/HAViD/S02A08I21_gt.json"
+test_gt_filename: "data/HAViD/S02A08I21_gt_final.json"
 test_vitpose: /home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/vitpose.pt
 test_humanml3d: /home/mani/Repos/hcdt/data/humanml3d/S02A08I21.pt
 test_vitpose_frames: /home/mani/Central/HaVid/S02A08I21/GVHMR/front/preprocess/VitPose
+test_video_file_path: /home/mani/Central/HaVid/S02A08I21/front.mp4
 
 frame_width: 1280
 frame_height: 720
@@ -16,14 +18,14 @@ frame_height: 720
 test_frame_step: 15
 fps: 15
 example_frame_step: 15
+phase_two_increment: 30
 
 drawing: "/home/mani/Central/HaVid/S13A11I21/assembly_exploded_view.png"
 attach_drawing: true
 drawing_prompt: "Use the provided drawing to help you understand the task. The drawing is an exploded view of the assembly, showing how the parts fit together."
 use_ego: false
-
+use_keystep: false
 
 prompt_version: "version1" # version1, version2, version3, getgroundtruth, phase_two not applicable to RCWPS
-num_examples: 3
 phase2_ground_truth_file: #data/HAViD/phase2_simplified.json
 #and update the state variables accordingly

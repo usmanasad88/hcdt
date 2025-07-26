@@ -11,11 +11,16 @@ use_openai: false
 start_frame: 1
 end_frame: 0
 max_frames: 8000
-phase_two_increment: 120
 prediction_delay_seconds: 2
+num_examples: 2
 
 overlay_results: true
-run_evaluation: true
+overwrite_videos: false
+run_evaluation: false
+overwrite_results: false
+
+phase2_attach_all_velocities: true
+
 
 max_attached_frames: 10
 thinking: true
@@ -27,6 +32,30 @@ use_gaze: true
 gaze_prompt: Images of heatmaps of the gaze target of the subject performing the task are also provided.
 
 prompts:
+  adaptive_icl: |
+    You are an AI assistant analyzing video frames of a person performing a task.
+    Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from a series of images.
+
+    Task Graph Definition:
+    ```json
+    {task_graph_string}
+    ```
+
+    State Variables Schema:
+    ```json
+    {state_schema_string}
+    ```
+
+    Instruction:
+    
+    First, as an example, you are being provided with a series of images {example_frame_step} / {fps} = {example_frame_step_seconds:.2f} seconds apart for the same task performed by a different subject.
+    Next, you will be provided with frames for the task performed by the test subject.
+    
+    The ground truth states for the example is provided below:
+    ```json
+    {example_gt_string}
+    ```
+
   version1: |
     You are an AI assistant analyzing video frames of a person performing a task.
     Your goal is to update the state variables based on the provided task graph, state schema, and the visual information from a series of images.
@@ -146,9 +175,8 @@ prompts:
 
   phase_two: |
     You are an AI assistant analyzing video frames of a person performing a task.
-    Currently, the person is performing this subtask: {task_description_string}
-   
     You will be provided with a sequence of 10 images, each captured 0.2 seconds apart. 
+    At the last frame, the person is performing this subtask: {task_description_string}   
     For each image, you will also receive an overlay indicating the human pose and the precise pixel locations of both the left and right hands. 
     The pixel locations (x, y coordinates) will be normalized to a range of 0 to 1000.
     The velocities of the left and right hands in cm/s will also be provided.
@@ -156,7 +184,7 @@ prompts:
     Based on this input, predict the exact pixel locations for both the left hand and the right hand two seconds after the timestamp of the very last image in the provided sequence.
     Do not simply extrapolate the data, estimate where the hands will be at that time based on the task being performed.
     Provide your prediction as a structured output, clearly indicating the predicted (x, y) coordinates for each hand, with values normalized from 0 to 1000, as well as the name of the target object being manipulated in the task. 
-    Also provide a one line reasoning summary of your prediction. 
+    
 
 model_response:
   v1: |

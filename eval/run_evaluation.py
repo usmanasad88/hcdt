@@ -13,7 +13,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import our evaluation modules
 from eval.evaluate_generic import evaluate_icl_results, print_evaluation_results
-from simple_analysis import (analyze_temporal_patterns, analyze_step_progression, 
+from eval.simple_analysis import (analyze_temporal_patterns, analyze_step_progression, 
                            analyze_error_patterns, generate_comprehensive_report)
 
 gt_files ={

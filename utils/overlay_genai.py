@@ -6,7 +6,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.motionutils import get_end_effector_velocities 
-
+from utils.textutils import get_ground_truth
 
 def extract_json_sections(md_path):
     # If file is .json, load as JSON array
@@ -41,9 +41,33 @@ def overlay_text(frame, text_lines, pos=(10, 30), font_scale=0.7, color=(0,255,0
     return frame
 
 
+def get_gt_comparison_symbol(item, field, current_frame, gt_path):
+    """
+    Compares an item from a prediction field with the ground truth for a given frame.
+
+    Args:
+        item (str): The item to check (e.g., a step from "steps_completed").
+        field (str): The field the item belongs to (e.g., "steps_completed").
+        current_frame (int): The current video frame number.
+        gt_path (str): Path to the ground truth JSON file.
+
+    Returns:
+        str: '✓' if the item is in the ground truth, '✗' otherwise.
+    """
+    gt_state = get_ground_truth(current_frame, gt_path)
+    
+    if gt_state:
+        gt_value = gt_state.get(field, [])
+        if isinstance(gt_value, list) and item in gt_value:
+            return '(True)'
+
+    return '(False)'
+
+
 def overlay_genai_video_gt(
     video_path,
     md_path,
+    gt_path,
     output_path,
     fields=None,
     font_scale=0.6,
@@ -52,11 +76,13 @@ def overlay_genai_video_gt(
     pos=(50, 100)
 ):
     """
-    Overlays selected fields from JSON blocks in a markdown file onto a video.
+    Overlays selected fields from JSON blocks in a markdown file onto a video,
+    and compares with a ground truth file.
 
     Args:
         video_path (str): Path to the input video.
-        md_path (str): Path to the markdown file with JSON code blocks.
+        md_path (str): Path to the markdown file with JSON code blocks (predictions).
+        gt_path (str): Path to the ground truth JSON file.
         output_path (str): Path to save the output video.
         fields (list of str): List of JSON fields to overlay. If None, uses a default set.
         font_scale (float): Font scale for overlay text.
@@ -65,34 +91,18 @@ def overlay_genai_video_gt(
         pos (tuple): Starting position (x, y) for text.
     """
     if fields is None:
-        fields = [
-            "time",
-            "Expected Immediate Next Action"
-        ]
+        fields=["frame_number","steps_completed","steps_in_progress","steps_available"]
 
-    # Load JSON as a list of dicts
+    # Load prediction JSON
     with open(md_path, "r") as f:
-        data = json.load(f)
+        data = json.load(f)    
 
-    # Determine the format and extract entries
-    if len(data) > 0:
-        first_item = data[0]
-        # Check if it's the new format (has "frame" and "state" keys)
-        if "frame" in first_item and "state" in first_item:
-            # New format: extract state data and use "frame" for frame numbers
-            entries = []
-            for item in data:
-                entry = item["state"].copy()  # Copy the state data
-                entry["frame_number"] = item["frame"]  # Add frame number from outer level
-                entries.append(entry)
-        else:
-            # Original format: use data as-is
-            entries = [entry for entry in data if "frame_number" in entry or "frame" in entry]
-    else:
-        entries = []
+
+    # All JSON files now use 'frame_number' and the standard state structure.
+    entries = [entry for entry in data if "frame_number" in entry]
 
     # Sort entries by frame_number
-    entries.sort(key=lambda x: x.get("frame_number", x.get("frame")))
+    entries.sort(key=lambda x: x.get("frame_number"))
 
     cap = cv2.VideoCapture(video_path)
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
@@ -105,21 +115,21 @@ def overlay_genai_video_gt(
     entry_idx = 0
     num_entries = len(entries)
 
-    for current_frame in tqdm(range(total_frames), desc="Processing frames"):
+    for current_frame in tqdm(range(1, total_frames + 1), desc="Processing frames"):
         ret, frame = cap.read()
         if not ret:
             break
 
         # Advance entry_idx to the closest frame_number or frame <= current_frame
         while entry_idx + 1 < num_entries and (
-            entries[entry_idx + 1].get("frame_number", entries[entry_idx + 1].get("frame")) <= current_frame
+            entries[entry_idx + 1].get("frame_number") <= current_frame
         ):
             entry_idx += 1
 
         info = entries[entry_idx] if num_entries > 0 and (
-            entries[entry_idx].get("frame_number", entries[entry_idx].get("frame")) <= current_frame
+            entries[entry_idx].get("frame_number") <= current_frame
         ) else None
-        lines = []
+        lines = ['Prediction:']
         if info:
             for field in fields:
                 value = None
@@ -135,13 +145,35 @@ def overlay_genai_video_gt(
                     if field in ["steps_completed", "steps_in_progress", "steps_available"] and isinstance(value, list):
                         lines.append(f"{field}:")
                         for item in value:
-                            lines.append(f"  - {item}")
+                            # if field == "steps_completed" and gt_path is not None:
+                            symbol = get_gt_comparison_symbol(item, field, current_frame, gt_path)
+                            lines.append(f"  {symbol} {item}")
+                            # else:
+                            #     lines.append(f"  - {item}")
                     # Format other lists nicely
                     elif isinstance(value, list):
                         lines.append(f"{field}: {', '.join(str(v) for v in value)}")
                     else:
                         lines.append(f"{field}: {value}")
         frame = overlay_text(frame, lines, pos=pos, font_scale=font_scale, color=color, thickness=thickness)
+        print_gt=True
+
+        if print_gt:
+            # Overlay ground truth if available
+            gt_state = get_ground_truth(current_frame, gt_path)
+            if gt_state:
+                gt_lines = ['Ground Truth:']
+                for field in fields:
+                    if field in gt_state:
+                        value = gt_state[field]
+                        if isinstance(value, list):
+                            gt_lines.append(f"{field}:")
+                            for v in value:
+                                gt_lines.append(f"  - {v}")
+                        else:
+                            gt_lines.append(f"{field}: {value}")
+
+                frame = overlay_text(frame, gt_lines, pos=(pos[0] + 300, pos[1] + 10), font_scale=font_scale, color=(0, 255, 0), thickness=thickness)
 
         out.write(frame)
 
@@ -349,63 +381,64 @@ def overlay_frame_numbers(video_path, output_path):
     out.release()
     print(f"Frame number overlay video saved to {output_path}")
 
-def main():
-    video_path = "/home/mani/Central/Cooking1/Stack/cam2_cr.mp4"
-    md_path = "/home/mani/CLoSD/closd/IntentNet/history.md"
-    output_path = "/home/mani/CLoSD/closd/IntentNet/cam2_cr_overlay.mp4"
+# def main():
+#     video_path = "/home/mani/Central/Cooking1/Stack/cam2_cr.mp4"
+#     md_path = "/home/mani/CLoSD/closd/IntentNet/history.md"
+#     output_path = "/home/mani/CLoSD/closd/IntentNet/cam2_cr_overlay.mp4"
 
-    frame_info = extract_json_sections(md_path)
+#     frame_info = extract_json_sections(md_path)
 
-    cap = cv2.VideoCapture(video_path)
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    fps = cap.get(cv2.CAP_PROP_FPS)
-    width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-    out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+#     cap = cv2.VideoCapture(video_path)
+#     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+#     fps = cap.get(cv2.CAP_PROP_FPS)
+#     width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+#     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+#     out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
 
-    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    max_json_idx = max(frame_info.keys()) if frame_info else 0
+#     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+#     max_json_idx = max(frame_info.keys()) if frame_info else 0
 
-    for current_frame in range(total_frames):
-        ret, frame = cap.read()
-        if not ret:
-            break
+#     for current_frame in range(total_frames):
+#         ret, frame = cap.read()
+#         if not ret:
+#             break
 
-        json_idx = current_frame // 30
-        # Clamp to the last available json entry if video is longer than json
-        json_idx = min(json_idx, max_json_idx)
-        info = frame_info.get(json_idx)
-        if info:
-            lines = []
-            if "toolbox_placed_on_table" in info:
-                lines.append(f"Toolbox on table: {info['toolbox_placed_on_table']}")
-            if "num_chairs_stacked" in info:
-                lines.append(f"Chairs stacked: {info['num_chairs_stacked']}")
-            if "operator_holding" in info:
-                lines.append(f"Holding: {info['operator_holding']}")
-            if "gaze_target" in info:
-                lines.append(f"Gaze target: {info['gaze_target']}")
-            if "current_target_object" in info:
-                lines.append(f"Target object: {info['current_target_object']}")
-            if "current_phase" in info:
-                lines.append(f"Phase: {info['current_phase']}")
-            if "Identified Key Objects" in info:
-                lines.append(f"Objects: {info['Identified Key Objects']}")
-            if "Expected Immediate Next Action" in info:
-                lines.append(f"Next action: {info['Expected Immediate Next Action']}")
-            # if "Predicted Action Description" in info:
-            #     lines.append(f"Prediction: {info['Predicted Action Description']}")
-            # if "Predicted Target Location" in info:
-            #     lines.append(f"Target loc: {info['Predicted Target Location']}")
-            frame = overlay_text(frame, lines, pos=(10, 30), font_scale=0.6, color=(255,255,255), thickness=2)
+#         json_idx = current_frame // 30
+#         # Clamp to the last available json entry if video is longer than json
+#         json_idx = min(json_idx, max_json_idx)
+#         info = frame_info.get(json_idx)
+#         if info:
+#             lines = []
+#             if "toolbox_placed_on_table" in info:
+#                 lines.append(f"Toolbox on table: {info['toolbox_placed_on_table']}")
+#             if "num_chairs_stacked" in info:
+#                 lines.append(f"Chairs stacked: {info['num_chairs_stacked']}")
+#             if "operator_holding" in info:
+#                 lines.append(f"Holding: {info['operator_holding']}")
+#             if "gaze_target" in info:
+#                 lines.append(f"Gaze target: {info['gaze_target']}")
+#             if "current_target_object" in info:
+#                 lines.append(f"Target object: {info['current_target_object']}")
+#             if "current_phase" in info:
+#                 lines.append(f"Phase: {info['current_phase']}")
+#             if "Identified Key Objects" in info:
+#                 lines.append(f"Objects: {info['Identified Key Objects']}")
+#             if "Expected Immediate Next Action" in info:
+#                 lines.append(f"Next action: {info['Expected Immediate Next Action']}")
+#             # if "Predicted Action Description" in info:
+#             #     lines.append(f"Prediction: {info['Predicted Action Description']}")
+#             # if "Predicted Target Location" in info:
+#             #     lines.append(f"Target loc: {info['Predicted Target Location']}")
+#             frame = overlay_text(frame, lines, pos=(10, 30), font_scale=0.6, color=(255,255,255), thickness=2)
 
-        out.write(frame)
+#         out.write(frame)
 
-    cap.release()
-    out.release()
-    print(f"Overlay video saved to {output_path}")
+#     cap.release()
+#     out.release()
+#     print(f"Overlay video saved to {output_path}")
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
+
     # main()
 
     # overlay_genai_video(
@@ -416,12 +449,13 @@ def main():
     # )
 
 
-    # overlay_genai_video_gt(
-    #     "/home/mani/Central/HaVid/S02A08I21/front.mp4",
-    #     "/home/mani/Repos/hcdt/logs/RCWGT_HAViD_Gemini_Flash.json",
-    #     "data/OverlayVids/S02A08I21_RCWGT_HAViD_Gemini_Flash.mp4",
-    #     fields=["frame_number","steps_completed","steps_in_progress","steps_available"]
-    # )
+    overlay_genai_video_gt(
+        "/home/mani/Central/HaVid/S02A08I21/front.mp4",
+        "/home/mani/Repos/hcdt/logs/old/test.json",
+        "data/HAViD/S02A08I21_gt.json",
+        "data/OverlayVids/test.mp4",
+        fields=["frame_number","steps_completed","steps_in_progress","steps_available"]
+    )
 
     # overlay_genai_video_gt(
     #     "/home/mani/Central/Stack/cam1/cam01.mp4",

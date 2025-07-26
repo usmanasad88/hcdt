@@ -1,6 +1,6 @@
-type: "RCWPS" # Phase 2 experiment for hand position prediction
+type: "phase2" # Phase 2 experiment for hand position prediction
 example_image_dir: "/home/mani/Central/Stack/cam1/frames"
-example_gt_filename: "data/Stack/cam1_gt_new.json"
+example_gt_filename: "data/Stack/cam1_gt_final.json"
 example_vitpose: "/home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/vitpose.pt"
 example_vitpose_frames: "/home/mani/Central/Stack/cam1/GVHMR/cam01/preprocess/vitpose_overlay_frames"
 example_gazelle_output_dir: /home/mani/Central/Stack/cam1/gazelle_output
@@ -8,7 +8,7 @@ example_phase2_ground_truth_file: /home/mani/Repos/hcdt/data/HAViD/phase2_exampl
 example_video_file_path: /home/mani/Central/Stack/cam1/cam01.mp4
 
 test_image_dir: "/home/mani/Central/Stack/exp2/frames"
-test_gt_filename: "data/Stack/exp2_gt_new.json"
+test_gt_filename: "data/Stack/exp2_gt_final.json"
 test_vitpose: "/home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose.pt"
 test_humanml3d: "/home/mani/Repos/hcdt/data/humanml3d/test_cam01.pt"
 test_vitpose_frames: "/home/mani/Central/Stack/exp2/GVHMR/cam01/preprocess/vitpose_overlay_frames"
@@ -28,6 +28,6 @@ attach_drawing: true
 drawing_prompt: "Use the provided drawing to help you understand the task."
 
 prompt_version: "version1" # version1, version2, version3, getgroundtruth, phase_two
-num_examples: 3
+phase_two_increment: 30
 use_ego: false
-
+use_keystep: false

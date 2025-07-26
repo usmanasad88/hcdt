@@ -141,7 +141,7 @@ def find_step_completion_timing(icl_results: List[Dict], gt_filename: str) -> Di
     
     # Process ICL results to find first prediction of completion
     for entry in icl_results:
-        frame = entry["frame"]
+        frame = entry["frame_number"]
         completed_steps = entry["state"].get("steps_completed", [])
         
         for step in completed_steps:
@@ -230,7 +230,7 @@ def evaluate_icl_results(icl_filename: str, gt_filename: str) -> Dict:
     
     # Process each frame
     for entry in icl_results:
-        frame = entry["frame"]
+        frame = entry["frame_number"]
         pred_state = entry["state"]
         
         # Get corresponding ground truth

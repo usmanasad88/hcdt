@@ -138,8 +138,8 @@ class Phase2Visualizer:
             for f in frame_files:
                 # Try different precision formats: 4-digit, 5-digit, 6-digit
                 if (f"frame_{prediction_frame:04d}" in f or f"{prediction_frame:04d}" in f or
-                    f"frame_{prediction_frame:05d}" in f or f"{prediction_frame:05d}" in f or
-                    f"frame_{prediction_frame:06d}" in f or f"{prediction_frame:06d}" in f):
+                    f"frame_{prediction_frame:05d}" in f"{prediction_frame:05d}" in f or
+                    f"frame_{prediction_frame:06d}" in f"{prediction_frame:06d}" in f):
                     frame_file = f
                     break
             
@@ -391,7 +391,7 @@ class Phase2Visualizer:
         # Box plot comparison
         if errors['left_hand_errors'] and errors['right_hand_errors']:
             axes[1, 1].boxplot([errors['left_hand_errors'], errors['right_hand_errors']], 
-                              labels=['Left Hand', 'Right Hand'])
+                              tick_labels=['Left Hand', 'Right Hand'])
             axes[1, 1].set_title('Error Comparison by Hand')
             axes[1, 1].set_ylabel('Error (normalized pixels)')
             axes[1, 1].grid(True)
@@ -400,6 +400,9 @@ class Phase2Visualizer:
         plot_path = os.path.join(analysis_dir, "error_analysis.png")
         plt.savefig(plot_path, dpi=300, bbox_inches='tight')
         plt.close()
+        
+        # Create additional box plots
+        self.create_detailed_box_plots(errors, analysis_dir)
         
         # Save error statistics to text file
         stats_path = os.path.join(analysis_dir, "error_statistics.txt")
@@ -420,6 +423,191 @@ class Phase2Visualizer:
         print(f"📈 Error statistics saved to {stats_path}")
         return analysis_dir
     
+    def create_detailed_box_plots(self, errors: Dict, analysis_dir: str):
+        """Create detailed box plots for error analysis."""
+        # Create comprehensive box plot visualization
+        fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+        fig.suptitle('Detailed Box Plot Analysis - Phase 2 Prediction Errors', fontsize=16, fontweight='bold')
+        
+        # Individual hand comparison box plot
+        if errors['left_hand_errors'] and errors['right_hand_errors']:
+            box_data = [errors['left_hand_errors'], errors['right_hand_errors']]
+            bp1 = axes[0, 0].boxplot(box_data, tick_labels=['Left Hand', 'Right Hand'], patch_artist=True)
+            axes[0, 0].set_title('Hand-wise Error Distribution', fontweight='bold')
+            axes[0, 0].set_ylabel('Error (normalized pixels)')
+            axes[0, 0].grid(True, alpha=0.3)
+            
+            # Color the boxes
+            colors = ['lightcoral', 'lightblue']
+            for patch, color in zip(bp1['boxes'], colors):
+                patch.set_facecolor(color)
+        
+        # Combined errors box plot with quartile information
+        if errors['combined_errors']:
+            bp2 = axes[0, 1].boxplot([errors['combined_errors']], tick_labels=['Combined'], patch_artist=True)
+            axes[0, 1].set_title('Combined Hand Error Distribution', fontweight='bold')
+            axes[0, 1].set_ylabel('Error (normalized pixels)')
+            axes[0, 1].grid(True, alpha=0.3)
+            bp2['boxes'][0].set_facecolor('lightgreen')
+        
+        # Error progression over time (if frame numbers are available)
+        if errors['frame_numbers'] and len(errors['frame_numbers']) > 1:
+            # Group errors by frame ranges for box plot
+            frame_ranges = self._create_frame_ranges(errors['frame_numbers'], errors['combined_errors'])
+            if frame_ranges:
+                range_labels, range_errors = zip(*frame_ranges)
+                bp3 = axes[1, 0].boxplot(range_errors, tick_labels=range_labels, patch_artist=True)
+                axes[1, 0].set_title('Error Distribution Across Frame Ranges', fontweight='bold')
+                axes[1, 0].set_ylabel('Error (normalized pixels)')
+                axes[1, 0].tick_params(axis='x', rotation=45)
+                axes[1, 0].grid(True, alpha=0.3)
+                
+                # Color gradient for temporal progression
+                colors = plt.cm.viridis(np.linspace(0, 1, len(bp3['boxes'])))
+                for patch, color in zip(bp3['boxes'], colors):
+                    patch.set_facecolor(color)
+        
+        # Error distribution by target object (if available)
+        if errors.get('target_objects'):
+            object_errors = self._group_errors_by_target(errors)
+            if len(object_errors) > 1:
+                object_labels, object_error_lists = zip(*object_errors.items())
+                bp4 = axes[1, 1].boxplot(object_error_lists, tick_labels=object_labels, patch_artist=True)
+                axes[1, 1].set_title('Error Distribution by Target Object', fontweight='bold')
+                axes[1, 1].set_ylabel('Error (normalized pixels)')
+                axes[1, 1].tick_params(axis='x', rotation=45)
+                axes[1, 1].grid(True, alpha=0.3)
+                
+                # Color by object type
+                colors = plt.cm.Set3(np.linspace(0, 1, len(bp4['boxes'])))
+                for patch, color in zip(bp4['boxes'], colors):
+                    patch.set_facecolor(color)
+            else:
+                # If only one target object, show overall statistics
+                axes[1, 1].text(0.5, 0.5, f'Single Target Object:\n{list(object_errors.keys())[0]}', 
+                                ha='center', va='center', transform=axes[1, 1].transAxes, fontsize=12)
+                axes[1, 1].set_title('Target Object Analysis')
+        else:
+            # Show summary statistics if no object data
+            if errors['statistics']:
+                stats_text = "Summary Statistics:\n\n"
+                for hand_type, stats in errors['statistics'].items():
+                    stats_text += f"{hand_type.replace('_', ' ').title()}:\n"
+                    stats_text += f"  Mean: {stats['mean']:.2f}\n"
+                    stats_text += f"  Median: {stats['median']:.2f}\n"
+                    stats_text += f"  Std: {stats['std']:.2f}\n\n"
+                
+                axes[1, 1].text(0.05, 0.95, stats_text, transform=axes[1, 1].transAxes, 
+                                fontsize=10, verticalalignment='top', fontfamily='monospace')
+                axes[1, 1].set_title('Statistical Summary')
+                axes[1, 1].axis('off')
+        
+        plt.tight_layout()
+        
+        # Save the detailed box plot
+        detailed_plot_path = os.path.join(analysis_dir, "detailed_box_plots.png")
+        plt.savefig(detailed_plot_path, dpi=300, bbox_inches='tight')
+        plt.close()
+        
+        print(f"📊 Detailed box plots saved to {detailed_plot_path}")
+        
+        # Create a separate violin plot for distribution visualization
+        self._create_violin_plots(errors, analysis_dir)
+    
+    def _create_frame_ranges(self, frame_numbers: List[int], combined_errors: List[float]) -> List[Tuple[str, List[float]]]:
+        """Group errors by frame ranges for temporal analysis."""
+        if not frame_numbers or not combined_errors:
+            return []
+        
+        # Create frame ranges (quartiles)
+        min_frame, max_frame = min(frame_numbers), max(frame_numbers)
+        range_size = (max_frame - min_frame) // 4 if max_frame > min_frame else 1
+        
+        if range_size == 0:
+            return []
+        
+        ranges = []
+        for i in range(4):
+            start = min_frame + i * range_size
+            end = min_frame + (i + 1) * range_size if i < 3 else max_frame + 1
+            
+            range_errors = []
+            for frame_num, error in zip(frame_numbers[:len(combined_errors)], combined_errors):
+                if start <= frame_num < end:
+                    range_errors.append(error)
+            
+            if range_errors:
+                ranges.append((f"F{start}-{end-1}", range_errors))
+        
+        return ranges
+    
+    def _group_errors_by_target(self, errors: Dict) -> Dict[str, List[float]]:
+        """Group errors by target object."""
+        object_errors = {}
+        
+        if not errors.get('target_objects') or not errors.get('combined_errors'):
+            return object_errors
+        
+        for target, error in zip(errors['target_objects'], errors['combined_errors']):
+            if target not in object_errors:
+                object_errors[target] = []
+            object_errors[target].append(error)
+        
+        return object_errors
+    
+    def _create_violin_plots(self, errors: Dict, analysis_dir: str):
+        """Create violin plots for distribution visualization."""
+        if not (errors['left_hand_errors'] and errors['right_hand_errors']):
+            return
+        
+        fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+        fig.suptitle('Error Distribution Density - Violin Plots', fontsize=14, fontweight='bold')
+        
+        # Hand comparison violin plot
+        violin_data = [errors['left_hand_errors'], errors['right_hand_errors']]
+        parts1 = axes[0].violinplot(violin_data, positions=[1, 2], showmeans=True, showmedians=True)
+        axes[0].set_xticks([1, 2])
+        axes[0].set_xticklabels(['Left Hand', 'Right Hand'])
+        axes[0].set_ylabel('Error (normalized pixels)')
+        axes[0].set_title('Hand-wise Error Density')
+        axes[0].grid(True, alpha=0.3)
+        
+        # Color the violin plots
+        colors = ['lightcoral', 'lightblue']
+        for pc, color in zip(parts1['bodies'], colors):
+            pc.set_facecolor(color)
+            pc.set_alpha(0.7)
+        
+        # Combined errors violin plot with statistical annotations
+        if errors['combined_errors']:
+            parts2 = axes[1].violinplot([errors['combined_errors']], positions=[1], 
+                                       showmeans=True, showmedians=True)
+            axes[1].set_xticks([1])
+            axes[1].set_xticklabels(['Combined'])
+            axes[1].set_ylabel('Error (normalized pixels)')
+            axes[1].set_title('Combined Error Density')
+            axes[1].grid(True, alpha=0.3)
+            
+            parts2['bodies'][0].set_facecolor('lightgreen')
+            parts2['bodies'][0].set_alpha(0.7)
+            
+            # Add statistical annotations
+            if 'combined_errors' in errors['statistics']:
+                stats = errors['statistics']['combined_errors']
+                axes[1].text(1.3, stats['mean'], f"Mean: {stats['mean']:.2f}", 
+                           verticalalignment='center', fontsize=10)
+                axes[1].text(1.3, stats['median'], f"Median: {stats['median']:.2f}", 
+                           verticalalignment='center', fontsize=10)
+        
+        plt.tight_layout()
+        
+        # Save violin plots
+        violin_plot_path = os.path.join(analysis_dir, "error_violin_plots.png")
+        plt.savefig(violin_plot_path, dpi=300, bbox_inches='tight')
+        plt.close()
+        
+        print(f"🎻 Violin plots saved to {violin_plot_path}")
+
     def create_prediction_video(self, frame_rate: int = 15, pause_frames: List[int] = None) -> str:
         """Create a video from prediction frames."""
         frames_dir = os.path.join(self.output_dir, "frames_with_predictions")

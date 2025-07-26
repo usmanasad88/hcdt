@@ -1,0 +1,39 @@
+\begin{table}[H]
+\centering
+    \caption{Task State Prediction Performance on Use Case Scenarios with Varying Contextual Inputs}
+    \label{tab:phase_one_results}
+    \begin{threeparttable}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}l ccc cc@{}}
+    \toprule
+    \multirow{3}{*}{\textbf{Prompting Strategy}} & \multicolumn{3}{c}{\textbf{Mean F1 Score}} & \multicolumn{2}{c}{\textbf{Overall}} \\
+    \cmidrule(lr){2-4} \cmidrule(lr){5-6}
+    & Stacking & Assembly & Cooking & Score & Rank \\
+    \midrule
+    Rolling Context Window (RCW-PS) + Prev. Predicted State \\
+        \quad Gemini 2.5 Flash Lite &  &  & 0.125 & 0.125 & 13 \\
+    Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze) \\
+        \quad Gemini 2.5 Flash Lite &  &  & 0.135 & 0.135 & 12 \\
+        \quad Gemma-27B &  &  & 0.065 & 0.065 & 14 \\
+    Rolling Context Window (RCW-PS) + Prev. Predicted State (no ego) \\
+        \quad Gemini 2.5 Flash Lite & 0.246 &  & 0.118 & 0.182 & 8 \\
+        \quad Gemma-27B & 0.192 &  &  & 0.192 & 7 \\
+    Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze, no ego) \\
+        \quad Gemini 2.5 Flash Lite & 0.269 & 0.283 & 0.110 & 0.221 & 5 \\
+        \quad Gemma-27B & 0.277 & 0.402 & 0.081 & 0.253 & 4 \\
+    Rolling Context Window + Prev. Ground Truth State (RCW-GT) \\
+        \quad Gemini 2.5 Flash Lite &  &  & 0.177 & 0.177 & 9 \\
+        \quad Gemma-27B &  &  & 0.150 & 0.150 & 11 \\
+    Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no gaze) \\
+        \quad Gemini 2.5 Flash Lite &  &  & 0.169 & 0.169 & 10 \\
+    Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no ego) \\
+        \quad Gemini 2.5 Flash Lite & 0.350 &  & 0.163 & 0.256 & 3 \\
+        \quad Gemma-27B & 0.304 &  & 0.095 & 0.200 & 6 \\
+    Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no gaze, no ego) \\
+        \quad Gemini 2.5 Flash Lite & 0.405 & 0.470 & 0.170 & 0.348 & \textbf{2} \\
+        \quad Gemma-27B & 0.261 & 0.542 &  & 0.402 & \textbf{1} \\
+    \bottomrule
+    \end{tabular}
+    }
+    \end{threeparttable}
+\end{table}

@@ -95,38 +95,38 @@
     "description": "True if the final dish has been transferred to a plate."
   },
   {
-    "name": "operator_holding",
-    "type": "String",
-    "description": "Object currently held by the operator. Should be marked as 'null' if no object is held."
-  },
-  {
     "name": "gaze_target",
     "type": "String",
-    "description": "Estimate target of the operator gaze. Should be marked as 'null' if no target is available."
+    "description": "Estimate target of the operator's gaze. Should be 'null' if it is not clear."
   },
   {
     "name": "steps_completed",
-    "type": "List of Strings",
-    "description": "A list of action desciptions that have been successfully completed."
+    "type": "List of Actions",
+    "description": "The names of all actions from the Task Graph that have been successfully completed."
   },
   {
     "name": "steps_in_progress",
-    "type": "List of Strings",
-    "description": "The desciption of the action currently being executed. Should be be empty. Output the most likely action."
+    "type": "List of Actions",
+    "description": "The name of actions from the Task Graph that are currently being executed. Should be empty if the operator is idle"
   },
   {
     "name": "steps_available",
-    "type": "List of Strings",
-    "description": "A list of action desciptions that can be started next, based on satisfied predecessors and state dependencies."
+    "type": "List of Actions",
+    "description": "A list of names of actions from the Task Graph that can be started next, based on satisfied predecessors."
   },
   {
-    "name": "current_keystep",
-    "type": "String",
-    "description": "Natural language description of the current keystep being performed"
+    "name": "immediate_next_step",
+    "type": "List of Actions",
+    "description": "The name of the action from the Task Graph that will likely be performed immediately after the current action."
   },
   {
-    "name": "next_keystep",
+    "name": "current_step",
     "type": "String",
-    "description": "Natural language description of the next keystep which will be performed immediate after current keystep"       
+    "description": "Natural language description of the current micro-action being performed"
+  },
+  {
+    "name": "next_step",
+    "type": "String",
+    "description": "Natural language description of the next micro-action which will be performed immediate after current step"
   }
 ]

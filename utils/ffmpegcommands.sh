@@ -1,11 +1,11 @@
 ffmpeg -i /home/mani/Central/HaVid/S07A02I01M0.mp4 -vf fps=1 /home/mani/Central/HaVid/S07A02I01M0/frame_%04d.png
 
-ffmpeg -i cam01_icl_best.mp4 \
+ffmpeg -i RCWPS_HAViD_gemini-2.5-flash-lite_no_gaze_result.mp4 \
   -c:v libx264 -profile:v baseline -level 3.1 -preset medium -crf 23 \
   -vf "scale='min(640,iw)':'min(480,ih)':force_original_aspect_ratio=decrease" \
   -c:a aac -b:a 128k \
   -movflags +faststart \
-  cam01_icl_best-whatsapp.mp4
+  RCWPS_HAViD_gemini-2.5-flash-lite_no_gaze_result-whatsapp.mp4
 
 
 ffmpeg -ss 00:00:00 -i cam01_icl_best.mp4 -t 00:00:08 \

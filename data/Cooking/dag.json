@@ -1,8 +1,8 @@
 [
   {
     "id": "step_1",
-    "description": "Place pot on stove and add water",
-    "predecessors": [],
+    "action": "Place pot on stove and add water",
+    "dependencies": [],
     "state_dependencies": [],
     "effects": [
       { "state": "pot_on_stove", "value": true },
@@ -11,8 +11,8 @@
   },
   {
     "id": "step_2",
-    "description": "Turn on stove burner for pot",
-    "predecessors": ["step_1"],
+    "action": "Turn on stove burner for pot",
+    "dependencies": ["step_1"],
     "state_dependencies": [
       { "state": "pot_on_stove", "value": true },
       { "state": "water_in_pot", "value": true }
@@ -24,8 +24,8 @@
   },
   {
     "id": "step_3",
-    "description": "Add noodles to boiling water",
-    "predecessors": ["step_2"],
+    "action": "Add noodles to boiling water",
+    "dependencies": ["step_2"],
     "state_dependencies": [
       {"state": "water_boiling", "value": true}
     ],
@@ -35,8 +35,8 @@
   },
   {
     "id": "step_4",
-    "description": "Cook noodles until done (includes stirring/tasting)",
-    "predecessors": ["step_3"],
+    "action": "Cook noodles until done (includes stirring/tasting)",
+    "dependencies": ["step_3"],
     "state_dependencies": [
       { "state": "noodles_in_pot", "value": true }
     ],
@@ -46,8 +46,8 @@
   },
   {
     "id": "step_5",
-    "description": "Drain cooked noodles",
-    "predecessors": ["step_4"],
+    "action": "Drain cooked noodles",
+    "dependencies": ["step_4"],
     "state_dependencies": [
       { "state": "noodles_cooked", "value": true }
     ],
@@ -58,8 +58,8 @@
   },
   {
     "id": "step_6",
-    "description": "Prepare (cut) cabbage",
-    "predecessors": [],
+    "action": "Prepare (cut) cabbage",
+    "dependencies": [],
     "state_dependencies": [],
     "effects": [
       { "state": "cabbage_prepared", "value": true }
@@ -67,8 +67,8 @@
   },
   {
     "id": "step_7",
-    "description": "Prepare (peel and cut) garlic",
-    "predecessors": [],
+    "action": "Prepare (peel and cut) garlic",
+    "dependencies": [],
     "state_dependencies": [],
     "effects": [
       { "state": "garlic_prepared", "value": true }
@@ -76,8 +76,8 @@
   },
   {
     "id": "step_8",
-    "description": "Prepare (cut) spring onions",
-    "predecessors": [],
+    "action": "Prepare (cut) spring onions",
+    "dependencies": [],
     "state_dependencies": [],
     "effects": [
       { "state": "spring_onions_prepared", "value": true }
@@ -85,8 +85,8 @@
   },
     {
     "id": "step_9",
-    "description": "Prepare (cut) celery",
-    "predecessors": [],
+    "action": "Prepare (cut) celery",
+    "dependencies": [],
     "state_dependencies": [],
     "effects": [
       { "state": "celery_prepared", "value": true }
@@ -94,8 +94,8 @@
   },
   {
     "id": "step_10",
-    "description": "Place pan on stove",
-    "predecessors": [],
+    "action": "Place pan on stove",
+    "dependencies": [],
     "state_dependencies": [],
     "effects": [
       { "state": "pan_on_stove", "value": true }
@@ -103,8 +103,8 @@
   },
   {
     "id": "step_11",
-    "description": "Turn on stove burner for pan",
-    "predecessors": ["step_10"],
+    "action": "Turn on stove burner for pan",
+    "dependencies": ["step_10"],
     "state_dependencies": [
       { "state": "pan_on_stove", "value": true }
     ],
@@ -114,8 +114,8 @@
   },
   {
     "id": "step_12",
-    "description": "Add oil to hot pan",
-    "predecessors": ["step_11"],
+    "action": "Add oil to hot pan",
+    "dependencies": ["step_11"],
     "state_dependencies": [
       { "state": "pan_burner_on", "value": true }
     ],
@@ -125,8 +125,8 @@
   },
   {
     "id": "step_13",
-    "description": "Add prepared aromatics (e.g., garlic, onions) to pan and stir",
-    "predecessors": ["step_6", "step_7", "step_8", "step_9", "step_12"],
+    "action": "Add prepared aromatics (e.g., garlic, onions) to pan and stir",
+    "dependencies": ["step_6", "step_7", "step_8", "step_9", "step_12"],
     "state_dependencies": [
       { "state": "oil_in_pan", "value": true }
     ],
@@ -136,8 +136,8 @@
   },
   {
     "id": "step_14",
-    "description": "Add drained noodles to pan",
-    "predecessors": ["step_5", "step_13"],
+    "action": "Add drained noodles to pan",
+    "dependencies": ["step_5", "step_13"],
     "state_dependencies": [
       { "state": "noodles_drained", "value": true },
       { "state": "aromatics_in_pan", "value": true }
@@ -148,8 +148,8 @@
   },
   {
     "id": "step_15",
-    "description": "Add sauce(s) (e.g., soy sauce) to pan",
-    "predecessors": ["step_14"],
+    "action": "Add sauce(s) (e.g., soy sauce) to pan",
+    "dependencies": ["step_14"],
     "state_dependencies": [
       { "state": "noodles_in_pan", "value": true }
     ],
@@ -159,8 +159,8 @@
   },
     {
     "id": "step_16",
-    "description": "Stir-fry all ingredients together",
-    "predecessors": ["step_15"],
+    "action": "Stir-fry all ingredients together",
+    "dependencies": ["step_15"],
     "state_dependencies": [
       { "state": "noodles_in_pan", "value": true },
       { "state": "sauce_in_pan", "value": true }
@@ -171,8 +171,8 @@
   },
   {
     "id": "step_17",
-    "description": "Transfer food from pan to plate",
-    "predecessors": ["step_16"],
+    "action": "Transfer food from pan to plate",
+    "dependencies": ["step_16"],
     "state_dependencies": [
       { "state": "stir_fry_cooked", "value": true }
     ],

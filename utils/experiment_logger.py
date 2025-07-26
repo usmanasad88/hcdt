@@ -155,7 +155,7 @@ class ExperimentLogger:
             "standard": 516, # Standard resolution  
             "high": 1032     # High resolution
         }
-        return int(image_count * tokens_per_image.get(image_size, 516))
+        return int(image_count * tokens_per_image.get(image_size, 258))
     
     def log_generation(self, 
                       frame_number: int,

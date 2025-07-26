@@ -25,7 +25,7 @@ def analyze_temporal_patterns(icl_filename: str, gt_filename: str):
         gt_data = json.load(f)
     
     # Create frame-indexed data
-    icl_by_frame = {entry["frame"]: entry["state"] for entry in icl_data}
+    icl_by_frame = {entry["frame_number"]: entry["state"] for entry in icl_data}
     gt_by_frame = {entry.get("frame_number", entry.get("frame", 0)): entry.get("state", {}) 
                    for entry in gt_data}
     
@@ -94,7 +94,7 @@ def analyze_step_progression(icl_filename: str, gt_filename: str):
     gt_step_counts = []
     
     for entry in icl_data:
-        frame = entry["frame"]
+        frame = entry["frame_number"]
         state = entry["state"]
         
         icl_step_counts.append({
@@ -109,7 +109,7 @@ def analyze_step_progression(icl_filename: str, gt_filename: str):
                    for entry in gt_data}
     
     for entry in icl_data:
-        frame = entry["frame"]
+        frame = entry["frame_number"]
         if frame in gt_by_frame:
             gt_state = gt_by_frame[frame]
             gt_step_counts.append({
@@ -134,7 +134,7 @@ def analyze_error_patterns(icl_filename: str, gt_filename: str):
         gt_data = json.load(f)
     
     # Create frame-indexed data
-    icl_by_frame = {entry["frame"]: entry["state"] for entry in icl_data}
+    icl_by_frame = {entry["frame_number"]: entry["state"] for entry in icl_data}
     gt_by_frame = {entry.get("frame_number", entry.get("frame", 0)): entry.get("state", {}) 
                    for entry in gt_data}
     

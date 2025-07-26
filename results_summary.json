@@ -1,0 +1,277 @@
+{
+  "results": [
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemma-3-27b-it",
+      "use_gaze": false,
+      "use_gt": false,
+      "use_ego": true,
+      "score": 0.06506986027944112,
+      "filename": "RCWPS_Cooking_gemma-3-27b-it_no_gaze_use_ego_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemma-3-27b-it",
+      "use_gaze": true,
+      "use_gt": true,
+      "use_ego": false,
+      "score": 0.09532215357458076,
+      "filename": "RCWPS_Cooking_gemma-3-27b-it_use_gaze_use_gt_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Stacking",
+      "model": "gemma-3-27b-it",
+      "use_gaze": false,
+      "use_gt": true,
+      "use_ego": false,
+      "score": 0.26134301270417426,
+      "filename": "RCWPS_Stack_gemma-3-27b-it_no_gaze_use_gt_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemma-3-27b-it",
+      "use_gaze": true,
+      "use_gt": true,
+      "use_ego": true,
+      "score": 0.15049864007252947,
+      "filename": "RCWPS_Cooking_gemma-3-27b-it_use_gaze_use_gt_use_ego_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": true,
+      "use_gt": false,
+      "use_ego": false,
+      "score": 0.11754874651810587,
+      "filename": "RCWPS_Cooking_gemini-2.5-flash-lite_use_gaze_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Assembly",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": false,
+      "use_gt": false,
+      "use_ego": false,
+      "score": 0.2832426104770266,
+      "filename": "RCWPS_HAViD_gemini-2.5-flash-lite_no_gaze_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": true,
+      "use_gt": true,
+      "use_ego": false,
+      "score": 0.16265709156193897,
+      "filename": "RCWPS_Cooking_gemini-2.5-flash-lite_use_gaze_use_gt_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": false,
+      "use_gt": true,
+      "use_ego": false,
+      "score": 0.16955752212389383,
+      "filename": "RCWPS_Cooking_gemini-2.5-flash-lite_no_gaze_use_gt_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Assembly",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": false,
+      "use_gt": true,
+      "use_ego": false,
+      "score": 0.47040816326530616,
+      "filename": "RCWPS_HAViD_gemini-2.5-flash-lite_no_gaze_use_gt_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Stacking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": false,
+      "use_gt": true,
+      "use_ego": false,
+      "score": 0.4051855751513556,
+      "filename": "RCWPS_Stack_gemini-2.5-flash-lite_no_gaze_use_gt_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": false,
+      "use_gt": false,
+      "use_ego": false,
+      "score": 0.1097408400357462,
+      "filename": "RCWPS_Cooking_gemini-2.5-flash-lite_no_gaze_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemma-3-27b-it",
+      "use_gaze": false,
+      "use_gt": false,
+      "use_ego": false,
+      "score": 0.08061002178649239,
+      "filename": "RCWPS_Cooking_gemma-3-27b-it_no_gaze_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Stacking",
+      "model": "gemma-3-27b-it",
+      "use_gaze": true,
+      "use_gt": true,
+      "use_ego": false,
+      "score": 0.30371429696007557,
+      "filename": "RCWPS_Stack_gemma-3-27b-it_use_gaze_use_gt_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Stacking",
+      "model": "gemma-3-27b-it",
+      "use_gaze": false,
+      "use_gt": false,
+      "use_ego": false,
+      "score": 0.276546788658393,
+      "filename": "RCWPS_Stack_gemma-3-27b-it_no_gaze_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": false,
+      "use_gt": true,
+      "use_ego": true,
+      "score": 0.16899911426040745,
+      "filename": "RCWPS_Cooking_gemini-2.5-flash-lite_no_gaze_use_gt_use_ego_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": true,
+      "use_gt": true,
+      "use_ego": true,
+      "score": 0.17667103538663173,
+      "filename": "RCWPS_Cooking_gemini-2.5-flash-lite_use_gaze_use_gt_use_ego_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Stacking",
+      "model": "gemma-3-27b-it",
+      "use_gaze": true,
+      "use_gt": false,
+      "use_ego": false,
+      "score": 0.19205128205128205,
+      "filename": "RCWPS_Stack_gemma-3-27b-it_use_gaze_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Stacking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": true,
+      "use_gt": true,
+      "use_ego": false,
+      "score": 0.34975961538461536,
+      "filename": "RCWPS_Stack_gemini-2.5-flash-lite_use_gaze_use_gt_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Stacking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": false,
+      "use_gt": false,
+      "use_ego": false,
+      "score": 0.26878045790296384,
+      "filename": "RCWPS_Stack_gemini-2.5-flash-lite_no_gaze_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Stacking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": true,
+      "use_gt": false,
+      "use_ego": false,
+      "score": 0.2461149961149961,
+      "filename": "RCWPS_Stack_gemini-2.5-flash-lite_use_gaze_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": false,
+      "use_gt": false,
+      "use_ego": true,
+      "score": 0.13544093178036606,
+      "filename": "RCWPS_Cooking_gemini-2.5-flash-lite_no_gaze_use_ego_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Assembly",
+      "model": "gemma-3-27b-it",
+      "use_gaze": false,
+      "use_gt": false,
+      "use_ego": false,
+      "score": 0.4020104895104895,
+      "filename": "RCWPS_HAViD_gemma-3-27b-it_no_gaze_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Assembly",
+      "model": "gemma-3-27b-it",
+      "use_gaze": false,
+      "use_gt": true,
+      "use_ego": false,
+      "score": 0.541783030246799,
+      "filename": "RCWPS_HAViD_gemma-3-27b-it_no_gaze_use_gt_result.json"
+    },
+    {
+      "exp_type": "RCWPS",
+      "case_study": "Cooking",
+      "model": "gemini-2.5-flash-lite",
+      "use_gaze": true,
+      "use_gt": false,
+      "use_ego": true,
+      "score": 0.12462686567164179,
+      "filename": "RCWPS_Cooking_gemini-2.5-flash-lite_use_gaze_use_ego_result.json"
+    }
+  ],
+  "unused_files": [],
+  "model_scores": {
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze) - Gemma-27B": 0.06506986027944112,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze) - Gemini 2.5 Flash Lite": 0.13544093178036606,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no ego) - Gemma-27B": 0.19951822526732815,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no ego) - Gemini 2.5 Flash Lite": 0.2562083534732772,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no gaze, no ego) - Gemma-27B": 0.4015630214754866,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no gaze, no ego) - Gemini 2.5 Flash Lite": 0.3483837535135185,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) - Gemma-27B": 0.15049864007252947,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) - Gemini 2.5 Flash Lite": 0.17667103538663173,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no ego) - Gemini 2.5 Flash Lite": 0.18183187131655099,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no ego) - Gemma-27B": 0.19205128205128205,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze, no ego) - Gemini 2.5 Flash Lite": 0.2205879694719122,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze, no ego) - Gemma-27B": 0.25305576665179164,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no gaze) - Gemini 2.5 Flash Lite": 0.16899911426040745,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State - Gemini 2.5 Flash Lite": 0.12462686567164179
+  },
+  "ranks": {
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no gaze, no ego) - Gemma-27B": 1,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no gaze, no ego) - Gemini 2.5 Flash Lite": 2,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no ego) - Gemini 2.5 Flash Lite": 3,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze, no ego) - Gemma-27B": 4,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze, no ego) - Gemini 2.5 Flash Lite": 5,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no ego) - Gemma-27B": 6,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no ego) - Gemma-27B": 7,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no ego) - Gemini 2.5 Flash Lite": 8,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) - Gemini 2.5 Flash Lite": 9,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) (no gaze) - Gemini 2.5 Flash Lite": 10,
+    "Rolling Context Window + Prev. Ground Truth State (RCW-GT) - Gemma-27B": 11,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze) - Gemini 2.5 Flash Lite": 12,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State - Gemini 2.5 Flash Lite": 13,
+    "Rolling Context Window (RCW-PS) + Prev. Predicted State (no gaze) - Gemma-27B": 14
+  }
+}

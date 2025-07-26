@@ -9,7 +9,7 @@
       "steps_available": [
         "step_01_orient_plate",
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -24,7 +24,7 @@
       ],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -39,7 +39,7 @@
       ],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -54,7 +54,7 @@
       ],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -69,7 +69,7 @@
       ],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -84,7 +84,7 @@
       ],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -99,7 +99,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -114,7 +114,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -129,7 +129,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -144,7 +144,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -159,7 +159,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -174,7 +174,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -189,7 +189,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -204,7 +204,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -219,7 +219,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -234,7 +234,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_02_insert_bs1",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -250,7 +250,7 @@
         "step_02_insert_bs1"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -266,7 +266,7 @@
         "step_02_insert_bs1"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -282,7 +282,7 @@
         "step_02_insert_bs1"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -298,7 +298,7 @@
         "step_02_insert_bs1"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -314,7 +314,7 @@
         "step_02_insert_bs1"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -330,7 +330,7 @@
         "step_02_insert_bs1"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -346,7 +346,7 @@
         "step_02_insert_bs1"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -362,7 +362,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_03_insert_ball",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -379,7 +379,7 @@
         "step_03_insert_ball"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -396,7 +396,7 @@
         "step_03_insert_ball"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -413,7 +413,7 @@
         "step_03_insert_ball"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -430,7 +430,7 @@
         "step_03_insert_ball"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -447,7 +447,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -464,7 +464,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -481,7 +481,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -498,7 +498,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -515,7 +515,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -532,7 +532,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -549,7 +549,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -566,7 +566,7 @@
       "steps_in_progress": [],
       "steps_available": [
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -584,7 +584,7 @@
         "step_04_insert_bs2"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -602,7 +602,7 @@
         "step_04_insert_bs2"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -620,7 +620,7 @@
         "step_04_insert_bs2"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -638,7 +638,7 @@
         "step_04_insert_bs2"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -656,7 +656,7 @@
         "step_04_insert_bs2"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -674,7 +674,7 @@
         "step_04_insert_bs2"
       ],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -691,7 +691,7 @@
       ],
       "steps_in_progress": [],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -708,7 +708,7 @@
       ],
       "steps_in_progress": [],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -723,9 +723,9 @@
         "step_03_insert_ball",
         "step_04_insert_bs2"
       ],
-      "steps_in_progress": [],
+      "steps_in_progress": ["step_07_screw_cap"],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -740,9 +740,9 @@
         "step_03_insert_ball",
         "step_04_insert_bs2"
       ],
-      "steps_in_progress": [],
+      "steps_in_progress": ["step_07_screw_cap"],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -757,9 +757,9 @@
         "step_03_insert_ball",
         "step_04_insert_bs2"
       ],
-      "steps_in_progress": [],
+      "steps_in_progress": ["step_07_screw_cap"],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -774,9 +774,9 @@
         "step_03_insert_ball",
         "step_04_insert_bs2"
       ],
-      "steps_in_progress": [],
+      "steps_in_progress": ["step_07_screw_cap"],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -791,9 +791,9 @@
         "step_03_insert_ball",
         "step_04_insert_bs2"
       ],
-      "steps_in_progress": [],
+      "steps_in_progress": ["step_07_screw_cap"],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -808,9 +808,9 @@
         "step_03_insert_ball",
         "step_04_insert_bs2"
       ],
-      "steps_in_progress": [],
+      "steps_in_progress": ["step_07_screw_cap"],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -825,9 +825,9 @@
         "step_03_insert_ball",
         "step_04_insert_bs2"
       ],
-      "steps_in_progress": [],
+      "steps_in_progress": ["step_07_screw_cap"],
       "steps_available": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ]
     }
   },
@@ -843,7 +843,7 @@
         "step_04_insert_bs2"
       ],
       "steps_in_progress": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_available": []
     }
@@ -860,7 +860,7 @@
         "step_04_insert_bs2"
       ],
       "steps_in_progress": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_available": []
     }
@@ -877,7 +877,7 @@
         "step_04_insert_bs2"
       ],
       "steps_in_progress": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_available": []
     }
@@ -894,7 +894,7 @@
         "step_04_insert_bs2"
       ],
       "steps_in_progress": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_available": []
     }
@@ -911,7 +911,7 @@
         "step_04_insert_bs2"
       ],
       "steps_in_progress": [
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_available": []
     }
@@ -926,10 +926,10 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_in_progress": [
-        "step_07_insert_bracket2"
+        "step_06_insert_bracket2"
       ],
       "steps_available": []
     }
@@ -944,10 +944,10 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_in_progress": [
-        "step_07_insert_bracket2"
+        "step_06_insert_bracket2"
       ],
       "steps_available": []
     }
@@ -962,10 +962,10 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_in_progress": [
-        "step_07_insert_bracket2"
+        "step_06_insert_bracket2"
       ],
       "steps_available": []
     }
@@ -980,10 +980,10 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_in_progress": [
-        "step_07_insert_bracket2"
+        "step_06_insert_bracket2"
       ],
       "steps_available": []
     }
@@ -998,10 +998,10 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_in_progress": [
-        "step_07_insert_bracket2"
+        "step_06_insert_bracket2"
       ],
       "steps_available": []
     }
@@ -1016,10 +1016,10 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1"
+        "step_05_insert_bracket1"
       ],
       "steps_in_progress": [
-        "step_07_insert_bracket2"
+        "step_06_insert_bracket2"
       ],
       "steps_available": []
     }
@@ -1034,12 +1034,12 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2"
       ],
       "steps_in_progress": [],
       "steps_available": [
-        "step_05_screw_cap",
+        "step_07_screw_cap",
         "step_08_slide_brackets"
       ]
     }
@@ -1054,11 +1054,11 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2"
       ],
       "steps_in_progress": [
-        "step_05_screw_cap"
+        "step_07_screw_cap"
       ],
       "steps_available": [
         "step_08_slide_brackets"
@@ -1075,11 +1075,11 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2"
       ],
       "steps_in_progress": [
-        "step_05_screw_cap"
+        "step_07_screw_cap"
       ],
       "steps_available": [
         "step_08_slide_brackets"
@@ -1096,11 +1096,11 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2"
       ],
       "steps_in_progress": [
-        "step_05_screw_cap"
+        "step_07_screw_cap"
       ],
       "steps_available": [
         "step_08_slide_brackets"
@@ -1117,11 +1117,11 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2"
       ],
       "steps_in_progress": [
-        "step_05_screw_cap"
+        "step_07_screw_cap"
       ],
       "steps_available": [
         "step_08_slide_brackets"
@@ -1138,11 +1138,11 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2"
       ],
       "steps_in_progress": [
-        "step_05_screw_cap"
+        "step_07_screw_cap"
       ],
       "steps_available": [
         "step_08_slide_brackets"
@@ -1159,11 +1159,11 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2"
       ],
       "steps_in_progress": [
-        "step_05_screw_cap"
+        "step_07_screw_cap"
       ],
       "steps_available": [
         "step_08_slide_brackets"
@@ -1180,9 +1180,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap"
       ],
       "steps_in_progress": [],
       "steps_available": [
@@ -1200,9 +1200,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap"
       ],
       "steps_in_progress": [],
       "steps_available": [
@@ -1220,9 +1220,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap"
       ],
       "steps_in_progress": [],
       "steps_available": [
@@ -1240,9 +1240,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap"
       ],
       "steps_in_progress": [
         "step_09_place_subassembly"
@@ -1262,9 +1262,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap"
       ],
       "steps_in_progress": [
         "step_09_place_subassembly"
@@ -1284,9 +1284,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap"
       ],
       "steps_in_progress": [
         "step_09_place_subassembly"
@@ -1306,9 +1306,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap"
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap"
       ],
       "steps_in_progress": [
         "step_09_place_subassembly"
@@ -1328,9 +1328,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1351,9 +1351,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1374,9 +1374,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1396,9 +1396,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1418,9 +1418,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1440,9 +1440,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1462,9 +1462,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1484,9 +1484,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1506,9 +1506,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1528,9 +1528,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1550,9 +1550,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1572,9 +1572,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [],
@@ -1594,9 +1594,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1617,9 +1617,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1640,9 +1640,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1663,9 +1663,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1686,9 +1686,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1709,9 +1709,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1732,9 +1732,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1755,9 +1755,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1778,9 +1778,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1801,9 +1801,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1824,9 +1824,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1847,9 +1847,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1870,9 +1870,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1893,9 +1893,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1916,9 +1916,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1939,9 +1939,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1962,9 +1962,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -1985,9 +1985,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -2008,9 +2008,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -2031,9 +2031,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -2054,9 +2054,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -2077,9 +2077,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly"
       ],
       "steps_in_progress": [
@@ -2100,9 +2100,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2124,9 +2124,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2148,9 +2148,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2172,9 +2172,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2196,9 +2196,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2220,9 +2220,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2244,9 +2244,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2268,9 +2268,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2292,9 +2292,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2316,9 +2316,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2340,9 +2340,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2364,9 +2364,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2388,9 +2388,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8"
       ],
@@ -2412,9 +2412,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8"
@@ -2437,9 +2437,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2461,9 +2461,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2485,9 +2485,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2509,9 +2509,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2533,9 +2533,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2557,9 +2557,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2581,9 +2581,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2605,9 +2605,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2629,9 +2629,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2653,9 +2653,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2677,9 +2677,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2701,9 +2701,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2725,9 +2725,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2749,9 +2749,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2773,9 +2773,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2797,9 +2797,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2821,9 +2821,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2846,9 +2846,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2871,9 +2871,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2896,9 +2896,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2921,9 +2921,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2946,9 +2946,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2971,9 +2971,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -2996,9 +2996,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -3021,9 +3021,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -3046,9 +3046,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -3071,9 +3071,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
@@ -3096,9 +3096,9 @@
         "step_02_insert_bs1",
         "step_03_insert_ball",
         "step_04_insert_bs2",
-        "step_06_insert_bracket1",
-        "step_07_insert_bracket2",
-        "step_05_screw_cap",
+        "step_05_insert_bracket1",
+        "step_06_insert_bracket2",
+        "step_07_screw_cap",
         "step_09_place_subassembly",
         "step_10_screw1_M8",
         "step_11_screw2_M8",
